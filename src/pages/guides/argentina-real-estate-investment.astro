@@ -1,0 +1,48 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import RealEstateInvestmentContent from '../../components/RealEstateInvestmentContent';
+
+const title = 'Argentina Golden Visa Investments';
+const description = 'Explore real estate and fund options for Argentina residency. Luxury properties in Palermo, Puerto Madero and approved funds from $100K.';
+const canonical = 'https://argentinaresidence.com/guides/argentina-real-estate-investment';
+const ogImage = 'https://argentinaresidence.com/og-image.jpg';
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Where to Invest: Real Estate and Funds for Argentina Residency",
+  "description": "Discover qualifying investments for Argentina's Golden Visa including luxury real estate in Palermo and Puerto Madero, plus approved investment funds.",
+  "author": {
+    "@type": "Organization",
+    "name": "Argentina Residence"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Argentina Residence",
+    "url": "https://argentinaresidence.com"
+  },
+  "datePublished": "2026-01-22",
+  "dateModified": "2026-01-22"
+};
+---
+
+<Layout>
+	<title slot="head">{title}</title>
+	<meta slot="head" name="description" content={description} />
+	<link slot="head" rel="canonical" href={canonical} />
+	<meta slot="head" name="robots" content="index, follow" />
+	<meta slot="head" property="og:type" content="website" />
+	<meta slot="head" property="og:site_name" content="Argentina Residence" />
+	<meta slot="head" property="og:title" content={title} />
+	<meta slot="head" property="og:description" content={description} />
+	<meta slot="head" property="og:url" content={canonical} />
+	<meta slot="head" property="og:image" content={ogImage} />
+	<meta slot="head" property="og:image:width" content="1200" />
+	<meta slot="head" property="og:image:height" content="630" />
+	<meta slot="head" property="og:locale" content="en_US" />
+	<meta slot="head" name="twitter:card" content="summary_large_image" />
+	<meta slot="head" name="twitter:title" content={title} />
+	<meta slot="head" name="twitter:description" content={description} />
+	<meta slot="head" name="twitter:image" content={ogImage} />
+	<script slot="head" type="application/ld+json" set:html={JSON.stringify(schema)} />
+	<RealEstateInvestmentContent client:load />
+</Layout>
