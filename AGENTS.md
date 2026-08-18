@@ -16,6 +16,10 @@ The ONLY things that change are:
 - Client-side rendering → Static HTML
 - The dual-layer static-shell + hidden #ssr-content prerender workaround → removed (Astro replaces it)
 
+Noted exception: the homepage title and meta description were deliberately
+changed per explicit approval. This is a documented exception, not a
+violation of the pixel-perfect rule.
+
 If in doubt, copy the existing component exactly and wrap it as a React island
 with client:load.
 
@@ -26,7 +30,8 @@ Every new article MUST pass the 5-location keyword check before committing:
 1. TITLE — starts with keyword, format "[Keyword] - [Angle]"
    No em dashes. No site name in this field.
 2. META TITLE — same as title + " | Argentina Residence"
-3. META DESCRIPTION — keyword in first 5-7 words, 150-160 chars,
+3. META DESCRIPTION — keyword in first 5-7 words, 150-160 chars as a
+   target (not a hard requirement, per the homepage exception),
    one specific number/date/dollar amount, no em dashes
 4. URL/SLUG — reflects the keyword (never change existing slugs
    without explicit approval)

@@ -1,0 +1,332 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Argentina Residence Design System — Institutional Navy
+   Inspired by HoldenFamilyOffices.com's institutional depth,
+   adapted with Argentine identity. All colors in HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+
+    --primary: 209 71% 29%;            /* Institutional Navy */
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+
+    --gold: 45 29% 65%;
+    --gold-light: 45 20% 85%;
+
+    --dark-teal: 180 15% 15%;
+    --dark-teal-light: 180 10% 25%;
+
+    --nav-bg-dark: 150 5% 6%;
+    --nav-border: 150 3% 17%;
+
+    --cta-primary: 209 71% 29%;
+    --cta-primary-hover: 209 70% 22%;
+    --cta-text: 0 0% 92%;
+    --cta-secondary-border: 240 5.9% 10%;
+    --cta-secondary-text: 240 5.9% 10%;
+
+    --text-primary: 240 10% 3.9%;
+    --text-secondary: 240 3.8% 46.1%;
+    --text-muted: 240 5% 64.9%;
+    --text-dark: 0 0% 8%;
+    --text-cream: 40 20% 95%;
+
+    --color-bg-primary: 0 0% 100%;
+    --color-bg-secondary: 240 4.8% 95.9%;
+    --color-bg-elevated: 0 0% 100%;
+    --color-bg-light: 38 30% 95%;
+
+    --color-accent: 209 71% 29%;
+    --color-accent-hover: 209 70% 22%;
+    --color-accent-light: 209 55% 40%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 209 71% 29%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 209 71% 29%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 209 71% 29%;
+
+    /* === TYPOGRAPHY === */
+    --font-heading: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+    --font-serif: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+
+    /* Spacing */
+    --section-padding: 8rem;
+    --section-padding-sm: 5rem;
+    --container-padding: 2rem;
+    --container-max: 1200px;
+
+    /* Typography Scale */
+    --text-hero: 3rem;
+    --text-xl: 2rem;
+    --text-lg: 1.375rem;
+    --text-base: 1.0625rem;
+    --text-sm: 0.9375rem;
+
+    /* Letter Spacing */
+    --tracking-wide: 0.005em;
+    --tracking-wider: 0.04em;
+    --tracking-widest: 0.14em;
+
+    /* Line Heights */
+    --leading-tight: 1.15;
+    --leading-snug: 1.3;
+    --leading-normal: 1.7;
+    --leading-relaxed: 1.85;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-body);
+    font-feature-settings: "kern" 1, "liga" 1, "ss01" 1, "cv11" 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: var(--text-base);
+    line-height: var(--leading-normal);
+    letter-spacing: 0.005em;
+    text-rendering: optimizeLegibility;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Editorial Typography Styles */
+  .font-serif {
+    font-family: var(--font-serif);
+    font-feature-settings: "kern" 1, "liga" 1, "dlig" 1;
+    font-weight: 500;
+  }
+
+  .font-sans {
+    font-family: var(--font-sans);
+  }
+
+  /* Editorial heading defaults — restraint over flash */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.005em;
+    color: hsl(var(--foreground));
+  }
+
+  /* Calmer text on dark cinematic surfaces */
+  .bg-\[hsl\(var\(--nav-bg-dark\)\)\] h1,
+  .bg-\[hsl\(var\(--nav-bg-dark\)\)\] h2,
+  .bg-\[hsl\(var\(--nav-bg-dark\)\)\] h3,
+  .text-primary-foreground,
+  .text-white {
+    color: rgba(255, 255, 255, 0.92);
+  }
+
+  /* Premium Text Styles */
+  .text-hero {
+    font-size: var(--text-hero);
+    line-height: var(--leading-tight);
+    letter-spacing: var(--tracking-wide);
+  }
+
+  .text-editorial {
+    font-size: var(--text-lg);
+    line-height: var(--leading-relaxed);
+    letter-spacing: var(--tracking-wide);
+  }
+
+  .text-body {
+    font-size: var(--text-base);
+    line-height: var(--leading-normal);
+  }
+
+  /* Sophisticated Layouts */
+  .section-padding {
+    padding-top: var(--section-padding-sm);
+    padding-bottom: var(--section-padding-sm);
+  }
+
+  @media (min-width: 768px) {
+    .section-padding {
+      padding-top: var(--section-padding);
+      padding-bottom: var(--section-padding);
+    }
+  }
+
+  .container-padding {
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
+  }
+  /* Rich FAQ Content */
+  .faq-rich-content h1 {
+    font-family: var(--font-serif, 'Playfair Display', Georgia, serif);
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 1.5rem;
+    color: hsl(var(--foreground));
+  }
+
+  .faq-rich-content h2 {
+    font-family: var(--font-serif, 'Playfair Display', Georgia, serif);
+    font-size: clamp(1.25rem, 2vw, 1.75rem);
+    line-height: 1.3;
+    letter-spacing: 0.02em;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    color: hsl(var(--foreground));
+  }
+
+  .faq-rich-content h3 {
+    font-family: var(--font-serif, 'Playfair Display', Georgia, serif);
+    font-size: clamp(1.1rem, 1.5vw, 1.35rem);
+    line-height: 1.4;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: hsl(var(--foreground));
+  }
+
+  .faq-rich-content p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: hsl(var(--muted-foreground));
+    margin-bottom: 1.25rem;
+    letter-spacing: 0.01em;
+  }
+
+  .faq-rich-content ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .faq-rich-content li {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: hsl(var(--muted-foreground));
+    margin-bottom: 0.5rem;
+  }
+
+  .faq-rich-content strong {
+    color: hsl(var(--foreground));
+    font-weight: 600;
+  }
+
+  .faq-rich-content a {
+    color: hsl(var(--primary));
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: opacity 0.2s;
+  }
+
+  .faq-rich-content a:hover {
+    opacity: 0.8;
+  }
+}
+
+/* === Quiet Luxury Refinements ===
+   Subtle, global polish — no structural change.
+   Inspired by private wealth firms and editorial publications.
+*/
+@layer base {
+  /* Calmer body weight and refined rendering */
+  body {
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Headings: editorial restraint */
+  h1 { font-weight: 500; letter-spacing: 0.003em; }
+  h2 { font-weight: 500; letter-spacing: 0.005em; }
+  h3, h4 { font-weight: 500; letter-spacing: 0.008em; }
+
+  /* Refined paragraph rhythm in long-form content */
+  .prose p,
+  article p {
+    color: hsl(var(--muted-foreground));
+  }
+
+  /* Hairline dividers — feels more institutional */
+  hr,
+  .border-t,
+  .border-b,
+  .border-border {
+    border-color: hsl(var(--border) / 0.6);
+  }
+
+  /* Calmer focus ring */
+  :focus-visible {
+    outline: 1px solid hsl(var(--primary) / 0.5);
+    outline-offset: 3px;
+  }
+}
+
+@layer utilities {
+  /* Eyebrow / kicker label — small caps, wide tracking */
+  .eyebrow {
+    font-family: var(--font-sans);
+    font-size: 0.6875rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: hsl(var(--muted-foreground));
+  }
+
+  /* Editorial body — for long-form prose */
+  .text-editorial-body {
+    font-size: 1.0625rem;
+    line-height: 1.8;
+    letter-spacing: 0.005em;
+    color: hsl(var(--text-secondary));
+  }
+
+  /* Soft luxury shadow — barely there */
+  .shadow-quiet {
+    box-shadow: 0 1px 2px hsl(var(--foreground) / 0.04),
+                0 8px 24px -12px hsl(var(--foreground) / 0.08);
+  }
+
+  /* Hairline border helper */
+  .border-hairline {
+    border-width: 1px;
+    border-color: hsl(var(--border) / 0.6);
+  }
+}
