@@ -1,6 +1,19 @@
 ---
 import '../styles/global.css';
 import { Toaster } from '../components/ui/toaster';
+import Navigation from '../components/Navigation';
+import Breadcrumbs, { getBreadcrumbSchema } from '../components/Breadcrumbs';
+import ConsultationCTA from '../components/ConsultationCTA';
+import Footer from '../components/Footer';
+import FloatingAdvisorCTA from '../components/FloatingAdvisorCTA';
+
+interface Props {
+	showBreadcrumbs?: boolean;
+}
+
+const { showBreadcrumbs = true } = Astro.props;
+const currentPath = Astro.url.pathname;
+const schema = showBreadcrumbs ? getBreadcrumbSchema(currentPath) : null;
 ---
 
 <html lang="en">
@@ -12,9 +25,19 @@ import { Toaster } from '../components/ui/toaster';
 		<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
 		<script src="https://analytics.ahrefs.com/analytics.js" data-key="U5p3QWN6cwWml7hdiLpW7g" async></script>
 		<slot name="head" />
+		{schema && <script type="application/ld+json" set:html={JSON.stringify(schema)} />}
 	</head>
 	<body>
-		<slot />
+		<div class="min-h-screen bg-background">
+			<Navigation currentPath={currentPath} client:load />
+			<main>
+				{showBreadcrumbs && <Breadcrumbs currentPath={currentPath} />}
+				<slot />
+			</main>
+			<ConsultationCTA client:load />
+			<Footer />
+			<FloatingAdvisorCTA client:load />
+		</div>
 		<Toaster client:load />
 	</body>
 </html>

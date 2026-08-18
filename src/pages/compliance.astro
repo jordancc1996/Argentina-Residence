@@ -1,0 +1,41 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ComplianceContent from '../components/ComplianceContent';
+
+const title = 'Compliance and Disclosures | Argentina Residence';
+const description = 'Compliance disclosures, AML/KYC policy, and terms of service for Argentina Residence Advisory.';
+const canonical = 'https://argentinaresidence.com/compliance';
+const ogImage = 'https://argentinaresidence.com/og-image.jpg';
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  name: "Compliance and Disclosures",
+  description: "Compliance disclosures, AML/KYC policy, and terms of service for Argentina Residence Advisory.",
+  publisher: {
+    "@type": "Organization",
+    name: "Argentina Residence",
+  },
+};
+---
+
+<Layout>
+	<title slot="head">{title}</title>
+	<meta slot="head" name="description" content={description} />
+	<link slot="head" rel="canonical" href={canonical} />
+	<meta slot="head" name="robots" content="index, follow" />
+	<meta slot="head" property="og:type" content="website" />
+	<meta slot="head" property="og:site_name" content="Argentina Residence" />
+	<meta slot="head" property="og:title" content={title} />
+	<meta slot="head" property="og:description" content={description} />
+	<meta slot="head" property="og:url" content={canonical} />
+	<meta slot="head" property="og:image" content={ogImage} />
+	<meta slot="head" property="og:image:width" content="1200" />
+	<meta slot="head" property="og:image:height" content="630" />
+	<meta slot="head" property="og:locale" content="en_US" />
+	<meta slot="head" name="twitter:card" content="summary_large_image" />
+	<meta slot="head" name="twitter:title" content={title} />
+	<meta slot="head" name="twitter:description" content={description} />
+	<meta slot="head" name="twitter:image" content={ogImage} />
+	<script slot="head" type="application/ld+json" set:html={JSON.stringify(schema)} />
+	<ComplianceContent />
+</Layout>

@@ -1,0 +1,43 @@
+---
+import Layout from '../layouts/Layout.astro';
+import LuxuryContactCTA from '../components/LuxuryContactCTA';
+
+const title = 'Free Consultation | Argentina Residence';
+const description = 'Schedule your free Argentina residency consultation. Get expert guidance on investment options and application process.';
+const canonical = 'https://argentinaresidence.com/contact';
+const ogImage = 'https://argentinaresidence.com/og-image.jpg';
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": "Contact Argentina Residence",
+  "description": "Get in touch for information about Argentina residency by investment",
+  "url": "https://argentinaresidence.com/contact",
+  "mainEntity": {
+    "@type": "Organization",
+    "name": "Argentina Residence",
+    "url": "https://argentinaresidence.com"
+  }
+};
+---
+
+<Layout showBreadcrumbs={false}>
+	<title slot="head">{title}</title>
+	<meta slot="head" name="description" content={description} />
+	<link slot="head" rel="canonical" href={canonical} />
+	<meta slot="head" name="robots" content="index, follow" />
+	<meta slot="head" property="og:type" content="website" />
+	<meta slot="head" property="og:site_name" content="Argentina Residence" />
+	<meta slot="head" property="og:title" content={title} />
+	<meta slot="head" property="og:description" content={description} />
+	<meta slot="head" property="og:url" content={canonical} />
+	<meta slot="head" property="og:image" content={ogImage} />
+	<meta slot="head" property="og:image:width" content="1200" />
+	<meta slot="head" property="og:image:height" content="630" />
+	<meta slot="head" property="og:locale" content="en_US" />
+	<meta slot="head" name="twitter:card" content="summary_large_image" />
+	<meta slot="head" name="twitter:title" content={title} />
+	<meta slot="head" name="twitter:description" content={description} />
+	<meta slot="head" name="twitter:image" content={ogImage} />
+	<script slot="head" type="application/ld+json" set:html={JSON.stringify(schema)} />
+	<LuxuryContactCTA client:load />
+</Layout>
