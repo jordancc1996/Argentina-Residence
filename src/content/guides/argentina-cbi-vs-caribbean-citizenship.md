@@ -1,0 +1,69 @@
+---
+title: vs Caribbean Citizenship
+slug: argentina-cbi-vs-caribbean-citizenship
+seoTitle: "Argentina CBI vs Caribbean Citizenship - Dominica and Grenada"
+seoDescription: "Argentina CBI vs Caribbean citizenship is a comparison of live Dominica and Grenada donation programs with Argentina's unpublished route under Decree 524/2025."
+heroTitle: Argentina CBI vs Caribbean Citizenship
+subtitle: Dominica and Grenada
+statusBanner: Applications are not open in Argentina. Dominica and Grenada citizenship-by-investment units are currently processing files. Argentina's investment citizenship route under Decree 524/2025 is not accepting applications.
+datePublished: "2026-08-19"
+dateModified: "2026-08-19"
+---
+
+Argentina CBI vs Caribbean citizenship is not a choice between two open filing windows as of August 2026. Dominica and Grenada run operating citizenship-by-investment units that accept donation or approved-project capital and issue passports without a physical-residency stay. Argentina's pathway is a different legal structure: naturalization through a relevant investment under Decree 524/2025, administered by the Agencia de Programas de Ciudadanía por Inversión (APCI). That Argentine file cannot be lodged while operational protocols remain unpublished.
+
+This page compares those two Caribbean programs with the Argentine route as this site currently describes it. It does not cover other regional or European investment-migration options. For program structure independent of any Caribbean comparison, see the [Argentina Golden Visa Program](/guides/argentina-golden-visa-program) guide. Return to [View All Guides](/resources) for the rest of the Investor Guides set.
+
+## Operating Caribbean Programs versus an Unpublished Argentine File
+
+Caribbean citizenship-by-investment programs are donation or approved-investment routes to a passport. The applicant files with a statutory unit (in Dominica, the Citizenship by Investment Unit; in Grenada, the Investment Migration Agency), completes due diligence, pays a government contribution or buys a qualifying project interest, and, if approved, is naturalized. Those units are established and currently operating. Typical Caribbean CBI rules do not require the applicant to live in the country before or after the grant.
+
+Argentina's program, once active, is not a donation-for-passport statute of that kind. Decree 524/2025 and Decree 366/2025 describe citizenship through a relevant, productive investment, with multi-agency review and a stated decision window after a certified file. This site's expected investment figure is $500,000 USD, subject to final regulation. The [launch-date research note](/research/argentina-citizenship-by-investment-launch-date) records that, after the April 2026 tender cancellation, application procedures and due diligence protocols had still not been defined. That status has not changed for this comparison.
+
+Three comparison points hold across both Caribbean programs and the unpublished Argentine route:
+
+- Investment structure. Caribbean files are typically a non-refundable contribution to a government fund, or a hold in an approved real-estate project. Argentina is expected to require a qualifying productive asset (this site lists real estate, designated government bonds, or an active Argentine business). The $500,000 figure on this site is an expected Argentine floor, not a Caribbean donation amount.
+- Processing. Caribbean units measure time in months from a complete submission. This site states a 30-business-day Argentine decision window after certification. That Argentine clock does not run until APCI is processing files. See [application process timeline](/faq/application-process-timeline).
+- Physical presence. Caribbean CBI typically has no stay requirement. This site also describes the Argentine investment route as not requiring prior residence or relocation. Ordinary two-year Argentine naturalization is a different track. See [residency requirements](/faq/residency-requirements).
+
+Passport strength is treated under each country heading below. This site states that an Argentine passport provides visa-free or visa-on-arrival access to over 170 countries, including the Schengen Area, the United Kingdom, and Japan. Caribbean CBI passports provide fewer destinations than that figure. Exact Caribbean counts move with bilateral visa policy and are not restated as a single number here. See [visa-free travel](/faq/visa-free-travel).
+
+How an Argentine file would be screened, once one exists, is on the [due diligence process](/guides/argentina-citizenship-investment-due-diligence) guide. Caribbean units already run that screening today. Argentina does not.
+
+## Argentina CBI vs Dominica Citizenship
+
+Argentina CBI vs Dominica citizenship is a comparison between an operating Economic Diversification Fund (and approved real-estate) program and an unpublished Argentine investment naturalization.
+
+Dominica's citizenship-by-investment program has been in place since 1993. The Citizenship by Investment Unit accepts applications, conducts due diligence, and grants citizenship. This site's launch-date research note records that Dominica processed over 30,000 applications in four years. That volume is evidence of an operating unit, not a reason to treat Argentine filings as open.
+
+Investment threshold. After the 2024 Caribbean price alignment, published Dominica Economic Diversification Fund donations are widely reported as USD 200,000 for a single applicant and USD 250,000 for a main applicant plus up to three family members, plus government and due-diligence fees. An approved real-estate route also exists at a published USD 200,000 project minimum, with a hold period. Those figures are Dominica's published donation and project schedules. They are not Argentina's. Argentina's expected qualifying investment on this site remains $500,000 USD, subject to final regulation, in a productive asset rather than a contribution to a foreign government fund. Verify Dominica's current schedule with the Citizenship by Investment Unit before relying on any brochure number.
+
+Processing time. Dominica's unit processes complete files in a window commonly described as roughly three to six months, including due diligence. Argentina's stated 30-business-day window is a post-certification target on this site, and it is not running. A Dominica file can be filed now. An Argentine file cannot.
+
+Passport strength. A Dominican CBI passport is a currently issuable travel document. Visa-free totals for that passport sit below this site's Argentine figure of over 170 destinations. A documented constraint is United Kingdom access: the UK revoked visa-free short stays for Dominican passport holders in July 2023, so UK travel now requires a visitor visa. Dominica is not a party to a US E-2 investor-visa treaty. An Argentine passport, when issued through the investment route, is described on this site as including Schengen, the United Kingdom, and Japan among visa-free or visa-on-arrival destinations. That Argentine passport is not available through APCI today.
+
+Physical presence. Dominica CBI does not require the applicant to reside in Dominica. That is a live rule of an operating program. Argentina's investment route is expected to follow the same pattern once it is active. The difference at the moment is operational status, not a published Argentine stay quota that Dominica lacks.
+
+## Argentina CBI vs Grenada Citizenship
+
+Argentina CBI vs Grenada citizenship is a comparison between an operating National Transformation Fund (and approved real-estate) program and the same unpublished Argentine investment naturalization.
+
+Grenada's citizenship-by-investment program has operated since 2013 under the Investment Migration Agency. It is an active filing channel. Applicants complete due diligence, make a qualifying contribution or project investment, and, if approved, receive Grenadian citizenship. No physical-residency stay is required.
+
+Investment threshold. Published Grenada National Transformation Fund donations are widely reported as USD 235,000 covering a single applicant or a family of up to four, plus fees. An approved real-estate route is published at a higher project minimum (commonly cited as USD 270,000 plus a government contribution). Those are Grenada's schedules. Argentina's expected figure on this site is $500,000 USD in a qualifying Argentine asset, subject to final regulation. Confirm Grenada's current thresholds with the Investment Migration Agency. Do not treat either country's number as a substitute for the other's.
+
+Processing time. Grenada's agency has stated an approval target measured in business days subject to due diligence and receipt of funds. Practitioner timelines for a complete file through to a passport are commonly described in a range of about four to six months. That is an operating calendar. Argentina's 30-business-day figure remains a stated target for a certified APCI file that cannot yet be submitted.
+
+Passport strength. A Grenadian CBI passport is issuable now. Visa-free counts for that passport sit below this site's Argentine figure of over 170 destinations. Two mobility facts that distinguish Grenada from Dominica, and that do not require inventing a destination total, are: Grenada retains United Kingdom short-stay access that Dominica lost in 2023, and Grenada is the Caribbean citizenship-by-investment program with a US E-2 investor-visa treaty. An Argentine passport, as described on this site, includes Schengen, the United Kingdom, and Japan. Argentine nationality is not a US E-2 treaty nationality. E-2 eligibility, if it matters to a given applicant, is a US immigration question and is not created by an Argentine file.
+
+Physical presence. Grenada CBI does not require residence in Grenada. Argentina's unpublished investment route is also described on this site as not requiring relocation. Again, the live difference is that Grenada is processing files and Argentina is not.
+
+## What This Comparison Does Not Decide
+
+Choosing between an operating Caribbean donation program and a future Argentine investment file is a sequencing decision, not a ranking of two open counters.
+
+A Dominica or Grenada application can be filed under rules those units publish today. An Argentine application cannot. Anyone who needs a second passport on a months-long Caribbean calendar is using a product that exists. Anyone whose objective is Argentine nationality and the mobility this site attributes to an Argentine passport is waiting on APCI, not on a Caribbean unit's current fee schedule.
+
+The two tracks do not substitute for each other. A Grenadian or Dominican passport does not become Argentine nationality. An Argentine investment, when one can be made, does not complete a Caribbean CBI file. Due diligence already run by a Caribbean unit is not an Argentine APCI review. Capital paid as a Caribbean government contribution is not a qualifying Argentine productive investment.
+
+Until Argentina publishes operational regulations and opens a filing channel, the accurate statement of Argentina CBI vs Caribbean citizenship is: Caribbean programs in Dominica and Grenada are live donation and approved-project routes with no physical-residency requirement; Argentina's route is a different legal structure under Decree 524/2025 and is not live. For how an Argentine file is expected to be reviewed once one exists, see the [due diligence process](/guides/argentina-citizenship-investment-due-diligence). For the rest of the Investor Guides set, return to [View All Guides](/resources).

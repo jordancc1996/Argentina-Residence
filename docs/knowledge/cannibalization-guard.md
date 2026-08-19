@@ -31,6 +31,7 @@ guide ≈ overview ≈ explained ≈ how-it-works ≈ complete-guide ≈ what-is
 | `/guides/argentina-citizenship-investment-due-diligence` | argentina-citizenship-investment-due-diligence | argentina citizenship by investment due diligence process | source of funds requirements; net worth requirements; argentina citizenship by investment for crypto investors | due diligence; source of funds; net worth; crypto investors |
 | `/guides/argentina-citizenship-investment-business-sale` | argentina-citizenship-investment-business-sale | argentina citizenship by investment after selling a business | argentina citizenship by investment for startup exits; using company proceeds; argentina citizenship by investment for tech founders | business sale; startup exits; company proceeds; tech founders |
 | `/guides/argentina-citizenship-investment-us-visa-backlog` | argentina-citizenship-investment-us-visa-backlog | argentina citizenship by investment before us visa backlog ends | EB-5 queue timing; employment-based immigrant visa wait | US immigrant-visa backlog; visa bulletin wait (this page does NOT own the general American-investor pitch; that remains `/research/argentina-citizenship-investment-american-investors`) |
+| `/guides/argentina-cbi-vs-caribbean-citizenship` | argentina-cbi-vs-caribbean-citizenship | argentina cbi vs caribbean citizenship | argentina cbi vs dominica citizenship; argentina cbi vs grenada citizenship | Caribbean CBI comparison (Dominica, Grenada). Do not publish separate Dominica or Grenada URLs. This page does NOT own Portugal, Greece, or Turkey comparisons. |
 | `/program` | program | argentina residency by investment | golden visa program page | (hub, not article) |
 
 ---
@@ -50,9 +51,10 @@ guide ≈ overview ≈ explained ≈ how-it-works ≈ complete-guide ≈ what-is
 | `/guides/argentina-citizenship-investment-due-diligence` | What the Due Diligence Process Is Expected to Involve; Source of Funds Documentation; Net Worth Requirements; Argentina Citizenship by Investment for Crypto Investors |
 | `/guides/argentina-citizenship-investment-business-sale` | Using Company Proceeds Toward a Qualifying Investment; Argentina Citizenship by Investment for Startup Exits; Tech Founders; Timing After a Liquidity Event |
 | `/guides/argentina-citizenship-investment-us-visa-backlog` | What a US Immigrant Visa Backlog Is; Argentina Citizenship by Investment as a Parallel Track; What a Parallel Track Does Not Change in a US Case; Timing: Two Calendars, Not One Deadline |
+| `/guides/argentina-cbi-vs-caribbean-citizenship` | Operating Caribbean Programs versus an Unpublished Argentine File; Argentina CBI vs Dominica Citizenship; Argentina CBI vs Grenada Citizenship; What This Comparison Does Not Decide |
 
 ---
 
 ## Proposed cluster log (2026-08-19, not published)
 
-See conversation analysis. Published after this table: `argentina-citizenship-investment-due-diligence`, `argentina-citizenship-investment-business-sale`, and `argentina-citizenship-investment-us-visa-backlog` (2026-08-19). Remaining approved comparison slugs are not yet published.
+See conversation analysis. Published after this table: `argentina-citizenship-investment-due-diligence`, `argentina-citizenship-investment-business-sale`, `argentina-citizenship-investment-us-visa-backlog`, and `argentina-cbi-vs-caribbean-citizenship` (2026-08-19). Remaining approved comparison slugs (Greece, Turkey, Panama, Paraguay) are not yet published. Portugal comparison remains `/industry-news/argentina-citizenship-investment-vs-portugal-golden-visa` (not this Caribbean page).
