@@ -1,4 +1,5 @@
 ---
+import { getCollection } from 'astro:content';
 import '../styles/global.css';
 import { Toaster } from '../components/ui/toaster';
 import Navigation from '../components/Navigation';
@@ -15,6 +16,18 @@ interface Props {
 const { showBreadcrumbs = true, showChrome = true } = Astro.props;
 const currentPath = Astro.url.pathname;
 const schema = showChrome && showBreadcrumbs ? getBreadcrumbSchema(currentPath) : null;
+const guideEntries = showChrome ? await getCollection('guides') : [];
+const guides = [...guideEntries]
+	.sort((a, b) => {
+		const ao = a.data.order ?? Number.POSITIVE_INFINITY;
+		const bo = b.data.order ?? Number.POSITIVE_INFINITY;
+		if (ao !== bo) return ao - bo;
+		return a.data.title.localeCompare(b.data.title);
+	})
+	.map((entry) => ({
+		title: entry.data.title,
+		href: `/guides/${entry.data.slug}`,
+	}));
 ---
 
 <html lang="en">
@@ -30,7 +43,7 @@ const schema = showChrome && showBreadcrumbs ? getBreadcrumbSchema(currentPath) 
 	</head>
 	<body>
 		<div class="min-h-screen bg-background">
-			{showChrome && <Navigation currentPath={currentPath} client:load />}
+			{showChrome && <Navigation currentPath={currentPath} guides={guides} client:load />}
 			<main>
 				{showChrome && showBreadcrumbs && <Breadcrumbs currentPath={currentPath} />}
 				<slot />

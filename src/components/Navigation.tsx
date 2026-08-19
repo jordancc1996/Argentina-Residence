@@ -1,4 +1,13 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, type CSSProperties } from "react";
+import { ChevronDown } from "lucide-react";
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from "@/components/ui/navigation-menu";
 
 const navLinks = [
   { path: "/", label: "Home" },
@@ -9,9 +18,28 @@ const navLinks = [
   { path: "/contact", label: "Contact Us" },
 ];
 
-const Navigation = ({ currentPath }: { currentPath: string }) => {
+const GUIDES_HUB_HREF = "/resources";
+
+export type GuideNavItem = {
+  title: string;
+  href: string;
+};
+
+const pathMatches = (currentPath: string, href: string) =>
+  currentPath === href || currentPath === `${href}/`;
+
+const Navigation = ({
+  currentPath,
+  guides,
+}: {
+  currentPath: string;
+  guides: GuideNavItem[];
+}) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [guidesExpanded, setGuidesExpanded] = useState(false);
+
+  const isGuidesSectionActive = guides.some((guide) => pathMatches(currentPath, guide.href));
 
   useEffect(() => {
     const onScroll = () => setIsScrolled(window.scrollY > 100);
@@ -25,7 +53,25 @@ const Navigation = ({ currentPath }: { currentPath: string }) => {
     return () => { document.body.style.overflow = ""; };
   }, [isOpen]);
 
+  useEffect(() => {
+    if (!isOpen) setGuidesExpanded(false);
+  }, [isOpen]);
+
   const toggle = useCallback(() => setIsOpen((v) => !v), []);
+
+  const guideLinkStyle = (href: string): CSSProperties => {
+    const isActive = pathMatches(currentPath, href);
+    return {
+      fontFamily: "'Playfair Display', Georgia, serif",
+      fontSize: 18,
+      fontWeight: 400,
+      letterSpacing: "0.01em",
+      color: isActive ? "hsl(45, 29%, 65%)" : "rgba(255,255,255,0.92)",
+      lineHeight: 1.4,
+      textDecoration: "none",
+      paddingBlock: 8,
+    };
+  };
 
   return (
     <>
@@ -55,6 +101,61 @@ const Navigation = ({ currentPath }: { currentPath: string }) => {
 
           {/* Right side */}
           <div className="flex items-center gap-4">
+            <div className="hidden md:block">
+              <NavigationMenu viewportAlign="end" viewportClassName="mt-2 overflow-hidden rounded-none border-[hsl(150,3%,17%)] bg-[hsla(150,5%,6%,0.95)] text-white shadow-none backdrop-blur-[8px]">
+                <NavigationMenuList>
+                  <NavigationMenuItem>
+                    <NavigationMenuTrigger
+                      className="h-auto rounded-none bg-transparent px-2 py-2 text-white hover:bg-transparent hover:text-white/80 focus:bg-transparent focus:text-white data-[state=open]:bg-transparent data-[state=open]:text-white/80"
+                      style={{
+                        fontFamily: "'Montserrat', sans-serif",
+                        fontWeight: 500,
+                        fontSize: 17,
+                        letterSpacing: "0.35px",
+                      }}
+                    >
+                      Investor Guides
+                    </NavigationMenuTrigger>
+                    <NavigationMenuContent>
+                      <ul className="m-0 flex min-w-[280px] list-none flex-col p-0">
+                        {guides.map((guide) => (
+                          <li key={guide.href}>
+                            <NavigationMenuLink asChild>
+                              <a
+                                href={guide.href}
+                                className="block px-6 transition-opacity duration-[250ms] ease-in-out hover:opacity-70"
+                                style={guideLinkStyle(guide.href)}
+                              >
+                                {guide.title}
+                              </a>
+                            </NavigationMenuLink>
+                          </li>
+                        ))}
+                        <li
+                          style={{
+                            height: 1,
+                            backgroundColor: "hsla(45, 29%, 65%, 0.14)",
+                            marginInline: 24,
+                          }}
+                        />
+                        <li>
+                          <NavigationMenuLink asChild>
+                            <a
+                              href={GUIDES_HUB_HREF}
+                              className="block px-6 transition-opacity duration-[250ms] ease-in-out hover:opacity-70"
+                              style={guideLinkStyle(GUIDES_HUB_HREF)}
+                            >
+                              View All Guides
+                            </a>
+                          </NavigationMenuLink>
+                        </li>
+                      </ul>
+                    </NavigationMenuContent>
+                  </NavigationMenuItem>
+                </NavigationMenuList>
+              </NavigationMenu>
+            </div>
+
             {/* Contact pill */}
             <a
               href="/contact"
@@ -188,6 +289,76 @@ const Navigation = ({ currentPath }: { currentPath: string }) => {
                       backgroundColor: "hsla(45, 29%, 65%, 0.14)",
                     }}
                   />
+                  {item.path === "/program" && (
+                    <div className="py-1">
+                      <button
+                        type="button"
+                        aria-expanded={guidesExpanded}
+                        aria-controls="investor-guides-submenu"
+                        onClick={() => setGuidesExpanded((v) => !v)}
+                        className="flex w-full items-center justify-between bg-transparent p-0 text-left transition-opacity duration-[250ms] ease-in-out hover:opacity-70"
+                        style={{
+                          fontFamily: "'Playfair Display', Georgia, serif",
+                          fontSize: 22,
+                          fontWeight: 400,
+                          letterSpacing: "0.01em",
+                          color: isGuidesSectionActive
+                            ? "hsl(45, 29%, 65%)"
+                            : "rgba(255,255,255,0.92)",
+                          lineHeight: 1.4,
+                          paddingBlock: 10,
+                          cursor: "pointer",
+                          border: "none",
+                        }}
+                      >
+                        Investor Guides
+                        <ChevronDown
+                          aria-hidden="true"
+                          className="h-4 w-4 shrink-0 transition-transform duration-300"
+                          style={{
+                            transform: guidesExpanded ? "rotate(180deg)" : "rotate(0deg)",
+                            color: isGuidesSectionActive
+                              ? "hsl(45, 29%, 65%)"
+                              : "rgba(255,255,255,0.92)",
+                          }}
+                        />
+                      </button>
+                      <ul
+                        id="investor-guides-submenu"
+                        hidden={!guidesExpanded}
+                        className="m-0 list-none p-0"
+                      >
+                        {guides.map((guide) => (
+                          <li key={guide.href}>
+                            <a
+                              href={guide.href}
+                              onClick={() => setIsOpen(false)}
+                              className="block pl-4 transition-opacity duration-[250ms] ease-in-out hover:opacity-70"
+                              style={guideLinkStyle(guide.href)}
+                            >
+                              {guide.title}
+                            </a>
+                          </li>
+                        ))}
+                        <li>
+                          <a
+                            href={GUIDES_HUB_HREF}
+                            onClick={() => setIsOpen(false)}
+                            className="block pl-4 transition-opacity duration-[250ms] ease-in-out hover:opacity-70"
+                            style={guideLinkStyle(GUIDES_HUB_HREF)}
+                          >
+                            View All Guides
+                          </a>
+                        </li>
+                      </ul>
+                      <div
+                        style={{
+                          height: 1,
+                          backgroundColor: "hsla(45, 29%, 65%, 0.14)",
+                        }}
+                      />
+                    </div>
+                  )}
                 </li>
               );
             })}
