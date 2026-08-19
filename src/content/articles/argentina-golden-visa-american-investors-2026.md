@@ -72,7 +72,7 @@ The cost of living in Argentina is estimated to be **60%+ lower** than in the Un
 
 Argentina's entry into the CBI market is particularly significant given the limited options currently available in South America. The region has historically lagged behind the Caribbean and Europe in offering investment migration pathways.
 
-Only Panama offers a permanent residency program through real estate investment within South America. Argentina's program is fully expected to be highly sought after precisely because it fills a significant gap in the South American CBI market.
+Only [Panama](/guides/argentina-citizenship-investment-vs-panama) offers a permanent residency program through real estate investment within South America. Argentina's program is fully expected to be highly sought after precisely because it fills a significant gap in the South American CBI market.
 
 ## Conclusion
 

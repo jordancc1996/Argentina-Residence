@@ -1,0 +1,69 @@
+---
+title: vs Panama
+slug: argentina-citizenship-investment-vs-panama
+seoTitle: "Argentina Citizenship by Investment vs Panama - Friendly Nations and Qualified Investor Residence"
+seoDescription: "Argentina citizenship by investment vs Panama compares live Panamanian investor residence with Argentina's unpublished nationality route under Decree 524/2025."
+heroTitle: Argentina Citizenship by Investment vs Panama
+subtitle: Friendly Nations and Qualified Investor Residence
+statusBanner: Applications are not open in Argentina. Panama's Friendly Nations Visa and Qualified Investor Visa are operating residence routes. Argentina's investment citizenship route under Decree 524/2025 is not accepting applications.
+datePublished: "2026-08-19"
+dateModified: "2026-08-19"
+---
+
+Argentina citizenship by investment vs Panama is not a comparison of two open nationality windows as of August 2026. Panama runs operating residence categories, including the Friendly Nations Visa, the Qualified Investor Visa, and real-estate routes into Panamanian permanent residence. Those files produce a right to live in Panama. They do not produce Panamanian nationality at approval. Argentina's pathway, as this site describes it, is nationality through a relevant investment under Decree 524/2025, administered by the Agencia de Programas de Ciudadanía por Inversión (APCI). That Argentine file cannot be lodged while operational protocols remain unpublished.
+
+This page stays on Panama: Friendly Nations, qualified-investor, and real-estate permanent residence, the five-year naturalization clock, the dollar economy, and the fact that Panama is not a Mercosur member. It is not a regional residency-by-investment survey. For Argentine program structure independent of Panama, see the [Argentina Golden Visa Program](/guides/argentina-golden-visa-program) guide. Return to [View All Guides](/resources) for the rest of the Investor Guides set.
+
+## Panama Residence Files, Not Immediate Nationality
+
+Argentina cbi vs panama residency is a category mismatch if the Panama side is read as a passport program. Panamanian investment and friendly-nations visas are residency-first. Citizenship, if it happens, is a later naturalization application after years of permanent residence, under Panamanian nationality law, with Spanish and other conditions that Migración and the executive apply at that later stage. Paying for a Panama property or a Friendly Nations economic tie does not buy a Panamanian passport.
+
+Argentina, once APCI is processing, is described on this site as nationality through a relevant investment, not a Panamanian-style residence carnet that later may convert. Until APCI opens, that nationality outcome is a status description, not a filing. The [launch-date research note](/research/argentina-citizenship-by-investment-launch-date) records that, after the April 2026 tender cancellation, application procedures and due diligence protocols had still not been defined.
+
+A one-line aside on this site already treated Panama as a real-estate permanent-residence option in the region. That sentence now points here: [Argentina Golden Visa 2026 for American investors](/research/argentina-golden-visa-american-investors-2026).
+
+## Panama Friendly Nations Visa
+
+The Panama Friendly Nations Visa (Visa de Naciones Amigas) is an operating residence category for nationals of countries on Panama's published friendly-nations list. Eligibility is nationality plus an economic tie to Panama. Current professional summaries describe that tie as employment with a Panamanian company, a Panamanian real-estate purchase at a commonly cited floor of USD 200,000, or a fixed-term deposit in a Panamanian bank at a similar floor, typically held for a stated term. Confirm the live list of countries and the live economic-tie schedule with Panamanian counsel and Migración. Lists and floors move.
+
+The Friendly Nations file is commonly a two-step residence product: a provisional (often two-year) permit, then an application to convert to permanent residence if the original economic tie still holds. That is not immediate permanent residence, and it is not nationality.
+
+Argentina has no published Friendly Nations analogue. Decree 524/2025 does not create a nationality-list visa. This site's expected Argentine figure remains $500,000 USD, subject to final regulation, in a productive Argentine asset. See [investment requirements](/faq/investment-requirements). A USD 200,000 Panama Friendly Nations property or deposit is not an APCI-certified relevant investment.
+
+## Panama Qualified Investor Visa
+
+The Panama Qualified Investor Visa (Visa de Inversionista Calificado) is a separate, operating category aimed at a larger investment and, on published accounts, at permanent residence from approval rather than a two-year provisional step. It is commonly traced to Executive Decree 722 of 15 October 2020. Nationality of a friendly nation is not the gate. The gate is the qualifying investment, funded from abroad, held unencumbered for a stated term (commonly five years).
+
+Published 2026 summaries of the qualifying routes:
+
+- Real estate in Panama, currently cited at a USD 300,000 floor, with a published increase to USD 500,000 from 15 October 2026. Treat that October date as a Panama statutory calendar for this visa, not as an Argentine launch date.
+- Securities listed on the Panama Stock Exchange, commonly cited at USD 500,000.
+- A fixed-term deposit in a Panamanian bank, commonly cited at USD 750,000 for a multi-year term.
+
+Verify the current decree text before treating any brochure as the filing rule. The October 2026 real-estate increase, if it takes effect as published, would put the Panama Qualified Investor property floor next to this site's expected Argentine $500,000 figure. Headline proximity is not legal equivalence. One number is a live Panamanian permanent-residence investment. The other is an unpublished Argentine nationality floor.
+
+Qualified Investor processing is an operating Panamanian calendar. Practitioner accounts describe a short administrative target once a complete file is in, measured in business days or weeks, not years. Argentina's stated 30-business-day window is a post-certification target and is not running. See [application process timeline](/faq/application-process-timeline).
+
+The real-estate PR route that this comparison owns is that Qualified Investor (and, at a lower floor, Friendly Nations) property purchase: Panamanian title, Panamanian residence. It is not Argentine real estate. For how this site describes an Argentine property as a possible qualifying asset once rules exist, see [Argentina Real Estate Investment](/guides/argentina-real-estate-investment). Buying in Panama City does not create an APCI file.
+
+## Naturalization After Years of Panamanian Residence
+
+Panamanian citizenship is not issued with the residence stamp. Published accounts of ordinary naturalization describe eligibility after five years of permanent residence, subject to Spanish, good conduct, and executive discretion. Holding a Friendly Nations or Qualified Investor permit while spending little time in Panama does not, on those accounts, complete nationality. Presence and investment-hold rules for keeping the residence itself are Panama Migración questions. Confirm them on the current permit, not on a brochure.
+
+Argentina's unpublished route does not use Panama's five-year permanent-residence clock. How the Argentine decrees treat ordinary two-year residence is already written elsewhere on this site and is not restated here. See [Argentina citizenship by investment for Americans](/research/argentina-citizenship-investment-american-investors) for that waiver language.
+
+How an Argentine file would be screened, once one exists, is on the [due diligence process](/guides/argentina-citizenship-investment-due-diligence) guide. Panamanian Friendly Nations and Qualified Investor due diligence is a live Migración and investment review. Completing it does not create an Argentine file.
+
+## A Dollar Economy Outside Mercosur
+
+Panama uses the United States dollar as circulating legal tender (with the balboa at par). Bank accounts, property prices, and the Qualified Investor and Friendly Nations floors are dollar amounts. That is a Panama-specific monetary fact. Argentine nationality, if granted, does not convert Argentina into a dollar economy.
+
+Panama is not a Mercosur State Party. A Panamanian residence permit is not Mercosur nationality, and Panamanian naturalization would not be Mercosur nationality either. Argentine nationality, if APCI grants it, would be nationality of a Mercosur member. That contrast is Panama's non-membership, not a survey of other member-state residence programs. For the Mercosur-member investor-residence comparison already published on this site, see [Argentina citizenship by investment vs Paraguay Investor Pass](/guides/argentina-citizenship-investment-vs-paraguay). This page does not repeat that file.
+
+## Program Status: Open Panamanian Counters and an Unpublished Argentine File
+
+Panama is processing Friendly Nations Visa and Qualified Investor Visa applications. Property, securities, deposits, or a qualifying employment tie can support a Panamanian residence file today. The result, if granted, is Panamanian residence (provisional or permanent, depending on the category). Citizenship remains a later naturalization question after years of permanent residence.
+
+Argentina is not processing citizenship-by-investment applications. Decree 524/2025 is the legal shell. APCI has not published operational due diligence protocols or a filing portal. A Panamanian residence permit does not become Argentine nationality. An Argentine qualifying investment, when one can be made, does not complete a Panama Friendly Nations or Qualified Investor file. Dollar pricing in Panama does not open an Argentine window.
+
+Until Argentina publishes operational regulations and opens a channel, the accurate statement of Argentina citizenship by investment vs Panama is: Panama offers operating, residency-first visas (Friendly Nations, Qualified Investor, and real-estate PR) in a dollar economy that is not in Mercosur, with nationality only after years of permanent residence; Argentina describes a productive-investment nationality structure under Decree 524/2025 and is not live. For the rest of the Investor Guides set, return to [View All Guides](/resources).

@@ -81,3 +81,4 @@ Replace these temporary heroes when a real photo is provided. Do not treat the c
 - `/guides/argentina-citizenship-investment-vs-greece-golden-visa` uses `src/assets/hero-buenos-aires-night.jpg` as a temporary hero. See the PLACEHOLDER IMAGE comment in `src/pages/guides/[slug].astro`.
 - `/guides/argentina-citizenship-investment-vs-turkey` uses `src/assets/hero-buenos-aires-night.jpg` as a temporary hero. See the PLACEHOLDER IMAGE comment in `src/pages/guides/[slug].astro`.
 - `/guides/argentina-citizenship-investment-vs-paraguay` uses `src/assets/hero-buenos-aires-night.jpg` as a temporary hero. See the PLACEHOLDER IMAGE comment in `src/pages/guides/[slug].astro`.
+- `/guides/argentina-citizenship-investment-vs-panama` uses `src/assets/hero-buenos-aires-night.jpg` as a temporary hero. See the PLACEHOLDER IMAGE comment in `src/pages/guides/[slug].astro`.
