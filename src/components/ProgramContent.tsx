@@ -29,7 +29,7 @@ const ProgramContent = () => {
           <div>
             <h2 className="font-serif text-xl-editorial mb-6 tracking-wide">Investment Requirements</h2>
             <p className="text-body text-text-secondary mb-6 tracking-wide">
-              The Argentina Residency by Investment program requires a minimum investment of USD $500,000 in approved sectors including real estate, government bonds, or establishing a local business.
+              The Argentina residency by investment program is expected to require a minimum investment of $500,000 USD, subject to final regulation, in approved sectors including real estate, government bonds, or establishing a local business. APCI has not published operational regulations and is not processing applications.
             </p>
             <p className="text-body text-text-secondary tracking-wide mb-4">
               Investments must be maintained for a minimum period of three years, with clear pathways to permanent residency and eventual citizenship.

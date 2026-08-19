@@ -29,9 +29,7 @@ const GoldenVisaProgramContent = () => {
           Argentina's New Golden Visa: The 2026 Investor Guide
         </h2>
         <p className="text-editorial text-text-secondary mb-8 tracking-wide max-w-3xl mx-auto">
-          Argentina is set to launch one of South America's most attractive investor visa programs. 
-          The proposed Golden Visa offers a fast-track pathway to residency for qualified investors, 
-          with streamlined processing and exceptional benefits.
+          Argentina Golden Visa 2026 is proposed, not operating. Decree 524/2025 created the pathway; APCI has not published operational regulations or opened applications.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <a href="/argentina-golden-visa-eligibility-checker">
@@ -58,9 +56,9 @@ const GoldenVisaProgramContent = () => {
             <div className="w-16 h-16 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-4">
               <Clock className="h-8 w-8 text-gold" />
             </div>
-            <h3 className="font-serif text-lg mb-3">Fast-Track Processing</h3>
+            <h3 className="font-serif text-lg mb-3">Decision Window</h3>
             <p className="text-text-secondary text-sm">
-              Proposed 60-90 day approval timeline for qualified applicants
+              No official fast-track mechanism has been published. This site's expected decision window is 30 business days after a certified file. That clock does not run until APCI is processing applications.
             </p>
           </div>
           
@@ -104,30 +102,15 @@ const GoldenVisaProgramContent = () => {
               Investment Minimums
             </h2>
             <p className="text-body text-text-secondary mb-6 tracking-wide">
-              The proposed Golden Visa program offers multiple investment pathways to accommodate 
-              different investor profiles. All investments must be maintained for a minimum of 3 years.
+              This site's expected qualifying floor is $500,000 USD, subject to final regulation. Qualifying assets are expected to include real estate, designated government bonds, or an active Argentine business.
             </p>
             
             <div className="space-y-4 mb-8">
               <div className="flex items-start gap-3 p-4 bg-secondary/30 rounded-lg">
                 <CheckCircle className="h-5 w-5 text-gold flex-shrink-0 mt-0.5" />
                 <div>
-                  <p className="font-semibold text-text-primary">$100,000 USD</p>
-                  <p className="text-sm text-text-secondary">Real estate in approved developments</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3 p-4 bg-secondary/30 rounded-lg">
-                <CheckCircle className="h-5 w-5 text-gold flex-shrink-0 mt-0.5" />
-                <div>
-                  <p className="font-semibold text-text-primary">$250,000 USD</p>
-                  <p className="text-sm text-text-secondary">Government bonds or approved funds</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3 p-4 bg-secondary/30 rounded-lg">
-                <CheckCircle className="h-5 w-5 text-gold flex-shrink-0 mt-0.5" />
-                <div>
-                  <p className="font-semibold text-text-primary">$500,000 USD</p>
-                  <p className="text-sm text-text-secondary">Business creation with job creation</p>
+                  <p className="font-semibold text-text-primary">$500,000 USD, subject to final regulation</p>
+                  <p className="text-sm text-text-secondary">Qualifying assets expected: real estate, designated government bonds, or an active Argentine business. APCI has not published operational schedules. Applications are not open.</p>
                 </div>
               </div>
             </div>

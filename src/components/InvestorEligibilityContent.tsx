@@ -9,7 +9,7 @@ import { CheckCircle, ArrowRight, Star, Clock, Shield, Sparkles } from "lucide-r
 import eligibilityBackground from "@/assets/argentina-golden-visa-eligibility.jpg";
 
 type Step = 1 | 2 | 3 | 4;
-type InvestmentBudget = "$100k-$249k" | "$250k-$499k" | "$500k+" | "";
+type InvestmentBudget = "$below-500k" | "$500k+" | "";
 type InvestmentTimeline = "0-6months" | "6-12months" | "12+months" | "";
 type InvestmentType = "real-estate" | "bonds" | "funds" | "business" | "";
 
@@ -41,12 +41,8 @@ const InvestorEligibilityContent = () => {
   const [priorityStatus, setPriorityStatus] = useState<"standard" | "priority" | "vip">("standard");
 
   const calculatePriorityStatus = () => {
-    if (formData.budget === "$500k+" || 
-        (formData.budget === "$250k-$499k" && formData.timeline === "0-6months")) {
+    if (formData.budget === "$500k+") {
       return "vip";
-    } else if (formData.budget === "$250k-$499k" || 
-               (formData.budget === "$100k-$249k" && formData.timeline === "0-6months")) {
-      return "priority";
     }
     return "standard";
   };
@@ -78,6 +74,7 @@ const InvestorEligibilityContent = () => {
           "Accept": "application/json"
         },
         body: JSON.stringify({
+          // Budget values changed 2026-08-19: "$below-500k" | "$500k+" (was "$100k-$249k" | "$250k-$499k" | "$500k+").
           ...formData,
           priorityStatus: status,
           source: "Investor Eligibility Tool",
@@ -154,7 +151,7 @@ const InvestorEligibilityContent = () => {
                 "Your investment profile qualifies you for priority processing. You'll receive early access notifications and expedited review when applications open."
               )}
               {priorityStatus === "standard" && (
-                "Thank you for your interest in Argentina's Golden Visa. We'll notify you as soon as applications open."
+                "The amount selected is below this site's expected $500,000 USD qualifying floor, subject to final regulation. APCI has not published operational regulations and is not processing applications. We will notify you if a published threshold differs."
               )}
             </p>
             
@@ -259,35 +256,18 @@ const InvestorEligibilityContent = () => {
                 >
                   <label
                     className={`flex items-center justify-between p-6 border rounded-lg cursor-pointer transition-all ${
-                      formData.budget === "$100k-$249k"
+                      formData.budget === "$below-500k"
                         ? "border-gold bg-gold/5"
                         : "border-border hover:border-gold/50"
                     }`}
                   >
                     <div className="flex items-center gap-4">
-                      <RadioGroupItem value="$100k-$249k" id="budget-1" />
+                      <RadioGroupItem value="$below-500k" id="budget-1" />
                       <div>
-                        <p className="font-semibold">$100,000 - $249,000</p>
-                        <p className="text-sm text-text-secondary">Real estate investment tier</p>
+                        <p className="font-semibold">Below $500,000</p>
+                        <p className="text-sm text-text-secondary">Does not meet the expected qualifying floor</p>
                       </div>
                     </div>
-                  </label>
-                  
-                  <label
-                    className={`flex items-center justify-between p-6 border rounded-lg cursor-pointer transition-all ${
-                      formData.budget === "$250k-$499k"
-                        ? "border-gold bg-gold/5"
-                        : "border-border hover:border-gold/50"
-                    }`}
-                  >
-                    <div className="flex items-center gap-4">
-                      <RadioGroupItem value="$250k-$499k" id="budget-2" />
-                      <div>
-                        <p className="font-semibold">$250,000 - $499,000</p>
-                        <p className="text-sm text-text-secondary">Bonds and funds eligible</p>
-                      </div>
-                    </div>
-                    <span className="text-xs bg-gold/20 text-gold px-2 py-1 rounded-full">Priority</span>
                   </label>
                   
                   <label
@@ -298,10 +278,10 @@ const InvestorEligibilityContent = () => {
                     }`}
                   >
                     <div className="flex items-center gap-4">
-                      <RadioGroupItem value="$500k+" id="budget-3" />
+                      <RadioGroupItem value="$500k+" id="budget-2" />
                       <div>
                         <p className="font-semibold">$500,000+</p>
-                        <p className="text-sm text-text-secondary">Business creation and VIP track</p>
+                        <p className="text-sm text-text-secondary">Expected floor, subject to final regulation</p>
                       </div>
                     </div>
                     <span className="text-xs bg-gold text-primary px-2 py-1 rounded-full">VIP</span>
