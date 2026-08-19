@@ -19,7 +19,7 @@ const GoldenVisaProgramContent = () => {
         <div className="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-center gap-3 text-center">
           <Clock className="h-5 w-5 text-gold flex-shrink-0" />
           <p className="text-sm md:text-base text-text-primary">
-            <span className="font-semibold">Program Status:</span> Proposed legislation under review — Expected launch Q2 2026
+            <span className="font-semibold">Program Status:</span> Proposed legislation under review. Expected launch Q2 2026
           </p>
         </div>
       </div>
@@ -142,7 +142,7 @@ const GoldenVisaProgramContent = () => {
         </div>
       </EditorialSection>
 
-      {/* Program Timeline — Scrollytelling */}
+      {/* Program Timeline: Scrollytelling */}
       <EditorialSection centered={false} className="bg-secondary/30">
         <ScrollytellingSteps
           eyebrow="Program Timeline"

@@ -38,7 +38,7 @@ Both programs offer robust family inclusion, making them suitable for long-term 
 
 The Portugal Golden Visa allows the main applicant to include a spouse, dependent children, and dependent parents. Once Portuguese citizenship is acquired after five years, it can be passed down to future generations.
 
-The Argentina citizenship by investment family application is expected to follow a similar structure. The program will allow the inclusion of a spouse and dependent children under a single application. Because the Argentine program grants immediate citizenship, the benefits of the second passport—including regional mobility and consular protection—are conferred to the entire family unit simultaneously, without the five-year waiting period required by Portugal.
+The Argentina citizenship by investment family application is expected to follow a similar structure. The program will allow the inclusion of a spouse and dependent children under a single application. Because the Argentine program grants immediate citizenship, the benefits of the second passport, including regional mobility and consular protection, are conferred to the entire family unit simultaneously, without the five-year waiting period required by Portugal.
 
 ## Conclusion
 

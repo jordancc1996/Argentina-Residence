@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Mail, Phone } from "lucide-react";
 
 const ADVISOR_EMAIL = "rachele@argentinaresidence.com";
-const ADVISOR_PHONE_DISPLAY = "+1 (555) 000-0000"; // placeholder — awaiting confirmed number
+const ADVISOR_PHONE_DISPLAY = "+1 (555) 000-0000"; // placeholder: awaiting confirmed number
 const ADVISOR_PHONE_TEL = "+15550000000";
 
 const ConsultationCTA = () => {
@@ -55,7 +55,7 @@ const ConsultationCTA = () => {
       style={{ backgroundColor: "hsl(150, 5%, 8%)" }}
     >
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-10">
-        {/* Column 1 — Form */}
+        {/* Column 1: Form */}
         <div>
           <h3 style={headingStyle}>Start Your Residency Journey Now</h3>
           {submitted ? (
@@ -112,7 +112,7 @@ const ConsultationCTA = () => {
           )}
         </div>
 
-        {/* Column 2 — Direct Contact */}
+        {/* Column 2: Direct Contact */}
         <div>
           <h3 style={headingStyle}>Prefer to Reach Out Directly?</h3>
           <ul className="flex flex-col gap-4">

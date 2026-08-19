@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Argentina Residence Design System — Institutional Navy
+/* Argentina Residence Design System: Institutional Navy
    Inspired by HoldenFamilyOffices.com's institutional depth,
    adapted with Argentine identity. All colors in HSL.
 */
@@ -141,7 +141,7 @@
     font-family: var(--font-sans);
   }
 
-  /* Editorial heading defaults — restraint over flash */
+  /* Editorial heading defaults: restraint over flash */
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-serif);
     font-weight: 500;
@@ -262,7 +262,7 @@
 }
 
 /* === Quiet Luxury Refinements ===
-   Subtle, global polish — no structural change.
+   Subtle, global polish: no structural change.
    Inspired by private wealth firms and editorial publications.
 */
 @layer base {
@@ -284,7 +284,7 @@
     color: hsl(var(--muted-foreground));
   }
 
-  /* Hairline dividers — feels more institutional */
+  /* Hairline dividers: feels more institutional */
   hr,
   .border-t,
   .border-b,
@@ -300,7 +300,7 @@
 }
 
 @layer utilities {
-  /* Eyebrow / kicker label — small caps, wide tracking */
+  /* Eyebrow / kicker label: small caps, wide tracking */
   .eyebrow {
     font-family: var(--font-sans);
     font-size: 0.6875rem;
@@ -310,7 +310,7 @@
     color: hsl(var(--muted-foreground));
   }
 
-  /* Editorial body — for long-form prose */
+  /* Editorial body: for long-form prose */
   .text-editorial-body {
     font-size: 1.0625rem;
     line-height: 1.8;
@@ -318,7 +318,7 @@
     color: hsl(var(--text-secondary));
   }
 
-  /* Soft luxury shadow — barely there */
+  /* Soft luxury shadow: barely there */
   .shadow-quiet {
     box-shadow: 0 1px 2px hsl(var(--foreground) / 0.04),
                 0 8px 24px -12px hsl(var(--foreground) / 0.08);

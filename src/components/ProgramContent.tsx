@@ -58,7 +58,7 @@ const ProgramContent = () => {
           className="-mt-20"
           eyebrow="A Bespoke Process"
           heading="From first conversation to approved residency"
-          intro="Our advisory team guides qualified investors through every stage — discreetly, methodically, and in close coordination with licensed immigration counsel."
+          intro="Our advisory team guides qualified investors through every stage: discreetly, methodically, and in close coordination with licensed immigration counsel."
           steps={[
             {
               label: "Step 1",

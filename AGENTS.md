@@ -27,15 +27,15 @@ with client:load.
 
 Every new article MUST pass the 5-location keyword check before committing:
 
-1. TITLE — starts with keyword, format "[Keyword] - [Angle]"
+1. TITLE: starts with keyword, format "[Keyword] - [Angle]"
    No em dashes. No site name in this field.
-2. META TITLE — same as title + " | Argentina Residence"
-3. META DESCRIPTION — keyword in first 5-7 words, 150-160 chars as a
+2. META TITLE: same as title + " | Argentina Residence"
+3. META DESCRIPTION: keyword in first 5-7 words, 150-160 chars as a
    target (not a hard requirement, per the homepage exception),
    one specific number/date/dollar amount, no em dashes
-4. URL/SLUG — reflects the keyword (never change existing slugs
+4. URL/SLUG: reflects the keyword (never change existing slugs
    without explicit approval)
-5. FIRST SENTENCE — keyword in first 10 words, specific,
+5. FIRST SENTENCE: keyword in first 10 words, specific,
    no em dashes, not "This article will..." or "In this guide..."
 
 ### Cannibalization Check (Required Before Every New Article)
@@ -66,4 +66,4 @@ new slug and its owned topics.
 ## Known Issues Being Preserved
 
 - The "Work Email" field validation is a generic email regex, not a business-email restriction. This is intentional for the current migration pass. Do not "fix" it without explicit instruction.
-- The Eligibility Checker's Formcarry submission does not check response.ok on the fetch call — it only catches network-level failures, so a non-throwing error response from Formcarry still shows the user a success/completion screen. This is a pre-existing behavior on the live site, preserved intentionally during migration, not a bug introduced here.
+- The Eligibility Checker's Formcarry submission does not check response.ok on the fetch call. It only catches network-level failures, so a non-throwing error response from Formcarry still shows the user a success/completion screen. This is a pre-existing behavior on the live site, preserved intentionally during migration, not a bug introduced here.

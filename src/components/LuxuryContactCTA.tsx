@@ -23,8 +23,8 @@ const investmentInterests = [
   "Real Estate Investment",
   "Government Bonds (BOPREAL)",
   "Business or Startup Venture",
-  "Residency Only — No Investment",
-  "Not Sure Yet — Need Guidance",
+  "Residency Only, No Investment",
+  "Not Sure Yet, Need Guidance",
 ];
 
 const LuxuryContactCTA = () => {

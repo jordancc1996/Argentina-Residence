@@ -120,7 +120,7 @@ const ComplianceContent = () => {
                 For compliance-related questions, concerns, or to report suspicious activity, please contact:
               </p>
               <p>
-                <strong className="text-foreground">Argentina Residence Advisory — Compliance</strong><br />
+                <strong className="text-foreground">Argentina Residence Advisory: Compliance</strong><br />
                 Email: <a href="mailto:rachele@argentinaresidence.com" className="text-primary hover:underline">rachele@argentinaresidence.com</a>
               </p>
             </div>

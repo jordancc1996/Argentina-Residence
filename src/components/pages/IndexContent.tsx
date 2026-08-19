@@ -2,10 +2,14 @@ import Hero from "@/components/Hero";
 import EditorialSection from "@/components/EditorialSection";
 import { Button } from "@/components/ui/button";
 import { Calendar, Clock, ArrowRight } from "lucide-react";
-import heroNightImage from "@/assets/hero-buenos-aires-night.jpg";
+import GoldenVisaUpdatesSection from "@/components/GoldenVisaUpdatesSection";
+import casaRosadaFlag from "@/assets/hero-casa-rosada-flag.jpg";
+import argentinaPassport from "@/assets/argentina-passport.jpg";
 
-const heroNightSrc =
-  typeof heroNightImage === "string" ? heroNightImage : heroNightImage.src;
+const casaRosadaSrc =
+  typeof casaRosadaFlag === "string" ? casaRosadaFlag : casaRosadaFlag.src;
+const passportSrc =
+  typeof argentinaPassport === "string" ? argentinaPassport : argentinaPassport.src;
 
 export interface HomepagePost {
   id: number;
@@ -22,17 +26,38 @@ const IndexContent = ({ posts }: { posts: HomepagePost[] }) => {
   return (
     <>
       <Hero
-        title="Argentina Citizenship by Investment Requirements"
+        title="Argentina Golden Visa Updates"
         subtitle="Live and invest in South America's most dynamic economy"
-        backgroundImage={heroNightSrc}
+        backgroundImage={casaRosadaSrc}
+        imageAlt="Argentine flag at Plaza de Mayo with the Casa Rosada presidential palace"
         ctaText="Explore Your Options"
         ctaLink="/contact"
         ctaSubline="Confidential guidance for qualified investors"
       />
 
+      <EditorialSection className="pb-0">
+        <figure className="max-w-xl mx-auto">
+          <img
+            src={passportSrc}
+            alt="Argentina second passport through investment. See the Golden Visa updates."
+            className="w-full h-auto"
+            width={792}
+            height={1024}
+          />
+          <figcaption className="text-sm text-text-secondary tracking-wide mt-4">
+            Argentina second passport through investment. See the Golden Visa updates.
+          </figcaption>
+        </figure>
+        <div className="flex flex-wrap gap-4 justify-center mt-8">
+          <Button asChild variant="outline" size="lg" className="bg-white hover:bg-white/90">
+            <a href="/industry-news">See the Golden Visa Updates</a>
+          </Button>
+        </div>
+      </EditorialSection>
+
       <EditorialSection>
         <h2 className="font-serif text-xl-editorial mb-8 tracking-wide">
-          Your roadmap to Argentine residency, citizenship, and long-term investment — in one place.
+          Your roadmap to Argentine residency, citizenship, and long-term investment, in one place.
         </h2>
         <p className="text-editorial text-text-secondary mb-8 tracking-wide">
           Argentina Residence is an independent advisory resource built with licensed immigration attorneys. We help qualified investors understand the program, evaluate their options, and take the right next step.
@@ -49,6 +74,8 @@ const IndexContent = ({ posts }: { posts: HomepagePost[] }) => {
           </Button>
         </div>
       </EditorialSection>
+
+      <GoldenVisaUpdatesSection />
 
       <EditorialSection className="bg-secondary/30">
         <div className="grid md:grid-cols-3 gap-12 text-left">
@@ -113,7 +140,7 @@ const IndexContent = ({ posts }: { posts: HomepagePost[] }) => {
           <div className="border-l-2 border-gold pl-6">
             <h3 className="font-serif text-lg-editorial mb-3 tracking-wide">Transparent and Independent</h3>
             <p className="text-sm text-text-secondary tracking-wide">
-              Argentina Residence is an independent advisory practice — we provide unbiased intelligence to help you make informed decisions about your residency journey.
+              Argentina Residence is an independent advisory practice. We provide unbiased intelligence to help you make informed decisions about your residency journey.
             </p>
           </div>
         </div>

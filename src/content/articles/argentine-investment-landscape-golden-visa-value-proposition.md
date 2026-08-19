@@ -18,11 +18,11 @@ keywords:
   - RIGI
   - Buenos Aires investment
 ---
-![Patagonia mountains and lake — Argentine investment landscape](/argentine-investment-landscape.jpg)
+![Patagonia mountains and lake: Argentine investment landscape](/argentine-investment-landscape.jpg)
 
 For the past two decades, the Argentine economy has been defined by volatility, capital controls and fiscal deficits. This historical pattern is well documented with brief periods of stabilization followed by rapid inflation and currency devaluation. However, new dynamics and policy shifts indicate a departure from this historical cycle for Argentina. The current alignment of fiscal discipline, monetary tightening and deregulation presents an incredible opportunity ripe for foreign direct investment. The Argentinian Golden Visa also aims to help facilitate this capital injection and deliver Argentina into a new period of economic growth.
 
-The case for capital deployment in Argentina is no longer based solely on speculative asset pricing. It is grounded in a fundamental restructuring of the state's economic role, the removal of capital barriers and the leveraging of significant human capital assets. This shift is not rhetorical. It is evidenced by key macroeconomic indicators, legislative reforms and a renewed focus on sectors where Argentina holds a comparative global advantage. Argentina is set to introduce its Golden Visa program in the second half of 2026 — a program that will create unique opportunities for investors who are paying attention to the country now.
+The case for capital deployment in Argentina is no longer based solely on speculative asset pricing. It is grounded in a fundamental restructuring of the state's economic role, the removal of capital barriers and the leveraging of significant human capital assets. This shift is not rhetorical. It is evidenced by key macroeconomic indicators, legislative reforms and a renewed focus on sectors where Argentina holds a comparative global advantage. Argentina is set to introduce its Golden Visa program in the second half of 2026, a program that will create unique opportunities for investors who are paying attention to the country now.
 
 ## The Three Anchors of Macroeconomic Stabilization
 
@@ -30,7 +30,7 @@ The current Argentinian administration has implemented a stabilization program b
 
 ### The Fiscal Anchor & Return to Surplus
 
-The fiscal anchor is the most pronounced departure from recent history. Argentina has operated with a fiscal deficit for the better part of a century. In 2024, the government achieved a primary fiscal surplus equivalent to **1.8% of GDP** — a significant turnaround from the 2.9% deficit observed in 2023. This was accomplished through a reduction in state spending equivalent to over 5% of GDP within a single year.
+The fiscal anchor is the most pronounced departure from recent history. Argentina has operated with a fiscal deficit for the better part of a century. In 2024, the government achieved a primary fiscal surplus equivalent to **1.8% of GDP**, a significant turnaround from the 2.9% deficit observed in 2023. This was accomplished through a reduction in state spending equivalent to over 5% of GDP within a single year.
 
 The commitment to fiscal discipline has continued into 2025, with the government targeting a 1.6% primary surplus. This sustained fiscal prudence is a critical precondition for regaining access to international capital markets and lowering the country's risk premium, which has already seen a significant decline. The upfront fiscal consolidation process has been instrumental in taming high inflation and restoring confidence among domestic and international investors.
 
@@ -46,9 +46,9 @@ Argentina possesses structural assets that align with global demand trends. The 
 
 ### The Energy Sector
 
-The energy sector is a primary driver of current investment interest, centered largely on the **Vaca Muerta** shale formation — the world's second largest unconventional gas reserve and the fourth largest unconventional oil reserve. The U.S. Energy Information Administration estimates the formation contains 16 billion barrels of recoverable shale oil and 308 trillion cubic feet of recoverable natural gas.
+The energy sector is a primary driver of current investment interest, centered largely on the **Vaca Muerta** shale formation, the world's second largest unconventional gas reserve and the fourth largest unconventional oil reserve. The U.S. Energy Information Administration estimates the formation contains 16 billion barrels of recoverable shale oil and 308 trillion cubic feet of recoverable natural gas.
 
-Production in Vaca Muerta has surged, with unconventional oil output reaching a record **550,881 barrels per day in September 2025** — a 30% year-on-year increase. This boom is driven by high productivity rates and low breakeven costs. The crude oil lifted from Vaca Muerta is particularly attractive due to its light characteristics and low carbon footprint compared to other global operations.
+Production in Vaca Muerta has surged, with unconventional oil output reaching a record **550,881 barrels per day in September 2025**, a 30% year-on-year increase. This boom is driven by high productivity rates and low breakeven costs. The crude oil lifted from Vaca Muerta is particularly attractive due to its light characteristics and low carbon footprint compared to other global operations.
 
 This surge is expected to lift Argentina's energy surplus to a record **$10 billion in 2026** and transform the country from a net energy importer to a significant exporter. Additional offshore exploration near Mar del Plata and natural gas projects across Patagonia provide further capacity for energy export expansion. The country is also developing its clean energy infrastructure by utilizing high-capacity wind resources in the south and solar potential in the north, with a keen eye on small modular nuclear reactors.
 
@@ -56,7 +56,7 @@ This surge is expected to lift Argentina's energy surplus to a record **$10 bill
 
 Argentina is a central component of the Lithium Triangle and holds the world's second largest lithium reserves at **22 million tons**. The Argentinian mining sector offers substantial opportunities in lithium, copper, gold and silver.
 
-In 2025, Argentina's lithium carbonate production reached record levels with output surging 66.4% year-on-year in November alone. The country produced 74,000 metric tons of lithium carbonate equivalent in 2025 and expects to reach **130,000 tons in 2026** — a 75% increase. This rapid expansion is consolidating Argentina's role in the global energy transition and attracting significant foreign direct investment from multinational mining corporations.
+In 2025, Argentina's lithium carbonate production reached record levels with output surging 66.4% year-on-year in November alone. The country produced 74,000 metric tons of lithium carbonate equivalent in 2025 and expects to reach **130,000 tons in 2026**, a 75% increase. This rapid expansion is consolidating Argentina's role in the global energy transition and attracting significant foreign direct investment from multinational mining corporations.
 
 The mining sector also offers substantial opportunities in traditional metals. Provinces like Chubut hold massively underdeveloped silver deposits, while the shared cordillera mountain range with Chile presents enormous potential for copper and gold extraction. The government's pro-investment stance and the implementation of the Large Investment Incentive Regime are expected to further accelerate development.
 
@@ -68,7 +68,7 @@ This human capital has generated a thriving entrepreneurial ecosystem, with Arge
 
 The sector employs over 285,000 formal workers, with 80% of the workforce holding a university education. The government supports this growth through the Knowledge Economy Law, which provides tax benefits and incentives for companies engaged in software development, biotechnology, audiovisual production and other technology-driven activities.
 
-### Agribusiness — A Global Food Supplier
+### Agribusiness: A Global Food Supplier
 
 Agriculture remains a cornerstone of the Argentine economy, with over 50% of the country's land suitable for agriculture, making it a global food exporter. In 2025, the agribusiness sector achieved record exports, reaching an unprecedented **115.41 million tons**, mostly driven by strong production in soy, corn and wheat.
 

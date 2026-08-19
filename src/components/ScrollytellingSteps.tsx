@@ -21,7 +21,7 @@ interface ScrollytellingStepsProps {
 }
 
 /**
- * ScrollytellingSteps — sticky-left, scroll-highlight-right pattern.
+ * ScrollytellingSteps: sticky-left, scroll-highlight-right pattern.
  *
  * As the user scrolls, the heading stays fixed (sticky on desktop)
  * while each step card "lights up" (gold border, gold step number)

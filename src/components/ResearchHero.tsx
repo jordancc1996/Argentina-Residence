@@ -16,7 +16,7 @@ const ResearchHero = () => {
 
         <motion.div className="relative z-10 text-center max-w-4xl mx-auto px-4 md:px-8 py-20" style={{ opacity }}>
           <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white mb-8 tracking-wide leading-tight">
-            Argentina Residence Advisory —<br />Research and Intelligence
+            Argentina Residence Advisory:<br />Research and Intelligence
           </h1>
           <Separator className="mx-auto max-w-[120px] bg-primary h-[1px]" />
         </motion.div>

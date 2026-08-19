@@ -24,7 +24,7 @@ Decree 524/2025 recognizes three primary categories of qualifying investments:
 
 ### 1. Real Estate
 
-Direct purchase of Argentine real property valued at or above the minimum threshold. The property must be acquired through a registered transaction and titled in the applicant's name. Both residential and commercial properties qualify, provided they meet the minimum value requirement. Note: passive real estate holdings acquired solely for rental income — without active development, renovation, or economic contribution — may not satisfy the program's intent under the decree's guidelines (subject to final regulation).
+Direct purchase of Argentine real property valued at or above the minimum threshold. The property must be acquired through a registered transaction and titled in the applicant's name. Both residential and commercial properties qualify, provided they meet the minimum value requirement. Note: passive real estate holdings acquired solely for rental income, without active development, renovation, or economic contribution, may not satisfy the program's intent under the decree's guidelines (subject to final regulation).
 
 ### 2. Government Bonds
 
@@ -52,9 +52,9 @@ All qualifying investments must be maintained for a minimum holding period (subj
 
 The Agency for Citizenship by Investment conducts a multi-step verification process:
 
-- **Source of funds review** — documented proof that capital originates from lawful sources outside Argentina
-- **Asset valuation** — independent appraisal confirming the investment meets the minimum threshold
-- **Ongoing compliance checks** — periodic audits during the maintenance period to confirm the investment remains in place
+- **Source of funds review:** documented proof that capital originates from lawful sources outside Argentina
+- **Asset valuation:** independent appraisal confirming the investment meets the minimum threshold
+- **Ongoing compliance checks:** periodic audits during the maintenance period to confirm the investment remains in place
 
 Applicants who fail to maintain their investment or who cannot demonstrate continued compliance risk revocation of their residency or citizenship status.
 

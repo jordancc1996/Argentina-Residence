@@ -109,7 +109,7 @@ const Hero = ({
         )}
       </motion.div>
 
-      {/* Editorial scroll indicator — signals content continues below the hero */}
+      {/* Editorial scroll indicator: signals content continues below the hero */}
       <motion.div
         aria-hidden="true"
         className="absolute left-1/2 -translate-x-1/2 bottom-8 md:bottom-10 z-10 flex flex-col items-center pointer-events-none"

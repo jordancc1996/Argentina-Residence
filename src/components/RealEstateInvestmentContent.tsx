@@ -255,7 +255,7 @@ const RealEstateInvestmentContent = () => {
         </div>
       </EditorialSection>
 
-      {/* Investment Process — Scrollytelling */}
+      {/* Investment Process: Scrollytelling */}
       <EditorialSection centered={false}>
         <ScrollytellingSteps
           eyebrow="A Bespoke Process"
