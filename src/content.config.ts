@@ -11,7 +11,6 @@ const articles = defineCollection({
     id: z.number(),
     title: z.string(),
     excerpt: z.string(),
-    content: z.string(),
     date: z.string(),
     readTime: z.string(),
     category: z.string(),

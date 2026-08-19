@@ -15,6 +15,9 @@ export default defineConfig({
         !page.includes('/404'),
     }),
   ],
+  markdown: {
+    smartypants: false,
+  },
   trailingSlash: 'never',
   redirects: {
     '/about-argentina': '/program',

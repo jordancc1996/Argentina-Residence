@@ -1,0 +1,141 @@
+---
+import { getCollection, render } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import BlogPostContent from '../../components/BlogPostContent';
+
+function wordCountFromMarkdown(markdown: string) {
+  const text = markdown
+    .replace(/!\[[^\]]*\]\([^)]+\)/g, '')
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+    .replace(/[#*_`>]/g, '')
+    .replace(/^\s*-\s+/gm, '');
+  return text.split(/\s+/).filter(Boolean).length;
+}
+
+export async function getStaticPaths() {
+  const articleOrder = [
+    'argentina-citizenship-by-investment-launch-date',
+    'argentine-investment-landscape-golden-visa-value-proposition',
+    'buenos-aires-real-estate-bull-market-analysis',
+    'american-dream-argentina-golden-visa-solution',
+    'argentina-citizenship-investment-american-investors',
+    'argentina-golden-visa-american-investors-2026',
+  ];
+  const articles = await getCollection('articles');
+  const ordered = [...articles].sort(
+    (a, b) => articleOrder.indexOf(a.data.slug) - articleOrder.indexOf(b.data.slug)
+  );
+
+  return ordered.map((post, index) => {
+    const previous = index > 0 ? ordered[index - 1] : null;
+    const next = index < ordered.length - 1 ? ordered[index + 1] : null;
+    const related = ordered
+      .filter((p) => p.data.slug !== post.data.slug)
+      .slice(0, 3)
+      .map((p) => ({
+        id: p.data.id,
+        slug: p.data.slug,
+        title: p.data.title,
+        excerpt: p.data.excerpt,
+        category: p.data.category,
+        image: p.data.image,
+      }));
+
+    return {
+      params: { slug: post.data.slug },
+      props: {
+        post,
+        related,
+        previous: previous
+          ? { slug: previous.data.slug, title: previous.data.title }
+          : null,
+        next: next
+          ? { slug: next.data.slug, title: next.data.title }
+          : null,
+      },
+    };
+  });
+}
+
+const { post, related, previous, next } = Astro.props;
+const { Content } = await render(post);
+const data = post.data;
+
+const seoTitle = data.seoTitle || data.title;
+const seoRawDescription = data.seoDescription || data.excerpt;
+const description =
+  seoRawDescription.substring(0, 155) + (seoRawDescription.length > 155 ? '...' : '');
+const canonical = `https://argentinaresidence.com/research/${data.slug}`;
+const ogImage = data.image
+  ? `https://argentinaresidence.com${data.image}`
+  : 'https://argentinaresidence.com/og-image.jpg';
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": seoTitle,
+  "description": data.seoDescription || data.excerpt,
+  "datePublished": data.date,
+  "dateModified": data.date,
+  "author": {
+    "@type": "Organization",
+    "name": data.author
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Argentina Residence",
+    "url": "https://argentinaresidence.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://argentinaresidence.com/og-image.jpg"
+    }
+  },
+  "image": data.image
+    ? `https://argentinaresidence.com${data.image}`
+    : "https://argentinaresidence.com/og-image.jpg",
+  "url": canonical,
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": canonical
+  },
+  "keywords": data.keywords ? data.keywords.join(", ") : undefined,
+  "articleSection": data.category,
+  "wordCount": wordCountFromMarkdown(post.body)
+};
+---
+
+<Layout>
+	<title slot="head">{seoTitle}</title>
+	<meta slot="head" name="description" content={description} />
+	<link slot="head" rel="canonical" href={canonical} />
+	<meta slot="head" name="robots" content="index, follow" />
+	<meta slot="head" property="og:type" content="website" />
+	<meta slot="head" property="og:site_name" content="Argentina Residence" />
+	<meta slot="head" property="og:title" content={seoTitle} />
+	<meta slot="head" property="og:description" content={description} />
+	<meta slot="head" property="og:url" content={canonical} />
+	<meta slot="head" property="og:image" content={ogImage} />
+	<meta slot="head" property="og:image:width" content="1200" />
+	<meta slot="head" property="og:image:height" content="630" />
+	<meta slot="head" property="og:locale" content="en_US" />
+	<meta slot="head" name="twitter:card" content="summary_large_image" />
+	<meta slot="head" name="twitter:title" content={seoTitle} />
+	<meta slot="head" name="twitter:description" content={description} />
+	<meta slot="head" name="twitter:image" content={ogImage} />
+	<script slot="head" type="application/ld+json" set:html={JSON.stringify(schema)} />
+	<BlogPostContent
+		client:load
+		title={data.title}
+		category={data.category}
+		author={data.author}
+		date={data.date}
+		readTime={data.readTime}
+		excerpt={data.excerpt}
+		slug={data.slug}
+		related={related}
+		previous={previous}
+		next={next}
+	>
+		<Content />
+	</BlogPostContent>
+</Layout>
