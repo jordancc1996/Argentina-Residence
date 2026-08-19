@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
+import { motion } from "framer-motion";
 import EditorialSection from "@/components/EditorialSection";
 import { Button } from "@/components/ui/button";
+import { useParallax } from "@/hooks/useParallax";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import {
@@ -26,6 +28,7 @@ interface UpdatesSignupData {
 }
 
 const GoldenVisaUpdatesSection = () => {
+  const parallaxY = useParallax(-0.3);
   const [open, setOpen] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
@@ -76,16 +79,18 @@ const GoldenVisaUpdatesSection = () => {
 
   return (
     <EditorialSection className="pt-0">
-      <figure className="max-w-xl mx-auto">
-        <img
-          src={casaRosadaDaytimeSrc}
-          alt="Casa Rosada in Buenos Aires, daytime"
-          className="w-full h-auto"
-          width={1280}
-          height={2274}
-        />
+      <figure className="max-w-xl mx-auto overflow-hidden">
+        <motion.div className="scale-110 will-change-transform" style={{ y: parallaxY }}>
+          <img
+            src={casaRosadaDaytimeSrc}
+            alt="Casa Rosada in Buenos Aires, daytime"
+            className="w-full h-auto"
+            width={1280}
+            height={2274}
+          />
+        </motion.div>
       </figure>
-      <h2 className="font-serif text-xl-editorial mb-8 tracking-wide">
+      <h2 className="font-serif text-xl-editorial mb-8 tracking-wide mt-8">
         Stay Ahead of the Argentina Golden Visa Launch
       </h2>
       <p className="text-editorial text-text-secondary mb-8 tracking-wide">
