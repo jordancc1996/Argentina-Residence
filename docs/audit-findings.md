@@ -153,7 +153,7 @@ Custom-domain `/` is a Lovable snapshot (`X-Lovablehtml-Snapshot-Key: v1/argenti
 |---|---|
 | `Layout.tsx` | Shared nav + footer + WhatsApp FAB wrap every route |
 | `Navigation.tsx` | Nav items: Home, About, The Program, Research and Intelligence, Industry News, Contact Us. Wordmark `ARGENTINA RESIDENCE`. |
-| `Footer.tsx` | Quick Links / Resources / Legal columns; compliance disclaimer; `rachele@argentinaresidence.com` |
+| `Footer.tsx` | Quick Links / Resources / Legal columns; compliance disclaimer; `admin@argentinaresidence.com` |
 | `SEO.tsx` / react-helmet | Origin `index.html` comment: `<!-- meta description managed by React Helmet -->`. Cloudflare snapshot has `data-rh="true"` on meta/canonical. |
 | `FormCarryForm.tsx` | Generic helper `VI({formType, buttonText, title, description})` using `react-hook-form` `register`/`handleSubmit`, posts JSON to Formcarry, special-cases `formType==="market-insights"`. |
 | `InvestorEligibility.tsx` | Multi-step tool, `source:"Investor Eligibility Tool"`, computes `priorityStatus` (`vip` / `priority` / `standard`). |

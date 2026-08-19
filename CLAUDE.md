@@ -67,3 +67,4 @@ new slug and its owned topics.
 
 - The "Work Email" field validation is a generic email regex, not a business-email restriction. This is intentional for the current migration pass. Do not "fix" it without explicit instruction.
 - The Eligibility Checker's Formcarry submission does not check response.ok on the fetch call. It only catches network-level failures, so a non-throwing error response from Formcarry still shows the user a success/completion screen. This is a pre-existing behavior on the live site, preserved intentionally during migration, not a bug introduced here.
+- ConsultationCTA's "Prefer to Reach Out Directly?" block is missing a WhatsApp contact option — the user will provide a number to add later. See the TODO comment in ConsultationCTA.tsx.

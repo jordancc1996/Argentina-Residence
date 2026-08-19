@@ -82,8 +82,8 @@ const Footer = () => {
             </ul>
             <div className="mt-6">
               <p className="text-muted-foreground text-sm mb-2">Contact:</p>
-              <a href="mailto:rachele@argentinaresidence.com" className="text-primary hover:underline text-sm">
-                rachele@argentinaresidence.com
+              <a href="mailto:admin@argentinaresidence.com" className="text-primary hover:underline text-sm">
+                admin@argentinaresidence.com
               </a>
             </div>
             <div className="mt-6">

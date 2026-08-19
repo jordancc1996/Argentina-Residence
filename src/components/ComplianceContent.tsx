@@ -121,7 +121,7 @@ const ComplianceContent = () => {
               </p>
               <p>
                 <strong className="text-foreground">Argentina Residence Advisory: Compliance</strong><br />
-                Email: <a href="mailto:rachele@argentinaresidence.com" className="text-primary hover:underline">rachele@argentinaresidence.com</a>
+                Email: <a href="mailto:admin@argentinaresidence.com" className="text-primary hover:underline">admin@argentinaresidence.com</a>
               </p>
             </div>
           </section>

@@ -1,9 +1,7 @@
 import { useState } from "react";
-import { Mail, Phone } from "lucide-react";
+import { Mail } from "lucide-react";
 
-const ADVISOR_EMAIL = "rachele@argentinaresidence.com";
-const ADVISOR_PHONE_DISPLAY = "+1 (555) 000-0000"; // placeholder: awaiting confirmed number
-const ADVISOR_PHONE_TEL = "+15550000000";
+const ADVISOR_EMAIL = "admin@argentinaresidence.com";
 
 const ConsultationCTA = () => {
   const [submitting, setSubmitting] = useState(false);
@@ -133,23 +131,7 @@ const ConsultationCTA = () => {
                 </span>
               </a>
             </li>
-            <li>
-              <a
-                href={`tel:${ADVISOR_PHONE_TEL}`}
-                className="flex items-center gap-3 group"
-                style={{
-                  fontFamily: "'Montserrat', sans-serif",
-                  fontSize: 15,
-                  color: "rgba(255,255,255,0.85)",
-                  textDecoration: "none",
-                }}
-              >
-                <Phone className="w-5 h-5 flex-shrink-0" style={{ color: "hsl(45, 29%, 65%)" }} />
-                <span className="group-hover:text-white transition-colors">
-                  {ADVISOR_PHONE_DISPLAY}
-                </span>
-              </a>
-            </li>
+            {/* TODO: add WhatsApp link here once user provides a number (see AGENTS.md known issues) */}
           </ul>
         </div>
 
