@@ -1,0 +1,58 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import ResearchHero from '../../components/ResearchHero';
+import ResearchArticleGrid from '../../components/ResearchArticleGrid';
+import ResearchSubscribe from '../../components/ResearchSubscribe';
+
+const articles = await getCollection('articles');
+const posts = [...articles]
+  .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime())
+  .map((entry) => ({
+    id: entry.data.id,
+    slug: entry.data.slug,
+    title: entry.data.title,
+    excerpt: entry.data.excerpt,
+    date: entry.data.date,
+    image: entry.data.image,
+  }));
+
+const title = 'Research and Intelligence | Argentina Residence';
+const description = 'In-depth research and market intelligence on Argentine investment, residency programs, and real estate opportunities.';
+const canonical = 'https://argentinaresidence.com/research';
+const ogImage = 'https://argentinaresidence.com/og-image.jpg';
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: "Research and Intelligence",
+  description: "Argentina Residence Advisory research, market intelligence, and investment analysis.",
+  publisher: {
+    "@type": "Organization",
+    name: "Argentina Residence",
+  },
+};
+---
+
+<Layout>
+	<title slot="head">{title}</title>
+	<meta slot="head" name="description" content={description} />
+	<link slot="head" rel="canonical" href={canonical} />
+	<meta slot="head" name="robots" content="index, follow" />
+	<meta slot="head" property="og:type" content="website" />
+	<meta slot="head" property="og:site_name" content="Argentina Residence" />
+	<meta slot="head" property="og:title" content={title} />
+	<meta slot="head" property="og:description" content={description} />
+	<meta slot="head" property="og:url" content={canonical} />
+	<meta slot="head" property="og:image" content={ogImage} />
+	<meta slot="head" property="og:image:width" content="1200" />
+	<meta slot="head" property="og:image:height" content="630" />
+	<meta slot="head" property="og:locale" content="en_US" />
+	<meta slot="head" name="twitter:card" content="summary_large_image" />
+	<meta slot="head" name="twitter:title" content={title} />
+	<meta slot="head" name="twitter:description" content={description} />
+	<meta slot="head" name="twitter:image" content={ogImage} />
+	<script slot="head" type="application/ld+json" set:html={JSON.stringify(schema)} />
+	<ResearchHero client:load />
+	<ResearchArticleGrid posts={posts} />
+	<ResearchSubscribe client:load />
+</Layout>

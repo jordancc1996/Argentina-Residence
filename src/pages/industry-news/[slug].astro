@@ -1,0 +1,67 @@
+---
+import { getCollection, render } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import IndustryNewsArticleContent from '../../components/IndustryNewsArticleContent';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('industryNews');
+  const ordered = [...entries].sort((a, b) => a.data.id - b.data.id);
+
+  return ordered.map((article) => {
+    const related = ordered
+      .filter((item) => item.data.slug !== article.data.slug)
+      .slice(0, 3)
+      .map((item) => ({
+        id: item.data.id,
+        slug: item.data.slug,
+        title: item.data.title,
+        summary: item.data.summary,
+        source: item.data.source,
+      }));
+
+    return {
+      params: { slug: article.data.slug },
+      props: { article, related },
+    };
+  });
+}
+
+const { article, related } = Astro.props;
+const { Content } = await render(article);
+const data = article.data;
+
+const title = `${data.title} | Argentina Residence`;
+const description = data.summary.substring(0, 155);
+const canonical = `https://argentinaresidence.com/industry-news/${data.slug}`;
+const ogImage = 'https://argentinaresidence.com/og-image.jpg';
+---
+
+<Layout>
+	<title slot="head">{title}</title>
+	<meta slot="head" name="description" content={description} />
+	<link slot="head" rel="canonical" href={canonical} />
+	<meta slot="head" name="robots" content="index, follow" />
+	<meta slot="head" property="og:type" content="website" />
+	<meta slot="head" property="og:site_name" content="Argentina Residence" />
+	<meta slot="head" property="og:title" content={title} />
+	<meta slot="head" property="og:description" content={description} />
+	<meta slot="head" property="og:url" content={canonical} />
+	<meta slot="head" property="og:image" content={ogImage} />
+	<meta slot="head" property="og:image:width" content="1200" />
+	<meta slot="head" property="og:image:height" content="630" />
+	<meta slot="head" property="og:locale" content="en_US" />
+	<meta slot="head" name="twitter:card" content="summary_large_image" />
+	<meta slot="head" name="twitter:title" content={title} />
+	<meta slot="head" name="twitter:description" content={description} />
+	<meta slot="head" name="twitter:image" content={ogImage} />
+	<IndustryNewsArticleContent
+		client:load
+		title={data.title}
+		date={data.date}
+		source={data.source}
+		image={data.image}
+		related={related}
+	>
+		<Content />
+	</IndustryNewsArticleContent>
+</Layout>

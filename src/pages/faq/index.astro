@@ -1,0 +1,67 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import FAQHubContent from '../../components/FAQHubContent';
+
+const faqOrder = [
+  'what-is-argentina-golden-visa',
+  'investment-requirements',
+  'application-process-timeline',
+  'residency-requirements',
+  'family-members-residency',
+  'required-documents',
+  'work-rights',
+  'tax-implications',
+  'visa-free-travel',
+  'maintain-residency-status',
+];
+
+const entries = await getCollection('faqs');
+const ordered = [...entries].sort(
+  (a, b) => faqOrder.indexOf(a.data.slug) - faqOrder.indexOf(b.data.slug)
+);
+
+const faqs = ordered.map((entry) => ({
+  slug: entry.data.slug,
+  question: entry.data.question,
+}));
+
+const title = 'Argentina Residency FAQ | Argentina Residence';
+const description = 'Get answers about Argentina golden visa requirements, costs, timeline, and citizenship pathway. Expert FAQ for investors.';
+const canonical = 'https://argentinaresidence.com/faq';
+const ogImage = 'https://argentinaresidence.com/og-image.jpg';
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": ordered.map((faq) => ({
+    "@type": "Question",
+    "name": faq.data.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.data.answer
+    }
+  }))
+};
+---
+
+<Layout>
+	<title slot="head">{title}</title>
+	<meta slot="head" name="description" content={description} />
+	<link slot="head" rel="canonical" href={canonical} />
+	<meta slot="head" name="robots" content="index, follow" />
+	<meta slot="head" property="og:type" content="website" />
+	<meta slot="head" property="og:site_name" content="Argentina Residence" />
+	<meta slot="head" property="og:title" content={title} />
+	<meta slot="head" property="og:description" content={description} />
+	<meta slot="head" property="og:url" content={canonical} />
+	<meta slot="head" property="og:image" content={ogImage} />
+	<meta slot="head" property="og:image:width" content="1200" />
+	<meta slot="head" property="og:image:height" content="630" />
+	<meta slot="head" property="og:locale" content="en_US" />
+	<meta slot="head" name="twitter:card" content="summary_large_image" />
+	<meta slot="head" name="twitter:title" content={title} />
+	<meta slot="head" name="twitter:description" content={description} />
+	<meta slot="head" name="twitter:image" content={ogImage} />
+	<script slot="head" type="application/ld+json" set:html={JSON.stringify(schema)} />
+	<FAQHubContent client:load faqs={faqs} />
+</Layout>

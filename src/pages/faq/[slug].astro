@@ -1,0 +1,97 @@
+---
+import { getCollection, render } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import FAQDetailContent from '../../components/FAQDetailContent';
+
+export async function getStaticPaths() {
+  const faqOrder = [
+    'what-is-argentina-golden-visa',
+    'investment-requirements',
+    'application-process-timeline',
+    'residency-requirements',
+    'family-members-residency',
+    'required-documents',
+    'work-rights',
+    'tax-implications',
+    'visa-free-travel',
+    'maintain-residency-status',
+  ];
+  const entries = await getCollection('faqs');
+  const ordered = [...entries].sort(
+    (a, b) => faqOrder.indexOf(a.data.slug) - faqOrder.indexOf(b.data.slug)
+  );
+
+  return ordered.map((faq, index) => {
+    const previous = index > 0 ? ordered[index - 1] : null;
+    const next = index < ordered.length - 1 ? ordered[index + 1] : null;
+
+    return {
+      params: { slug: faq.data.slug },
+      props: {
+        faq,
+        previous: previous
+          ? { slug: previous.data.slug, question: previous.data.question }
+          : null,
+        next: next
+          ? { slug: next.data.slug, question: next.data.question }
+          : null,
+      },
+    };
+  });
+}
+
+const { faq, previous, next } = Astro.props;
+const hasRichBody = (faq.body ?? '').trim().length > 0;
+const { Content } = hasRichBody ? await render(faq) : { Content: null };
+const data = faq.data;
+
+const title = data.metaTitle || `${data.question} | Argentina Residence`;
+const description =
+  data.metaDescription ||
+  (data.answer.substring(0, 155) + (data.answer.length > 155 ? '...' : ''));
+const canonical = `https://argentinaresidence.com/faq/${data.slug}`;
+const ogImage = 'https://argentinaresidence.com/og-image.jpg';
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": data.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": data.answer
+    }
+  }]
+};
+---
+
+<Layout>
+	<title slot="head">{title}</title>
+	<meta slot="head" name="description" content={description} />
+	<link slot="head" rel="canonical" href={canonical} />
+	<meta slot="head" name="robots" content="index, follow" />
+	<meta slot="head" property="og:type" content="website" />
+	<meta slot="head" property="og:site_name" content="Argentina Residence" />
+	<meta slot="head" property="og:title" content={title} />
+	<meta slot="head" property="og:description" content={description} />
+	<meta slot="head" property="og:url" content={canonical} />
+	<meta slot="head" property="og:image" content={ogImage} />
+	<meta slot="head" property="og:image:width" content="1200" />
+	<meta slot="head" property="og:image:height" content="630" />
+	<meta slot="head" property="og:locale" content="en_US" />
+	<meta slot="head" name="twitter:card" content="summary_large_image" />
+	<meta slot="head" name="twitter:title" content={title} />
+	<meta slot="head" name="twitter:description" content={description} />
+	<meta slot="head" name="twitter:image" content={ogImage} />
+	<script slot="head" type="application/ld+json" set:html={JSON.stringify(schema)} />
+	<FAQDetailContent
+		client:load
+		question={data.question}
+		answer={data.answer}
+		hasRichBody={hasRichBody}
+		previous={previous}
+		next={next}
+	>
+		{hasRichBody && Content && <Content />}
+	</FAQDetailContent>
+</Layout>

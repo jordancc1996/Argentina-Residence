@@ -9,11 +9,12 @@ import FloatingAdvisorCTA from '../components/FloatingAdvisorCTA';
 
 interface Props {
 	showBreadcrumbs?: boolean;
+	showChrome?: boolean;
 }
 
-const { showBreadcrumbs = true } = Astro.props;
+const { showBreadcrumbs = true, showChrome = true } = Astro.props;
 const currentPath = Astro.url.pathname;
-const schema = showBreadcrumbs ? getBreadcrumbSchema(currentPath) : null;
+const schema = showChrome && showBreadcrumbs ? getBreadcrumbSchema(currentPath) : null;
 ---
 
 <html lang="en">
@@ -29,14 +30,14 @@ const schema = showBreadcrumbs ? getBreadcrumbSchema(currentPath) : null;
 	</head>
 	<body>
 		<div class="min-h-screen bg-background">
-			<Navigation currentPath={currentPath} client:load />
+			{showChrome && <Navigation currentPath={currentPath} client:load />}
 			<main>
-				{showBreadcrumbs && <Breadcrumbs currentPath={currentPath} />}
+				{showChrome && showBreadcrumbs && <Breadcrumbs currentPath={currentPath} />}
 				<slot />
 			</main>
-			<ConsultationCTA client:load />
-			<Footer />
-			<FloatingAdvisorCTA client:load />
+			{showChrome && <ConsultationCTA client:load />}
+			{showChrome && <Footer />}
+			{showChrome && <FloatingAdvisorCTA client:load />}
 		</div>
 		<Toaster client:load />
 	</body>
