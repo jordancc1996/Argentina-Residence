@@ -40,9 +40,9 @@ Argentina's planned **Golden Visa program** is built on a solid legal foundation
 
 This constitutional provision allows the program to be implemented via an executive decree which bypasses potential legislative battles before the golden visa launch.
 
-The government has established an **investment citizenship program agency** and tasked it with evaluating applications and ensuring transparency. The program is expected to feature a minimum investment threshold of around **$500,000** and the investment is expected to focus on productive sectors like agriculture, renewable energy, technology and other passive real estate investments.
+The government has established an **investment citizenship program agency** and tasked it with evaluating applications and ensuring transparency. Two paths are currently anticipated, subject to final regulation: a non-refundable **$500,000** USD contribution to the Argentine Treasury, or a **$1,000,000** USD investment in a 7-year, 0% interest Argentine government bond, with principal returned at maturity. Real estate, business ventures, and investment funds are not anticipated qualifying paths. Neither path has been officially confirmed.
 
-The program is expected to have no physical residency requirement and a swift processing timeline. The National Directorate of Migration is aiming to issue Approval/Denial decisions within **30 business days** of receiving a certified application. This combination of legal robustness, speed and a focus on genuine economic contribution will distinguish Argentina from many of its competitors.
+The program is expected to have no physical residency requirement. Processing time is not yet officially confirmed. No 30-business-day decision window has been published. This combination of legal robustness and a focus on genuine economic contribution will distinguish Argentina from many of its competitors, if and when APCI opens.
 
 ## Why Should Americans Consider the Argentine Golden Visa in 2026?
 

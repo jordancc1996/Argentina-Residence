@@ -26,12 +26,12 @@ const IndustryNewsGuide = () => {
 
             <h3>Argentina Citizenship by Investment Decree 524 Explained</h3>
             <p>&nbsp;</p>
-            <p>The statutory foundation of the program rests on Decree 524/2025, which created the institutional framework for the Agencia de Programas de Ciudadanía por Inversión (APCI). <strong>Argentina citizenship by investment decree 524 explained</strong> simply: it authorizes the executive branch to grant full citizenship to foreign nationals who make qualifying investments in strategic sectors of the Argentine economy. The decree mandates an accelerated 30-business-day processing window and establishes the principle that approved applicants receive immediate passport eligibility without a prior residency period. Unlike European residency-by-investment programs that require years of physical presence before naturalization, Decree 524 provides direct citizenship, making Argentina one of the few jurisdictions worldwide to offer immediate nationality through investment.</p>
+            <p>The statutory foundation of the program rests on Decree 524/2025, which created the institutional framework for the Agencia de Programas de Ciudadanía por Inversión (APCI). <strong>Argentina citizenship by investment decree 524 explained</strong> simply: it authorizes the executive branch to grant full citizenship to foreign nationals who complete an anticipated qualifying path. Processing time is not yet officially confirmed. No decision window has been published. Unlike European residency-by-investment programs that require years of physical presence before naturalization, Decree 524 describes direct citizenship, making Argentina one of the few jurisdictions worldwide to offer nationality through investment, subject to final regulation.</p>
             <p>&nbsp;</p>
 
             <h3>Resolution 522 Argentina Citizenship by Investment</h3>
             <p>&nbsp;</p>
-            <p>Following the decree, the government issued Resolution 522/2026 to govern the procedural mechanics of the program. <strong>Resolution 522 argentina citizenship by investment</strong> established the public tender process for selecting investment projects eligible under the framework. The resolution outlined qualifying categories including renewable energy infrastructure, technology ventures, agribusiness development, tourism projects, and critical national infrastructure. It also provided preliminary guidance on the minimum investment threshold and the maintenance period during which capital must remain deployed in Argentina. Resolution 522 was designed to ensure transparency and competitive selection of projects that align with Argentina's strategic economic priorities.</p>
+            <p>Following the decree, the government issued Resolution 522/2026 to govern the procedural mechanics of the program. <strong>Resolution 522 argentina citizenship by investment</strong> established the public tender process. That tender was later cancelled. Two paths are currently anticipated, subject to final regulation: a non-refundable $500,000 USD contribution to the Argentine Treasury, or a $1,000,000 USD investment in a 7-year, 0% interest Argentine government bond, with principal returned at maturity. Real estate, business or startup ventures, and investment funds are not anticipated qualifying paths. Neither path has been officially confirmed.</p>
             <p>&nbsp;</p>
 
             <h3>Argentina CBI Tender Collapse Analysis</h3>
@@ -46,12 +46,12 @@ const IndustryNewsGuide = () => {
 
             <h3>What We Know About the 2026 Rollout</h3>
             <p>&nbsp;</p>
-            <p>Current signals suggest the application window will open in phases during the second half of 2026. Priority is expected for investments in sectors aligned with Argentina's strategic economic priorities, particularly those generating employment and foreign exchange. The government has indicated that digital application infrastructure is under development, and the APCI is actively recruiting specialized personnel to manage the anticipated volume of high-net-worth applicants. Final clarification on qualifying categories and the definitive investment threshold is expected alongside the revised tender documentation.</p>
+            <p>Current signals suggest the application window will open in phases during the second half of 2026. The government has indicated that digital application infrastructure is under development, and the APCI is actively recruiting specialized personnel. Final confirmation of the two anticipated paths, and of any application cap, is expected only when operational regulations are published.</p>
             <p>&nbsp;</p>
 
             <h3>Key Milestones for Investors to Monitor</h3>
             <p>&nbsp;</p>
-            <p>Prospective applicants should watch several critical milestones: publication of the revised tender documentation under the updated Resolution 522 framework, the official announcement of qualifying investment categories with finalized thresholds, the opening of the APCI digital application portal, and the first wave of approved citizenship decisions. Each milestone will provide clearer guidance on documentation standards, source-of-funds verification requirements, and processing timelines for different nationalities. Monitoring these developments allows investors to position themselves at the front of the queue when applications open.</p>
+            <p>Prospective applicants should watch several critical milestones: publication of operational regulations, confirmation of the two anticipated paths, the opening of the APCI digital application portal, and the first wave of approved citizenship decisions. Each milestone will provide clearer guidance on documentation standards, source-of-funds verification requirements, and whether a processing calendar exists. Monitoring these developments allows investors to position themselves at the front of the queue when applications open.</p>
             <p>&nbsp;</p>
 
             <h2>What Investors Should Do While Waiting for the Program to Open</h2>
@@ -64,9 +64,9 @@ const IndustryNewsGuide = () => {
             <p>Comprehensive documentation forms the cornerstone of every successful citizenship by investment application. Investors should begin organizing corporate records, audited financial statements, tax returns, source-of-funds evidence, and personal identification documents. Many materials require apostille certification and certified Spanish translation, processes that can take several weeks to complete. Beginning this preparation now eliminates last-minute delays and demonstrates organizational readiness to APCI processing authorities.</p>
             <p>&nbsp;</p>
 
-            <h3>Evaluate Qualifying Investment Vehicles</h3>
+            <h3>Evaluate the Anticipated Paths</h3>
             <p>&nbsp;</p>
-            <p>While the final list of approved investment categories remains pending, Decree 524 provides strong guidance on eligible sectors. Investors should evaluate potential project sponsors, fund managers, and direct investment opportunities in renewable energy, technology, agribusiness, and tourism infrastructure. Conducting preliminary due diligence on investment vehicles now allows for faster capital deployment once the program officially accepts applications. Early engagement with project developers may also provide access to preferential allocation in oversubscribed sectors.</p>
+            <p>While operational regulations remain unpublished, this site currently anticipates two paths only: a $500,000 USD Treasury contribution or a $1,000,000 USD 7-year government bond, subject to final regulation. Real estate, funds, and business ventures are not anticipated qualifying paths. Preparing source-of-funds evidence now is file hygiene. It is not a substitute for a published APCI schedule.</p>
             <p>&nbsp;</p>
 
             <h3>Engage Specialized Advisory Counsel Early</h3>

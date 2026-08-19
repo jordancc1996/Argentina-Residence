@@ -3,15 +3,15 @@ id: 1
 slug: decree-524-2025-progress-update
 title: "Decree 524/2025: Latest Progress on Argentina's Golden Visa Framework"
 date: "2026-04-10"
-summary: "Regulators continue to refine the implementation framework for Argentina's anticipated Golden Visa program, with new guidance expected on qualifying investment categories."
+summary: "Decree 524/2025 progress continues through inter-ministerial review of Argentina's Golden Visa framework, including the anticipated $500,000 Treasury contribution and $1,000,000 7-year bond paths, subject to final regulation."
 source: Internal Briefing
 image: /decree-524-2025-investment-visa.jpg
 ---
 
-Argentina's Ministry of the Interior has signaled that secondary regulations under Decree 524/2025 are progressing through inter-ministerial review. Industry observers expect clarification on qualifying investment categories, including real estate development, government bonds, and active business creation.
+Argentina's Ministry of the Interior has signaled that secondary regulations under Decree 524/2025 are progressing through inter-ministerial review. Industry observers expect further clarification on the two anticipated paths.
 
 ## What's expected next
 
-Final regulatory text is anticipated to address the $500,000 minimum investment threshold (subject to final regulation), maintenance period requirements, and documentation standards for foreign applicants.
+Final regulatory text is anticipated to address a non-refundable $500,000 USD contribution to the Argentine Treasury or a $1,000,000 USD investment in a 7-year, 0% interest Argentine government bond, with principal returned at maturity, subject to final regulation. Real estate, business or startup ventures, and investment funds are not anticipated qualifying paths. Documentation standards for foreign applicants remain unpublished.
 
 Serious investors are advised to begin organizing source-of-funds documentation and consulting with qualified counsel ahead of the application window opening.

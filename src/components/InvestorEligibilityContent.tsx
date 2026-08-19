@@ -151,7 +151,7 @@ const InvestorEligibilityContent = () => {
                 "Your investment profile qualifies you for priority processing. You'll receive early access notifications and expedited review when applications open."
               )}
               {priorityStatus === "standard" && (
-                "The amount selected is below this site's expected $500,000 USD qualifying floor, subject to final regulation. APCI has not published operational regulations and is not processing applications. We will notify you if a published threshold differs."
+                "The amount selected is below both anticipated paths (a $500,000 USD Treasury contribution or a $1,000,000 USD 7-year government bond), subject to final regulation. APCI has not published operational regulations and is not processing applications. We will notify you if a published threshold differs."
               )}
             </p>
             
@@ -182,7 +182,7 @@ const InvestorEligibilityContent = () => {
               </a>
               <a href="/guides/argentina-real-estate-investment">
                 <Button variant="outline" size="lg">
-                  View Investment Options
+                  Property Market Guide
                 </Button>
               </a>
             </div>
@@ -195,14 +195,14 @@ const InvestorEligibilityContent = () => {
     <>
       <Hero
         title="Argentina Golden Visa Eligibility Assessment"
-        subtitle="Discover your path to residency and citizenship through investment."
+        subtitle="Argentina Golden Visa eligibility is a 2-minute assessment against this site's anticipated $500,000 USD Treasury contribution or $1,000,000 USD 7-year government bond, subject to final regulation."
         backgroundImage={eligibilityBackground}
         imageAlt="Patagonia landscape representing freedom and Argentina citizenship by investment"
       />
       
       <EditorialSection>
         <p className="text-text-secondary mb-12 max-w-3xl mx-auto leading-relaxed">
-          Argentina offers one of the world's most accessible Citizenship by Investment opportunities. 
+          Argentina Golden Visa eligibility is checked against this site's anticipated $500,000 USD Treasury contribution or $1,000,000 USD 7-year government bond, subject to final regulation. 
           Whether you are interested in the Rentista Visa for passive income earners or the upcoming 
           Golden Visa for investors, this tool analyzes your profile against current government requirements. 
           In just 2 minutes, determine if you qualify for instant Permanent Residency via investment, 
@@ -265,7 +265,7 @@ const InvestorEligibilityContent = () => {
                       <RadioGroupItem value="$below-500k" id="budget-1" />
                       <div>
                         <p className="font-semibold">Below $500,000</p>
-                        <p className="text-sm text-text-secondary">Does not meet the expected qualifying floor</p>
+                        <p className="text-sm text-text-secondary">Below both anticipated paths, subject to final regulation</p>
                       </div>
                     </div>
                   </label>
@@ -281,7 +281,7 @@ const InvestorEligibilityContent = () => {
                       <RadioGroupItem value="$500k+" id="budget-2" />
                       <div>
                         <p className="font-semibold">$500,000+</p>
-                        <p className="text-sm text-text-secondary">Expected floor, subject to final regulation</p>
+                        <p className="text-sm text-text-secondary">Covers the anticipated Treasury-contribution path; the bond path is $1,000,000 USD</p>
                       </div>
                     </div>
                     <span className="text-xs bg-gold text-primary px-2 py-1 rounded-full">VIP</span>
@@ -364,10 +364,10 @@ const InvestorEligibilityContent = () => {
               <div className="space-y-8">
                 <div className="text-center mb-8">
                   <h2 className="font-serif text-xl-editorial mb-3">
-                    Preferred investment type?
+                    What interests you most?
                   </h2>
                   <p className="text-text-secondary">
-                    Select the investment category that interests you most
+                    Tell our team where your interest lies. These options are for routing, not official program categories. Real estate, funds, and business ventures are not anticipated qualifying paths.
                   </p>
                 </div>
                 
@@ -387,7 +387,7 @@ const InvestorEligibilityContent = () => {
                       <RadioGroupItem value="real-estate" id="type-1" />
                       <div>
                         <p className="font-semibold">Real Estate</p>
-                        <p className="text-sm text-text-secondary">Property in Buenos Aires or other cities</p>
+                        <p className="text-sm text-text-secondary">Property market interest (not an anticipated program path)</p>
                       </div>
                     </div>
                   </label>
@@ -403,7 +403,7 @@ const InvestorEligibilityContent = () => {
                       <RadioGroupItem value="bonds" id="type-2" />
                       <div>
                         <p className="font-semibold">Government Bonds</p>
-                        <p className="text-sm text-text-secondary">Argentine government securities</p>
+                        <p className="text-sm text-text-secondary">Argentine government securities (anticipated path is a 7-year bond)</p>
                       </div>
                     </div>
                   </label>
@@ -419,7 +419,7 @@ const InvestorEligibilityContent = () => {
                       <RadioGroupItem value="funds" id="type-3" />
                       <div>
                         <p className="font-semibold">Approved Funds</p>
-                        <p className="text-sm text-text-secondary">Pre-approved investment funds</p>
+                        <p className="text-sm text-text-secondary">Fund vehicles (not an anticipated program path)</p>
                       </div>
                     </div>
                   </label>
@@ -435,7 +435,7 @@ const InvestorEligibilityContent = () => {
                       <RadioGroupItem value="business" id="type-4" />
                       <div>
                         <p className="font-semibold">Business Creation</p>
-                        <p className="text-sm text-text-secondary">Start or acquire an Argentine business</p>
+                        <p className="text-sm text-text-secondary">Company or startup interest (not an anticipated program path)</p>
                       </div>
                     </div>
                   </label>
@@ -573,10 +573,10 @@ const InvestorEligibilityContent = () => {
             className="p-6 border border-border rounded-lg hover:border-gold/50 hover:bg-secondary/20 transition-all group"
           >
             <h3 className="font-serif text-lg mb-2 group-hover:text-gold transition-colors">
-              Investment Options
+              Property Market
             </h3>
             <p className="text-sm text-text-secondary">
-              Explore qualifying real estate and approved investment funds.
+              Buenos Aires and other markets for foreign buyers, independent of unpublished program paths.
             </p>
           </a>
         </div>

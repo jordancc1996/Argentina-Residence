@@ -9,7 +9,7 @@ const ProgramContent = () => {
     <>
       <Hero
         title="Argentina Residency by Investment: The Fastest Path to a Global Passport"
-        subtitle="Secure permanent residency in one of South America's most vibrant economies. With a strategic investment, you can qualify for Argentine citizenship in as little as two years, gaining visa-free access to over 170 destinations and a gateway to the MERCOSUR region."
+        subtitle="Secure permanent residency in one of South America's most vibrant economies. With a strategic investment, you can pursue Argentine citizenship, gaining visa-free access to over 170 destinations and a gateway to the MERCOSUR region."
         backgroundImage={goldenVisaHero}
         ctaText="Request Program Details"
         ctaLink="/contact"
@@ -29,10 +29,10 @@ const ProgramContent = () => {
           <div>
             <h2 className="font-serif text-xl-editorial mb-6 tracking-wide">Investment Requirements</h2>
             <p className="text-body text-text-secondary mb-6 tracking-wide">
-              The Argentina residency by investment program is expected to require a minimum investment of $500,000 USD, subject to final regulation, in approved sectors including real estate, government bonds, or establishing a local business. APCI has not published operational regulations and is not processing applications.
+              Two paths are currently anticipated, subject to final regulation: a non-refundable $500,000 USD contribution to the Argentine Treasury, or a $1,000,000 USD investment in a 7-year, 0% interest Argentine government bond, with principal returned at maturity. These paths have not been published in the Official Gazette (Boletín Oficial). Real estate, business or startup ventures, and investment funds are not anticipated qualifying paths. APCI has not published operational regulations and is not processing applications.
             </p>
             <p className="text-body text-text-secondary tracking-wide mb-4">
-              Investments must be maintained for a minimum period of three years, with clear pathways to permanent residency and eventual citizenship.
+              An initial cap near 5,000 applications is anticipated, as is a single biometrics visit after approval. Neither figure has been officially confirmed.
             </p>
               <a href="/faq/argentina-citizenship-investment-requirements" className="text-primary hover:underline text-sm font-medium">
               See detailed requirements →
@@ -45,9 +45,9 @@ const ProgramContent = () => {
               <li>• Temporary residence visa with <a href="/faq/argentina-residency-work-rights" className="text-primary hover:underline">work authorization</a></li>
               <li>• Access to Argentina's comprehensive healthcare system</li>
               <li>• Favorable <a href="/faq/argentina-residency-tax-implications" className="text-primary hover:underline">tax treatment</a> for foreign investors</li>
-              <li>• Pathway to permanent residency after two years</li>
+              <li>• Anticipated pathway to permanent residency after two years, though this has not been officially confirmed</li>
               <li>• <a href="/faq/argentina-visa-free-travel" className="text-primary hover:underline">Visa-free travel</a> to 170+ countries</li>
-              <li>• <a href="/faq/argentina-citizenship-investment-family" className="text-primary hover:underline">Family inclusion</a> for spouse and dependent children</li>
+              <li>• <a href="/faq/argentina-citizenship-investment-family" className="text-primary hover:underline">Family inclusion</a> for spouse and children under 18; status of dependents 18 and older is unknown</li>
             </ul>
           </div>
         </div>
@@ -88,7 +88,7 @@ const ProgramContent = () => {
               label: "Step 5",
               title: "Residency Approval",
               description:
-                "Final review and approval process typically completed within 6-8 months. Upon approval, receive your temporary residence visa and begin your Argentine residency journey.",
+                "Final review and approval once APCI is processing files. Processing time is not yet officially confirmed. Upon approval, receive your temporary residence visa and begin your Argentine residency journey.",
             },
           ]}
         />

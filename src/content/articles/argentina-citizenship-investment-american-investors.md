@@ -33,7 +33,7 @@ Under the newly established decrees 366 and 524 this residency requirement can b
 
 A new government body called the **Agency for Citizenship by Investment Programs** will operate under the ministry of economy and evaluate applications, investigate backgrounds and assess potential national security risks.
 
-Argentina's citizenship by investment program is designed to attract foreign investment into the Argentine economy. It is predicted that applicants will need to invest a minimum of **$500,000** in projects that aid the Argentinian economy. A similar model was made popular in Portugal after Real Estate was discontinued. Portugal encouraged investment in venture capital funds that directly helped the Portuguese economy.
+Argentina's citizenship by investment program is designed to attract foreign investment into the Argentine economy. Two paths are currently anticipated, subject to final regulation: a non-refundable **$500,000** USD contribution to the Argentine Treasury, or a **$1,000,000** USD investment in a 7-year, 0% interest Argentine government bond, with principal returned at maturity. Real estate, business ventures, and investment funds are not anticipated qualifying paths.
 
 ## One Remaining Critical Barrier
 
@@ -73,7 +73,7 @@ The application process for Argentina's citizenship by investment program follow
 
 - **Investment Proposal:** The applicant submits their investment proposal to the CBI agency for certification
 - **Due Diligence:** A comprehensive background check, source of funds checks and security check is conducted to ensure the funds are legally sourced and the applicant is clean
-- **Final Decision:** The National Directorate of Migration issues a decision within 30 days
+- **Final Decision:** The National Directorate of Migration issues a decision. Processing time is not yet officially confirmed.
 - **Citizenship Granted:** The applicant receives Argentine nationality and can immediately apply for a national ID and passport
 
 ## Conclusion

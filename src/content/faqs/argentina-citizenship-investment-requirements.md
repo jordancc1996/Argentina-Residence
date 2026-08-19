@@ -1,68 +1,50 @@
 ---
 slug: argentina-citizenship-investment-requirements
 question: Argentina Golden Visa Investment Requirements
-answer: "Argentina Golden Visa investment requirements are an expected $500,000 USD floor, subject to final regulation, in qualifying assets such as real estate, government bonds, or an active business."
-metaTitle: "Argentina Golden Visa Investment Requirements - Expected $500,000 Floor | Argentina Residence"
-metaDescription: Argentina Golden Visa investment requirements are an expected $500,000 USD floor, subject to final regulation, in real estate, bonds, or an active business.
+answer: "Argentina Golden Visa investment requirements are anticipated as a non-refundable $500,000 USD contribution to the Argentine Treasury, or a $1,000,000 USD investment in a 7-year, 0% interest Argentine government bond with principal returned at maturity, subject to final regulation. These paths have not been published in the Official Gazette (Boletín Oficial)."
+metaTitle: "Argentina Golden Visa Investment Requirements - $500,000 or $1,000,000 Paths | Argentina Residence"
+metaDescription: Argentina Golden Visa investment requirements are anticipated as a $500,000 Treasury contribution or $1,000,000 7-year bond, subject to final regulation.
 ---
 
 # Argentina Golden Visa Investment Requirements
 
-Argentina Golden Visa investment requirements are an expected $500,000 USD floor, subject to final regulation, in qualifying Argentine assets. The program is administered by the newly created Agency for Citizenship by Investment, which oversees verification, compliance, and approvals for all applicants.
+Argentina Golden Visa investment requirements are anticipated as two paths only, subject to final regulation: a non-refundable $500,000 USD contribution to the Argentine Treasury, or a $1,000,000 USD investment in a 7-year, 0% interest Argentine government bond, with principal returned at maturity. These paths have not been published in the Official Gazette (Boletín Oficial). Real estate, business or startup ventures, and investment funds are not anticipated qualifying paths.
 
 U.S. applicants should also review our detailed analysis on [Argentina golden visa requirements for Americans](/research/argentina-citizenship-investment-american-investors), which covers IRS compliance, tax residency rules, and timeline considerations specific to American investors.
 
-## Minimum Investment Amount
+## Anticipated investment paths
 
-The baseline threshold for all applicants is **$500,000 USD** (subject to final regulation). This figure applies to the principal applicant. As of mid-2025, no separate reduced thresholds have been confirmed for family members or regional incentive zones, though final implementing regulations may introduce adjustments.
+Two paths are currently anticipated for the principal applicant:
 
-All investment amounts must be funded from lawfully sourced capital originating outside Argentina. The Agency requires full documentation of the funds' origin, including bank statements, tax filings, and source-of-wealth declarations.
+- A non-refundable **$500,000 USD** contribution to the Argentine Treasury.
+- A **$1,000,000 USD** investment in a 7-year, 0% interest Argentine government bond, with principal returned at maturity.
 
-## Qualifying Investment Types
+Neither path has been officially confirmed. No separate reduced amounts have been confirmed for family members.
 
-Decree 524/2025 recognizes three primary categories of qualifying investments:
+All amounts used for either path must be funded from lawfully sourced capital originating outside Argentina. The Agency is expected to require documentation of the funds' origin, including bank statements, tax filings, and source-of-wealth declarations.
 
-### 1. Real Estate
+## What is not anticipated
 
-Direct purchase of Argentine real property valued at or above the minimum threshold. The property must be acquired through a registered transaction and titled in the applicant's name. Both residential and commercial properties qualify, provided they meet the minimum value requirement. Note: passive real estate holdings acquired solely for rental income, without active development, renovation, or economic contribution, may not satisfy the program's intent under the decree's guidelines (subject to final regulation).
+Real estate purchases, business or startup ventures, and investment-fund subscriptions are not anticipated as qualifying paths. Holding cryptocurrency or digital assets as the investment itself is also not anticipated. Gifts to private parties are not the Treasury contribution described above.
 
-### 2. Government Bonds
+## Application cap and biometrics
 
-Purchase of Argentine government securities, including BOPREAL (Bonos para la Reconstrucción de una Argentina Libre) or other sovereign instruments designated by the Agency. These bonds must be held for a defined maintenance period and cannot be sold, transferred, or encumbered during that time.
+An initial cap near **5,000 applications** is anticipated. A single biometrics visit after approval is also anticipated. Neither figure has been officially confirmed.
 
-### 3. Active Business Creation
+## Maintenance
 
-Establishing or acquiring a meaningful stake in an Argentine business that generates employment and economic activity. The investment must result in verifiable job creation or capital expenditure within Argentina. Holding company structures or shell entities without operational substance do not qualify.
+The Treasury contribution is anticipated as non-refundable. The government-bond path is anticipated as a 7-year hold at 0% interest, with principal returned at maturity. Further maintenance rules have not been published.
 
-## What Does Not Qualify
+## Verification
 
-The following do not meet the program's investment criteria:
-
-- Cryptocurrency or digital asset holdings
-- Investments held in foreign accounts or entities without Argentine nexus
-- Passive financial instruments not explicitly designated by the Agency
-- Donations or gifts to public or private institutions
-- Previously completed investments made before the applicant's formal application
-
-## Maintenance Period
-
-All qualifying investments must be maintained for a minimum holding period (subject to final regulation). During this period, the asset cannot be sold, significantly altered, or moved offshore. Government bonds must remain in the applicant's registered account for the full term. Real estate must remain titled to the applicant. Business investments must demonstrate continued operational activity.
-
-## Verification Process
-
-The Agency for Citizenship by Investment conducts a multi-step verification process:
-
-- **Source of funds review:** documented proof that capital originates from lawful sources outside Argentina
-- **Asset valuation:** independent appraisal confirming the investment meets the minimum threshold
-- **Ongoing compliance checks:** periodic audits during the maintenance period to confirm the investment remains in place
-
-Applicants who fail to maintain their investment or who cannot demonstrate continued compliance risk revocation of their residency or citizenship status.
+The Agency for Citizenship by Investment is expected to review source of funds and identity. Operational protocols have not been published. APCI is not processing applications.
 
 ## Key Facts
 
-- Minimum investment: **$500,000 USD** (subject to final regulation)
-- Three qualifying categories: real estate, government bonds, or active business
-- All funds must originate from lawful sources outside Argentina
-- Investment must be maintained for a defined holding period with ongoing compliance audits
+- Two anticipated paths: **$500,000 USD** Treasury contribution, or **$1,000,000 USD** 7-year 0% government bond (subject to final regulation)
+- Real estate, business, and investment funds are not anticipated paths
+- Initial cap near 5,000 applications anticipated
+- Single biometrics visit after approval anticipated
+- Paths have not been published in the Official Gazette (Boletín Oficial)
 
-Want a personalized investment breakdown? Our team can walk you through qualifying options in a free, no-obligation consultation. [Schedule your call today](/contact).
+Want a personalized investment breakdown? Our team can walk you through the anticipated paths in a no-obligation consultation. [Request a principal consultation](/contact).

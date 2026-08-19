@@ -44,7 +44,7 @@ For example, **Portugal** offers a 500,000-euro investment through regulated fun
 
 The upcoming **Argentina Golden Visa** presents a compelling value proposition for American investors. The Golden visa is expected to launch in late 2026 and will offer a direct path to Argentine Citizenship for a substantial investment in the nation's development.
 
-The exact investment amount has not been finalized but is anticipated to be **$500,000** and the investment would need to be in sectors like agriculture, renewable energy and tourism. The Argentina Golden visa will offer a fast track to citizenship without a prior residency in the country.
+The exact investment amount has not been finalized. Two paths are currently anticipated, subject to final regulation: a non-refundable **$500,000** USD contribution to the Argentine Treasury, or a **$1,000,000** USD investment in a 7-year, 0% interest Argentine government bond, with principal returned at maturity. Real estate, agriculture, renewable energy, and tourism projects are not anticipated qualifying paths. The Argentina Golden visa is described as a path to citizenship without a prior residency in the country.
 
 ### Proximity and Accessibility
 

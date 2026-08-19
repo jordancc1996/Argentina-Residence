@@ -19,6 +19,9 @@ const ResearchHero = () => {
           <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white mb-8 tracking-wide leading-tight">
             Argentina Residence Advisory:<br />Research and Intelligence
           </h1>
+          <p className="text-white/80 text-xl max-w-2xl mx-auto leading-relaxed mb-8">
+            Argentina research and intelligence covers Decree 524/2025, residency by investment, and Buenos Aires market briefings.
+          </p>
           <Separator className="mx-auto max-w-[120px] bg-primary h-[1px]" />
         </motion.div>
       </section>

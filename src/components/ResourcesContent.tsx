@@ -55,7 +55,7 @@ const ResourcesContent = () => {
           <div className="absolute inset-0 bg-black/60" />
           <div className="relative z-10">
             <h1 className="font-serif text-hero mb-8 tracking-wide text-white drop-shadow-lg">
-              Resources
+              Argentina Residency Resources
             </h1>
             <p className="text-editorial text-white mb-12 tracking-wide drop-shadow-lg">
               Essential information and official sources for Argentina residency

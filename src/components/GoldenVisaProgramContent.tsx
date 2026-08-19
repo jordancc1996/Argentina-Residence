@@ -19,7 +19,7 @@ const GoldenVisaProgramContent = () => {
         <div className="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-center gap-3 text-center">
           <Clock className="h-5 w-5 text-gold flex-shrink-0" />
           <p className="text-sm md:text-base text-text-primary">
-            <span className="font-semibold">Program Status:</span> Proposed legislation under review. Expected launch Q2 2026
+            <span className="font-semibold">Program Status:</span> Proposed legislation under review. Anticipated launch date not yet confirmed
           </p>
         </div>
       </div>
@@ -40,7 +40,7 @@ const GoldenVisaProgramContent = () => {
           </a>
           <a href="/guides/argentina-real-estate-investment">
             <Button variant="outline" size="lg" className="px-8">
-              View Investment Options
+              Property Market Guide
             </Button>
           </a>
         </div>
@@ -58,7 +58,7 @@ const GoldenVisaProgramContent = () => {
             </div>
             <h3 className="font-serif text-lg mb-3">Decision Window</h3>
             <p className="text-text-secondary text-sm">
-              No official fast-track mechanism has been published. This site's expected decision window is 30 business days after a certified file. That clock does not run until APCI is processing applications.
+              Processing time is not yet officially confirmed. No decision window has been published. APCI is not processing applications.
             </p>
           </div>
           
@@ -99,26 +99,33 @@ const GoldenVisaProgramContent = () => {
         <div className="text-left">
           <div className="max-w-2xl">
             <h2 className="font-serif text-xl-editorial mb-6 tracking-wide">
-              Investment Minimums
+              Anticipated Investment Paths
             </h2>
             <p className="text-body text-text-secondary mb-6 tracking-wide">
-              This site's expected qualifying floor is $500,000 USD, subject to final regulation. Qualifying assets are expected to include real estate, designated government bonds, or an active Argentine business.
+              Two paths are currently anticipated, subject to final regulation: a non-refundable $500,000 USD contribution to the Argentine Treasury, or a $1,000,000 USD investment in a 7-year, 0% interest Argentine government bond, with principal returned at maturity. Real estate, business or startup ventures, and investment funds are not anticipated qualifying paths. Neither path has been officially confirmed. APCI is not processing applications.
             </p>
             
             <div className="space-y-4 mb-8">
               <div className="flex items-start gap-3 p-4 bg-secondary/30 rounded-lg">
                 <CheckCircle className="h-5 w-5 text-gold flex-shrink-0 mt-0.5" />
                 <div>
-                  <p className="font-semibold text-text-primary">$500,000 USD, subject to final regulation</p>
-                  <p className="text-sm text-text-secondary">Qualifying assets expected: real estate, designated government bonds, or an active Argentine business. APCI has not published operational schedules. Applications are not open.</p>
+                  <p className="font-semibold text-text-primary">$500,000 USD Treasury contribution</p>
+                  <p className="text-sm text-text-secondary">Anticipated as non-refundable. Subject to final regulation. Not yet officially confirmed.</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3 p-4 bg-secondary/30 rounded-lg">
+                <CheckCircle className="h-5 w-5 text-gold flex-shrink-0 mt-0.5" />
+                <div>
+                  <p className="font-semibold text-text-primary">$1,000,000 USD 7-year government bond</p>
+                  <p className="text-sm text-text-secondary">Anticipated at 0% interest, with principal returned at maturity. Subject to final regulation. Not yet officially confirmed.</p>
                 </div>
               </div>
             </div>
             
             <p className="text-sm text-text-muted">
-              Explore qualifying properties and funds in our{" "}
+              Read the Argentina real estate market guide in our{" "}
               <a href="/guides/argentina-real-estate-investment" className="text-primary hover:underline font-medium">
-                Investment Options Guide →
+                Property Guide for Foreign Buyers →
               </a>
             </p>
           </div>
@@ -139,16 +146,16 @@ const GoldenVisaProgramContent = () => {
                 "Join the priority waitlist for first-mover advantages when the program launches.",
             },
             {
-              label: "Q1 2026",
+              label: "Next",
               title: "Final Legislation",
               description:
-                "Expected passage of enabling legislation and regulatory framework (subject to final regulation).",
+                "Expected passage of enabling legislation and regulatory framework. Anticipated launch date not yet confirmed.",
             },
             {
-              label: "Q2 2026",
+              label: "Launch",
               title: "Applications Open",
               description:
-                "Official program launch with priority processing for waitlist members.",
+                "Official program launch with priority processing for waitlist members. Anticipated launch date not yet confirmed.",
             },
           ]}
         />
@@ -184,10 +191,10 @@ const GoldenVisaProgramContent = () => {
             className="p-6 border border-border rounded-lg hover:border-gold/50 hover:bg-secondary/20 transition-all group"
           >
             <h3 className="font-serif text-lg mb-2 group-hover:text-gold transition-colors">
-              Investment Options
+              Property Market
             </h3>
             <p className="text-sm text-text-secondary">
-              Explore qualifying real estate and approved investment funds.
+              Neighborhoods and property context for foreign buyers.
             </p>
           </a>
           

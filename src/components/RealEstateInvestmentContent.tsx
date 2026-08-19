@@ -2,7 +2,7 @@ import Hero from "@/components/Hero";
 import EditorialSection from "@/components/EditorialSection";
 import ScrollytellingSteps from "@/components/ScrollytellingSteps";
 import { Button } from "@/components/ui/button";
-import { Building2, TrendingUp, MapPin, CheckCircle, ArrowRight, Landmark, DollarSign } from "lucide-react";
+import { Building2, TrendingUp, MapPin, ArrowRight } from "lucide-react";
 import buenosAiresCityscape from "@/assets/buenos-aires-cityscape.jpg";
 
 const RealEstateInvestmentContent = () => {
@@ -40,19 +40,17 @@ const RealEstateInvestmentContent = () => {
   return (
     <>
       <Hero
-        title="Investment Options"
-        subtitle="Real Estate and Funds for Residency"
+        title="Argentina Real Estate Investment"
+        subtitle="Argentina real estate investment spans Buenos Aires and beyond for buyers interested in the market on its own terms, independent of the Golden Visa or any residency-by-investment program."
         backgroundImage={buenosAiresCityscape}
       />
       
       <EditorialSection>
         <h2 className="font-serif text-xl-editorial mb-8 tracking-wide">
-          Where to Invest: Real Estate and Funds for Argentina Residency
+          Where to Invest: Real Estate in Argentina
         </h2>
         <p className="text-editorial text-text-secondary mb-8 tracking-wide max-w-3xl mx-auto">
-          Argentina's Golden Visa program accepts investments in qualified real estate and approved 
-          financial instruments. This guide covers the best opportunities for investors seeking 
-          residency through strategic investment.
+          This guide covers Buenos Aires property types and neighborhoods for buyers interested in the market on its own terms, independent of the Golden Visa or any residency-by-investment program.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <a href="/argentina-golden-visa-eligibility-checker">
@@ -69,104 +67,13 @@ const RealEstateInvestmentContent = () => {
         </div>
       </EditorialSection>
       
-      {/* Investment Categories */}
-      <EditorialSection className="bg-secondary/30">
-        <h2 className="font-serif text-xl-editorial mb-12 tracking-wide text-center">
-          Qualifying Investment Categories
-        </h2>
-        <div className="grid md:grid-cols-3 gap-8">
-          <div className="bg-background p-8 rounded-lg border border-border">
-            <div className="w-14 h-14 bg-gold/10 rounded-full flex items-center justify-center mb-6">
-              <Building2 className="h-7 w-7 text-gold" />
-            </div>
-            <h3 className="font-serif text-lg mb-3">Real Estate</h3>
-            <p className="text-3xl font-serif text-gold mb-3">$100K+</p>
-            <p className="text-text-secondary text-sm mb-4">
-              Residential or commercial property in approved developments and neighborhoods.
-            </p>
-            <ul className="text-sm text-text-secondary space-y-2">
-              <li className="flex items-center gap-2">
-                <CheckCircle className="h-4 w-4 text-gold" />
-                Lowest entry point
-              </li>
-              <li className="flex items-center gap-2">
-                <CheckCircle className="h-4 w-4 text-gold" />
-                Tangible asset ownership
-              </li>
-              <li className="flex items-center gap-2">
-                <CheckCircle className="h-4 w-4 text-gold" />
-                Rental income potential
-              </li>
-            </ul>
-          </div>
-          
-          <div className="bg-background p-8 rounded-lg border border-border">
-            <div className="w-14 h-14 bg-gold/10 rounded-full flex items-center justify-center mb-6">
-              <Landmark className="h-7 w-7 text-gold" />
-            </div>
-            <h3 className="font-serif text-lg mb-3">Government Bonds</h3>
-            <p className="text-3xl font-serif text-gold mb-3">$250K+</p>
-            <p className="text-text-secondary text-sm mb-4">
-              Argentine government securities with guaranteed returns and capital protection.
-            </p>
-            <ul className="text-sm text-text-secondary space-y-2">
-              <li className="flex items-center gap-2">
-                <CheckCircle className="h-4 w-4 text-gold" />
-                Government-backed security
-              </li>
-              <li className="flex items-center gap-2">
-                <CheckCircle className="h-4 w-4 text-gold" />
-                Fixed returns
-              </li>
-              <li className="flex items-center gap-2">
-                <CheckCircle className="h-4 w-4 text-gold" />
-                Liquid asset
-              </li>
-            </ul>
-          </div>
-          
-          <div className="bg-background p-8 rounded-lg border border-border">
-            <div className="w-14 h-14 bg-gold/10 rounded-full flex items-center justify-center mb-6">
-              <DollarSign className="h-7 w-7 text-gold" />
-            </div>
-            <h3 className="font-serif text-lg mb-3">Approved Funds</h3>
-            <p className="text-3xl font-serif text-gold mb-3">$250K+</p>
-            <p className="text-text-secondary text-sm mb-4">
-              Pre-approved investment funds managed by licensed Argentine fund managers.
-            </p>
-            <ul className="text-sm text-text-secondary space-y-2">
-              <li className="flex items-center gap-2">
-                <CheckCircle className="h-4 w-4 text-gold" />
-                Professional management
-              </li>
-              <li className="flex items-center gap-2">
-                <CheckCircle className="h-4 w-4 text-gold" />
-                Diversified portfolio
-              </li>
-              <li className="flex items-center gap-2">
-                <CheckCircle className="h-4 w-4 text-gold" />
-                Regulatory oversight
-              </li>
-            </ul>
-          </div>
-        </div>
-        
-        <p className="text-center text-sm text-text-muted mt-8">
-          Learn about the legal benefits of each investment type in our{" "}
-          <a href="/guides/argentina-golden-visa-program" className="text-primary hover:underline font-medium">
-            Golden Visa Program Guide →
-          </a>
-        </p>
-      </EditorialSection>
-      
-      {/* Luxury Real Estate Neighborhoods */}
+      {/* Prime neighborhoods */}
       <EditorialSection>
         <h2 className="font-serif text-xl-editorial mb-4 tracking-wide text-center">
           Prime Investment Neighborhoods
         </h2>
         <p className="text-text-secondary text-center mb-12 max-w-2xl mx-auto">
-          Buenos Aires offers exceptional real estate opportunities in world-class neighborhoods. 
-          These areas qualify for Golden Visa investment and offer strong appreciation potential.
+          Buenos Aires offers exceptional real estate opportunities in world-class neighborhoods, with strong appreciation potential.
         </p>
         
         <div className="grid md:grid-cols-2 gap-8">
@@ -260,7 +167,7 @@ const RealEstateInvestmentContent = () => {
         <ScrollytellingSteps
           eyebrow="A Bespoke Process"
           heading="From eligibility to keys in hand"
-          intro="A guided five-step process for qualified investors deploying capital into Argentine real estate as a route to residency."
+          intro="A guided five-step process for buyers deploying capital into Argentine real estate."
           steps={[
             {
               label: "Step 1",
@@ -272,7 +179,7 @@ const RealEstateInvestmentContent = () => {
               label: "Step 2",
               title: "Property Shortlist",
               description:
-                "Review a curated shortlist of properties in Palermo, Puerto Madero, and other premium neighborhoods that qualify for the Golden Visa.",
+                "Review a curated shortlist of properties in Palermo, Puerto Madero, and other premium neighborhoods.",
             },
             {
               label: "Step 3",

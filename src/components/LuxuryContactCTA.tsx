@@ -153,7 +153,7 @@ const LuxuryContactCTA = () => {
               className="text-3xl md:text-4xl lg:text-5xl text-white mb-6 leading-tight"
               style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
             >
-              Argentina Investment Immigration Consultation
+              Argentina Residency Consultation
             </h1>
 
             <p className="text-white/60 text-base md:text-lg mb-12 leading-relaxed font-sans">
@@ -289,6 +289,9 @@ const LuxuryContactCTA = () => {
                 <label htmlFor="goldenVisaProgram" className={labelClasses}>
                   What type of investment interests you?
                 </label>
+                <p className="text-xs text-white/50 mb-2">
+                  These options record interest for routing. They are not official program categories. Real estate and business ventures are not anticipated qualifying paths.
+                </p>
                 <div className="relative">
                   <select
                     id="goldenVisaProgram"

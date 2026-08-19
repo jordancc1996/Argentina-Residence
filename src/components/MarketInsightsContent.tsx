@@ -8,7 +8,7 @@ const MarketInsightsContent = () => {
     <>
       <Hero
         backgroundImage={heroImage}
-        title="Market Insights"
+        title="Argentina Investment Trends"
         subtitle="Understanding Argentina's Investment Landscape"
         description="Comprehensive analysis of economic trends, investment opportunities, and market dynamics shaping Argentina's future."
       />

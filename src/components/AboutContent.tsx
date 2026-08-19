@@ -12,7 +12,7 @@ const AboutContent = () => {
             About Argentina Residence
           </h1>
           <p className="text-editorial text-text-secondary mb-12 tracking-wide">
-            A specialized advisory boutique facilitating strategic capital deployment and residency acquisition in Argentina.
+            About Argentina Residence advises on Argentine residency by investment. APCI has not published operational regulations and is not processing applications.
           </p>
         </EditorialSection>
         

@@ -27,7 +27,7 @@ const IndustryNewsHero = () => {
         transition={{ duration: 0.6 }}
       >
         <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white mb-8 tracking-wide leading-tight">
-          Industry News
+          Argentina Golden Visa Industry News
         </h1>
         <p className="text-white/80 text-xl max-w-2xl mx-auto leading-relaxed">
           Regulatory updates, market briefings, and the latest developments shaping Argentina's residency-by-investment landscape.

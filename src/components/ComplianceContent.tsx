@@ -4,7 +4,7 @@ const ComplianceContent = () => {
   return (
       <main className="section-padding">
         <div className="max-w-[800px] mx-auto px-4 md:px-8">
-          <h1 className="font-serif text-3xl md:text-4xl mb-4">Compliance and Disclosures</h1>
+          <h1 className="font-serif text-3xl md:text-4xl mb-4">Argentina Residence Compliance and Disclosures</h1>
           <p className="text-muted-foreground text-sm mb-10">
             Last updated: {new Date().toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}
           </p>

@@ -1,19 +1,21 @@
 ---
 slug: argentina-citizenship-investment-application-timeline
 question: Argentina Golden Visa Application Timeline
-answer: "Argentina Golden Visa application timeline is an estimated 3-6 months from filing through decision, based on comparable investment migration programs, not an official published figure. Argentina has not published an official timeline because the program is not yet operating."
-metaTitle: "Argentina Golden Visa Application Timeline - Estimated Filing Through Decision | Argentina Residence"
-metaDescription: "Argentina Golden Visa application timeline is an estimated 3-6 months from filing through decision. Not official; Argentina has not launched APCI filings."
+answer: "Argentina Golden Visa application timeline is not yet officially confirmed. Processing time is unknown. APCI is not processing applications, and no 3-6 month or 30-business-day decision window has been published."
+metaTitle: "Argentina Golden Visa Application Timeline - Processing Time Not Confirmed | Argentina Residence"
+metaDescription: Argentina Golden Visa application timeline is not yet officially confirmed as of August 2026. APCI is not processing applications and no window is published.
 ---
 
 # Argentina Golden Visa Application Timeline
 
-Argentina Golden Visa application timeline is an estimated 3-6 months from filing through decision, based on comparable investment migration programs, not an official published figure. Argentina has not published an official timeline because the program is not yet operating. APCI has not published operational regulations. This estimate could change once those regulations are published.
+Argentina Golden Visa application timeline is not yet officially confirmed. Processing time is unknown. APCI is not processing applications, and Argentina has not published a filing-to-decision calendar.
 
-## Estimated 3-6 months: filing through decision
+## Processing time is unknown
 
-The 3-6 month figure is an estimate for the whole file, from assembly and filing through a decision. It is not a statutory deadline. It is drawn from how comparable investment migration programs typically run once they are accepting files. It is not an Argentine official publication.
+No official total timeline has been published. Earlier 3-6 month estimates drawn from other investment-migration programs are not an Argentine figure. They should not be treated as a deadline or a forecast.
 
-## 30 business days: the certified-file decision window
+## No published decision window
 
-The 30-business-day figure used elsewhere on this site describes only the decision window once a file is certified and complete. It is the last step inside the broader 3-6 month estimate, not a second, competing clock. That 30-business-day window does not run until APCI is processing files. See the [due diligence process](/guides/argentina-citizenship-investment-due-diligence) guide for what certification is expected to involve.
+No 30-business-day certified-file window has been officially confirmed either. That figure should not be used as a processing clock. See the [due diligence process](/guides/argentina-citizenship-investment-due-diligence) guide for what review is expected to involve once protocols exist.
+
+Until APCI publishes operational regulations and opens a filing channel, there is no running Argentine processing calendar.

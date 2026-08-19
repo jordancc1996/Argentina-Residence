@@ -23,7 +23,7 @@ const FAQHubContent = ({ faqs }: { faqs: FAQHubItem[] }) => {
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10">
           <h1 className="font-serif text-hero mb-8 tracking-wide text-white drop-shadow-lg">
-            Frequently Asked Questions
+            Argentina Residency FAQ
           </h1>
           <p className="text-editorial mb-12 tracking-wide text-white/90 drop-shadow-md">
             Common questions about Argentina's residency by investment program

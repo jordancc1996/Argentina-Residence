@@ -3,7 +3,7 @@ const PrivacyContent = () => {
       <div className="min-h-screen bg-dark-teal py-20">
         <div className="max-w-4xl mx-auto px-6 md:px-8">
           <h1 className="font-serif text-4xl md:text-5xl text-white mb-4 tracking-wide">
-            Privacy Policy
+            Argentina Residence Privacy Policy
           </h1>
           <p className="text-text-cream/80 text-sm mb-12">
             Effective Date: January 1, 2024
@@ -13,7 +13,7 @@ const PrivacyContent = () => {
             {/* Introduction */}
             <section>
               <p className="text-lg leading-relaxed">
-                Argentina Residence is committed to protecting the privacy of our visitors and applicants. 
+                Argentina Residence privacy policy describes how we collect, use, protect, and share personal information submitted through this site. 
                 This Privacy Policy describes how we collect, use, protect, and share personal information 
                 submitted through our website and application forms. By using our website or submitting 
                 information to us, you agree to the terms outlined in this policy.

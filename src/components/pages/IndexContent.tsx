@@ -27,7 +27,7 @@ const IndexContent = ({ posts }: { posts: HomepagePost[] }) => {
     <>
       <Hero
         title="Argentina Golden Visa Updates"
-        subtitle="Live and invest in South America's most dynamic economy"
+        subtitle="Argentina Golden Visa updates: invest in South America's most dynamic economy as the residency-by-investment program advances toward launch."
         backgroundImage={casaRosadaSrc}
         imageAlt="Argentine flag at Plaza de Mayo with the Casa Rosada presidential palace"
         ctaText="Explore Your Options"
@@ -82,7 +82,7 @@ const IndexContent = ({ posts }: { posts: HomepagePost[] }) => {
           <div className="flex flex-col">
             <h2 className="font-serif text-lg-editorial mb-4 tracking-wide">Investment Program</h2>
             <p className="text-body text-text-secondary tracking-wide mb-4 flex-1">
-              Secure temporary residency through strategic investments in Argentina's most promising sectors, from premium real estate to government bonds.
+              Secure temporary residency through strategic investment in Argentina.
             </p>
             <div className="mt-6">
               <a href="/program" className="inline-block font-sans font-semibold text-[0.75rem] tracking-[0.08em] uppercase border-2 border-primary text-foreground px-6 py-3 hover:bg-primary hover:text-primary-foreground transition-all duration-300">
