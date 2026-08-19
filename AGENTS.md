@@ -68,3 +68,11 @@ new slug and its owned topics.
 - The "Work Email" field validation is a generic email regex, not a business-email restriction. This is intentional for the current migration pass. Do not "fix" it without explicit instruction.
 - The Eligibility Checker's Formcarry submission does not check response.ok on the fetch call. It only catches network-level failures, so a non-throwing error response from Formcarry still shows the user a success/completion screen. This is a pre-existing behavior on the live site, preserved intentionally during migration, not a bug introduced here.
 - ConsultationCTA's "Prefer to Reach Out Directly?" block is missing a WhatsApp contact option — the user will provide a number to add later. See the TODO comment in ConsultationCTA.tsx.
+- Pre-existing launch-window inconsistency: `/guides/argentina-golden-visa-program` (GoldenVisaProgramContent) states expected launch Q2 2026. `/research/argentina-citizenship-by-investment-launch-date` states a targeted Q4 2026 entrance and hedges that the cancelled tender may challenge that window. Resolve in a future editorial pass. Do not treat either quarter as a due-diligence deadline.
+
+### Placeholder images (Investor Guides)
+
+Replace these temporary heroes when a real photo is provided. Do not treat the current files as final art.
+
+- `/guides/argentina-citizenship-investment-due-diligence` uses `src/assets/hero-buenos-aires-night.jpg` as a temporary hero. See the PLACEHOLDER IMAGE comment in `src/pages/guides/[slug].astro`.
+- `/guides/argentina-citizenship-investment-business-sale` uses `src/assets/hero-buenos-aires-night.jpg` as a temporary hero. See the PLACEHOLDER IMAGE comment in `src/pages/guides/[slug].astro`.

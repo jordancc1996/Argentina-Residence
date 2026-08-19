@@ -53,8 +53,28 @@ const industryNews = defineCollection({
   }),
 });
 
+const guides = defineCollection({
+  loader: glob({
+    base: './src/content/guides',
+    pattern: '**/*.{md,mdx}',
+  }),
+  schema: z.object({
+    title: z.string(),
+    slug: z.string(),
+    order: z.number().optional(),
+    seoTitle: z.string().optional(),
+    seoDescription: z.string().optional(),
+    heroTitle: z.string().optional(),
+    subtitle: z.string().optional(),
+    statusBanner: z.string().optional(),
+    datePublished: z.string().optional(),
+    dateModified: z.string().optional(),
+  }),
+});
+
 export const collections = {
   articles,
   faqs,
   industryNews,
+  guides,
 };
