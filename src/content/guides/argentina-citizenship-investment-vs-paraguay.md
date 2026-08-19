@@ -1,0 +1,60 @@
+---
+title: vs Paraguay Investor Pass
+slug: argentina-citizenship-investment-vs-paraguay
+seoTitle: "Argentina Citizenship by Investment vs Paraguay Investor Pass - Mercosur Residence versus Unpublished Nationality"
+seoDescription: "Argentina citizenship by investment vs Paraguay Investor Pass compares Paraguayan investor residence with Argentina's unpublished route under Decree 524/2025."
+heroTitle: Argentina Citizenship by Investment vs Paraguay Investor Pass
+subtitle: Mercosur Residence versus Unpublished Nationality
+statusBanner: Applications are not open in Argentina. Paraguay's Investor Pass is an operating permanent-residence route through qualifying investment. Argentina's investment citizenship route under Decree 524/2025 is not accepting applications.
+datePublished: "2026-08-19"
+dateModified: "2026-08-19"
+---
+
+Argentina citizenship by investment vs Paraguay Investor Pass is not a comparison of two open nationality windows as of August 2026. Paraguay's Investor Pass is an operating Ministry of Industry and Commerce route to Paraguayan permanent residence, processed through the SUACE one-stop window, against a qualifying investment in Paraguay. Argentina's pathway, as this site describes it, is nationality through a relevant investment under Decree 524/2025, administered by the Agencia de Programas de Ciudadanía por Inversión (APCI). That Argentine file cannot be lodged while operational protocols remain unpublished.
+
+This page stays on Paraguay: the Investor Pass tracks, the ten-year residence carnet, and Paraguay's position as a Mercosur State Party. It is not a regional residency-by-investment survey. For Argentine program structure independent of Paraguay, see the [Argentina Golden Visa Program](/guides/argentina-golden-visa-program) guide. Return to [View All Guides](/resources) for the rest of the Investor Guides set.
+
+## What the Paraguay Investor Pass Grants
+
+The Investor Pass is permanent residence in Paraguay, not Paraguayan nationality. Successful applicants receive a renewable permanent-residence permit, reported as valid for ten years, with authorization to work and do business in Paraguay. The product is a carnet, not a passport.
+
+The framework sits at the Ministry of Industry and Commerce. SUACE (Sistema Unificado de Apertura y Cierre de Empresas) is the investor window. Immigration issues the residence. MIC Resolution 0283/2026 is the 2026 instrument commonly cited for the expanded Investor Pass categories. Confirm the current text with Paraguayan counsel and MIC before treating any brochure as the filing rule.
+
+Four qualifying investment categories are the ones described in current professional summaries of that resolution:
+
+- Commercial and industrial investment through the existing SUACE route: a minimum of USD 70,000, creation of at least five jobs for Paraguayan citizens, and a commercial or industrial plan pre-approved by MIC.
+- Paraguayan stock-market investment: a financial holding of at least USD 200,000, commonly described as subject to a minimum two-year hold.
+- Real estate: a minimum of USD 200,000 in acquisition, development, or operation of Paraguayan real estate not intended for personal use.
+- Tourism: a minimum of USD 150,000 in tourism-related infrastructure, services, or activities.
+
+Those dollar amounts are Paraguay's published Investor Pass floors, not Argentina's. This site's expected Argentine figure remains $500,000 USD, subject to final regulation, in a productive Argentine asset. See [investment requirements](/faq/investment-requirements). A USD 70,000 SUACE plan with five Paraguayan hires is not an APCI-certified relevant investment. An Argentine qualifying asset, when one can be made, does not complete a Paraguay Investor Pass file.
+
+Family inclusion is a Paraguay-specific mechanic, not a generic residence-by-investment feature. Current summaries of the Investor Pass state that dependents cannot ride on the principal's file. They apply separately for temporary residence. After two years, the principal may be able to sponsor eligible family members for permanent residence. That sequencing is Paraguayan immigration practice. It is not Argentine APCI practice, which has not been published.
+
+## Paraguay as a Mercosur State Party
+
+Paraguay is a State Party to Mercosur. That fact is why some applicants look at an Asunción investor file: they want a legal foothold in a member of that customs union. It is not a reason to treat the Investor Pass as Mercosur nationality.
+
+Mercosur rules that attach to nationality of a member state (the right of a Paraguayan national to reside and work in another member) are not the same as holding a Paraguayan permanent-residence carnet. The Investor Pass makes the holder a foreign permanent resident of Paraguay. It does not, by itself, make the holder a Paraguayan national. Regional mobility that follows Paraguayan nationality is available only if and when naturalization succeeds.
+
+Paraguayan naturalization is a separate judicial track. Published accounts commonly describe eligibility after three years of legal residence, with Spanish or Guaraní, civic knowledge, and a showing of ties. It is discretionary. Paraguay does not operate a citizenship-by-investment statute. Paying the Investor Pass threshold does not buy a Paraguayan passport.
+
+Argentina, if APCI grants citizenship under the decrees, would issue Argentine nationality. Argentine nationality is also Mercosur nationality. That contrast is grant-versus-carnet, not a claim that Paraguay is outside Mercosur. This page does not repeat this site's description of Argentine Mercosur citizen rights for U.S. applicants. That description lives on [Argentina citizenship by investment for Americans](/research/argentina-citizenship-investment-american-investors).
+
+## Naturalization on a Paraguay Clock versus an Unpublished Argentine Grant
+
+A Paraguay Investor Pass file is therefore a two-clock product. Clock one is the operating residence file: investment, SUACE or MIC qualification, and a ten-year carnet. Clock two is naturalization, if the holder later meets Paraguay's residence, language, and integration tests. Accessibility on clock one (a SUACE floor well below this site's expected Argentine $500,000, and tracks that do not require standing up a factory) does not shorten clock two.
+
+Argentina's unpublished route is a single-clock product as this site describes it: nationality through a relevant investment, without using Paraguay's three-year naturalization path. How the decrees treat ordinary two-year Argentine residence is already written on the [American-investors research article](/research/argentina-citizenship-investment-american-investors). It is not restated here.
+
+Processing is an operating Paraguayan calendar. After the qualifying investment is in place and a complete file is submitted, the residence carnet is issued on whatever timeline SUACE, MIC, and Migraciones are actually running. This site does not publish a Paraguay processing-day table. Argentina's stated 30-business-day window is a post-certification target and is not running. See [application process timeline](/faq/application-process-timeline). The [launch-date research note](/research/argentina-citizenship-by-investment-launch-date) records that, after the April 2026 tender cancellation, application procedures and due diligence protocols had still not been defined.
+
+How an Argentine file would be screened, once one exists, is on the [due diligence process](/guides/argentina-citizenship-investment-due-diligence) guide. Paraguayan Investor Pass due diligence is a live MIC, SUACE, and immigration review. Completing it does not create an Argentine file.
+
+## Program Status: An Open Paraguayan Counter and an Unpublished Argentine File
+
+Paraguay is processing Investor Pass and SUACE investor-residence applications. Capital can be placed in a qualifying Paraguayan commercial plan, tourism project, stock-market holding, or non-personal-use real estate, and used to support a permanent-residence file. The result, if granted, is Paraguayan permanent residence. Citizenship remains a later, discretionary naturalization question.
+
+Argentina is not processing citizenship-by-investment applications. Decree 524/2025 is the legal shell. APCI has not published operational due diligence protocols or a filing portal. A Paraguayan residence carnet does not become Argentine nationality. An Argentine qualifying investment, when one can be made, does not complete a Paraguay Investor Pass file. Mercosur membership of Paraguay does not convert the carnet into a Mercosur passport.
+
+Until Argentina publishes operational regulations and opens a channel, the accurate statement of Argentina citizenship by investment vs Paraguay Investor Pass is: Paraguay offers an operating, investment-linked permanent-residence route in a Mercosur State Party, with nationality only through later naturalization; Argentina describes a productive-investment nationality structure under Decree 524/2025 and is not live. For the rest of the Investor Guides set, return to [View All Guides](/resources).
