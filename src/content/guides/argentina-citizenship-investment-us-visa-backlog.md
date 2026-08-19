@@ -1,0 +1,65 @@
+---
+title: US Visa Backlog Timing
+slug: argentina-citizenship-investment-us-visa-backlog
+seoTitle: "Argentina Citizenship by Investment Before US Visa Backlog Ends - A Parallel Track"
+seoDescription: "Argentina citizenship by investment before us visa backlog ends is a parallel track under Decree 524/2025 for people facing multi-year US immigrant visa waits."
+heroTitle: Argentina Citizenship by Investment Before US Visa Backlog Ends
+subtitle: A Parallel Track
+statusBanner: Applications are not open. An Argentine investment file cannot be lodged with APCI while due diligence protocols remain unpublished, regardless of a pending US immigrant visa.
+datePublished: "2026-08-19"
+dateModified: "2026-08-19"
+---
+
+Argentina citizenship by investment before us visa backlog ends is not a live filing option as of August 2026. It is also not a way to move a priority date, skip a visa bulletin cutoff, or convert a pending EB-5 or employment-based petition into a faster US green card. What the proposed Argentine pathway can be, once APCI is processing files, is a second, separate mobility track that runs on Argentina's calendar, not on the Department of State's immigrant visa queue.
+
+This page stays on that queue-timing question. For the broader case aimed at US citizens who are not waiting on an immigrant visa, see [Argentina citizenship by investment for Americans](/research/argentina-citizenship-investment-american-investors). That article owns that pitch. This one does not repeat it.
+
+## What a US Immigrant Visa Backlog Is
+
+A US immigrant visa backlog exists when more people are approved, or in line, in a category than the annual numerical limits allow. The Department of State publishes the Visa Bulletin. A category and country of chargeability are "current" when a visa number is available for that priority date. When they are not current, the applicant waits, even if USCIS has already approved the underlying petition.
+
+Two families of cases produce the waits this page is about:
+
+- Employment-based immigrant categories (commonly discussed as EB-1, EB-2, and EB-3). Per-country caps mean some chargeability countries wait years after an I-140 approval. The wait is a function of the bulletin, not of whether the employer or the beneficiary is ready to proceed.
+- EB-5 immigrant investor visas. These are also numerically limited. When demand from a chargeability country exceeds the supply of numbers, the bulletin can hold those cases even after a petition is approved.
+
+This site does not publish a live wait-time table. Bulletin cutoffs move, sometimes backward. Anyone with a pending case should read the current Visa Bulletin and their counsel's reading of it, not a screenshot from an advisory page. The structural fact is enough for planning: some applicants sit in a multi-year queue after the merits of the petition are no longer the delay.
+
+Adjustment of status inside the United States and consular processing abroad both depend on visa-number availability. A backlog is not the same as a request for evidence, and it is not the same as a denied petition. It is a supply constraint on immigrant visa numbers.
+
+## Argentina Citizenship by Investment as a Parallel Track
+
+Decree 524/2025 and Decree 366/2025 describe Argentine naturalization through a relevant investment, administered by APCI, without using the US visa bulletin. That is the entire relationship between the two systems: they do not share a queue.
+
+Once the Argentine program is active, a person already in an EB-5 or employment-based wait could, in principle, pursue a qualifying Argentine investment as a separate file. The Argentine outcome, if granted, would be Argentine nationality and a passport issued on Argentina's rules. It would not be a US immigrant visa. It would not make an unavailable bulletin category current. It would not replace an I-140, an EB-5 petition, or a National Visa Center case.
+
+"Parallel" here means simultaneous or alternative mobility, not a shortcut inside the US case. Someone who wants to keep the US petition alive can do so. Someone who wants Argentine nationality because travel, residence, or optionality cannot wait on the bulletin is asking a different question. The Argentine file, when it exists, answers the second question only.
+
+Program status has not changed for this audience. APCI has not published operational due diligence protocols or a filing portal. The [launch-date research note](/research/argentina-citizenship-by-investment-launch-date) recorded that gap after the April 2026 tender cancellation. A long US wait does not open an Argentine window early. For how an Argentine file is expected to be reviewed once one exists, see the [due diligence process](/guides/argentina-citizenship-investment-due-diligence) guide. This page does not repeat that checklist.
+
+If the capital for a later Argentine investment would come from a company sale or startup exit that happened while the US case was pending, that sequencing is covered on [after selling a business](/guides/argentina-citizenship-investment-business-sale).
+
+## What a Parallel Track Does Not Change in a US Case
+
+An Argentine citizenship-by-investment application, when one can be filed, does not:
+
+- Advance a priority date or create visa-number availability in the Visa Bulletin.
+- Substitute for an employment-based or EB-5 petition, or for consular processing of that petition.
+- Guarantee that travel on an Argentine passport is compatible with a pending US adjustment, a grant of parole, or conditions on a current US status. Those are US immigration questions for US counsel.
+- Convert time spent waiting on the bulletin into Argentine physical-presence credit. The Argentine pathway described on this site is an investment route, not a US-wait conversion.
+
+Keeping both tracks means keeping two files. The US file continues to be governed by petition validity, the bulletin, and USCIS or consular instructions. The Argentine file, once APCI is open, would be governed by whatever qualifying-asset and due-diligence rules are finally published. Neither calendar is a substitute for the other.
+
+For program structure independent of any US queue, see the [Argentina Golden Visa Program](/guides/argentina-golden-visa-program) guide.
+
+## Timing: Two Calendars, Not One Deadline
+
+The keyword is "before us visa backlog ends." That is a description of overlap, not a published Argentine cutoff. Argentina has not said that a US immigrant visa must still be pending, or must still be unavailable, on the day an Argentine application is filed. It has not said the opposite either. There is no official rule that the Argentine window closes when a bulletin category becomes current.
+
+What can be said without inventing a deadline:
+
+- A US backlog can last years after petition approval. That is the period in which a parallel mobility track would matter, if it existed.
+- The Argentine program is not processing applications as of August 2026. Overlap is hypothetical until APCI is operational.
+- Becoming a US lawful permanent resident later does not cancel Argentine nationality obtained earlier, and obtaining Argentine nationality does not, by itself, abandon a US immigrant petition. Abandonment, ineligibility, or travel consequences are fact-specific US issues.
+
+Until both a current bulletin reading and an open Argentine filing channel exist, the useful work is knowing which wait you are actually in, and not treating a second-passport brochure as a visa-number strategy. Return to [View All Guides](/resources) for the rest of the Investor Guides set.

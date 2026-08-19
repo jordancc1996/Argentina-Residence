@@ -76,3 +76,4 @@ Replace these temporary heroes when a real photo is provided. Do not treat the c
 
 - `/guides/argentina-citizenship-investment-due-diligence` uses `src/assets/hero-buenos-aires-night.jpg` as a temporary hero. See the PLACEHOLDER IMAGE comment in `src/pages/guides/[slug].astro`.
 - `/guides/argentina-citizenship-investment-business-sale` uses `src/assets/hero-buenos-aires-night.jpg` as a temporary hero. See the PLACEHOLDER IMAGE comment in `src/pages/guides/[slug].astro`.
+- `/guides/argentina-citizenship-investment-us-visa-backlog` uses `src/assets/hero-buenos-aires-night.jpg` as a temporary hero. See the PLACEHOLDER IMAGE comment in `src/pages/guides/[slug].astro`.

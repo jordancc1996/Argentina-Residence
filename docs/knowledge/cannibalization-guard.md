@@ -30,6 +30,7 @@ guide ≈ overview ≈ explained ≈ how-it-works ≈ complete-guide ≈ what-is
 | `/guides/argentina-real-estate-investment` | argentina-real-estate-investment | argentina real estate investment | buenos aires property | real estate golden visa |
 | `/guides/argentina-citizenship-investment-due-diligence` | argentina-citizenship-investment-due-diligence | argentina citizenship by investment due diligence process | source of funds requirements; net worth requirements; argentina citizenship by investment for crypto investors | due diligence; source of funds; net worth; crypto investors |
 | `/guides/argentina-citizenship-investment-business-sale` | argentina-citizenship-investment-business-sale | argentina citizenship by investment after selling a business | argentina citizenship by investment for startup exits; using company proceeds; argentina citizenship by investment for tech founders | business sale; startup exits; company proceeds; tech founders |
+| `/guides/argentina-citizenship-investment-us-visa-backlog` | argentina-citizenship-investment-us-visa-backlog | argentina citizenship by investment before us visa backlog ends | EB-5 queue timing; employment-based immigrant visa wait | US immigrant-visa backlog; visa bulletin wait (this page does NOT own the general American-investor pitch; that remains `/research/argentina-citizenship-investment-american-investors`) |
 | `/program` | program | argentina residency by investment | golden visa program page | (hub, not article) |
 
 ---
@@ -48,9 +49,10 @@ guide ≈ overview ≈ explained ≈ how-it-works ≈ complete-guide ≈ what-is
 | `/faq/investment-requirements` | Minimum Investment Amount; Qualifying Investment Types; Verification Process (source of funds) |
 | `/guides/argentina-citizenship-investment-due-diligence` | What the Due Diligence Process Is Expected to Involve; Source of Funds Documentation; Net Worth Requirements; Argentina Citizenship by Investment for Crypto Investors |
 | `/guides/argentina-citizenship-investment-business-sale` | Using Company Proceeds Toward a Qualifying Investment; Argentina Citizenship by Investment for Startup Exits; Tech Founders; Timing After a Liquidity Event |
+| `/guides/argentina-citizenship-investment-us-visa-backlog` | What a US Immigrant Visa Backlog Is; Argentina Citizenship by Investment as a Parallel Track; What a Parallel Track Does Not Change in a US Case; Timing: Two Calendars, Not One Deadline |
 
 ---
 
 ## Proposed cluster log (2026-08-19, not published)
 
-See conversation analysis. Published after this table: `argentina-citizenship-investment-due-diligence` and `argentina-citizenship-investment-business-sale` (2026-08-19). Remaining approved comparison/audience slugs are not yet published.
+See conversation analysis. Published after this table: `argentina-citizenship-investment-due-diligence`, `argentina-citizenship-investment-business-sale`, and `argentina-citizenship-investment-us-visa-backlog` (2026-08-19). Remaining approved comparison slugs are not yet published.
