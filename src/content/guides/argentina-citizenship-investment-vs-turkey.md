@@ -1,0 +1,53 @@
+---
+title: vs Turkey Citizenship
+slug: argentina-citizenship-investment-vs-turkey
+seoTitle: "Argentina Citizenship by Investment vs Turkey Citizenship - Operating Property Citizenship"
+seoDescription: "Argentina citizenship by investment vs Turkey citizenship compares live Turkish property citizenship with Argentina's unpublished route under Decree 524/2025."
+heroTitle: Argentina Citizenship by Investment vs Turkey Citizenship
+subtitle: Operating Property Citizenship
+statusBanner: Applications are not open in Argentina. Turkey's citizenship-by-investment program is currently processing files, typically through real estate. Argentina's investment citizenship route under Decree 524/2025 is not accepting applications.
+datePublished: "2026-08-19"
+dateModified: "2026-08-19"
+---
+
+Argentina citizenship by investment vs Turkey citizenship is not a comparison of two open filing windows as of August 2026. Turkey runs an operating exceptional-citizenship program: a qualifying investment, most often a Turkish real-estate purchase, can lead to Turkish nationality rather than a renewable foreigner's residence card. Argentina's pathway, as this site describes it, is also nationality through a relevant investment, under Decree 524/2025, administered by the Agencia de Programas de Ciudadanía por Inversión (APCI). That Argentine file cannot be lodged while operational protocols remain unpublished.
+
+The comparison is therefore two citizenship-by-investment structures, not a citizenship track versus a golden-visa residence permit. Greece and Portugal issue residency-track golden visas. Their product is a residence card. Naturalization, if it happens at all, sits on a separate nationality-law clock. Turkey's investment statute is the other kind of file: direct citizenship. For the Greek residence-permit comparison, see [Argentina citizenship by investment vs Greece Golden Visa](/guides/argentina-citizenship-investment-vs-greece-golden-visa). This page stays on Turkey. For Argentine program structure independent of Turkey, see the [Argentina Golden Visa Program](/guides/argentina-golden-visa-program) guide. Return to [View All Guides](/resources) for the rest of the Investor Guides set.
+
+## Direct Citizenship through Investment, Not a Residence Card
+
+Turkish citizenship by investment is exceptional naturalization under Turkish citizenship law. The applicant does not collect years on a residence permit and then apply for a passport. If the investment is accepted and security review clears, the grant is nationality. Dual citizenship is permitted on the Turkish side.
+
+That is the structural point versus residency-track European golden visas, and it is also the point of contact with Argentina. Decree 524/2025 and Decree 366/2025 describe Argentine citizenship through a relevant, productive investment, without a prior two-year ordinary residence period. See [residency requirements](/faq/residency-requirements). Both programs, on paper, aim at nationality. Only one of them is taking files.
+
+What Turkey is not: a permit you renew by keeping a house and visiting rarely. The Turkish real-estate route uses a title (or an eligible promise-to-sell arrangement) with a registered hold. The outcome sought is a Turkish identity card and passport, not a five-year residence sticker. Argentina, once APCI is processing, is likewise not described on this site as a renewable foreigner's card. The unpublished Argentine object is nationality. The live difference is operational status, not the legal category.
+
+## Turkey's Real Estate Route
+
+The default Turkish path is property. Published accounts of the current rules, in force since the 2022 increase, put the real-estate floor at USD 400,000 (or equivalent foreign currency). That figure replaced a prior USD 250,000 threshold. The title commonly carries a three-year annotation that the property will not be sold or transferred. Licensed valuation and payment through the Turkish banking system (foreign-exchange conversion documented at a Turkish bank) are part of how the investment is evidenced. Confirm the current regulation with Turkish counsel before treating any brochure number as the filing rule.
+
+Other qualifying routes exist and are commonly cited at a higher USD 500,000 floor: bank deposit, government bonds, or business capital, with a separate employment-creation option. Those are not the path most applicants use. Real estate is.
+
+Argentina's expected qualifying investment on this site is $500,000 USD, subject to final regulation, in a productive Argentine asset. Real estate appears as one expected category, alongside designated government bonds or an active Argentine business. See [investment requirements](/faq/investment-requirements) and [Argentina Real Estate Investment](/guides/argentina-real-estate-investment). A Turkish tapu at USD 400,000 with a three-year hold is not an APCI-certified relevant investment. An Argentine qualifying asset, when one can be made, does not complete a Turkish citizenship file.
+
+Headline proximity between USD 400,000 and $500,000 is not legal equivalence. One number is a live Turkish property minimum. The other is this site's expected Argentine floor for a program that is not accepting applications.
+
+## A Months-Long Live Calendar versus a Clock That Is Not Running
+
+Turkey is comparatively fast among citizenship-by-investment programs because the file can be started now and is aimed at nationality rather than a multi-year residence-then-naturalization sequence. End-to-end time is still measured in months. Published practitioner ranges vary with title work, valuation, conformity certificates, and security review. Treat "a few months" as marketing shorthand. Treat "under a year in a complete file" as the realistic band. Do not treat any single brochure number as a statutory deadline.
+
+Continuous physical residence in Turkey is not, on published accounts of this track, a condition of the grant. Language proficiency is not required for the investment route. Filing still involves steps inside Turkey (title, and typically in-person biometrics). That is presence for a procedure, not a stay quota.
+
+Argentina's stated decision window on this site is 30 business days after a certified application. See [application process timeline](/faq/application-process-timeline). That clock does not run until APCI is processing files. The [launch-date research note](/research/argentina-citizenship-by-investment-launch-date) records that, after the April 2026 tender cancellation, application procedures and due diligence protocols had still not been defined. A Turkish file that finishes in some number of months is a live calendar. Argentina's 30-business-day figure is a post-certification target on an unpublished channel.
+
+How an Argentine file would be screened, once one exists, is on the [due diligence process](/guides/argentina-citizenship-investment-due-diligence) guide. Turkish due diligence is a live investment-and-security review run by Turkish authorities today. Completing it does not create an Argentine file.
+
+A Turkish passport is a currently issuable travel document. This page does not publish a visa-free destination count for it; those lists move. One mobility fact that can be stated without inventing a total: Turkish citizens generally require a visa for short stays in the Schengen Area. An Argentine passport, if and when issued through the investment route, is described on this site as visa-free or visa-on-arrival to over 170 countries, including the Schengen Area. See [visa-free travel](/faq/visa-free-travel). That Argentine document is not available through APCI today.
+
+## Program Status: An Open Turkish Counter and an Unpublished Argentine File
+
+Turkey is processing citizenship-by-investment applications. Property can be identified, valued, and purchased under the current real-estate floor, and used to support an exceptional-citizenship file. The result, if granted, is Turkish nationality.
+
+Argentina is not processing citizenship-by-investment applications. Decree 524/2025 is the legal shell. APCI has not published operational due diligence protocols or a filing portal. A Turkish passport does not become Argentine nationality. An Argentine qualifying investment, when one can be made, does not complete a Turkish citizenship file. Capital sitting in a Turkish title with a three-year annotation is not an APCI-certified relevant investment.
+
+Until Argentina publishes operational regulations and opens a channel, the accurate statement of Argentina citizenship by investment vs Turkey citizenship is: Turkey offers an operating, typically real-estate, direct-citizenship program that can be filed now on a months-long calendar; Argentina describes a different productive-investment nationality structure under Decree 524/2025 and is not live. For the rest of the Investor Guides set, return to [View All Guides](/resources).
