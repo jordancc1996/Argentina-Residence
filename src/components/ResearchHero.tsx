@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Separator } from "@/components/ui/separator";
 import { useParallax, useScrollOpacity } from "@/hooks/useParallax";
+import { resolveImageSrc } from "@/lib/resolveImageSrc";
 import heroImage from "@/assets/research-intelligence-hero.jpg";
 
 const ResearchHero = () => {
@@ -10,7 +11,7 @@ const ResearchHero = () => {
   return (
       <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden -mt-[72px] pt-[72px] md:-mt-[88px] md:pt-[88px]">
         <motion.div className="absolute inset-0 z-0 scale-110" style={{ y: parallaxY }}>
-          <img src={heroImage} alt="Financial research and market intelligence" className="w-full h-full object-cover" width={1920} height={1080} />
+          <img src={resolveImageSrc(heroImage)} alt="Financial research and market intelligence" className="w-full h-full object-cover" width={1920} height={1080} />
           <div className="absolute inset-0 bg-black/60" />
         </motion.div>
 

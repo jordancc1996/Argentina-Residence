@@ -2,6 +2,7 @@ import EditorialSection from "@/components/EditorialSection";
 import { motion } from "framer-motion";
 import { ChevronRight } from "lucide-react";
 import { useParallax } from "@/hooks/useParallax";
+import { resolveImageSrc } from "@/lib/resolveImageSrc";
 import faqBackground from "@/assets/faq-colombia-cityscape.jpg";
 
 export interface FAQHubItem {
@@ -17,7 +18,7 @@ const FAQHubContent = ({ faqs }: { faqs: FAQHubItem[] }) => {
       <EditorialSection className="relative overflow-hidden">
         <motion.div
           className="absolute inset-0 scale-110 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${faqBackground})`, y: parallaxY }}
+          style={{ backgroundImage: `url(${resolveImageSrc(faqBackground)})`, y: parallaxY }}
         />
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10">

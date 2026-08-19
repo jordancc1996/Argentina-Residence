@@ -1,5 +1,6 @@
 import EditorialSection from "@/components/EditorialSection";
 import { Button } from "@/components/ui/button";
+import { resolveImageSrc } from "@/lib/resolveImageSrc";
 import buenosAiresCityscape from "@/assets/buenos-aires-cityscape.jpg";
 import buenosAiresChurch from "@/assets/buenos-aires-architecture-church.jpg";
 
@@ -18,7 +19,7 @@ const AboutContent = () => {
         <section className="relative py-32">
           <div className="absolute inset-0 z-0">
             <img
-              src={buenosAiresCityscape}
+              src={resolveImageSrc(buenosAiresCityscape)}
               alt="Buenos Aires cityscape"
               className="w-full h-full object-cover"
             />
@@ -67,7 +68,7 @@ const AboutContent = () => {
         <section className="relative py-32">
           <div className="absolute inset-0 z-0">
             <img
-              src={buenosAiresChurch}
+              src={resolveImageSrc(buenosAiresChurch)}
               alt="Buenos Aires historic architecture"
               className="w-full h-full object-cover"
             />

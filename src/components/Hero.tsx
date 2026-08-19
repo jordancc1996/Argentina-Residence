@@ -2,17 +2,22 @@ import heroImage from "@/assets/hero-aerial-buenos-aires.jpg";
 import { motion } from 'framer-motion';
 import { useParallax, useScrollOpacity } from '@/hooks/useParallax';
 
+type HeroImageSrc = string | { src: string };
+
 interface HeroProps {
   title: string;
   subtitle?: string;
   description?: string;
-  backgroundImage?: string;
+  backgroundImage?: HeroImageSrc;
   imageAlt?: string;
   overlay?: boolean;
   ctaText?: string;
   ctaLink?: string;
   ctaSubline?: string;
 }
+
+const resolveHeroSrc = (image: HeroImageSrc) =>
+  typeof image === "string" ? image : image.src;
 
 const Hero = ({ 
   title, 
@@ -27,6 +32,7 @@ const Hero = ({
 }: HeroProps) => {
   const parallaxY = useParallax(-0.3);
   const opacity = useScrollOpacity(600);
+  const backgroundSrc = resolveHeroSrc(backgroundImage);
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden -mt-[72px] pt-[72px] md:-mt-[88px] md:pt-[88px]">
@@ -36,7 +42,7 @@ const Hero = ({
         style={{ y: parallaxY }}
       >
         <img
-          src={backgroundImage}
+          src={backgroundSrc}
           alt={imageAlt}
           className="w-full h-full object-cover"
         />

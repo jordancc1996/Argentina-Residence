@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
 import { motion } from "framer-motion";
 import { useParallax } from "@/hooks/useParallax";
+import { resolveImageSrc } from "@/lib/resolveImageSrc";
 import resourcesBackground from "@/assets/argentina-flag-resources.jpg";
 
 const ResourcesContent = () => {
@@ -49,7 +50,7 @@ const ResourcesContent = () => {
         <EditorialSection className="relative min-h-[400px] flex items-center justify-center overflow-hidden">
           <motion.div
             className="absolute inset-0 scale-110 bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: `url(${resourcesBackground})`, y: parallaxY }}
+            style={{ backgroundImage: `url(${resolveImageSrc(resourcesBackground)})`, y: parallaxY }}
           />
           <div className="absolute inset-0 bg-black/60" />
           <div className="relative z-10">
