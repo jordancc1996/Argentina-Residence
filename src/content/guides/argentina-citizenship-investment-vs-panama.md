@@ -28,7 +28,7 @@ The Panama Friendly Nations Visa (Visa de Naciones Amigas) is an operating resid
 
 The Friendly Nations file is commonly a two-step residence product: a provisional (often two-year) permit, then an application to convert to permanent residence if the original economic tie still holds. That is not immediate permanent residence, and it is not nationality.
 
-Argentina has no published Friendly Nations analogue. Decree 524/2025 does not create a nationality-list visa. This site's expected Argentine figure remains $500,000 USD, subject to final regulation, in a productive Argentine asset. See [investment requirements](/faq/investment-requirements). A USD 200,000 Panama Friendly Nations property or deposit is not an APCI-certified relevant investment.
+Argentina has no published Friendly Nations analogue. Decree 524/2025 does not create a nationality-list visa. This site's expected Argentine figure remains $500,000 USD, subject to final regulation, in a productive Argentine asset. See [investment requirements](/faq/argentina-citizenship-investment-requirements). A USD 200,000 Panama Friendly Nations property or deposit is not an APCI-certified relevant investment.
 
 ## Panama Qualified Investor Visa
 
@@ -42,7 +42,7 @@ Published 2026 summaries of the qualifying routes:
 
 Verify the current decree text before treating any brochure as the filing rule. The October 2026 real-estate increase, if it takes effect as published, would put the Panama Qualified Investor property floor next to this site's expected Argentine $500,000 figure. Headline proximity is not legal equivalence. One number is a live Panamanian permanent-residence investment. The other is an unpublished Argentine nationality floor.
 
-Qualified Investor processing is an operating Panamanian calendar. Practitioner accounts describe a short administrative target once a complete file is in, measured in business days or weeks, not years. Argentina's stated 30-business-day window is a post-certification target and is not running. See [application process timeline](/faq/application-process-timeline).
+Qualified Investor processing is an operating Panamanian calendar. Practitioner accounts describe a short administrative target once a complete file is in, measured in business days or weeks, not years. Argentina's stated 30-business-day window is a post-certification target and is not running. See [application process timeline](/faq/argentina-citizenship-investment-application-timeline).
 
 The real-estate PR route that this comparison owns is that Qualified Investor (and, at a lower floor, Friendly Nations) property purchase: Panamanian title, Panamanian residence. It is not Argentine real estate. For how this site describes an Argentine property as a possible qualifying asset once rules exist, see [Argentina Real Estate Investment](/guides/argentina-real-estate-investment). Buying in Panama City does not create an APCI file.
 

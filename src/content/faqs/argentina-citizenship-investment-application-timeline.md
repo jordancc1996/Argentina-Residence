@@ -1,5 +1,5 @@
 ---
-slug: application-process-timeline
+slug: argentina-citizenship-investment-application-timeline
 question: Argentina Golden Visa Application Timeline
 answer: "Argentina Golden Visa application timeline is an estimated 3-6 months from filing through decision, based on comparable investment migration programs, not an official published figure. Argentina has not published an official timeline because the program is not yet operating."
 metaTitle: "Argentina Golden Visa Application Timeline - Estimated Filing Through Decision | Argentina Residence"

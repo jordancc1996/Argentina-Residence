@@ -34,7 +34,7 @@ const ProgramContent = () => {
             <p className="text-body text-text-secondary tracking-wide mb-4">
               Investments must be maintained for a minimum period of three years, with clear pathways to permanent residency and eventual citizenship.
             </p>
-            <a href="/faq/investment-requirements" className="text-primary hover:underline text-sm font-medium">
+              <a href="/faq/argentina-citizenship-investment-requirements" className="text-primary hover:underline text-sm font-medium">
               See detailed requirements →
             </a>
           </div>
@@ -42,12 +42,12 @@ const ProgramContent = () => {
           <div>
             <h2 className="font-serif text-xl-editorial mb-6 tracking-wide">Program Benefits</h2>
             <ul className="text-body text-text-secondary space-y-4 tracking-wide mb-4">
-              <li>• Temporary residence visa with <a href="/faq/work-rights" className="text-primary hover:underline">work authorization</a></li>
+              <li>• Temporary residence visa with <a href="/faq/argentina-residency-work-rights" className="text-primary hover:underline">work authorization</a></li>
               <li>• Access to Argentina's comprehensive healthcare system</li>
-              <li>• Favorable <a href="/faq/tax-implications" className="text-primary hover:underline">tax treatment</a> for foreign investors</li>
+              <li>• Favorable <a href="/faq/argentina-residency-tax-implications" className="text-primary hover:underline">tax treatment</a> for foreign investors</li>
               <li>• Pathway to permanent residency after two years</li>
-              <li>• <a href="/faq/visa-free-travel" className="text-primary hover:underline">Visa-free travel</a> to 170+ countries</li>
-              <li>• <a href="/faq/family-members-residency" className="text-primary hover:underline">Family inclusion</a> for spouse and dependent children</li>
+              <li>• <a href="/faq/argentina-visa-free-travel" className="text-primary hover:underline">Visa-free travel</a> to 170+ countries</li>
+              <li>• <a href="/faq/argentina-citizenship-investment-family" className="text-primary hover:underline">Family inclusion</a> for spouse and dependent children</li>
             </ul>
           </div>
         </div>

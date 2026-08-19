@@ -20,7 +20,7 @@ keywords:
 ---
 ![Argentina citizenship by investment launch date: Q4 2026 market analysis](/argentina-golden-visa-argentinaresidence.jpg)
 
-The global investment migration market has been anticipating the Argentinian Citizenship program for years. As traditional European programs close under regulatory pressure and Caribbean nations harmonize their pricing upwards, the industry is actively seeking new participants. Argentina has been teasing its citizenship by investment program for all of 2026 and has captured significant attention from globally minded investors. However, recent developments suggest that while the legal framework exists, the operational reality still needs some tweaking.
+Argentina citizenship by investment launch date remains unpublished after the April 2026 tender cancellation and APCI's in-house pivot. As traditional European programs close under regulatory pressure and Caribbean nations harmonize their pricing upwards, the industry is actively seeking new participants. Argentina has been teasing its citizenship by investment program for all of 2026 and has captured significant attention from globally minded investors. However, recent developments suggest that while the legal framework exists, the operational reality still needs some tweaking.
 
 In this analysis, we discuss what we have been seeing from prospective Argentinian investors, the current state of the program, the implications of its April tender cancellation, and its potential positioning within the broader $20 billion global investment migration market, with a focused view on the Argentina CBI timeline and the most likely launch date.
 

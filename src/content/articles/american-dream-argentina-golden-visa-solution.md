@@ -22,7 +22,7 @@ keywords:
 
 ## The $5 Million American Dream
 
-The cinematic romanticized American dream is often depicted as a white picket fence, a happy family, comfortable retirement and healthy golden years. **This dream is now firmly out of reach for most Americans** due to rising inflation in the United States. A recent USA Today article found that this American dream now costs over **$5 million** over a lifetime with eight key components creating that valuation.
+American Dream vs Argentina Golden Visa is a 2026 cost comparison after a USA Today lifetime figure of $5 million. **This dream is now firmly out of reach for most Americans** due to rising inflation in the United States. A recent USA Today article found that this American dream now costs over **$5 million** over a lifetime with eight key components creating that valuation.
 
 The sheer magnitude of these figures is striking especially when considering that the cost will only continue to rise. The highest figure is the astronomical cost of retirement. **$1.6 million to retire comfortably** is absurd considering anything over $1 million in other jurisdictions could last several lifetimes.
 

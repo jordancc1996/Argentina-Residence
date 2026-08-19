@@ -97,7 +97,7 @@ const IndexContent = ({ posts }: { posts: HomepagePost[] }) => {
               Access South America's second-largest economy while enjoying visa-free travel to over 170 countries worldwide.
             </p>
             <div className="mt-6">
-              <a href="/faq/visa-free-travel" className="inline-block font-sans font-semibold text-[0.75rem] tracking-[0.08em] uppercase border-2 border-primary text-foreground px-6 py-3 hover:bg-primary hover:text-primary-foreground transition-all duration-300">
+              <a href="/faq/argentina-visa-free-travel" className="inline-block font-sans font-semibold text-[0.75rem] tracking-[0.08em] uppercase border-2 border-primary text-foreground px-6 py-3 hover:bg-primary hover:text-primary-foreground transition-all duration-300">
                 Review Jurisdictional Advantages
               </a>
             </div>

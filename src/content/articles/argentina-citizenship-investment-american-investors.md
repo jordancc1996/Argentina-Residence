@@ -21,7 +21,7 @@ keywords:
 
 ## Introduction
 
-**Argentina has officially entered the competitive global investment migration market.** The proposed Golden Visa is already attracting considerable attention from high-net-worth individuals and investors interested in diversifying their global mobility footprint in South America.
+**Argentina citizenship by investment for Americans is proposed under Decree 524/2025; APCI is not processing applications.** The proposed Golden Visa is already attracting considerable attention from high-net-worth individuals and investors interested in diversifying their global mobility footprint in South America.
 
 ## Legal Basis and Program Status
 

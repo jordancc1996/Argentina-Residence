@@ -1,0 +1,13 @@
+{
+  "redirects": [
+    { "source": "/faq/investment-requirements", "destination": "/faq/argentina-citizenship-investment-requirements", "permanent": true },
+    { "source": "/faq/application-process-timeline", "destination": "/faq/argentina-citizenship-investment-application-timeline", "permanent": true },
+    { "source": "/faq/residency-requirements", "destination": "/faq/argentina-residency-physical-presence", "permanent": true },
+    { "source": "/faq/family-members-residency", "destination": "/faq/argentina-citizenship-investment-family", "permanent": true },
+    { "source": "/faq/required-documents", "destination": "/faq/argentina-citizenship-investment-documents", "permanent": true },
+    { "source": "/faq/work-rights", "destination": "/faq/argentina-residency-work-rights", "permanent": true },
+    { "source": "/faq/tax-implications", "destination": "/faq/argentina-residency-tax-implications", "permanent": true },
+    { "source": "/faq/visa-free-travel", "destination": "/faq/argentina-visa-free-travel", "permanent": true },
+    { "source": "/faq/maintain-residency-status", "destination": "/faq/maintain-argentina-residency", "permanent": true }
+  ]
+}

@@ -20,8 +20,8 @@ The decrees describe a multi-agency review rather than a single-office rubber st
 
 The checks described in those summaries fall into three groups:
 
-- Identity and background: passport validity, civil records, and criminal-record certificates, apostilled and translated into Spanish where the documents were issued abroad. See [required documents](/faq/required-documents).
-- Source verification: proof that the capital used for the Argentine investment originated outside Argentina and from lawful activity. See [investment requirements](/faq/investment-requirements).
+- Identity and background: passport validity, civil records, and criminal-record certificates, apostilled and translated into Spanish where the documents were issued abroad. See [required documents](/faq/argentina-citizenship-investment-documents).
+- Source verification: proof that the capital used for the Argentine investment originated outside Argentina and from lawful activity. See [investment requirements](/faq/argentina-citizenship-investment-requirements).
 - Security screening: national-security and financial-intelligence review of the applicant and, where a family file is accepted, of included dependents.
 
 [Argentina's New Citizenship by Investment Program is Attracting American Investors](/research/argentina-citizenship-investment-american-investors) outlines a three-step sequence once a file is complete: investment proposal submitted to the agency for certification, due diligence on background and source of funds, then a decision from the National Directorate of Migration. That decision window is stated as 30 days on that page. It is a post-certification target, not a clock that starts when an investor emails a CV.
@@ -32,7 +32,7 @@ For program structure and the proposed 2026 pathway, see the [Argentina Golden V
 
 ## Source of Funds Documentation
 
-Source of funds requirements on this site are already stated at a category level. [Investment requirements](/faq/investment-requirements) say all investment amounts must be funded from lawfully sourced capital originating outside Argentina, with bank statements, tax filings, and source-of-wealth declarations. That is documentation of origin and path, not a second investment quota.
+Source of funds requirements on this site are already stated at a category level. [Investment requirements](/faq/argentina-citizenship-investment-requirements) say all investment amounts must be funded from lawfully sourced capital originating outside Argentina, with bank statements, tax filings, and source-of-wealth declarations. That is documentation of origin and path, not a second investment quota.
 
 Expected source-of-funds files, based on those categories, include:
 
@@ -41,7 +41,7 @@ Expected source-of-funds files, based on those categories, include:
 - A source-of-wealth narrative that explains how the applicant accumulated the capital (employment, company sale, inheritance, investment returns), supported by contracts, sale agreements, or estate documents where they exist.
 - Corporate records if the funds move through a company: ownership, dividend or loan paperwork, and evidence that the company could legally distribute the money.
 
-The $500,000 USD figure used on this site is the expected minimum qualifying investment (subject to final regulation). It is not a source-of-funds form. Source-of-funds review asks where that capital came from and how it moved. It does not replace the asset test described in the [investment requirements](/faq/investment-requirements) FAQ (real estate, designated government bonds, or an active Argentine business).
+The $500,000 USD figure used on this site is the expected minimum qualifying investment (subject to final regulation). It is not a source-of-funds form. Source-of-funds review asks where that capital came from and how it moved. It does not replace the asset test described in the [investment requirements](/faq/argentina-citizenship-investment-requirements) FAQ (real estate, designated government bonds, or an active Argentine business).
 
 APCI has not published a list of accepted banks, a look-back period, or a template declaration. Preparing the categories above is file hygiene. It is not a substitute for the forms that do not yet exist. Latest framework notes are in the [Decree 524/2025 progress update](/industry-news/decree-524-2025-progress-update).
 
@@ -60,7 +60,7 @@ Anyone using a $500,000 (or any other) personal-net-worth rule of thumb is impor
 
 ## Argentina Citizenship by Investment for Crypto Investors
 
-Argentina citizenship by investment for crypto investors runs into a distinction already on this site. [Investment requirements](/faq/investment-requirements) list cryptocurrency and digital asset holdings among assets that do not qualify. Holding Bitcoin, ether, or tokens is not, on current published categories, a qualifying Argentine investment.
+Argentina citizenship by investment for crypto investors runs into a distinction already on this site. [Investment requirements](/faq/argentina-citizenship-investment-requirements) list cryptocurrency and digital asset holdings among assets that do not qualify. Holding Bitcoin, ether, or tokens is not, on current published categories, a qualifying Argentine investment.
 
 That ban is about the asset that sits in Argentina. It is not, by itself, a ban on using proceeds from a prior crypto sale to fund a qualifying asset (real estate, designated bonds, or an active business) once those proceeds are lawful fiat in a bank account. APCI has not published a crypto-specific source-of-funds protocol. The expected treatment, consistent with the source-of-funds categories above, is conversion-and-paper-trail, not on-chain balances as the investment.
 

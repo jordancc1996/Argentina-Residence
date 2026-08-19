@@ -1,14 +1,14 @@
 ---
-slug: investment-requirements
+slug: argentina-citizenship-investment-requirements
 question: Argentina Golden Visa Investment Requirements
-answer: "Argentina's citizenship by investment program requires a minimum investment of $500,000 USD in qualifying assets such as real estate, government bonds, or active business ventures. The investment must be maintained for a defined holding period and is subject to government verification."
-metaTitle: "Argentina Golden Visa Investment Requirements | 2025 Guide"
-metaDescription: Discover the Argentina golden visa minimum investment amount and options. Learn the exact Argentina citizenship by investment requirements for 2026.
+answer: "Argentina Golden Visa investment requirements are an expected $500,000 USD floor, subject to final regulation, in qualifying assets such as real estate, government bonds, or an active business."
+metaTitle: "Argentina Golden Visa Investment Requirements - Expected $500,000 Floor | Argentina Residence"
+metaDescription: Argentina Golden Visa investment requirements are an expected $500,000 USD floor, subject to final regulation, in real estate, bonds, or an active business.
 ---
 
 # Argentina Golden Visa Investment Requirements
 
-Argentina's citizenship by investment program, established by Decree 524/2025, requires a minimum investment of **$500,000 USD** in qualifying Argentine assets. The program is administered by the newly created Agency for Citizenship by Investment, which oversees verification, compliance, and approvals for all applicants.
+Argentina Golden Visa investment requirements are an expected $500,000 USD floor, subject to final regulation, in qualifying Argentine assets. The program is administered by the newly created Agency for Citizenship by Investment, which oversees verification, compliance, and approvals for all applicants.
 
 U.S. applicants should also review our detailed analysis on [Argentina golden visa requirements for Americans](/research/argentina-citizenship-investment-american-investors), which covers IRS compliance, tax residency rules, and timeline considerations specific to American investors.
 

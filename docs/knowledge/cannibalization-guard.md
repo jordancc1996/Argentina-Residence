@@ -16,16 +16,21 @@ guide ≈ overview ≈ explained ≈ how-it-works ≈ complete-guide ≈ what-is
 | `/research/argentine-investment-landscape-golden-visa-value-proposition` | argentine-investment-landscape-golden-visa-value-proposition | argentina investment landscape | Vaca Muerta; RIGI; Golden Visa value proposition | argentina golden visa sectors (as landscape) |
 | `/research/buenos-aires-real-estate-bull-market-analysis` | buenos-aires-real-estate-bull-market-analysis | buenos aires real estate bull market | palermo; recoleta; monserrat | buenos aires property prices |
 | `/research/argentina-golden-visa-american-investors-2026` | argentina-golden-visa-american-investors-2026 | argentina golden visa 2026 american investors | MERCOSUR; E-2 visa Argentina; Milei reforms | argentina golden visa for americans (2026 angle) |
-| `/research/argentina-citizenship-investment-american-investors` | argentina-citizenship-investment-american-investors | argentina citizenship by investment for americans | tax residency; E-2; Mercosur | argentina citizenship by investment for us investors |
+| `/research/argentina-citizenship-investment-american-investors` | argentina-citizenship-investment-american-investors | argentina citizenship by investment for americans | tax residency (US-investor triggers only; worldwide-income taxation for residents is `/faq/argentina-residency-tax-implications`); E-2; Mercosur | argentina citizenship by investment for us investors |
 | `/research/american-dream-argentina-golden-visa-solution` | american-dream-argentina-golden-visa-solution | american dream vs argentina golden visa | cost of living argentina; american expats | american dream cost argentina |
 | `/industry-news/argentina-citizenship-investment-vs-portugal-golden-visa` | argentina-citizenship-investment-vs-portugal-golden-visa | argentina citizenship by investment vs portugal golden visa | argentina passport vs eu golden visa; cbi vs rbi | portugal golden visa comparison |
 | `/industry-news/decree-524-2025-progress-update` | decree-524-2025-progress-update | decree 524/2025 progress | qualifying investment categories | decree 524 explained |
 | `/industry-news/buenos-aires-foreign-buyer-activity-q1` | buenos-aires-foreign-buyer-activity-q1 | buenos aires foreign buyer activity | q1 real estate | foreign buyers buenos aires |
-| `/faq/investment-requirements` | investment-requirements | argentina golden visa investment requirements | minimum $500,000; qualifying types | argentina citizenship by investment requirements (amount/types) |
-| `/faq/residency-requirements` | residency-requirements | do i need to live in argentina full-time | visit once per year | argentina residency physical presence |
-| `/faq/required-documents` | required-documents | argentina golden visa required documents | apostille; translations | application documents |
-| `/faq/application-process-timeline` | application-process-timeline | argentina golden visa application timeline | 30 business days | how to apply argentina golden visa |
+| `/faq/argentina-citizenship-investment-requirements` | argentina-citizenship-investment-requirements | argentina golden visa investment requirements | minimum $500,000; qualifying types | argentina citizenship by investment requirements (amount/types) |
+| `/faq/argentina-residency-physical-presence` | argentina-residency-physical-presence | do i need to live in argentina full-time | visit once per year | argentina residency physical presence |
+| `/faq/argentina-citizenship-investment-documents` | argentina-citizenship-investment-documents | argentina golden visa required documents | apostille; translations | application documents |
+| `/faq/argentina-citizenship-investment-application-timeline` | argentina-citizenship-investment-application-timeline | argentina golden visa application timeline | 30 business days | how to apply argentina golden visa |
 | `/faq/what-is-argentina-golden-visa` | what-is-argentina-golden-visa | what is argentina golden visa | program overview | argentina golden visa explained |
+| `/faq/argentina-citizenship-investment-family` | argentina-citizenship-investment-family | argentina residency family members | spouse and dependents | family inclusion argentina golden visa |
+| `/faq/argentina-residency-work-rights` | argentina-residency-work-rights | work in argentina with this residency | work authorization | argentina residency work permit |
+| `/faq/argentina-residency-tax-implications` | argentina-residency-tax-implications | argentina residency tax implications | worldwide income | argentina tax residency (US-investor triggers). Split: this FAQ is worldwide-income taxation for Argentine residents generally. `/research/argentina-citizenship-investment-american-investors` owns US-investor tax-residency triggers. Do not blur the two. |
+| `/faq/argentina-visa-free-travel` | argentina-visa-free-travel | visa-free travel with argentine residency | 170+ countries | argentina passport vs eu golden visa (Portugal comparison page) |
+| `/faq/maintain-argentina-residency` | maintain-argentina-residency | how to maintain argentina residency | visit once per year and keep investment | argentina residency physical presence (owned by `/faq/argentina-residency-physical-presence`) |
 | `/guides/argentina-golden-visa-program` | argentina-golden-visa-program | argentina golden visa 2026 | fast-track investor residency | argentina golden visa program guide |
 | `/guides/argentina-real-estate-investment` | argentina-real-estate-investment | argentina real estate investment | buenos aires property | real estate golden visa |
 | `/guides/argentina-citizenship-investment-due-diligence` | argentina-citizenship-investment-due-diligence | argentina citizenship by investment due diligence process | source of funds requirements; net worth requirements; argentina citizenship by investment for crypto investors | due diligence; source of funds; net worth; crypto investors |
@@ -40,6 +45,12 @@ guide ≈ overview ≈ explained ≈ how-it-works ≈ complete-guide ≈ what-is
 
 ---
 
+## FAQ tax split (keep distinct)
+
+`/faq/argentina-residency-tax-implications` covers worldwide-income taxation for Argentine residents generally. `/research/argentina-citizenship-investment-american-investors` covers US-investor tax-residency triggers specifically. Do not treat those as the same keyword or merge them into one page.
+
+---
+
 ## H2 inventory (collision-relevant)
 
 | Page | H2s that can steal a standalone article |
@@ -51,7 +62,7 @@ guide ≈ overview ≈ explained ≈ how-it-works ≈ complete-guide ≈ what-is
 | `/research/argentine-investment-landscape-golden-visa-value-proposition` | Structural Assets and Sectoral Opportunities (energy, lithium, agribusiness) |
 | `/industry-news/argentina-citizenship-investment-vs-portugal-golden-visa` | The Structural Difference: Citizenship versus Residency; Argentina passport vs EU golden visa (body); Investment Thresholds and Qualifying Assets |
 | `/industry-news/decree-524-2025-progress-update` | What's expected next (threshold, documentation) |
-| `/faq/investment-requirements` | Minimum Investment Amount; Qualifying Investment Types; Verification Process (source of funds) |
+| `/faq/argentina-citizenship-investment-requirements` | Minimum Investment Amount; Qualifying Investment Types; Verification Process (source of funds) |
 | `/guides/argentina-citizenship-investment-due-diligence` | What the Due Diligence Process Is Expected to Involve; Source of Funds Documentation; Net Worth Requirements; Argentina Citizenship by Investment for Crypto Investors |
 | `/guides/argentina-citizenship-investment-business-sale` | Using Company Proceeds Toward a Qualifying Investment; Argentina Citizenship by Investment for Startup Exits; Tech Founders; Timing After a Liquidity Event |
 | `/guides/argentina-citizenship-investment-us-visa-backlog` | What a US Immigrant Visa Backlog Is; Argentina Citizenship by Investment as a Parallel Track; What a Parallel Track Does Not Change in a US Case; Timing: Two Calendars, Not One Deadline |
