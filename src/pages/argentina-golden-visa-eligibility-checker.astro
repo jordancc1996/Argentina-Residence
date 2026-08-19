@@ -1,0 +1,44 @@
+---
+import Layout from '../layouts/Layout.astro';
+import InvestorEligibilityContent from '../components/InvestorEligibilityContent';
+
+const title = 'Argentina Golden Visa Eligibility | Free Assessment';
+const description = "Check if you qualify for Argentina's Golden Visa. Free 2-minute eligibility assessment for investors and retirees.";
+const canonical = 'https://argentinaresidence.com/argentina-golden-visa-eligibility-checker';
+const ogImage = 'https://argentinaresidence.com/og-image.jpg';
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Argentina Golden Visa Eligibility Checker",
+  "description": "Check your eligibility for Argentina's Golden Visa investor residency program and join the priority waitlist.",
+  "applicationCategory": "Immigration Tool",
+  "operatingSystem": "Web Browser",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+};
+---
+
+<Layout>
+	<title slot="head">{title}</title>
+	<meta slot="head" name="description" content={description} />
+	<link slot="head" rel="canonical" href={canonical} />
+	<meta slot="head" name="robots" content="index, follow" />
+	<meta slot="head" property="og:type" content="website" />
+	<meta slot="head" property="og:site_name" content="Argentina Residence" />
+	<meta slot="head" property="og:title" content={title} />
+	<meta slot="head" property="og:description" content={description} />
+	<meta slot="head" property="og:url" content={canonical} />
+	<meta slot="head" property="og:image" content={ogImage} />
+	<meta slot="head" property="og:image:width" content="1200" />
+	<meta slot="head" property="og:image:height" content="630" />
+	<meta slot="head" property="og:locale" content="en_US" />
+	<meta slot="head" name="twitter:card" content="summary_large_image" />
+	<meta slot="head" name="twitter:title" content={title} />
+	<meta slot="head" name="twitter:description" content={description} />
+	<meta slot="head" name="twitter:image" content={ogImage} />
+	<script slot="head" type="application/ld+json" set:html={JSON.stringify(schema)} />
+	<InvestorEligibilityContent client:load />
+</Layout>
