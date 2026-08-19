@@ -162,7 +162,7 @@ const IndexContent = ({ posts }: { posts: HomepagePost[] }) => {
               className="group bg-card border border-border rounded-lg overflow-hidden hover:border-primary hover:shadow-lg transition-all duration-300"
             >
               {post.image && (
-                <div className="aspect-[16/9] overflow-hidden">
+                <div className="aspect-[4/3] overflow-hidden">
                   <img
                     src={post.image}
                     alt={post.title}
@@ -170,7 +170,7 @@ const IndexContent = ({ posts }: { posts: HomepagePost[] }) => {
                   />
                 </div>
               )}
-              <div className="p-6">
+              <div className="p-8">
                 <div className="flex items-center gap-3 text-xs text-muted-foreground mb-3">
                   <span className="text-primary font-medium">{post.category}</span>
                   <span className="flex items-center gap-1">
@@ -178,10 +178,10 @@ const IndexContent = ({ posts }: { posts: HomepagePost[] }) => {
                     {new Date(post.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
                   </span>
                 </div>
-                <h3 className="font-serif text-lg mb-3 text-foreground group-hover:text-primary transition-colors line-clamp-2">
+                <h3 className="font-serif text-lg-editorial mb-3 text-foreground group-hover:text-primary transition-colors line-clamp-2">
                   {post.title}
                 </h3>
-                <p className="text-sm text-text-secondary mb-4 line-clamp-2">
+                <p className="text-base text-text-secondary mb-4 line-clamp-2">
                   {post.excerpt}
                 </p>
                 <div className="flex items-center justify-between text-sm">
