@@ -1,0 +1,12 @@
+---
+import NewsletterSignup from './NewsletterSignup';
+
+interface Props {
+  className?: string;
+  class?: string;
+}
+
+const { className, class: classAttr } = Astro.props;
+---
+
+<NewsletterSignup client:load className={className ?? classAttr} />

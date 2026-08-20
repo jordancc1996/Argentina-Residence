@@ -4,12 +4,15 @@ interface EditorialSectionProps {
   children: React.ReactNode;
   className?: string;
   centered?: boolean;
+  /** Inner max-width. Defaults to max-w-4xl. Use max-w-7xl for wide related-card rows. */
+  innerClassName?: string;
 }
 
 const EditorialSection = ({ 
   children, 
   className = "", 
-  centered = true 
+  centered = true,
+  innerClassName = "max-w-4xl",
 }: EditorialSectionProps) => {
   return (
     <motion.section 
@@ -20,7 +23,7 @@ const EditorialSection = ({
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
       <motion.div 
-        className={`max-w-4xl mx-auto px-4 md:px-8 ${centered ? 'text-center' : ''}`}
+        className={`${innerClassName} mx-auto px-4 md:px-8 ${centered ? 'text-center' : ''}`}
         initial={{ opacity: 1 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}

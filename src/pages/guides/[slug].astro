@@ -8,7 +8,9 @@ import KeyFactsTable from '../../components/KeyFactsTable';
 import ChecklistCard from '../../components/ChecklistCard';
 import ProcessSteps from '../../components/ProcessSteps';
 import InquiryCard from '../../components/InquiryCard';
+import NewsletterSignup from '../../components/NewsletterSignupMdx.astro';
 import { DueDiligenceReviewGroups, BusinessSaleTimingSteps } from '../../components/guideBlocks';
+import { getRelatedGuides } from '../../data/relatedGuides';
 
 // PLACEHOLDER IMAGE — replace with a real photo for due diligence process once provided
 // PLACEHOLDER IMAGE — replace with a real photo for business sale/startup exits once provided
@@ -57,24 +59,8 @@ const ogImage = 'https://argentinaresidence.com/og-image.jpg';
 const heroImage = PLACEHOLDER_HEROES[data.slug] ?? placeholderGuideHero;
 const published = data.datePublished || data.dateModified || '2026-08-19';
 
-const entries = await getCollection('guides');
-const related = [
-  ...entries
-    .filter((entry) => entry.data.slug !== data.slug)
-    .sort((a, b) => a.data.title.localeCompare(b.data.title))
-    .map((entry) => ({
-      href: `/guides/${entry.data.slug}`,
-      title: entry.data.title,
-      description:
-        entry.data.subtitle ||
-        'Investor guide on Argentina citizenship and residency by investment.',
-    })),
-  {
-    href: '/resources',
-    title: 'View All Guides',
-    description: 'Official links, checklists, and further reading on Argentina residency.',
-  },
-];
+const related = getRelatedGuides(data.slug, 5);
+const showBottomInquiryCard = !/<InquiryCard\b/.test(guide.body ?? '');
 
 const schema = {
   '@context': 'https://schema.org',
@@ -123,7 +109,8 @@ const schema = {
 		imageAlt="Buenos Aires at night"
 		statusBanner={data.statusBanner}
 		related={related}
+		showBottomInquiryCard={showBottomInquiryCard}
 	>
-		<Content components={{ ComparisonBlock, ComparisonTable, KeyFactsTable, ChecklistCard, ProcessSteps, InquiryCard, DueDiligenceReviewGroups, BusinessSaleTimingSteps }} />
+		<Content components={{ ComparisonBlock, ComparisonTable, KeyFactsTable, ChecklistCard, ProcessSteps, InquiryCard, NewsletterSignup, DueDiligenceReviewGroups, BusinessSaleTimingSteps }} />
 	</GuideArticleContent>
 </Layout>

@@ -1,7 +1,8 @@
 import type { ReactNode } from "react";
 import Hero from "@/components/Hero";
 import EditorialSection from "@/components/EditorialSection";
-import NewsletterSignup from "@/components/NewsletterSignup";
+import InquiryCard from "@/components/InquiryCard";
+import { defaultInquiryCard } from "@/data/relatedGuides";
 import { Clock } from "lucide-react";
 
 export type GuideHeroImage = string | { src: string };
@@ -19,6 +20,8 @@ interface GuideArticleContentProps {
   imageAlt?: string;
   statusBanner?: string;
   related: GuideRelatedLink[];
+  /** False when the MDX body already includes an InquiryCard. */
+  showBottomInquiryCard?: boolean;
   children?: ReactNode;
 }
 
@@ -29,6 +32,7 @@ const GuideArticleContent = ({
   imageAlt = "Argentina landscape",
   statusBanner,
   related,
+  showBottomInquiryCard = true,
   children,
 }: GuideArticleContentProps) => {
   return (
@@ -72,16 +76,22 @@ const GuideArticleContent = ({
         </div>
       </EditorialSection>
 
-      <EditorialSection centered={false}>
-        <NewsletterSignup />
-      </EditorialSection>
+      {showBottomInquiryCard && (
+        <EditorialSection centered={false}>
+          <InquiryCard
+            heading={defaultInquiryCard.heading}
+            body={defaultInquiryCard.body}
+            ctaLabel={defaultInquiryCard.ctaLabel}
+          />
+        </EditorialSection>
+      )}
 
       {related.length > 0 && (
-        <EditorialSection>
+        <EditorialSection innerClassName="max-w-7xl">
           <h2 className="font-serif text-lg-editorial mb-8 tracking-wide text-center">
             Continue Your Research
           </h2>
-          <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-6">
             {related.map((item) => (
               <a
                 key={item.href}

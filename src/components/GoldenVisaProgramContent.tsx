@@ -3,8 +3,12 @@ import EditorialSection from "@/components/EditorialSection";
 import ScrollytellingSteps from "@/components/ScrollytellingSteps";
 import { Button } from "@/components/ui/button";
 import NewsletterSignup from "@/components/NewsletterSignup";
+import InquiryCard from "@/components/InquiryCard";
+import { defaultInquiryCard, getRelatedGuides } from "@/data/relatedGuides";
 import { Clock, Shield, Globe, TrendingUp, CheckCircle, ArrowRight } from "lucide-react";
 import goldenVisaHero from "@/assets/argentina-golden-visa-flag-hero.jpg";
+
+const related = getRelatedGuides("argentina-golden-visa-program", 5);
 
 const GoldenVisaProgramContent = () => {
   return (
@@ -40,6 +44,10 @@ const GoldenVisaProgramContent = () => {
             </Button>
           </a>
         </div>
+      </EditorialSection>
+
+      <EditorialSection centered={false}>
+        <NewsletterSignup />
       </EditorialSection>
       
       {/* Key Benefits */}
@@ -170,50 +178,31 @@ const GoldenVisaProgramContent = () => {
       </EditorialSection>
 
       <EditorialSection centered={false}>
-        <NewsletterSignup />
+        <InquiryCard
+          heading={defaultInquiryCard.heading}
+          body={defaultInquiryCard.body}
+          ctaLabel={defaultInquiryCard.ctaLabel}
+        />
       </EditorialSection>
       
       {/* Internal Linking Section */}
-      <EditorialSection>
+      <EditorialSection innerClassName="max-w-7xl">
         <h2 className="font-serif text-lg-editorial mb-8 tracking-wide text-center">
           Related Guides
         </h2>
-        <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-          <a 
-            href="/guides/argentina-real-estate-investment" 
-            className="p-6 border border-border rounded-lg hover:border-gold/50 hover:bg-secondary/20 transition-all group"
-          >
-            <h3 className="font-serif text-lg mb-2 group-hover:text-gold transition-colors">
-              Property Market
-            </h3>
-            <p className="text-sm text-text-secondary">
-              For buyers interested in Argentina real estate independent of the Golden Visa program.
-            </p>
-          </a>
-          
-          <a 
-            href="/faq/argentina-citizenship-investment-requirements" 
-            className="p-6 border border-border rounded-lg hover:border-gold/50 hover:bg-secondary/20 transition-all group"
-          >
-            <h3 className="font-serif text-lg mb-2 group-hover:text-gold transition-colors">
-              Detailed Requirements
-            </h3>
-            <p className="text-sm text-text-secondary">
-              Full breakdown of investment requirements and documentation.
-            </p>
-          </a>
-          
-          <a 
-            href="/research/argentina-citizenship-investment-american-investors" 
-            className="p-6 border border-border rounded-lg hover:border-gold/50 hover:bg-secondary/20 transition-all group"
-          >
-            <h3 className="font-serif text-lg mb-2 group-hover:text-gold transition-colors">
-              For U.S. Investors
-            </h3>
-            <p className="text-sm text-text-secondary">
-              Special advantages for American citizens seeking residency.
-            </p>
-          </a>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-6">
+          {related.map((item) => (
+            <a
+              key={item.href}
+              href={item.href}
+              className="p-6 border border-border rounded-lg hover:border-gold/50 hover:bg-secondary/20 transition-all group text-left"
+            >
+              <h3 className="font-serif text-lg mb-2 group-hover:text-gold transition-colors">
+                {item.title}
+              </h3>
+              <p className="text-sm text-text-secondary">{item.description}</p>
+            </a>
+          ))}
         </div>
       </EditorialSection>
     </>
