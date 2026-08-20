@@ -2,13 +2,16 @@ import { motion } from "framer-motion";
 import { Separator } from "@/components/ui/separator";
 import { useParallax, useScrollOpacity } from "@/hooks/useParallax";
 import { resolveImageSrc } from "@/lib/resolveImageSrc";
+import SupportingImage from "@/components/SupportingImage";
 import heroImage from "@/assets/research-intelligence-hero.jpg";
+import flagOvercast from "@/assets/site-photos-renamed/generic-flag-overcast-sky.jpg";
 
 const ResearchHero = () => {
   const parallaxY = useParallax(-0.3);
   const opacity = useScrollOpacity(600);
 
   return (
+    <>
       <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden -mt-[72px] pt-[72px] md:-mt-[88px] md:pt-[88px]">
         <motion.div className="absolute inset-0 z-0 scale-110" style={{ y: parallaxY }}>
           <img src={resolveImageSrc(heroImage)} alt="Financial research and market intelligence" className="w-full h-full object-cover" width={1920} height={1080} />
@@ -25,6 +28,12 @@ const ResearchHero = () => {
           <Separator className="mx-auto max-w-[120px] bg-primary h-[1px]" />
         </motion.div>
       </section>
+      <SupportingImage
+        className="mt-12 mb-0"
+        image={flagOvercast}
+        alt="Argentine flag"
+      />
+    </>
   );
 };
 

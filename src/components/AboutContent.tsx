@@ -1,19 +1,30 @@
 import EditorialSection from "@/components/EditorialSection";
+import SupportingImage from "@/components/SupportingImage";
 import { Button } from "@/components/ui/button";
 import { resolveImageSrc } from "@/lib/resolveImageSrc";
 import buenosAiresCityscape from "@/assets/buenos-aires-cityscape.jpg";
 import buenosAiresChurch from "@/assets/buenos-aires-architecture-church.jpg";
+import casaRosadaVertical from "@/assets/site-photos-renamed/casa-rosada-plaza-de-mayo-vertical.jpg";
 
 const AboutContent = () => {
   return (
       <div className="pt-20">
         <EditorialSection>
-          <h1 className="font-serif text-hero mb-8 tracking-wide">
-            About Argentina Residence
-          </h1>
-          <p className="text-editorial text-text-secondary mb-12 tracking-wide">
-            About Argentina Residence advises on Argentine residency by investment. APCI has not published operational regulations and is not processing applications.
-          </p>
+          <div className="grid md:grid-cols-2 gap-12 items-start text-left">
+            <div>
+              <h1 className="font-serif text-hero mb-8 tracking-wide">
+                About Argentina Residence
+              </h1>
+              <p className="text-editorial text-text-secondary tracking-wide">
+                About Argentina Residence advises on Argentine residency by investment. APCI has not published operational regulations and is not processing applications.
+              </p>
+            </div>
+            <SupportingImage
+              className="mx-0 max-w-none my-0"
+              image={casaRosadaVertical}
+              alt="Casa Rosada presidential palace on Plaza de Mayo, Buenos Aires"
+            />
+          </div>
         </EditorialSection>
         
         <section className="relative py-32">

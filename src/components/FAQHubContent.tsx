@@ -3,7 +3,9 @@ import { motion } from "framer-motion";
 import { ChevronRight } from "lucide-react";
 import { useParallax } from "@/hooks/useParallax";
 import { resolveImageSrc } from "@/lib/resolveImageSrc";
+import SupportingImage from "@/components/SupportingImage";
 import faqBackground from "@/assets/faq-colombia-cityscape.jpg";
+import flagShipRailing from "@/assets/site-photos-renamed/generic-flag-ship-railing.jpg";
 
 export interface FAQHubItem {
   slug: string;
@@ -29,6 +31,13 @@ const FAQHubContent = ({ faqs }: { faqs: FAQHubItem[] }) => {
             Common questions about Argentina's residency by investment program
           </p>
         </div>
+      </EditorialSection>
+
+      <EditorialSection>
+        <SupportingImage
+          image={flagShipRailing}
+          alt="Argentine flag"
+        />
       </EditorialSection>
 
       <EditorialSection className="bg-secondary/30">

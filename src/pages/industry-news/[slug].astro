@@ -3,6 +3,7 @@ import { getCollection, render } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import IndustryNewsArticleContent from '../../components/IndustryNewsArticleContent';
 import ComparisonBlock from '../../components/ComparisonBlock';
+import SupportingImage from '../../components/SupportingImage';
 
 export async function getStaticPaths() {
   const entries = await getCollection('industryNews');
@@ -63,6 +64,6 @@ const ogImage = 'https://argentinaresidence.com/og-image.jpg';
 		image={data.image}
 		related={related}
 	>
-		<Content components={{ ComparisonBlock }} />
+		<Content components={{ ComparisonBlock, SupportingImage }} />
 	</IndustryNewsArticleContent>
 </Layout>

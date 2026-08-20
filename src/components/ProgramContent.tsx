@@ -3,7 +3,9 @@ import EditorialSection from "@/components/EditorialSection";
 import ScrollytellingSteps from "@/components/ScrollytellingSteps";
 import { Button } from "@/components/ui/button";
 import NewsletterSignup from "@/components/NewsletterSignup";
+import SupportingImage from "@/components/SupportingImage";
 import goldenVisaHero from "@/assets/argentina-golden-visa-2026.jpg";
+import casaRosadaGoldenHour from "@/assets/site-photos-renamed/casa-rosada-plaza-de-mayo-golden-hour.jpg";
 
 const ProgramContent = () => {
   return (
@@ -35,6 +37,12 @@ const ProgramContent = () => {
             <p className="text-body text-text-secondary tracking-wide mb-4">
               An initial cap near 5,000 applications is anticipated, as is a single biometrics visit after approval. Neither figure has been officially confirmed.
             </p>
+            <SupportingImage
+              className="mx-0 max-w-none my-6"
+              image={casaRosadaGoldenHour}
+              alt="Casa Rosada on Plaza de Mayo at golden hour, seat of Argentina's federal government where Golden Visa implementing regulations would be finalized"
+              caption="Casa Rosada, seat of Argentina's federal government. The anticipated decree implementing the Golden Visa program would be finalized here."
+            />
               <a href="/faq/argentina-citizenship-investment-requirements" className="text-primary hover:underline text-sm font-medium">
               See detailed requirements →
             </a>

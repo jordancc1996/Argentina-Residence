@@ -1,4 +1,6 @@
 import { Separator } from "@/components/ui/separator";
+import SupportingImage from "@/components/SupportingImage";
+import flagSnowMountains from "@/assets/site-photos-renamed/generic-flag-snow-mountains.jpg";
 
 const ComplianceContent = () => {
   return (
@@ -8,6 +10,12 @@ const ComplianceContent = () => {
           <p className="text-muted-foreground text-sm mb-10">
             Last updated: {new Date().toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}
           </p>
+
+          <SupportingImage
+            className="mx-0"
+            image={flagSnowMountains}
+            alt="Argentine flag"
+          />
 
           <Separator className="mb-10" />
 

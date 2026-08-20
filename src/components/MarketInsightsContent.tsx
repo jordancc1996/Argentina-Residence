@@ -1,7 +1,9 @@
 import Hero from "../components/Hero";
 import EditorialSection from "../components/EditorialSection";
 import FormCarryForm from "../components/FormCarryForm";
+import SupportingImage from "../components/SupportingImage";
 import heroImage from "../assets/argentina-flag-market.jpg";
+import flagDeepBlue from "../assets/site-photos-renamed/generic-flag-deep-blue-sky.jpg";
 
 const MarketInsightsContent = () => {
   return (
@@ -25,6 +27,10 @@ const MarketInsightsContent = () => {
           Recent economic reforms have created a more favorable environment for foreign investment, 
           with streamlined regulations and enhanced legal protections for international investors.
         </p>
+        <SupportingImage
+          image={flagDeepBlue}
+          alt="Argentine flag"
+        />
       </EditorialSection>
 
       <EditorialSection className="bg-secondary/30">

@@ -2,6 +2,7 @@
 import { getCollection, render } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import FAQDetailContent from '../../components/FAQDetailContent';
+import SupportingImage from '../../components/SupportingImage';
 
 export async function getStaticPaths() {
   const faqOrder = [
@@ -92,6 +93,6 @@ const schema = {
 		previous={previous}
 		next={next}
 	>
-		{hasRichBody && Content && <Content />}
+		{hasRichBody && Content && <Content components={{ SupportingImage }} />}
 	</FAQDetailContent>
 </Layout>

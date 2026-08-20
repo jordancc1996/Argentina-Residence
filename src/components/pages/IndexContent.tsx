@@ -3,8 +3,10 @@ import EditorialSection from "@/components/EditorialSection";
 import { Button } from "@/components/ui/button";
 import { Calendar, Clock, ArrowRight } from "lucide-react";
 import GoldenVisaUpdatesSection from "@/components/GoldenVisaUpdatesSection";
+import SupportingImage from "@/components/SupportingImage";
 import casaRosadaFlag from "@/assets/hero-casa-rosada-flag.jpg";
 import argentinaPassport from "@/assets/argentina-passport.jpg";
+import flagAconcagua from "@/assets/site-photos-renamed/generic-flag-aconcagua-mountains.jpg";
 
 const casaRosadaSrc =
   typeof casaRosadaFlag === "string" ? casaRosadaFlag : casaRosadaFlag.src;
@@ -115,6 +117,13 @@ const IndexContent = ({ posts }: { posts: HomepagePost[] }) => {
             </div>
           </div>
         </div>
+      </EditorialSection>
+
+      <EditorialSection>
+        <SupportingImage
+          image={flagAconcagua}
+          alt="Argentine flag"
+        />
       </EditorialSection>
 
       <EditorialSection className="bg-secondary/30">

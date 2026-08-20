@@ -4,7 +4,9 @@ import { ExternalLink } from "lucide-react";
 import { motion } from "framer-motion";
 import { useParallax } from "@/hooks/useParallax";
 import { resolveImageSrc } from "@/lib/resolveImageSrc";
+import SupportingImage from "@/components/SupportingImage";
 import resourcesBackground from "@/assets/argentina-flag-resources.jpg";
+import flagBlueSky from "@/assets/site-photos-renamed/generic-flag-blue-sky-low-angle.jpg";
 
 const ResourcesContent = () => {
   const parallaxY = useParallax(-0.3);
@@ -61,6 +63,13 @@ const ResourcesContent = () => {
               Essential information and official sources for Argentina residency
             </p>
           </div>
+        </EditorialSection>
+
+        <EditorialSection>
+          <SupportingImage
+            image={flagBlueSky}
+            alt="Argentine flag"
+          />
         </EditorialSection>
 
         <EditorialSection className="bg-secondary/30">
