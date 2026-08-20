@@ -76,7 +76,7 @@ const GoldenVisaUpdatesSection = () => {
 
   return (
     <EditorialSection className="pt-0">
-      <figure className="max-w-xl mx-auto">
+      <figure className="max-w-xl mx-auto text-left">
         <img
           src={casaRosadaDaytimeSrc}
           alt="Casa Rosada in Buenos Aires, daytime"
@@ -84,6 +84,9 @@ const GoldenVisaUpdatesSection = () => {
           width={1280}
           height={2274}
         />
+        <figcaption className="text-sm text-text-secondary tracking-wide mt-4 leading-relaxed">
+          Casa Rosada in Buenos Aires. Program updates, including Decree 524 developments, are tracked as they emerge from Argentina's federal government.
+        </figcaption>
       </figure>
       <h2 className="font-serif text-xl-editorial mb-8 tracking-wide mt-8">
         Stay Ahead of the Argentina Golden Visa Launch

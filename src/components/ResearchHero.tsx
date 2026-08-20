@@ -32,6 +32,7 @@ const ResearchHero = () => {
         className="mt-12 mb-0"
         image={flagOvercast}
         alt="Argentine flag"
+        caption="The Argentine flag under an overcast sky."
       />
     </>
   );

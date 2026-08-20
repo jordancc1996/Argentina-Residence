@@ -15,6 +15,7 @@ const ComplianceContent = () => {
             className="mx-0"
             image={flagSnowMountains}
             alt="Argentine flag"
+            caption="The Argentine flag amid the snow-capped Andes."
           />
 
           <Separator className="mb-10" />

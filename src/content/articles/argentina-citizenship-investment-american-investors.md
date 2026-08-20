@@ -17,7 +17,10 @@ keywords:
   - E-2 visa Argentina
   - Mercosur citizenship
 ---
-![Argentina Citizenship by Investment Program attracting American investors - Buenos Aires Puerto Madero skyline at night](/argentina-cbi-american-investors-new.jpg)
+<figure class="not-prose max-w-xl mx-auto my-8 text-left">
+  <img src="/argentina-cbi-american-investors-new.jpg" alt="Argentina Citizenship by Investment Program attracting American investors - Buenos Aires Puerto Madero skyline at night" class="w-full h-auto" />
+  <figcaption class="text-sm text-text-secondary tracking-wide mt-4 leading-relaxed">Argentina citizenship by investment, proposed under Decree 524/2025, for American investors.</figcaption>
+</figure>
 
 ## Introduction
 

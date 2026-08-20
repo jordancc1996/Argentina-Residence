@@ -18,7 +18,10 @@ keywords:
   - APCI Argentina
   - Resolution 522 Argentina
 ---
-![Argentina citizenship by investment launch date: anticipated date not yet confirmed](/argentina-golden-visa-argentinaresidence.jpg)
+<figure class="not-prose max-w-xl mx-auto my-8 text-left">
+  <img src="/argentina-golden-visa-argentinaresidence.jpg" alt="Argentina citizenship by investment launch date: anticipated date not yet confirmed" class="w-full h-auto" />
+  <figcaption class="text-sm text-text-secondary tracking-wide mt-4 leading-relaxed">Argentina's citizenship by investment program awaits a confirmed launch date.</figcaption>
+</figure>
 
 Argentina citizenship by investment launch date remains unpublished after the April 2026 tender cancellation and APCI's in-house pivot. As traditional European programs close under regulatory pressure and Caribbean nations harmonize their pricing upwards, the industry is actively seeking new participants. Argentina has been teasing its citizenship by investment program for all of 2026 and has captured significant attention from globally minded investors. However, recent developments suggest that while the legal framework exists, the operational reality still needs some tweaking.
 

@@ -69,6 +69,7 @@ const ResourcesContent = () => {
           <SupportingImage
             image={flagBlueSky}
             alt="Argentine flag"
+            caption="The Argentine flag catching the wind."
           />
         </EditorialSection>
 

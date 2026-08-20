@@ -18,7 +18,10 @@ keywords:
   - MERCOSUR benefits
   - E-2 visa Argentina
 ---
-![Argentina Golden Visa 2026 - American investors considering Argentina's citizenship by investment program](/argentina-golden-visa-2026.jpg)
+<figure class="not-prose max-w-xl mx-auto my-8 text-left">
+  <img src="/argentina-golden-visa-2026.jpg" alt="Argentina Golden Visa 2026 - American investors considering Argentina's citizenship by investment program" class="w-full h-auto" />
+  <figcaption class="text-sm text-text-secondary tracking-wide mt-4 leading-relaxed">Argentina's Golden Visa program, as reforms continue through 2026.</figcaption>
+</figure>
 
 ## Introduction
 

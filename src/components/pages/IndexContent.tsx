@@ -123,6 +123,7 @@ const IndexContent = ({ posts }: { posts: HomepagePost[] }) => {
         <SupportingImage
           image={flagAconcagua}
           alt="Argentine flag"
+          caption="The Argentine flag in the high Andes, near the country's western border."
         />
       </EditorialSection>
 

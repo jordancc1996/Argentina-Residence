@@ -30,6 +30,7 @@ const MarketInsightsContent = () => {
         <SupportingImage
           image={flagDeepBlue}
           alt="Argentine flag"
+          caption="The Argentine flag against a clear blue sky."
         />
       </EditorialSection>
 

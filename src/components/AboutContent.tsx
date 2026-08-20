@@ -23,6 +23,7 @@ const AboutContent = () => {
               className="mx-0 max-w-none my-0"
               image={casaRosadaVertical}
               alt="Casa Rosada presidential palace on Plaza de Mayo, Buenos Aires"
+              caption="Casa Rosada and Plaza de Mayo, Buenos Aires. Argentina's seat of government, where APCI operates."
             />
           </div>
         </EditorialSection>

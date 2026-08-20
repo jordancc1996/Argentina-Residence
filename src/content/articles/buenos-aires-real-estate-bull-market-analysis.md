@@ -18,7 +18,10 @@ keywords:
   - Argentina Golden Visa
   - real estate bull market
 ---
-![Buenos Aires real estate investment opportunity - Puerto Madero waterfront district](/buenos-aires-real-estate-bull-market.jpg)
+<figure class="not-prose max-w-xl mx-auto my-8 text-left">
+  <img src="/buenos-aires-real-estate-bull-market.jpg" alt="Buenos Aires real estate investment opportunity - Puerto Madero waterfront district" class="w-full h-auto" />
+  <figcaption class="text-sm text-text-secondary tracking-wide mt-4 leading-relaxed">Buenos Aires real estate, following a 2026 turn toward price stability.</figcaption>
+</figure>
 
 Buenos Aires real estate bull market conditions in 2026 follow a bottom in market values and a turn toward price stability. Real estate market values have bottomed and prices have begun to stabilize. Buenos Aires represents a compelling opportunity for investors seeking value in world class cities and attracted to European style living. The current momentum in Buenos Aires real estate stems from several converging factors that have altered the investment landscape and with the announcement of the Argentina Golden visa, investors in 2026 will have an incredible opportunity to add Argentina to their portfolio.
 

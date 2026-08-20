@@ -18,7 +18,10 @@ keywords:
   - American expats Argentina
   - investment migration
 ---
-![The escalating cost of the American Dream versus Argentina Golden Visa opportunity - Buenos Aires skyline](/american-dream-argentina-golden-visa.jpg)
+<figure class="not-prose max-w-xl mx-auto my-8 text-left">
+  <img src="/american-dream-argentina-golden-visa.jpg" alt="The escalating cost of the American Dream versus Argentina Golden Visa opportunity - Buenos Aires skyline" class="w-full h-auto" />
+  <figcaption class="text-sm text-text-secondary tracking-wide mt-4 leading-relaxed">Comparing the cost of the American Dream to Argentina's Golden Visa.</figcaption>
+</figure>
 
 ## The $5 Million American Dream
 
