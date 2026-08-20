@@ -37,7 +37,7 @@ const ComparisonTable = ({
   return (
     <div
       className={cn(
-        "bg-card border border-border rounded-lg p-6 md:p-8 text-left",
+        "bg-card border border-border rounded-lg p-6 md:p-8 text-left not-prose",
         className,
       )}
     >

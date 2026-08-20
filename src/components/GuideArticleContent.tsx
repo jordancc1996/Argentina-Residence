@@ -62,7 +62,11 @@ const GuideArticleContent = ({
             [&_a]:text-primary [&_a]:hover:underline
             [&_strong]:text-foreground
             [&_figure.photo-placeholder]:my-8
-            [&_figure.photo-placeholder_span]:text-sm [&_figure.photo-placeholder_span]:text-text-muted [&_figure.photo-placeholder_span]:mb-0 [&_figure.photo-placeholder_span]:tracking-wide"
+            [&_figure.photo-placeholder_span]:text-sm [&_figure.photo-placeholder_span]:text-text-muted [&_figure.photo-placeholder_span]:mb-0 [&_figure.photo-placeholder_span]:tracking-wide
+            [&_.not-prose_ul]:list-none [&_.not-prose_ul]:pl-0 [&_.not-prose_ul]:mb-0
+            [&_.not-prose_ol]:list-none [&_.not-prose_ol]:pl-0 [&_.not-prose_ol]:mb-0
+            [&_.not-prose_p]:mb-0
+            [&_.not-prose_a]:no-underline"
         >
           {children}
         </div>

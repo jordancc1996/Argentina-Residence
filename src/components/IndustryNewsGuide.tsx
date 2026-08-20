@@ -1,3 +1,8 @@
+import KeyFactsTable from "@/components/KeyFactsTable";
+import ChecklistCard from "@/components/ChecklistCard";
+import ProcessSteps from "@/components/ProcessSteps";
+import InquiryCard from "@/components/InquiryCard";
+
 const IndustryNewsGuide = () => {
   return (
     <section className="py-24 md:py-32 bg-secondary/30">
@@ -24,6 +29,8 @@ const IndustryNewsGuide = () => {
             <p>Argentina's citizenship by investment program represents one of the most significant reforms to the country's immigration policy in decades. Established to attract qualified foreign capital while maintaining rigorous due diligence standards, the program offers a direct pathway to citizenship that bypasses traditional residency requirements. Understanding the legal architecture is essential for any investor evaluating this pathway to a second passport and Mercosur mobility.</p>
             <p>&nbsp;</p>
 
+            <KeyFactsTable className="my-8" />
+
             <h3>Argentina Citizenship by Investment Decree 524 Explained</h3>
             <p>&nbsp;</p>
             <p>The statutory foundation of the program rests on Decree 524/2025, which created the institutional framework for the Agencia de Programas de Ciudadanía por Inversión (APCI). <strong>Argentina citizenship by investment decree 524 explained</strong> simply: it authorizes the executive branch to grant full citizenship to foreign nationals who complete an anticipated qualifying path. Processing time is not yet officially confirmed. No decision window has been published. Unlike European residency-by-investment programs that require years of physical presence before naturalization, Decree 524 describes direct citizenship, making Argentina one of the few jurisdictions worldwide to offer nationality through investment, subject to final regulation.</p>
@@ -46,12 +53,21 @@ const IndustryNewsGuide = () => {
 
             <h3>What We Know About the 2026 Rollout</h3>
             <p>&nbsp;</p>
-            <p>Current signals suggest the application window will open in phases during the second half of 2026. The government has indicated that digital application infrastructure is under development, and the APCI is actively recruiting specialized personnel. Final confirmation of the two anticipated paths, and of any application cap, is expected only when operational regulations are published.</p>
+            <p>Launch timing is not yet officially confirmed. The government has indicated that digital application infrastructure is under development, and the APCI is actively recruiting specialized personnel. Final confirmation of the two anticipated paths, and of any application cap, is expected only when operational regulations are published.</p>
             <p>&nbsp;</p>
 
             <h3>Key Milestones for Investors to Monitor</h3>
             <p>&nbsp;</p>
-            <p>Prospective applicants should watch several critical milestones: publication of operational regulations, confirmation of the two anticipated paths, the opening of the APCI digital application portal, and the first wave of approved citizenship decisions. Each milestone will provide clearer guidance on documentation standards, source-of-funds verification requirements, and whether a processing calendar exists. Monitoring these developments allows investors to position themselves at the front of the queue when applications open.</p>
+            <p>Prospective applicants should watch several critical milestones:</p>
+            <ChecklistCard
+              items={[
+                "publication of operational regulations",
+                "confirmation of the two anticipated paths",
+                "the opening of the APCI digital application portal",
+                "the first wave of approved citizenship decisions",
+              ]}
+            />
+            <p>Each milestone will provide clearer guidance on documentation standards, source-of-funds verification requirements, and whether a processing calendar exists. Monitoring these developments allows investors to position themselves at the front of the queue when applications open.</p>
             <p>&nbsp;</p>
 
             <h2>What Investors Should Do While Waiting for the Program to Open</h2>
@@ -59,19 +75,33 @@ const IndustryNewsGuide = () => {
             <p>The period between regulatory announcement and program launch presents a strategic opportunity for preparation. Investors who use this interim period effectively will be positioned to submit complete, compliant applications as soon as the window opens, potentially securing earlier processing slots.</p>
             <p>&nbsp;</p>
 
-            <h3>Organize Documentation and Source-of-Funds Evidence</h3>
-            <p>&nbsp;</p>
-            <p>Comprehensive documentation forms the cornerstone of every successful citizenship by investment application. Investors should begin organizing corporate records, audited financial statements, tax returns, source-of-funds evidence, and personal identification documents. Many materials require apostille certification and certified Spanish translation, processes that can take several weeks to complete. Beginning this preparation now eliminates last-minute delays and demonstrates organizational readiness to APCI processing authorities.</p>
-            <p>&nbsp;</p>
+            <ProcessSteps
+              label="Process"
+              heading="While waiting for the program to open"
+              steps={[
+                {
+                  title: "Organize Documentation and Source-of-Funds Evidence",
+                  description:
+                    "Comprehensive documentation forms the cornerstone of every successful citizenship by investment application. Investors should begin organizing corporate records, audited financial statements, tax returns, source-of-funds evidence, and personal identification documents. Many materials require apostille certification and certified Spanish translation, processes that can take several weeks to complete. Beginning this preparation now eliminates last-minute delays and demonstrates organizational readiness to APCI processing authorities.",
+                },
+                {
+                  title: "Evaluate the Anticipated Paths",
+                  description:
+                    "While operational regulations remain unpublished, this site currently anticipates two paths only: a $500,000 USD Treasury contribution or a $1,000,000 USD 7-year government bond, subject to final regulation. Real estate, funds, and business ventures are not anticipated qualifying paths. Preparing source-of-funds evidence now is file hygiene. It is not a substitute for a published APCI schedule.",
+                },
+                {
+                  title: "Engage Specialized Advisory Counsel Early",
+                  description:
+                    "Navigating a new citizenship by investment program requires specialized expertise that generalist advisors rarely possess. Engaging qualified legal and tax counsel familiar with both Argentine immigration law and international investment structuring ensures applications are prepared to the highest standard from the outset. Professional advisors can also provide clarity on the tax implications of Argentine citizenship, estate planning considerations for multi-generational families, and the strategic advantages of holding a Mercosur passport with full freedom of movement across South America's largest economic bloc.",
+                },
+              ]}
+            />
 
-            <h3>Evaluate the Anticipated Paths</h3>
-            <p>&nbsp;</p>
-            <p>While operational regulations remain unpublished, this site currently anticipates two paths only: a $500,000 USD Treasury contribution or a $1,000,000 USD 7-year government bond, subject to final regulation. Real estate, funds, and business ventures are not anticipated qualifying paths. Preparing source-of-funds evidence now is file hygiene. It is not a substitute for a published APCI schedule.</p>
-            <p>&nbsp;</p>
-
-            <h3>Engage Specialized Advisory Counsel Early</h3>
-            <p>&nbsp;</p>
-            <p>Navigating a new citizenship by investment program requires specialized expertise that generalist advisors rarely possess. Engaging qualified legal and tax counsel familiar with both Argentine immigration law and international investment structuring ensures applications are prepared to the highest standard from the outset. Professional advisors can also provide clarity on the tax implications of Argentine citizenship, estate planning considerations for multi-generational families, and the strategic advantages of holding a Mercosur passport with full freedom of movement across South America's largest economic bloc.</p>
+            <InquiryCard
+              heading="Specialized advisory counsel"
+              body="Legal and tax counsel on Argentine investment nationality can be arranged through this office."
+              ctaLabel="Inquire"
+            />
           </div>
         </div>
       </div>

@@ -3,6 +3,12 @@ import { getCollection, render } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import GuideArticleContent from '../../components/GuideArticleContent';
 import ComparisonBlock from '../../components/ComparisonBlock';
+import ComparisonTable from '../../components/ComparisonTable';
+import KeyFactsTable from '../../components/KeyFactsTable';
+import ChecklistCard from '../../components/ChecklistCard';
+import ProcessSteps from '../../components/ProcessSteps';
+import InquiryCard from '../../components/InquiryCard';
+import { DueDiligenceReviewGroups, BusinessSaleTimingSteps } from '../../components/guideBlocks';
 
 // PLACEHOLDER IMAGE — replace with a real photo for due diligence process once provided
 // PLACEHOLDER IMAGE — replace with a real photo for business sale/startup exits once provided
@@ -118,6 +124,6 @@ const schema = {
 		statusBanner={data.statusBanner}
 		related={related}
 	>
-		<Content components={{ ComparisonBlock }} />
+		<Content components={{ ComparisonBlock, ComparisonTable, KeyFactsTable, ChecklistCard, ProcessSteps, InquiryCard, DueDiligenceReviewGroups, BusinessSaleTimingSteps }} />
 	</GuideArticleContent>
 </Layout>

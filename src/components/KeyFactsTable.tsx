@@ -8,6 +8,8 @@ export type KeyFact = {
 
 export interface KeyFactsTableProps {
   facts?: KeyFact[];
+  /** Appended after `facts` (or after `programKeyFacts` when `facts` is omitted). */
+  extraFacts?: KeyFact[];
   /** Small-caps kicker. Defaults to "At a Glance". */
   label?: string;
   /** Optional serif heading under the kicker. */
@@ -49,11 +51,14 @@ export const programKeyFacts: KeyFact[] = [
 ];
 
 const KeyFactsTable = ({
-  facts = programKeyFacts,
+  facts,
+  extraFacts,
   label = "At a Glance",
   heading,
   className,
 }: KeyFactsTableProps) => {
+  const resolvedFacts = [...(facts ?? programKeyFacts), ...(extraFacts ?? [])];
+
   return (
     <div
       className={cn(
@@ -62,17 +67,17 @@ const KeyFactsTable = ({
       )}
     >
       {label && (
-        <p className="text-[11px] uppercase tracking-widest font-semibold text-text-secondary mb-4">
+        <div className="text-[11px] uppercase tracking-widest font-semibold text-text-secondary mb-4">
           {label}
-        </p>
+        </div>
       )}
       {heading && (
-        <h2 className="font-serif text-lg-editorial mb-6 tracking-wide text-foreground">
+        <div className="font-serif text-lg-editorial mb-6 tracking-wide text-foreground">
           {heading}
-        </h2>
+        </div>
       )}
       <dl className="divide-y divide-border">
-        {facts.map((fact) => (
+        {resolvedFacts.map((fact) => (
           <div
             key={fact.label}
             className="grid sm:grid-cols-[11rem_1fr] gap-1 sm:gap-6 py-4 first:pt-0 last:pb-0"
