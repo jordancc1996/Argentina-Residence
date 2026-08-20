@@ -38,7 +38,7 @@ const IndustryNewsGuide = () => {
 
             <h3>Resolution 522 Argentina Citizenship by Investment</h3>
             <p>&nbsp;</p>
-            <p>Following the decree, the government issued Resolution 522/2026 to govern the procedural mechanics of the program. <strong>Resolution 522 argentina citizenship by investment</strong> established the public tender process. That tender was later cancelled. Two paths are currently anticipated, subject to final regulation: a non-refundable $500,000 USD contribution to the Argentine Treasury, or a $1,000,000 USD investment in a 7-year, 0% interest Argentine government bond, with principal returned at maturity. Real estate, business or startup ventures, and investment funds are not anticipated qualifying paths. Neither path has been officially confirmed.</p>
+            <p>Following the decree, the government issued Resolution 522/2026 to govern the procedural mechanics of the program. <strong>Resolution 522 argentina citizenship by investment</strong> established the public tender process. That tender was later cancelled. Two paths are currently anticipated, subject to final regulation: a non-refundable $500,000 USD contribution to the Argentine Treasury, or a $1,000,000 USD investment in a 7-year, 0% interest Argentine government bond, with principal returned at maturity. Neither path has been officially confirmed.</p>
             <p>&nbsp;</p>
 
             <h3>Argentina CBI Tender Collapse Analysis</h3>
@@ -87,7 +87,7 @@ const IndustryNewsGuide = () => {
                 {
                   title: "Evaluate the Anticipated Paths",
                   description:
-                    "While operational regulations remain unpublished, this site currently anticipates two paths only: a $500,000 USD Treasury contribution or a $1,000,000 USD 7-year government bond, subject to final regulation. Real estate, funds, and business ventures are not anticipated qualifying paths. Preparing source-of-funds evidence now is file hygiene. It is not a substitute for a published APCI schedule.",
+                    "While operational regulations remain unpublished, this site currently anticipates two paths only: a $500,000 USD Treasury contribution or a $1,000,000 USD 7-year government bond, subject to final regulation. Preparing source-of-funds evidence now is file hygiene. It is not a substitute for a published APCI schedule.",
                 },
                 {
                   title: "Engage Specialized Advisory Counsel Early",

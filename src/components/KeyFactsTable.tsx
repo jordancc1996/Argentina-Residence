@@ -24,6 +24,11 @@ export const programKeyFacts: KeyFact[] = [
       "Two paths anticipated, subject to final regulation: a non-refundable $500,000 USD contribution to the Argentine Treasury, or a $1,000,000 USD investment in a 7-year, 0% interest Argentine government bond, with principal returned at maturity.",
   },
   {
+    label: "Not anticipated paths",
+    value:
+      "Real estate, business ventures, investment funds, agriculture, renewable energy, and tourism projects are not anticipated qualifying paths.",
+  },
+  {
     label: "Family inclusion",
     value: "Spouse and children under 18 expected to be includable. Status of dependents 18 and older is unknown.",
   },

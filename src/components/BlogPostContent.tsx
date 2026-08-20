@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { ArrowLeft, Calendar, Clock, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ShareButtons from "@/components/ShareButtons";
-import NewsletterSignup from "@/components/NewsletterSignup";
 import type { ReactNode } from "react";
 
 export interface RelatedPost {
@@ -103,12 +102,11 @@ const BlogPostContent = ({
                 prose-strong:text-foreground prose-strong:font-semibold
                 prose-ul:text-text-secondary prose-li:text-text-secondary
                 prose-h2:text-5xl prose-h2:mt-12 prose-h2:mb-6
-                prose-h3:text-4xl prose-h3:mt-8 prose-h3:mb-4"
+                prose-h3:text-4xl prose-h3:mt-8 prose-h3:mb-4
+                [&_.not-prose_h2]:text-xl-editorial [&_.not-prose_h2]:mt-0 [&_.not-prose_h2]:mb-3"
             >
               {children}
             </div>
-
-            <NewsletterSignup className="mt-12" />
 
             {/* Share Buttons Section */}
             <div className="mt-12 pt-8 border-t border-border">
