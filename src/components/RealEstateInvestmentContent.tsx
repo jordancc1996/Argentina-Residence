@@ -2,6 +2,8 @@ import Hero from "@/components/Hero";
 import EditorialSection from "@/components/EditorialSection";
 import ScrollytellingSteps from "@/components/ScrollytellingSteps";
 import { Button } from "@/components/ui/button";
+import NewsletterSignup from "@/components/NewsletterSignup";
+import PhotoPlaceholder from "@/components/PhotoPlaceholder";
 import { Building2, TrendingUp, MapPin, ArrowRight } from "lucide-react";
 import buenosAiresCityscape from "@/assets/buenos-aires-cityscape.jpg";
 
@@ -9,6 +11,7 @@ const RealEstateInvestmentContent = () => {
   const neighborhoods = [
     {
       name: "Puerto Madero",
+      photoAlt: "Aerial view of Puerto Madero, Buenos Aires",
       description: "Buenos Aires' most exclusive waterfront district with modern high-rises and premium amenities.",
       priceRange: "$150,000 - $2M+",
       highlights: ["Waterfront views", "New construction", "24/7 security", "Premium amenities"],
@@ -16,6 +19,7 @@ const RealEstateInvestmentContent = () => {
     },
     {
       name: "Palermo",
+      photoAlt: "Aerial view of Palermo, Buenos Aires",
       description: "The city's largest and most diverse barrio, home to embassies, parks, and trendy neighborhoods.",
       priceRange: "$100,000 - $800K",
       highlights: ["Cultural hub", "Restaurant scene", "Green spaces", "High rental demand"],
@@ -23,6 +27,7 @@ const RealEstateInvestmentContent = () => {
     },
     {
       name: "Recoleta",
+      photoAlt: "Aerial view of Recoleta, Buenos Aires",
       description: "Classic European-style neighborhood known for French architecture and cultural institutions.",
       priceRange: "$120,000 - $1.5M",
       highlights: ["Historic charm", "Museums and galleries", "Upscale dining", "Central location"],
@@ -30,6 +35,7 @@ const RealEstateInvestmentContent = () => {
     },
     {
       name: "Belgrano",
+      photoAlt: "Aerial view of Belgrano, Buenos Aires",
       description: "Upscale residential area popular with families and expats, featuring tree-lined streets.",
       priceRange: "$100,000 - $600K",
       highlights: ["Family-friendly", "International schools", "Parks", "Quiet streets"],
@@ -50,18 +56,13 @@ const RealEstateInvestmentContent = () => {
           Where to Invest: Real Estate in Argentina
         </h2>
         <p className="text-editorial text-text-secondary mb-8 tracking-wide max-w-3xl mx-auto">
-          This guide covers Buenos Aires property types and neighborhoods for buyers interested in the market on its own terms, independent of the Golden Visa or any residency-by-investment program.
+          This guide covers Buenos Aires property types and neighborhoods for buyers interested in the market on its own terms, independent of the Golden Visa or any residency-by-investment program. Owning property in Argentina does not itself grant Golden Visa eligibility.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
-          <a href="/argentina-golden-visa-eligibility-checker">
+          <a href="/contact">
             <Button size="lg" className="px-8">
-              Check Your Eligibility
+              Inquire About Property
               <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
-          </a>
-          <a href="/guides/argentina-golden-visa-program">
-            <Button variant="outline" size="lg" className="px-8">
-              View Program Details
             </Button>
           </a>
         </div>
@@ -82,6 +83,11 @@ const RealEstateInvestmentContent = () => {
               key={neighborhood.name}
               className="border border-border rounded-lg overflow-hidden hover:border-gold/50 transition-colors"
             >
+              <PhotoPlaceholder
+                label={neighborhood.name}
+                alt={neighborhood.photoAlt}
+                variant="card"
+              />
               <div className="p-6">
                 <div className="flex items-start justify-between mb-4">
                   <div>
@@ -166,14 +172,14 @@ const RealEstateInvestmentContent = () => {
       <EditorialSection centered={false}>
         <ScrollytellingSteps
           eyebrow="A Bespoke Process"
-          heading="From eligibility to keys in hand"
+          heading="From search to keys in hand"
           intro="A guided five-step process for buyers deploying capital into Argentine real estate."
           steps={[
             {
               label: "Step 1",
-              title: "Eligibility Assessment",
+              title: "Property Search",
               description:
-                "Complete our quick assessment to confirm your investor profile and clarify the residency pathway best suited to your objectives.",
+                "Identify properties in Argentina that match your budget, use case, and preferred location, including Buenos Aires and other markets of interest.",
             },
             {
               label: "Step 2",
@@ -189,15 +195,15 @@ const RealEstateInvestmentContent = () => {
             },
             {
               label: "Step 4",
-              title: "Investment and Closing",
+              title: "Purchase and Escritura",
               description:
-                "Funds are transferred through compliant banking channels and the deed is executed at the notary, with proof of investment prepared for migration filing.",
+                "Funds are transferred through compliant banking channels. The escritura is executed at the notary, and title documentation is prepared for the buyer.",
             },
             {
               label: "Step 5",
-              title: "Residency Application",
+              title: "Title Registration",
               description:
-                "Your residency application is filed with Migraciones, with case management through to approval and issuance of your DNI.",
+                "The escritura is registered with the relevant property registry, completing the transfer of title and handing over the keys.",
             },
           ]}
         />
@@ -210,16 +216,19 @@ const RealEstateInvestmentContent = () => {
             Ready to Explore Investment Options?
           </h2>
           <p className="text-text-cream mb-8 text-lg">
-            Complete our eligibility assessment to receive personalized investment 
-            recommendations and join our priority investor waitlist.
+            Contact us to discuss Buenos Aires property, due diligence, and the purchase process.
           </p>
-          <a href="/argentina-golden-visa-eligibility-checker">
+          <a href="/contact">
             <Button size="lg" className="bg-gold hover:bg-gold/90 text-primary px-10">
-              Start Eligibility Check
+              Inquire About Property
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </a>
         </div>
+      </EditorialSection>
+      
+      <EditorialSection centered={false}>
+        <NewsletterSignup />
       </EditorialSection>
       
       {/* Internal Linking */}

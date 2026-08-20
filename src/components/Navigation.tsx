@@ -13,12 +13,14 @@ const navLinks = [
   { path: "/", label: "Home" },
   { path: "/about", label: "About" },
   { path: "/program", label: "The Program" },
+  { path: "/guides/argentina-real-estate-investment", label: "Real Estate" },
   { path: "/research", label: "Research and Intelligence" },
   { path: "/industry-news", label: "Industry News" },
   { path: "/contact", label: "Contact Us" },
 ];
 
 const GUIDES_HUB_HREF = "/resources";
+const REAL_ESTATE_HREF = "/guides/argentina-real-estate-investment";
 
 export type GuideNavItem = {
   title: string;
@@ -155,6 +157,22 @@ const Navigation = ({
                 </NavigationMenuList>
               </NavigationMenu>
             </div>
+
+            <a
+              href={REAL_ESTATE_HREF}
+              className="hidden md:inline-flex items-center rounded-none bg-transparent px-2 py-2 text-white hover:text-white/80 transition-colors duration-300"
+              style={{
+                fontFamily: "'Montserrat', sans-serif",
+                fontWeight: 500,
+                fontSize: 17,
+                letterSpacing: "0.35px",
+                color: pathMatches(currentPath, REAL_ESTATE_HREF)
+                  ? "hsl(45, 29%, 65%)"
+                  : undefined,
+              }}
+            >
+              Real Estate
+            </a>
 
             {/* Contact pill */}
             <a

@@ -2,6 +2,7 @@
 import { getCollection, render } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import BlogPostContent from '../../components/BlogPostContent';
+import KeyFactsTable from '../../components/KeyFactsTable';
 
 function wordCountFromMarkdown(markdown: string) {
   const text = markdown
@@ -136,6 +137,6 @@ const schema = {
 		previous={previous}
 		next={next}
 	>
-		<Content />
+		<Content components={{ KeyFactsTable }} />
 	</BlogPostContent>
 </Layout>

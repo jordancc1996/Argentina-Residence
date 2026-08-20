@@ -2,6 +2,7 @@ import Hero from "@/components/Hero";
 import EditorialSection from "@/components/EditorialSection";
 import ScrollytellingSteps from "@/components/ScrollytellingSteps";
 import { Button } from "@/components/ui/button";
+import NewsletterSignup from "@/components/NewsletterSignup";
 import goldenVisaHero from "@/assets/argentina-golden-visa-2026.jpg";
 
 const ProgramContent = () => {
@@ -92,6 +93,10 @@ const ProgramContent = () => {
             },
           ]}
         />
+
+        <div className="mt-16">
+          <NewsletterSignup />
+        </div>
 
         <div className="mt-16 text-center">
           <p className="text-body text-text-secondary mb-6 tracking-wide">

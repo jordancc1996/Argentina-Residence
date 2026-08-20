@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowLeft, Calendar, Clock, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ShareButtons from "@/components/ShareButtons";
+import NewsletterSignup from "@/components/NewsletterSignup";
 import type { ReactNode } from "react";
 
 export interface RelatedPost {
@@ -106,6 +107,8 @@ const BlogPostContent = ({
             >
               {children}
             </div>
+
+            <NewsletterSignup className="mt-12" />
 
             {/* Share Buttons Section */}
             <div className="mt-12 pt-8 border-t border-border">

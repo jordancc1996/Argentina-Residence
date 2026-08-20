@@ -4,6 +4,7 @@ import Layout from '../../layouts/Layout.astro';
 import IndustryNewsHero from '../../components/IndustryNewsHero';
 import IndustryNewsGrid from '../../components/IndustryNewsGrid';
 import IndustryNewsGuide from '../../components/IndustryNewsGuide';
+import NewsletterSignup from '../../components/NewsletterSignup';
 
 const entries = await getCollection('industryNews');
 const articles = [...entries]
@@ -46,5 +47,8 @@ const ogImage = 'https://argentinaresidence.com/og-image.jpg';
 		<IndustryNewsHero client:load />
 		<IndustryNewsGrid client:load articles={articles} />
 		<IndustryNewsGuide />
+		<section class="max-w-4xl mx-auto px-4 md:px-8 pb-24 md:pb-32">
+			<NewsletterSignup client:load />
+		</section>
 	</main>
 </Layout>

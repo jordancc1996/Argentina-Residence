@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import Hero from "@/components/Hero";
 import EditorialSection from "@/components/EditorialSection";
+import NewsletterSignup from "@/components/NewsletterSignup";
 import { Clock } from "lucide-react";
 
 export type GuideHeroImage = string | { src: string };
@@ -59,10 +60,16 @@ const GuideArticleContent = ({
             [&_ul]:text-editorial [&_ul]:text-text-secondary [&_ul]:mb-6 [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:space-y-2
             [&_li]:text-editorial [&_li]:text-text-secondary
             [&_a]:text-primary [&_a]:hover:underline
-            [&_strong]:text-foreground"
+            [&_strong]:text-foreground
+            [&_figure.photo-placeholder]:my-8
+            [&_figure.photo-placeholder_span]:text-sm [&_figure.photo-placeholder_span]:text-text-muted [&_figure.photo-placeholder_span]:mb-0 [&_figure.photo-placeholder_span]:tracking-wide"
         >
           {children}
         </div>
+      </EditorialSection>
+
+      <EditorialSection centered={false}>
+        <NewsletterSignup />
       </EditorialSection>
 
       {related.length > 0 && (

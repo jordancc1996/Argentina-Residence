@@ -2,6 +2,7 @@
 import { getCollection, render } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import GuideArticleContent from '../../components/GuideArticleContent';
+import ComparisonBlock from '../../components/ComparisonBlock';
 
 // PLACEHOLDER IMAGE — replace with a real photo for due diligence process once provided
 // PLACEHOLDER IMAGE — replace with a real photo for business sale/startup exits once provided
@@ -117,6 +118,6 @@ const schema = {
 		statusBanner={data.statusBanner}
 		related={related}
 	>
-		<Content />
+		<Content components={{ ComparisonBlock }} />
 	</GuideArticleContent>
 </Layout>

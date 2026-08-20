@@ -2,6 +2,7 @@ import Hero from "@/components/Hero";
 import EditorialSection from "@/components/EditorialSection";
 import ScrollytellingSteps from "@/components/ScrollytellingSteps";
 import { Button } from "@/components/ui/button";
+import NewsletterSignup from "@/components/NewsletterSignup";
 import { Clock, Shield, Globe, TrendingUp, CheckCircle, ArrowRight } from "lucide-react";
 import goldenVisaHero from "@/assets/argentina-golden-visa-flag-hero.jpg";
 
@@ -36,11 +37,6 @@ const GoldenVisaProgramContent = () => {
             <Button size="lg" className="px-8">
               Check Your Eligibility
               <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
-          </a>
-          <a href="/guides/argentina-real-estate-investment">
-            <Button variant="outline" size="lg" className="px-8">
-              Property Market Guide
             </Button>
           </a>
         </div>
@@ -121,13 +117,6 @@ const GoldenVisaProgramContent = () => {
                 </div>
               </div>
             </div>
-            
-            <p className="text-sm text-text-muted">
-              Read the Argentina real estate market guide in our{" "}
-              <a href="/guides/argentina-real-estate-investment" className="text-primary hover:underline font-medium">
-                Property Guide for Foreign Buyers →
-              </a>
-            </p>
           </div>
         </div>
       </EditorialSection>
@@ -179,11 +168,15 @@ const GoldenVisaProgramContent = () => {
           </a>
         </div>
       </EditorialSection>
+
+      <EditorialSection centered={false}>
+        <NewsletterSignup />
+      </EditorialSection>
       
       {/* Internal Linking Section */}
       <EditorialSection>
         <h2 className="font-serif text-lg-editorial mb-8 tracking-wide text-center">
-          Continue Your Research
+          Related Guides
         </h2>
         <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
           <a 
@@ -194,7 +187,7 @@ const GoldenVisaProgramContent = () => {
               Property Market
             </h3>
             <p className="text-sm text-text-secondary">
-              Neighborhoods and property context for foreign buyers.
+              For buyers interested in Argentina real estate independent of the Golden Visa program.
             </p>
           </a>
           

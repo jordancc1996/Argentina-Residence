@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowLeft, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import NewsletterSignup from "@/components/NewsletterSignup";
 import { useParallax } from "@/hooks/useParallax";
 import type { ReactNode } from "react";
 
@@ -105,6 +106,8 @@ const IndustryNewsArticleContent = ({
             >
               {children}
             </div>
+
+            <NewsletterSignup className="mt-12" />
 
             <div className="mt-12 bg-[hsl(var(--nav-bg-dark))] text-primary-foreground rounded-lg p-8 md:p-12 text-center">
               <h3 className="text-2xl md:text-3xl font-serif mb-4">
