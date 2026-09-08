@@ -12,6 +12,8 @@ const articles = defineCollection({
     title: z.string(),
     excerpt: z.string(),
     date: z.string(),
+    publishedDate: z.string().optional(),
+    lastUpdatedDate: z.string().optional(),
     readTime: z.string(),
     category: z.string(),
     slug: z.string(),
@@ -47,6 +49,8 @@ const industryNews = defineCollection({
     slug: z.string(),
     title: z.string(),
     date: z.string(),
+    publishedDate: z.string().optional(),
+    lastUpdatedDate: z.string().optional(),
     summary: z.string(),
     source: z.string().optional(),
     image: z.string().optional(),
@@ -69,6 +73,8 @@ const guides = defineCollection({
     statusBanner: z.string().optional(),
     datePublished: z.string().optional(),
     dateModified: z.string().optional(),
+    publishedDate: z.string().optional(),
+    lastUpdatedDate: z.string().optional(),
   }),
 });
 

@@ -25,18 +25,103 @@ with client:load.
 
 ## Content Publishing Rules
 
-Every new article MUST pass the 5-location keyword check before committing:
+Every new article added to `src/content/articles/`, `src/content/guides/`,
+`src/content/industryNews/`, or `src/content/faqs/` MUST pass the 5-location
+keyword check before being committed.
 
-1. TITLE: starts with keyword, format "[Keyword] - [Angle]"
-   No em dashes. No site name in this field.
-2. META TITLE: same as title + " | Argentina Residence"
-3. META DESCRIPTION: keyword in first 5-7 words, 150-160 chars as a
-   target (not a hard requirement, per the homepage exception),
-   one specific number/date/dollar amount, no em dashes
-4. URL/SLUG: reflects the keyword (never change existing slugs
-   without explicit approval)
-5. FIRST SENTENCE: keyword in first 10 words, specific,
-   no em dashes, not "This article will..." or "In this guide..."
+### The 5-Location Keyword Rule
+
+PRIMARY TARGET KEYWORD must appear in ALL FIVE locations:
+
+1. TITLE
+
+   * Must start with the keyword
+   * Use format: "[Keyword] - [Angle]"
+   * No em dashes
+   * Do not include the site name
+
+2. META TITLE
+
+   * Use the same title as above
+   * Append: " | Argentina Residence"
+
+3. META DESCRIPTION
+
+   * Primary keyword must appear within the first 5-7 words
+   * Target length: 150-160 characters (not a hard requirement, per the
+     documented homepage exception)
+   * Include at least one specific number, date, or dollar amount when
+     factually appropriate
+   * No em dashes
+
+4. URL / SLUG
+
+   * Slug should clearly reflect the primary target keyword
+   * NEVER change an existing slug without explicit human approval
+   * For existing articles, preserve the current slug unless specifically
+     instructed otherwise
+
+5. FIRST SENTENCE OF INTRO / OPENING
+
+   * Primary keyword must appear within the first 10 words
+   * Sentence must be specific and informative
+   * No em dashes
+   * Do not begin with generic framing
+
+### Workflow for Every New Article
+
+STEP 1: Identify the primary target keyword.
+
+Before writing or modifying the article, show the keyword to the human.
+
+STEP 2: Run the 5-location keyword check.
+
+Always show this exact type of table before implementation:
+
+Keyword: [Primary Target Keyword]
+
+| Location         | Status |
+| ---------------- | ------ |
+| Title            | ✓ / ✗  |
+| Meta Title       | ✓ / ✗  |
+| Meta Description | ✓ / ✗  |
+| URL / Slug       | ✓ / ✗  |
+| First Sentence   | ✓ / ✗  |
+
+STEP 3: Fix every ✗.
+
+Do not proceed with publishing or committing until every required location
+passes.
+
+STEP 4: Human approval.
+
+Show the proposed SEO fields and keyword check to the human before
+committing the article.
+
+STEP 5: Write the file and commit.
+
+NEVER commit a new article when any location still has a ✗.
+
+### Rules for Existing Articles
+
+Existing articles must also be checked against the 5-location keyword rule
+when they are being SEO-optimized.
+
+However:
+
+* Do not automatically change an existing URL or slug
+* Treat the existing slug as protected
+* Flag a poor slug to the human
+* Recommend a better slug if appropriate
+* Only change the slug after explicit human approval
+* Do not create a redirect unless explicitly instructed
+
+For an existing article, it is acceptable for the slug check to be reported
+as:
+
+"PROTECTED EXISTING SLUG"
+
+instead of changing it automatically.
 
 ### Cannibalization Check (Required Before Every New Article)
 
@@ -55,13 +140,72 @@ new slug and its owned topics.
 
 ### Red Flags to Catch Automatically
 
-- Description copy-pasted from a different article (wrong topic)
-- First sentence starting with context not keyword
-- Title burying keyword at the end
-- Description under 140 or over 165 characters
-- Em dashes in any SEO field
-- First sentence starting with "This article will..."
-- vscode-file:// URIs in any link
+Always flag and correct the following before publishing:
+
+* Meta description copied from a different article
+* First sentence begins with context instead of the primary keyword
+* Title buries the primary keyword near the end
+* Meta description is under 140 characters
+* Meta description is over 165 characters
+* Em dashes appear in the title, meta title, meta description, or first sentence
+* First sentence begins with:
+
+  * "This article will..."
+  * "In this guide..."
+  * "In this article..."
+  * "This guide explains..."
+* Keyword stuffing
+* Awkward exact-match keyword placement that damages readability
+* SEO copy that talks about "the keyword" inside the published article
+* Site name duplicated inside the article title
+* Unapproved changes to an existing slug
+* vscode-file:// URIs in any link
+
+### High-Buyer-Intent SEO Rule
+
+When the article is intended to target a high-buyer-intent keyword:
+
+1. Identify the specific problem, decision, or transaction the searcher is
+   trying to complete.
+2. Prefer a keyword that combines:
+
+   * the product, service, program, or solution
+   * with the buyer's specific problem, audience, location, deadline, cost,
+     comparison, or decision
+3. Do not choose a broad informational keyword when a more specific
+   high-intent keyword accurately matches the article.
+4. Do not force a keyword onto an article if the existing content does not
+   satisfy that search intent.
+5. For existing articles, first determine whether the new keyword is:
+
+   * a strong fit
+   * a partial fit requiring targeted edits
+   * or a poor fit requiring a separate article
+6. Do not rewrite an entire article when title, metadata, introduction,
+   headings, and targeted sections are sufficient.
+7. Check for keyword cannibalization before repositioning an existing article.
+8. Preserve the intended search intent of other existing pages.
+
+### Final Pre-Commit Check
+
+Before any content article is committed, verify:
+
+* Primary keyword identified
+* Title passes
+* Meta title passes
+* Meta description passes
+* Slug passes or is explicitly marked as a protected existing slug
+* First sentence passes
+* No em dashes in SEO fields
+* Meta description length is valid
+* No generic AI-style opening
+* No keyword stuffing
+* No accidental cannibalization
+* Existing slugs were not changed without approval
+* Article search intent still matches the primary keyword
+
+If any required item fails, stop and show the issue to the human instead of
+committing.
 
 ## Known Issues Being Preserved
 
@@ -76,7 +220,6 @@ Replace these temporary heroes when a real photo is provided. Do not treat the c
 
 - `/guides/argentina-citizenship-investment-due-diligence` uses `src/assets/hero-buenos-aires-night.jpg` as a temporary hero. See the PLACEHOLDER IMAGE comment in `src/pages/guides/[slug].astro`.
 - `/guides/argentina-citizenship-investment-business-sale` uses `src/assets/hero-buenos-aires-night.jpg` as a temporary hero. See the PLACEHOLDER IMAGE comment in `src/pages/guides/[slug].astro`.
-- `/guides/argentina-citizenship-investment-us-visa-backlog` uses `src/assets/hero-buenos-aires-night.jpg` as a temporary hero. See the PLACEHOLDER IMAGE comment in `src/pages/guides/[slug].astro`.
 - `/guides/argentina-cbi-vs-caribbean-citizenship` uses `src/assets/hero-buenos-aires-night.jpg` as a temporary hero. See the PLACEHOLDER IMAGE comment in `src/pages/guides/[slug].astro`.
 - `/guides/argentina-citizenship-investment-vs-greece-golden-visa` uses `src/assets/hero-buenos-aires-night.jpg` as a temporary hero. See the PLACEHOLDER IMAGE comment in `src/pages/guides/[slug].astro`.
 - `/guides/argentina-citizenship-investment-vs-turkey` uses `src/assets/hero-buenos-aires-night.jpg` as a temporary hero. See the PLACEHOLDER IMAGE comment in `src/pages/guides/[slug].astro`.

@@ -7,6 +7,7 @@ import ComparisonTable from '../../components/ComparisonTable';
 import ChecklistCard from '../../components/ChecklistCard';
 import ProcessSteps from '../../components/ProcessSteps';
 import NewsletterSignup from '../../components/NewsletterSignupMdx.astro';
+import DateMeta from '../../components/DateMeta.astro';
 
 function wordCountFromMarkdown(markdown: string) {
   const text = markdown
@@ -80,8 +81,8 @@ const schema = {
   "@type": "Article",
   "headline": seoTitle,
   "description": data.seoDescription || data.excerpt,
-  "datePublished": data.date,
-  "dateModified": data.date,
+  "datePublished": data.publishedDate || data.date,
+  "dateModified": data.lastUpdatedDate || data.publishedDate || data.date,
   "author": {
     "@type": "Organization",
     "name": data.author
@@ -141,6 +142,7 @@ const schema = {
 		previous={previous}
 		next={next}
 	>
+		<DateMeta publishedDate={data.publishedDate || data.date} lastUpdatedDate={data.lastUpdatedDate} />
 		<Content components={{ KeyFactsTable, ComparisonTable, ChecklistCard, ProcessSteps, NewsletterSignup }} />
 	</BlogPostContent>
 </Layout>

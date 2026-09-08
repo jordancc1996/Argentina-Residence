@@ -1,11 +1,14 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import RealEstateInvestmentContent from '../../components/RealEstateInvestmentContent';
+import DateMeta from '../../components/DateMeta.astro';
 
 const title = 'Argentina Real Estate Investment - Property Guide for Foreign Buyers | Argentina Residence';
 const description = 'Argentina real estate investment covers Palermo, Puerto Madero, Recoleta, and Belgrano property for foreign buyers, independent of any Golden Visa program.';
 const canonical = 'https://argentinaresidence.com/guides/argentina-real-estate-investment';
 const ogImage = 'https://argentinaresidence.com/og-image.jpg';
+const publishedDate = "2026-01-22";
+const lastUpdatedDate = "2026-08-19";
 const schema = {
   "@context": "https://schema.org",
   "@type": "Article",
@@ -20,8 +23,8 @@ const schema = {
     "name": "Argentina Residence",
     "url": "https://argentinaresidence.com"
   },
-  "datePublished": "2026-01-22",
-  "dateModified": "2026-01-22"
+  "datePublished": publishedDate,
+  "dateModified": lastUpdatedDate
 };
 ---
 
@@ -44,5 +47,7 @@ const schema = {
 	<meta slot="head" name="twitter:description" content={description} />
 	<meta slot="head" name="twitter:image" content={ogImage} />
 	<script slot="head" type="application/ld+json" set:html={JSON.stringify(schema)} />
-	<RealEstateInvestmentContent client:load />
+	<RealEstateInvestmentContent client:load>
+		<DateMeta publishedDate={publishedDate} lastUpdatedDate={lastUpdatedDate} />
+	</RealEstateInvestmentContent>
 </Layout>

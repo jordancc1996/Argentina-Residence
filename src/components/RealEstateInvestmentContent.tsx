@@ -7,11 +7,12 @@ import InquiryCard from "@/components/InquiryCard";
 import { defaultInquiryCard, getRelatedGuides } from "@/data/relatedGuides";
 import PhotoPlaceholder from "@/components/PhotoPlaceholder";
 import { Building2, TrendingUp, MapPin, ArrowRight } from "lucide-react";
+import type { ReactNode } from "react";
 import buenosAiresCityscape from "@/assets/buenos-aires-cityscape.jpg";
 
 const related = getRelatedGuides("argentina-real-estate-investment", 5);
 
-const RealEstateInvestmentContent = () => {
+const RealEstateInvestmentContent = ({ children }: { children?: ReactNode }) => {
   const neighborhoods = [
     {
       name: "Puerto Madero",
@@ -59,6 +60,7 @@ const RealEstateInvestmentContent = () => {
         <h2 className="font-serif text-xl-editorial mb-8 tracking-wide">
           Where to Invest: Real Estate in Argentina
         </h2>
+        {children}
         <p className="text-editorial text-text-secondary mb-8 tracking-wide max-w-3xl mx-auto">
           This guide covers Buenos Aires property types and neighborhoods for buyers interested in the market on its own terms, independent of the Golden Visa or any residency-by-investment program. Owning property in Argentina does not itself grant Golden Visa eligibility.
         </p>

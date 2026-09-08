@@ -1,11 +1,14 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import GoldenVisaProgramContent from '../../components/GoldenVisaProgramContent';
+import DateMeta from '../../components/DateMeta.astro';
 
 const title = "Argentina Golden Visa 2026 | Proposed Investor Residency";
 const description = "Argentina Golden Visa 2026 is anticipated as a $500,000 USD Treasury contribution or a $1,000,000 USD 7-year government bond. APCI is not processing files.";
 const canonical = 'https://argentinaresidence.com/guides/argentina-golden-visa-program';
 const ogImage = 'https://argentinaresidence.com/og-image.jpg';
+const publishedDate = "2026-01-22";
+const lastUpdatedDate = "2026-08-19";
 const schema = {
   "@context": "https://schema.org",
   "@type": "Article",
@@ -20,8 +23,8 @@ const schema = {
     "name": "Argentina Residence",
     "url": "https://argentinaresidence.com"
   },
-  "datePublished": "2026-01-22",
-  "dateModified": "2026-01-22"
+  "datePublished": publishedDate,
+  "dateModified": lastUpdatedDate
 };
 ---
 
@@ -44,5 +47,7 @@ const schema = {
 	<meta slot="head" name="twitter:description" content={description} />
 	<meta slot="head" name="twitter:image" content={ogImage} />
 	<script slot="head" type="application/ld+json" set:html={JSON.stringify(schema)} />
-	<GoldenVisaProgramContent client:load />
+	<GoldenVisaProgramContent client:load>
+		<DateMeta publishedDate={publishedDate} lastUpdatedDate={lastUpdatedDate} />
+	</GoldenVisaProgramContent>
 </Layout>

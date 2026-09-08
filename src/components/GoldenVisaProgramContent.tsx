@@ -6,11 +6,12 @@ import NewsletterSignup from "@/components/NewsletterSignup";
 import InquiryCard from "@/components/InquiryCard";
 import { defaultInquiryCard, getRelatedGuides } from "@/data/relatedGuides";
 import { Clock, Shield, Globe, TrendingUp, CheckCircle, ArrowRight } from "lucide-react";
+import type { ReactNode } from "react";
 import goldenVisaHero from "@/assets/argentina-golden-visa-flag-hero.jpg";
 
 const related = getRelatedGuides("argentina-golden-visa-program", 5);
 
-const GoldenVisaProgramContent = () => {
+const GoldenVisaProgramContent = ({ children }: { children?: ReactNode }) => {
   return (
     <>
       <Hero
@@ -33,6 +34,7 @@ const GoldenVisaProgramContent = () => {
         <h2 className="font-serif text-xl-editorial mb-8 tracking-wide">
           Argentina's New Golden Visa: The 2026 Investor Guide
         </h2>
+        {children}
         <p className="text-editorial text-text-secondary mb-8 tracking-wide max-w-3xl mx-auto">
           Argentina Golden Visa 2026 is proposed, not operating. Decree 524/2025 created the pathway; APCI has not published operational regulations or opened applications.
         </p>

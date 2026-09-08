@@ -3,6 +3,7 @@ id: 2
 slug: buenos-aires-foreign-buyer-activity-q1
 title: Foreign Buyer Activity in Buenos Aires Real Estate Climbs in Q1
 date: "2026-03-28"
+lastUpdatedDate: "2026-08-18"
 summary: Transaction data from Buenos Aires shows continued growth in foreign buyer participation across Palermo, Recoleta, and Puerto Madero, supported by improved transaction conditions.
 source: Market Update
 image: /buenos-aires-foreign-buyer-activity-q1.jpg

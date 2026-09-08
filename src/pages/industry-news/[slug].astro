@@ -4,6 +4,7 @@ import Layout from '../../layouts/Layout.astro';
 import IndustryNewsArticleContent from '../../components/IndustryNewsArticleContent';
 import ComparisonBlock from '../../components/ComparisonBlock';
 import SupportingImage from '../../components/SupportingImage';
+import DateMeta from '../../components/DateMeta.astro';
 
 export async function getStaticPaths() {
   const entries = await getCollection('industryNews');
@@ -64,6 +65,7 @@ const ogImage = 'https://argentinaresidence.com/og-image.jpg';
 		image={data.image}
 		related={related}
 	>
+		<DateMeta publishedDate={data.publishedDate || data.date} lastUpdatedDate={data.lastUpdatedDate} />
 		<Content components={{ ComparisonBlock, SupportingImage }} />
 	</IndustryNewsArticleContent>
 </Layout>

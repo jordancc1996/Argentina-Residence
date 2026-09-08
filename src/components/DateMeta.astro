@@ -1,0 +1,34 @@
+---
+interface Props {
+  publishedDate?: string;
+  lastUpdatedDate?: string;
+}
+
+const { publishedDate, lastUpdatedDate } = Astro.props;
+
+const formatDate = (value: string) => {
+  const [year, month, day] = value.split("-").map(Number);
+  if (!year || !month || !day) return value;
+  return new Date(Date.UTC(year, month - 1, day)).toLocaleDateString("en-US", {
+    month: "long",
+    day: "numeric",
+    year: "numeric",
+    timeZone: "UTC",
+  });
+};
+
+const showUpdated =
+  Boolean(lastUpdatedDate) && lastUpdatedDate !== publishedDate;
+---
+
+{publishedDate && (
+  <div class="not-prose text-sm text-text-muted tracking-wide mb-6">
+    Published: <time datetime={publishedDate}>{formatDate(publishedDate)}</time>
+    {showUpdated && lastUpdatedDate && (
+      <>
+        {"  ·  "}Last Updated:{" "}
+        <time datetime={lastUpdatedDate}>{formatDate(lastUpdatedDate)}</time>
+      </>
+    )}
+  </div>
+)}
