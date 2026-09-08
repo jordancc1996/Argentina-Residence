@@ -1,15 +1,10 @@
+import Hero from "@/components/Hero";
 import EditorialSection from "@/components/EditorialSection";
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
-import { motion } from "framer-motion";
-import { useParallax } from "@/hooks/useParallax";
-import { resolveImageSrc } from "@/lib/resolveImageSrc";
-import SupportingImage from "@/components/SupportingImage";
-import resourcesBackground from "@/assets/argentina-flag-resources.jpg";
 import flagBlueSky from "@/assets/site-photos-renamed/generic-flag-blue-sky-low-angle.jpg";
 
 const ResourcesContent = () => {
-  const parallaxY = useParallax(-0.3);
   const officialResources = [
     {
       title: "Argentine Immigration Office (Dirección Nacional de Migraciones)",
@@ -48,30 +43,13 @@ const ResourcesContent = () => {
   ];
 
   return (
-      <div className="pt-20">
-        <EditorialSection className="relative min-h-[400px] flex items-center justify-center overflow-hidden">
-          <motion.div
-            className="absolute inset-0 scale-110 bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: `url(${resolveImageSrc(resourcesBackground)})`, y: parallaxY }}
-          />
-          <div className="absolute inset-0 bg-black/60" />
-          <div className="relative z-10">
-            <h1 className="font-serif text-hero mb-8 tracking-wide text-white drop-shadow-lg">
-              Argentina Residency Resources
-            </h1>
-            <p className="text-editorial text-white mb-12 tracking-wide drop-shadow-lg">
-              Essential information and official sources for Argentina residency
-            </p>
-          </div>
-        </EditorialSection>
-
-        <EditorialSection>
-          <SupportingImage
-            image={flagBlueSky}
-            alt="Argentine flag"
-            caption="The Argentine flag catching the wind."
-          />
-        </EditorialSection>
+      <>
+        <Hero
+          title="Argentina Residency Resources"
+          subtitle="Essential information and official sources for Argentina residency"
+          backgroundImage={flagBlueSky}
+          imageAlt="Argentine flag"
+        />
 
         <EditorialSection className="bg-secondary/30">
           <h2 className="font-serif text-xl-editorial mb-8 tracking-wide text-left">
@@ -139,7 +117,7 @@ const ResourcesContent = () => {
             </a>
           </div>
         </EditorialSection>
-      </div>
+      </>
   );
 };
 

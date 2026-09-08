@@ -1,3 +1,9 @@
+import type { ImageSrc } from "@/lib/resolveImageSrc";
+import nightSkylineHero from "@/assets/hero-buenos-aires-night.jpg";
+import goldenVisaHero from "@/assets/argentina-golden-visa-flag-hero.jpg";
+import realEstateHero from "@/assets/buenos-aires-cityscape.jpg";
+import visaBacklogHero from "@/assets/argentina-citizenship-investment-us-visa-backlog-american-flag.jpg";
+
 export type GuideCategory = "comparison" | "process" | "program" | "real-estate";
 
 export type RelatedGuide = {
@@ -6,6 +12,7 @@ export type RelatedGuide = {
   title: string;
   description: string;
   category: GuideCategory;
+  heroImage?: ImageSrc;
 };
 
 /** All investor-guide pages under /guides/, used for related-card sourcing. */
@@ -16,6 +23,7 @@ export const investorGuides: RelatedGuide[] = [
     title: "Argentina Golden Visa Program",
     description: "Full guide to Argentina's Golden Visa program and legal framework.",
     category: "program",
+    heroImage: goldenVisaHero,
   },
   {
     slug: "argentina-real-estate-investment",
@@ -23,6 +31,7 @@ export const investorGuides: RelatedGuide[] = [
     title: "Argentina Real Estate Investment",
     description: "For buyers interested in Argentina real estate independent of the Golden Visa program.",
     category: "real-estate",
+    heroImage: realEstateHero,
   },
   {
     slug: "argentina-citizenship-investment-due-diligence",
@@ -30,6 +39,7 @@ export const investorGuides: RelatedGuide[] = [
     title: "Due Diligence Process",
     description: "Expected Checks Before Launch",
     category: "process",
+    heroImage: nightSkylineHero,
   },
   {
     slug: "argentina-citizenship-investment-business-sale",
@@ -37,6 +47,7 @@ export const investorGuides: RelatedGuide[] = [
     title: "Business Sale and Startup Exits",
     description: "Exit Proceeds Before Launch",
     category: "process",
+    heroImage: nightSkylineHero,
   },
   {
     slug: "argentina-citizenship-investment-us-visa-backlog",
@@ -44,6 +55,7 @@ export const investorGuides: RelatedGuide[] = [
     title: "US Visa Backlog Timing",
     description: "A Parallel Track",
     category: "process",
+    heroImage: visaBacklogHero,
   },
   {
     slug: "argentina-cbi-vs-caribbean-citizenship",
@@ -51,6 +63,7 @@ export const investorGuides: RelatedGuide[] = [
     title: "vs Caribbean Citizenship",
     description: "Dominica and Grenada",
     category: "comparison",
+    heroImage: nightSkylineHero,
   },
   {
     slug: "argentina-citizenship-investment-vs-greece-golden-visa",

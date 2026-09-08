@@ -2,50 +2,13 @@ import type { ReactNode } from "react";
 import Hero from "@/components/Hero";
 import EditorialSection from "@/components/EditorialSection";
 import InquiryCard from "@/components/InquiryCard";
-import { defaultInquiryCard } from "@/data/relatedGuides";
-import { resolveImageSrc } from "@/lib/resolveImageSrc";
+import RelatedGuideCards from "@/components/RelatedGuideCards";
+import { defaultInquiryCard, type RelatedGuide } from "@/data/relatedGuides";
 import { Clock } from "lucide-react";
-import dueDiligenceThumb from "@/assets/argentina-citizenship-due-diligence-process.jpg";
-import businessSaleThumb from "@/assets/argentina-business-sale-startup-exit.jpg";
-import goldenVisaThumb from "@/assets/argentina-golden-visa-program-guide.jpg";
-import realEstateThumb from "@/assets/argentina-real-estate-investment-guide.jpg";
-import caribbeanThumb from "@/assets/argentina-cbi-vs-caribbean-citizenship.jpg";
 
 export type GuideHeroImage = string | { src: string };
 
-type RelatedThumbnail = {
-  image: { src: string; width?: number; height?: number };
-  alt: string;
-};
-
-const relatedThumbnails: Record<string, RelatedThumbnail> = {
-  "/guides/argentina-citizenship-investment-due-diligence": {
-    image: dueDiligenceThumb,
-    alt: "Colorful Caminito corner building in La Boca, Buenos Aires, with the Argentine flag on the rooftop",
-  },
-  "/guides/argentina-citizenship-investment-business-sale": {
-    image: businessSaleThumb,
-    alt: "Open business plan in a leather binder, with a pen held over the page",
-  },
-  "/guides/argentina-golden-visa-program": {
-    image: goldenVisaThumb,
-    alt: "Argentine flag with the Sun of May waving against a clear blue sky",
-  },
-  "/guides/argentina-real-estate-investment": {
-    image: realEstateThumb,
-    alt: "Historic white corner building with a domed roof on a Buenos Aires street",
-  },
-  "/guides/argentina-cbi-vs-caribbean-citizenship": {
-    image: caribbeanThumb,
-    alt: "Caribbean bay with a steep green volcanic peak, boats, and hillside villas",
-  },
-};
-
-export type GuideRelatedLink = {
-  href: string;
-  title: string;
-  description: string;
-};
+export type GuideRelatedLink = RelatedGuide;
 
 interface GuideArticleContentProps {
   heroTitle: string;
@@ -125,36 +88,7 @@ const GuideArticleContent = ({
           <h2 className="font-serif text-lg-editorial mb-8 tracking-wide text-center">
             Continue Your Research
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-6">
-            {related.map((item) => {
-              const thumb = relatedThumbnails[item.href];
-              return (
-                <a
-                  key={item.href}
-                  href={item.href}
-                  className="border border-border rounded-lg overflow-hidden hover:border-gold/50 hover:bg-secondary/20 transition-all group text-left"
-                >
-                  {thumb && (
-                    <div className="aspect-[16/9] overflow-hidden">
-                      <img
-                        src={resolveImageSrc(thumb.image)}
-                        alt={thumb.alt}
-                        width={thumb.image.width}
-                        height={thumb.image.height}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                  )}
-                  <div className="p-6">
-                    <h3 className="font-serif text-lg mb-2 group-hover:text-gold transition-colors">
-                      {item.title}
-                    </h3>
-                    <p className="text-sm text-text-secondary">{item.description}</p>
-                  </div>
-                </a>
-              );
-            })}
-          </div>
+          <RelatedGuideCards related={related} />
         </EditorialSection>
       )}
     </>
