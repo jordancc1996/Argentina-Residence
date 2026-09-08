@@ -42,17 +42,26 @@ PRIMARY TARGET KEYWORD must appear in ALL FIVE locations:
 
 2. META TITLE
 
-   * Use the same title as above
-   * Append: " | Argentina Residence"
+   * Preserve the exact primary keyword and append: " | Argentina Residence"
+   * The angle from the H1 may be omitted when including it would make the
+     meta title excessively long or repetitive
+   * Do not sacrifice readability or search-result usability solely to make
+     the meta title identical to the H1
 
 3. META DESCRIPTION
 
-   * Primary keyword must appear within the first 5-7 words
-   * Target length: 150-160 characters (not a hard requirement, per the
-     documented homepage exception)
+   * The exact primary target keyword should begin the meta description
+     whenever practical. If the keyword is long, place the full exact
+     keyword at the beginning rather than forcing it into an arbitrary
+     5-7 word limit.
+   * Do not mark a meta description as failing merely because the exact
+     keyword itself is longer than 5-7 words.
+   * Target length: approximately 150-160 characters
+   * Acceptable hard range: 140-165 characters
    * Include at least one specific number, date, or dollar amount when
      factually appropriate
    * No em dashes
+   * Natural English is more important than awkward exact-match repetition
 
 4. URL / SLUG
 
@@ -68,6 +77,12 @@ PRIMARY TARGET KEYWORD must appear in ALL FIVE locations:
    * No em dashes
    * Do not begin with generic framing
 
+These length and shortening exceptions apply only to long exact-match
+keywords. They are not permission to bury the primary keyword, remove the
+keyword from metadata, write vague meta titles, exceed normal metadata
+lengths without reason, change protected slugs, or use awkward or
+unnatural keyword stuffing.
+
 ### Workflow for Every New Article
 
 STEP 1: Identify the primary target keyword.
@@ -80,13 +95,20 @@ Always show this exact type of table before implementation:
 
 Keyword: [Primary Target Keyword]
 
-| Location         | Status |
-| ---------------- | ------ |
-| Title            | ✓ / ✗  |
-| Meta Title       | ✓ / ✗  |
-| Meta Description | ✓ / ✗  |
-| URL / Slug       | ✓ / ✗  |
-| First Sentence   | ✓ / ✗  |
+| Location         | Status                          |
+| ---------------- | ------------------------------- |
+| Title            | ✓ / ✗                           |
+| Meta Title       | ✓ / ✗                           |
+| Meta Description | ✓ / ✗                           |
+| URL / Slug       | ✓ / ✗ / PROTECTED EXISTING SLUG |
+| First Sentence   | ✓ / ✗                           |
+
+Validation:
+
+* Exact keyword at the start of the meta description = PASS
+* Shortened meta title that preserves the exact keyword + site name = PASS
+* Protected existing slug = PASS WITH PROTECTION STATUS (report as
+  PROTECTED EXISTING SLUG)
 
 STEP 3: Fix every ✗.
 

@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowLeft, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import NewsletterSignup from "@/components/NewsletterSignup";
+import PageFAQ from "@/components/PageFAQ";
 import { useParallax } from "@/hooks/useParallax";
 import type { ReactNode } from "react";
 
@@ -19,6 +20,7 @@ interface IndustryNewsArticleContentProps {
   source?: string;
   image?: string;
   related: RelatedNewsArticle[];
+  faqPath?: string;
   children?: ReactNode;
 }
 
@@ -28,6 +30,7 @@ const IndustryNewsArticleContent = ({
   source,
   image,
   related,
+  faqPath,
   children,
 }: IndustryNewsArticleContentProps) => {
   const parallaxY = useParallax(-0.3);
@@ -106,6 +109,12 @@ const IndustryNewsArticleContent = ({
             >
               {children}
             </div>
+
+            {faqPath && (
+              <div className="mt-12">
+                <PageFAQ path={faqPath} wrapped={false} />
+              </div>
+            )}
 
             <NewsletterSignup className="mt-12" />
 

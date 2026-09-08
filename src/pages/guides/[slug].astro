@@ -65,6 +65,7 @@ const heroAlt =
 const published = data.datePublished || data.dateModified || '2026-08-19';
 
 const related = getRelatedGuides(data.slug, 5);
+const faqPath = `/guides/${data.slug}`;
 const showBottomInquiryCard = !/<InquiryCard\b/.test(guide.body ?? '');
 const publishedDate = data.publishedDate || data.datePublished;
 const lastUpdatedDate = data.lastUpdatedDate || data.dateModified;
@@ -116,6 +117,7 @@ const schema = {
 		imageAlt={heroAlt}
 		statusBanner={data.statusBanner}
 		related={related}
+		faqPath={faqPath}
 		showBottomInquiryCard={showBottomInquiryCard}
 	>
 		<DateMeta publishedDate={publishedDate} lastUpdatedDate={lastUpdatedDate} />

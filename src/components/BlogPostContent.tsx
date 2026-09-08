@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowLeft, Calendar, Clock, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ShareButtons from "@/components/ShareButtons";
+import PageFAQ from "@/components/PageFAQ";
 import type { ReactNode } from "react";
 
 export interface RelatedPost {
@@ -26,6 +27,7 @@ interface BlogPostContentProps {
   readTime: string;
   excerpt: string;
   slug: string;
+  faqPath?: string;
   related: RelatedPost[];
   previous: AdjacentPost | null;
   next: AdjacentPost | null;
@@ -40,6 +42,7 @@ const BlogPostContent = ({
   readTime,
   excerpt,
   slug,
+  faqPath,
   related,
   previous,
   next,
@@ -107,6 +110,12 @@ const BlogPostContent = ({
             >
               {children}
             </div>
+
+            {faqPath && (
+              <div className="mt-12">
+                <PageFAQ path={faqPath} wrapped={false} />
+              </div>
+            )}
 
             {/* Share Buttons Section */}
             <div className="mt-12 pt-8 border-t border-border">

@@ -6,6 +6,7 @@ import NewsletterSignup from "@/components/NewsletterSignup";
 import InquiryCard from "@/components/InquiryCard";
 import { defaultInquiryCard, getRelatedGuides } from "@/data/relatedGuides";
 import RelatedGuideCards from "@/components/RelatedGuideCards";
+import PageFAQ from "@/components/PageFAQ";
 import { Clock, Shield, Globe, TrendingUp, CheckCircle, ArrowRight } from "lucide-react";
 import type { ReactNode } from "react";
 import goldenVisaHero from "@/assets/argentina-golden-visa-flag-hero.jpg";
@@ -160,6 +161,8 @@ const GoldenVisaProgramContent = ({ children }: { children?: ReactNode }) => {
           ]}
         />
       </EditorialSection>
+
+      <PageFAQ path="/guides/argentina-golden-visa-program" />
       
       {/* CTA Section */}
       <EditorialSection className="bg-dark-teal text-white">

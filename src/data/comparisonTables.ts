@@ -139,37 +139,92 @@ export const comparisonTables = {
   paraguay: {
     columns: ["Argentina", "Paraguay"],
     photos: [{ label: "Paraguay", alt: "Asunción, Paraguay skyline" }],
-    rows: buildRows({
-      "Legal structure": [
-        "Naturalization via Treasury contribution or bond",
-        "Permanent residence (carnet, not citizenship) via SUACE — commercial/industrial, stock-market, real estate, or tourism tracks",
-      ],
-      "Program status": ["Not open", "Operating (MIC Resolution 0283/2026)"],
-      "Investment floor": [
-        "$500,000 contribution or $1,000,000 bond",
-        "$70,000 commercial/industrial plus 5 jobs; $200,000 stock-market; $200,000 real estate; $150,000 tourism",
-      ],
-      "Hold period": [
-        "Bond 7 years / contribution non-refundable",
-        "Stock-market: commonly described as a 2-year minimum hold; other tracks not stated; permit valid 10 years",
-      ],
-      "Family inclusion": [
-        "Spouse and children under 18 anticipated includable (18+ status unknown)",
-        "Dependents apply separately for temporary residence; principal may sponsor eligible family after 2 years (no age cutoff stated)",
-      ],
-      "Processing time": [
-        "Not yet officially confirmed",
-        "No published processing-day table",
-      ],
-      "Physical presence": [
-        "None anticipated",
-        "Naturalization requires 3 years' legal residence plus language; investor-permit presence requirement not stated on page",
-      ],
-      "Mobility / passport": [
-        "170+ countries incl. Schengen; Mercosur nationality if granted",
-        "Carnet is not a passport; Mercosur mobility only available if and when naturalization succeeds",
-      ],
-    }),
+    rows: [
+      {
+        label: "Program type",
+        values: [
+          "Proposed citizenship through qualifying investment. Not currently accepting applications.",
+          "Operating residency by investment (Investor Pass). Permanent residence, not citizenship by investment.",
+        ],
+      },
+      {
+        label: "Current availability",
+        values: [
+          "Not open. Application protocols have not been published.",
+          "Operating. Investor Pass files are being processed.",
+        ],
+      },
+      {
+        label: "What the investor receives",
+        values: [
+          "If granted: Argentine nationality. The program is not currently accepting applications.",
+          "Permanent residence (a renewable carnet, reported as valid for 10 years). Not a passport.",
+        ],
+      },
+      {
+        label: "Minimum investment",
+        values: [
+          "Anticipated $500,000 Treasury contribution or $1,000,000 7-year government bond, subject to final regulation.",
+          "From USD 70,000, depending on category: $70,000 commercial/industrial plus five formal jobs; stock market holdings are USD 200,000 and are generally subject to a minimum two-year hold; $200,000 real estate; $150,000 tourism.",
+        ],
+      },
+      {
+        label: "Investment options",
+        values: [
+          "Anticipated Treasury contribution or 7-year government bond. Final categories are subject to regulation.",
+          "Commercial/industrial, stock market holdings, real estate not for personal use, or tourism.",
+        ],
+      },
+      {
+        label: "Hold period",
+        values: [
+          "Bond: 7 years, with principal returned. Contribution: non-refundable. Subject to final regulation.",
+          "Stock market holdings are generally subject to a minimum two-year hold. Other tracks not stated on this page. The residence permit is reported as valid for 10 years.",
+        ],
+      },
+      {
+        label: "Family treatment",
+        values: [
+          "Spouse and children under 18 anticipated includable. Status of dependents 18 and over is unknown. Argentine practice has not been published.",
+          "Dependents cannot ride on the principal's file. They apply separately for temporary residence. After two years, the principal may be able to sponsor eligible family members for permanent residence.",
+        ],
+      },
+      {
+        label: "Processing time",
+        values: [
+          "Not yet officially confirmed.",
+          "No published processing-day table. The carnet is issued on the timeline actually run by Paraguayan authorities after a complete file.",
+        ],
+      },
+      {
+        label: "Physical presence",
+        values: [
+          "None anticipated.",
+          "Presence required to hold the Investor Pass is not stated on this page. Possible future naturalization is commonly described as requiring three years of legal residence plus language and integration tests.",
+        ],
+      },
+      {
+        label: "Citizenship path",
+        values: [
+          "Proposed citizenship through qualifying investment. Not currently accepting applications.",
+          "Permanent residence first. Possible future naturalization is a separate, discretionary process. Paraguay does not operate citizenship by investment. Paying the Investor Pass threshold does not buy a Paraguayan passport.",
+        ],
+      },
+      {
+        label: "Mercosur mobility",
+        values: [
+          "Argentine nationality, if granted, is Mercosur nationality.",
+          "The residence carnet is not Mercosur nationality. Regional mobility that follows Paraguayan nationality is available only if and when naturalization succeeds.",
+        ],
+      },
+      {
+        label: "Current 2026 status",
+        values: [
+          "Not operational. Argentina is not processing citizenship-by-investment applications.",
+          "Operating in 2026. Paraguay is processing Investor Pass applications. Confirm the current filing rule with Paraguayan counsel before treating any brochure as final.",
+        ],
+      },
+    ],
   },
   panama: {
     columns: ["Argentina", "Panama"],

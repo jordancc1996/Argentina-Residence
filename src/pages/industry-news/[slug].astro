@@ -37,6 +37,7 @@ const title = `${data.title} | Argentina Residence`;
 const description = data.summary.substring(0, 155);
 const canonical = `https://argentinaresidence.com/industry-news/${data.slug}`;
 const ogImage = 'https://argentinaresidence.com/og-image.jpg';
+const faqPath = `/industry-news/${data.slug}`;
 ---
 
 <Layout>
@@ -64,6 +65,7 @@ const ogImage = 'https://argentinaresidence.com/og-image.jpg';
 		source={data.source}
 		image={data.image}
 		related={related}
+		faqPath={faqPath}
 	>
 		<DateMeta publishedDate={data.publishedDate || data.date} lastUpdatedDate={data.lastUpdatedDate} />
 		<Content components={{ ComparisonBlock, SupportingImage }} />

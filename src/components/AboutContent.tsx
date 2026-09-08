@@ -5,6 +5,7 @@ import { resolveImageSrc } from "@/lib/resolveImageSrc";
 import buenosAiresCityscape from "@/assets/buenos-aires-cityscape.jpg";
 import buenosAiresChurch from "@/assets/buenos-aires-architecture-church.jpg";
 import casaRosadaVertical from "@/assets/site-photos-renamed/casa-rosada-plaza-de-mayo-vertical.jpg";
+import PageFAQ from "@/components/PageFAQ";
 
 const AboutContent = () => {
   return (
@@ -121,6 +122,8 @@ const AboutContent = () => {
             </div>
           </div>
         </EditorialSection>
+
+        <PageFAQ path="/about" />
 
         <EditorialSection>
           <h2 className="font-serif text-xl-editorial mb-6 tracking-wide">About This Resource</h2>

@@ -108,6 +108,7 @@ const schema = {
   "articleSection": data.category,
   "wordCount": wordCountFromMarkdown(post.body)
 };
+const faqPath = `/research/${data.slug}`;
 ---
 
 <Layout>
@@ -138,6 +139,7 @@ const schema = {
 		readTime={data.readTime}
 		excerpt={data.excerpt}
 		slug={data.slug}
+		faqPath={faqPath}
 		related={related}
 		previous={previous}
 		next={next}

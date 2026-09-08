@@ -6,6 +6,7 @@ import NewsletterSignup from "@/components/NewsletterSignup";
 import InquiryCard from "@/components/InquiryCard";
 import { defaultInquiryCard, getRelatedGuides } from "@/data/relatedGuides";
 import RelatedGuideCards from "@/components/RelatedGuideCards";
+import PageFAQ from "@/components/PageFAQ";
 import PhotoPlaceholder from "@/components/PhotoPlaceholder";
 import { Building2, TrendingUp, MapPin, ArrowRight } from "lucide-react";
 import type { ReactNode } from "react";
@@ -219,6 +220,8 @@ const RealEstateInvestmentContent = ({ children }: { children?: ReactNode }) => 
           ]}
         />
       </EditorialSection>
+
+      <PageFAQ path="/guides/argentina-real-estate-investment" />
       
       {/* CTA Section */}
       <EditorialSection className="bg-dark-teal text-white">
@@ -237,7 +240,7 @@ const RealEstateInvestmentContent = ({ children }: { children?: ReactNode }) => 
           </a>
         </div>
       </EditorialSection>
-      
+
       <EditorialSection centered={false}>
         <InquiryCard
           heading={defaultInquiryCard.heading}

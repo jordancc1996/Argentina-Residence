@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import EditorialSection from "@/components/EditorialSection";
 import InquiryCard from "@/components/InquiryCard";
 import RelatedGuideCards from "@/components/RelatedGuideCards";
+import PageFAQ from "@/components/PageFAQ";
 import { defaultInquiryCard, type RelatedGuide } from "@/data/relatedGuides";
 import { Clock } from "lucide-react";
 
@@ -17,6 +18,7 @@ interface GuideArticleContentProps {
   imageAlt?: string;
   statusBanner?: string;
   related: GuideRelatedLink[];
+  faqPath?: string;
   /** False when the MDX body already includes an InquiryCard. */
   showBottomInquiryCard?: boolean;
   children?: ReactNode;
@@ -29,6 +31,7 @@ const GuideArticleContent = ({
   imageAlt = "Argentina landscape",
   statusBanner,
   related,
+  faqPath,
   showBottomInquiryCard = true,
   children,
 }: GuideArticleContentProps) => {
@@ -72,6 +75,8 @@ const GuideArticleContent = ({
           {children}
         </div>
       </EditorialSection>
+
+      {faqPath && <PageFAQ path={faqPath} />}
 
       {showBottomInquiryCard && (
         <EditorialSection centered={false}>

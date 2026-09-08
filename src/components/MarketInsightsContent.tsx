@@ -4,6 +4,7 @@ import FormCarryForm from "../components/FormCarryForm";
 import SupportingImage from "../components/SupportingImage";
 import heroImage from "../assets/argentina-flag-market.jpg";
 import flagDeepBlue from "../assets/site-photos-renamed/generic-flag-deep-blue-sky.jpg";
+import PageFAQ from "@/components/PageFAQ";
 
 const MarketInsightsContent = () => {
   return (
@@ -67,6 +68,8 @@ const MarketInsightsContent = () => {
           </div>
         </div>
       </EditorialSection>
+
+      <PageFAQ path="/market-insights" />
 
       <EditorialSection className="bg-secondary/30">
         <FormCarryForm

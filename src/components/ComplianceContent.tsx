@@ -1,6 +1,7 @@
 import { Separator } from "@/components/ui/separator";
 import SupportingImage from "@/components/SupportingImage";
 import flagSnowMountains from "@/assets/site-photos-renamed/generic-flag-snow-mountains.jpg";
+import PageFAQ from "@/components/PageFAQ";
 
 const ComplianceContent = () => {
   return (
@@ -120,6 +121,10 @@ const ComplianceContent = () => {
               </p>
             </div>
           </section>
+
+          <div className="mb-12">
+            <PageFAQ path="/compliance" wrapped={false} />
+          </div>
 
           {/* Contact */}
           <section className="mb-12">

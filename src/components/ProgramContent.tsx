@@ -4,6 +4,7 @@ import ScrollytellingSteps from "@/components/ScrollytellingSteps";
 import { Button } from "@/components/ui/button";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import SupportingImage from "@/components/SupportingImage";
+import PageFAQ from "@/components/PageFAQ";
 import goldenVisaHero from "@/assets/argentina-golden-visa-2026.jpg";
 import casaRosadaGoldenHour from "@/assets/site-photos-renamed/casa-rosada-plaza-de-mayo-golden-hour.jpg";
 
@@ -104,6 +105,10 @@ const ProgramContent = () => {
 
         <div className="mt-16">
           <NewsletterSignup />
+        </div>
+
+        <div className="mt-16">
+          <PageFAQ path="/program" wrapped={false} />
         </div>
 
         <div className="mt-16 text-center">
