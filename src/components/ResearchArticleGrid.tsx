@@ -7,6 +7,7 @@ export interface ResearchCardPost {
   excerpt: string;
   date: string;
   image?: string;
+  imageAlt?: string;
 }
 
 const ResearchArticleGrid = ({ posts }: { posts: ResearchCardPost[] }) => {
@@ -27,7 +28,7 @@ const ResearchArticleGrid = ({ posts }: { posts: ResearchCardPost[] }) => {
                   <AspectRatio ratio={3 / 2}>
                     <img
                       src={post.image || "/placeholder.svg"}
-                      alt={post.title}
+                      alt={post.imageAlt}
                       className="w-full h-full object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.04]"
                       loading="lazy"
                     />

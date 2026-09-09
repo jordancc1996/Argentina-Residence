@@ -19,6 +19,7 @@ interface IndustryNewsArticleContentProps {
   date: string;
   source?: string;
   image?: string;
+  imageAlt?: string;
   related: RelatedNewsArticle[];
   faqPath?: string;
   children?: ReactNode;
@@ -29,6 +30,7 @@ const IndustryNewsArticleContent = ({
   date,
   source,
   image,
+  imageAlt,
   related,
   faqPath,
   children,
@@ -47,7 +49,7 @@ const IndustryNewsArticleContent = ({
           >
             <img
               src={image}
-              alt={title}
+              alt={imageAlt}
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-black/50" />

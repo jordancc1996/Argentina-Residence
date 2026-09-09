@@ -327,7 +327,7 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "Is the Argentina Golden Visa a substitute for the cost of living in the United States?",
       answer:
-        "This article compares the high cost of a US-centered lifestyle with the unpublished Argentine Golden Visa as a planning option. It is not a cost-of-living calculator and not a promise that Argentine residency will replicate a US standard of living at a fixed price.",
+        "The US lifestyle figures on this page are not APCI filing fees. The unpublished Golden Visa is a planning option, not a live application. It is not a cost-of-living calculator and not a promise that Argentine residency will replicate a US standard of living at a fixed price.",
     },
     {
       question: "Are the lifestyle cost figures on this page official Argentine program fees?",
@@ -345,7 +345,7 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "Should capital be deployed before the Golden Visa launches?",
       answer:
-        "This page discusses timing of capital in the Argentine market. It does not open an APCI channel. Deploying capital into Argentine assets is not the same as lodging a citizenship file.",
+        "Investing in Argentine assets now is a market decision. It is not an APCI citizenship filing. It does not open an APCI channel. Deploying capital into Argentine assets is not the same as lodging a citizenship file.",
     },
   ],
 

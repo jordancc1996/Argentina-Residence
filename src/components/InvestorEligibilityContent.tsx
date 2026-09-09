@@ -197,7 +197,7 @@ const InvestorEligibilityContent = () => {
         title="Argentina Golden Visa Eligibility Assessment"
         subtitle="Argentina Golden Visa eligibility is a 2-minute assessment against this site's anticipated $500,000 USD Treasury contribution or $1,000,000 USD 7-year government bond, subject to final regulation."
         backgroundImage={eligibilityBackground}
-        imageAlt="Patagonia landscape representing freedom and Argentina citizenship by investment"
+        imageAlt="Snow-capped volcano over an Andean desert landscape"
       />
       
       <EditorialSection>

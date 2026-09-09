@@ -130,14 +130,25 @@ const LuxuryContactCTA = () => {
         {/* Left Side - Image/Video Placeholder */}
         <div className="w-full lg:w-1/2 h-64 lg:h-auto relative overflow-hidden">
           <div
-            className="absolute inset-0 bg-cover bg-center will-change-transform"
+            className="absolute inset-0 will-change-transform"
             style={{
-              backgroundImage:
-                "linear-gradient(to bottom, rgba(11, 18, 21, 0.3), rgba(11, 18, 21, 0.5)), url('https://images.unsplash.com/photo-1612294037637-ec328d0e075e?q=80&w=1000&auto=format&fit=crop')",
               transform: `translate3d(0, ${parallaxY}px, 0) scale(1.1)`,
               transition: "transform 80ms linear",
             }}
-          />
+          >
+            <img
+              src="https://images.unsplash.com/photo-1612294037637-ec328d0e075e?q=80&w=1000&auto=format&fit=crop"
+              alt="Aerial view of Buenos Aires"
+              className="w-full h-full object-cover"
+            />
+            <div
+              className="absolute inset-0"
+              style={{
+                background:
+                  "linear-gradient(to bottom, rgba(11, 18, 21, 0.3), rgba(11, 18, 21, 0.5))",
+              }}
+            />
+          </div>
           <div className="absolute inset-0 flex items-end p-8 lg:p-12">
             <p className="text-white/60 text-sm font-sans tracking-widest uppercase">
               Buenos Aires, Argentina

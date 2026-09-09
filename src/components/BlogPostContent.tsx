@@ -12,6 +12,7 @@ export interface RelatedPost {
   excerpt: string;
   category: string;
   image?: string;
+  imageAlt?: string;
 }
 
 export interface AdjacentPost {
@@ -155,7 +156,7 @@ const BlogPostContent = ({
                           <div className="aspect-[16/9] overflow-hidden">
                             <img 
                               src={relatedPost.image} 
-                              alt={relatedPost.title}
+                              alt={relatedPost.imageAlt}
                               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                             />
                           </div>

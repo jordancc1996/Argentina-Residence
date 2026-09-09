@@ -14,7 +14,7 @@ const ResearchHero = () => {
     <>
       <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden -mt-[72px] pt-[72px] md:-mt-[88px] md:pt-[88px]">
         <motion.div className="absolute inset-0 z-0 scale-110" style={{ y: parallaxY }}>
-          <img src={resolveImageSrc(heroImage)} alt="Financial research and market intelligence" className="w-full h-full object-cover" width={1920} height={1080} />
+          <img src={resolveImageSrc(heroImage)} alt="Open financial newspaper with market charts" className="w-full h-full object-cover" width={1920} height={1080} />
           <div className="absolute inset-0 bg-black/60" />
         </motion.div>
 
@@ -31,7 +31,7 @@ const ResearchHero = () => {
       <SupportingImage
         className="mt-12 mb-0"
         image={flagOvercast}
-        alt="Argentine flag"
+        alt="Argentine flag under an overcast sky"
         caption="The Argentine flag under an overcast sky."
       />
     </>

@@ -9,6 +9,7 @@ export interface NewsCardArticle {
   summary: string;
   source?: string;
   image?: string;
+  imageAlt?: string;
 }
 
 interface NewsCardProps {
@@ -33,7 +34,7 @@ const NewsCard = ({ article, index = 0 }: NewsCardProps) => {
           <div className="relative overflow-hidden aspect-[16/9]">
             <img
               src={article.image}
-              alt={article.title}
+              alt={article.imageAlt}
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
             />
           </div>

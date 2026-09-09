@@ -19,6 +19,7 @@ const articles = defineCollection({
     slug: z.string(),
     author: z.string(),
     image: z.string().optional(),
+    imageAlt: z.string().optional(),
     seoTitle: z.string().optional(),
     seoDescription: z.string().optional(),
     keywords: z.array(z.string()).optional(),
@@ -54,6 +55,7 @@ const industryNews = defineCollection({
     summary: z.string(),
     source: z.string().optional(),
     image: z.string().optional(),
+    imageAlt: z.string().optional(),
   }),
 });
 

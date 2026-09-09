@@ -22,6 +22,7 @@ export interface HomepagePost {
   readTime: string;
   category: string;
   image?: string;
+  imageAlt?: string;
 }
 
 const IndexContent = ({ posts }: { posts: HomepagePost[] }) => {
@@ -41,7 +42,7 @@ const IndexContent = ({ posts }: { posts: HomepagePost[] }) => {
         <figure className="max-w-xl mx-auto">
           <img
             src={passportSrc}
-            alt="Argentina second passport through investment. See the Golden Visa updates."
+            alt="Argentine passport on a dark surface"
             className="w-full h-auto"
             width={792}
             height={1024}
@@ -122,7 +123,7 @@ const IndexContent = ({ posts }: { posts: HomepagePost[] }) => {
       <EditorialSection>
         <SupportingImage
           image={flagAconcagua}
-          alt="Argentine flag"
+          alt="Argentine flag in the high Andes near Aconcagua"
           caption="The Argentine flag in the high Andes, near the country's western border."
         />
       </EditorialSection>
@@ -175,7 +176,7 @@ const IndexContent = ({ posts }: { posts: HomepagePost[] }) => {
                 <div className="aspect-[4/3] overflow-hidden">
                   <img
                     src={post.image}
-                    alt={post.title}
+                    alt={post.imageAlt}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>

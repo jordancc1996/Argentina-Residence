@@ -15,7 +15,7 @@ const ComplianceContent = () => {
           <SupportingImage
             className="mx-0"
             image={flagSnowMountains}
-            alt="Argentine flag"
+            alt="Argentine flag amid the snow-capped Andes"
             caption="The Argentine flag amid the snow-capped Andes."
           />
 

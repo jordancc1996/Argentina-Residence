@@ -1,8 +1,14 @@
 import type { ImageSrc } from "@/lib/resolveImageSrc";
-import nightSkylineHero from "@/assets/hero-buenos-aires-night.jpg";
 import goldenVisaHero from "@/assets/argentina-golden-visa-flag-hero.jpg";
 import realEstateHero from "@/assets/buenos-aires-cityscape.jpg";
+import dueDiligenceHero from "@/assets/argentina-citizenship-due-diligence-process.jpg";
+import businessSaleHero from "@/assets/argentina-business-sale-startup-exit.jpg";
 import visaBacklogHero from "@/assets/argentina-citizenship-investment-us-visa-backlog-american-flag.jpg";
+import caribbeanHero from "@/assets/argentina-citizenship-vs-caribbean-citizenship-by-investment.jpg";
+import greeceHero from "@/assets/argentina-citizenship-vs-greece-golden-visa.jpg";
+import turkeyHero from "@/assets/argentina-citizenship-vs-turkey-citizenship-by-investment.jpg";
+import paraguayHero from "@/assets/argentina-citizenship-vs-paraguay-residency-by-investment.jpg";
+import panamaHero from "@/assets/argentina-citizenship-vs-panama-residency-by-investment.jpg";
 
 export type GuideCategory = "comparison" | "process" | "program" | "real-estate";
 
@@ -13,6 +19,7 @@ export type RelatedGuide = {
   description: string;
   category: GuideCategory;
   heroImage?: ImageSrc;
+  imageAlt: string;
 };
 
 /** All investor-guide pages under /guides/, used for related-card sourcing. */
@@ -24,6 +31,7 @@ export const investorGuides: RelatedGuide[] = [
     description: "Full guide to Argentina's Golden Visa program and legal framework.",
     category: "program",
     heroImage: goldenVisaHero,
+    imageAlt: "Argentine flag against a clear sky, representing the Argentina Golden Visa program",
   },
   {
     slug: "argentina-real-estate-investment",
@@ -32,6 +40,7 @@ export const investorGuides: RelatedGuide[] = [
     description: "For buyers interested in Argentina real estate independent of the Golden Visa program.",
     category: "real-estate",
     heroImage: realEstateHero,
+    imageAlt: "Buenos Aires high-rise skyline representing Argentina real estate investment",
   },
   {
     slug: "argentina-citizenship-investment-due-diligence",
@@ -39,7 +48,8 @@ export const investorGuides: RelatedGuide[] = [
     title: "Due Diligence Process",
     description: "Expected Checks Before Launch",
     category: "process",
-    heroImage: nightSkylineHero,
+    heroImage: dueDiligenceHero,
+    imageAlt: "Colorful Caminito building in La Boca, Buenos Aires, with an Argentine flag",
   },
   {
     slug: "argentina-citizenship-investment-business-sale",
@@ -47,7 +57,8 @@ export const investorGuides: RelatedGuide[] = [
     title: "Business Sale and Startup Exits",
     description: "Exit Proceeds Before Launch",
     category: "process",
-    heroImage: nightSkylineHero,
+    heroImage: businessSaleHero,
+    imageAlt: "Person reviewing a handwritten business plan notebook",
   },
   {
     slug: "argentina-citizenship-investment-us-visa-backlog",
@@ -56,6 +67,7 @@ export const investorGuides: RelatedGuide[] = [
     description: "A Parallel Track",
     category: "process",
     heroImage: visaBacklogHero,
+    imageAlt: "Draped United States flag representing the US immigrant visa backlog",
   },
   {
     slug: "argentina-cbi-vs-caribbean-citizenship",
@@ -63,7 +75,8 @@ export const investorGuides: RelatedGuide[] = [
     title: "vs Caribbean Citizenship",
     description: "Dominica and Grenada",
     category: "comparison",
-    heroImage: nightSkylineHero,
+    heroImage: caribbeanHero,
+    imageAlt: "Dominica flag representing Caribbean citizenship by investment",
   },
   {
     slug: "argentina-citizenship-investment-vs-greece-golden-visa",
@@ -71,6 +84,8 @@ export const investorGuides: RelatedGuide[] = [
     title: "vs Greece Golden Visa",
     description: "Location-Tiered Property Residency",
     category: "comparison",
+    heroImage: greeceHero,
+    imageAlt: "Greek flag in Santorini representing the Greece Golden Visa",
   },
   {
     slug: "argentina-citizenship-investment-vs-turkey",
@@ -78,6 +93,8 @@ export const investorGuides: RelatedGuide[] = [
     title: "vs Turkey Citizenship",
     description: "Operating Property Citizenship",
     category: "comparison",
+    heroImage: turkeyHero,
+    imageAlt: "Turkey flag representing Turkey citizenship by investment",
   },
   {
     slug: "argentina-citizenship-investment-vs-paraguay",
@@ -85,6 +102,8 @@ export const investorGuides: RelatedGuide[] = [
     title: "vs Paraguay Investor Pass",
     description: "Mercosur Residence versus Unpublished Nationality",
     category: "comparison",
+    heroImage: paraguayHero,
+    imageAlt: "Paraguay flag representing Paraguay residency by investment",
   },
   {
     slug: "argentina-citizenship-investment-vs-panama",
@@ -92,6 +111,8 @@ export const investorGuides: RelatedGuide[] = [
     title: "vs Panama",
     description: "Friendly Nations and Qualified Investor Residence",
     category: "comparison",
+    heroImage: panamaHero,
+    imageAlt: "Panama flag representing Panama residency by investment",
   },
 ];
 

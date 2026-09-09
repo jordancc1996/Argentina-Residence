@@ -20,6 +20,7 @@ const GoldenVisaProgramContent = ({ children }: { children?: ReactNode }) => {
         title="Argentina's Golden Visa"
         subtitle="The 2026 Investor Guide"
         backgroundImage={goldenVisaHero}
+        imageAlt="Argentine flag against a clear sky, representing the Argentina Golden Visa program"
       />
       
       {/* Program Status Banner */}

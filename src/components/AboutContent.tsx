@@ -33,7 +33,7 @@ const AboutContent = () => {
           <div className="absolute inset-0 z-0">
             <img
               src={resolveImageSrc(buenosAiresCityscape)}
-              alt="Buenos Aires cityscape"
+              alt="Buenos Aires high-rise skyline looking toward the river"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-black/30" />
@@ -62,19 +62,6 @@ const AboutContent = () => {
                 View market insights →
               </a>
             </div>
-            
-            <div>
-              <h2 className="font-serif text-xl-editorial mb-6 tracking-wide">Cultural Heritage</h2>
-              <p className="text-body text-text-secondary mb-6 tracking-wide">
-                From the European elegance of Buenos Aires to the wine regions of Mendoza, Argentina offers a sophisticated lifestyle that attracts international residents.
-              </p>
-              <p className="text-body text-text-secondary tracking-wide mb-4">
-                The country's rich cultural heritage, world-class cuisine, and temperate climate create an exceptional quality of life for discerning expatriates.
-              </p>
-              <a href="/blog" className="text-primary hover:underline text-sm font-medium">
-                Read our blog →
-              </a>
-            </div>
           </div>
         </EditorialSection>
         
@@ -82,17 +69,14 @@ const AboutContent = () => {
           <div className="absolute inset-0 z-0">
             <img
               src={resolveImageSrc(buenosAiresChurch)}
-              alt="Buenos Aires historic architecture"
+              alt="Historic church facade in Buenos Aires"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-black/20" />
           </div>
           <div className="relative z-10 max-w-4xl mx-auto px-8 text-center">
-            <h2 className="font-serif text-xl-editorial md:text-3xl text-white mb-8 tracking-wide">
-              Investment opportunities across diverse sectors
-            </h2>
             <p className="text-body md:text-lg text-white/90 max-w-2xl mx-auto tracking-wide">
-              From premium real estate in Palermo and Recoleta to agricultural investments in the Pampas, Argentina provides sophisticated investors with exceptional returns.
+              See our latest research and market analysis in the <a href="/research" className="underline">Research and Intelligence</a> section.
             </p>
           </div>
         </section>

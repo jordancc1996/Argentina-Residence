@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import SupportingImage from "@/components/SupportingImage";
 import PageFAQ from "@/components/PageFAQ";
-import goldenVisaHero from "@/assets/argentina-golden-visa-2026.jpg";
 import casaRosadaGoldenHour from "@/assets/site-photos-renamed/casa-rosada-plaza-de-mayo-golden-hour.jpg";
 
 const ProgramContent = () => {
@@ -14,7 +13,8 @@ const ProgramContent = () => {
       <Hero
         title="Argentina Residency by Investment: The Fastest Path to a Global Passport"
         subtitle="Secure permanent residency in one of South America's most vibrant economies. With a strategic investment, you can pursue Argentine citizenship, gaining visa-free access to over 170 destinations and a gateway to the MERCOSUR region."
-        backgroundImage={goldenVisaHero}
+        backgroundImage="/argentina-golden-visa-2026.jpg"
+        imageAlt="Argentine flag with the Sun of May against a clear sky"
         ctaText="Request Program Details"
         ctaLink="/contact"
       />
@@ -41,7 +41,7 @@ const ProgramContent = () => {
             <SupportingImage
               className="mx-0 max-w-none my-6"
               image={casaRosadaGoldenHour}
-              alt="Casa Rosada on Plaza de Mayo at golden hour, seat of Argentina's federal government where Golden Visa implementing regulations would be finalized"
+              alt="Casa Rosada on Plaza de Mayo at golden hour"
               caption="Casa Rosada, seat of Argentina's federal government. The anticipated decree implementing the Golden Visa program would be finalized here."
             />
               <a href="/faq/argentina-citizenship-investment-requirements" className="text-primary hover:underline text-sm font-medium">

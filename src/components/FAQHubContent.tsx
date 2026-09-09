@@ -36,7 +36,7 @@ const FAQHubContent = ({ faqs }: { faqs: FAQHubItem[] }) => {
       <EditorialSection>
         <SupportingImage
           image={flagShipRailing}
-          alt="Argentine flag"
+          alt="Argentine flag seen from a ship's deck"
           caption="The Argentine flag, seen from a ship's deck."
         />
       </EditorialSection>

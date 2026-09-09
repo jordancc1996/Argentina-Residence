@@ -11,6 +11,7 @@ const MarketInsightsContent = () => {
     <>
       <Hero
         backgroundImage={heroImage}
+        imageAlt="Argentine flag waving against a blue sky"
         title="Argentina Investment Trends"
         subtitle="Understanding Argentina's Investment Landscape"
         description="Comprehensive analysis of economic trends, investment opportunities, and market dynamics shaping Argentina's future."
@@ -30,7 +31,7 @@ const MarketInsightsContent = () => {
         </p>
         <SupportingImage
           image={flagDeepBlue}
-          alt="Argentine flag"
+          alt="Argentine flag against a deep blue sky"
           caption="The Argentine flag against a clear blue sky."
         />
       </EditorialSection>

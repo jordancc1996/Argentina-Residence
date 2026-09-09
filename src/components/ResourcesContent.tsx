@@ -48,7 +48,7 @@ const ResourcesContent = () => {
           title="Argentina Residency Resources"
           subtitle="Essential information and official sources for Argentina residency"
           backgroundImage={flagBlueSky}
-          imageAlt="Argentine flag"
+          imageAlt="Argentine flag photographed from a low angle against a blue sky"
         />
 
         <EditorialSection className="bg-secondary/30">

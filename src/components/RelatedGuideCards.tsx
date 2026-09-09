@@ -16,7 +16,7 @@ const RelatedGuideCards = ({ related }: { related: RelatedGuide[] }) => {
             <div className="h-[180px] overflow-hidden">
               <img
                 src={resolveImageSrc(item.heroImage)}
-                alt={item.title}
+                alt={item.imageAlt}
                 className="w-full h-full object-cover"
               />
             </div>

@@ -1,4 +1,3 @@
-import KeyFactsTable from "@/components/KeyFactsTable";
 import ChecklistCard from "@/components/ChecklistCard";
 import ProcessSteps from "@/components/ProcessSteps";
 import InquiryCard from "@/components/InquiryCard";
@@ -26,10 +25,8 @@ const IndustryNewsGuide = () => {
 
             <h2>The Legal Framework Behind Argentina's Citizenship by Investment Program</h2>
             <p>&nbsp;</p>
-            <p>Argentina's citizenship by investment program represents one of the most significant reforms to the country's immigration policy in decades. Established to attract qualified foreign capital while maintaining rigorous due diligence standards, the program offers a direct pathway to citizenship that bypasses traditional residency requirements. Understanding the legal architecture is essential for any investor evaluating this pathway to a second passport and Mercosur mobility.</p>
+            <p>Argentina's citizenship by investment program represents one of the most significant reforms to the country's immigration policy in decades. Established to attract qualified foreign capital while maintaining rigorous due diligence standards, the program offers a direct pathway to citizenship that bypasses traditional residency requirements.</p>
             <p>&nbsp;</p>
-
-            <KeyFactsTable className="my-8" />
 
             <h3>Argentina Citizenship by Investment Decree 524 Explained</h3>
             <p>&nbsp;</p>
@@ -38,7 +35,7 @@ const IndustryNewsGuide = () => {
 
             <h3>Resolution 522 Argentina Citizenship by Investment</h3>
             <p>&nbsp;</p>
-            <p>Following the decree, the government issued Resolution 522/2026 to govern the procedural mechanics of the program. <strong>Resolution 522 argentina citizenship by investment</strong> established the public tender process. That tender was later cancelled. Two paths are currently anticipated, subject to final regulation: a non-refundable $500,000 USD contribution to the Argentine Treasury, or a $1,000,000 USD investment in a 7-year, 0% interest Argentine government bond, with principal returned at maturity. Neither path has been officially confirmed.</p>
+            <p>Following the decree, the government issued Resolution 522/2026 to govern the procedural mechanics of the program. <strong>Resolution 522 argentina citizenship by investment</strong> established the public tender process. That tender was later cancelled. The anticipated amounts are $500,000 or $1,000,000, subject to final regulation. Neither path has been officially confirmed. See <a href="/faq/argentina-citizenship-investment-requirements">investment requirements</a>.</p>
             <p>&nbsp;</p>
 
             <h3>Argentina CBI Tender Collapse Analysis</h3>

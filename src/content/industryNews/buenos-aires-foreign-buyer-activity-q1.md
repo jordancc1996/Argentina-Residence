@@ -7,6 +7,7 @@ lastUpdatedDate: "2026-08-18"
 summary: Transaction data from Buenos Aires shows continued growth in foreign buyer participation across Palermo, Recoleta, and Puerto Madero, supported by improved transaction conditions.
 source: Market Update
 image: /buenos-aires-foreign-buyer-activity-q1.jpg
+imageAlt: Argentine flag in Plaza de Mayo with Casa Rosada behind it
 ---
 
 Recent transaction data from the Colegio de Escribanos de la Ciudad de Buenos Aires indicates a measurable uptick in foreign buyer participation across premium neighborhoods. Palermo, Recoleta, and Puerto Madero continue to lead in volume.

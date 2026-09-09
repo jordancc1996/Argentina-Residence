@@ -10,29 +10,10 @@ import ProcessSteps from '../../components/ProcessSteps';
 import InquiryCard from '../../components/InquiryCard';
 import NewsletterSignup from '../../components/NewsletterSignupMdx.astro';
 import { DueDiligenceReviewGroups, BusinessSaleTimingSteps } from '../../components/guideBlocks';
-import { getRelatedGuides } from '../../data/relatedGuides';
+import { getRelatedGuides, investorGuides } from '../../data/relatedGuides';
 import DateMeta from '../../components/DateMeta.astro';
 
-// PLACEHOLDER IMAGE — replace with a real photo for due diligence process once provided
-// PLACEHOLDER IMAGE — replace with a real photo for business sale/startup exits once provided
-// PLACEHOLDER IMAGE — replace with a real photo for vs. Caribbean citizenship comparison once provided
-// PLACEHOLDER IMAGE — replace with a real photo for vs. Greece Golden Visa comparison once provided
-// PLACEHOLDER IMAGE — replace with a real photo for vs. Turkey Citizenship by Investment comparison once provided
-// PLACEHOLDER IMAGE — replace with a real photo for vs. Paraguay Investor Pass comparison once provided
-// PLACEHOLDER IMAGE — replace with a real photo for vs. Panama comparison once provided
 import placeholderGuideHero from '../../assets/hero-buenos-aires-night.jpg';
-import visaBacklogHero from '../../assets/argentina-citizenship-investment-us-visa-backlog-american-flag.jpg';
-
-const PLACEHOLDER_HEROES: Record<string, typeof placeholderGuideHero | typeof visaBacklogHero> = {
-  'argentina-citizenship-investment-due-diligence': placeholderGuideHero,
-  'argentina-citizenship-investment-business-sale': placeholderGuideHero,
-  'argentina-citizenship-investment-us-visa-backlog': visaBacklogHero,
-  'argentina-cbi-vs-caribbean-citizenship': placeholderGuideHero,
-  'argentina-citizenship-investment-vs-greece-golden-visa': placeholderGuideHero,
-  'argentina-citizenship-investment-vs-turkey': placeholderGuideHero,
-  'argentina-citizenship-investment-vs-paraguay': placeholderGuideHero,
-  'argentina-citizenship-investment-vs-panama': placeholderGuideHero,
-};
 
 export async function getStaticPaths() {
   const dedicatedGuideSlugs = new Set([
@@ -57,11 +38,9 @@ const metaTitle = `${pageTitle} | Argentina Residence`;
 const description = data.seoDescription || '';
 const canonical = `https://argentinaresidence.com/guides/${data.slug}`;
 const ogImage = 'https://argentinaresidence.com/og-image.jpg';
-const heroImage = PLACEHOLDER_HEROES[data.slug] ?? placeholderGuideHero;
-const heroAlt =
-	data.slug === 'argentina-citizenship-investment-us-visa-backlog'
-		? 'American flag representing US immigrant visa backlog and parallel citizenship pathway'
-		: 'Buenos Aires at night';
+const currentGuide = investorGuides.find((guide) => guide.slug === data.slug);
+const heroImage = currentGuide?.heroImage ?? placeholderGuideHero;
+const heroAlt = currentGuide?.imageAlt ?? 'Buenos Aires at night';
 const published = data.datePublished || data.dateModified || '2026-08-19';
 
 const related = getRelatedGuides(data.slug, 5);
