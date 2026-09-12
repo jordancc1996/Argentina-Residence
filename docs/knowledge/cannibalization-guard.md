@@ -13,6 +13,7 @@ guide ≈ overview ≈ explained ≈ how-it-works ≈ complete-guide ≈ what-is
 | Path | Slug | Primary keyword | Secondaries (max 3) | Forbidden to others |
 |---|---|---|---|---|
 | `/research/argentina-citizenship-by-investment-launch-date` | argentina-citizenship-by-investment-launch-date | argentina citizenship by investment launch date | argentina cbi timeline; APCI; Resolution 522 | when will argentina citizenship by investment start |
+| `/research/argentina-citizenship-by-investment-status` | argentina-citizenship-by-investment-status | argentina citizenship by investment status | program not yet open; Supreme Court appeal pending; anticipated $500,000 / $1,000,000 paths (confirmation status only) | argentina citizenship by investment launch date; when will argentina citizenship by investment start; argentina cbi timeline |
 | `/research/argentine-investment-landscape-golden-visa-value-proposition` | argentine-investment-landscape-golden-visa-value-proposition | argentina investment landscape | Vaca Muerta; RIGI; Golden Visa value proposition | argentina golden visa sectors (as landscape) |
 | `/research/buenos-aires-real-estate-bull-market-analysis` | buenos-aires-real-estate-bull-market-analysis | buenos aires real estate bull market | palermo; recoleta; monserrat | buenos aires property prices |
 | `/research/argentina-golden-visa-american-investors-2026` | argentina-golden-visa-american-investors-2026 | argentina golden visa 2026 american investors | MERCOSUR; E-2 visa Argentina; Milei reforms | argentina golden visa for americans (2026 angle) |
@@ -59,6 +60,7 @@ guide ≈ overview ≈ explained ≈ how-it-works ≈ complete-guide ≈ what-is
 | `/research/argentina-golden-visa-american-investors-2026` | What is the Argentine Advantage? (no physical residency requirement; two anticipated paths) |
 | `/research/american-dream-argentina-golden-visa-solution` | The Argentina Golden Visa: A New Option for Americans in 2026 (no prior residency); mentions Greece/Portugal/Italy/Malta |
 | `/research/argentina-citizenship-by-investment-launch-date` | The Legal Shell and the Missing Keys (relevant investment; Decree 366; APCI; due diligence not yet defined) |
+| `/research/argentina-citizenship-by-investment-status` | Milestone timeline (decree and court dates only); Current legal status (defers to launch-date article); What this means for prospective investors |
 | `/research/argentine-investment-landscape-golden-visa-value-proposition` | Structural Assets and Sectoral Opportunities (energy, lithium, agribusiness) |
 | `/industry-news/argentina-citizenship-investment-vs-portugal-golden-visa` | The Structural Difference: Citizenship versus Residency; Argentina passport vs EU golden visa (body); Investment Thresholds and Qualifying Assets |
 | `/industry-news/decree-524-2025-progress-update` | What's expected next (threshold, documentation) |
