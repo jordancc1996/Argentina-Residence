@@ -21,7 +21,7 @@ Two paths are currently anticipated for the principal applicant:
 
 Neither path has been officially confirmed. No separate reduced amounts have been confirmed for family members.
 
-All amounts used for either path must be funded from lawfully sourced capital originating outside Argentina. The Agency is expected to require documentation of the funds' origin, including bank statements, tax filings, and source-of-wealth declarations.
+All amounts used for either path must be funded from lawfully sourced capital originating outside Argentina. The Agency is expected to require documentation of the funds' origin, including bank statements, tax filings, and source-of-wealth declarations. How that file is expected to be reviewed is on the [due diligence and source of funds](/guides/argentina-citizenship-investment-due-diligence) guide.
 
 ## What is not anticipated
 

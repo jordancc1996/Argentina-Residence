@@ -5,21 +5,20 @@ import IndustryNewsArticleContent from '../../components/IndustryNewsArticleCont
 import ComparisonBlock from '../../components/ComparisonBlock';
 import SupportingImage from '../../components/SupportingImage';
 import DateMeta from '../../components/DateMeta.astro';
+import { getRelatedEntries } from '../../data/relatedContent';
 
 export async function getStaticPaths() {
   const entries = await getCollection('industryNews');
   const ordered = [...entries].sort((a, b) => a.data.id - b.data.id);
 
   return ordered.map((article) => {
-    const related = ordered
-      .filter((item) => item.data.slug !== article.data.slug)
-      .slice(0, 3)
-      .map((item) => ({
-        id: item.data.id,
-        slug: item.data.slug,
-        title: item.data.title,
-        summary: item.data.summary,
-        source: item.data.source,
+    const related = getRelatedEntries(article.data.slug, 3, article.data.relatedSlugs).map((entry) => ({
+        id: entry.id,
+        slug: entry.slug,
+        href: entry.href,
+        title: entry.title,
+        summary: entry.excerpt,
+        source: entry.source,
       }));
 
     return {

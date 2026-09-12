@@ -10,7 +10,7 @@ image: /buenos-aires-foreign-buyer-activity-q1.jpg
 imageAlt: Argentine flag in Plaza de Mayo with Casa Rosada behind it
 ---
 
-Recent transaction data from the Colegio de Escribanos de la Ciudad de Buenos Aires indicates a measurable uptick in foreign buyer participation across premium neighborhoods. Palermo, Recoleta, and Puerto Madero continue to lead in volume.
+Recent transaction data from the Colegio de Escribanos de la Ciudad de Buenos Aires indicates a measurable uptick in foreign buyer participation across premium neighborhoods. Palermo, Recoleta, and Puerto Madero continue to lead in volume. Neighborhood pricing and longer-run buyer patterns are in the [bull market analysis](/research/buenos-aires-real-estate-bull-market-analysis).
 
 ## Drivers of the trend
 

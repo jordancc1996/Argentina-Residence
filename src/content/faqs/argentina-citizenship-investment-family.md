@@ -8,6 +8,6 @@ metaDescription: Argentina residency family members are expected to include a sp
 
 # Argentina Residency Family Members - Spouse and Dependents
 
-Argentina residency family members are expected to include a spouse and children under 18 on the same application. The status of dependents 18 and older is unknown. Neither point has been officially confirmed.
+Argentina residency family members are expected to include a spouse and children under 18 on the same application. The status of dependents 18 and older is unknown. Neither point has been officially confirmed. How inclusion is described on the broader program is in the [Argentina Golden Visa program](/guides/argentina-golden-visa-program) guide.
 
 Each included person is expected to need their own documents. Whether extra investment applies for family members has not been published.

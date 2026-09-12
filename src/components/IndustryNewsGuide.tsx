@@ -11,7 +11,7 @@ const IndustryNewsGuide = () => {
             Understanding Argentina's Citizenship by Investment Program
           </h2>
           <p className="text-lg text-text-secondary leading-relaxed mb-12">
-            A comprehensive guide to the legal framework, 2026 launch timeline, and what high-intent investors should know before the application window opens.
+            A comprehensive guide to the legal framework, program status, and what investors should know.
           </p>
 
           <div className="prose prose-lg max-w-none
@@ -67,9 +67,9 @@ const IndustryNewsGuide = () => {
             <p>Each milestone will provide clearer guidance on documentation standards, source-of-funds verification requirements, and whether a processing calendar exists. Monitoring these developments allows investors to position themselves at the front of the queue when applications open.</p>
             <p>&nbsp;</p>
 
-            <h2>What Investors Should Do While Waiting for the Program to Open</h2>
+            <h2>What Investors Should Do While the Program Remains Unopened</h2>
             <p>&nbsp;</p>
-            <p>The period between regulatory announcement and program launch presents a strategic opportunity for preparation. Investors who use this interim period effectively will be positioned to submit complete, compliant applications as soon as the window opens, potentially securing earlier processing slots.</p>
+            <p>The period after regulatory announcement and before any filing channel exists presents a strategic opportunity for preparation. Investors who use this interim period effectively will be positioned to submit a complete, compliant application if and when the program opens.</p>
             <p>&nbsp;</p>
 
             <ProcessSteps

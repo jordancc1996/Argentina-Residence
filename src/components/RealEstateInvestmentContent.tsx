@@ -87,7 +87,11 @@ const RealEstateInvestmentContent = ({ children }: { children?: ReactNode }) => 
           Prime Investment Neighborhoods
         </h2>
         <p className="text-text-secondary text-center mb-12 max-w-2xl mx-auto">
-          Buenos Aires offers exceptional real estate opportunities in world-class neighborhoods, with strong appreciation potential.
+          Buenos Aires offers exceptional real estate opportunities in world-class neighborhoods, with strong appreciation potential. Neighborhood pricing and buyer activity are covered in the{" "}
+          <a href="/research/buenos-aires-real-estate-bull-market-analysis" className="text-primary hover:underline">
+            Buenos Aires real estate bull market
+          </a>{" "}
+          analysis.
         </p>
         
         <div className="grid md:grid-cols-2 gap-8">

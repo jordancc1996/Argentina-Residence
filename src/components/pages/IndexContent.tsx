@@ -63,7 +63,11 @@ const IndexContent = ({ posts }: { posts: HomepagePost[] }) => {
           Your roadmap to Argentine residency, citizenship, and long-term investment, in one place.
         </h2>
         <p className="text-editorial text-text-secondary mb-8 tracking-wide">
-          Argentina Residence is an independent advisory resource built with licensed immigration attorneys. We help qualified investors understand the program, evaluate their options, and take the right next step.
+          Argentina Residence is an independent advisory resource built with licensed immigration attorneys. We help qualified investors understand the{" "}
+          <a href="/guides/argentina-golden-visa-program" className="text-primary hover:underline">
+            Argentina Golden Visa program
+          </a>
+          , evaluate their options, and take the right next step.
         </p>
         <div className="flex flex-wrap gap-4 justify-center mt-8">
           <Button asChild variant="outline" size="lg" className="bg-white hover:bg-white/90">
@@ -95,25 +99,25 @@ const IndexContent = ({ posts }: { posts: HomepagePost[] }) => {
           </div>
 
           <div className="flex flex-col">
-            <h2 className="font-serif text-lg-editorial mb-4 tracking-wide">Strategic Location</h2>
+            <h2 className="font-serif text-lg-editorial mb-4 tracking-wide">Visa-Free Travel</h2>
             <p className="text-body text-text-secondary tracking-wide mb-4 flex-1">
               Access South America's second-largest economy while enjoying visa-free travel to over 170 countries worldwide.
             </p>
             <div className="mt-6">
               <a href="/faq/argentina-visa-free-travel" className="inline-block font-sans font-semibold text-[0.75rem] tracking-[0.08em] uppercase border-2 border-primary text-foreground px-6 py-3 hover:bg-primary hover:text-primary-foreground transition-all duration-300">
-                Review Jurisdictional Advantages
+                Review visa-free travel
               </a>
             </div>
           </div>
 
           <div className="flex flex-col">
-            <h2 className="font-serif text-lg-editorial mb-4 tracking-wide">Premium Lifestyle</h2>
+            <h2 className="font-serif text-lg-editorial mb-4 tracking-wide">About This Resource</h2>
             <p className="text-body text-text-secondary tracking-wide mb-4 flex-1">
-              Experience world-class culture, cuisine, and quality of life in one of South America's most sophisticated destinations.
+              Who publishes this site and how the advisory describes its work on Argentine residency and investment.
             </p>
             <div className="mt-6">
               <a href="/about" className="inline-block font-sans font-semibold text-[0.75rem] tracking-[0.08em] uppercase border-2 border-primary text-foreground px-6 py-3 hover:bg-primary hover:text-primary-foreground transition-all duration-300">
-                Review Investment Thesis
+                About Argentina Residence
               </a>
             </div>
           </div>
@@ -238,9 +242,9 @@ const IndexContent = ({ posts }: { posts: HomepagePost[] }) => {
             href="/resources"
             className="group flex flex-col bg-card border border-border rounded-lg p-8 hover:border-primary hover:shadow-lg transition-all duration-300"
           >
-            <h3 className="font-serif text-lg-editorial mb-3 tracking-wide">Explore All Guides</h3>
+            <h3 className="font-serif text-lg-editorial mb-3 tracking-wide">Official resources</h3>
             <p className="text-sm text-text-secondary tracking-wide flex-1 mb-6">
-              The full guides and resources hub for Argentina residency, investment, and lifestyle.
+              Official government links for Argentina residency are on Argentina residency resources.
             </p>
             <span className="inline-flex items-center gap-2 font-sans font-semibold text-[0.75rem] tracking-[0.08em] uppercase text-primary group-hover:underline">
               Browse Resources <ArrowRight className="w-4 h-4" />

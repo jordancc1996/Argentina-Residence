@@ -8,6 +8,8 @@ import ChecklistCard from '../../components/ChecklistCard';
 import ProcessSteps from '../../components/ProcessSteps';
 import NewsletterSignup from '../../components/NewsletterSignupMdx.astro';
 import DateMeta from '../../components/DateMeta.astro';
+import { getRelatedEntries } from '../../data/relatedContent';
+import { articleOrder } from '../../data/articleOrder';
 
 function wordCountFromMarkdown(markdown: string) {
   const text = markdown
@@ -19,15 +21,6 @@ function wordCountFromMarkdown(markdown: string) {
 }
 
 export async function getStaticPaths() {
-  const articleOrder = [
-    'argentina-citizenship-by-investment-launch-date',
-    'argentine-investment-landscape-golden-visa-value-proposition',
-    'buenos-aires-real-estate-bull-market-analysis',
-    'american-dream-argentina-golden-visa-solution',
-    'argentina-citizenship-investment-american-investors',
-    'argentina-golden-visa-american-investors-2026',
-    'argentina-citizenship-by-investment-status',
-  ];
   const articles = await getCollection('articles');
   const ordered = [...articles].sort(
     (a, b) => articleOrder.indexOf(a.data.slug) - articleOrder.indexOf(b.data.slug)
@@ -36,17 +29,15 @@ export async function getStaticPaths() {
   return ordered.map((post, index) => {
     const previous = index > 0 ? ordered[index - 1] : null;
     const next = index < ordered.length - 1 ? ordered[index + 1] : null;
-    const related = ordered
-      .filter((p) => p.data.slug !== post.data.slug)
-      .slice(0, 3)
-      .map((p) => ({
-        id: p.data.id,
-        slug: p.data.slug,
-        title: p.data.title,
-        excerpt: p.data.excerpt,
-        category: p.data.category,
-        image: p.data.image,
-        imageAlt: p.data.imageAlt,
+    const related = getRelatedEntries(post.data.slug, 3, post.data.relatedSlugs).map((entry) => ({
+        id: entry.id,
+        slug: entry.slug,
+        href: entry.href,
+        title: entry.title,
+        excerpt: entry.excerpt,
+        category: entry.category || entry.cluster,
+        image: entry.image,
+        imageAlt: entry.imageAlt,
       }));
 
     return {

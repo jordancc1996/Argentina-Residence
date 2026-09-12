@@ -1,4 +1,5 @@
 import type { ImageSrc } from "@/lib/resolveImageSrc";
+import { getRelatedEntries } from "@/data/relatedContent";
 import goldenVisaHero from "@/assets/argentina-golden-visa-flag-hero.jpg";
 import realEstateHero from "@/assets/buenos-aires-cityscape.jpg";
 import dueDiligenceHero from "@/assets/argentina-citizenship-due-diligence-process.jpg";
@@ -117,13 +118,19 @@ export const investorGuides: RelatedGuide[] = [
 ];
 
 export function getRelatedGuides(currentSlug: string, limit = 5): RelatedGuide[] {
-  const current = investorGuides.find((guide) => guide.slug === currentSlug);
-  const others = investorGuides.filter((guide) => guide.slug !== currentSlug);
-  const sameCategory = current
-    ? others.filter((guide) => guide.category === current.category)
-    : [];
-  const remaining = others.filter((guide) => guide.category !== current?.category);
-  return [...sameCategory, ...remaining].slice(0, limit);
+  return getRelatedEntries(currentSlug, limit).map((entry) => {
+    const listed = investorGuides.find((guide) => guide.slug === entry.slug);
+    if (listed) return listed;
+    return {
+      slug: entry.slug,
+      href: entry.href,
+      title: entry.title,
+      description: entry.excerpt,
+      category: "program",
+      heroImage: entry.image,
+      imageAlt: entry.imageAlt || entry.title,
+    };
+  });
 }
 
 /** Established InquiryCard copy for template-level (non-page-specific) placements. */

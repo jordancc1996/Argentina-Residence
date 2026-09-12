@@ -147,7 +147,7 @@ const Navigation = ({
                               className="block px-6 transition-opacity duration-[250ms] ease-in-out hover:opacity-70"
                               style={guideLinkStyle(GUIDES_HUB_HREF)}
                             >
-                              View All Guides
+                              Argentina residency resources
                             </a>
                           </NavigationMenuLink>
                         </li>
@@ -365,7 +365,7 @@ const Navigation = ({
                             className="block pl-4 transition-opacity duration-[250ms] ease-in-out hover:opacity-70"
                             style={guideLinkStyle(GUIDES_HUB_HREF)}
                           >
-                            View All Guides
+                            Argentina residency resources
                           </a>
                         </li>
                       </ul>

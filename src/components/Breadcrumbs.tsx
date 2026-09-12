@@ -12,6 +12,7 @@ const routeLabels: Record<string, string> = {
   'faq': 'FAQ',
   'blog': 'Blog',
   'resources': 'Resources',
+  'guides': 'Resources',
   'market-insights': 'Market Insights',
   'contact': 'Contact',
   'privacy': 'Privacy Policy',
@@ -42,7 +43,8 @@ function buildBreadcrumbs(currentPath: string): BreadcrumbItem[] | null {
     current += `/${segment}`;
     breadcrumbs.push({
       label: routeLabels[segment] || segment.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase()),
-      path: current
+      // /guides redirects to /resources; use the canonical destination as the parent href
+      path: current === '/guides' ? '/resources' : current
     });
   });
 

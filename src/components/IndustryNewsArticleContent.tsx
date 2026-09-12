@@ -9,6 +9,7 @@ import type { ReactNode } from "react";
 export interface RelatedNewsArticle {
   id: number;
   slug: string;
+  href?: string;
   title: string;
   summary: string;
   source?: string;
@@ -144,8 +145,8 @@ const IndustryNewsArticleContent = ({
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                   {related.map((rel) => (
                     <a
-                      key={rel.id}
-                      href={`/industry-news/${rel.slug}`}
+                      key={rel.href ?? rel.slug}
+                      href={rel.href ?? `/industry-news/${rel.slug}`}
                       className="group bg-card border border-border rounded-lg overflow-hidden hover:border-primary transition-colors p-4"
                     >
                       {rel.source && (

@@ -8,6 +8,7 @@ import type { ReactNode } from "react";
 export interface RelatedPost {
   id: number;
   slug: string;
+  href?: string;
   title: string;
   excerpt: string;
   category: string;
@@ -148,8 +149,8 @@ const BlogPostContent = ({
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                   {related.map((relatedPost) => (
                       <a 
-                        key={relatedPost.id}
-                        href={`/research/${relatedPost.slug}`}
+                        key={relatedPost.href ?? relatedPost.slug}
+                        href={relatedPost.href ?? `/research/${relatedPost.slug}`}
                         className="group bg-card border border-border rounded-lg overflow-hidden hover:border-primary transition-colors"
                       >
                         {relatedPost.image && (

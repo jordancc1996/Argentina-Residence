@@ -89,10 +89,10 @@ const GoldenVisaUpdatesSection = () => {
         </figcaption>
       </figure>
       <h2 className="font-serif text-xl-editorial mb-8 tracking-wide mt-8">
-        Stay Ahead of the Argentina Golden Visa Launch
+        Stay Informed on Argentina Golden Visa Updates
       </h2>
       <p className="text-editorial text-text-secondary mb-8 tracking-wide">
-        Get program updates, including Decree 524 developments and the official launch timeline, sent directly to you.
+        Get program updates, including Decree 524 developments and status updates, sent directly to you.
       </p>
       <div className="flex flex-wrap gap-4 justify-center mt-8">
         <Dialog open={open} onOpenChange={setOpen}>
@@ -108,7 +108,7 @@ const GoldenVisaUpdatesSection = () => {
                   Stay Updated on the Argentina Golden Visa
                 </DialogTitle>
                 <DialogDescription>
-                  Be the first to know about official program updates and the launch timeline.
+                  Be the first to know about official program status updates.
                 </DialogDescription>
               </DialogHeader>
               <div className="space-y-4 py-4">

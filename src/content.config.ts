@@ -23,6 +23,7 @@ const articles = defineCollection({
     seoTitle: z.string().optional(),
     seoDescription: z.string().optional(),
     keywords: z.array(z.string()).optional(),
+    relatedSlugs: z.array(z.string()).max(5).optional(),
   }),
 });
 
@@ -56,6 +57,7 @@ const industryNews = defineCollection({
     source: z.string().optional(),
     image: z.string().optional(),
     imageAlt: z.string().optional(),
+    relatedSlugs: z.array(z.string()).max(5).optional(),
   }),
 });
 

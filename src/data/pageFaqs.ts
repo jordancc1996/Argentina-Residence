@@ -273,7 +273,7 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "When is the Argentina citizenship by investment launch date?",
       answer:
-        "The anticipated launch date is not yet confirmed. After the April 2026 tender cancellation, application procedures and due diligence protocols had still not been defined. Decree 524/2025 is a legal framework, not an open filing channel.",
+        "The anticipated launch date is not yet confirmed. After the April 2026 tender cancellation, application procedures and due diligence protocols had still not been defined. Decree 524/2025 is a legal framework, not an open filing channel. In June 2026, two federal appellate courts, including the National Electoral Chamber, declared DNU 366/2025 invalid, finding it did not meet the constitutional standard required for a decree of necessity and urgency. Neither ruling arose from an investor case, but the reasoning reaches the same decree the investment pathway depends on. The government has appealed to the Supreme Court, and the outcome remains pending. No launch date can be confirmed while this question is unresolved. Decree 524/2025, which created APCI, is a separate instrument and was not affected by these rulings. The article body above covers the rulings in full.",
     },
     {
       question: "Did the cancelled tender set a due-diligence deadline?",

@@ -3,18 +3,9 @@ import { getCollection } from 'astro:content';
 import Layout from '../layouts/Layout.astro';
 import IndexContent from '../components/pages/IndexContent';
 
-const articleOrder = [
-  'argentina-citizenship-by-investment-launch-date',
-  'argentine-investment-landscape-golden-visa-value-proposition',
-  'buenos-aires-real-estate-bull-market-analysis',
-  'american-dream-argentina-golden-visa-solution',
-  'argentina-citizenship-investment-american-investors',
-  'argentina-golden-visa-american-investors-2026',
-];
-
 const articles = await getCollection('articles');
 const posts = [...articles]
-  .sort((a, b) => articleOrder.indexOf(a.data.slug) - articleOrder.indexOf(b.data.slug))
+  .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime())
   .slice(0, 3)
   .map((entry) => ({
     id: entry.data.id,

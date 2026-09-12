@@ -28,7 +28,12 @@ const GoldenVisaProgramContent = ({ children }: { children?: ReactNode }) => {
         <div className="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-center gap-3 text-center">
           <Clock className="h-5 w-5 text-gold flex-shrink-0" />
           <p className="text-sm md:text-base text-text-primary">
-            <span className="font-semibold">Program Status:</span> Proposed legislation under review. Anticipated launch date not yet confirmed
+            <span className="font-semibold">
+              <a href="/research/argentina-citizenship-by-investment-status" className="text-primary hover:underline">
+                Program Status
+              </a>:
+            </span>{" "}
+            Proposed legislation under review. Anticipated launch date not yet confirmed
           </p>
         </div>
       </div>
@@ -39,7 +44,11 @@ const GoldenVisaProgramContent = ({ children }: { children?: ReactNode }) => {
         </h2>
         {children}
         <p className="text-editorial text-text-secondary mb-8 tracking-wide max-w-3xl mx-auto">
-          Argentina Golden Visa 2026 is proposed, not operating. Decree 524/2025 created the pathway; APCI has not published operational regulations or opened applications.
+          Argentina Golden Visa 2026 is proposed, not operating. The{" "}
+          <a href="/research/argentina-citizenship-by-investment-launch-date" className="text-primary hover:underline">
+            citizenship by investment launch date
+          </a>{" "}
+          is not confirmed. Decree 524/2025 created the pathway; APCI has not published operational regulations or opened applications.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <a href="/argentina-golden-visa-eligibility-checker">
@@ -67,7 +76,11 @@ const GoldenVisaProgramContent = ({ children }: { children?: ReactNode }) => {
             </div>
             <h3 className="font-serif text-lg mb-3">Decision Window</h3>
             <p className="text-text-secondary text-sm">
-              Processing time is not yet officially confirmed. No decision window has been published. APCI is not processing applications.
+              Argentina's{" "}
+              <a href="/faq/argentina-citizenship-investment-application-timeline" className="text-primary hover:underline">
+                processing time
+              </a>{" "}
+              is not yet officially confirmed. No decision window has been published. APCI is not processing applications.
             </p>
           </div>
           
@@ -87,7 +100,10 @@ const GoldenVisaProgramContent = ({ children }: { children?: ReactNode }) => {
             </div>
             <h3 className="font-serif text-lg mb-3">Global Mobility</h3>
             <p className="text-text-secondary text-sm">
-              Visa-free access to 170+ countries with Argentine passport
+              <a href="/faq/argentina-visa-free-travel" className="text-primary hover:underline">
+                Visa-free access
+              </a>{" "}
+              to 170+ countries with an Argentine passport
             </p>
           </div>
           
@@ -111,7 +127,11 @@ const GoldenVisaProgramContent = ({ children }: { children?: ReactNode }) => {
               Anticipated Investment Paths
             </h2>
             <p className="text-body text-text-secondary mb-6 tracking-wide">
-              Two paths are currently anticipated, subject to final regulation: a non-refundable $500,000 USD contribution to the Argentine Treasury, or a $1,000,000 USD investment in a 7-year, 0% interest Argentine government bond, with principal returned at maturity. Real estate, business or startup ventures, and investment funds are not anticipated qualifying paths. Neither path has been officially confirmed. APCI is not processing applications.
+              Two paths are currently anticipated, subject to final regulation. See the{" "}
+              <a href="/faq/argentina-citizenship-investment-requirements" className="text-primary hover:underline">
+                anticipated investment requirements
+              </a>
+              : a non-refundable $500,000 USD Treasury contribution, or a $1,000,000 USD 7-year government bond. Real estate, business or startup ventures, and investment funds are not anticipated qualifying paths. Neither path has been officially confirmed. APCI is not processing applications.
             </p>
             
             <div className="space-y-4 mb-8">

@@ -23,6 +23,13 @@ const ProgramContent = () => {
         <h2 className="font-serif text-xl-editorial mb-8 tracking-wide">
           Argentina's Residency by Investment Program offers unparalleled opportunities for global investors seeking South American residency.
         </h2>
+        <p className="text-editorial text-text-secondary mb-8 tracking-wide">
+          The{" "}
+          <a href="/guides/argentina-golden-visa-program" className="text-primary hover:underline">
+            Argentina Golden Visa program guide
+          </a>{" "}
+          is the full 2026 investor write-up. This page is the short program overview.
+        </p>
         <p className="text-editorial text-text-secondary mb-12 tracking-wide">
           Our program is synonymous with exceptional value and strategic advantage.
         </p>
@@ -113,7 +120,11 @@ const ProgramContent = () => {
 
         <div className="mt-16 text-center">
           <p className="text-body text-text-secondary mb-6 tracking-wide">
-            Ready to begin your application?
+            Ready to begin your application? An{" "}
+            <a href="/argentina-golden-visa-eligibility-checker" className="text-primary hover:underline">
+              eligibility assessment
+            </a>{" "}
+            is available before a consultation.
           </p>
           <a href="/contact">
             <Button size="lg" className="px-12">
