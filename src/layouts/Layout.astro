@@ -7,6 +7,7 @@ import Breadcrumbs, { getBreadcrumbSchema } from '../components/Breadcrumbs';
 import ConsultationCTA from '../components/ConsultationCTA';
 import Footer from '../components/Footer';
 import FloatingAdvisorCTA from '../components/FloatingAdvisorCTA';
+import PreferredSourcesCTA from '../components/PreferredSourcesCTA.astro';
 
 interface Props {
 	showBreadcrumbs?: boolean;
@@ -39,6 +40,7 @@ const guides = [...guideEntries]
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
 		<script src="https://analytics.ahrefs.com/analytics.js" data-key="U5p3QWN6cwWml7hdiLpW7g" async></script>
+		<script is:inline async src="https://news.google.com/swg/js/v1/publisher.js"></script>
 		<slot name="head" />
 		{schema && <script type="application/ld+json" set:html={JSON.stringify(schema)} />}
 	</head>
@@ -49,6 +51,7 @@ const guides = [...guideEntries]
 				{showChrome && showBreadcrumbs && <Breadcrumbs currentPath={currentPath} />}
 				<slot />
 			</main>
+			{showChrome && <PreferredSourcesCTA />}
 			{showChrome && <ConsultationCTA client:load />}
 			{showChrome && <Footer />}
 			{showChrome && <FloatingAdvisorCTA client:load />}
