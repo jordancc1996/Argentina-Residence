@@ -41,7 +41,7 @@ export const comparisonTables = {
       "Investment floor": [
         "$500,000 contribution or $1,000,000 bond",
         "$200,000 single applicant / $250,000 family of four (donation); $200,000 real estate",
-        "$235,000 covers up to a family of four",
+        "$235,000 National Transformation Fund (family of up to four); approved real estate also available",
       ],
       "Hold period": [
         "Bond: 7 years, principal returned. Contribution: non-refundable.",
