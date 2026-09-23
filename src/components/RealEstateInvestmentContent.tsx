@@ -8,6 +8,7 @@ import { defaultInquiryCard, getRelatedGuides } from "@/data/relatedGuides";
 import RelatedGuideCards from "@/components/RelatedGuideCards";
 import PageFAQ from "@/components/PageFAQ";
 import PhotoPlaceholder from "@/components/PhotoPlaceholder";
+import CompareOptionsModal from "@/components/CompareOptionsModal";
 import { Building2, TrendingUp, MapPin, ArrowRight } from "lucide-react";
 import type { ReactNode } from "react";
 import buenosAiresCityscape from "@/assets/buenos-aires-cityscape.jpg";
@@ -67,13 +68,19 @@ const RealEstateInvestmentContent = ({ children }: { children?: ReactNode }) => 
         <p className="text-editorial text-text-secondary mb-8 tracking-wide max-w-3xl mx-auto">
           Owning property in Argentina does not itself grant Golden Visa eligibility. Buenos Aires property can be bought as a market decision, independent of the unpublished investment route.
         </p>
-        <div className="flex flex-wrap justify-center gap-4">
-          <a href="/contact">
-            <Button size="lg" className="px-8">
-              Inquire About Property
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
-          </a>
+        <div className="flex flex-col items-center gap-4">
+          <CompareOptionsModal
+            triggerLabel="Compare Your Options"
+            heading="Compare Your Options"
+            description="Counsel on Argentine property and investment-migration routes can be arranged through this office."
+            wrapper="none"
+          />
+          <p className="text-sm text-text-secondary tracking-wide">
+            Prefer to send a property inquiry?{" "}
+            <a href="/contact" className="text-primary hover:underline">
+              Contact this office
+            </a>
+          </p>
         </div>
       </EditorialSection>
 

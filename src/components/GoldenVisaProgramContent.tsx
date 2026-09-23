@@ -7,6 +7,7 @@ import InquiryCard from "@/components/InquiryCard";
 import { defaultInquiryCard, getRelatedGuides } from "@/data/relatedGuides";
 import RelatedGuideCards from "@/components/RelatedGuideCards";
 import PageFAQ from "@/components/PageFAQ";
+import CompareOptionsModal from "@/components/CompareOptionsModal";
 import { Clock, Shield, Globe, TrendingUp, CheckCircle, ArrowRight } from "lucide-react";
 import type { ReactNode } from "react";
 import goldenVisaHero from "@/assets/argentina-golden-visa-flag-hero.jpg";
@@ -50,13 +51,19 @@ const GoldenVisaProgramContent = ({ children }: { children?: ReactNode }) => {
           </a>{" "}
           is not confirmed. Decree 524/2025 created the pathway; APCI has not published operational regulations or opened applications.
         </p>
-        <div className="flex flex-wrap justify-center gap-4">
-          <a href="/argentina-golden-visa-eligibility-checker">
-            <Button size="lg" className="px-8">
-              Check Your Eligibility
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
-          </a>
+        <div className="flex flex-col items-center gap-4">
+          <CompareOptionsModal
+            triggerLabel="Compare Your Options"
+            heading="Compare Your Options"
+            description="Counsel on Argentina's Golden Visa route can be arranged through this office."
+            wrapper="none"
+          />
+          <p className="text-sm text-text-secondary tracking-wide">
+            Prefer to check eligibility directly?{" "}
+            <a href="/argentina-golden-visa-eligibility-checker" className="text-primary hover:underline">
+              Open the eligibility checker
+            </a>
+          </p>
         </div>
       </EditorialSection>
 
