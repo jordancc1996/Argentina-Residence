@@ -1,9 +1,10 @@
 import { cn } from "@/lib/utils";
+import { resolveImageSrc, type ImageSrc } from "@/lib/resolveImageSrc";
 
 interface PhotoPlaceholderProps {
   label: string;
   alt: string;
-  src?: string;
+  src?: ImageSrc;
   className?: string;
   variant?: "inline" | "card";
 }
@@ -15,7 +16,8 @@ const PhotoPlaceholder = ({
   className,
   variant = "inline",
 }: PhotoPlaceholderProps) => {
-  const filled = Boolean(src);
+  const resolvedSrc = src ? resolveImageSrc(src) : undefined;
+  const filled = typeof resolvedSrc === "string";
 
   return (
     <>
@@ -44,7 +46,7 @@ const PhotoPlaceholder = ({
           aria-label={filled ? undefined : alt}
         >
           <img
-            {...(src ? { src } : {})}
+            {...(resolvedSrc ? { src: resolvedSrc } : {})}
             alt={alt}
             width={1600}
             height={900}
