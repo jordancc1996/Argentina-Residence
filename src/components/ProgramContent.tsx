@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import SupportingImage from "@/components/SupportingImage";
 import PageFAQ from "@/components/PageFAQ";
-import casaRosadaGoldenHour from "@/assets/site-photos-renamed/casa-rosada-plaza-de-mayo-golden-hour.jpg";
+import casaRosadaGoldenHour from "@/assets/site-photos-renamed/casa-rosada-plaza-de-mayo-golden-hour.webp";
 
 const ProgramContent = () => {
   return (
@@ -13,10 +13,12 @@ const ProgramContent = () => {
       <Hero
         title="Argentina Residency by Investment: The Fastest Path to a Global Passport"
         subtitle="Secure permanent residency in one of South America's most vibrant economies. With a strategic investment, you can pursue Argentine citizenship, gaining visa-free access to over 170 destinations and a gateway to the MERCOSUR region."
-        backgroundImage="/argentina-golden-visa-2026.jpg"
+        backgroundImage="/argentina-golden-visa-2026.webp"
         imageAlt="Argentine flag with the Sun of May against a clear sky"
         ctaText="Request Program Details"
-        ctaLink="/contact"
+        ctaOpensModal
+        ctaModalHeading="Get Program Details"
+        ctaModalDescription="Counsel on Argentina's residency-by-investment program can be arranged through this office."
       />
       
       <EditorialSection>

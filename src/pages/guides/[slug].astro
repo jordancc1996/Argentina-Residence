@@ -9,8 +9,11 @@ import ChecklistCard from '../../components/ChecklistCard';
 import ProcessSteps from '../../components/ProcessSteps';
 import InquiryCard from '../../components/InquiryCard';
 import NewsletterSignup from '../../components/NewsletterSignupMdx.astro';
+import CompareOptionsCta from '../../components/CompareOptionsCtaMdx.astro';
+import CompareOptionsModal from '../../components/CompareOptionsModalMdx.astro';
+import PhotoPlaceholder from '../../components/PhotoPlaceholder';
 import { DueDiligenceReviewGroups, BusinessSaleTimingSteps } from '../../components/guideBlocks';
-import { getRelatedGuides, investorGuides } from '../../data/relatedGuides';
+import { getRelatedGuides, inquiryCardOverrides, investorGuides } from '../../data/relatedGuides';
 import DateMeta from '../../components/DateMeta.astro';
 
 import placeholderGuideHero from '../../assets/hero-buenos-aires-night.jpg';
@@ -98,8 +101,9 @@ const schema = {
 		related={related}
 		faqPath={faqPath}
 		showBottomInquiryCard={showBottomInquiryCard}
+		inquiryCard={inquiryCardOverrides[data.slug]}
 	>
 		<DateMeta publishedDate={publishedDate} lastUpdatedDate={lastUpdatedDate} />
-		<Content components={{ ComparisonBlock, ComparisonTable, KeyFactsTable, ChecklistCard, ProcessSteps, InquiryCard, NewsletterSignup, DueDiligenceReviewGroups, BusinessSaleTimingSteps }} />
+		<Content components={{ ComparisonBlock, ComparisonTable, KeyFactsTable, ChecklistCard, ProcessSteps, InquiryCard, NewsletterSignup, CompareOptionsCta, CompareOptionsModal, PhotoPlaceholder, DueDiligenceReviewGroups, BusinessSaleTimingSteps }} />
 	</GuideArticleContent>
 </Layout>

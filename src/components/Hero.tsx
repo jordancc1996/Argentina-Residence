@@ -1,6 +1,7 @@
-import heroImage from "@/assets/hero-aerial-buenos-aires.jpg";
+import heroImage from "@/assets/hero-aerial-buenos-aires.webp";
 import { motion } from 'framer-motion';
 import { useParallax, useScrollOpacity } from '@/hooks/useParallax';
+import CompareOptionsModal from "@/components/CompareOptionsModal";
 
 type HeroImageSrc = string | { src: string };
 
@@ -14,6 +15,9 @@ interface HeroProps {
   ctaText?: string;
   ctaLink?: string;
   ctaSubline?: string;
+  ctaOpensModal?: boolean;
+  ctaModalHeading?: string;
+  ctaModalDescription?: string;
 }
 
 const resolveHeroSrc = (image: HeroImageSrc) =>
@@ -29,6 +33,9 @@ const Hero = ({
   ctaText,
   ctaLink,
   ctaSubline,
+  ctaOpensModal = false,
+  ctaModalHeading,
+  ctaModalDescription,
 }: HeroProps) => {
   const parallaxY = useParallax(-0.3);
   const opacity = useScrollOpacity(600);
@@ -93,19 +100,29 @@ const Hero = ({
           </motion.p>
         )}
 
-        {ctaText && ctaLink && (
+        {ctaText && (ctaOpensModal || ctaLink) && (
           <motion.div
             className="mt-12 md:mt-14"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.1 }}
           >
-            <a
-              href={ctaLink}
-              className="inline-block font-sans font-medium text-[0.7rem] tracking-[0.22em] uppercase bg-primary text-primary-foreground px-11 py-[14px] hover:bg-primary/80 hover:-translate-y-0.5 transition-all duration-300"
-            >
-              {ctaText}
-            </a>
+            {ctaOpensModal ? (
+              <CompareOptionsModal
+                triggerLabel={ctaText}
+                heading={ctaModalHeading}
+                description={ctaModalDescription}
+                triggerClassName="inline-block font-sans font-medium text-[0.7rem] tracking-[0.22em] uppercase bg-primary text-primary-foreground px-11 py-[14px] hover:bg-primary/80 hover:-translate-y-0.5 transition-all duration-300 no-underline hover:no-underline border-0 cursor-pointer"
+                wrapper="none"
+              />
+            ) : (
+              <a
+                href={ctaLink}
+                className="inline-block font-sans font-medium text-[0.7rem] tracking-[0.22em] uppercase bg-primary text-primary-foreground px-11 py-[14px] hover:bg-primary/80 hover:-translate-y-0.5 transition-all duration-300"
+              >
+                {ctaText}
+              </a>
+            )}
             {ctaSubline && (
               <p className="mt-4 text-xs font-sans tracking-[0.08em]" style={{ color: "rgba(255,255,255,0.6)" }}>
                 {ctaSubline}

@@ -1,10 +1,20 @@
 import ComparisonTable from "@/components/ComparisonTable";
 import PhotoPlaceholder from "@/components/PhotoPlaceholder";
 import { cn } from "@/lib/utils";
+import { resolveImageSrc } from "@/lib/resolveImageSrc";
+import turkeyRealEstatePhoto from "@/assets/turkey-citizenship-by-investment-real-estate.webp";
+import panamaQualifiedInvestorPhoto from "@/assets/argentina-citizenship-vs-panama-qualified-investor.webp";
+import paraguayInvestorPassPhoto from "@/assets/argentina-citizenship-vs-paraguay-investor-pass.webp";
 import {
   comparisonTables,
   type ComparisonTableId,
 } from "@/data/comparisonTables";
+
+const comparisonPhotoSrc: Partial<Record<ComparisonTableId, string>> = {
+  turkey: resolveImageSrc(turkeyRealEstatePhoto),
+  panama: resolveImageSrc(panamaQualifiedInvestorPhoto),
+  paraguay: resolveImageSrc(paraguayInvestorPassPhoto),
+};
 
 interface ComparisonBlockProps {
   id: ComparisonTableId;
@@ -28,6 +38,7 @@ const ComparisonBlock = ({ id, className }: ComparisonBlockProps) => {
               key={photo.label}
               label={photo.label}
               alt={photo.alt}
+              src={comparisonPhotoSrc[id]}
               className="my-0"
             />
           ))}

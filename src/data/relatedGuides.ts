@@ -139,3 +139,20 @@ export const defaultInquiryCard = {
   body: "Legal and tax counsel on Argentine investment nationality can be arranged through this office.",
   ctaLabel: "Inquire",
 } as const;
+
+export type InquiryCardOverride = {
+  eyebrow?: string;
+  fieldLabel?: string;
+  fieldPlaceholder?: string;
+  variant?: "default" | "counsel";
+};
+
+/** Page-scoped InquiryCard overrides. Guides omitted here use InquiryCard defaults. */
+export const inquiryCardOverrides: Partial<Record<string, InquiryCardOverride>> = {
+  "argentina-citizenship-investment-vs-turkey": {
+    eyebrow: "Considering Argentina From Abroad?",
+    fieldLabel: "Country of origin",
+    fieldPlaceholder: "e.g. Canada, Brazil, United Kingdom",
+    variant: "counsel",
+  },
+};
