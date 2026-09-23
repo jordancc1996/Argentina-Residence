@@ -24,8 +24,8 @@ export const comparisonTables = {
   caribbean: {
     columns: ["Argentina", "Dominica", "Grenada"],
     photos: [
-      { label: "Dominica", alt: "Roseau, Dominica skyline" },
-      { label: "Grenada", alt: "St. George's, Grenada skyline" },
+      { label: "Dominica", alt: "Roseau, Dominica: Dominica citizenship by investment program" },
+      { label: "Grenada", alt: "St. George's, Grenada: Grenada citizenship by investment program" },
     ],
     rows: buildRows({
       "Legal structure": [
