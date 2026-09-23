@@ -1,0 +1,20 @@
+---
+import CompareOptionsModal from './CompareOptionsModal';
+
+interface Props {
+  triggerLabel: string;
+  heading?: string;
+  description?: string;
+  wrapper?: 'mdx' | 'none';
+}
+
+const { triggerLabel, heading, description, wrapper = 'mdx' } = Astro.props;
+---
+
+<CompareOptionsModal
+  client:load
+  triggerLabel={triggerLabel}
+  heading={heading}
+  description={description}
+  wrapper={wrapper}
+/>
