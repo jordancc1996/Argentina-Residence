@@ -131,7 +131,10 @@ export const relatedRegistry: RelatedEntry[] = [
     href: "/guides/argentina-cbi-vs-caribbean-citizenship",
     collection: "guides",
     cluster: "comparison",
-    siblings: [],
+    siblings: [
+      "argentina-citizenship-investment-vs-paraguay",
+      "argentina-citizenship-investment-vs-panama",
+    ],
     title: "vs Caribbean Citizenship",
     excerpt: "Dominica and Grenada",
     category: "comparison",
@@ -199,6 +202,10 @@ export const relatedRegistry: RelatedEntry[] = [
     href: "/guides/argentina-citizenship-investment-due-diligence",
     collection: "guides",
     cluster: "process",
+    relatedSlugs: [
+      "argentina-citizenship-investment-business-sale",
+      "argentina-golden-visa-program",
+    ],
     title: "Due Diligence Process",
     excerpt: "Expected Checks Before Launch",
     category: "process",
@@ -209,6 +216,10 @@ export const relatedRegistry: RelatedEntry[] = [
     href: "/guides/argentina-citizenship-investment-business-sale",
     collection: "guides",
     cluster: "process",
+    relatedSlugs: [
+      "argentina-citizenship-investment-due-diligence",
+      "argentina-golden-visa-program",
+    ],
     title: "Business Sale and Startup Exits",
     excerpt: "Exit Proceeds Before Launch",
     category: "process",
