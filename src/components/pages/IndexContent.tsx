@@ -4,9 +4,9 @@ import { Button } from "@/components/ui/button";
 import { Calendar, Clock, ArrowRight } from "lucide-react";
 import GoldenVisaUpdatesSection from "@/components/GoldenVisaUpdatesSection";
 import SupportingImage from "@/components/SupportingImage";
-import casaRosadaFlag from "@/assets/hero-casa-rosada-flag.jpg";
-import argentinaPassport from "@/assets/argentina-passport.jpg";
-import flagAconcagua from "@/assets/site-photos-renamed/generic-flag-aconcagua-mountains.jpg";
+import casaRosadaFlag from "@/assets/hero-casa-rosada-flag.webp";
+import argentinaPassport from "@/assets/argentina-passport.webp";
+import flagAconcagua from "@/assets/site-photos-renamed/generic-flag-aconcagua-mountains.webp";
 
 const casaRosadaSrc =
   typeof casaRosadaFlag === "string" ? casaRosadaFlag : casaRosadaFlag.src;
@@ -34,7 +34,9 @@ const IndexContent = ({ posts }: { posts: HomepagePost[] }) => {
         backgroundImage={casaRosadaSrc}
         imageAlt="Argentine flag at Plaza de Mayo with the Casa Rosada presidential palace"
         ctaText="Explore Your Options"
-        ctaLink="/contact"
+        ctaOpensModal
+        ctaModalHeading="Compare Your Options"
+        ctaModalDescription="Counsel on investment migration routes can be arranged through this office."
         ctaSubline="Confidential guidance for qualified investors"
       />
 

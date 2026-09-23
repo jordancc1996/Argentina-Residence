@@ -11,6 +11,8 @@ dateModified: "2026-09-22"
 lastUpdatedDate: "2026-09-22"
 ---
 
+import outlookPhoto from '../../assets/argentina-citizenship-investment-outlook.webp'
+
 Argentina citizenship by investment vs Turkey citizenship by investment compares two routes to nationality that are currently at very different stages. Turkey has an operating citizenship-by-investment program, while Argentina's investment citizenship pathway is not yet accepting applications.
 
 Turkey's most common route requires at least $400,000 in qualifying real estate. Argentina is expected to offer citizenship through a Treasury contribution or government bond, but the final terms have not been published.
@@ -28,9 +30,12 @@ The program is also expected to have an initial cap of approximately 5,000 appli
 
 Processing time remains unknown. These anticipated terms should not be treated as final until Argentina publishes the program's implementing rules. For the Argentine program structure independent of this comparison, see the [Argentina Golden Visa Program](/guides/argentina-golden-visa-program) guide.
 
-<p class="not-prose my-8">
-  <a href="/contact" class="inline-block font-sans font-medium text-[0.7rem] tracking-[0.22em] uppercase bg-primary px-11 py-[14px] hover:bg-primary/80 hover:-translate-y-0.5 transition-all duration-300 no-underline hover:no-underline" style="color: hsl(var(--primary-foreground)); text-decoration: none;">Compare Your Investment Citizenship Options</a>
-</p>
+<CompareOptionsModal
+  triggerLabel="Compare Your Investment Citizenship Options"
+  heading="Compare Your Options"
+  description="Counsel on Argentine and Turkish citizenship routes can be arranged through this office."
+  wrapper="mdx"
+/>
 
 <div id="newsletter">
   <NewsletterSignup className="my-8" />
@@ -75,6 +80,7 @@ However, Argentina's anticipated investment amounts, family rules, application c
 <PhotoPlaceholder
   label="Argentina outlook"
   alt="Argentina citizenship by investment program outlook"
+  src={outlookPhoto}
   className="my-8"
 />
 
