@@ -5,6 +5,7 @@ import { resolveImageSrc } from "@/lib/resolveImageSrc";
 import turkeyRealEstatePhoto from "@/assets/turkey-citizenship-by-investment-real-estate.webp";
 import panamaQualifiedInvestorPhoto from "@/assets/argentina-citizenship-vs-panama-qualified-investor.webp";
 import paraguayInvestorPassPhoto from "@/assets/argentina-citizenship-vs-paraguay-investor-pass.webp";
+import greeceAthensPhoto from "@/assets/argentina-citizenship-vs-greece-athens.webp";
 import {
   comparisonTables,
   type ComparisonTableId,
@@ -14,6 +15,7 @@ const comparisonPhotoSrc: Partial<Record<ComparisonTableId, string>> = {
   turkey: resolveImageSrc(turkeyRealEstatePhoto),
   panama: resolveImageSrc(panamaQualifiedInvestorPhoto),
   paraguay: resolveImageSrc(paraguayInvestorPassPhoto),
+  greece: resolveImageSrc(greeceAthensPhoto),
 };
 
 interface ComparisonBlockProps {
