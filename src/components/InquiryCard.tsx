@@ -2,10 +2,13 @@ import { useId, useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
+import { Scale } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
 import { cn } from "@/lib/utils";
+
+export type InquiryCardVariant = "default" | "counsel";
 
 const inquirySchema = z.object({
   first_name: z.string().min(1, "First name is required"),
@@ -26,6 +29,9 @@ export interface InquiryCardProps {
   href?: string;
   ctaLabel?: string;
   className?: string;
+  fieldLabel?: string;
+  fieldPlaceholder?: string;
+  variant?: InquiryCardVariant;
 }
 
 const InquiryCard = ({
@@ -34,6 +40,9 @@ const InquiryCard = ({
   body = "No visa bulletin. No employer dependency. No lottery. Tell us where you are in the US process and we will tell you whether an Argentine file makes sense to track in parallel.",
   ctaLabel = "Start the Conversation",
   className,
+  fieldLabel,
+  fieldPlaceholder = "e.g. H-1B holder, EB-5 pending, EB-2 backlog, OPT",
+  variant = "default",
 }: InquiryCardProps) => {
   const { toast } = useToast();
   const fieldId = useId();
@@ -84,10 +93,16 @@ const InquiryCard = ({
   return (
     <div
       className={cn(
-        "bg-muted border border-border rounded-lg p-6 md:p-8 text-left not-prose my-8",
+        "border rounded-lg p-6 md:p-8 text-left not-prose my-8",
+        variant === "counsel"
+          ? "bg-gold/10 border-gold/30"
+          : "bg-muted border-border",
         className,
       )}
     >
+      {variant === "counsel" && (
+        <Scale className="h-5 w-5 text-gold mb-4" aria-hidden="true" />
+      )}
       {eyebrow && (
         <div className="text-[11px] uppercase tracking-widest font-semibold text-text-secondary mb-4">
           {eyebrow}
@@ -171,13 +186,16 @@ const InquiryCard = ({
               )}
             </div>
             <div>
-              <label htmlFor={`${fieldId}-status`} className="sr-only">
-                Current US immigration status
+              <label
+                htmlFor={`${fieldId}-status`}
+                className={fieldLabel ? "text-sm font-medium mb-2 block" : "sr-only"}
+              >
+                {fieldLabel ?? "Current US immigration status"}
               </label>
               <Input
                 id={`${fieldId}-status`}
                 type="text"
-                placeholder="e.g. H-1B holder, EB-5 pending, EB-2 backlog, OPT"
+                placeholder={fieldPlaceholder}
                 className="w-full"
                 aria-invalid={errors.us_immigration_status ? true : undefined}
                 aria-describedby={

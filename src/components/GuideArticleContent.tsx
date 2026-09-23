@@ -4,7 +4,11 @@ import EditorialSection from "@/components/EditorialSection";
 import InquiryCard from "@/components/InquiryCard";
 import RelatedGuideCards from "@/components/RelatedGuideCards";
 import PageFAQ from "@/components/PageFAQ";
-import { defaultInquiryCard, type RelatedGuide } from "@/data/relatedGuides";
+import {
+  defaultInquiryCard,
+  type InquiryCardOverride,
+  type RelatedGuide,
+} from "@/data/relatedGuides";
 import { Clock } from "lucide-react";
 
 export type GuideHeroImage = string | { src: string };
@@ -21,6 +25,7 @@ interface GuideArticleContentProps {
   faqPath?: string;
   /** False when the MDX body already includes an InquiryCard. */
   showBottomInquiryCard?: boolean;
+  inquiryCard?: InquiryCardOverride;
   children?: ReactNode;
 }
 
@@ -33,6 +38,7 @@ const GuideArticleContent = ({
   related,
   faqPath,
   showBottomInquiryCard = true,
+  inquiryCard,
   children,
 }: GuideArticleContentProps) => {
   return (
@@ -84,6 +90,10 @@ const GuideArticleContent = ({
             heading={defaultInquiryCard.heading}
             body={defaultInquiryCard.body}
             ctaLabel={defaultInquiryCard.ctaLabel}
+            eyebrow={inquiryCard?.eyebrow}
+            fieldLabel={inquiryCard?.fieldLabel}
+            fieldPlaceholder={inquiryCard?.fieldPlaceholder}
+            variant={inquiryCard?.variant}
           />
         </EditorialSection>
       )}
