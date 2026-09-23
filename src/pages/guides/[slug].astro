@@ -9,6 +9,7 @@ import ChecklistCard from '../../components/ChecklistCard';
 import ProcessSteps from '../../components/ProcessSteps';
 import InquiryCard from '../../components/InquiryCard';
 import NewsletterSignup from '../../components/NewsletterSignupMdx.astro';
+import CompareOptionsCta from '../../components/CompareOptionsCtaMdx.astro';
 import PhotoPlaceholder from '../../components/PhotoPlaceholder';
 import { DueDiligenceReviewGroups, BusinessSaleTimingSteps } from '../../components/guideBlocks';
 import { getRelatedGuides, inquiryCardOverrides, investorGuides } from '../../data/relatedGuides';
@@ -102,6 +103,6 @@ const schema = {
 		inquiryCard={inquiryCardOverrides[data.slug]}
 	>
 		<DateMeta publishedDate={publishedDate} lastUpdatedDate={lastUpdatedDate} />
-		<Content components={{ ComparisonBlock, ComparisonTable, KeyFactsTable, ChecklistCard, ProcessSteps, InquiryCard, NewsletterSignup, PhotoPlaceholder, DueDiligenceReviewGroups, BusinessSaleTimingSteps }} />
+		<Content components={{ ComparisonBlock, ComparisonTable, KeyFactsTable, ChecklistCard, ProcessSteps, InquiryCard, NewsletterSignup, CompareOptionsCta, PhotoPlaceholder, DueDiligenceReviewGroups, BusinessSaleTimingSteps }} />
 	</GuideArticleContent>
 </Layout>
