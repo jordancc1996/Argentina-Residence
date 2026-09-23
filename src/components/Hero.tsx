@@ -2,6 +2,7 @@ import heroImage from "@/assets/hero-aerial-buenos-aires.webp";
 import { motion } from 'framer-motion';
 import { useParallax, useScrollOpacity } from '@/hooks/useParallax';
 import CompareOptionsModal from "@/components/CompareOptionsModal";
+import PhotoPlaceholder from "@/components/PhotoPlaceholder";
 
 type HeroImageSrc = string | { src: string };
 
@@ -12,6 +13,8 @@ interface HeroProps {
   backgroundImage?: HeroImageSrc;
   imageAlt?: string;
   overlay?: boolean;
+  placeholder?: boolean;
+  placeholderLabel?: string;
   ctaText?: string;
   ctaLink?: string;
   ctaSubline?: string;
@@ -30,6 +33,8 @@ const Hero = ({
   backgroundImage = heroImage,
   imageAlt = "Argentina landscape",
   overlay = true,
+  placeholder = false,
+  placeholderLabel = "Hero photograph",
   ctaText,
   ctaLink,
   ctaSubline,
@@ -39,7 +44,7 @@ const Hero = ({
 }: HeroProps) => {
   const parallaxY = useParallax(-0.3);
   const opacity = useScrollOpacity(600);
-  const backgroundSrc = resolveHeroSrc(backgroundImage);
+  const backgroundSrc = placeholder ? undefined : resolveHeroSrc(backgroundImage);
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden -mt-[72px] pt-[72px] md:-mt-[88px] md:pt-[88px]">
@@ -48,11 +53,19 @@ const Hero = ({
         className="absolute inset-0 z-0 scale-110"
         style={{ y: parallaxY }}
       >
-        <img
-          src={backgroundSrc}
-          alt={imageAlt}
-          className="w-full h-full object-cover"
-        />
+        {backgroundSrc ? (
+          <img
+            src={backgroundSrc}
+            alt={imageAlt}
+            className="w-full h-full object-cover"
+          />
+        ) : (
+          <PhotoPlaceholder
+            variant="hero"
+            label={placeholderLabel}
+            alt={imageAlt}
+          />
+        )}
         {overlay && (
           <div className="absolute inset-0 bg-black/40" />
         )}

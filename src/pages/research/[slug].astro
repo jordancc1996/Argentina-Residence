@@ -104,7 +104,7 @@ const schema = {
 const faqPath = `/research/${data.slug}`;
 ---
 
-<Layout>
+<Layout showBreadcrumbs={false}>
 	<title slot="head">{seoTitle}</title>
 	<meta slot="head" name="description" content={description} />
 	<link slot="head" rel="canonical" href={canonical} />
@@ -132,6 +132,8 @@ const faqPath = `/research/${data.slug}`;
 		readTime={data.readTime}
 		excerpt={data.excerpt}
 		slug={data.slug}
+		heroImage={data.heroImage}
+		heroImageAlt={data.heroImageAlt}
 		faqPath={faqPath}
 		related={related}
 		previous={previous}

@@ -3,6 +3,7 @@ import { ArrowLeft, Calendar, Clock, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ShareButtons from "@/components/ShareButtons";
 import PageFAQ from "@/components/PageFAQ";
+import Hero from "@/components/Hero";
 import type { ReactNode } from "react";
 
 export interface RelatedPost {
@@ -29,6 +30,8 @@ interface BlogPostContentProps {
   readTime: string;
   excerpt: string;
   slug: string;
+  heroImage?: string;
+  heroImageAlt?: string;
   faqPath?: string;
   related: RelatedPost[];
   previous: AdjacentPost | null;
@@ -44,13 +47,25 @@ const BlogPostContent = ({
   readTime,
   excerpt,
   slug,
+  heroImage,
+  heroImageAlt,
   faqPath,
   related,
   previous,
   next,
   children,
 }: BlogPostContentProps) => {
+  const heroProps = heroImage
+    ? { backgroundImage: heroImage, imageAlt: heroImageAlt || title }
+    : {
+        placeholder: true,
+        placeholderLabel: category,
+        imageAlt: heroImageAlt || `${title} hero photograph`,
+      };
+
   return (
+    <>
+      <Hero title={title} subtitle={excerpt} {...heroProps} />
       <main className="section-padding">
         <article className="max-w-4xl mx-auto px-4 md:px-8">
           <motion.div
@@ -70,10 +85,6 @@ const BlogPostContent = ({
               <span className="inline-block px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
                 {category}
               </span>
-              
-              <h1 className="text-4xl md:text-5xl font-serif mb-6 text-foreground">
-                {title}
-              </h1>
 
               <div className="flex flex-wrap items-center gap-6 text-text-secondary">
                 <div className="flex items-center gap-2">
@@ -206,6 +217,7 @@ const BlogPostContent = ({
           </motion.div>
         </article>
       </main>
+    </>
   );
 };
 
