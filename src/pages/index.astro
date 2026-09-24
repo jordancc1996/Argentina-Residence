@@ -22,6 +22,7 @@ const posts = [...articles]
 const title = 'Argentina Golden Visa | See If You Qualify | Argentina Residence';
 const socialTitle = 'Argentina Golden Visa | Explore Ahead of Launch | Argentina Residence';
 const description = 'Explore the Argentina Golden Visa, including investment requirements, eligibility, costs, and the application process. See if you qualify.';
+const socialDescription = 'Explore the Argentina Golden Visa, including expected investment requirements, eligibility, costs, and the application process ahead of the program’s launch.';
 const canonical = 'https://argentinaresidence.com';
 const socialUrl = 'https://argentinaresidence.com/';
 const ogImage = 'https://argentinaresidence.com/argentina-golden-visa-explore-ahead-of-launch.webp';
@@ -58,7 +59,7 @@ const schema = {
 	<meta slot="head" property="og:type" content="website" />
 	<meta slot="head" property="og:site_name" content="Argentina Residence" />
 	<meta slot="head" property="og:title" content={socialTitle} />
-	<meta slot="head" property="og:description" content={description} />
+	<meta slot="head" property="og:description" content={socialDescription} />
 	<meta slot="head" property="og:url" content={socialUrl} />
 	<meta slot="head" property="og:image" content={ogImage} />
 	<meta slot="head" property="og:image:width" content="1024" />
@@ -66,7 +67,7 @@ const schema = {
 	<meta slot="head" property="og:locale" content="en_US" />
 	<meta slot="head" name="twitter:card" content="summary_large_image" />
 	<meta slot="head" name="twitter:title" content={socialTitle} />
-	<meta slot="head" name="twitter:description" content={description} />
+	<meta slot="head" name="twitter:description" content={socialDescription} />
 	<meta slot="head" name="twitter:image" content={ogImage} />
 	<script slot="head" type="application/ld+json" set:html={JSON.stringify(schema)} />
 	<IndexContent client:load posts={posts} />
