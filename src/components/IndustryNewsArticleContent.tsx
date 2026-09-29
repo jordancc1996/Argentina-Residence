@@ -39,7 +39,7 @@ const IndustryNewsArticleContent = ({
   const parallaxY = useParallax(-0.3);
 
   return (
-    <main>
+    <div>
       {image && (
         <section className="relative min-h-[50vh] overflow-hidden -mt-[72px] pt-[72px] md:-mt-[88px] md:pt-[88px]">
           <motion.div
@@ -164,7 +164,7 @@ const IndustryNewsArticleContent = ({
           </motion.div>
         </article>
       </div>
-    </main>
+    </div>
   );
 };
 

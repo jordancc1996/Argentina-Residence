@@ -10,7 +10,7 @@ import PageFAQ from "@/components/PageFAQ";
 import PhotoPlaceholder from "@/components/PhotoPlaceholder";
 import { Building2, TrendingUp, MapPin, ArrowRight } from "lucide-react";
 import type { ReactNode } from "react";
-import buenosAiresCityscape from "@/assets/buenos-aires-cityscape.jpg";
+import buenosAiresCityscape from "@/assets/buenos-aires-cityscape.webp";
 
 const related = getRelatedGuides("argentina-real-estate-investment", 5);
 
@@ -20,33 +20,25 @@ const RealEstateInvestmentContent = ({ children }: { children?: ReactNode }) => 
       name: "Puerto Madero",
       photoAlt: "Aerial view of Puerto Madero, Buenos Aires",
       description: "Buenos Aires' most exclusive waterfront district with modern high-rises and premium amenities.",
-      priceRange: "$150,000 - $2M+",
-      highlights: ["Waterfront views", "New construction", "24/7 security", "Premium amenities"],
-      appreciation: "12-15% annual growth"
+      highlights: ["Waterfront views", "New construction", "24/7 security", "Premium amenities"]
     },
     {
       name: "Palermo",
       photoAlt: "Aerial view of Palermo, Buenos Aires",
       description: "The city's largest and most diverse barrio, home to embassies, parks, and trendy neighborhoods.",
-      priceRange: "$100,000 - $800K",
-      highlights: ["Cultural hub", "Restaurant scene", "Green spaces", "High rental demand"],
-      appreciation: "10-12% annual growth"
+      highlights: ["Cultural hub", "Restaurant scene", "Green spaces", "High rental demand"]
     },
     {
       name: "Recoleta",
       photoAlt: "Aerial view of Recoleta, Buenos Aires",
       description: "Classic European-style neighborhood known for French architecture and cultural institutions.",
-      priceRange: "$120,000 - $1.5M",
-      highlights: ["Historic charm", "Museums and galleries", "Upscale dining", "Central location"],
-      appreciation: "8-10% annual growth"
+      highlights: ["Historic charm", "Museums and galleries", "Upscale dining", "Central location"]
     },
     {
       name: "Belgrano",
       photoAlt: "Aerial view of Belgrano, Buenos Aires",
       description: "Upscale residential area popular with families and expats, featuring tree-lined streets.",
-      priceRange: "$100,000 - $600K",
-      highlights: ["Family-friendly", "International schools", "Parks", "Quiet streets"],
-      appreciation: "9-11% annual growth"
+      highlights: ["Family-friendly", "International schools", "Parks", "Quiet streets"]
     }
   ];
 
@@ -87,11 +79,15 @@ const RealEstateInvestmentContent = ({ children }: { children?: ReactNode }) => 
           Prime Investment Neighborhoods
         </h2>
         <p className="text-text-secondary text-center mb-12 max-w-2xl mx-auto">
-          Buenos Aires offers exceptional real estate opportunities in world-class neighborhoods, with strong appreciation potential. Neighborhood pricing and buyer activity are covered in the{" "}
+          Neighborhood pricing and buyer activity are covered in the{" "}
           <a href="/research/buenos-aires-real-estate-bull-market-analysis" className="text-primary hover:underline">
             Buenos Aires real estate bull market
           </a>{" "}
-          analysis.
+          analysis. A separate note on foreign buyers is the{" "}
+          <a href="/industry-news/buenos-aires-foreign-buyer-activity-q1" className="text-primary hover:underline">
+            Buenos Aires foreign-buyer activity
+          </a>{" "}
+          brief. Neighborhood purchase-price ranges and appreciation rates were removed because no Colegio de Escribanos or official series was found to support them.
         </p>
         
         <div className="grid md:grid-cols-2 gap-8">
@@ -109,14 +105,6 @@ const RealEstateInvestmentContent = ({ children }: { children?: ReactNode }) => 
                 <div className="flex items-start justify-between mb-4">
                   <div>
                     <h3 className="font-serif text-lg-editorial mb-1">{neighborhood.name}</h3>
-                    <div className="flex items-center gap-2 text-gold text-sm">
-                      <TrendingUp className="h-4 w-4" />
-                      {neighborhood.appreciation}
-                    </div>
-                  </div>
-                  <div className="text-right">
-                    <p className="text-sm text-text-muted">Price Range</p>
-                    <p className="font-semibold text-text-primary">{neighborhood.priceRange}</p>
                   </div>
                 </div>
                 

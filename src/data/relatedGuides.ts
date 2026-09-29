@@ -1,15 +1,15 @@
 import type { ImageSrc } from "@/lib/resolveImageSrc";
 import { getRelatedEntries } from "@/data/relatedContent";
-import goldenVisaHero from "@/assets/argentina-golden-visa-flag-hero.jpg";
-import realEstateHero from "@/assets/buenos-aires-cityscape.jpg";
-import dueDiligenceHero from "@/assets/argentina-citizenship-due-diligence-process.jpg";
-import businessSaleHero from "@/assets/argentina-business-sale-startup-exit.jpg";
-import visaBacklogHero from "@/assets/argentina-citizenship-investment-us-visa-backlog-american-flag.jpg";
-import caribbeanHero from "@/assets/argentina-citizenship-vs-caribbean-citizenship-by-investment.jpg";
-import greeceHero from "@/assets/argentina-citizenship-vs-greece-golden-visa.jpg";
-import turkeyHero from "@/assets/argentina-citizenship-vs-turkey-citizenship-by-investment.jpg";
-import paraguayHero from "@/assets/argentina-citizenship-vs-paraguay-residency-by-investment.jpg";
-import panamaHero from "@/assets/argentina-citizenship-vs-panama-residency-by-investment.jpg";
+import goldenVisaHero from "@/assets/argentina-golden-visa-flag-hero.webp";
+import realEstateHero from "@/assets/buenos-aires-cityscape.webp";
+import dueDiligenceHero from "@/assets/argentina-citizenship-due-diligence-process.webp";
+import businessSaleHero from "@/assets/argentina-business-sale-startup-exit.webp";
+import visaBacklogHero from "@/assets/argentina-citizenship-investment-us-visa-backlog-american-flag.webp";
+import caribbeanHero from "@/assets/argentina-citizenship-vs-caribbean-citizenship-by-investment.webp";
+import greeceHero from "@/assets/argentina-citizenship-vs-greece-golden-visa.webp";
+import turkeyHero from "@/assets/argentina-citizenship-vs-turkey-citizenship-by-investment.webp";
+import paraguayHero from "@/assets/argentina-citizenship-vs-paraguay-residency-by-investment.webp";
+import panamaHero from "@/assets/argentina-citizenship-vs-panama-residency-by-investment.webp";
 
 export type GuideCategory = "comparison" | "process" | "program" | "real-estate";
 
@@ -46,7 +46,7 @@ export const investorGuides: RelatedGuide[] = [
   {
     slug: "argentina-citizenship-investment-due-diligence",
     href: "/guides/argentina-citizenship-investment-due-diligence",
-    title: "Due Diligence Process",
+    title: "Argentina CBI Due Diligence",
     description: "Expected Checks Before Launch",
     category: "process",
     heroImage: dueDiligenceHero,
@@ -55,7 +55,7 @@ export const investorGuides: RelatedGuide[] = [
   {
     slug: "argentina-citizenship-investment-business-sale",
     href: "/guides/argentina-citizenship-investment-business-sale",
-    title: "Business Sale and Startup Exits",
+    title: "Argentina CBI After a Business Sale",
     description: "Exit Proceeds Before Launch",
     category: "process",
     heroImage: businessSaleHero,
@@ -64,7 +64,7 @@ export const investorGuides: RelatedGuide[] = [
   {
     slug: "argentina-citizenship-investment-us-visa-backlog",
     href: "/guides/argentina-citizenship-investment-us-visa-backlog",
-    title: "US Visa Backlog Timing",
+    title: "Argentina CBI and the US Visa Backlog",
     description: "A Parallel Track",
     category: "process",
     heroImage: visaBacklogHero,
@@ -73,7 +73,7 @@ export const investorGuides: RelatedGuide[] = [
   {
     slug: "argentina-cbi-vs-caribbean-citizenship",
     href: "/guides/argentina-cbi-vs-caribbean-citizenship",
-    title: "vs Caribbean Citizenship",
+    title: "Argentina CBI vs Caribbean Citizenship",
     description: "Dominica and Grenada",
     category: "comparison",
     heroImage: caribbeanHero,
@@ -82,7 +82,7 @@ export const investorGuides: RelatedGuide[] = [
   {
     slug: "argentina-citizenship-investment-vs-greece-golden-visa",
     href: "/guides/argentina-citizenship-investment-vs-greece-golden-visa",
-    title: "vs Greece Golden Visa",
+    title: "Argentina CBI vs Greece Golden Visa",
     description: "Location-Tiered Property Residency",
     category: "comparison",
     heroImage: greeceHero,
@@ -91,7 +91,7 @@ export const investorGuides: RelatedGuide[] = [
   {
     slug: "argentina-citizenship-investment-vs-turkey",
     href: "/guides/argentina-citizenship-investment-vs-turkey",
-    title: "vs Turkey Citizenship",
+    title: "Argentina CBI vs Turkey Citizenship",
     description: "Operating Property Citizenship",
     category: "comparison",
     heroImage: turkeyHero,
@@ -100,7 +100,7 @@ export const investorGuides: RelatedGuide[] = [
   {
     slug: "argentina-citizenship-investment-vs-paraguay",
     href: "/guides/argentina-citizenship-investment-vs-paraguay",
-    title: "vs Paraguay Investor Pass",
+    title: "Argentina CBI vs Paraguay Residency",
     description: "Mercosur Residence versus Unpublished Nationality",
     category: "comparison",
     heroImage: paraguayHero,
@@ -109,7 +109,7 @@ export const investorGuides: RelatedGuide[] = [
   {
     slug: "argentina-citizenship-investment-vs-panama",
     href: "/guides/argentina-citizenship-investment-vs-panama",
-    title: "vs Panama",
+    title: "Argentina CBI vs Panama Residency",
     description: "Friendly Nations and Qualified Investor Residence",
     category: "comparison",
     heroImage: panamaHero,

@@ -20,6 +20,8 @@ const articles = defineCollection({
     author: z.string(),
     image: z.string().optional(),
     imageAlt: z.string().optional(),
+    heroImage: z.string().optional(),
+    heroImageAlt: z.string().optional(),
     seoTitle: z.string().optional(),
     seoDescription: z.string().optional(),
     keywords: z.array(z.string()).optional(),

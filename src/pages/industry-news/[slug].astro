@@ -33,10 +33,40 @@ const { Content } = await render(article);
 const data = article.data;
 
 const title = `${data.title} | Argentina Residence`;
-const description = data.summary.substring(0, 155);
+const description = data.summary;
 const canonical = `https://argentinaresidence.com/industry-news/${data.slug}`;
-const ogImage = 'https://argentinaresidence.com/og-image.jpg';
+const ogImage = 'https://argentinaresidence.com/og-image.webp';
+const articleImage = data.image
+  ? `https://argentinaresidence.com${data.image}`
+  : ogImage;
 const faqPath = `/industry-news/${data.slug}`;
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": data.title,
+  "description": data.summary,
+  "datePublished": data.publishedDate || data.date,
+  "dateModified": data.lastUpdatedDate || data.publishedDate || data.date,
+  "author": {
+    "@type": "Organization",
+    "name": "Argentina Residence"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Argentina Residence",
+    "url": "https://argentinaresidence.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://argentinaresidence.com/og-image.webp"
+    }
+  },
+  "image": articleImage,
+  "url": canonical,
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": canonical
+  }
+};
 ---
 
 <Layout>
@@ -44,7 +74,7 @@ const faqPath = `/industry-news/${data.slug}`;
 	<meta slot="head" name="description" content={description} />
 	<link slot="head" rel="canonical" href={canonical} />
 	<meta slot="head" name="robots" content="index, follow" />
-	<meta slot="head" property="og:type" content="website" />
+	<meta slot="head" property="og:type" content="article" />
 	<meta slot="head" property="og:site_name" content="Argentina Residence" />
 	<meta slot="head" property="og:title" content={title} />
 	<meta slot="head" property="og:description" content={description} />
@@ -57,6 +87,7 @@ const faqPath = `/industry-news/${data.slug}`;
 	<meta slot="head" name="twitter:title" content={title} />
 	<meta slot="head" name="twitter:description" content={description} />
 	<meta slot="head" name="twitter:image" content={ogImage} />
+	<script slot="head" type="application/ld+json" set:html={JSON.stringify(schema)} />
 	<IndustryNewsArticleContent
 		client:load
 		title={data.title}

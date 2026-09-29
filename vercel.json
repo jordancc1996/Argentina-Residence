@@ -1,13 +1,657 @@
 {
   "redirects": [
-    { "source": "/faq/investment-requirements", "destination": "/faq/argentina-citizenship-investment-requirements", "permanent": true },
-    { "source": "/faq/application-process-timeline", "destination": "/faq/argentina-citizenship-investment-application-timeline", "permanent": true },
-    { "source": "/faq/residency-requirements", "destination": "/faq/argentina-residency-physical-presence", "permanent": true },
-    { "source": "/faq/family-members-residency", "destination": "/faq/argentina-citizenship-investment-family", "permanent": true },
-    { "source": "/faq/required-documents", "destination": "/faq/argentina-citizenship-investment-documents", "permanent": true },
-    { "source": "/faq/work-rights", "destination": "/faq/argentina-residency-work-rights", "permanent": true },
-    { "source": "/faq/tax-implications", "destination": "/faq/argentina-residency-tax-implications", "permanent": true },
-    { "source": "/faq/visa-free-travel", "destination": "/faq/argentina-visa-free-travel", "permanent": true },
-    { "source": "/faq/maintain-residency-status", "destination": "/faq/maintain-argentina-residency", "permanent": true }
+    {
+      "source": "/about-argentina",
+      "destination": "/program",
+      "permanent": true
+    },
+    {
+      "source": "/golden-visa",
+      "destination": "/program",
+      "permanent": true
+    },
+    {
+      "source": "/contact-us",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/guides",
+      "destination": "/resources",
+      "permanent": true
+    },
+    {
+      "source": "/blog",
+      "destination": "/research",
+      "permanent": true
+    },
+    {
+      "source": "/blog/argentina-citizenship-by-investment-launch-date",
+      "destination": "/research/argentina-citizenship-by-investment-launch-date",
+      "permanent": true
+    },
+    {
+      "source": "/blog/argentine-investment-landscape-golden-visa-value-proposition",
+      "destination": "/research/argentine-investment-landscape-golden-visa-value-proposition",
+      "permanent": true
+    },
+    {
+      "source": "/blog/buenos-aires-real-estate-bull-market-analysis",
+      "destination": "/research/buenos-aires-real-estate-bull-market-analysis",
+      "permanent": true
+    },
+    {
+      "source": "/blog/american-dream-argentina-golden-visa-solution",
+      "destination": "/research/american-dream-argentina-golden-visa-solution",
+      "permanent": true
+    },
+    {
+      "source": "/blog/argentina-citizenship-investment-american-investors",
+      "destination": "/research/argentina-citizenship-investment-american-investors",
+      "permanent": true
+    },
+    {
+      "source": "/blog/argentina-golden-visa-american-investors-2026",
+      "destination": "/research/argentina-golden-visa-american-investors-2026",
+      "permanent": true
+    },
+    {
+      "source": "/faq/investment-requirements",
+      "destination": "/faq/argentina-citizenship-investment-requirements",
+      "permanent": true
+    },
+    {
+      "source": "/faq/application-process-timeline",
+      "destination": "/faq/argentina-citizenship-investment-application-timeline",
+      "permanent": true
+    },
+    {
+      "source": "/faq/residency-requirements",
+      "destination": "/faq/argentina-residency-physical-presence",
+      "permanent": true
+    },
+    {
+      "source": "/faq/family-members-residency",
+      "destination": "/faq/argentina-citizenship-investment-family",
+      "permanent": true
+    },
+    {
+      "source": "/faq/required-documents",
+      "destination": "/faq/argentina-citizenship-investment-documents",
+      "permanent": true
+    },
+    {
+      "source": "/faq/work-rights",
+      "destination": "/faq/argentina-residency-work-rights",
+      "permanent": true
+    },
+    {
+      "source": "/faq/tax-implications",
+      "destination": "/faq/argentina-residency-tax-implications",
+      "permanent": true
+    },
+    {
+      "source": "/faq/visa-free-travel",
+      "destination": "/faq/argentina-visa-free-travel",
+      "permanent": true
+    },
+    {
+      "source": "/faq/maintain-residency-status",
+      "destination": "/faq/maintain-argentina-residency",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/markdown/index.md",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/markdown; charset=utf-8"
+        },
+        {
+          "key": "Link",
+          "value": "<https://argentinaresidence.com>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/markdown/about.md",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/markdown; charset=utf-8"
+        },
+        {
+          "key": "Link",
+          "value": "<https://argentinaresidence.com/about>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/markdown/argentina-golden-visa-eligibility-checker.md",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/markdown; charset=utf-8"
+        },
+        {
+          "key": "Link",
+          "value": "<https://argentinaresidence.com/argentina-golden-visa-eligibility-checker>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/markdown/compliance.md",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/markdown; charset=utf-8"
+        },
+        {
+          "key": "Link",
+          "value": "<https://argentinaresidence.com/compliance>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/markdown/contact.md",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/markdown; charset=utf-8"
+        },
+        {
+          "key": "Link",
+          "value": "<https://argentinaresidence.com/contact>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/markdown/faq.md",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/markdown; charset=utf-8"
+        },
+        {
+          "key": "Link",
+          "value": "<https://argentinaresidence.com/faq>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/markdown/faq/argentina-citizenship-investment-application-timeline.md",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/markdown; charset=utf-8"
+        },
+        {
+          "key": "Link",
+          "value": "<https://argentinaresidence.com/faq/argentina-citizenship-investment-application-timeline>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/markdown/faq/argentina-citizenship-investment-documents.md",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/markdown; charset=utf-8"
+        },
+        {
+          "key": "Link",
+          "value": "<https://argentinaresidence.com/faq/argentina-citizenship-investment-documents>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/markdown/faq/argentina-citizenship-investment-family.md",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/markdown; charset=utf-8"
+        },
+        {
+          "key": "Link",
+          "value": "<https://argentinaresidence.com/faq/argentina-citizenship-investment-family>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/markdown/faq/argentina-citizenship-investment-requirements.md",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/markdown; charset=utf-8"
+        },
+        {
+          "key": "Link",
+          "value": "<https://argentinaresidence.com/faq/argentina-citizenship-investment-requirements>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/markdown/faq/argentina-residency-physical-presence.md",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/markdown; charset=utf-8"
+        },
+        {
+          "key": "Link",
+          "value": "<https://argentinaresidence.com/faq/argentina-residency-physical-presence>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/markdown/faq/argentina-residency-tax-implications.md",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/markdown; charset=utf-8"
+        },
+        {
+          "key": "Link",
+          "value": "<https://argentinaresidence.com/faq/argentina-residency-tax-implications>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/markdown/faq/argentina-residency-work-rights.md",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/markdown; charset=utf-8"
+        },
+        {
+          "key": "Link",
+          "value": "<https://argentinaresidence.com/faq/argentina-residency-work-rights>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/markdown/faq/argentina-visa-free-travel.md",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/markdown; charset=utf-8"
+        },
+        {
+          "key": "Link",
+          "value": "<https://argentinaresidence.com/faq/argentina-visa-free-travel>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/markdown/faq/maintain-argentina-residency.md",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/markdown; charset=utf-8"
+        },
+        {
+          "key": "Link",
+          "value": "<https://argentinaresidence.com/faq/maintain-argentina-residency>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/markdown/faq/what-is-argentina-golden-visa.md",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/markdown; charset=utf-8"
+        },
+        {
+          "key": "Link",
+          "value": "<https://argentinaresidence.com/faq/what-is-argentina-golden-visa>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/markdown/guides/argentina-cbi-vs-caribbean-citizenship.md",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/markdown; charset=utf-8"
+        },
+        {
+          "key": "Link",
+          "value": "<https://argentinaresidence.com/guides/argentina-cbi-vs-caribbean-citizenship>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/markdown/guides/argentina-citizenship-investment-business-sale.md",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/markdown; charset=utf-8"
+        },
+        {
+          "key": "Link",
+          "value": "<https://argentinaresidence.com/guides/argentina-citizenship-investment-business-sale>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/markdown/guides/argentina-citizenship-investment-due-diligence.md",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/markdown; charset=utf-8"
+        },
+        {
+          "key": "Link",
+          "value": "<https://argentinaresidence.com/guides/argentina-citizenship-investment-due-diligence>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/markdown/guides/argentina-citizenship-investment-us-visa-backlog.md",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/markdown; charset=utf-8"
+        },
+        {
+          "key": "Link",
+          "value": "<https://argentinaresidence.com/guides/argentina-citizenship-investment-us-visa-backlog>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/markdown/guides/argentina-citizenship-investment-vs-greece-golden-visa.md",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/markdown; charset=utf-8"
+        },
+        {
+          "key": "Link",
+          "value": "<https://argentinaresidence.com/guides/argentina-citizenship-investment-vs-greece-golden-visa>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/markdown/guides/argentina-citizenship-investment-vs-panama.md",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/markdown; charset=utf-8"
+        },
+        {
+          "key": "Link",
+          "value": "<https://argentinaresidence.com/guides/argentina-citizenship-investment-vs-panama>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/markdown/guides/argentina-citizenship-investment-vs-paraguay.md",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/markdown; charset=utf-8"
+        },
+        {
+          "key": "Link",
+          "value": "<https://argentinaresidence.com/guides/argentina-citizenship-investment-vs-paraguay>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/markdown/guides/argentina-citizenship-investment-vs-turkey.md",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/markdown; charset=utf-8"
+        },
+        {
+          "key": "Link",
+          "value": "<https://argentinaresidence.com/guides/argentina-citizenship-investment-vs-turkey>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/markdown/guides/argentina-golden-visa-program.md",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/markdown; charset=utf-8"
+        },
+        {
+          "key": "Link",
+          "value": "<https://argentinaresidence.com/guides/argentina-golden-visa-program>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/markdown/guides/argentina-real-estate-investment.md",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/markdown; charset=utf-8"
+        },
+        {
+          "key": "Link",
+          "value": "<https://argentinaresidence.com/guides/argentina-real-estate-investment>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/markdown/industry-news.md",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/markdown; charset=utf-8"
+        },
+        {
+          "key": "Link",
+          "value": "<https://argentinaresidence.com/industry-news>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/markdown/industry-news/argentina-citizenship-investment-vs-portugal-golden-visa.md",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/markdown; charset=utf-8"
+        },
+        {
+          "key": "Link",
+          "value": "<https://argentinaresidence.com/industry-news/argentina-citizenship-investment-vs-portugal-golden-visa>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/markdown/industry-news/buenos-aires-foreign-buyer-activity-q1.md",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/markdown; charset=utf-8"
+        },
+        {
+          "key": "Link",
+          "value": "<https://argentinaresidence.com/industry-news/buenos-aires-foreign-buyer-activity-q1>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/markdown/industry-news/decree-524-2025-progress-update.md",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/markdown; charset=utf-8"
+        },
+        {
+          "key": "Link",
+          "value": "<https://argentinaresidence.com/industry-news/decree-524-2025-progress-update>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/markdown/market-insights.md",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/markdown; charset=utf-8"
+        },
+        {
+          "key": "Link",
+          "value": "<https://argentinaresidence.com/market-insights>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/markdown/program.md",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/markdown; charset=utf-8"
+        },
+        {
+          "key": "Link",
+          "value": "<https://argentinaresidence.com/program>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/markdown/research.md",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/markdown; charset=utf-8"
+        },
+        {
+          "key": "Link",
+          "value": "<https://argentinaresidence.com/research>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/markdown/research/american-dream-argentina-golden-visa-solution.md",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/markdown; charset=utf-8"
+        },
+        {
+          "key": "Link",
+          "value": "<https://argentinaresidence.com/research/american-dream-argentina-golden-visa-solution>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/markdown/research/argentina-citizenship-by-investment-launch-date.md",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/markdown; charset=utf-8"
+        },
+        {
+          "key": "Link",
+          "value": "<https://argentinaresidence.com/research/argentina-citizenship-by-investment-launch-date>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/markdown/research/argentina-citizenship-by-investment-status.md",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/markdown; charset=utf-8"
+        },
+        {
+          "key": "Link",
+          "value": "<https://argentinaresidence.com/research/argentina-citizenship-by-investment-status>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/markdown/research/argentina-citizenship-investment-american-investors.md",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/markdown; charset=utf-8"
+        },
+        {
+          "key": "Link",
+          "value": "<https://argentinaresidence.com/research/argentina-citizenship-investment-american-investors>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/markdown/research/argentina-golden-visa-american-investors-2026.md",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/markdown; charset=utf-8"
+        },
+        {
+          "key": "Link",
+          "value": "<https://argentinaresidence.com/research/argentina-golden-visa-american-investors-2026>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/markdown/research/argentine-investment-landscape-golden-visa-value-proposition.md",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/markdown; charset=utf-8"
+        },
+        {
+          "key": "Link",
+          "value": "<https://argentinaresidence.com/research/argentine-investment-landscape-golden-visa-value-proposition>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/markdown/research/buenos-aires-real-estate-bull-market-analysis.md",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/markdown; charset=utf-8"
+        },
+        {
+          "key": "Link",
+          "value": "<https://argentinaresidence.com/research/buenos-aires-real-estate-bull-market-analysis>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/markdown/resources.md",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/markdown; charset=utf-8"
+        },
+        {
+          "key": "Link",
+          "value": "<https://argentinaresidence.com/resources>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/llms.txt",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/plain; charset=utf-8"
+        }
+      ]
+    },
+    {
+      "source": "/content-index.json",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json; charset=utf-8"
+        }
+      ]
+    }
   ]
 }

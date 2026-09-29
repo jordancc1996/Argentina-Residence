@@ -6,46 +6,58 @@ import NewsletterSignup from "@/components/NewsletterSignup";
 import SupportingImage from "@/components/SupportingImage";
 import PageFAQ from "@/components/PageFAQ";
 import casaRosadaGoldenHour from "@/assets/site-photos-renamed/casa-rosada-plaza-de-mayo-golden-hour.webp";
+import { programStatus } from "@/data/programStatus";
 
 const ProgramContent = () => {
   return (
     <>
       <Hero
-        title="Argentina Residency by Investment: The Fastest Path to a Global Passport"
-        subtitle="Secure permanent residency in one of South America's most vibrant economies. With a strategic investment, you can pursue Argentine citizenship, gaining visa-free access to over 170 destinations and a gateway to the MERCOSUR region."
+        title="Argentina Golden Visa Program Overview"
+        subtitle="Government applications are not currently open. This is a short overview of the anticipated program."
         backgroundImage="/argentina-golden-visa-2026.webp"
         imageAlt="Argentine flag with the Sun of May against a clear sky"
-        ctaText="Request Program Details"
-        ctaOpensModal
-        ctaModalHeading="Get Program Details"
-        ctaModalDescription="Counsel on Argentina's residency-by-investment program can be arranged through this office."
+        ctaText="Join the Waitlist"
+        ctaLink="/argentina-golden-visa-eligibility-checker"
+        ctaSubline={programStatus.waitlistDisclaimer}
       />
       
       <EditorialSection>
         <h2 className="font-serif text-xl-editorial mb-8 tracking-wide">
-          Argentina's Residency by Investment Program offers unparalleled opportunities for global investors seeking South American residency.
+          Argentina's Golden Visa is an anticipated citizenship-by-investment framework. Government applications are not open.
         </h2>
         <p className="text-editorial text-text-secondary mb-8 tracking-wide">
-          The{" "}
+          Whether applications are open is answered on the{" "}
+          <a href="/research/argentina-citizenship-by-investment-status" className="text-primary hover:underline">
+            citizenship by investment status
+          </a>{" "}
+          page. Launch timing is on the{" "}
+          <a href="/research/argentina-citizenship-by-investment-launch-date" className="text-primary hover:underline">
+            launch date
+          </a>{" "}
+          page. The{" "}
           <a href="/guides/argentina-golden-visa-program" className="text-primary hover:underline">
             Argentina Golden Visa program guide
           </a>{" "}
-          is the full 2026 investor write-up. This page is the short program overview.
+          is the longer write-up. This page is the short overview.
         </p>
         <p className="text-editorial text-text-secondary mb-12 tracking-wide">
-          Our program is synonymous with exceptional value and strategic advantage.
+          The Argentina Residence waitlist is this firm's list for updates. Joining it does not file a government application, reserve a filing place, or grant residency or citizenship. Whether a stay in Argentina is anticipated is on the{" "}
+          <a href="/faq/argentina-residency-physical-presence" className="text-primary hover:underline">physical presence</a>{" "}
+          page. Expected papers are on the{" "}
+          <a href="/faq/argentina-citizenship-investment-documents" className="text-primary hover:underline">documents</a>{" "}
+          page.
         </p>
       </EditorialSection>
       
       <EditorialSection className="bg-secondary/30">
         <div className="grid md:grid-cols-2 gap-16 text-left">
           <div>
-            <h2 className="font-serif text-xl-editorial mb-6 tracking-wide">Investment Requirements</h2>
+            <h2 className="font-serif text-xl-editorial mb-6 tracking-wide">Investment Amount Not Enacted</h2>
             <p className="text-body text-text-secondary mb-6 tracking-wide">
-              Two paths are currently anticipated, subject to final regulation: a non-refundable $500,000 USD contribution to the Argentine Treasury, or a $1,000,000 USD investment in a 7-year, 0% interest Argentine government bond, with principal returned at maturity. These paths have not been published in the Official Gazette (Boletín Oficial). Real estate, business or startup ventures, and investment funds are not anticipated qualifying paths. APCI has not published operational regulations and is not processing applications.
+              Decree 524/2025 does not set a dollar amount. It assigns a relevant investment to the Ministry of Economy. Secondary reports have described a $500,000 USD Treasury contribution and a $1,000,000 USD seven-year bond. Those figures were not found in an enacted regulation, so they are not current qualifying requirements. The decree also does not name real estate, a business, or a fund as a qualifying asset. APCI is not processing citizenship applications.
             </p>
             <p className="text-body text-text-secondary tracking-wide mb-4">
-              An initial cap near 5,000 applications is anticipated, as is a single biometrics visit after approval. Neither figure has been officially confirmed.
+              A cancelled consultancy tender described four years or 5,000 APCI recommendation reports, whichever came first. That quantity is not a statutory application cap. Decree 524/2025 does not require a biometrics visit.
             </p>
             <SupportingImage
               className="mx-0 max-w-none my-6"
@@ -59,14 +71,17 @@ const ProgramContent = () => {
           </div>
           
           <div>
-            <h2 className="font-serif text-xl-editorial mb-6 tracking-wide">Program Benefits</h2>
+            <h2 className="font-serif text-xl-editorial mb-6 tracking-wide">Anticipated Program Characteristics</h2>
+            <p className="text-body text-text-secondary mb-6 tracking-wide">
+              The points below describe characteristics discussed for the anticipated program. They are not benefits of an open government application.
+            </p>
             <ul className="text-body text-text-secondary space-y-4 tracking-wide mb-4">
-              <li>• Temporary residence visa with <a href="/faq/argentina-residency-work-rights" className="text-primary hover:underline">work authorization</a></li>
-              <li>• Access to Argentina's comprehensive healthcare system</li>
-              <li>• Favorable <a href="/faq/argentina-residency-tax-implications" className="text-primary hover:underline">tax treatment</a> for foreign investors</li>
-              <li>• Anticipated pathway to permanent residency after two years, though this has not been officially confirmed</li>
-              <li>• <a href="/faq/argentina-visa-free-travel" className="text-primary hover:underline">Visa-free travel</a> to 170+ countries</li>
-              <li>• <a href="/faq/argentina-citizenship-investment-family" className="text-primary hover:underline">Family inclusion</a> for spouse and children under 18; status of dependents 18 and older is unknown</li>
+              <li>• Anticipated temporary residence with <a href="/faq/argentina-residency-work-rights" className="text-primary hover:underline">work authorization</a>, not currently issued through this program</li>
+              <li>• Healthcare access is discussed for residents generally. It is not a confirmed Golden Visa benefit</li>
+              <li>• Tax treatment is not a confirmed investor exemption. See <a href="/faq/argentina-residency-tax-implications" className="text-primary hover:underline">tax implications</a></li>
+              <li>• An anticipated pathway to permanent residency after two years has not been officially confirmed</li>
+              <li>• <a href="/faq/argentina-visa-free-travel" className="text-primary hover:underline">Passport access</a> follows the Henley Passport Index score for an Argentine passport, if one is later issued. It is not a right of residency today.</li>
+              <li>• Anticipated <a href="/faq/argentina-citizenship-investment-family" className="text-primary hover:underline">family inclusion</a> for a spouse and children under 18. Status of dependents 18 and older is unknown</li>
             </ul>
           </div>
         </div>
@@ -75,39 +90,39 @@ const ProgramContent = () => {
       <EditorialSection centered={false} className="!pt-12">
         <ScrollytellingSteps
           className="-mt-20"
-          eyebrow="A Bespoke Process"
-          heading="From first conversation to approved residency"
-          intro="Our advisory team guides qualified investors through every stage: discreetly, methodically, and in close coordination with licensed immigration counsel."
+          eyebrow="Before any government filing"
+          heading="Preparation while government applications are closed"
+          intro="Argentina Residence can explain the anticipated program and keep you on its own waitlist. That work does not file, reserve, or approve a government application."
           steps={[
             {
               label: "Step 1",
-              title: "Initial Consultation",
+              title: "Initial Conversation",
               description:
-                "Comprehensive assessment of your investment objectives and residency goals. Our team provides detailed guidance on investment options and program requirements.",
+                "A discussion of objectives against the anticipated program. This is not a government eligibility determination.",
             },
             {
               label: "Step 2",
-              title: "Eligibility and Strategy",
+              title: "Compare Anticipated Paths",
               description:
-                "We evaluate your profile against the program's qualifying criteria and design an investment route tailored to your timeline, family situation, and risk tolerance.",
+                "Decree 524/2025 does not set $500,000 or $1,000,000. Those reported figures are not an open filing option.",
             },
             {
               label: "Step 3",
-              title: "Documentation and Investment",
+              title: "Document Preparation",
               description:
-                "Complete preparation of required documentation and facilitation of your investment. We handle all legal requirements and coordinate with local authorities.",
+                "Source-of-funds records can be organized before a filing channel exists. Organizing documents does not submit an application.",
             },
             {
               label: "Step 4",
-              title: "Application Filing",
+              title: "No Government Filing Today",
               description:
-                "Your dossier is filed with the Dirección Nacional de Migraciones by licensed immigration counsel, with full ongoing case management until decision.",
+                "APCI is not processing applications. A dossier cannot be filed as a Golden Visa application while that remains the case. See the status page.",
             },
             {
               label: "Step 5",
-              title: "Residency Approval",
+              title: "If Applications Later Open",
               description:
-                "Final review and approval once APCI is processing files. Processing time is not yet officially confirmed. Upon approval, receive your temporary residence visa and begin your Argentine residency journey.",
+                "Any later filing would be a separate government process. Processing time is not confirmed. The Argentina Residence waitlist would not create government priority.",
             },
           ]}
         />
@@ -122,17 +137,24 @@ const ProgramContent = () => {
 
         <div className="mt-16 text-center">
           <p className="text-body text-text-secondary mb-6 tracking-wide">
-            Ready to begin your application? An{" "}
+            Government applications are not open. Join the{" "}
             <a href="/argentina-golden-visa-eligibility-checker" className="text-primary hover:underline">
-              eligibility assessment
+              Argentina Residence Waitlist
             </a>{" "}
-            is available before a consultation.
+            for updates, or request a consultation. Neither step files an application with the Argentine government.
           </p>
-          <a href="/contact">
-            <Button size="lg" className="px-12">
-              Schedule a Consultation
-            </Button>
-          </a>
+          <div className="flex flex-wrap gap-4 justify-center">
+            <a href="/argentina-golden-visa-eligibility-checker">
+              <Button size="lg" className="px-12">
+                Join the Waitlist
+              </Button>
+            </a>
+            <a href="/contact">
+              <Button size="lg" variant="outline" className="px-12">
+                Schedule a Consultation
+              </Button>
+            </a>
+          </div>
         </div>
       </EditorialSection>
     </>

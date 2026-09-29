@@ -7,6 +7,7 @@ import SupportingImage from "@/components/SupportingImage";
 import casaRosadaFlag from "@/assets/hero-casa-rosada-flag.webp";
 import argentinaPassport from "@/assets/argentina-passport.webp";
 import flagAconcagua from "@/assets/site-photos-renamed/generic-flag-aconcagua-mountains.webp";
+import { programStatus } from "@/data/programStatus";
 
 const casaRosadaSrc =
   typeof casaRosadaFlag === "string" ? casaRosadaFlag : casaRosadaFlag.src;
@@ -30,14 +31,12 @@ const IndexContent = ({ posts }: { posts: HomepagePost[] }) => {
     <>
       <Hero
         title="Argentina Golden Visa Updates"
-        subtitle="Argentina Golden Visa updates: invest in South America's most dynamic economy as the residency-by-investment program advances toward launch."
+        subtitle="Government applications for Argentina's Golden Visa are not currently open. Join the Argentina Residence waitlist for updates when a filing channel exists."
         backgroundImage={casaRosadaSrc}
         imageAlt="Argentine flag at Plaza de Mayo with the Casa Rosada presidential palace"
-        ctaText="Explore Your Options"
-        ctaOpensModal
-        ctaModalHeading="Compare Your Options"
-        ctaModalDescription="Counsel on investment migration routes can be arranged through this office."
-        ctaSubline="Confidential guidance for qualified investors"
+        ctaText="Join the Waitlist"
+        ctaLink="/argentina-golden-visa-eligibility-checker"
+        ctaSubline={programStatus.waitlistDisclaimer}
       />
 
       <EditorialSection className="pb-0">
@@ -91,7 +90,7 @@ const IndexContent = ({ posts }: { posts: HomepagePost[] }) => {
           <div className="flex flex-col">
             <h2 className="font-serif text-lg-editorial mb-4 tracking-wide">Investment Program</h2>
             <p className="text-body text-text-secondary tracking-wide mb-4 flex-1">
-              Secure temporary residency through strategic investment in Argentina.
+              Government applications are not open. This card points to the anticipated program overview.
             </p>
             <div className="mt-6">
               <a href="/program" className="inline-block font-sans font-semibold text-[0.75rem] tracking-[0.08em] uppercase border-2 border-primary text-foreground px-6 py-3 hover:bg-primary hover:text-primary-foreground transition-all duration-300">
@@ -103,7 +102,7 @@ const IndexContent = ({ posts }: { posts: HomepagePost[] }) => {
           <div className="flex flex-col">
             <h2 className="font-serif text-lg-editorial mb-4 tracking-wide">Visa-Free Travel</h2>
             <p className="text-body text-text-secondary tracking-wide mb-4 flex-1">
-              Access South America's second-largest economy while enjoying visa-free travel to over 170 countries worldwide.
+              The Henley Passport Index of 13 April 2026 scores an Argentine passport at 168 destinations without a prior visa, rank 15. That score is not a residency right, and this framework is not issuing passports.
             </p>
             <div className="mt-6">
               <a href="/faq/argentina-visa-free-travel" className="inline-block font-sans font-semibold text-[0.75rem] tracking-[0.08em] uppercase border-2 border-primary text-foreground px-6 py-3 hover:bg-primary hover:text-primary-foreground transition-all duration-300">
@@ -225,7 +224,10 @@ const IndexContent = ({ posts }: { posts: HomepagePost[] }) => {
       </EditorialSection>
 
       <EditorialSection className="bg-secondary/30">
-        <h2 className="font-serif text-xl-editorial mb-8 tracking-wide">Your pathway to Argentine residency</h2>
+        <h2 className="font-serif text-xl-editorial mb-8 tracking-wide">Reading on the anticipated program</h2>
+        <p className="text-body text-text-secondary tracking-wide mb-8 max-w-3xl mx-auto">
+          Government applications are not open. These links are research and resources, not a filing channel.
+        </p>
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto text-left">
           <a
             href="/research/argentina-citizenship-investment-american-investors"
@@ -233,7 +235,7 @@ const IndexContent = ({ posts }: { posts: HomepagePost[] }) => {
           >
             <h3 className="font-serif text-lg-editorial mb-3 tracking-wide">US Investors</h3>
             <p className="text-sm text-text-secondary tracking-wide flex-1 mb-6">
-              Tax implications and timeline specifics for U.S. citizens pursuing Argentine residency through investment.
+              Tax and timeline notes for U.S. citizens. Government applications are not open.
             </p>
             <span className="inline-flex items-center gap-2 font-sans font-semibold text-[0.75rem] tracking-[0.08em] uppercase text-primary group-hover:underline">
               Read Guide <ArrowRight className="w-4 h-4" />

@@ -1,50 +1,48 @@
 ---
 slug: argentina-citizenship-investment-requirements
 question: Argentina Golden Visa Investment Requirements
-answer: "Argentina Golden Visa investment requirements are anticipated as a non-refundable $500,000 USD contribution to the Argentine Treasury, or a $1,000,000 USD investment in a 7-year, 0% interest Argentine government bond with principal returned at maturity, subject to final regulation. These paths have not been published in the Official Gazette (Boletín Oficial)."
-metaTitle: "Argentina Golden Visa Investment Requirements - $500,000 or $1,000,000 Paths | Argentina Residence"
-metaDescription: Argentina Golden Visa investment requirements are anticipated as a $500,000 Treasury contribution or $1,000,000 7-year bond, subject to final regulation.
+answer: "Decree 524/2025 does not set a dollar amount for a relevant investment. Reports of a $500,000 Treasury contribution or a $1,000,000 seven-year bond were not found in an enacted regulation. Those figures are not current qualifying requirements. Government applications are not open."
+metaTitle: "Argentina Golden Visa Investment Requirements | Argentina Residence"
+metaDescription: "Decree 524/2025 does not set a dollar amount. Reported $500,000 and $1,000,000 figures are not an enacted investment rule. Applications are not open."
 ---
 
 # Argentina Golden Visa Investment Requirements
 
-Argentina Golden Visa investment requirements are anticipated as two paths only, subject to final regulation: a non-refundable $500,000 USD contribution to the Argentine Treasury, or a $1,000,000 USD investment in a 7-year, 0% interest Argentine government bond, with principal returned at maturity. These paths have not been published in the Official Gazette (Boletín Oficial). Real estate, business or startup ventures, and investment funds are not anticipated qualifying paths.
+[Decree 524/2025](https://www.boletinoficial.gob.ar/detalleAviso/primera/329061/20250731) does not set a dollar amount. It assigns the definition of a relevant investment to the Ministry of Economy. No enacted definition of that term was located. Secondary reports have described a non-refundable $500,000 USD Treasury contribution and a $1,000,000 USD seven-year, 0% government bond with principal returned at maturity. Those figures were not found in the decree or in a published Ministry resolution. They are not current qualifying requirements. Real estate, a business, and an investment fund are not published qualifying categories either. Government applications are not open.
 
 U.S. applicants should also review our detailed analysis on [Argentina golden visa requirements for Americans](/research/argentina-citizenship-investment-american-investors), which covers IRS compliance, tax residency rules, and timeline considerations specific to American investors.
 
-## Anticipated investment paths
+## Reported figures, not an enacted schedule
 
-Two paths are currently anticipated for the principal applicant:
+Secondary reporting has described two possible structures. Neither is an enacted requirement:
 
 - A non-refundable **$500,000 USD** contribution to the Argentine Treasury.
 - A **$1,000,000 USD** investment in a 7-year, 0% interest Argentine government bond, with principal returned at maturity.
 
-Neither path has been officially confirmed. No separate reduced amounts have been confirmed for family members.
+No separate family amount was found in Decree 524/2025. Source-of-funds review, if APCI later publishes a procedure, is discussed on the [due diligence and source of funds](/guides/argentina-citizenship-investment-due-diligence) guide.
 
-All amounts used for either path must be funded from lawfully sourced capital originating outside Argentina. The Agency is expected to require documentation of the funds' origin, including bank statements, tax filings, and source-of-wealth declarations. How that file is expected to be reviewed is on the [due diligence and source of funds](/guides/argentina-citizenship-investment-due-diligence) guide.
+## What the decree does not list
 
-## What is not anticipated
+Decree 524/2025 does not name real estate, a business or startup, an investment fund, cryptocurrency, or a private gift as a qualifying investment. It also does not exclude them. The Ministry of Economy still has to define a relevant investment.
 
-Real estate purchases, business or startup ventures, and investment-fund subscriptions are not anticipated as qualifying paths. Holding cryptocurrency or digital assets as the investment itself is also not anticipated. Gifts to private parties are not the Treasury contribution described above.
+## The 5,000 figure and biometrics
 
-## Application cap and biometrics
-
-An initial cap near **5,000 applications** is anticipated. A single biometrics visit after approval is also anticipated. Neither figure has been officially confirmed.
+The figure of 5,000 is not an enacted application cap. The cancelled Ministry of Economy tender 34-0001-CPU25, recorded on [COMPR.AR](https://comprar.gob.ar/) as left without effect by Resolution 522/2026 on 14 April 2026, described a consultancy contract of four years or until APCI issued 5,000 reports recommending approval, whichever came first. That is a procurement quantity. Decree 524/2025 does not require a biometrics visit.
 
 ## Maintenance
 
-The Treasury contribution is anticipated as non-refundable. The government-bond path is anticipated as a 7-year hold at 0% interest, with principal returned at maturity. Further maintenance rules have not been published.
+No published rule states that a contribution is non-refundable, or that a bond runs for seven years at 0% interest. Those terms appear only in the same unverified secondary descriptions.
 
 ## Verification
 
-The Agency for Citizenship by Investment is expected to review source of funds and identity. Operational protocols have not been published. APCI is not processing applications.
+Article 6 of Decree 524/2025 tells APCI to issue complementary procedure rules. Those rules were not found as a published regulation. APCI is not processing citizenship applications.
 
 ## Key Facts
 
-- Two anticipated paths: **$500,000 USD** Treasury contribution, or **$1,000,000 USD** 7-year 0% government bond (subject to final regulation)
-- Real estate, business, and investment funds are not anticipated paths
-- Initial cap near 5,000 applications anticipated
-- Single biometrics visit after approval anticipated
-- Paths have not been published in the Official Gazette (Boletín Oficial)
+- Decree 524/2025 does not set **$500,000** or **$1,000,000**. Those figures are unverified secondary descriptions, not qualifying requirements.
+- No published list of qualifying or excluded assets was located.
+- 5,000 refers to reports in a cancelled consultancy tender, not a citizenship cap.
+- A biometrics visit is not stated in Decree 524/2025.
+- Government applications are not open.
 
-Want a personalized investment breakdown? Our team can walk you through the anticipated paths in a no-obligation consultation. [Request a principal consultation](/contact).
+A consultation can discuss the published framework. It does not file a government application. [Request a principal consultation](/contact).

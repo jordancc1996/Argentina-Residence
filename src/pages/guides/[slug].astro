@@ -16,7 +16,7 @@ import { DueDiligenceReviewGroups, BusinessSaleTimingSteps } from '../../compone
 import { getRelatedGuides, inquiryCardOverrides, investorGuides } from '../../data/relatedGuides';
 import DateMeta from '../../components/DateMeta.astro';
 
-import placeholderGuideHero from '../../assets/hero-buenos-aires-night.jpg';
+import placeholderGuideHero from '../../assets/hero-buenos-aires-night.webp';
 
 export async function getStaticPaths() {
   const dedicatedGuideSlugs = new Set([
@@ -40,7 +40,7 @@ const pageTitle = data.seoTitle || data.title;
 const metaTitle = `${pageTitle} | Argentina Residence`;
 const description = data.seoDescription || '';
 const canonical = `https://argentinaresidence.com/guides/${data.slug}`;
-const ogImage = 'https://argentinaresidence.com/og-image.jpg';
+const ogImage = 'https://argentinaresidence.com/og-image.webp';
 const currentGuide = investorGuides.find((guide) => guide.slug === data.slug);
 const heroImage = currentGuide?.heroImage ?? placeholderGuideHero;
 const heroAlt = currentGuide?.imageAlt ?? 'Buenos Aires at night';

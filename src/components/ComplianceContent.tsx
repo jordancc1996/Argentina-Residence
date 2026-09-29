@@ -1,11 +1,11 @@
 import { Separator } from "@/components/ui/separator";
 import SupportingImage from "@/components/SupportingImage";
-import flagSnowMountains from "@/assets/site-photos-renamed/generic-flag-snow-mountains.jpg";
+import flagSnowMountains from "@/assets/site-photos-renamed/generic-flag-snow-mountains.webp";
 import PageFAQ from "@/components/PageFAQ";
 
 const ComplianceContent = () => {
   return (
-      <main className="section-padding">
+      <div className="section-padding">
         <div className="max-w-[800px] mx-auto px-4 md:px-8">
           <h1 className="font-serif text-3xl md:text-4xl mb-4">Argentina Residence Compliance and Disclosures</h1>
           <p className="text-muted-foreground text-sm mb-10">
@@ -26,7 +26,7 @@ const ComplianceContent = () => {
             <h2 className="font-serif text-2xl mb-4">General Disclosure</h2>
             <div className="space-y-4 text-sm text-muted-foreground leading-relaxed">
               <p>
-                Argentina Residence Advisory ("ARA," "we," "us," or "our") provides market intelligence, program advisory, and facilitation services related to Argentine residency-by-investment programs and real estate acquisition. We act as an advisory intermediary connecting prospective investors with qualified legal, tax, and immigration professionals.
+                Argentina Residence Advisory ("ARA," "we," "us," or "our") provides market intelligence and program advisory on Argentine immigration and real estate questions. It does not file an Argentine government application. We act as an advisory intermediary connecting prospective investors with qualified legal, tax, and immigration professionals.
               </p>
               <p>
                 <strong className="text-foreground">We are not licensed immigration attorneys, tax advisors, or registered investment advisors.</strong> Nothing on this website or in our communications constitutes legal, tax, or investment advice. All information is provided for informational and educational purposes only.
@@ -140,7 +140,7 @@ const ComplianceContent = () => {
             </div>
           </section>
         </div>
-      </main>
+      </div>
   );
 };
 

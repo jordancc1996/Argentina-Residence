@@ -3,8 +3,8 @@ import { Separator } from "@/components/ui/separator";
 import { useParallax, useScrollOpacity } from "@/hooks/useParallax";
 import { resolveImageSrc } from "@/lib/resolveImageSrc";
 import SupportingImage from "@/components/SupportingImage";
-import heroImage from "@/assets/research-intelligence-hero.jpg";
-import flagOvercast from "@/assets/site-photos-renamed/generic-flag-overcast-sky.jpg";
+import heroImage from "@/assets/research-intelligence-hero.webp";
+import flagOvercast from "@/assets/site-photos-renamed/generic-flag-overcast-sky.webp";
 
 const ResearchHero = () => {
   const parallaxY = useParallax(-0.3);

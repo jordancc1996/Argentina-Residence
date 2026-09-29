@@ -21,12 +21,12 @@ export const programKeyFacts: KeyFact[] = [
   {
     label: "Investment paths",
     value:
-      "Two paths anticipated, subject to final regulation: a non-refundable $500,000 USD contribution to the Argentine Treasury, or a $1,000,000 USD investment in a 7-year, 0% interest Argentine government bond, with principal returned at maturity.",
+      "Decree 524/2025 does not set a dollar amount. Reported figures of $500,000 USD and $1,000,000 USD were not found in an enacted regulation. They are not current qualifying requirements.",
   },
   {
-    label: "Not anticipated paths",
+    label: "Qualifying assets",
     value:
-      "Real estate, business ventures, investment funds, agriculture, renewable energy, and tourism projects are not anticipated qualifying paths.",
+      "The Ministry of Economy has not published a definition of a relevant investment. Real estate, a business, and a fund are not named, and they are not excluded, by Decree 524/2025.",
   },
   {
     label: "Family inclusion",
@@ -37,21 +37,21 @@ export const programKeyFacts: KeyFact[] = [
     value: "Not yet officially confirmed.",
   },
   {
-    label: "Application cap",
-    value: "An initial cap near 5,000 applications is anticipated. Not officially confirmed.",
+    label: "5,000 figure",
+    value: "A cancelled consultancy tender described four years or 5,000 APCI recommendation reports, whichever came first. That is not a statutory citizenship cap.",
   },
   {
     label: "Biometrics",
-    value: "A single biometrics visit after approval is anticipated. Not officially confirmed.",
+    value: "Decree 524/2025 does not require a biometrics visit.",
   },
   {
     label: "Physical presence",
-    value: "No residence or physical-presence requirement is anticipated.",
+    value: "Decree 366/2025 amended ordinary naturalization. The National Electoral Chamber declared that decree null on 30 June 2026, and the executive appealed. No separate stay rule for an investment route has been published.",
   },
   {
     label: "Program status",
     value:
-      "Not yet open. Not published in the Official Gazette (Boletín Oficial). APCI is not processing applications.",
+      "Decrees 366/2025 and 524/2025 are in the Boletín Oficial. Complementary APCI rules and a dollar amount are not. APCI is not processing citizenship applications.",
   },
 ];
 

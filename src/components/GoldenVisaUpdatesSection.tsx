@@ -14,7 +14,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { useToast } from "@/hooks/use-toast";
-import casaRosadaDaytime from "@/assets/casa-rosada-daytime.jpg";
+import casaRosadaDaytime from "@/assets/casa-rosada-daytime.webp";
 
 const casaRosadaDaytimeSrc =
   typeof casaRosadaDaytime === "string" ? casaRosadaDaytime : casaRosadaDaytime.src;
@@ -101,14 +101,14 @@ const GoldenVisaUpdatesSection = () => {
               Get Golden Visa Updates
             </Button>
           </DialogTrigger>
-          <DialogContent className="sm:max-w-md">
+          <DialogContent data-md-exclude className="sm:max-w-md">
             <form onSubmit={handleSubmit(onSubmit)}>
               <DialogHeader>
                 <DialogTitle className="font-serif tracking-wide">
                   Stay Updated on the Argentina Golden Visa
                 </DialogTitle>
                 <DialogDescription>
-                  Be the first to know about official program status updates.
+                  Argentina Residence sends program status updates. This list is not a government application or a government priority place.
                 </DialogDescription>
               </DialogHeader>
               <div className="space-y-4 py-4">

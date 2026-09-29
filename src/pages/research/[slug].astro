@@ -61,13 +61,11 @@ const { Content } = await render(post);
 const data = post.data;
 
 const seoTitle = data.seoTitle || data.title;
-const seoRawDescription = data.seoDescription || data.excerpt;
-const description =
-  seoRawDescription.substring(0, 155) + (seoRawDescription.length > 155 ? '...' : '');
+const description = data.seoDescription || data.excerpt;
 const canonical = `https://argentinaresidence.com/research/${data.slug}`;
 const ogImage = data.image
   ? `https://argentinaresidence.com${data.image}`
-  : 'https://argentinaresidence.com/og-image.jpg';
+  : 'https://argentinaresidence.com/og-image.webp';
 
 const schema = {
   "@context": "https://schema.org",
@@ -86,12 +84,12 @@ const schema = {
     "url": "https://argentinaresidence.com",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://argentinaresidence.com/og-image.jpg"
+      "url": "https://argentinaresidence.com/og-image.webp"
     }
   },
   "image": data.image
     ? `https://argentinaresidence.com${data.image}`
-    : "https://argentinaresidence.com/og-image.jpg",
+    : "https://argentinaresidence.com/og-image.webp",
   "url": canonical,
   "mainEntityOfPage": {
     "@type": "WebPage",
@@ -109,7 +107,7 @@ const faqPath = `/research/${data.slug}`;
 	<meta slot="head" name="description" content={description} />
 	<link slot="head" rel="canonical" href={canonical} />
 	<meta slot="head" name="robots" content="index, follow" />
-	<meta slot="head" property="og:type" content="website" />
+	<meta slot="head" property="og:type" content="article" />
 	<meta slot="head" property="og:site_name" content="Argentina Residence" />
 	<meta slot="head" property="og:title" content={seoTitle} />
 	<meta slot="head" property="og:description" content={description} />
@@ -132,6 +130,8 @@ const faqPath = `/research/${data.slug}`;
 		readTime={data.readTime}
 		excerpt={data.excerpt}
 		slug={data.slug}
+		heroImage={data.heroImage || data.image}
+		heroImageAlt={data.heroImageAlt || data.imageAlt}
 		faqPath={faqPath}
 		related={related}
 		previous={previous}

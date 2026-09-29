@@ -168,11 +168,11 @@ const LuxuryContactCTA = () => {
             </h1>
 
             <p className="text-white/60 text-base md:text-lg mb-12 leading-relaxed font-sans">
-              Book a free, no-obligation 15-minute call with our advisory team. We'll answer your questions about Argentine residency and help you understand your best options.
+              Book a free, no-obligation 15-minute call with our advisory team. We'll answer your questions about Argentine residency and help you understand your best options. This call does not file an Argentine government application. Government applications for the citizenship-by-investment framework are not open.
             </p>
 
             {/* Form */}
-            <form onSubmit={handleSubmit} className="space-y-8">
+            <form data-md-exclude onSubmit={handleSubmit} className="space-y-8">
               {/* Name Fields - 2 Column Grid */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
@@ -301,7 +301,7 @@ const LuxuryContactCTA = () => {
                   What type of investment interests you?
                 </label>
                 <p className="text-xs text-white/50 mb-2">
-                  These options record interest for routing. They are not official program categories. Real estate and business ventures are not anticipated qualifying paths.
+                  Consultation topics are broader than the proposed Citizenship by Investment program and do not represent official qualifying investment categories.
                 </p>
                 <div className="relative">
                   <select

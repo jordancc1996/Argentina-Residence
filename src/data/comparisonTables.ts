@@ -39,7 +39,7 @@ export const comparisonTables = {
         "Operating since 2013 — accepting applications",
       ],
       "Investment floor": [
-        "$500,000 contribution or $1,000,000 bond",
+        "Decree 524/2025 does not set $500,000 or $1,000,000. Those reported figures are not current qualifying requirements.",
         "$200,000 single applicant / $250,000 family of four (donation); $200,000 real estate",
         "$235,000 covers up to a family of four",
       ],
@@ -60,15 +60,15 @@ export const comparisonTables = {
       ],
       "Physical presence": ["None anticipated", "Not required", "Not required"],
       "Mobility / passport": [
-        "170+ countries visa-free/visa-on-arrival, incl. Schengen, UK, Japan",
-        "Below Argentina's 170+ figure; UK revoked visa-free short stays July 2023",
-        "Below Argentina's 170+ figure; retains UK short-stay access, US E-2 treaty",
+        "Henley Passport Index, 13 April 2026: Argentine passport rank 15, score 168. The score includes visa-free entry, visa on arrival, and an electronic travel authorization. It is not a residency right.",
+        "UK revoked visa-free short stays July 2023",
+        "Retains UK short-stay access, US E-2 treaty",
       ],
     }),
   },
   greece: {
     columns: ["Argentina", "Greece"],
-    photos: [{ label: "Greece", alt: "Athens, Greece skyline" }],
+    photos: [{ label: "Greece", alt: "Greek island cove and beach" }],
     rows: buildRows({
       "Legal structure": [
         "Naturalization via Treasury contribution or bond",
@@ -76,7 +76,7 @@ export const comparisonTables = {
       ],
       "Program status": ["Not open", "Operating since 2013"],
       "Investment floor": [
-        "$500,000 contribution or $1,000,000 bond",
+        "Decree 524/2025 does not set $500,000 or $1,000,000. Those reported figures are not current qualifying requirements.",
         "€800,000 (Attica/Thessaloniki/Mykonos/Santorini/islands over 3,100 residents); €400,000 elsewhere; €250,000 for defined exceptions (Law 5100/2024)",
       ],
       "Hold period": [
@@ -96,7 +96,7 @@ export const comparisonTables = {
         "No minimum days required to hold/renew permit; citizenship requires 7-year residence plus language",
       ],
       "Mobility / passport": [
-        "170+ countries incl. Schengen",
+        "Henley Passport Index, 13 April 2026: Argentine passport rank 15, score 168. The score includes visa-free entry, visa on arrival, and an electronic travel authorization. It is not a residency right.",
         "Permit grants Greek residence plus Schengen short stay only; not a passport",
       ],
     }),
@@ -111,7 +111,7 @@ export const comparisonTables = {
       ],
       "Program status": ["Not open", "Operating — currently processing"],
       "Investment floor": [
-        "$500,000 contribution or $1,000,000 bond",
+        "Decree 524/2025 does not set $500,000 or $1,000,000. Those reported figures are not current qualifying requirements.",
         "$400,000 real estate (since 2022 increase); other routes commonly cited around $500,000",
       ],
       "Hold period": [
@@ -131,7 +131,7 @@ export const comparisonTables = {
         "Continuous residence not required, though in-person biometrics/title steps occur inside Turkey",
       ],
       "Mobility / passport": [
-        "170+ countries incl. Schengen",
+        "Henley Passport Index, 13 April 2026: Argentine passport rank 15, score 168. The score includes visa-free entry, visa on arrival, and an electronic travel authorization. It is not a residency right.",
         "No published visa-free count; Turkish citizens generally require a Schengen visa for short stays",
       ],
     }),
@@ -164,8 +164,8 @@ export const comparisonTables = {
       {
         label: "Minimum investment",
         values: [
-          "Anticipated $500,000 Treasury contribution or $1,000,000 7-year government bond, subject to final regulation.",
-          "From USD 70,000, depending on category: $70,000 commercial/industrial plus five formal jobs; stock market holdings are USD 200,000 and are generally subject to a minimum two-year hold; $200,000 real estate; $150,000 tourism.",
+          "Decree 524/2025 does not set $500,000 or $1,000,000. Those reported figures are not current qualifying requirements.",
+          "Law 6984/2022 requires the investor to demonstrate the investment. It does not, in the text reviewed, set the dollar schedules previously repeated on this page. Those unsupported amounts have been removed.",
         ],
       },
       {
@@ -236,8 +236,8 @@ export const comparisonTables = {
       ],
       "Program status": ["Not open", "Operating"],
       "Investment floor": [
-        "$500,000 contribution or $1,000,000 bond",
-        "Friendly Nations: $200,000 real estate or a similar fixed-term deposit. Qualified Investor: $300,000 real estate (rising to $500,000 effective October 15, 2026); $500,000 securities; $750,000 bank deposit",
+        "Decree 524/2025 does not set $500,000 or $1,000,000. Those reported figures are not current qualifying requirements.",
+        "Friendly Nations: $200,000 in real estate or a fixed-term bank deposit. Qualified Investor, Ministry of Commerce release of 21 September 2026: B/.300,000 first-sale property, B/.500,000 second-sale property, B/.500,000 fixed-term deposit at Banco Nacional de Panamá or Caja de Ahorros.",
       ],
       "Hold period": [
         "Bond 7 years / contribution non-refundable",
@@ -256,7 +256,7 @@ export const comparisonTables = {
         "Naturalization requires 5 years' permanent residence; confirm current permit-maintenance day requirements directly",
       ],
       "Mobility / passport": [
-        "170+ countries incl. Schengen; Mercosur nationality if granted",
+        "Henley Passport Index, 13 April 2026: Argentine passport rank 15, score 168. The score includes visa-free entry, visa on arrival, and an electronic travel authorization. It is not a residency right. Mercosur nationality if granted.",
         "Residence permit is not a passport; Panama is not a Mercosur state party",
       ],
     }),
@@ -274,7 +274,7 @@ export const comparisonTables = {
         "Established, live program",
       ],
       "Investment floor": [
-        "$500,000 contribution or $1,000,000 bond",
+        "Decree 524/2025 does not set $500,000 or $1,000,000. Those reported figures are not current qualifying requirements.",
         "€500,000 (fund route)",
       ],
       "Hold period": [
@@ -294,7 +294,7 @@ export const comparisonTables = {
         "Average of 7 days per year to maintain the permit; citizenship requires 5 years plus basic Portuguese language",
       ],
       "Mobility / passport": [
-        "170+ countries incl. Schengen, UK, Japan, most of Asia; Mercosur mobility with Brazil/Uruguay/Paraguay; not part of the US Visa Waiver Program",
+        "Henley Passport Index, 13 April 2026: Argentine passport rank 15, score 168. The score includes visa-free entry, visa on arrival, and an electronic travel authorization. It is not a residency right. Mercosur mobility with Brazil, Uruguay, and Paraguay if nationality is granted. Not part of the US Visa Waiver Program.",
         "Permit: Schengen (27 countries) short-stay only, not a passport outside Europe. Portuguese passport after 5 years: 185+ destinations including the US.",
       ],
     }),

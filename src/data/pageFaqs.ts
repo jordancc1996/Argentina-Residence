@@ -18,7 +18,7 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "How much does Paraguay residency by investment cost?",
       answer:
-        "Paraguay residency by investment cost depends on the Investor Pass category. Summaries of MIC Resolution 0283/2026 describe USD 70,000 plus five formal jobs for commercial and industrial investment, USD 200,000 for financial holdings commonly described as stock-market investments, USD 200,000 for real estate not for personal use, and USD 150,000 for tourism. Confirm the current official text before treating any brochure amount as the filing rule.",
+        "Law 6984/2022 requires the investor to demonstrate the investment. It does not, in the text reviewed, set the dollar schedules previously repeated on this page. Those unsupported amounts have been removed.",
     },
     {
       question: "Does Paraguay residency provide Mercosur mobility?",
@@ -46,7 +46,7 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "What is the difference between Panama Friendly Nations Visa and Qualified Investor Visa?",
       answer:
-        "Friendly Nations Visa is for nationals on Panama's published list, plus an economic tie such as employment, a commonly cited USD 200,000 real-estate purchase, or a similar bank deposit. Qualified Investor Visa is an investment-residence route with higher cited floors, including real estate currently cited at USD 300,000, rising to USD 500,000 from 15 October 2026. Confirm live Panama rules with Panamanian counsel. Lists and floors move.",
+        "Friendly Nations Visa is for nationals on Panama's published list, plus an economic tie such as employment or an investment such as $200,000 in real estate or a fixed-term bank deposit. The Qualified Investor Visa is a separate permanent residence route. The Ministry of Commerce release of 21 September 2026 states that Executive Decree 17 of 8 September 2026 sets B/.300,000 for a first-sale new property, B/.500,000 for a second-sale property, and B/.500,000 for a fixed-term deposit at Banco Nacional de Panamá or Caja de Ahorros. That release does not describe a future increase on 15 October 2026, and it does not state a securities minimum or a private-bank minimum. Confirm live Panama rules with Panamanian counsel.",
     },
     {
       question: "Is Panama in Mercosur?",
@@ -56,12 +56,12 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "Does a USD 200,000 Panama property purchase qualify for Argentina citizenship by investment?",
       answer:
-        "No. A Panama Friendly Nations property or deposit is not an Argentine Treasury contribution or government bond. Argentina is anticipated as a $500,000 USD Treasury contribution or a $1,000,000 USD 7-year government bond, subject to final regulation. See [investment requirements](/faq/argentina-citizenship-investment-requirements).",
+        "No. A Panama Friendly Nations property or deposit is not an Argentine qualifying investment. Decree 524/2025 does not set $500,000 or $1,000,000. Those reported figures are not current qualifying requirements. See [investment requirements](/faq/argentina-citizenship-investment-requirements).",
     },
     {
-      question: "Is the October 2026 Panama real-estate increase an Argentina launch date?",
+      question: "Does the September 2026 Panama rule set a future real-estate increase, or an Argentina launch date?",
       answer:
-        "No. The published increase of the Panama Qualified Investor real-estate floor to USD 500,000 from 15 October 2026 is a Panama statutory calendar. It is not an Argentine launch date. Argentina is not currently accepting applications.",
+        "No. The Ministry of Commerce release of 21 September 2026 does not describe a future increase on 15 October 2026. It distinguishes B/.300,000 for new first-sale property from B/.500,000 for second-sale property, and B/.500,000 for a fixed-term deposit at Banco Nacional de Panamá or Caja de Ahorros. That release is not an Argentine launch date. Argentina is not currently accepting applications.",
     },
   ],
 
@@ -74,7 +74,7 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "Is Greek real estate an anticipated Argentina citizenship by investment path?",
       answer:
-        "No. Real estate is not an anticipated Argentine path. Argentina is anticipated as a $500,000 USD Treasury contribution or a $1,000,000 USD 7-year government bond, subject to final regulation. Buying Greek property for a Hellenic residence permit is a different transaction. See [investment requirements](/faq/argentina-citizenship-investment-requirements).",
+        "No. Buying Greek property for a Hellenic residence permit is a different transaction. Decree 524/2025 does not set $500,000 or $1,000,000. Those reported figures are not current qualifying requirements. See [investment requirements](/faq/argentina-citizenship-investment-requirements).",
     },
     {
       question: "Can I apply for Argentina citizenship by investment instead of a Greece Golden Visa in 2026?",
@@ -89,7 +89,7 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "Does a Greece Golden Visa Schengen card equal an Argentine passport?",
       answer:
-        "No. Schengen movement on a Greek Golden Visa comes from the residence permit. An Argentine passport, if issued through the unpublished investment route, is described on this site as visa-free or visa-on-arrival to over 170 countries, including Schengen. That Argentine document is not an APCI product today. See [visa-free travel](/faq/argentina-visa-free-travel).",
+        "No. Schengen movement on a Greek Golden Visa comes from the residence permit. An Argentine passport, if later issued, is a separate document. Argentine residency does not provide that passport's travel access. Current figures are on the [visa-free travel](/faq/argentina-visa-free-travel) page. That Argentine document is not an APCI product today.",
     },
   ],
 
@@ -102,7 +102,7 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "Is Turkish property an anticipated Argentina citizenship by investment path?",
       answer:
-        "No. Real estate is not an anticipated Argentine path. Argentina is anticipated as a $500,000 USD Treasury contribution or a $1,000,000 USD 7-year government bond, subject to final regulation. A Turkish title at USD 400,000 is not an Argentine Treasury contribution or government bond. See [investment requirements](/faq/argentina-citizenship-investment-requirements).",
+        "No. A Turkish title at USD 400,000 is not an Argentine qualifying investment. Decree 524/2025 does not set $500,000 or $1,000,000. Those reported figures are not current qualifying requirements. See [investment requirements](/faq/argentina-citizenship-investment-requirements).",
     },
     {
       question: "Can I file Turkey citizenship by investment now if Argentina is not open?",
@@ -135,7 +135,7 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "Is a Caribbean donation the same as Argentina's anticipated Treasury contribution?",
       answer:
-        "No. Caribbean files are typically a government-fund contribution or an approved real-estate project holding. Argentina is anticipated as a $500,000 USD Treasury contribution or a $1,000,000 USD 7-year government bond, subject to final regulation. Real estate is not an anticipated Argentine path. See [investment requirements](/faq/argentina-citizenship-investment-requirements).",
+        "No. Caribbean files are a government-fund contribution or an approved real-estate project holding. Decree 524/2025 does not set $500,000 or $1,000,000. Those reported figures are not current qualifying requirements. See [investment requirements](/faq/argentina-citizenship-investment-requirements).",
     },
     {
       question: "Can I apply for Argentina CBI if I already hold Caribbean citizenship?",
@@ -158,7 +158,7 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "Is there a published net-worth multiple for Argentina citizenship by investment?",
       answer:
-        "No. Net worth requirements have not been published as a separate numeric floor. The anticipated $500,000 USD Treasury contribution and $1,000,000 USD 7-year government bond are expected investment amounts, subject to final regulation. They are not a rule that applicants must show a multiple of either sum as personal net worth.",
+        "No. Net worth requirements have not been published as a separate numeric floor. Decree 524/2025 does not set $500,000 or $1,000,000. Those reported figures are not a rule that an applicant must show a multiple of either sum as personal net worth.",
     },
     {
       question: "What is source of funds in the Argentina citizenship by investment due diligence process?",
@@ -179,9 +179,9 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
         "No. A share sale, asset sale, or startup exit can produce capital that later funds a qualifying Argentine investment. It does not, by itself, create citizenship. Sale proceeds are not an anticipated qualifying path. APCI is not processing applications.",
     },
     {
-      question: "Can I use company sale proceeds for the anticipated Treasury contribution or bond?",
+      question: "Do company sale proceeds become an Argentine citizenship filing by themselves?",
       answer:
-        "Using company proceeds means moving lawfully received sale consideration into one of the two anticipated Argentine paths: a $500,000 USD Treasury contribution or a $1,000,000 USD 7-year government bond, subject to final regulation. Parking closing cash is not a citizenship file. See [investment requirements](/faq/argentina-citizenship-investment-requirements).",
+        "No. Parking closing cash is not a citizenship file. Decree 524/2025 does not set $500,000 or $1,000,000. Those reported figures are not current qualifying requirements. See [investment requirements](/faq/argentina-citizenship-investment-requirements).",
     },
     {
       question: "Do earn-outs or buyer stock count as the Argentine investment?",
@@ -235,14 +235,14 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
         "No. Proposed legislation is under review. APCI has not published operational regulations and is not processing applications. Decree 524/2025 created a legal pathway. It did not open a filing portal.",
     },
     {
-      question: "What are the anticipated Argentina Golden Visa investment amounts?",
+      question: "Does Decree 524/2025 set the Argentina Golden Visa investment amount?",
       answer:
-        "Two paths are currently anticipated, subject to final regulation: a non-refundable $500,000 USD contribution to the Argentine Treasury, or a $1,000,000 USD investment in a 7-year, 0% interest Argentine government bond, with principal returned at maturity. Real estate, business ventures, and investment funds are not anticipated qualifying paths. See [investment requirements](/faq/argentina-citizenship-investment-requirements).",
+        "No. Decree 524/2025 does not set $500,000 or $1,000,000. Those reported figures are not current qualifying requirements. Real estate, a business, and a fund are not published qualifying categories. The decree does not exclude them. See [investment requirements](/faq/argentina-citizenship-investment-requirements).",
     },
     {
       question: "Does buying Buenos Aires real estate qualify for the Argentina Golden Visa?",
       answer:
-        "No. Real estate is not an anticipated qualifying path for the investment citizenship route. Property can still be bought independently of the program. See [Argentina real estate investment](/guides/argentina-real-estate-investment).",
+        "No. Real estate is not a published qualifying category for the investment citizenship route. The decree does not exclude it. Property can still be bought independently of the program. See [Argentina real estate investment](/guides/argentina-real-estate-investment).",
     },
     {
       question: "Has Argentina confirmed a Golden Visa processing time?",
@@ -250,9 +250,9 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
         "No. Processing time is not yet officially confirmed. No decision window has been published. See [application process timeline](/faq/argentina-citizenship-investment-application-timeline).",
     },
     {
-      question: "Does joining the priority waitlist on this page file an APCI application?",
+      question: "Does joining the Argentina Residence waitlist file an APCI application?",
       answer:
-        "No. The eligibility assessment on this page is a waitlist and screening step for when the program launches. It is not an APCI filing. APCI has not published operational regulations and is not processing applications.",
+        "No. The Argentina Residence waitlist is this firm's list for updates. It is not an Argentine government application, a government priority list, or a reserved filing place. APCI is not processing applications.",
     },
   ],
 
@@ -332,7 +332,7 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "Are the lifestyle cost figures on this page official Argentine program fees?",
       answer:
-        "No. Lifestyle and US-cost illustrations on this page are not APCI filing fees. Anticipated program amounts remain the $500,000 Treasury contribution or $1,000,000 7-year bond, subject to final regulation.",
+        "No. Lifestyle and US-cost illustrations on this page are not APCI filing fees. Decree 524/2025 does not set $500,000 or $1,000,000. Those reported figures are not current qualifying requirements.",
     },
   ],
 
@@ -389,7 +389,7 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "Did Decree 524/2025 confirm the $500,000 and $1,000,000 amounts in the Official Gazette as live filing rules?",
       answer:
-        "This site treats those amounts as anticipated and subject to final regulation. They have not been published as live filing rules in the Official Gazette on the [investment requirements](/faq/argentina-citizenship-investment-requirements) page. Do not treat this news item as a confirmed fee schedule.",
+        "No. Those figures were not found in an enacted regulation. They are not current qualifying requirements. Do not treat this news item as a confirmed fee schedule. See [investment requirements](/faq/argentina-citizenship-investment-requirements).",
     },
   ],
 
@@ -413,19 +413,19 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
 
   "/program": [
     {
-      question: "Is Argentina residency by investment open for applications?",
+      question: "Are Argentina citizenship-by-investment applications open?",
       answer:
-        "No. APCI has not published operational regulations and is not processing applications. The amounts and paths on this page are anticipated, subject to final regulation.",
+        "No. APCI has not published operational regulations and is not processing applications. Reported dollar amounts are not current qualifying requirements.",
     },
     {
-      question: "What investment does the Argentina residency by investment program anticipate?",
+      question: "Does Decree 524/2025 set an investment amount?",
       answer:
-        "Two paths are currently anticipated: a non-refundable $500,000 USD contribution to the Argentine Treasury, or a $1,000,000 USD investment in a 7-year, 0% interest Argentine government bond, with principal returned at maturity. Real estate, business or startup ventures, and investment funds are not anticipated qualifying paths. See [investment requirements](/faq/argentina-citizenship-investment-requirements).",
+        "No. Decree 524/2025 does not set a dollar amount. Secondary reports have described a $500,000 USD Treasury contribution and a $1,000,000 USD seven-year bond. Those figures were not found in an enacted regulation. They are not current qualifying requirements. See [investment requirements](/faq/argentina-citizenship-investment-requirements).",
     },
     {
-      question: "Does visa-free access to 170 destinations exist as an APCI product today?",
+      question: "Does visa-free travel come with Argentine residency today?",
       answer:
-        "This site describes an Argentine passport, if issued, as visa-free or visa-on-arrival to over 170 destinations. That document is not available through a live APCI citizenship filing today. See [visa-free travel](/faq/argentina-visa-free-travel).",
+        "No. Argentine residency is not an Argentine passport. Current passport-mobility figures are on the [visa-free travel](/faq/argentina-visa-free-travel) page. That passport is not available through a live APCI citizenship filing today.",
     },
   ],
 

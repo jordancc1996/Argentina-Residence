@@ -74,7 +74,7 @@ const FormCarryForm = ({ formType, buttonText, title, description }: FormCarryFo
   };
 
   return (
-    <div className="max-w-2xl mx-auto">
+    <div data-md-exclude className="max-w-2xl mx-auto">
       <div className="mb-8">
         <h3 className="font-serif text-xl-editorial mb-4 tracking-wide">{title}</h3>
         {description && (
