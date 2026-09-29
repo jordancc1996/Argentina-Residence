@@ -13,8 +13,8 @@ function formatReviewDate(isoDate: string) {
 
 const EditorialByline = ({ reviewedAt }: { reviewedAt?: string }) => {
   return (
-    <>
-      <div className="flex items-center gap-2">
+    <div className="editorial-meta">
+      <div className="editorial-meta-author">
         <span
           data-md-exclude
           role="img"
@@ -31,13 +31,23 @@ const EditorialByline = ({ reviewedAt }: { reviewedAt?: string }) => {
         </span>
       </div>
       {reviewedAt ? (
-        <p className="legal-review-note">
-          <span className="legal-review-label">{editorial.reviewLabel}</span>{" "}
-          {editorial.reviewerCredential} on {formatReviewDate(reviewedAt)}.{" "}
-          <span className="legal-review-disclaimer">{editorial.reviewDisclaimer}</span>
-        </p>
+        <>
+          <p className="legal-review-note">
+            <span className="legal-review-check" aria-hidden="true">
+              ✓
+            </span>
+            <span className="legal-review-body">
+              <span className="legal-review-label">{editorial.reviewLabel}</span>{" "}
+              {editorial.reviewerCredential} on {formatReviewDate(reviewedAt)}.
+            </span>
+          </p>
+          <details className="legal-review-disclosure">
+            <summary>Legal & informational disclaimer</summary>
+            <p className="legal-review-disclaimer">{editorial.reviewDisclaimer}</p>
+          </details>
+        </>
       ) : null}
-    </>
+    </div>
   );
 };
 
