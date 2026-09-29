@@ -31,9 +31,10 @@ const EditorialByline = ({ reviewedAt }: { reviewedAt?: string }) => {
         </span>
       </div>
       {reviewedAt ? (
-        <p className="basis-full text-sm text-text-secondary">
-          {editorial.reviewLabel} {editorial.reviewerCredential} on {formatReviewDate(reviewedAt)}.{" "}
-          {editorial.reviewDisclaimer}
+        <p className="legal-review-note">
+          <span className="legal-review-label">{editorial.reviewLabel}</span>{" "}
+          {editorial.reviewerCredential} on {formatReviewDate(reviewedAt)}.{" "}
+          <span className="legal-review-disclaimer">{editorial.reviewDisclaimer}</span>
         </p>
       ) : null}
     </>

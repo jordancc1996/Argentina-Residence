@@ -108,7 +108,7 @@ const Navigation = ({
                 <NavigationMenuList>
                   <NavigationMenuItem>
                     <NavigationMenuTrigger
-                      className="h-auto rounded-none bg-transparent px-2 py-2 text-white hover:bg-transparent hover:text-white/80 focus:bg-transparent focus:text-white data-[state=open]:bg-transparent data-[state=open]:text-white/80"
+                      className="h-auto rounded-none bg-transparent px-2 py-2 text-white hover:bg-transparent hover:text-white/80 focus:bg-transparent focus:text-white focus-visible:bg-transparent focus-visible:ring-1 focus-visible:ring-white/55 focus-visible:ring-offset-2 focus-visible:ring-offset-transparent active:bg-transparent data-[state=open]:bg-transparent data-[state=open]:text-white/80 data-[state=open]:hover:bg-transparent data-[state=open]:hover:text-white/80 data-[state=open]:focus:bg-transparent data-[state=open]:focus:text-white data-[state=open]:focus-visible:bg-transparent data-[state=open]:active:bg-transparent"
                       style={{
                         fontFamily: "'Montserrat', sans-serif",
                         fontWeight: 500,

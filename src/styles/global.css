@@ -330,3 +330,33 @@
     border-color: hsl(var(--border) / 0.6);
   }
 }
+
+/* Attorney-review note. Unlayered so it wins over prose paragraph utilities. */
+.legal-review-note {
+  flex: 1 0 100%;
+  width: 100%;
+  margin: 0.875rem 0 0.25rem;
+  max-width: 40rem;
+  text-align: left;
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.65;
+  letter-spacing: 0.01em;
+  color: hsl(240 4% 32%);
+}
+
+.legal-review-note .legal-review-label {
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: hsl(240 6% 16%);
+}
+
+.legal-review-note .legal-review-disclaimer {
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: hsl(240 4% 38%);
+}
