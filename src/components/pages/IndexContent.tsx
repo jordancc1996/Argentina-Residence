@@ -8,6 +8,12 @@ import casaRosadaFlag from "@/assets/hero-casa-rosada-flag.webp";
 import argentinaPassport from "@/assets/argentina-passport.webp";
 import flagAconcagua from "@/assets/site-photos-renamed/generic-flag-aconcagua-mountains.webp";
 import { programStatus } from "@/data/programStatus";
+import { editorial } from "@/data/editorial";
+
+const colegioName = editorial.reviewerCredential.replace(
+  /^an immigration attorney enrolled with the /,
+  "",
+);
 
 const casaRosadaSrc =
   typeof casaRosadaFlag === "string" ? casaRosadaFlag : casaRosadaFlag.src;
@@ -134,23 +140,20 @@ const IndexContent = ({ posts }: { posts: HomepagePost[] }) => {
       </EditorialSection>
 
       <EditorialSection className="bg-secondary/30">
-        <h2 className="font-serif text-xl-editorial mb-4 tracking-wide">
+        <h2 className="font-serif text-xl-editorial mb-12 tracking-wide">
           Guided by Legal Excellence
         </h2>
-        <p className="text-body text-text-secondary mb-12 max-w-2xl mx-auto tracking-wide">
-          Our content and guidance are developed in close partnership with licensed immigration attorneys who specialize in Argentine residency and citizenship law.
-        </p>
         <div className="grid md:grid-cols-3 gap-10 text-left">
           <div className="border-l-2 border-gold pl-6">
             <h3 className="font-serif text-lg-editorial mb-3 tracking-wide">Attorney-Reviewed Content</h3>
             <p className="text-sm text-text-secondary tracking-wide">
-              Every guide and resource is reviewed by qualified immigration professionals to ensure accuracy and compliance with current Argentine law.
+              Content on this site is legally reviewed by {editorial.reviewerCredential}. Articles and guides show the date of their most recent review.
             </p>
           </div>
           <div className="border-l-2 border-gold pl-6">
             <h3 className="font-serif text-lg-editorial mb-3 tracking-wide">Licensed Legal Network</h3>
             <p className="text-sm text-text-secondary tracking-wide">
-              We work exclusively with Buenos Aires–based attorneys who hold active matriculation with the Colegio Público de Abogados and specialize in migration law.
+              We work exclusively with Buenos Aires–based attorneys who hold active matriculation with the {colegioName} and specialize in migration law.
             </p>
           </div>
           <div className="border-l-2 border-gold pl-6">
@@ -258,9 +261,9 @@ const IndexContent = ({ posts }: { posts: HomepagePost[] }) => {
       </EditorialSection>
 
       <EditorialSection>
-        <h2 className="font-serif text-xl-editorial mb-8 tracking-wide">Official Resources and Further Reading</h2>
+        <h2 className="font-serif text-xl-editorial mb-8 tracking-wide">Official Resources</h2>
         <p className="text-body text-text-secondary mb-8 max-w-3xl mx-auto tracking-wide">
-          For official government information and comprehensive investment migration news, we recommend the following authoritative sources:
+          Official immigration information is published by the Dirección Nacional de Migraciones. Updates on this site are in <a href="/industry-news" className="text-primary hover:underline">Industry News</a>.
         </p>
         <div className="flex flex-wrap gap-6 justify-center">
           <a
@@ -270,15 +273,6 @@ const IndexContent = ({ posts }: { posts: HomepagePost[] }) => {
             className="inline-flex items-center gap-2 text-primary hover:text-primary/80 underline underline-offset-4 transition-colors"
           >
             Argentina National Migration Office (DNM)
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-          </a>
-          <a
-            href="https://www.imidaily.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-primary hover:text-primary/80 underline underline-offset-4 transition-colors"
-          >
-            IMI Daily - Investment Migration News
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
           </a>
         </div>

@@ -6,6 +6,8 @@ import ComparisonBlock from '../../components/ComparisonBlock';
 import SupportingImage from '../../components/SupportingImage';
 import DateMeta from '../../components/DateMeta.astro';
 import { getRelatedEntries } from '../../data/relatedContent';
+import { articleAuthor } from '../../data/editorial';
+import { reviewDateFor } from '../../data/reviews';
 
 export async function getStaticPaths() {
   const entries = await getCollection('industryNews');
@@ -47,10 +49,7 @@ const schema = {
   "description": data.summary,
   "datePublished": data.publishedDate || data.date,
   "dateModified": data.lastUpdatedDate || data.publishedDate || data.date,
-  "author": {
-    "@type": "Organization",
-    "name": "Argentina Residence"
-  },
+  "author": articleAuthor(),
   "publisher": {
     "@type": "Organization",
     "name": "Argentina Residence",
@@ -97,6 +96,7 @@ const schema = {
 		imageAlt={data.imageAlt}
 		related={related}
 		faqPath={faqPath}
+		reviewedAt={reviewDateFor(`/industry-news/${data.slug}`)}
 	>
 		<DateMeta publishedDate={data.publishedDate || data.date} lastUpdatedDate={data.lastUpdatedDate} />
 		<Content components={{ ComparisonBlock, SupportingImage }} />

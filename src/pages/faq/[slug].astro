@@ -3,6 +3,7 @@ import { getCollection, render } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import FAQDetailContent from '../../components/FAQDetailContent';
 import SupportingImage from '../../components/SupportingImage';
+import { reviewDateFor } from '../../data/reviews';
 
 export async function getStaticPaths() {
   const faqOrder = [
@@ -101,6 +102,7 @@ const schema = {
 		hasRichBody={hasRichBody}
 		previous={previous}
 		next={next}
+		reviewedAt={reviewDateFor(`/faq/${data.slug}`)}
 	>
 		{hasRichBody && Content && <Content components={{ SupportingImage }} />}
 	</FAQDetailContent>

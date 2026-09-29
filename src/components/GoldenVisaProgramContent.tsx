@@ -10,6 +10,8 @@ import PageFAQ from "@/components/PageFAQ";
 import { Clock, Shield, Globe, TrendingUp, CheckCircle, ArrowRight } from "lucide-react";
 import type { ReactNode } from "react";
 import goldenVisaHero from "@/assets/argentina-golden-visa-flag-hero.webp";
+import EditorialByline from "@/components/EditorialByline";
+import { reviewDateFor } from "@/data/reviews";
 
 const related = getRelatedGuides("argentina-golden-visa-program", 5);
 
@@ -39,6 +41,9 @@ const GoldenVisaProgramContent = ({ children }: { children?: ReactNode }) => {
       </div>
       
       <EditorialSection>
+        <div className="mb-8 flex flex-wrap items-center gap-6 text-left text-text-secondary">
+          <EditorialByline reviewedAt={reviewDateFor("/guides/argentina-golden-visa-program")} />
+        </div>
         <h2 className="font-serif text-xl-editorial mb-8 tracking-wide">
           Argentina's New Golden Visa: The 2026 Investor Guide
         </h2>

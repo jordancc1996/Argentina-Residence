@@ -15,6 +15,8 @@ import PhotoPlaceholder from '../../components/PhotoPlaceholder';
 import { DueDiligenceReviewGroups, BusinessSaleTimingSteps } from '../../components/guideBlocks';
 import { getRelatedGuides, inquiryCardOverrides, investorGuides } from '../../data/relatedGuides';
 import DateMeta from '../../components/DateMeta.astro';
+import { articleAuthor } from '../../data/editorial';
+import { reviewDateFor } from '../../data/reviews';
 
 import placeholderGuideHero from '../../assets/hero-buenos-aires-night.webp';
 
@@ -57,10 +59,7 @@ const schema = {
   '@type': 'Article',
   headline: pageTitle,
   description,
-  author: {
-    '@type': 'Organization',
-    name: 'Argentina Residence',
-  },
+  author: articleAuthor(),
   publisher: {
     '@type': 'Organization',
     name: 'Argentina Residence',
@@ -102,6 +101,7 @@ const schema = {
 		faqPath={faqPath}
 		showBottomInquiryCard={showBottomInquiryCard}
 		inquiryCard={inquiryCardOverrides[data.slug]}
+		reviewedAt={reviewDateFor(`/guides/${data.slug}`)}
 	>
 		<DateMeta publishedDate={publishedDate} lastUpdatedDate={lastUpdatedDate} />
 		<Content components={{ ComparisonBlock, ComparisonTable, KeyFactsTable, ChecklistCard, ProcessSteps, InquiryCard, NewsletterSignup, CompareOptionsCta, CompareOptionsModal, PhotoPlaceholder, DueDiligenceReviewGroups, BusinessSaleTimingSteps }} />

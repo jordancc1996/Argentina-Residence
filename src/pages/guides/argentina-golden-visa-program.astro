@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import GoldenVisaProgramContent from '../../components/GoldenVisaProgramContent';
 import DateMeta from '../../components/DateMeta.astro';
+import { articleAuthor } from '../../data/editorial';
 
 const title = "Argentina Golden Visa 2026 | Citizenship by Investment Guide";
 const description = "Decree 524/2025 does not set $500,000 or $1,000,000. Those reported figures are not enacted requirements. APCI is not processing files.";
@@ -14,10 +15,7 @@ const schema = {
   "@type": "Article",
   "headline": "Argentina's New Golden Visa: The 2026 Investor Guide",
   "description": "Complete guide to Argentina's proposed Golden Visa program. APCI has not published operational regulations or opened applications.",
-  "author": {
-    "@type": "Organization",
-    "name": "Argentina Residence"
-  },
+  "author": articleAuthor(),
   "publisher": {
     "@type": "Organization",
     "name": "Argentina Residence",

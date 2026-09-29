@@ -11,6 +11,8 @@ import PhotoPlaceholder from "@/components/PhotoPlaceholder";
 import { Building2, TrendingUp, MapPin, ArrowRight } from "lucide-react";
 import type { ReactNode } from "react";
 import buenosAiresCityscape from "@/assets/buenos-aires-cityscape.webp";
+import EditorialByline from "@/components/EditorialByline";
+import { reviewDateFor } from "@/data/reviews";
 
 const related = getRelatedGuides("argentina-real-estate-investment", 5);
 
@@ -52,6 +54,9 @@ const RealEstateInvestmentContent = ({ children }: { children?: ReactNode }) => 
       />
       
       <EditorialSection>
+        <div className="mb-8 flex flex-wrap items-center gap-6 text-left text-text-secondary">
+          <EditorialByline reviewedAt={reviewDateFor("/guides/argentina-real-estate-investment")} />
+        </div>
         <h2 className="font-serif text-xl-editorial mb-8 tracking-wide">
           Where to Invest: Real Estate in Argentina
         </h2>

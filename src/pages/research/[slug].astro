@@ -10,6 +10,8 @@ import NewsletterSignup from '../../components/NewsletterSignupMdx.astro';
 import DateMeta from '../../components/DateMeta.astro';
 import { getRelatedEntries } from '../../data/relatedContent';
 import { articleOrder } from '../../data/articleOrder';
+import { articleAuthor } from '../../data/editorial';
+import { reviewDateFor } from '../../data/reviews';
 
 function wordCountFromMarkdown(markdown: string) {
   const text = markdown
@@ -74,10 +76,7 @@ const schema = {
   "description": data.seoDescription || data.excerpt,
   "datePublished": data.publishedDate || data.date,
   "dateModified": data.lastUpdatedDate || data.publishedDate || data.date,
-  "author": {
-    "@type": "Organization",
-    "name": data.author
-  },
+  "author": articleAuthor(),
   "publisher": {
     "@type": "Organization",
     "name": "Argentina Residence",
@@ -125,8 +124,8 @@ const faqPath = `/research/${data.slug}`;
 		client:load
 		title={data.title}
 		category={data.category}
-		author={data.author}
 		date={data.date}
+		reviewedAt={reviewDateFor(`/research/${data.slug}`)}
 		readTime={data.readTime}
 		excerpt={data.excerpt}
 		slug={data.slug}
