@@ -16,6 +16,10 @@ interface Props {
 
 const { showBreadcrumbs = true, showChrome = true } = Astro.props;
 const currentPath = Astro.url.pathname;
+const normalizedPath = currentPath.replace(/\/$/, "") || "/";
+const skipMarkdownAlternate = normalizedPath === "/privacy" || normalizedPath === "/404";
+const markdownHref =
+	normalizedPath === "/" ? "/markdown/index.md" : `/markdown${normalizedPath}.md`;
 const schema = showChrome && showBreadcrumbs ? getBreadcrumbSchema(currentPath) : null;
 const guideEntries = showChrome ? await getCollection('guides') : [];
 const guides = [...guideEntries]
@@ -34,6 +38,9 @@ const guides = [...guideEntries]
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
+		{import.meta.env.PROD && !skipMarkdownAlternate && (
+			<link rel="alternate" type="text/markdown" href={markdownHref} />
+		)}
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -49,7 +56,9 @@ const guides = [...guideEntries]
 			{showChrome && <Navigation currentPath={currentPath} guides={guides} client:load />}
 			<main>
 				{showChrome && showBreadcrumbs && <Breadcrumbs currentPath={currentPath} />}
-				<slot />
+				<div data-md-content>
+					<slot />
+				</div>
 			</main>
 			{showChrome && <PreferredSourcesCTA />}
 			{showChrome && <ConsultationCTA client:load />}

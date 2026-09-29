@@ -4,8 +4,8 @@ import { ChevronRight } from "lucide-react";
 import { useParallax } from "@/hooks/useParallax";
 import { resolveImageSrc } from "@/lib/resolveImageSrc";
 import SupportingImage from "@/components/SupportingImage";
-import faqBackground from "@/assets/faq-colombia-cityscape.jpg";
-import flagShipRailing from "@/assets/site-photos-renamed/generic-flag-ship-railing.jpg";
+import faqBackground from "@/assets/faq-colombia-cityscape.webp";
+import flagShipRailing from "@/assets/site-photos-renamed/generic-flag-ship-railing.webp";
 
 export interface FAQHubItem {
   slug: string;

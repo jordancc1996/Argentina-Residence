@@ -10,7 +10,9 @@ import PageFAQ from "@/components/PageFAQ";
 import CompareOptionsModal from "@/components/CompareOptionsModal";
 import { Clock, Shield, Globe, TrendingUp, CheckCircle, ArrowRight } from "lucide-react";
 import type { ReactNode } from "react";
-import goldenVisaHero from "@/assets/argentina-golden-visa-flag-hero.jpg";
+import goldenVisaHero from "@/assets/argentina-golden-visa-flag-hero.webp";
+import EditorialByline from "@/components/EditorialByline";
+import { reviewDateFor } from "@/data/reviews";
 
 const related = getRelatedGuides("argentina-golden-visa-program", 5);
 
@@ -40,6 +42,9 @@ const GoldenVisaProgramContent = ({ children }: { children?: ReactNode }) => {
       </div>
       
       <EditorialSection>
+        <div className="mb-8 flex flex-wrap items-center gap-6 text-left text-text-secondary">
+          <EditorialByline reviewedAt={reviewDateFor("/guides/argentina-golden-visa-program")} />
+        </div>
         <h2 className="font-serif text-xl-editorial mb-8 tracking-wide">
           Argentina's New Golden Visa: The 2026 Investor Guide
         </h2>
@@ -49,7 +54,11 @@ const GoldenVisaProgramContent = ({ children }: { children?: ReactNode }) => {
           <a href="/research/argentina-citizenship-by-investment-launch-date" className="text-primary hover:underline">
             citizenship by investment launch date
           </a>{" "}
-          is not confirmed. Decree 524/2025 created the pathway; APCI has not published operational regulations or opened applications.
+          is not confirmed.{" "}
+          <a href="https://www.boletinoficial.gob.ar/detalleAviso/primera/329061/20250731" className="text-primary hover:underline">
+            Decree 524/2025
+          </a>{" "}
+          created the pathway; APCI has not published operational regulations or opened applications.
         </p>
         <div className="flex flex-col items-center gap-4">
           <CompareOptionsModal
@@ -87,7 +96,7 @@ const GoldenVisaProgramContent = ({ children }: { children?: ReactNode }) => {
               <a href="/faq/argentina-citizenship-investment-application-timeline" className="text-primary hover:underline">
                 processing time
               </a>{" "}
-              is not yet officially confirmed. No decision window has been published. APCI is not processing applications.
+              is not a filing-to-citizenship calendar. Decree 524/2025 gives DNM 30 business days to decide after DNM receives APCI's report. That period is not 30 days from the application, and it is not a total or guaranteed processing time. APCI's assessment and interagency review occur before this period. The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted.
             </p>
           </div>
           
@@ -95,9 +104,9 @@ const GoldenVisaProgramContent = ({ children }: { children?: ReactNode }) => {
             <div className="w-16 h-16 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-4">
               <Shield className="h-8 w-8 text-gold" />
             </div>
-            <h3 className="font-serif text-lg mb-3">Secure Investment</h3>
+            <h3 className="font-serif text-lg mb-3">Legal Framework</h3>
             <p className="text-text-secondary text-sm">
-              Government-backed program with clear legal framework
+              Decree 524/2025 created a framework. Operational rules are unpublished, and the pathway should not be treated as an open application program.
             </p>
           </div>
           
@@ -110,7 +119,7 @@ const GoldenVisaProgramContent = ({ children }: { children?: ReactNode }) => {
               <a href="/faq/argentina-visa-free-travel" className="text-primary hover:underline">
                 Visa-free access
               </a>{" "}
-              to 170+ countries with an Argentine passport
+              The Henley Passport Index of 13 April 2026 gives an Argentine passport a visa-free score of 168 and rank 15. That score is not residency travel.
             </p>
           </div>
           
@@ -131,29 +140,29 @@ const GoldenVisaProgramContent = ({ children }: { children?: ReactNode }) => {
         <div className="text-left">
           <div className="max-w-2xl">
             <h2 className="font-serif text-xl-editorial mb-6 tracking-wide">
-              Anticipated Investment Paths
+              Reported Figures, Not Enacted Amounts
             </h2>
             <p className="text-body text-text-secondary mb-6 tracking-wide">
-              Two paths are currently anticipated, subject to final regulation. See the{" "}
+              Reported figures are not an enacted schedule. See the{" "}
               <a href="/faq/argentina-citizenship-investment-requirements" className="text-primary hover:underline">
                 anticipated investment requirements
               </a>
-              : a non-refundable $500,000 USD Treasury contribution, or a $1,000,000 USD 7-year government bond. Real estate, business or startup ventures, and investment funds are not anticipated qualifying paths. Neither path has been officially confirmed. APCI is not processing applications.
+              . Decree 524/2025 does not set a dollar amount. The decrees do not set a confirmed minimum amount or identify qualifying investment types. The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted.
             </p>
             
             <div className="space-y-4 mb-8">
               <div className="flex items-start gap-3 p-4 bg-secondary/30 rounded-lg">
                 <CheckCircle className="h-5 w-5 text-gold flex-shrink-0 mt-0.5" />
                 <div>
-                  <p className="font-semibold text-text-primary">$500,000 USD Treasury contribution</p>
-                  <p className="text-sm text-text-secondary">Anticipated as non-refundable. Subject to final regulation. Not yet officially confirmed.</p>
+                  <p className="font-semibold text-text-primary">No confirmed minimum</p>
+                  <p className="text-sm text-text-secondary">The decrees do not set a confirmed minimum amount.</p>
                 </div>
               </div>
               <div className="flex items-start gap-3 p-4 bg-secondary/30 rounded-lg">
                 <CheckCircle className="h-5 w-5 text-gold flex-shrink-0 mt-0.5" />
                 <div>
-                  <p className="font-semibold text-text-primary">$1,000,000 USD 7-year government bond</p>
-                  <p className="text-sm text-text-secondary">Anticipated at 0% interest, with principal returned at maturity. Subject to final regulation. Not yet officially confirmed.</p>
+                  <p className="font-semibold text-text-primary">No identified investment types</p>
+                  <p className="text-sm text-text-secondary">The decrees do not identify a Treasury payment, a bond, real estate, a business, or a fund as qualifying or disqualifying.</p>
                 </div>
               </div>
             </div>
@@ -165,26 +174,26 @@ const GoldenVisaProgramContent = ({ children }: { children?: ReactNode }) => {
       <EditorialSection centered={false} className="bg-secondary/30">
         <ScrollytellingSteps
           eyebrow="Program Timeline"
-          heading="A short window to position early"
-          intro="The Argentina Golden Visa is moving from announcement to active program. Each milestone unlocks specific advantages for early-positioned investors."
+          heading="Argentina Residence Waitlist Open"
+          intro="The pathway should not be treated as an open application program. The Argentina Residence waitlist is this firm's list for updates. It is not a government application, a government priority list, or a reserved filing place. Launch timing is not confirmed."
           steps={[
             {
               label: "Now",
-              title: "Early Registration Open",
+              title: "Argentina Residence Waitlist Open",
               description:
-                "Join the priority waitlist for first-mover advantages when the program launches.",
+                "Join the Argentina Residence waitlist for updates. This does not apply to the Argentine government and does not reserve a government position.",
             },
             {
               label: "Next",
-              title: "Final Legislation",
+              title: "Rules Still Unpublished",
               description:
-                "Expected passage of enabling legislation and regulatory framework. Anticipated launch date not yet confirmed.",
+                "Operational regulations are not published. The anticipated launch date is not confirmed. See the launch-date page for timing.",
             },
             {
-              label: "Launch",
-              title: "Applications Open",
+              label: "Later",
+              title: "Government Applications, If Opened",
               description:
-                "Official program launch with priority processing for waitlist members. Anticipated launch date not yet confirmed.",
+                "A later government filing channel would be a separate process. The Argentina Residence waitlist would not create government priority or approval.",
             },
           ]}
         />
@@ -196,15 +205,14 @@ const GoldenVisaProgramContent = ({ children }: { children?: ReactNode }) => {
       <EditorialSection className="bg-dark-teal text-white">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="font-serif text-xl-editorial mb-6 tracking-wide text-white">
-            Secure Your Priority Status
+            Join the Argentina Residence Waitlist
           </h2>
           <p className="text-text-cream mb-8 text-lg">
-            Be among the first to apply when Argentina's Golden Visa launches. 
-            Complete our eligibility assessment to join the priority waitlist.
+            The pathway should not be treated as an open application program. The waitlist is for updates from Argentina Residence. It does not file an application or hold a government place.
           </p>
           <a href="/argentina-golden-visa-eligibility-checker">
             <Button size="lg" className="bg-gold hover:bg-gold/90 text-primary px-10">
-              Check Eligibility Now
+              Join the Waitlist
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </a>

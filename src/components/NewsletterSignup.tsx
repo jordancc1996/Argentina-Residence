@@ -52,7 +52,7 @@ const NewsletterSignup = ({
     heading ??
     (compact
       ? "Get program updates"
-      : "Never miss an update. Subscribe for the latest on Argentina's investor residency program.");
+      : "Never miss an update. Subscribe for the latest on Argentina's proposed citizenship-by-investment framework.");
 
   const onSubmit = async (data: NewsletterFormData) => {
     setIsSubmitting(true);
@@ -91,6 +91,7 @@ const NewsletterSignup = ({
 
   return (
     <div
+      data-md-exclude
       className={cn(
         "bg-card border border-border rounded-lg p-6 md:p-8 text-left not-prose",
         className,
@@ -101,9 +102,9 @@ const NewsletterSignup = ({
           Argentina Residence Newsletter
         </p>
       )}
-      <h2 className={cn("font-serif text-xl-editorial tracking-wide text-foreground", compact ? "mb-6" : "mb-3")}>
+      <p className={cn("font-serif font-medium text-xl-editorial tracking-wide text-foreground", compact ? "mb-6" : "mb-3")}>
         {title}
-      </h2>
+      </p>
       {!compact && (
         <p className="text-sm text-text-secondary mb-6 tracking-wide leading-relaxed">
           Program status, regulatory developments, and residency updates, delivered by email.

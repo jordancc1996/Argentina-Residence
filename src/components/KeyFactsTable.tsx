@@ -19,39 +19,42 @@ export interface KeyFactsTableProps {
 
 export const programKeyFacts: KeyFact[] = [
   {
-    label: "Investment paths",
+    label: "Investment amount",
     value:
-      "Two paths anticipated, subject to final regulation: a non-refundable $500,000 USD contribution to the Argentine Treasury, or a $1,000,000 USD investment in a 7-year, 0% interest Argentine government bond, with principal returned at maturity.",
+      "The decrees do not set a confirmed minimum amount or identify qualifying investment types.",
   },
   {
-    label: "Not anticipated paths",
+    label: "Qualifying assets",
     value:
-      "Real estate, business ventures, investment funds, agriculture, renewable energy, and tourism projects are not anticipated qualifying paths.",
+      "The decrees do not identify real estate, a business, a fund, a bond, or a Treasury payment as a qualifying or disqualifying investment.",
   },
   {
     label: "Family inclusion",
-    value: "Spouse and children under 18 expected to be includable. Status of dependents 18 and older is unknown.",
+    value: "The decrees do not establish a general family-inclusion rule for investor applicants.",
   },
   {
     label: "Processing time",
-    value: "Not yet officially confirmed.",
+    value:
+      "DNM has 30 business days to decide after it receives APCI's report. That is not total or guaranteed processing time.",
   },
   {
     label: "Application cap",
-    value: "An initial cap near 5,000 applications is anticipated. Not officially confirmed.",
+    value:
+      "No enacted application cap is stated here. Gazette publication of a resolution cancelling a consultancy tender was not located.",
   },
   {
     label: "Biometrics",
-    value: "A single biometrics visit after approval is anticipated. Not officially confirmed.",
+    value: "The decrees do not specify a biometrics rule for investor applicants.",
   },
   {
     label: "Physical presence",
-    value: "No residence or physical-presence requirement is anticipated.",
+    value:
+      "The investment-naturalization provision is distinct from temporary or permanent residence. The decrees do not specify a physical-presence rule for investor applicants.",
   },
   {
     label: "Program status",
     value:
-      "Not yet open. Not published in the Official Gazette (Boletín Oficial). APCI is not processing applications.",
+      "DNU 366/2025 created APCI. Decree 524/2025 established a basic review procedure. Do not treat the pathway as an open application program unless the government publishes the criteria and confirms that applications are being accepted.",
   },
 ];
 

@@ -15,8 +15,10 @@ import PhotoPlaceholder from '../../components/PhotoPlaceholder';
 import { DueDiligenceReviewGroups, BusinessSaleTimingSteps } from '../../components/guideBlocks';
 import { getRelatedGuides, inquiryCardOverrides, investorGuides } from '../../data/relatedGuides';
 import DateMeta from '../../components/DateMeta.astro';
+import { articleAuthor } from '../../data/editorial';
+import { reviewDateFor } from '../../data/reviews';
 
-import placeholderGuideHero from '../../assets/hero-buenos-aires-night.jpg';
+import placeholderGuideHero from '../../assets/hero-buenos-aires-night.webp';
 
 export async function getStaticPaths() {
   const dedicatedGuideSlugs = new Set([
@@ -40,7 +42,7 @@ const pageTitle = data.seoTitle || data.title;
 const metaTitle = `${pageTitle} | Argentina Residence`;
 const description = data.seoDescription || '';
 const canonical = `https://argentinaresidence.com/guides/${data.slug}`;
-const ogImage = 'https://argentinaresidence.com/og-image.jpg';
+const ogImage = 'https://argentinaresidence.com/og-image.webp';
 const currentGuide = investorGuides.find((guide) => guide.slug === data.slug);
 const heroImage = currentGuide?.heroImage ?? placeholderGuideHero;
 const heroAlt = currentGuide?.imageAlt ?? 'Buenos Aires at night';
@@ -57,10 +59,7 @@ const schema = {
   '@type': 'Article',
   headline: pageTitle,
   description,
-  author: {
-    '@type': 'Organization',
-    name: 'Argentina Residence',
-  },
+  author: articleAuthor(),
   publisher: {
     '@type': 'Organization',
     name: 'Argentina Residence',
@@ -102,6 +101,7 @@ const schema = {
 		faqPath={faqPath}
 		showBottomInquiryCard={showBottomInquiryCard}
 		inquiryCard={inquiryCardOverrides[data.slug]}
+		reviewedAt={reviewDateFor(`/guides/${data.slug}`)}
 	>
 		<DateMeta publishedDate={publishedDate} lastUpdatedDate={lastUpdatedDate} />
 		<Content components={{ ComparisonBlock, ComparisonTable, KeyFactsTable, ChecklistCard, ProcessSteps, InquiryCard, NewsletterSignup, CompareOptionsCta, CompareOptionsModal, PhotoPlaceholder, DueDiligenceReviewGroups, BusinessSaleTimingSteps }} />

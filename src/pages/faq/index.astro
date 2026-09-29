@@ -27,21 +27,9 @@ const faqs = ordered.map((entry) => ({
 }));
 
 const title = 'Argentina Residency FAQ | Argentina Residence';
-const description = 'Get answers about Argentina golden visa requirements, costs, timeline, and citizenship pathway. Expert FAQ for investors.';
+const description = 'Short answers on Argentina Golden Visa amounts, family, presence, documents, tax, and work rights. The pathway should not be treated as an open application program.';
 const canonical = 'https://argentinaresidence.com/faq';
-const ogImage = 'https://argentinaresidence.com/og-image.jpg';
-const schema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": ordered.map((faq) => ({
-    "@type": "Question",
-    "name": faq.data.question,
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": faq.data.answer
-    }
-  }))
-};
+const ogImage = 'https://argentinaresidence.com/og-image.webp';
 ---
 
 <Layout>
@@ -62,6 +50,5 @@ const schema = {
 	<meta slot="head" name="twitter:title" content={title} />
 	<meta slot="head" name="twitter:description" content={description} />
 	<meta slot="head" name="twitter:image" content={ogImage} />
-	<script slot="head" type="application/ld+json" set:html={JSON.stringify(schema)} />
 	<FAQHubContent client:load faqs={faqs} />
 </Layout>

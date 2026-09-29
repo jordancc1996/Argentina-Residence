@@ -2,7 +2,7 @@ import Hero from "@/components/Hero";
 import EditorialSection from "@/components/EditorialSection";
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
-import flagBlueSky from "@/assets/site-photos-renamed/generic-flag-blue-sky-low-angle.jpg";
+import flagBlueSky from "@/assets/site-photos-renamed/generic-flag-blue-sky-low-angle.webp";
 
 const ResourcesContent = () => {
   const officialResources = [
@@ -20,26 +20,38 @@ const ResourcesContent = () => {
       title: "Argentine Investment and Trade Promotion Agency",
       url: "https://www.inversionycomercio.org.ar/",
       description: "Official information on investment opportunities, business climate, and economic sectors."
+    },
+    {
+      title: "Boletín Oficial de la República Argentina",
+      url: "https://www.boletinoficial.gob.ar/",
+      description: "Official gazette. Decrees and other national acts are published here."
+    },
+    {
+      title: "AFIP",
+      url: "https://www.afip.gob.ar/",
+      description: "Federal Administration of Public Revenue. Tax administration, separate from immigration residence."
     }
   ];
 
-  const usefulGuides = [
-    {
-      title: "Living in Argentina",
-      description: "Understanding Argentine culture, cost of living, healthcare system, and daily life for expatriates."
-    },
-    {
-      title: "Real Estate Market",
-      description: "Overview of property investment opportunities in Buenos Aires, Mendoza, Patagonia, and other key regions."
-    },
-    {
-      title: "Tax and Legal Considerations",
-      description: "Important information about Argentine tax residency, obligations, and legal requirements for foreign investors."
-    },
-    {
-      title: "Banking and Finance",
-      description: "Opening bank accounts, currency exchange, money transfers, and financial services in Argentina."
-    }
+  const siteGuides = [
+    { title: "Program overview", href: "/program", description: "Short overview of the anticipated framework. The pathway should not be treated as an open application program." },
+    { title: "Argentina Golden Visa program guide", href: "/guides/argentina-golden-visa-program", description: "The long guide to the proposed citizenship-by-investment framework." },
+    { title: "Current program status", href: "/research/argentina-citizenship-by-investment-status", description: "Whether Argentina citizenship by investment is open." },
+    { title: "Launch date", href: "/research/argentina-citizenship-by-investment-launch-date", description: "What is known about timing. No confirmed launch date." },
+    { title: "Real estate investment", href: "/guides/argentina-real-estate-investment", description: "Buying property in Argentina. The decrees do not identify a purchase as a qualifying or disqualifying investment." },
+    { title: "Research", href: "/research", description: "Market and investor research published on this site." },
+  ];
+
+  const siteFaqs = [
+    { title: "What is the Argentina Golden Visa?", href: "/faq/what-is-argentina-golden-visa" },
+    { title: "Investment requirements", href: "/faq/argentina-citizenship-investment-requirements" },
+    { title: "Family members", href: "/faq/argentina-citizenship-investment-family" },
+    { title: "Physical presence", href: "/faq/argentina-residency-physical-presence" },
+    { title: "Documents", href: "/faq/argentina-citizenship-investment-documents" },
+    { title: "Work rights", href: "/faq/argentina-residency-work-rights" },
+    { title: "Tax implications", href: "/faq/argentina-residency-tax-implications" },
+    { title: "Visa-free travel", href: "/faq/argentina-visa-free-travel" },
+    { title: "All FAQs", href: "/faq" },
   ];
 
   return (
@@ -77,17 +89,36 @@ const ResourcesContent = () => {
 
         <EditorialSection>
           <h2 className="font-serif text-xl-editorial mb-8 tracking-wide text-left">
-            Helpful Guides
+            Guides and research on this site
           </h2>
           <div className="grid md:grid-cols-2 gap-8 text-left">
-            {usefulGuides.map((guide, index) => (
-              <div key={index} className="border-l-2 border-gold pl-6">
+            {siteGuides.map((guide) => (
+              <div key={guide.href} className="border-l-2 border-gold pl-6">
                 <h3 className="font-serif text-lg-editorial mb-3 tracking-wide">
-                  {guide.title}
+                  <a href={guide.href} className="text-primary hover:underline">
+                    {guide.title}
+                  </a>
                 </h3>
                 <p className="text-body text-text-secondary tracking-wide">
                   {guide.description}
                 </p>
+              </div>
+            ))}
+          </div>
+        </EditorialSection>
+
+        <EditorialSection>
+          <h2 className="font-serif text-xl-editorial mb-8 tracking-wide text-left">
+            Short answers
+          </h2>
+          <div className="grid md:grid-cols-2 gap-8 text-left">
+            {siteFaqs.map((item) => (
+              <div key={item.href} className="border-l-2 border-gold pl-6">
+                <h3 className="font-serif text-lg-editorial tracking-wide">
+                  <a href={item.href} className="text-primary hover:underline">
+                    {item.title}
+                  </a>
+                </h3>
               </div>
             ))}
           </div>

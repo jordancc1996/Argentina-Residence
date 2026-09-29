@@ -1,11 +1,13 @@
 ---
 slug: argentina-citizenship-investment-documents
 question: Argentina Golden Visa Required Documents - Apostille and Translations
-answer: "Argentina Golden Visa required documents typically include a valid passport, apostilled civil records, a criminal background check, proof of funds, and Spanish translations. Those items sit inside the expected due diligence process file, once APCI publishes protocols."
+answer: "The decrees do not specify an application-document checklist for investment-naturalization applicants. A passport, apostille, criminal record, proof of funds, or translation is not stated here as an investor requirement."
 metaTitle: "Argentina Golden Visa Required Documents - Apostille and Translations | Argentina Residence"
-metaDescription: "Argentina Golden Visa required documents typically include a passport, apostilled civil records, a criminal check, proof of funds, and Spanish translations."
+metaDescription: "The decrees do not specify an application-document checklist for investment-naturalization applicants. This is not an APCI document list."
 ---
 
 # Argentina Golden Visa Required Documents - Apostille and Translations
 
-Argentina Golden Visa required documents typically include a valid passport, apostilled civil records, a criminal background check, proof of funds, and Spanish translations. Those items sit inside the expected [due diligence process](/guides/argentina-citizenship-investment-due-diligence) file, once APCI publishes protocols.
+The investment-naturalization provision is distinct from temporary or permanent residence. The decrees do not specify an application-document checklist for investor applicants.
+
+This page does not list a passport, an apostille, a criminal record, proof of funds, or a Spanish translation as an investor requirement. Those items are not inferred from other Argentine immigration files. The [due diligence process](/guides/argentina-citizenship-investment-due-diligence) guide covers the same limit: the decrees do not publish that checklist.

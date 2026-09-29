@@ -74,10 +74,51 @@ new slug and its owned topics.
 
 Replace these temporary heroes when a real photo is provided. Do not treat the current files as final art.
 
-- `/guides/argentina-citizenship-investment-due-diligence` uses `src/assets/hero-buenos-aires-night.jpg` as a temporary hero. See the PLACEHOLDER IMAGE comment in `src/pages/guides/[slug].astro`.
-- `/guides/argentina-citizenship-investment-business-sale` uses `src/assets/hero-buenos-aires-night.jpg` as a temporary hero. See the PLACEHOLDER IMAGE comment in `src/pages/guides/[slug].astro`.
-- `/guides/argentina-cbi-vs-caribbean-citizenship` uses `src/assets/hero-buenos-aires-night.jpg` as a temporary hero. See the PLACEHOLDER IMAGE comment in `src/pages/guides/[slug].astro`.
-- `/guides/argentina-citizenship-investment-vs-greece-golden-visa` uses `src/assets/hero-buenos-aires-night.jpg` as a temporary hero. See the PLACEHOLDER IMAGE comment in `src/pages/guides/[slug].astro`.
-- `/guides/argentina-citizenship-investment-vs-turkey` uses `src/assets/hero-buenos-aires-night.jpg` as a temporary hero. See the PLACEHOLDER IMAGE comment in `src/pages/guides/[slug].astro`.
-- `/guides/argentina-citizenship-investment-vs-paraguay` uses `src/assets/hero-buenos-aires-night.jpg` as a temporary hero. See the PLACEHOLDER IMAGE comment in `src/pages/guides/[slug].astro`.
-- `/guides/argentina-citizenship-investment-vs-panama` uses `src/assets/hero-buenos-aires-night.jpg` as a temporary hero. See the PLACEHOLDER IMAGE comment in `src/pages/guides/[slug].astro`.
+- `/guides/argentina-citizenship-investment-due-diligence` uses `src/assets/hero-buenos-aires-night.webp` as a temporary hero. See the PLACEHOLDER IMAGE comment in `src/pages/guides/[slug].astro`.
+- `/guides/argentina-citizenship-investment-business-sale` uses `src/assets/hero-buenos-aires-night.webp` as a temporary hero. See the PLACEHOLDER IMAGE comment in `src/pages/guides/[slug].astro`.
+- `/guides/argentina-cbi-vs-caribbean-citizenship` uses `src/assets/hero-buenos-aires-night.webp` as a temporary hero. See the PLACEHOLDER IMAGE comment in `src/pages/guides/[slug].astro`.
+- `/guides/argentina-citizenship-investment-vs-greece-golden-visa` uses `src/assets/hero-buenos-aires-night.webp` as a temporary hero. See the PLACEHOLDER IMAGE comment in `src/pages/guides/[slug].astro`.
+- `/guides/argentina-citizenship-investment-vs-turkey` uses `src/assets/hero-buenos-aires-night.webp` as a temporary hero. See the PLACEHOLDER IMAGE comment in `src/pages/guides/[slug].astro`.
+- `/guides/argentina-citizenship-investment-vs-paraguay` uses `src/assets/hero-buenos-aires-night.webp` as a temporary hero. See the PLACEHOLDER IMAGE comment in `src/pages/guides/[slug].astro`.
+- `/guides/argentina-citizenship-investment-vs-panama` uses `src/assets/hero-buenos-aires-night.webp` as a temporary hero. See the PLACEHOLDER IMAGE comment in `src/pages/guides/[slug].astro`.
+
+## IMAGE OPTIMIZATION STANDARD
+
+All new raster images added to this website should use **WebP by default**.
+
+Whenever a JPG, JPEG, or PNG image is provided for website use:
+
+1. Convert the image to WebP before using it on a production page.
+2. Use approximately **82–85 WebP quality** by default.
+3. Preserve the original aspect ratio.
+4. Never upscale an image.
+5. Resize unnecessarily large source images to an appropriate web resolution.
+6. Preserve transparency where required.
+7. Maintain strong visual quality.
+8. Use a concise, descriptive, SEO-friendly filename.
+9. Use concise and accurate alt text.
+10. Do not keyword-stuff filenames or alt text.
+11. Maintain responsive image behavior.
+12. Do not use lazy loading.
+13. Do not add `loading="lazy"`.
+14. Do not introduce JavaScript or framework-based lazy loading.
+15. Optimize file size without creating noticeable visual degradation.
+16. Reference the WebP version from the website rather than the original JPG, JPEG, or PNG.
+17. Keep SVG assets as SVG when SVG is the appropriate format.
+18. Do not change the surrounding page structure when adding or optimizing an image.
+
+Apply these standards to all future:
+
+* Pages
+* Articles
+* Guides
+* Landing pages
+* Research pages
+* Components
+* Hero images
+* CTA images
+* Comparison pages
+* Blog content
+* Other website content
+
+WebP should be the default raster image format for this website unless there is a specific technical reason another format is more appropriate.

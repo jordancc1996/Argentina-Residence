@@ -25,32 +25,32 @@ const IndustryNewsGuide = () => {
 
             <h2>The Legal Framework Behind Argentina's Citizenship by Investment Program</h2>
             <p>&nbsp;</p>
-            <p>Argentina's citizenship by investment program represents one of the most significant reforms to the country's immigration policy in decades. Established to attract qualified foreign capital while maintaining rigorous due diligence standards, the program offers a direct pathway to citizenship that bypasses traditional residency requirements.</p>
+            <p>Argentina's citizenship by investment framework was created to attract foreign capital. The pathway should not be treated as an open application program. Whether a filing channel exists is answered on the <a href="/research/argentina-citizenship-by-investment-status">citizenship by investment status</a> page. Timing is on the <a href="/research/argentina-citizenship-by-investment-launch-date">launch date</a> page. This section does not set a launch date.</p>
             <p>&nbsp;</p>
 
             <h3>Argentina Citizenship by Investment Decree 524 Explained</h3>
             <p>&nbsp;</p>
-            <p>The statutory foundation of the program rests on Decree 524/2025, which created the institutional framework for the Agencia de Programas de Ciudadanía por Inversión (APCI). <strong>Argentina citizenship by investment decree 524 explained</strong> simply: it authorizes the executive branch to grant full citizenship to foreign nationals who complete an anticipated qualifying path. Processing time is not yet officially confirmed. No decision window has been published. Unlike European residency-by-investment programs that require years of physical presence before naturalization, Decree 524 describes direct citizenship, making Argentina one of the few jurisdictions worldwide to offer nationality through investment, subject to final regulation.</p>
+            <p>The statutory foundation of the program rests on <a href="https://www.boletinoficial.gob.ar/detalleAviso/primera/329061/20250731">Decree 524/2025</a>, which created the institutional framework for the Agencia de Programas de Ciudadanía por Inversión (APCI). <strong>Argentina citizenship by investment decree 524 explained</strong> simply: a foreigner who made a relevant investment, as the Ministry of Economy defines it, may apply to APCI. The decree does not set a dollar amount. Article 4 gives Dirección Nacional de Migraciones 30 business days after it receives APCI's report. That is not a filing-to-citizenship calendar. The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted.</p>
             <p>&nbsp;</p>
 
             <h3>Resolution 522 Argentina Citizenship by Investment</h3>
             <p>&nbsp;</p>
-            <p>Following the decree, the government issued Resolution 522/2026 to govern the procedural mechanics of the program. <strong>Resolution 522 argentina citizenship by investment</strong> established the public tender process. That tender was later cancelled. The anticipated amounts are $500,000 or $1,000,000, subject to final regulation. Neither path has been officially confirmed. See <a href="/faq/argentina-citizenship-investment-requirements">investment requirements</a>.</p>
+            <p><a href="https://comprar.gob.ar/">COMPR.AR</a> records Ministry of Economy Resolution 522/2026, dated 14 April 2026, as the act that left consultancy tender 34-0001-CPU25 without effect. <strong>Resolution 522 argentina citizenship by investment</strong> is cited in reports as the act that left that procurement without effect. Gazette publication was not located, so this page does not state the cancellation as an established fact. It did not repeal Decree 524/2025, and it did not set a confirmed minimum amount. The decrees do not identify qualifying investment types. See <a href="/faq/argentina-citizenship-investment-requirements">investment requirements</a>.</p>
             <p>&nbsp;</p>
 
             <h3>Argentina CBI Tender Collapse Analysis</h3>
             <p>&nbsp;</p>
-            <p>The implementation timeline experienced an unexpected disruption when the initial tender process was suspended. An <strong>Argentina cbi tender collapse analysis</strong> reveals that administrative complexities and the need for additional regulatory refinements prompted authorities to pause the initial call for projects. Rather than signaling program cancellation, the suspension reflects the government's commitment to establishing a robust mechanism capable of withstanding international scrutiny. Industry observers anticipate that revised tender documentation will address procedural gaps identified in the first round, resulting in a more resilient framework for both investors and project sponsors. The pause is widely viewed as a prudent measure to ensure long-term program integrity.</p>
+            <p>The initial tender process was suspended. An <strong>Argentina cbi tender collapse analysis</strong> on this site records that the first call for projects was paused and later cancelled. That cancellation is not a published launch date. Current availability remains on the status page. Timing remains on the launch-date page.</p>
             <p>&nbsp;</p>
 
-            <h2>Argentina Citizenship by Investment Latest Update: The 2026 Launch Timeline</h2>
+            <h2>Argentina Citizenship by Investment Latest Update</h2>
             <p>&nbsp;</p>
-            <p>Investors tracking the program's development are watching 2026 as the pivotal launch year. The <strong>Argentina citizenship by investment latest update</strong> confirms that regulators continue refining secondary regulations through inter-ministerial consultation. The Ministry of the Interior, in coordination with economic and migration authorities, is working to finalize operational guidelines that will govern application submission, due diligence procedures, and investment verification protocols.</p>
+            <p>This page does not confirm a 2026 launch. The <a href="/research/argentina-citizenship-by-investment-launch-date">launch date</a> page is the timing source, and that date is not confirmed. The <a href="/research/argentina-citizenship-by-investment-status">status page</a> is the availability source. Secondary regulations have been described as still under review. Operational guidelines for application submission are not published.</p>
             <p>&nbsp;</p>
 
             <h3>What We Know About the 2026 Rollout</h3>
             <p>&nbsp;</p>
-            <p>Launch timing is not yet officially confirmed. The government has indicated that digital application infrastructure is under development, and the APCI is actively recruiting specialized personnel. Final confirmation of the two anticipated paths, and of any application cap, is expected only when operational regulations are published.</p>
+            <p>Launch timing is not officially confirmed. The decrees do not set a confirmed minimum amount. This page does not state 5,000 as an application cap, and it does not treat a tender cancellation as an established fact. This page does not treat 2026 as a confirmed opening year.</p>
             <p>&nbsp;</p>
 
             <h3>Key Milestones for Investors to Monitor</h3>
@@ -59,12 +59,12 @@ const IndustryNewsGuide = () => {
             <ChecklistCard
               items={[
                 "publication of operational regulations",
-                "confirmation of the two anticipated paths",
+                "a published Ministry definition of a relevant investment",
                 "the opening of the APCI digital application portal",
                 "the first wave of approved citizenship decisions",
               ]}
             />
-            <p>Each milestone will provide clearer guidance on documentation standards, source-of-funds verification requirements, and whether a processing calendar exists. Monitoring these developments allows investors to position themselves at the front of the queue when applications open.</p>
+            <p>Those items are things to watch. They are not a published schedule. Joining the <a href="/argentina-golden-visa-eligibility-checker">Argentina Residence waitlist</a> requests updates from this firm. It does not place anyone in a government queue.</p>
             <p>&nbsp;</p>
 
             <h2>What Investors Should Do While the Program Remains Unopened</h2>
@@ -79,12 +79,12 @@ const IndustryNewsGuide = () => {
                 {
                   title: "Organize Documentation and Source-of-Funds Evidence",
                   description:
-                    "Comprehensive documentation forms the cornerstone of every successful citizenship by investment application. Investors should begin organizing corporate records, audited financial statements, tax returns, source-of-funds evidence, and personal identification documents. Many materials require apostille certification and certified Spanish translation, processes that can take several weeks to complete. Beginning this preparation now eliminates last-minute delays and demonstrates organizational readiness to APCI processing authorities.",
+                    "Organizing corporate records, financial statements, tax returns, source-of-funds evidence, and identification can start before a filing channel exists. Apostille and certified Spanish translation can take weeks. Preparing documents does not file an application, and The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted.",
                 },
                 {
                   title: "Evaluate the Anticipated Paths",
                   description:
-                    "While operational regulations remain unpublished, this site currently anticipates two paths only: a $500,000 USD Treasury contribution or a $1,000,000 USD 7-year government bond, subject to final regulation. Preparing source-of-funds evidence now is file hygiene. It is not a substitute for a published APCI schedule.",
+                    "The decrees do not set a confirmed minimum amount or identify qualifying investment types. Preparing source-of-funds evidence now is file hygiene. It is not a substitute for a published APCI schedule.",
                 },
                 {
                   title: "Engage Specialized Advisory Counsel Early",

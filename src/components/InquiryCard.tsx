@@ -92,6 +92,7 @@ const InquiryCard = ({
 
   return (
     <div
+      data-md-exclude
       className={cn(
         "border rounded-lg p-6 md:p-8 text-left not-prose my-8",
         variant === "counsel"

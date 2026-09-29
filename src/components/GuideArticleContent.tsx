@@ -10,6 +10,7 @@ import {
   type RelatedGuide,
 } from "@/data/relatedGuides";
 import { Clock } from "lucide-react";
+import EditorialByline from "@/components/EditorialByline";
 
 export type GuideHeroImage = string | { src: string };
 
@@ -26,6 +27,7 @@ interface GuideArticleContentProps {
   /** False when the MDX body already includes an InquiryCard. */
   showBottomInquiryCard?: boolean;
   inquiryCard?: InquiryCardOverride;
+  reviewedAt?: string;
   children?: ReactNode;
 }
 
@@ -39,6 +41,7 @@ const GuideArticleContent = ({
   faqPath,
   showBottomInquiryCard = true,
   inquiryCard,
+  reviewedAt,
   children,
 }: GuideArticleContentProps) => {
   return (
@@ -78,6 +81,9 @@ const GuideArticleContent = ({
             [&_.not-prose_p]:mb-0
             [&_.not-prose_a]:no-underline"
         >
+          <div className="mb-8 flex flex-wrap items-center gap-6 text-text-secondary">
+            <EditorialByline reviewedAt={reviewedAt} />
+          </div>
           {children}
         </div>
       </EditorialSection>

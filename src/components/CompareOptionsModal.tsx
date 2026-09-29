@@ -124,7 +124,7 @@ const CompareOptionsModal = ({
           {triggerLabel}
         </button>
       </DialogTrigger>
-      <DialogContent className="max-h-[90vh] overflow-y-auto sm:max-w-lg">
+      <DialogContent data-md-exclude className="max-h-[90vh] overflow-y-auto sm:max-w-lg">
         <DialogHeader>
           <DialogTitle className="font-serif text-xl-editorial tracking-wide">
             {heading}

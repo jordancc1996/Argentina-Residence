@@ -3,6 +3,7 @@ import { getCollection, render } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import FAQDetailContent from '../../components/FAQDetailContent';
 import SupportingImage from '../../components/SupportingImage';
+import { reviewDateFor } from '../../data/reviews';
 
 export async function getStaticPaths() {
   const faqOrder = [
@@ -51,7 +52,16 @@ const description =
   data.metaDescription ||
   (data.answer.substring(0, 155) + (data.answer.length > 155 ? '...' : ''));
 const canonical = `https://argentinaresidence.com/faq/${data.slug}`;
-const ogImage = 'https://argentinaresidence.com/og-image.jpg';
+const ogImage = 'https://argentinaresidence.com/og-image.webp';
+const visibleDefinition =
+  data.slug === "what-is-argentina-golden-visa"
+    ? (faq.body ?? "")
+        .replace(/^#[^\n]*\n+/, "")
+        .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+        .replace(/\s+/g, " ")
+        .trim()
+    : "";
+const schemaAnswer = visibleDefinition || data.answer;
 const schema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -60,7 +70,7 @@ const schema = {
     "name": data.question,
     "acceptedAnswer": {
       "@type": "Answer",
-      "text": data.answer
+      "text": schemaAnswer
     }
   }]
 };
@@ -92,6 +102,7 @@ const schema = {
 		hasRichBody={hasRichBody}
 		previous={previous}
 		next={next}
+		reviewedAt={reviewDateFor(`/faq/${data.slug}`)}
 	>
 		{hasRichBody && Content && <Content components={{ SupportingImage }} />}
 	</FAQDetailContent>

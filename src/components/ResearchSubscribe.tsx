@@ -38,7 +38,7 @@ const ResearchSubscribe = () => {
   };
 
   return (
-      <section className="bg-secondary py-20 md:py-28">
+      <section data-md-exclude className="bg-secondary py-20 md:py-28">
         <div className="max-w-[600px] mx-auto px-4 md:px-8 text-center">
           <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-2 tracking-wide">
             Receive Market Intelligence

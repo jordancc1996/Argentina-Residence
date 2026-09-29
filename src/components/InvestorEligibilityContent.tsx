@@ -5,8 +5,8 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
-import { CheckCircle, ArrowRight, Star, Clock, Shield, Sparkles } from "lucide-react";
-import eligibilityBackground from "@/assets/argentina-golden-visa-eligibility.jpg";
+import { CheckCircle, ArrowRight, Clock, Shield } from "lucide-react";
+import eligibilityBackground from "@/assets/argentina-golden-visa-eligibility.webp";
 
 type Step = 1 | 2 | 3 | 4;
 type InvestmentBudget = "$below-500k" | "$500k+" | "";
@@ -38,14 +38,8 @@ const InvestorEligibilityContent = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isComplete, setIsComplete] = useState(false);
-  const [priorityStatus, setPriorityStatus] = useState<"standard" | "priority" | "vip">("standard");
 
-  const calculatePriorityStatus = () => {
-    if (formData.budget === "$500k+") {
-      return "vip";
-    }
-    return "standard";
-  };
+  const readinessFit = formData.timeline === "0-6months" ? "near-term conversation" : "monitoring";
 
   const handleNext = () => {
     if (step < 4) {
@@ -63,9 +57,6 @@ const InvestorEligibilityContent = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    const status = calculatePriorityStatus();
-    setPriorityStatus(status);
-
     try {
       await fetch("https://formcarry.com/s/1vbKuKjPCBx", {
         method: "POST",
@@ -74,10 +65,10 @@ const InvestorEligibilityContent = () => {
           "Accept": "application/json"
         },
         body: JSON.stringify({
-          // Budget values changed 2026-08-19: "$below-500k" | "$500k+" (was "$100k-$249k" | "$250k-$499k" | "$500k+").
+          // Budget values are private profile bands, not government thresholds: "$below-500k" | "$500k+".
           ...formData,
-          priorityStatus: status,
-          source: "Investor Eligibility Tool",
+          readinessFit,
+          source: "Investment Readiness Tool",
           submittedAt: new Date().toISOString()
         })
       });
@@ -109,50 +100,24 @@ const InvestorEligibilityContent = () => {
     return (
         <div className="min-h-screen flex items-center justify-center py-24 px-4">
           <div className="max-w-2xl mx-auto text-center">
-            <div className={`w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-8 ${
-              priorityStatus === "vip" 
-                ? "bg-gold/20" 
-                : priorityStatus === "priority" 
-                  ? "bg-gold/10" 
-                  : "bg-secondary"
-            }`}>
-              {priorityStatus === "vip" ? (
-                <Sparkles className="h-12 w-12 text-gold" />
-              ) : priorityStatus === "priority" ? (
-                <Star className="h-12 w-12 text-gold" />
-              ) : (
-                <CheckCircle className="h-12 w-12 text-primary" />
-              )}
+            <div className="w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-8 bg-secondary">
+              <CheckCircle className="h-12 w-12 text-primary" />
             </div>
             
             <h1 className="font-serif text-xl-editorial mb-4">
-              {priorityStatus === "vip" && "VIP Status Confirmed!"}
-              {priorityStatus === "priority" && "Priority Status Granted!"}
-              {priorityStatus === "standard" && "Application Received!"}
+              Added to the Argentina Residence Waitlist
             </h1>
             
-            <div className={`inline-block px-4 py-2 rounded-full text-sm font-semibold mb-6 ${
-              priorityStatus === "vip" 
-                ? "bg-gold text-primary" 
-                : priorityStatus === "priority"
-                  ? "bg-gold/20 text-gold"
-                  : "bg-secondary text-text-primary"
-            }`}>
-              {priorityStatus === "vip" && "VIP Priority Waitlist"}
-              {priorityStatus === "priority" && "Priority Waitlist"}
-              {priorityStatus === "standard" && "General Waitlist"}
+            <div className="inline-block px-4 py-2 rounded-full text-sm font-semibold mb-6 bg-secondary text-text-primary">
+              Private update list
             </div>
             
             <p className="text-text-secondary mb-8 text-lg">
-              {priorityStatus === "vip" && (
-                "Based on your investment profile, you qualify for our VIP track with dedicated concierge support and first access when the program launches."
-              )}
-              {priorityStatus === "priority" && (
-                "Your investment profile qualifies you for priority processing. You'll receive early access notifications and expedited review when applications open."
-              )}
-              {priorityStatus === "standard" && (
-                "The amount selected is below both anticipated paths (a $500,000 USD Treasury contribution or a $1,000,000 USD 7-year government bond), subject to final regulation. APCI has not published operational regulations and is not processing applications. We will notify you if a published threshold differs."
-              )}
+              You are on the Argentina Residence waitlist. This is a private update list. It is not a government application, a filing priority, a reserved place, or a finding that you meet an investment requirement. The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted.
+              {" "}
+              {readinessFit === "near-term conversation"
+                ? "A near-term timeline can be discussed alongside operating programs, because the pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted."
+                : "A longer timeline fits monitoring Argentina until official rules are published."}
             </p>
             
             <div className="bg-secondary/30 rounded-lg p-6 mb-8 text-left">
@@ -168,7 +133,7 @@ const InvestorEligibilityContent = () => {
                 </li>
                 <li className="flex items-start gap-3">
                   <Shield className="h-4 w-4 text-gold flex-shrink-0 mt-0.5" />
-                  <span>Your spot on the waitlist is secured</span>
+                  <span>Your place is on the Argentina Residence waitlist for updates, not on a government list</span>
                 </li>
               </ul>
             </div>
@@ -194,22 +159,23 @@ const InvestorEligibilityContent = () => {
   return (
     <>
       <Hero
-        title="Argentina Golden Visa Eligibility Assessment"
-        subtitle="Argentina Golden Visa eligibility is a 2-minute assessment against this site's anticipated $500,000 USD Treasury contribution or $1,000,000 USD 7-year government bond, subject to final regulation."
+        title="Argentina Golden Visa Investment Readiness"
+        subtitle="A private readiness check. It is not a government eligibility determination. The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted."
         backgroundImage={eligibilityBackground}
         imageAlt="Snow-capped volcano over an Andean desert landscape"
       />
       
       <EditorialSection>
         <p className="text-text-secondary mb-12 max-w-3xl mx-auto leading-relaxed">
-          Argentina Golden Visa eligibility is checked against this site's anticipated $500,000 USD Treasury contribution or $1,000,000 USD 7-year government bond, subject to final regulation. 
-          Whether you are interested in the Rentista Visa for passive income earners or the upcoming 
-          Golden Visa for investors, this tool analyzes your profile against current government requirements. 
-          In just 2 minutes, determine if you qualify for instant Permanent Residency via investment, 
-          future Citizenship, and a powerful Mercosur Passport.
+          The decrees do not set a confirmed minimum amount. The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted. This is an Argentina Residence readiness assessment. It is not a government eligibility determination. Published requirements are on the{" "}
+          <a href="/faq/argentina-citizenship-investment-requirements" className="text-primary hover:underline">investment requirements</a>{" "}
+          page. Current status is on the{" "}
+          <a href="/research/argentina-citizenship-by-investment-status" className="text-primary hover:underline">status page</a>.
+          Completing the form joins the Argentina Residence waitlist for updates. That list does not file an application, give filing priority, or reserve a government position.
         </p>
       </EditorialSection>
 
+      <div data-md-exclude>
       <EditorialSection className="pt-0">
         <div className="max-w-2xl mx-auto">
           {/* Progress Bar */}
@@ -242,10 +208,10 @@ const InvestorEligibilityContent = () => {
               <div className="space-y-8">
                 <div className="text-center mb-8">
                   <h2 className="font-serif text-xl-editorial mb-3">
-                    What is your investment budget?
+                    What investment range are you considering?
                   </h2>
                   <p className="text-text-secondary">
-                    Select the range that matches your planned investment in Argentina
+                    These are financial-profile bands. They are not an Argentina government threshold.
                   </p>
                 </div>
                 
@@ -265,7 +231,7 @@ const InvestorEligibilityContent = () => {
                       <RadioGroupItem value="$below-500k" id="budget-1" />
                       <div>
                         <p className="font-semibold">Below $500,000</p>
-                        <p className="text-sm text-text-secondary">Below both anticipated paths, subject to final regulation</p>
+                        <p className="text-sm text-text-secondary">Private budget band. Not a government investment minimum.</p>
                       </div>
                     </div>
                   </label>
@@ -281,10 +247,9 @@ const InvestorEligibilityContent = () => {
                       <RadioGroupItem value="$500k+" id="budget-2" />
                       <div>
                         <p className="font-semibold">$500,000+</p>
-                        <p className="text-sm text-text-secondary">Covers the anticipated Treasury-contribution path; the bond path is $1,000,000 USD</p>
+                        <p className="text-sm text-text-secondary">Private budget band. Not a government investment minimum.</p>
                       </div>
                     </div>
-                    <span className="text-xs bg-gold text-primary px-2 py-1 rounded-full">VIP</span>
                   </label>
                 </RadioGroup>
               </div>
@@ -298,7 +263,7 @@ const InvestorEligibilityContent = () => {
                     When do you plan to invest?
                   </h2>
                   <p className="text-text-secondary">
-                    Your timeline helps us prepare your application materials
+                    Your timeline shows whether you want a near-term conversation or time to monitor Argentina
                   </p>
                 </div>
                 
@@ -318,10 +283,9 @@ const InvestorEligibilityContent = () => {
                       <RadioGroupItem value="0-6months" id="timeline-1" />
                       <div>
                         <p className="font-semibold">Within 6 months</p>
-                        <p className="text-sm text-text-secondary">Ready to move forward quickly</p>
+                        <p className="text-sm text-text-secondary">You want to talk soon. The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted.</p>
                       </div>
                     </div>
-                    <span className="text-xs bg-gold/20 text-gold px-2 py-1 rounded-full">Fast Track</span>
                   </label>
                   
                   <label
@@ -367,7 +331,7 @@ const InvestorEligibilityContent = () => {
                     What interests you most?
                   </h2>
                   <p className="text-text-secondary">
-                    Tell our team where your interest lies. These options are for routing, not official program categories. Real estate, funds, and business ventures are not anticipated qualifying paths.
+                    These choices route the conversation. They are not published Argentina program categories.
                   </p>
                 </div>
                 
@@ -387,7 +351,7 @@ const InvestorEligibilityContent = () => {
                       <RadioGroupItem value="real-estate" id="type-1" />
                       <div>
                         <p className="font-semibold">Real Estate</p>
-                        <p className="text-sm text-text-secondary">Property market interest (not an anticipated program path)</p>
+                        <p className="text-sm text-text-secondary">Property, discussed separately from the unpublished citizenship framework</p>
                       </div>
                     </div>
                   </label>
@@ -403,7 +367,7 @@ const InvestorEligibilityContent = () => {
                       <RadioGroupItem value="bonds" id="type-2" />
                       <div>
                         <p className="font-semibold">Government Bonds</p>
-                        <p className="text-sm text-text-secondary">Argentine government securities (anticipated path is a 7-year bond)</p>
+                        <p className="text-sm text-text-secondary">Government securities as a topic for discussion</p>
                       </div>
                     </div>
                   </label>
@@ -418,8 +382,8 @@ const InvestorEligibilityContent = () => {
                     <div className="flex items-center gap-4">
                       <RadioGroupItem value="funds" id="type-3" />
                       <div>
-                        <p className="font-semibold">Approved Funds</p>
-                        <p className="text-sm text-text-secondary">Fund vehicles (not an anticipated program path)</p>
+                        <p className="font-semibold">Investment Funds</p>
+                        <p className="text-sm text-text-secondary">Funds as a topic for discussion</p>
                       </div>
                     </div>
                   </label>
@@ -435,7 +399,7 @@ const InvestorEligibilityContent = () => {
                       <RadioGroupItem value="business" id="type-4" />
                       <div>
                         <p className="font-semibold">Business Creation</p>
-                        <p className="text-sm text-text-secondary">Company or startup interest (not an anticipated program path)</p>
+                        <p className="text-sm text-text-secondary">A company or startup as a topic for discussion</p>
                       </div>
                     </div>
                   </label>
@@ -448,10 +412,10 @@ const InvestorEligibilityContent = () => {
               <div className="space-y-8">
                 <div className="text-center mb-8">
                   <h2 className="font-serif text-xl-editorial mb-3">
-                    Complete your registration
+                    Join the Argentina Residence Waitlist
                   </h2>
                   <p className="text-text-secondary">
-                    Join the waitlist and receive priority updates
+                    This signs you up for updates from Argentina Residence. It is not a government registration.
                   </p>
                 </div>
                 
@@ -542,13 +506,14 @@ const InvestorEligibilityContent = () => {
                   disabled={!isStepValid() || isSubmitting}
                   className="bg-gold hover:bg-gold/90 text-primary"
                 >
-                  {isSubmitting ? "Submitting..." : "Complete Registration"}
+                  {isSubmitting ? "Submitting..." : "Join the Waitlist"}
                 </Button>
               )}
             </div>
           </form>
         </div>
       </EditorialSection>
+      </div>
       
       {/* Internal Linking */}
       <EditorialSection>

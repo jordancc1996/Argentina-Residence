@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { ArrowLeft, Calendar, Clock, User } from "lucide-react";
+import { ArrowLeft, Calendar, Clock } from "lucide-react";
+import EditorialByline from "@/components/EditorialByline";
 import { Button } from "@/components/ui/button";
 import ShareButtons from "@/components/ShareButtons";
 import PageFAQ from "@/components/PageFAQ";
@@ -25,8 +26,8 @@ export interface AdjacentPost {
 interface BlogPostContentProps {
   title: string;
   category: string;
-  author: string;
   date: string;
+  reviewedAt?: string;
   readTime: string;
   excerpt: string;
   slug: string;
@@ -42,8 +43,8 @@ interface BlogPostContentProps {
 const BlogPostContent = ({
   title,
   category,
-  author,
   date,
+  reviewedAt,
   readTime,
   excerpt,
   slug,
@@ -66,7 +67,7 @@ const BlogPostContent = ({
   return (
     <>
       <Hero title={title} subtitle={excerpt} {...heroProps} />
-      <main className="section-padding">
+      <div className="section-padding">
         <article className="max-w-4xl mx-auto px-4 md:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -87,10 +88,7 @@ const BlogPostContent = ({
               </span>
 
               <div className="flex flex-wrap items-center gap-6 text-text-secondary">
-                <div className="flex items-center gap-2">
-                  <User className="w-4 h-4" />
-                  <span>{author}</span>
-                </div>
+                <EditorialByline reviewedAt={reviewedAt} />
                 <div className="flex items-center gap-2">
                   <Calendar className="w-4 h-4" />
                   <time dateTime={date}>
@@ -131,7 +129,7 @@ const BlogPostContent = ({
             )}
 
             {/* Share Buttons Section */}
-            <div className="mt-12 pt-8 border-t border-border">
+            <div data-md-exclude className="mt-12 pt-8 border-t border-border">
               <ShareButtons
                 url={`https://argentinaresidence.com/research/${slug}`}
                 title={title}
@@ -216,7 +214,7 @@ const BlogPostContent = ({
             )}
           </motion.div>
         </article>
-      </main>
+      </div>
     </>
   );
 };

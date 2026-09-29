@@ -90,7 +90,7 @@ const Hero = ({
         </motion.h1>
         
         {subtitle && (
-          <motion.h2 
+          <motion.p 
             className="font-serif font-light italic text-base sm:text-lg md:text-2xl mb-10 md:mb-14 max-w-2xl mx-auto leading-[1.4]"
             style={{ color: "rgba(255,255,255,0.78)", letterSpacing: "0.01em" }}
             initial={{ opacity: 1, y: 0 }}
@@ -98,7 +98,7 @@ const Hero = ({
             transition={{ duration: 1, delay: 0.6 }}
           >
             {subtitle}
-          </motion.h2>
+          </motion.p>
         )}
         
         {description && (

@@ -11,6 +11,7 @@ const routeLabels: Record<string, string> = {
   'program': 'Residency Program',
   'faq': 'FAQ',
   'blog': 'Blog',
+  'research': 'Research',
   'resources': 'Resources',
   'guides': 'Resources',
   'market-insights': 'Market Insights',

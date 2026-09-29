@@ -12,7 +12,7 @@ const IndustryNewsHero = () => {
         style={{ y: parallaxY }}
       >
         <img
-          src="/industry-news-hero.jpg"
+          src="/industry-news-hero.webp"
           alt="Buenos Aires financial district and historic architecture"
           className="w-full h-full object-cover"
         />
@@ -30,7 +30,7 @@ const IndustryNewsHero = () => {
           Argentina Golden Visa Industry News
         </h1>
         <p className="text-white/80 text-xl max-w-2xl mx-auto leading-relaxed">
-          Regulatory updates, market briefings, and the latest developments shaping Argentina's residency-by-investment landscape.
+          Regulatory updates and market briefings on Argentina's proposed citizenship-by-investment framework.
         </p>
       </motion.div>
     </section>

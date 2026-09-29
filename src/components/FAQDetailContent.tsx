@@ -1,6 +1,7 @@
 import EditorialSection from "@/components/EditorialSection";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import EditorialByline from "@/components/EditorialByline";
 import type { ReactNode } from "react";
 
 export interface AdjacentFAQ {
@@ -14,6 +15,7 @@ interface FAQDetailContentProps {
   hasRichBody: boolean;
   previous: AdjacentFAQ | null;
   next: AdjacentFAQ | null;
+  reviewedAt?: string;
   children?: ReactNode;
 }
 
@@ -23,6 +25,7 @@ const FAQDetailContent = ({
   hasRichBody,
   previous,
   next,
+  reviewedAt,
   children,
 }: FAQDetailContentProps) => {
   return (
@@ -35,6 +38,10 @@ const FAQDetailContent = ({
               Back to FAQs
             </Button>
           </a>
+
+          <div className="mb-8 flex flex-wrap items-center gap-6 text-sm text-text-secondary">
+            <EditorialByline reviewedAt={reviewedAt} />
+          </div>
 
           {hasRichBody ? (
             <div className="faq-rich-content text-left">

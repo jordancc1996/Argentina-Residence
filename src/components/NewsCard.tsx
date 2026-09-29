@@ -34,7 +34,7 @@ const NewsCard = ({ article, index = 0 }: NewsCardProps) => {
           <div className="relative overflow-hidden aspect-[16/9]">
             <img
               src={article.image}
-              alt={article.imageAlt}
+              alt={article.imageAlt ?? ""}
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
             />
           </div>

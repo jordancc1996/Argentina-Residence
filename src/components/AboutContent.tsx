@@ -2,9 +2,9 @@ import EditorialSection from "@/components/EditorialSection";
 import SupportingImage from "@/components/SupportingImage";
 import { Button } from "@/components/ui/button";
 import { resolveImageSrc } from "@/lib/resolveImageSrc";
-import buenosAiresCityscape from "@/assets/buenos-aires-cityscape.jpg";
-import buenosAiresChurch from "@/assets/buenos-aires-architecture-church.jpg";
-import casaRosadaVertical from "@/assets/site-photos-renamed/casa-rosada-plaza-de-mayo-vertical.jpg";
+import buenosAiresCityscape from "@/assets/buenos-aires-cityscape.webp";
+import buenosAiresChurch from "@/assets/buenos-aires-architecture-church.webp";
+import casaRosadaVertical from "@/assets/site-photos-renamed/casa-rosada-plaza-de-mayo-vertical.webp";
 import PageFAQ from "@/components/PageFAQ";
 
 const AboutContent = () => {
@@ -17,14 +17,14 @@ const AboutContent = () => {
                 About Argentina Residence
               </h1>
               <p className="text-editorial text-text-secondary tracking-wide">
-                About Argentina Residence advises on Argentine residency by investment. APCI has not published operational regulations and is not processing applications.
+                About Argentina Residence advises on Argentine residency by investment. The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted.
               </p>
             </div>
             <SupportingImage
               className="mx-0 max-w-none my-0"
               image={casaRosadaVertical}
               alt="Casa Rosada presidential palace on Plaza de Mayo, Buenos Aires"
-              caption="Casa Rosada and Plaza de Mayo, Buenos Aires. Argentina's seat of government, where APCI operates."
+              caption="Casa Rosada and Plaza de Mayo, Buenos Aires."
             />
           </div>
         </EditorialSection>

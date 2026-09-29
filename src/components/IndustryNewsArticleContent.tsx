@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowLeft, Calendar } from "lucide-react";
+import EditorialByline from "@/components/EditorialByline";
 import { Button } from "@/components/ui/button";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import PageFAQ from "@/components/PageFAQ";
@@ -23,6 +24,7 @@ interface IndustryNewsArticleContentProps {
   imageAlt?: string;
   related: RelatedNewsArticle[];
   faqPath?: string;
+  reviewedAt?: string;
   children?: ReactNode;
 }
 
@@ -34,12 +36,13 @@ const IndustryNewsArticleContent = ({
   imageAlt,
   related,
   faqPath,
+  reviewedAt,
   children,
 }: IndustryNewsArticleContentProps) => {
   const parallaxY = useParallax(-0.3);
 
   return (
-    <main>
+    <div>
       {image && (
         <section className="relative min-h-[50vh] overflow-hidden -mt-[72px] pt-[72px] md:-mt-[88px] md:pt-[88px]">
           <motion.div
@@ -85,6 +88,7 @@ const IndustryNewsArticleContent = ({
               </h1>
 
               <div className="flex flex-wrap items-center gap-6 text-text-secondary">
+                <EditorialByline reviewedAt={reviewedAt} />
                 <div className="flex items-center gap-2">
                   <Calendar className="w-4 h-4" />
                   <time dateTime={date}>
@@ -164,7 +168,7 @@ const IndustryNewsArticleContent = ({
           </motion.div>
         </article>
       </div>
-    </main>
+    </div>
   );
 };
 

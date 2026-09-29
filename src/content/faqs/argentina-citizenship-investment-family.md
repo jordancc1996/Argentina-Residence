@@ -1,13 +1,13 @@
 ---
 slug: argentina-citizenship-investment-family
 question: Argentina Residency Family Members - Spouse and Dependents
-answer: "Argentina residency family members are expected to include a spouse and children under 18 on the same application. The status of dependents 18 and older is unknown."
+answer: "The investment-naturalization provision is distinct from temporary or permanent residence. The decrees do not establish a general family-inclusion rule for investor applicants."
 metaTitle: "Argentina Residency Family Members - Spouse and Dependents | Argentina Residence"
-metaDescription: Argentina residency family members are expected to include a spouse and children under 18. Status of dependents 18 and older is unknown. Not yet officially confirmed.
+metaDescription: "The decrees do not establish a general family-inclusion rule for investment-naturalization applicants. Residence and naturalization are distinct."
 ---
 
 # Argentina Residency Family Members - Spouse and Dependents
 
-Argentina residency family members are expected to include a spouse and children under 18 on the same application. The status of dependents 18 and older is unknown. Neither point has been officially confirmed. How inclusion is described on the broader program is in the [Argentina Golden Visa program](/guides/argentina-golden-visa-program) guide.
+The investment-naturalization provision is distinct from temporary or permanent residence. The decrees do not establish a general family-inclusion rule or specify a physical-presence, biometrics, or application-document checklist for investor applicants.
 
-Each included person is expected to need their own documents. Whether extra investment applies for family members has not been published.
+This page does not state that a spouse or a child is included on an investor application. It does not state a separate family investment amount. The longer note is in the [Argentina Golden Visa program](/guides/argentina-golden-visa-program) guide. The amount question is on the [investment requirements](/faq/argentina-citizenship-investment-requirements) page.
