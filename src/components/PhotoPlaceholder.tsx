@@ -17,7 +17,7 @@ const PhotoPlaceholder = ({
   variant = "inline",
 }: PhotoPlaceholderProps) => {
   const resolvedSrc = src ? resolveImageSrc(src) : undefined;
-  const filled = Boolean(resolvedSrc);
+  const filled = typeof resolvedSrc === "string";
 
   return (
     <>

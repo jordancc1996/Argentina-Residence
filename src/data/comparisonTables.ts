@@ -24,8 +24,8 @@ export const comparisonTables = {
   caribbean: {
     columns: ["Argentina", "Dominica", "Grenada"],
     photos: [
-      { label: "Dominica", alt: "Roseau, Dominica skyline" },
-      { label: "Grenada", alt: "St. George's, Grenada skyline" },
+      { label: "Dominica", alt: "Roseau, Dominica: Dominica citizenship by investment program" },
+      { label: "Grenada", alt: "St. George's, Grenada: Grenada citizenship by investment program" },
     ],
     rows: buildRows({
       "Legal structure": [
@@ -41,7 +41,7 @@ export const comparisonTables = {
       "Investment floor": [
         "The decrees do not set a confirmed minimum amount or identify qualifying investment types.",
         "$200,000 single applicant / $250,000 family of four (donation); $200,000 real estate",
-        "$235,000 covers up to a family of four",
+        "$235,000 National Transformation Fund (family of up to four); approved real estate also available",
       ],
       "Hold period": [
         "The decrees do not set a hold period or a refund rule.",

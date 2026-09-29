@@ -6,16 +6,24 @@ import turkeyRealEstatePhoto from "@/assets/turkey-citizenship-by-investment-rea
 import panamaQualifiedInvestorPhoto from "@/assets/argentina-citizenship-vs-panama-qualified-investor.webp";
 import paraguayInvestorPassPhoto from "@/assets/argentina-citizenship-vs-paraguay-investor-pass.webp";
 import greeceAthensPhoto from "@/assets/argentina-citizenship-vs-greece-athens.webp";
+import dominicaRoseauPhoto from "@/assets/dominica-citizenship-by-investment-roseau.webp";
+import grenadaStGeorgesPhoto from "@/assets/grenada-citizenship-by-investment-st-georges.webp";
 import {
   comparisonTables,
   type ComparisonTableId,
 } from "@/data/comparisonTables";
 
-const comparisonPhotoSrc: Partial<Record<ComparisonTableId, string>> = {
+type ComparisonPhotoSrc = string | Partial<Record<string, string>>;
+
+const comparisonPhotoSrc: Partial<Record<ComparisonTableId, ComparisonPhotoSrc>> = {
   turkey: resolveImageSrc(turkeyRealEstatePhoto),
   panama: resolveImageSrc(panamaQualifiedInvestorPhoto),
   paraguay: resolveImageSrc(paraguayInvestorPassPhoto),
   greece: resolveImageSrc(greeceAthensPhoto),
+  caribbean: {
+    Dominica: resolveImageSrc(dominicaRoseauPhoto),
+    Grenada: resolveImageSrc(grenadaStGeorgesPhoto),
+  },
 };
 
 interface ComparisonBlockProps {
@@ -35,15 +43,20 @@ const ComparisonBlock = ({ id, className }: ComparisonBlockProps) => {
             data.photos.length > 1 ? "sm:grid-cols-2" : "grid-cols-1",
           )}
         >
-          {data.photos.map((photo) => (
-            <PhotoPlaceholder
-              key={photo.label}
-              label={photo.label}
-              alt={photo.alt}
-              src={comparisonPhotoSrc[id]}
-              className="my-0"
-            />
-          ))}
+          {data.photos.map((photo) => {
+            const tableSrc = comparisonPhotoSrc[id];
+            const src =
+              typeof tableSrc === "string" ? tableSrc : tableSrc?.[photo.label];
+            return (
+              <PhotoPlaceholder
+                key={photo.label}
+                label={photo.label}
+                alt={photo.alt}
+                src={src}
+                className="my-0"
+              />
+            );
+          })}
         </div>
       )}
       <ComparisonTable columns={[...data.columns]} rows={[...data.rows]} label="Comparison" />

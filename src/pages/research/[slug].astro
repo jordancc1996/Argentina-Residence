@@ -101,7 +101,7 @@ const schema = {
 const faqPath = `/research/${data.slug}`;
 ---
 
-<Layout>
+<Layout showBreadcrumbs={false}>
 	<title slot="head">{seoTitle}</title>
 	<meta slot="head" name="description" content={description} />
 	<link slot="head" rel="canonical" href={canonical} />
