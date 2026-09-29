@@ -1,48 +1,47 @@
 ---
 slug: argentina-citizenship-investment-requirements
 question: Argentina Golden Visa Investment Requirements
-answer: "Decree 524/2025 does not set a dollar amount for a relevant investment. Reports of a $500,000 Treasury contribution or a $1,000,000 seven-year bond were not found in an enacted regulation. Those figures are not current qualifying requirements. Government applications are not open."
+answer: "Argentine law contains a naturalization pathway for a foreign national who makes an investment that the Ministry of Economy defines as relevant. The decrees do not set a confirmed minimum amount or identify qualifying investment types. The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted."
 metaTitle: "Argentina Golden Visa Investment Requirements | Argentina Residence"
-metaDescription: "Decree 524/2025 does not set a dollar amount. Reported $500,000 and $1,000,000 figures are not an enacted investment rule. Applications are not open."
+metaDescription: "The decrees set no confirmed investment minimum or qualifying types. Do not treat the pathway as an open application program."
 ---
 
 # Argentina Golden Visa Investment Requirements
 
-[Decree 524/2025](https://www.boletinoficial.gob.ar/detalleAviso/primera/329061/20250731) does not set a dollar amount. It assigns the definition of a relevant investment to the Ministry of Economy. No enacted definition of that term was located. Secondary reports have described a non-refundable $500,000 USD Treasury contribution and a $1,000,000 USD seven-year, 0% government bond with principal returned at maturity. Those figures were not found in the decree or in a published Ministry resolution. They are not current qualifying requirements. Real estate, a business, and an investment fund are not published qualifying categories either. Government applications are not open.
+Argentine law contains a naturalization pathway for a foreign national who makes an investment that the Ministry of Economy defines as relevant. [Decree 524/2025](https://www.boletinoficial.gob.ar/detalleAviso/primera/329061/20250731) assigns that definition to the Ministry of Economy. The decrees do not set a confirmed minimum amount or identify qualifying investment types. The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted.
 
-U.S. applicants should also review our detailed analysis on [Argentina golden visa requirements for Americans](/research/argentina-citizenship-investment-american-investors), which covers IRS compliance, tax residency rules, and timeline considerations specific to American investors.
+DNU 366/2025 created APCI within the amended citizenship framework. Decree 524/2025 subsequently established a basic application and review procedure involving APCI. Decree 524/2025 did not create APCI.
 
-## Reported figures, not an enacted schedule
+This page does not state a Treasury contribution, a government bond, real estate, a business, or a fund as a qualifying or disqualifying investment. No operative government rule located for this page identifies those assets either way.
 
-Secondary reporting has described two possible structures. Neither is an enacted requirement:
+U.S. applicants should also review [Argentina citizenship by investment for Americans](/research/argentina-citizenship-investment-american-investors). That article does not supply an investment amount the decrees omit.
 
-- A non-refundable **$500,000 USD** contribution to the Argentine Treasury.
-- A **$1,000,000 USD** investment in a 7-year, 0% interest Argentine government bond, with principal returned at maturity.
+## No enacted amount
 
-No separate family amount was found in Decree 524/2025. Source-of-funds review, if APCI later publishes a procedure, is discussed on the [due diligence and source of funds](/guides/argentina-citizenship-investment-due-diligence) guide.
+No enacted minimum is stated on this page. Third-party dollar figures are not repeated here, because this review did not pair them with an original source and date that would keep them distinct from an enacted requirement.
 
-## What the decree does not list
+No separate family amount was found in Decree 524/2025. The decrees do not establish a general family-inclusion rule for investor applicants.
 
-Decree 524/2025 does not name real estate, a business or startup, an investment fund, cryptocurrency, or a private gift as a qualifying investment. It also does not exclude them. The Ministry of Economy still has to define a relevant investment.
+## Qualifying types
 
-## The 5,000 figure and biometrics
+The decrees do not identify qualifying investment types. They do not establish that real estate, a business, a fund, a bond, or a Treasury payment qualifies or disqualifies.
 
-The figure of 5,000 is not an enacted application cap. The cancelled Ministry of Economy tender 34-0001-CPU25, recorded on [COMPR.AR](https://comprar.gob.ar/) as left without effect by Resolution 522/2026 on 14 April 2026, described a consultancy contract of four years or until APCI issued 5,000 reports recommending approval, whichever came first. That is a procurement quantity. Decree 524/2025 does not require a biometrics visit.
+## Figures that are not an application cap
 
-## Maintenance
+This page does not state 5,000 as an application cap. Reports have cited COMPR.AR for a claim that Ministry of Economy Resolution 522/2026 left tender 34-0001-CPU25 without effect. Gazette publication of that resolution was not located, so this site does not state that cancellation as an established fact.
 
-No published rule states that a contribution is non-refundable, or that a bond runs for seven years at 0% interest. Those terms appear only in the same unverified secondary descriptions.
+The decrees do not specify a biometrics rule for investor applicants.
 
-## Verification
+## Procedure rules
 
-Article 6 of Decree 524/2025 tells APCI to issue complementary procedure rules. Those rules were not found as a published regulation. APCI is not processing citizenship applications.
+Article 6 of Decree 524/2025 tells APCI to issue complementary procedure rules. Those rules were not found as a published regulation. The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted.
 
-## Key Facts
+## Key facts
 
-- Decree 524/2025 does not set **$500,000** or **$1,000,000**. Those figures are unverified secondary descriptions, not qualifying requirements.
-- No published list of qualifying or excluded assets was located.
-- 5,000 refers to reports in a cancelled consultancy tender, not a citizenship cap.
-- A biometrics visit is not stated in Decree 524/2025.
-- Government applications are not open.
+- The decrees do not set a confirmed minimum amount.
+- The decrees do not identify qualifying investment types.
+- 5,000 is not stated here as an enacted application cap.
+- The decrees do not specify a biometrics rule for investor applicants.
+- Do not treat the pathway as an open application program.
 
 A consultation can discuss the published framework. It does not file a government application. [Request a principal consultation](/contact).

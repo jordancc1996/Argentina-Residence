@@ -47,7 +47,7 @@ export const BusinessSaleTimingSteps = () => (
       {
         title: "Do not assume a sale expires",
         description:
-          'Do not assume a recent sale "expires" after a fixed number of months. Argentina has not published a look-back period for business-sale proceeds. It has also not promised that old proceeds will be accepted without a clear path into an anticipated contribution or bond.',
+          "Do not assume a recent sale expires after a fixed number of months. The decrees do not publish a look-back period for business-sale proceeds, and they do not identify those proceeds as a qualifying investment.",
       },
       {
         title: "Tax residency is a separate question",

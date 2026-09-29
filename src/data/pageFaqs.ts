@@ -13,7 +13,7 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "Which is better for investors, Argentina citizenship or Paraguay residency?",
       answer:
-        "Neither option is universally better. Paraguay Residency by Investment can be filed now for permanent residence. Argentina Citizenship by Investment is intended as a citizenship pathway, but Argentina is not currently accepting applications. The better fit depends on whether the investor needs residence that is available today or wants to wait for Argentina's proposed citizenship route.",
+        "Neither option is universally better. Paraguay Residency by Investment can be filed now for permanent residence. Argentina Citizenship by Investment is intended as a citizenship pathway, but The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted. The better fit depends on whether the investor needs residence that is available today or wants to wait for Argentina's proposed citizenship route.",
     },
     {
       question: "How much does Paraguay residency by investment cost?",
@@ -28,12 +28,12 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "Can I apply for Argentina citizenship by investment while Paraguay is open?",
       answer:
-        "Argentina is not currently accepting applications. Operational due diligence protocols and a filing portal have not been published. Completing a Paraguay Investor Pass file does not create an Argentine citizenship file.",
+        "The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted. Operational due diligence protocols and a filing portal have not been published. Completing a Paraguay Investor Pass file does not create an Argentine citizenship file.",
     },
     {
       question: "Can family members be included on a Paraguay Investor Pass application?",
       answer:
-        "Current summaries state that dependents cannot ride on the principal's Paraguay Investor Pass file. They apply separately for temporary residence. After two years, the principal may be able to sponsor eligible family members for permanent residence. Argentine family rules have not been published.",
+        "Current summaries state that dependents cannot ride on the principal's Paraguay Investor Pass file. They apply separately for temporary residence. After two years, the principal may be able to sponsor eligible family members for permanent residence. The decrees do not establish a general family-inclusion rule for investor applicants.",
     },
   ],
 
@@ -41,7 +41,7 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "Does Panama investment residency grant citizenship at approval?",
       answer:
-        "No. Panama Friendly Nations Visa and Qualified Investor Visa files, if granted, produce residence, not Panamanian nationality. Naturalization is described as a later process after years of permanent residence. Argentina's unpublished route is described as nationality through a qualifying investment, and it is not accepting applications.",
+        "No. Panama Friendly Nations Visa and Qualified Investor Visa files, if granted, produce residence, not Panamanian nationality. Naturalization is described as a later process after years of permanent residence. Argentina's unpublished route is described as nationality through a qualifying investment, . The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted.",
     },
     {
       question: "What is the difference between Panama Friendly Nations Visa and Qualified Investor Visa?",
@@ -56,12 +56,12 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "Does a USD 200,000 Panama property purchase qualify for Argentina citizenship by investment?",
       answer:
-        "No. A Panama Friendly Nations property or deposit is not an Argentine qualifying investment. Decree 524/2025 does not set $500,000 or $1,000,000. Those reported figures are not current qualifying requirements. See [investment requirements](/faq/argentina-citizenship-investment-requirements).",
+        "No. A Panama Friendly Nations property or deposit is not an Argentine qualifying investment. The decrees do not set a confirmed minimum amount or identify qualifying investment types. See [investment requirements](/faq/argentina-citizenship-investment-requirements).",
     },
     {
       question: "Does the September 2026 Panama rule set a future real-estate increase, or an Argentina launch date?",
       answer:
-        "No. The Ministry of Commerce release of 21 September 2026 does not describe a future increase on 15 October 2026. It distinguishes B/.300,000 for new first-sale property from B/.500,000 for second-sale property, and B/.500,000 for a fixed-term deposit at Banco Nacional de Panamá or Caja de Ahorros. That release is not an Argentine launch date. Argentina is not currently accepting applications.",
+        "No. The Ministry of Commerce release of 21 September 2026 does not describe a future increase on 15 October 2026. It distinguishes B/.300,000 for new first-sale property from B/.500,000 for second-sale property, and B/.500,000 for a fixed-term deposit at Banco Nacional de Panamá or Caja de Ahorros. That release is not an Argentine launch date. The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted.",
     },
   ],
 
@@ -74,17 +74,17 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "Is Greek real estate an anticipated Argentina citizenship by investment path?",
       answer:
-        "No. Buying Greek property for a Hellenic residence permit is a different transaction. Decree 524/2025 does not set $500,000 or $1,000,000. Those reported figures are not current qualifying requirements. See [investment requirements](/faq/argentina-citizenship-investment-requirements).",
+        "No. Buying Greek property for a Hellenic residence permit is a different transaction. The decrees do not set a confirmed minimum amount or identify qualifying investment types. See [investment requirements](/faq/argentina-citizenship-investment-requirements).",
     },
     {
       question: "Can I apply for Argentina citizenship by investment instead of a Greece Golden Visa in 2026?",
       answer:
-        "Greece's Golden Visa is an operating residence program. Argentina is not currently accepting applications. Operational protocols remain unpublished. This is not a choice between two open nationality windows.",
+        "Greece's Golden Visa is an operating residence program. The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted. Operational protocols remain unpublished. This is not a choice between two open nationality windows.",
     },
     {
       question: "Do Greece Golden Visa location tiers apply to Argentina?",
       answer:
-        "No. Greece uses location-tiered property thresholds, including higher bands in Attica, Thessaloniki, Mykonos, Santorini, and certain islands. Those euro purchase prices are Greek real-estate rules. They are not Argentina's anticipated contribution or bond amounts.",
+        "No. Greece uses location-tiered property thresholds, including higher bands in Attica, Thessaloniki, Mykonos, Santorini, and certain islands. Those euro purchase prices are Greek real-estate rules. They are not an Argentine investment rule. The decrees do not identify qualifying investment types.",
     },
     {
       question: "Does a Greece Golden Visa Schengen card equal an Argentine passport?",
@@ -102,12 +102,12 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "Is Turkish property an anticipated Argentina citizenship by investment path?",
       answer:
-        "No. A Turkish title at USD 400,000 is not an Argentine qualifying investment. Decree 524/2025 does not set $500,000 or $1,000,000. Those reported figures are not current qualifying requirements. See [investment requirements](/faq/argentina-citizenship-investment-requirements).",
+        "No. A Turkish title at USD 400,000 is not an Argentine qualifying investment. The decrees do not set a confirmed minimum amount or identify qualifying investment types. See [investment requirements](/faq/argentina-citizenship-investment-requirements).",
     },
     {
       question: "Can I file Turkey citizenship by investment now if Argentina is not open?",
       answer:
-        "Turkey is processing files. Argentina is not currently accepting applications. A finished Turkish file does not create an Argentine file. Headline proximity between USD 400,000 and $500,000 is not legal equivalence.",
+        "Turkey is processing files. The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted. A finished Turkish file does not create an Argentine file. A Turkish property price is not an Argentine investment rule.",
     },
     {
       question: "Does Turkey citizenship by investment require living in Turkey?",
@@ -117,7 +117,7 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "How long does Turkey citizenship by investment take compared with Argentina?",
       answer:
-        "Turkey can be started now. Treat under a year for a complete file as a realistic band, not a statutory deadline. Argentina's processing time is not yet officially confirmed because APCI is not processing files. See [application process timeline](/faq/argentina-citizenship-investment-application-timeline).",
+        "Turkey can be started now. Treat under a year for a complete file as a realistic band, not a statutory deadline. Argentina's processing time is not yet officially confirmed because The pathway should not be treated as an open application program. See [application process timeline](/faq/argentina-citizenship-investment-application-timeline).",
     },
   ],
 
@@ -125,22 +125,22 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "Are Dominica and Grenada citizenship by investment programs currently open?",
       answer:
-        "Yes. Dominica and Grenada run operating citizenship-by-investment units that currently process files. Argentina's investment citizenship route is not accepting applications. This page is not a choice between two open Argentine and Caribbean filing windows.",
+        "Yes. Dominica and Grenada run operating citizenship-by-investment units that currently process files. The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted. This page is not a choice between two open Argentine and Caribbean filing windows.",
     },
     {
       question: "Do Caribbean CBI programs require living in Dominica or Grenada?",
       answer:
-        "Typical Caribbean CBI rules do not require the applicant to live in the country before or after the grant. This site also describes the Argentine investment route as not requiring prior residence or relocation, but that Argentine route is not open. Ordinary two-year Argentine naturalization is a different track. See [residency requirements](/faq/argentina-residency-physical-presence).",
+        "Typical Caribbean CBI rules do not require the applicant to live in the country before or after the grant. The decrees do not specify a physical-presence rule for investor applicants. Ordinary two-year Argentine naturalization is a different track. See [residency requirements](/faq/argentina-residency-physical-presence).",
     },
     {
-      question: "Is a Caribbean donation the same as Argentina's anticipated Treasury contribution?",
+      question: "Is a Caribbean donation the Argentine investment?",
       answer:
-        "No. Caribbean files are a government-fund contribution or an approved real-estate project holding. Decree 524/2025 does not set $500,000 or $1,000,000. Those reported figures are not current qualifying requirements. See [investment requirements](/faq/argentina-citizenship-investment-requirements).",
+        "No. Caribbean files are a government-fund contribution or an approved real-estate project holding. The decrees do not set a confirmed minimum amount or identify qualifying investment types. See [investment requirements](/faq/argentina-citizenship-investment-requirements).",
     },
     {
       question: "Can I apply for Argentina CBI if I already hold Caribbean citizenship?",
       answer:
-        "Argentina is not currently accepting applications. Holding a Dominica or Grenada passport does not open an APCI filing channel. Completing a Caribbean CBI file does not create an Argentine file.",
+        "The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted. Holding a Dominica or Grenada passport does not open an APCI filing channel. Completing a Caribbean CBI file does not create an Argentine file.",
     },
   ],
 
@@ -148,27 +148,27 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "Is Argentina citizenship by investment due diligence open for filing?",
       answer:
-        "No. Applications are not open. Decree 524/2025 did not publish operational due diligence manuals, checklists, or filing portals. None of the review described on this page can be completed with APCI today. See the [launch-date research note](/research/argentina-citizenship-by-investment-launch-date).",
+        "The pathway should not be treated as an open application program. Decree 524/2025 did not publish operational due diligence manuals, checklists, or filing portals. None of the review described on this page can be completed with APCI today. See the [launch-date research note](/research/argentina-citizenship-by-investment-launch-date).",
     },
     {
       question: "Do cryptocurrency holdings qualify as the Argentine investment?",
       answer:
-        "No. Cryptocurrency and digital asset holdings do not qualify as the Argentine investment on current published categories. Holding Bitcoin, ether, or tokens is not a qualifying Argentine investment. Source-of-funds review, when it exists, is separate from that path test. See [investment requirements](/faq/argentina-citizenship-investment-requirements).",
+        "The decrees do not identify cryptocurrency as a qualifying or disqualifying investment. Source-of-funds review, when it exists, is separate from that path test. See [investment requirements](/faq/argentina-citizenship-investment-requirements).",
     },
     {
       question: "Is there a published net-worth multiple for Argentina citizenship by investment?",
       answer:
-        "No. Net worth requirements have not been published as a separate numeric floor. Decree 524/2025 does not set $500,000 or $1,000,000. Those reported figures are not a rule that an applicant must show a multiple of either sum as personal net worth.",
+        "No. Net worth requirements have not been published as a separate numeric floor. The decrees do not set a confirmed minimum amount. They do not state a net-worth multiple.",
     },
     {
       question: "What is source of funds in the Argentina citizenship by investment due diligence process?",
       answer:
-        "Source-of-funds review asks where capital came from and how it moved, including bank statements showing funds leaving a foreign account and arriving in the Argentine transaction used for the anticipated contribution or bond. It does not replace the path test. Neither path has been officially confirmed.",
+        "Source-of-funds review asks where capital came from and how it moved, including how capital moved. The decrees do not identify the investment type that review would test.",
     },
     {
       question: "Who is expected to review an Argentina citizenship by investment file?",
       answer:
-        "The decrees describe a multi-agency review. APCI, under the Ministry of Economy, is expected to receive the investment proposal. Program summaries on this site also list Immigration, security authorities, the Financial Intelligence Unit (UIF), and the intelligence secretariat (SIDE). Those agencies are not processing APCI citizenship files today.",
+        "The decrees describe a multi-agency review. APCI, under the Ministry of Economy, is expected to receive the investment proposal. This page does not add agencies beyond what the decrees state. The pathway should not be treated as an open application program.",
     },
   ],
 
@@ -176,27 +176,27 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "Does selling a company create Argentina citizenship by investment by itself?",
       answer:
-        "No. A share sale, asset sale, or startup exit can produce capital that later funds a qualifying Argentine investment. It does not, by itself, create citizenship. Sale proceeds are not an anticipated qualifying path. APCI is not processing applications.",
+        "No. A share sale, asset sale, or startup exit does not, by itself, create citizenship. The decrees do not identify sale proceeds as a qualifying or disqualifying investment. The pathway should not be treated as an open application program.",
     },
     {
       question: "Do company sale proceeds become an Argentine citizenship filing by themselves?",
       answer:
-        "No. Parking closing cash is not a citizenship file. Decree 524/2025 does not set $500,000 or $1,000,000. Those reported figures are not current qualifying requirements. See [investment requirements](/faq/argentina-citizenship-investment-requirements).",
+        "No. Parking closing cash is not a citizenship file. The decrees do not set a confirmed minimum amount or identify qualifying investment types. See [investment requirements](/faq/argentina-citizenship-investment-requirements).",
     },
     {
       question: "Do earn-outs or buyer stock count as the Argentine investment?",
       answer:
-        "Earn-outs that have not yet been paid are not an investment. Buyer stock in a foreign acquirer is not an Argentine Treasury contribution or government bond. Those instruments may matter later as source-of-wealth context. They are not the investment itself.",
+        "The decrees do not identify buyer stock or an unpaid earn-out as a qualifying or disqualifying investment. Those instruments may matter later as source-of-wealth context.",
     },
     {
       question: "Can crypto from a startup exit be the qualifying Argentine investment?",
       answer:
-        "No. Cryptocurrency holdings and foreign accounts without an Argentine nexus are not anticipated as the investment itself. An exit can still be the origin of funds that are later converted into an anticipated contribution or bond, once a filing channel exists.",
+        "The decrees do not identify cryptocurrency as a qualifying or disqualifying investment. An exit can still be discussed as a possible origin of funds. It is not itself an identified investment type.",
     },
     {
       question: "Should I wait to sell my company until Argentina citizenship by investment launches?",
       answer:
-        "This page does not set a sale date. Work that can be done now is sequencing proceeds and keeping a clean paper trail. Work that cannot be done is submitting those proceeds to a citizenship unit that is not processing files. Launch timing is covered on the [launch-date research note](/research/argentina-citizenship-by-investment-launch-date).",
+        "This page does not set a sale date. Work that can be done now is sequencing proceeds and keeping a clean paper trail. Work that cannot be done is submitting those proceeds as an investment-naturalization application. The pathway should not be treated as an open application program. Launch timing is covered on the [launch-date research note](/research/argentina-citizenship-by-investment-launch-date).",
     },
   ],
 
@@ -209,7 +209,7 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "Can I apply for Argentina citizenship by investment while waiting for a US green card?",
       answer:
-        "Argentina is not currently accepting applications as of September 2026. An Argentine investment file cannot be lodged with APCI while due diligence protocols remain unpublished, regardless of a pending US immigrant visa.",
+        "The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted. An Argentine investment file cannot be lodged with APCI while due diligence protocols remain unpublished, regardless of a pending US immigrant visa.",
     },
     {
       question: "Does this page apply to US citizens who are not in a green card backlog?",
@@ -232,27 +232,27 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "Is the Argentina Golden Visa accepting applications in 2026?",
       answer:
-        "No. Proposed legislation is under review. APCI has not published operational regulations and is not processing applications. Decree 524/2025 created a legal pathway. It did not open a filing portal.",
+        "Do not treat the pathway as an open application program. DNU 366/2025 created APCI within the amended citizenship framework. Decree 524/2025 subsequently established a basic application and review procedure involving APCI. It did not create APCI, and it did not by itself confirm that applications are being accepted.",
     },
     {
       question: "Does Decree 524/2025 set the Argentina Golden Visa investment amount?",
       answer:
-        "No. Decree 524/2025 does not set $500,000 or $1,000,000. Those reported figures are not current qualifying requirements. Real estate, a business, and a fund are not published qualifying categories. The decree does not exclude them. See [investment requirements](/faq/argentina-citizenship-investment-requirements).",
+        "No. The decrees do not set a confirmed minimum amount or identify qualifying investment types. They do not establish that real estate, a business, or a fund qualifies or disqualifies. See [investment requirements](/faq/argentina-citizenship-investment-requirements).",
     },
     {
       question: "Does buying Buenos Aires real estate qualify for the Argentina Golden Visa?",
       answer:
-        "No. Real estate is not a published qualifying category for the investment citizenship route. The decree does not exclude it. Property can still be bought independently of the program. See [Argentina real estate investment](/guides/argentina-real-estate-investment).",
+        "The decrees do not identify real estate as a qualifying or disqualifying investment. A property purchase is a separate transaction. See [Argentina real estate investment](/guides/argentina-real-estate-investment).",
     },
     {
       question: "Has Argentina confirmed a Golden Visa processing time?",
       answer:
-        "No. Processing time is not yet officially confirmed. No decision window has been published. See [application process timeline](/faq/argentina-citizenship-investment-application-timeline).",
+        "No total processing time has been published. Decree 524/2025 gives DNM 30 business days to decide after DNM receives APCI's report. That period is not 30 days from the application, and it is not a guaranteed overall processing time. See [application process timeline](/faq/argentina-citizenship-investment-application-timeline).",
     },
     {
       question: "Does joining the Argentina Residence waitlist file an APCI application?",
       answer:
-        "No. The Argentina Residence waitlist is this firm's list for updates. It is not an Argentine government application, a government priority list, or a reserved filing place. APCI is not processing applications.",
+        "No. The Argentina Residence waitlist is this firm's list for updates. It is not an Argentine government application, a government priority list, or a reserved filing place. The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted.",
     },
   ],
 
@@ -273,12 +273,12 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "When is the Argentina citizenship by investment launch date?",
       answer:
-        "The anticipated launch date is not yet confirmed. After the April 2026 tender cancellation, application procedures and due diligence protocols had still not been defined. Decree 524/2025 is a legal framework, not an open filing channel. In June 2026, two federal appellate courts, including the National Electoral Chamber, declared DNU 366/2025 invalid, finding it did not meet the constitutional standard required for a decree of necessity and urgency. Neither ruling arose from an investor case, but the reasoning reaches the same decree the investment pathway depends on. The government has appealed to the Supreme Court, and the outcome remains pending. No launch date can be confirmed while this question is unresolved. Decree 524/2025, which created APCI, is a separate instrument and was not affected by these rulings. The article body above covers the rulings in full.",
+        "No launch date is confirmed on this page. Two federal appellate decisions in June 2026, including the National Electoral Chamber decision in Yang, Liping, questioned or invalidated aspects of DNU 366/2025 in individual naturalization cases. Neither concerned a CBI applicant. The decisions create uncertainty about the DNU provisions on which the investment pathway depends. The available rulings do not establish the final, nationwide effect of the decisions. This page does not state that a Supreme Court appeal is pending. DNU 366/2025 created APCI. Decree 524/2025 subsequently established a basic review procedure involving APCI. It did not create APCI.",
     },
     {
       question: "Did the cancelled tender set a due-diligence deadline?",
       answer:
-        "No. The cancelled tender is not a due-diligence deadline and does not open applications. Watch for APCI operational regulations and a filing portal, not a marketing quarter.",
+        "This page does not treat a tender cancellation as an established fact. Gazette publication of Resolution 522/2026 was not located. A due-diligence deadline is not stated here. The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted.",
     },
   ],
 
@@ -286,7 +286,7 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "Is Argentina citizenship by investment open for American investors?",
       answer:
-        "No. APCI has not published operational regulations and is not processing applications. This page is about the US-investor case for the unpublished route, not a live filing checklist.",
+        "The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted. This page is not a live filing checklist.",
     },
     {
       question: "Does Argentina citizenship by investment require Americans to live in Argentina full-time?",
@@ -306,7 +306,7 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "Would Argentine nationality be Mercosur nationality for Americans?",
       answer:
-        "If APCI granted citizenship under the decrees, the result would be Argentine nationality, which is Mercosur nationality. That outcome is not available through a live APCI application today.",
+        "If citizenship were later granted under the decrees, the result would be Argentine nationality. Mercosur effects, if any, would follow that nationality. The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted.",
     },
   ],
 
@@ -314,12 +314,12 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "Should 2026 be treated as a filing year for American investors?",
       answer:
-        "No. Treat 2026 as a planning window in this article's argument, not as a confirmed year when Americans can lodge an APCI file. The program is not processing applications.",
+        "No. Treat 2026 as a planning window in this article's argument, not as a confirmed year when Americans can lodge an APCI file. The pathway should not be treated as an open application program.",
     },
     {
       question: "Can Argentine citizens apply for a US E-2 visa?",
       answer:
-        "This page states that Argentina holds a treaty of commerce and navigation with the United States, and that Argentine citizens can apply for an E-2 visa to live and run a business in the United States. That is a US immigration process, not an Argentine Golden Visa filing. The Golden Visa is not processing applications.",
+        "This page states that Argentina holds a treaty of commerce and navigation with the United States, and that Argentine citizens can apply for an E-2 visa to live and run a business in the United States. That is a US immigration process, not an Argentine Golden Visa filing. The pathway should not be treated as an open application program.",
     },
   ],
 
@@ -332,7 +332,7 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "Are the lifestyle cost figures on this page official Argentine program fees?",
       answer:
-        "No. Lifestyle and US-cost illustrations on this page are not APCI filing fees. Decree 524/2025 does not set $500,000 or $1,000,000. Those reported figures are not current qualifying requirements.",
+        "No. Lifestyle and US-cost illustrations on this page are not APCI filing fees. The decrees do not set a confirmed minimum amount or identify qualifying investment types.",
     },
   ],
 
@@ -340,7 +340,7 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "Does investing in Vaca Muerta or RIGI qualify for Argentina citizenship by investment?",
       answer:
-        "This page describes macroeconomic and sector context, including energy and incentive frameworks. Sector exposure is not an anticipated qualifying path. The unpublished citizenship route is anticipated as a Treasury contribution or government bond. See [investment requirements](/faq/argentina-citizenship-investment-requirements).",
+        "This page describes macroeconomic and sector context, including energy and incentive frameworks. The decrees do not identify sector exposure, a Treasury payment, or a bond as a qualifying or disqualifying investment. See [investment requirements](/faq/argentina-citizenship-investment-requirements).",
     },
     {
       question: "Should capital be deployed before the Golden Visa launches?",
@@ -366,7 +366,7 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "Is Argentina citizenship by investment a faster passport than Portugal Golden Visa?",
       answer:
-        "Argentina's unpublished route is described as nationality without a prior residency period. APCI is not processing applications, and processing time is unknown. Portugal is a live residence program with a later citizenship clock. They are not the same product.",
+        "Investment naturalization is distinct from residence. The decrees do not specify a physical-presence rule. DNM has 30 business days after it receives APCI's report. That is not total processing time. The pathway should not be treated as an open application program. Portugal is a live residence program with a later citizenship clock. They are not the same product.",
     },
     {
       question: "What is Portugal's primary Golden Visa investment after real estate was restricted?",
@@ -376,7 +376,7 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "Can I apply for Argentina instead of Portugal Golden Visa in 2026?",
       answer:
-        "Portugal's program is established and live. Argentina is not processing applications. Choosing Argentina on this comparison is a planning decision, not a current filing option.",
+        "Portugal's program is established and live. The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted. Choosing Argentina on this comparison is a planning decision, not a current filing option.",
     },
   ],
 
@@ -384,12 +384,12 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "Does Decree 524/2025 mean I can apply for Argentina citizenship by investment?",
       answer:
-        "No. Decree 524/2025 is the legal framework. APCI has not published operational regulations and is not processing applications. A decree is not a filing portal.",
+        "Decree 524/2025 established a basic review procedure involving APCI. DNU 366/2025 created APCI. The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted. A decree is not a filing portal.",
     },
     {
-      question: "Did Decree 524/2025 confirm the $500,000 and $1,000,000 amounts in the Official Gazette as live filing rules?",
+      question: "Did Decree 524/2025 set a confirmed investment amount?",
       answer:
-        "No. Those figures were not found in an enacted regulation. They are not current qualifying requirements. Do not treat this news item as a confirmed fee schedule. See [investment requirements](/faq/argentina-citizenship-investment-requirements).",
+        "No. The decrees do not set a confirmed minimum amount. Do not treat this news item as a confirmed fee schedule. See [investment requirements](/faq/argentina-citizenship-investment-requirements).",
     },
   ],
 
@@ -402,7 +402,7 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "If I buy in the same quarter as this report, do I obtain residency?",
       answer:
-        "No. A Buenos Aires purchase is not an anticipated qualifying path for the unpublished citizenship route. See [Argentina real estate investment](/guides/argentina-real-estate-investment).",
+        "The decrees do not identify a Buenos Aires purchase as a qualifying or disqualifying investment. See [Argentina real estate investment](/guides/argentina-real-estate-investment).",
     },
     {
       question: "Should this report be used as a price forecast?",
@@ -415,17 +415,17 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "Are Argentina citizenship-by-investment applications open?",
       answer:
-        "No. APCI has not published operational regulations and is not processing applications. Reported dollar amounts are not current qualifying requirements.",
+        "The decrees do not set a confirmed minimum amount or identify qualifying investment types. The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted.",
     },
     {
       question: "Does Decree 524/2025 set an investment amount?",
       answer:
-        "No. Decree 524/2025 does not set a dollar amount. Secondary reports have described a $500,000 USD Treasury contribution and a $1,000,000 USD seven-year bond. Those figures were not found in an enacted regulation. They are not current qualifying requirements. See [investment requirements](/faq/argentina-citizenship-investment-requirements).",
+        "No. The decrees do not set a confirmed minimum amount or identify qualifying investment types. See [investment requirements](/faq/argentina-citizenship-investment-requirements).",
     },
     {
       question: "Does visa-free travel come with Argentine residency today?",
       answer:
-        "No. Argentine residency is not an Argentine passport. Current passport-mobility figures are on the [visa-free travel](/faq/argentina-visa-free-travel) page. That passport is not available through a live APCI citizenship filing today.",
+        "No. Argentine residency is not an Argentine passport. Current passport-mobility figures are on the [visa-free travel](/faq/argentina-visa-free-travel) page. That passport is not a benefit of residence or of an investment-naturalization application.",
     },
   ],
 
@@ -446,12 +446,12 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "Are Argentina investment trends the same as Golden Visa eligibility?",
       answer:
-        "No. This page is market and economic context. Sector or real-estate exposure is not an anticipated qualifying path for unpublished citizenship by investment. See [investment requirements](/faq/argentina-citizenship-investment-requirements).",
+        "No. This page is market and economic context. The decrees do not identify sector or real-estate exposure as a qualifying or disqualifying investment. See [investment requirements](/faq/argentina-citizenship-investment-requirements).",
     },
     {
       question: "Can I apply for residency because market reforms look favorable?",
       answer:
-        "No. Economic reforms do not open an APCI filing channel. Applications are not being processed.",
+        "No. Economic reforms do not open an APCI filing channel. The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted.",
     },
   ],
 
@@ -464,7 +464,7 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "Are past program conditions a guarantee of future Argentina Golden Visa terms?",
       answer:
-        "No. The disclosure states that past program conditions are not indicative of future availability or terms. The investment citizenship route is not processing applications.",
+        "No. The disclosure states that past program conditions are not indicative of future availability or terms. The pathway should not be treated as an open application program.",
     },
     {
       question: "Does Argentina Residence receive referral fees from lawyers or real estate professionals?",

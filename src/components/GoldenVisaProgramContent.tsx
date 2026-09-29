@@ -89,7 +89,7 @@ const GoldenVisaProgramContent = ({ children }: { children?: ReactNode }) => {
               <a href="/faq/argentina-citizenship-investment-application-timeline" className="text-primary hover:underline">
                 processing time
               </a>{" "}
-              is not a filing-to-citizenship calendar. Decree 524/2025 gives Migraciones 30 business days after it receives APCI's report. APCI is not processing applications.
+              is not a filing-to-citizenship calendar. Decree 524/2025 gives DNM 30 business days to decide after DNM receives APCI's report. That period is not 30 days from the application, and it is not a total or guaranteed processing time. APCI's assessment and interagency review occur before this period. The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted.
             </p>
           </div>
           
@@ -99,7 +99,7 @@ const GoldenVisaProgramContent = ({ children }: { children?: ReactNode }) => {
             </div>
             <h3 className="font-serif text-lg mb-3">Legal Framework</h3>
             <p className="text-text-secondary text-sm">
-              Decree 524/2025 created a framework. Operational rules are unpublished, and government applications are not open.
+              Decree 524/2025 created a framework. Operational rules are unpublished, and the pathway should not be treated as an open application program.
             </p>
           </div>
           
@@ -140,22 +140,22 @@ const GoldenVisaProgramContent = ({ children }: { children?: ReactNode }) => {
               <a href="/faq/argentina-citizenship-investment-requirements" className="text-primary hover:underline">
                 anticipated investment requirements
               </a>
-              . Decree 524/2025 does not set a dollar amount. Secondary reports have described a $500,000 USD Treasury contribution and a $1,000,000 USD 7-year bond. Those figures were not found in an enacted regulation. They are not current qualifying requirements. APCI is not processing applications.
+              . Decree 524/2025 does not set a dollar amount. The decrees do not set a confirmed minimum amount or identify qualifying investment types. The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted.
             </p>
             
             <div className="space-y-4 mb-8">
               <div className="flex items-start gap-3 p-4 bg-secondary/30 rounded-lg">
                 <CheckCircle className="h-5 w-5 text-gold flex-shrink-0 mt-0.5" />
                 <div>
-                  <p className="font-semibold text-text-primary">$500,000 USD Treasury contribution</p>
-                  <p className="text-sm text-text-secondary">Described in secondary reports. Not found in Decree 524/2025. Not a current qualifying requirement.</p>
+                  <p className="font-semibold text-text-primary">No confirmed minimum</p>
+                  <p className="text-sm text-text-secondary">The decrees do not set a confirmed minimum amount.</p>
                 </div>
               </div>
               <div className="flex items-start gap-3 p-4 bg-secondary/30 rounded-lg">
                 <CheckCircle className="h-5 w-5 text-gold flex-shrink-0 mt-0.5" />
                 <div>
-                  <p className="font-semibold text-text-primary">$1,000,000 USD 7-year government bond</p>
-                  <p className="text-sm text-text-secondary">Described in secondary reports, including 0% interest and principal at maturity. Not found in an enacted regulation.</p>
+                  <p className="font-semibold text-text-primary">No identified investment types</p>
+                  <p className="text-sm text-text-secondary">The decrees do not identify a Treasury payment, a bond, real estate, a business, or a fund as qualifying or disqualifying.</p>
                 </div>
               </div>
             </div>
@@ -168,7 +168,7 @@ const GoldenVisaProgramContent = ({ children }: { children?: ReactNode }) => {
         <ScrollytellingSteps
           eyebrow="Program Timeline"
           heading="Argentina Residence Waitlist Open"
-          intro="Government applications are not open. The Argentina Residence waitlist is this firm's list for updates. It is not a government application, a government priority list, or a reserved filing place. Launch timing is not confirmed."
+          intro="The pathway should not be treated as an open application program. The Argentina Residence waitlist is this firm's list for updates. It is not a government application, a government priority list, or a reserved filing place. Launch timing is not confirmed."
           steps={[
             {
               label: "Now",
@@ -201,7 +201,7 @@ const GoldenVisaProgramContent = ({ children }: { children?: ReactNode }) => {
             Join the Argentina Residence Waitlist
           </h2>
           <p className="text-text-cream mb-8 text-lg">
-            Government applications are not open. The waitlist is for updates from Argentina Residence. It does not file an application or hold a government place.
+            The pathway should not be treated as an open application program. The waitlist is for updates from Argentina Residence. It does not file an application or hold a government place.
           </p>
           <a href="/argentina-golden-visa-eligibility-checker">
             <Button size="lg" className="bg-gold hover:bg-gold/90 text-primary px-10">

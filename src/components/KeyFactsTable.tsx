@@ -19,39 +19,42 @@ export interface KeyFactsTableProps {
 
 export const programKeyFacts: KeyFact[] = [
   {
-    label: "Investment paths",
+    label: "Investment amount",
     value:
-      "Decree 524/2025 does not set a dollar amount. Reported figures of $500,000 USD and $1,000,000 USD were not found in an enacted regulation. They are not current qualifying requirements.",
+      "The decrees do not set a confirmed minimum amount or identify qualifying investment types.",
   },
   {
     label: "Qualifying assets",
     value:
-      "The Ministry of Economy has not published a definition of a relevant investment. Real estate, a business, and a fund are not named, and they are not excluded, by Decree 524/2025.",
+      "The decrees do not identify real estate, a business, a fund, a bond, or a Treasury payment as a qualifying or disqualifying investment.",
   },
   {
     label: "Family inclusion",
-    value: "Spouse and children under 18 expected to be includable. Status of dependents 18 and older is unknown.",
+    value: "The decrees do not establish a general family-inclusion rule for investor applicants.",
   },
   {
     label: "Processing time",
-    value: "Not yet officially confirmed.",
+    value:
+      "DNM has 30 business days to decide after it receives APCI's report. That is not total or guaranteed processing time.",
   },
   {
-    label: "5,000 figure",
-    value: "A cancelled consultancy tender described four years or 5,000 APCI recommendation reports, whichever came first. That is not a statutory citizenship cap.",
+    label: "Application cap",
+    value:
+      "No enacted application cap is stated here. Gazette publication of a resolution cancelling a consultancy tender was not located.",
   },
   {
     label: "Biometrics",
-    value: "Decree 524/2025 does not require a biometrics visit.",
+    value: "The decrees do not specify a biometrics rule for investor applicants.",
   },
   {
     label: "Physical presence",
-    value: "Decree 366/2025 amended ordinary naturalization. The National Electoral Chamber declared that decree null on 30 June 2026, and the executive appealed. No separate stay rule for an investment route has been published.",
+    value:
+      "The investment-naturalization provision is distinct from temporary or permanent residence. The decrees do not specify a physical-presence rule for investor applicants.",
   },
   {
     label: "Program status",
     value:
-      "Decrees 366/2025 and 524/2025 are in the Boletín Oficial. Complementary APCI rules and a dollar amount are not. APCI is not processing citizenship applications.",
+      "DNU 366/2025 created APCI. Decree 524/2025 established a basic review procedure. Do not treat the pathway as an open application program unless the government publishes the criteria and confirms that applications are being accepted.",
   },
 ];
 

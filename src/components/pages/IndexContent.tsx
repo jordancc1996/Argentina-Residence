@@ -55,7 +55,7 @@ const IndexContent = ({ posts }: { posts: HomepagePost[] }) => {
             height={1024}
           />
           <figcaption className="text-sm text-text-secondary tracking-wide mt-4">
-            Argentina second passport through investment. See the Golden Visa updates.
+            An Argentine passport is a separate document from residence. See the Golden Visa updates.
           </figcaption>
         </figure>
         <div className="flex flex-wrap gap-4 justify-center mt-8">
@@ -96,7 +96,7 @@ const IndexContent = ({ posts }: { posts: HomepagePost[] }) => {
           <div className="flex flex-col">
             <h2 className="font-serif text-lg-editorial mb-4 tracking-wide">Investment Program</h2>
             <p className="text-body text-text-secondary tracking-wide mb-4 flex-1">
-              Government applications are not open. This card points to the anticipated program overview.
+              The pathway should not be treated as an open application program. This card points to the anticipated program overview.
             </p>
             <div className="mt-6">
               <a href="/program" className="inline-block font-sans font-semibold text-[0.75rem] tracking-[0.08em] uppercase border-2 border-primary text-foreground px-6 py-3 hover:bg-primary hover:text-primary-foreground transition-all duration-300">
@@ -108,7 +108,7 @@ const IndexContent = ({ posts }: { posts: HomepagePost[] }) => {
           <div className="flex flex-col">
             <h2 className="font-serif text-lg-editorial mb-4 tracking-wide">Visa-Free Travel</h2>
             <p className="text-body text-text-secondary tracking-wide mb-4 flex-1">
-              The Henley Passport Index of 13 April 2026 scores an Argentine passport at 168 destinations without a prior visa, rank 15. That score is not a residency right, and this framework is not issuing passports.
+              The Henley Passport Index of 13 April 2026 scores an Argentine passport at 168 destinations without a prior visa, rank 15. That score is not a residency right, and it is not a benefit of an investment-naturalization application.
             </p>
             <div className="mt-6">
               <a href="/faq/argentina-visa-free-travel" className="inline-block font-sans font-semibold text-[0.75rem] tracking-[0.08em] uppercase border-2 border-primary text-foreground px-6 py-3 hover:bg-primary hover:text-primary-foreground transition-all duration-300">
@@ -229,7 +229,7 @@ const IndexContent = ({ posts }: { posts: HomepagePost[] }) => {
       <EditorialSection className="bg-secondary/30">
         <h2 className="font-serif text-xl-editorial mb-8 tracking-wide">Reading on the anticipated program</h2>
         <p className="text-body text-text-secondary tracking-wide mb-8 max-w-3xl mx-auto">
-          Government applications are not open. These links are research and resources, not a filing channel.
+          The pathway should not be treated as an open application program. These links are research and resources, not a filing channel.
         </p>
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto text-left">
           <a
@@ -238,7 +238,7 @@ const IndexContent = ({ posts }: { posts: HomepagePost[] }) => {
           >
             <h3 className="font-serif text-lg-editorial mb-3 tracking-wide">US Investors</h3>
             <p className="text-sm text-text-secondary tracking-wide flex-1 mb-6">
-              Tax and timeline notes for U.S. citizens. Government applications are not open.
+              Tax and timeline notes for U.S. citizens. The pathway should not be treated as an open application program.
             </p>
             <span className="inline-flex items-center gap-2 font-sans font-semibold text-[0.75rem] tracking-[0.08em] uppercase text-primary group-hover:underline">
               Read Guide <ArrowRight className="w-4 h-4" />

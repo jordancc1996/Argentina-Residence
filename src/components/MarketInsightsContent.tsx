@@ -40,7 +40,7 @@ const MarketInsightsContent = () => {
               </a>
             </h3>
             <p className="text-body text-text-secondary tracking-wide">
-              Neighborhood-level property writing. A purchase is not an anticipated citizenship-by-investment path.
+              Neighborhood-level property writing. The decrees do not identify a purchase as a qualifying or disqualifying investment.
             </p>
           </div>
           <div className="border-l-2 border-gold pl-6">

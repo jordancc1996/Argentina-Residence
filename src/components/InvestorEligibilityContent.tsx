@@ -113,10 +113,10 @@ const InvestorEligibilityContent = () => {
             </div>
             
             <p className="text-text-secondary mb-8 text-lg">
-              You are on the Argentina Residence waitlist. This is a private update list. It is not a government application, a filing priority, a reserved place, or a finding that you meet an investment requirement. Government applications are not open.
+              You are on the Argentina Residence waitlist. This is a private update list. It is not a government application, a filing priority, a reserved place, or a finding that you meet an investment requirement. The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted.
               {" "}
               {readinessFit === "near-term conversation"
-                ? "A near-term timeline can be discussed alongside operating programs, because Argentina is not accepting applications."
+                ? "A near-term timeline can be discussed alongside operating programs, because the pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted."
                 : "A longer timeline fits monitoring Argentina until official rules are published."}
             </p>
             
@@ -160,14 +160,14 @@ const InvestorEligibilityContent = () => {
     <>
       <Hero
         title="Argentina Golden Visa Investment Readiness"
-        subtitle="A private readiness check. It is not a government eligibility determination. Government applications are not open."
+        subtitle="A private readiness check. It is not a government eligibility determination. The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted."
         backgroundImage={eligibilityBackground}
         imageAlt="Snow-capped volcano over an Andean desert landscape"
       />
       
       <EditorialSection>
         <p className="text-text-secondary mb-12 max-w-3xl mx-auto leading-relaxed">
-          Argentina's government investment-citizenship applications are not open. Decree 524/2025 does not set a dollar investment amount. This is an Argentina Residence readiness assessment. It is not a government eligibility determination. Published requirements are on the{" "}
+          The decrees do not set a confirmed minimum amount. The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted. This is an Argentina Residence readiness assessment. It is not a government eligibility determination. Published requirements are on the{" "}
           <a href="/faq/argentina-citizenship-investment-requirements" className="text-primary hover:underline">investment requirements</a>{" "}
           page. Current status is on the{" "}
           <a href="/research/argentina-citizenship-by-investment-status" className="text-primary hover:underline">status page</a>.
@@ -231,7 +231,7 @@ const InvestorEligibilityContent = () => {
                       <RadioGroupItem value="$below-500k" id="budget-1" />
                       <div>
                         <p className="font-semibold">Below $500,000</p>
-                        <p className="text-sm text-text-secondary">A budget band for this private assessment</p>
+                        <p className="text-sm text-text-secondary">Private budget band. Not a government investment minimum.</p>
                       </div>
                     </div>
                   </label>
@@ -247,7 +247,7 @@ const InvestorEligibilityContent = () => {
                       <RadioGroupItem value="$500k+" id="budget-2" />
                       <div>
                         <p className="font-semibold">$500,000+</p>
-                        <p className="text-sm text-text-secondary">A budget band for this private assessment</p>
+                        <p className="text-sm text-text-secondary">Private budget band. Not a government investment minimum.</p>
                       </div>
                     </div>
                   </label>
@@ -283,7 +283,7 @@ const InvestorEligibilityContent = () => {
                       <RadioGroupItem value="0-6months" id="timeline-1" />
                       <div>
                         <p className="font-semibold">Within 6 months</p>
-                        <p className="text-sm text-text-secondary">You want to talk soon. Argentina is not accepting applications.</p>
+                        <p className="text-sm text-text-secondary">You want to talk soon. The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted.</p>
                       </div>
                     </div>
                   </label>

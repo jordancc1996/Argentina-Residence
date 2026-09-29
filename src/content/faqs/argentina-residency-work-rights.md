@@ -1,13 +1,13 @@
 ---
 slug: argentina-residency-work-rights
 question: "Can I work in Argentina with this residency?"
-answer: "No work right has been established for Argentina's proposed citizenship-by-investment framework. Government applications are not open, so that status is not being issued. Existing temporary and permanent residence categories are a separate question from the unpublished investment program."
+answer: "A prospective investment-naturalization applicant does not automatically have work rights. Migration Law 25.871, article 51, addresses existing permanent residents. Temporary-resident work rights depend on the authorization for that status."
 metaTitle: "Can I Work in Argentina with This Residency | Argentina Residence"
-metaDescription: "No work right is established for Argentina's proposed citizenship-by-investment framework. Government applications are not open. Existing residence categories are separate."
+metaDescription: "A prospective investment-naturalization applicant does not automatically have work rights. Article 51 covers existing permanent residents."
 ---
 
 # Can I work in Argentina with this residency?
 
-No work right has been established for Argentina's proposed citizenship-by-investment framework. Government applications are not open, and that status is not being issued. Current availability is on the [citizenship by investment status](/research/argentina-citizenship-by-investment-status) page.
+A prospective or pending investment-naturalization applicant does not automatically have work rights. The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted. Current wording is on the [citizenship by investment status](/research/argentina-citizenship-by-investment-status) page.
 
-[Migration Law 25.871](https://www.argentina.gob.ar/normativa/nacional/ley-25871-92016/texto), article 51, says foreigners admitted as permanent residents may do any paid or profit-making activity, on their own account or as employees. Temporary residents may do so only during the authorized stay. That rule covers existing residence categories. It is not a work authorization for the unpublished investment-citizenship framework, and it is not a separate work-permit statute for those two categories. Transitory residents are a different category under article 52. The longer framework is in the [Argentina Golden Visa program](/guides/argentina-golden-visa-program) guide.
+[Migration Law 25.871](https://www.argentina.gob.ar/normativa/nacional/ley-25871-92016/texto), article 51, says foreigners admitted as permanent residents may do any paid or profit-making activity, on their own account or as employees. That sentence is about existing permanent residence. Temporary-resident work rights depend on the authorization attached to that status. Neither rule is a work authorization for a person who has only asked about investment naturalization. The longer framework is in the [Argentina Golden Visa program](/guides/argentina-golden-visa-program) guide.

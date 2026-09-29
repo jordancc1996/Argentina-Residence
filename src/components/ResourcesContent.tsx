@@ -34,11 +34,11 @@ const ResourcesContent = () => {
   ];
 
   const siteGuides = [
-    { title: "Program overview", href: "/program", description: "Short overview of the anticipated framework. Government applications are not open." },
+    { title: "Program overview", href: "/program", description: "Short overview of the anticipated framework. The pathway should not be treated as an open application program." },
     { title: "Argentina Golden Visa program guide", href: "/guides/argentina-golden-visa-program", description: "The long guide to the proposed citizenship-by-investment framework." },
     { title: "Current program status", href: "/research/argentina-citizenship-by-investment-status", description: "Whether Argentina citizenship by investment is open." },
     { title: "Launch date", href: "/research/argentina-citizenship-by-investment-launch-date", description: "What is known about timing. No confirmed launch date." },
-    { title: "Real estate investment", href: "/guides/argentina-real-estate-investment", description: "Buying property in Argentina. A purchase is not an anticipated qualifying path." },
+    { title: "Real estate investment", href: "/guides/argentina-real-estate-investment", description: "Buying property in Argentina. The decrees do not identify a purchase as a qualifying or disqualifying investment." },
     { title: "Research", href: "/research", description: "Market and investor research published on this site." },
   ];
 

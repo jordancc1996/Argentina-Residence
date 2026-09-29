@@ -25,17 +25,17 @@ const IndustryNewsGuide = () => {
 
             <h2>The Legal Framework Behind Argentina's Citizenship by Investment Program</h2>
             <p>&nbsp;</p>
-            <p>Argentina's citizenship by investment framework was created to attract foreign capital. Government applications are not open. Whether a filing channel exists is answered on the <a href="/research/argentina-citizenship-by-investment-status">citizenship by investment status</a> page. Timing is on the <a href="/research/argentina-citizenship-by-investment-launch-date">launch date</a> page. This section does not set a launch date.</p>
+            <p>Argentina's citizenship by investment framework was created to attract foreign capital. The pathway should not be treated as an open application program. Whether a filing channel exists is answered on the <a href="/research/argentina-citizenship-by-investment-status">citizenship by investment status</a> page. Timing is on the <a href="/research/argentina-citizenship-by-investment-launch-date">launch date</a> page. This section does not set a launch date.</p>
             <p>&nbsp;</p>
 
             <h3>Argentina Citizenship by Investment Decree 524 Explained</h3>
             <p>&nbsp;</p>
-            <p>The statutory foundation of the program rests on <a href="https://www.boletinoficial.gob.ar/detalleAviso/primera/329061/20250731">Decree 524/2025</a>, which created the institutional framework for the Agencia de Programas de Ciudadanía por Inversión (APCI). <strong>Argentina citizenship by investment decree 524 explained</strong> simply: a foreigner who made a relevant investment, as the Ministry of Economy defines it, may apply to APCI. The decree does not set a dollar amount. Article 4 gives Dirección Nacional de Migraciones 30 business days after it receives APCI's report. That is not a filing-to-citizenship calendar. APCI is not processing applications.</p>
+            <p>The statutory foundation of the program rests on <a href="https://www.boletinoficial.gob.ar/detalleAviso/primera/329061/20250731">Decree 524/2025</a>, which created the institutional framework for the Agencia de Programas de Ciudadanía por Inversión (APCI). <strong>Argentina citizenship by investment decree 524 explained</strong> simply: a foreigner who made a relevant investment, as the Ministry of Economy defines it, may apply to APCI. The decree does not set a dollar amount. Article 4 gives Dirección Nacional de Migraciones 30 business days after it receives APCI's report. That is not a filing-to-citizenship calendar. The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted.</p>
             <p>&nbsp;</p>
 
             <h3>Resolution 522 Argentina Citizenship by Investment</h3>
             <p>&nbsp;</p>
-            <p><a href="https://comprar.gob.ar/">COMPR.AR</a> records Ministry of Economy Resolution 522/2026, dated 14 April 2026, as the act that left consultancy tender 34-0001-CPU25 without effect. <strong>Resolution 522 argentina citizenship by investment</strong> cancelled that procurement. It did not repeal Decree 524/2025, and it did not set $500,000 or $1,000,000. Those dollar figures were not found in an enacted regulation. See <a href="/faq/argentina-citizenship-investment-requirements">investment requirements</a>.</p>
+            <p><a href="https://comprar.gob.ar/">COMPR.AR</a> records Ministry of Economy Resolution 522/2026, dated 14 April 2026, as the act that left consultancy tender 34-0001-CPU25 without effect. <strong>Resolution 522 argentina citizenship by investment</strong> is cited in reports as the act that left that procurement without effect. Gazette publication was not located, so this page does not state the cancellation as an established fact. It did not repeal Decree 524/2025, and it did not set a confirmed minimum amount. The decrees do not identify qualifying investment types. See <a href="/faq/argentina-citizenship-investment-requirements">investment requirements</a>.</p>
             <p>&nbsp;</p>
 
             <h3>Argentina CBI Tender Collapse Analysis</h3>
@@ -50,7 +50,7 @@ const IndustryNewsGuide = () => {
 
             <h3>What We Know About the 2026 Rollout</h3>
             <p>&nbsp;</p>
-            <p>Launch timing is not officially confirmed. No enacted dollar amount has been published. The 5,000 figure in the cancelled tender was a consultancy-report quantity, not an application cap. This page does not treat 2026 as a confirmed opening year.</p>
+            <p>Launch timing is not officially confirmed. The decrees do not set a confirmed minimum amount. This page does not state 5,000 as an application cap, and it does not treat a tender cancellation as an established fact. This page does not treat 2026 as a confirmed opening year.</p>
             <p>&nbsp;</p>
 
             <h3>Key Milestones for Investors to Monitor</h3>
@@ -79,12 +79,12 @@ const IndustryNewsGuide = () => {
                 {
                   title: "Organize Documentation and Source-of-Funds Evidence",
                   description:
-                    "Organizing corporate records, financial statements, tax returns, source-of-funds evidence, and identification can start before a filing channel exists. Apostille and certified Spanish translation can take weeks. Preparing documents does not file an application, and APCI is not processing applications.",
+                    "Organizing corporate records, financial statements, tax returns, source-of-funds evidence, and identification can start before a filing channel exists. Apostille and certified Spanish translation can take weeks. Preparing documents does not file an application, and The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted.",
                 },
                 {
                   title: "Evaluate the Anticipated Paths",
                   description:
-                    "Decree 524/2025 does not set $500,000 or $1,000,000. Those figures appear in secondary reports and are not current qualifying requirements. Preparing source-of-funds evidence now is file hygiene. It is not a substitute for a published APCI schedule.",
+                    "The decrees do not set a confirmed minimum amount or identify qualifying investment types. Preparing source-of-funds evidence now is file hygiene. It is not a substitute for a published APCI schedule.",
                 },
                 {
                   title: "Engage Specialized Advisory Counsel Early",

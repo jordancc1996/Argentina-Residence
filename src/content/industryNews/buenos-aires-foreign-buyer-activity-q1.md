@@ -14,4 +14,4 @@ This note does not cite a Colegio de Escribanos table, a foreign-buyer percentag
 
 ## What this note does not claim
 
-It does not claim that foreign-buyer activity climbed. It does not claim that a Golden Visa program is accelerating purchases. Buying property is not a published qualifying investment under Decree 524/2025, and government citizenship applications are not open.
+It does not claim that foreign-buyer activity climbed. It does not claim that a Golden Visa program is accelerating purchases. The decrees do not identify a property purchase as a qualifying or disqualifying investment. The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted.

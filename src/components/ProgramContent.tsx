@@ -13,7 +13,7 @@ const ProgramContent = () => {
     <>
       <Hero
         title="Argentina Golden Visa Program Overview"
-        subtitle="Government applications are not currently open. This is a short overview of the anticipated program."
+        subtitle="The pathway should not be treated as an open application program. This is a short overview of the anticipated program."
         backgroundImage="/argentina-golden-visa-2026.webp"
         imageAlt="Argentine flag with the Sun of May against a clear sky"
         ctaText="Join the Waitlist"
@@ -23,7 +23,7 @@ const ProgramContent = () => {
       
       <EditorialSection>
         <h2 className="font-serif text-xl-editorial mb-8 tracking-wide">
-          Argentina's Golden Visa is an anticipated citizenship-by-investment framework. Government applications are not open.
+          Argentina's Golden Visa is an anticipated citizenship-by-investment framework. The pathway should not be treated as an open application program.
         </h2>
         <p className="text-editorial text-text-secondary mb-8 tracking-wide">
           Whether applications are open is answered on the{" "}
@@ -54,16 +54,16 @@ const ProgramContent = () => {
           <div>
             <h2 className="font-serif text-xl-editorial mb-6 tracking-wide">Investment Amount Not Enacted</h2>
             <p className="text-body text-text-secondary mb-6 tracking-wide">
-              Decree 524/2025 does not set a dollar amount. It assigns a relevant investment to the Ministry of Economy. Secondary reports have described a $500,000 USD Treasury contribution and a $1,000,000 USD seven-year bond. Those figures were not found in an enacted regulation, so they are not current qualifying requirements. The decree also does not name real estate, a business, or a fund as a qualifying asset. APCI is not processing citizenship applications.
+              Decree 524/2025 does not set a dollar amount. It assigns a relevant investment to the Ministry of Economy. The decrees do not set a confirmed minimum amount or identify qualifying investment types. The decrees do not identify real estate, a business, or a fund as a qualifying or disqualifying investment. The pathway should not be treated as an open application program.
             </p>
             <p className="text-body text-text-secondary tracking-wide mb-4">
-              A cancelled consultancy tender described four years or 5,000 APCI recommendation reports, whichever came first. That quantity is not a statutory application cap. Decree 524/2025 does not require a biometrics visit.
+              This page does not state 5,000 as an application cap. Gazette publication of a resolution cancelling a consultancy tender was not located. The decrees do not specify a biometrics rule for investor applicants.
             </p>
             <SupportingImage
               className="mx-0 max-w-none my-6"
               image={casaRosadaGoldenHour}
               alt="Casa Rosada on Plaza de Mayo at golden hour"
-              caption="Casa Rosada, seat of Argentina's federal government. The anticipated decree implementing the Golden Visa program would be finalized here."
+              caption="Casa Rosada, seat of Argentina's federal government."
             />
               <a href="/faq/argentina-citizenship-investment-requirements" className="text-primary hover:underline text-sm font-medium">
               See detailed requirements →
@@ -71,17 +71,17 @@ const ProgramContent = () => {
           </div>
           
           <div>
-            <h2 className="font-serif text-xl-editorial mb-6 tracking-wide">Anticipated Program Characteristics</h2>
+            <h2 className="font-serif text-xl-editorial mb-6 tracking-wide">What the decrees do not establish</h2>
             <p className="text-body text-text-secondary mb-6 tracking-wide">
-              The points below describe characteristics discussed for the anticipated program. They are not benefits of an open government application.
+              The investment-naturalization provision is distinct from temporary or permanent residence. The decrees do not establish a general family-inclusion rule or specify a physical-presence, biometrics, or application-document checklist for investor applicants.
             </p>
             <ul className="text-body text-text-secondary space-y-4 tracking-wide mb-4">
-              <li>• Anticipated temporary residence with <a href="/faq/argentina-residency-work-rights" className="text-primary hover:underline">work authorization</a>, not currently issued through this program</li>
-              <li>• Healthcare access is discussed for residents generally. It is not a confirmed Golden Visa benefit</li>
-              <li>• Tax treatment is not a confirmed investor exemption. See <a href="/faq/argentina-residency-tax-implications" className="text-primary hover:underline">tax implications</a></li>
-              <li>• An anticipated pathway to permanent residency after two years has not been officially confirmed</li>
-              <li>• <a href="/faq/argentina-visa-free-travel" className="text-primary hover:underline">Passport access</a> follows the Henley Passport Index score for an Argentine passport, if one is later issued. It is not a right of residency today.</li>
-              <li>• Anticipated <a href="/faq/argentina-citizenship-investment-family" className="text-primary hover:underline">family inclusion</a> for a spouse and children under 18. Status of dependents 18 and older is unknown</li>
+              <li>• A pending inquiry is not <a href="/faq/argentina-residency-work-rights" className="text-primary hover:underline">work authorization</a></li>
+              <li>• Healthcare access is not stated as a benefit of investment naturalization</li>
+              <li>• Tax residence depends on the statutory tests. See <a href="/faq/argentina-residency-tax-implications" className="text-primary hover:underline">tax implications</a></li>
+              <li>• The decrees do not set a two-year path to permanent residence for investor applicants</li>
+              <li>• <a href="/faq/argentina-visa-free-travel" className="text-primary hover:underline">Passport access</a> is not a benefit of residence or of an uncompleted application</li>
+              <li>• <a href="/faq/argentina-citizenship-investment-family" className="text-primary hover:underline">Family inclusion</a> is not a general rule in the decrees</li>
             </ul>
           </div>
         </div>
@@ -104,7 +104,7 @@ const ProgramContent = () => {
               label: "Step 2",
               title: "Compare Anticipated Paths",
               description:
-                "Decree 524/2025 does not set $500,000 or $1,000,000. Those reported figures are not an open filing option.",
+                "The decrees do not set a confirmed minimum amount or identify qualifying investment types.",
             },
             {
               label: "Step 3",
@@ -116,7 +116,7 @@ const ProgramContent = () => {
               label: "Step 4",
               title: "No Government Filing Today",
               description:
-                "APCI is not processing applications. A dossier cannot be filed as a Golden Visa application while that remains the case. See the status page.",
+                "The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted. A dossier cannot be filed as a Golden Visa application while that remains the case. See the status page.",
             },
             {
               label: "Step 5",
@@ -137,7 +137,7 @@ const ProgramContent = () => {
 
         <div className="mt-16 text-center">
           <p className="text-body text-text-secondary mb-6 tracking-wide">
-            Government applications are not open. Join the{" "}
+            The pathway should not be treated as an open application program. Join the{" "}
             <a href="/argentina-golden-visa-eligibility-checker" className="text-primary hover:underline">
               Argentina Residence Waitlist
             </a>{" "}

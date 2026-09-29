@@ -17,7 +17,7 @@ const AboutContent = () => {
                 About Argentina Residence
               </h1>
               <p className="text-editorial text-text-secondary tracking-wide">
-                About Argentina Residence advises on Argentine residency by investment. APCI has not published operational regulations and is not processing applications.
+                About Argentina Residence advises on Argentine residency by investment. The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted.
               </p>
             </div>
             <SupportingImage

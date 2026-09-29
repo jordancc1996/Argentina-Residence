@@ -392,8 +392,8 @@ if (programStatus.governmentApplicationsOpen !== false) {
 }
 
 const definitionMarkdown = byPath.get("/faq/what-is-argentina-golden-visa")?.markdown ?? "";
-if (!definitionMarkdown.includes("not an open residency visa")) {
-  fail("definition markdown dropped the residency-visa qualifier");
+if (!definitionMarkdown.includes("not a residence permit")) {
+  fail("definition markdown dropped the residence-permit distinction");
 }
 if (!llms.includes(programStatus.programTermDefinition) || !llms.includes(programStatus.applicationStatusLabel) || !llms.includes(programStatus.waitlistDisclaimer)) {
   fail("llms.txt does not carry the shared status fields");
