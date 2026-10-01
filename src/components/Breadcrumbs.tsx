@@ -12,6 +12,7 @@ const routeLabels: Record<string, string> = {
   'faq': 'FAQ',
   'blog': 'Blog',
   'research': 'Research',
+  'press': 'Press Room',
   'resources': 'Resources',
   'guides': 'Resources',
   'market-insights': 'Market Insights',

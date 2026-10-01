@@ -63,6 +63,25 @@ const industryNews = defineCollection({
   }),
 });
 
+const pressReleases = defineCollection({
+  loader: glob({
+    base: './src/content/press',
+    pattern: '**/*.{md,mdx}',
+  }),
+  schema: z.object({
+    title: z.string(),
+    slug: z.string(),
+    date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+    summary: z.string(),
+    status: z.enum(["draft", "published"]),
+    lastUpdatedDate: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).optional(),
+    seoTitle: z.string().optional(),
+    seoDescription: z.string().optional(),
+    image: z.string().optional(),
+    imageAlt: z.string().optional(),
+  }),
+});
+
 const guides = defineCollection({
   loader: glob({
     base: './src/content/guides',
@@ -89,4 +108,5 @@ export const collections = {
   faqs,
   industryNews,
   guides,
+  pressReleases,
 };

@@ -78,6 +78,7 @@ const sections = [
       "/faq",
       "/research",
       "/industry-news",
+      "/press",
       "/argentina-golden-visa-eligibility-checker",
     ],
   },
@@ -157,6 +158,7 @@ function contentType(pathname) {
   if (pathname.startsWith("/research/") && pathname !== "/research") return "research";
   if (pathname.startsWith("/guides/")) return "guide";
   if (pathname.startsWith("/industry-news/") && pathname !== "/industry-news") return "industry-news";
+  if (pathname.startsWith("/press/") && pathname !== "/press") return "press";
   return "page";
 }
 
@@ -281,11 +283,22 @@ const programStatus = loadProgramStatus();
 if (process.exitCode) process.exit(process.exitCode);
 
 const paths = sitemapPaths();
-if (paths.length !== 41) fail(`sitemap has ${paths.length} URLs, expected 41`);
+const pressReleasePaths = paths.filter((pathname) => pathname.startsWith("/press/") && pathname !== "/press");
+const nonReleaseCount = paths.length - pressReleasePaths.length;
+if (nonReleaseCount !== 42) {
+  fail(`sitemap has ${nonReleaseCount} non-release URLs, expected 42`);
+}
 for (const pathname of paths) {
   if (pathname.includes("/markdown") || pathname.endsWith(".md") || pathname === "/llms.txt" || pathname === "/content-index.json") {
     fail(`sitemap includes non-canonical URL ${pathname}`);
   }
+}
+
+if (pressReleasePaths.length > 0) {
+  sections.push({
+    heading: "Press Releases",
+    paths: pressReleasePaths,
+  });
 }
 
 const assigned = new Set(sections.flatMap((section) => section.paths));
@@ -336,6 +349,15 @@ lines.push(
   `> ${programStatus.programTermDefinition} ${programStatus.applicationStatusLabel} ${programStatus.waitlistDisclaimer} Status last verified: ${programStatus.statusLastVerified}.`,
 );
 lines.push("");
+const pressSection = sections.find((section) => section.heading === "Press Releases");
+if (pressSection) {
+  pressSection.paths.sort((a, b) => {
+    const left = byPath.get(b)?.published || "";
+    const right = byPath.get(a)?.published || "";
+    return left.localeCompare(right) || a.localeCompare(b);
+  });
+}
+
 let primaryLinks = 0;
 let optionalLinks = 0;
 for (const section of sections) {
@@ -450,7 +472,7 @@ function walk(dir) {
   }
 }
 walk(path.join(dist, "markdown"));
-if (mdCount.length !== 41) fail(`generated ${mdCount.length} markdown files, expected 41`);
+if (mdCount.length !== paths.length) fail(`generated ${mdCount.length} markdown files, expected ${paths.length}`);
 
 const sitemapAfter = fs.readFileSync(path.join(dist, "sitemap-0.xml"), "utf8");
 if (sitemapAfter.includes("/markdown/") || sitemapAfter.includes("llms.txt") || sitemapAfter.includes("content-index.json")) {

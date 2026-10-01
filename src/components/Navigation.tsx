@@ -20,6 +20,7 @@ const navLinks = [
 ];
 
 const GUIDES_HUB_HREF = "/resources";
+const PRESS_HREF = "/press";
 const REAL_ESTATE_HREF = "/guides/argentina-real-estate-investment";
 
 export type GuideNavItem = {
@@ -41,7 +42,9 @@ const Navigation = ({
   const [isScrolled, setIsScrolled] = useState(false);
   const [guidesExpanded, setGuidesExpanded] = useState(false);
 
-  const isGuidesSectionActive = guides.some((guide) => pathMatches(currentPath, guide.href));
+  const isPressSection = currentPath === PRESS_HREF || currentPath.startsWith(`${PRESS_HREF}/`);
+  const isGuidesSectionActive =
+    guides.some((guide) => pathMatches(currentPath, guide.href)) || isPressSection;
 
   useEffect(() => {
     const onScroll = () => setIsScrolled(window.scrollY > 100);
@@ -147,11 +150,22 @@ const Navigation = ({
                               className="block px-6 transition-opacity duration-[250ms] ease-in-out hover:opacity-70"
                               style={guideLinkStyle(GUIDES_HUB_HREF)}
                             >
-                              Argentina residency resources
-                            </a>
-                          </NavigationMenuLink>
-                        </li>
-                      </ul>
+                            Argentina residency resources
+                          </a>
+                        </NavigationMenuLink>
+                      </li>
+                      <li>
+                        <NavigationMenuLink asChild>
+                          <a
+                            href={PRESS_HREF}
+                            className="block px-6 transition-opacity duration-[250ms] ease-in-out hover:opacity-70"
+                            style={guideLinkStyle(PRESS_HREF)}
+                          >
+                            Press Room
+                          </a>
+                        </NavigationMenuLink>
+                      </li>
+                    </ul>
                     </NavigationMenuContent>
                   </NavigationMenuItem>
                 </NavigationMenuList>
@@ -366,6 +380,16 @@ const Navigation = ({
                             style={guideLinkStyle(GUIDES_HUB_HREF)}
                           >
                             Argentina residency resources
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href={PRESS_HREF}
+                            onClick={() => setIsOpen(false)}
+                            className="block pl-4 transition-opacity duration-[250ms] ease-in-out hover:opacity-70"
+                            style={guideLinkStyle(PRESS_HREF)}
+                          >
+                            Press Room
                           </a>
                         </li>
                       </ul>
