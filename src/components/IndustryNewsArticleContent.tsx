@@ -61,7 +61,7 @@ const IndustryNewsArticleContent = ({
         </section>
       )}
 
-      <div className={image ? "pt-16 pb-16 md:pt-24 md:pb-24" : "section-padding"}>
+      <div className={image ? "pt-10 pb-16 md:pt-16 md:pb-24" : "section-padding"}>
         <article className="max-w-4xl mx-auto px-4 md:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

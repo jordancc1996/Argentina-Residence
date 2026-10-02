@@ -3,6 +3,109 @@ export type PageFaqItem = {
   answer: string;
 };
 
+/** Authoritative citizenship-by-investment answers. Pages reference these by id. */
+const cbiFaqLibrary = {
+  launched: {
+    question: "Has Argentina's citizenship by investment program launched?",
+    answer:
+      "Argentina's citizenship by investment program was announced by Economy Minister Luis Caputo during Argentina Week in Paris on October 2, 2026. The Argentine government states that the program is expected to become operational for receiving applications during the fourth quarter of 2026. Until the government confirms that the application process is operational, prospective applicants should distinguish between the program's announcement and the ability to submit an application.",
+  },
+  cost: {
+    question: "How much does Argentina citizenship by investment cost?",
+    answer:
+      "Argentina citizenship by investment starts with a US$350,000 non-refundable contribution to the National Treasury or a US$800,000 subscription to a government bond created specifically for the program. The announced family contributions are an additional US$100,000 for a spouse, US$100,000 for each child aged 18 to 25 who is unmarried and has no children, and US$25,000 for each child under 18.",
+  },
+  familyOfFour: {
+    question: "How much does Argentina citizenship by investment cost for a family of four?",
+    answer:
+      "Argentina citizenship by investment costs US$500,000 under the announced contribution route for a family consisting of a principal applicant, spouse, and two children under 18. Under the bond route, the principal applicant subscribes to the US$800,000 government bond, while qualifying family members require the announced additional Treasury contributions. Applicants should also account for any government, due diligence, legal, professional, or administrative fees once the applicable fee schedule and final procedures are confirmed.",
+  },
+  bond: {
+    question: "How does Argentina's citizenship by investment government bond work?",
+    answer:
+      "Argentina's citizenship by investment government bond route requires the principal applicant to subscribe to a US$800,000 public bond created specifically for the program. The October 2 announcement identifies the bond as one of the program's two principal investment routes. Additional bond terms should be treated as subject to the final program documentation unless confirmed by an authoritative source.",
+  },
+  bondRisk: {
+    question: "Is Argentina's citizenship by investment bond safe?",
+    answer:
+      "Argentina's citizenship by investment bond is not a risk-free investment simply because it is a government security. Sovereign bonds can carry credit, market, liquidity, currency, and other risks. Prospective investors should evaluate the specific bond terms and Argentina's sovereign-risk profile with qualified financial and legal advisers before investing.",
+  },
+  residence: {
+    question: "Do I need to live in Argentina to qualify for citizenship by investment?",
+    answer:
+      "Living in Argentina for a minimum period is not required under Argentina's investment-based naturalization framework before a qualifying investor seeks citizenship. Decree 366/2025 established a naturalization pathway for foreigners who demonstrate a qualifying relevant investment regardless of the duration of their residence. Any physical-presence, identity-verification, or procedural requirements applicable to the new program should be confirmed from the final application procedures.",
+  },
+  tax: {
+    question: "Will Argentina citizenship by investment make me an Argentine tax resident?",
+    answer:
+      "Obtaining Argentine citizenship through the investment-based naturalization framework does not, by itself, make an investor an Argentine tax resident. Article 194 of Law 27,802 amended the tax-residence framework to clarify that acquiring Argentine citizenship by naturalization does not necessarily result in Argentine tax residence. Tax residence can arise separately based on the applicable tax-residency rules and an individual's circumstances.",
+  },
+  dual: {
+    question: "Can I keep my current citizenship if I become an Argentine citizen?",
+    answer:
+      "Keeping your current citizenship after becoming an Argentine citizen depends on both Argentina's nationality rules and the laws governing your existing citizenship. Applicants should confirm the consequences of acquiring Argentine nationality under the laws applicable to their current nationality before proceeding.",
+  },
+  visaFree: {
+    question: "How many countries can Argentine citizens visit without obtaining a visa in advance?",
+    answer:
+      "Argentine citizens can travel to many destinations without obtaining a traditional visa in advance, although the exact number depends on the ranking methodology and changes over time. Travelers should verify the current entry requirements for each destination before traveling rather than relying solely on a passport ranking.",
+  },
+  usVisa: {
+    question: "Does an Argentine passport provide visa-free access to the United States?",
+    answer:
+      "An Argentine passport does not currently provide visa-free travel to the United States under the Visa Waiver Program. Any future change would depend on the United States formally admitting Argentina to the program. Argentine nationality may provide access to other U.S. immigration categories subject to their separate eligibility requirements.",
+  },
+  mercosur: {
+    question: "Can Argentine citizens live in Brazil, Uruguay, or Chile?",
+    answer:
+      "Argentine citizens can generally use Mercosur nationality-based residence arrangements to seek residence in countries such as Brazil, Uruguay, and Chile, subject to the applicable rules of the destination country. Rules affecting naturalized citizens should be checked carefully because some Mercosur nationality-based residence procedures impose additional requirements on people who acquired nationality through naturalization.",
+  },
+  realEstate: {
+    question: "Can I qualify for Argentina citizenship by investment by purchasing real estate?",
+    answer:
+      "Purchasing real estate has not been announced as a qualifying route for Argentina citizenship by investment. The October 2 announcement identified two principal investment routes: a US$350,000 non-refundable contribution to the National Treasury and a US$800,000 subscription to a government bond created specifically for the program.",
+  },
+  processing: {
+    question: "How long will Argentina citizenship by investment take?",
+    answer:
+      "The total processing time for Argentina citizenship by investment has not yet been established through actual program applications. Under the existing administrative framework, the National Directorate of Migration has 30 business days to issue a reasoned decision after receiving the Agency for Citizenship by Investment Programs' report. That 30-business-day period should not be interpreted as the total processing time for an application.",
+  },
+  applicationLimit: {
+    question: "Is there a limit on the number of Argentina citizenship by investment applications?",
+    answer:
+      "A limit on the number of Argentina citizenship by investment applications has not been confirmed in the program information reflected in this FAQ library. Applicants should rely on final program documentation for any quota or application-cap requirements.",
+  },
+  applyNow: {
+    question: "Can I apply for Argentina citizenship by investment now?",
+    answer:
+      "Applications for Argentina citizenship by investment are not yet confirmed as open. The Argentine government states that the program is expected to become operational for receiving applications during Q4 2026. Prospective applicants can use the period before opening to prepare documentation and obtain professional advice.",
+  },
+  parents: {
+    question: "Can my parents be included in an Argentina citizenship by investment application?",
+    answer:
+      "Parents were not included among the family-member categories announced for Argentina citizenship by investment. The announced family categories include spouses and qualifying children. Final program rules should be checked for any expansion or clarification of eligible dependants.",
+  },
+  adultChildren: {
+    question: "Can my adult children be included in an Argentina citizenship by investment application?",
+    answer:
+      "Adult children aged 18 to 25 can be included in an Argentina citizenship by investment application if they are unmarried and have no children of their own. The announced additional contribution is US$100,000 to the National Treasury for each qualifying adult child.",
+  },
+  transmission: {
+    question: "Does Argentine citizenship pass to my children?",
+    answer:
+      "Argentine citizenship can generally be transmitted to children under Argentina's nationality laws, although the applicable procedure depends on circumstances such as the parent's status and the child's place of birth. Families should confirm the applicable registration or nationality procedure with an Argentine consulate or qualified Argentine immigration professional.",
+  },
+  ordinary: {
+    question: "Is there a cheaper way to become an Argentine citizen than citizenship by investment?",
+    answer:
+      "Argentina has ordinary naturalization pathways that do not require the investment associated with the citizenship by investment program. These pathways have their own residence and eligibility requirements and should be evaluated separately from Argentina's investment-based naturalization framework.",
+  },
+} satisfies Record<string, PageFaqItem>;
+
+function cbiFaqs(...ids: (keyof typeof cbiFaqLibrary)[]): PageFaqItem[] {
+  return ids.map((id) => cbiFaqLibrary[id]);
+}
+
 const faqsByPath: Record<string, PageFaqItem[]> = {
   "/guides/argentina-citizenship-investment-vs-paraguay": [
     {
@@ -269,12 +372,18 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     },
   ],
 
+  "/research/argentina-citizenship-by-investment-status": cbiFaqs(
+    "launched",
+    "applyNow",
+    "cost",
+    "familyOfFour",
+    "bond",
+    "processing",
+    "applicationLimit",
+  ),
+
   "/research/argentina-citizenship-by-investment-launch-date": [
-    {
-      question: "When is the Argentina citizenship by investment launch date?",
-      answer:
-        "No exact filing date is confirmed on this page. The government expects applications during Q4 2026. Government applications are not yet confirmed as open. Two federal appellate decisions in June 2026, including the National Electoral Chamber decision in Yang, Liping, questioned or invalidated aspects of DNU 366/2025 in individual naturalization cases. Neither concerned a CBI applicant. The decisions create uncertainty about the DNU provisions on which the investment pathway depends. The available rulings do not establish the final, nationwide effect of the decisions. This page does not state that a Supreme Court appeal is pending. DNU 366/2025 created APCI. Decree 524/2025 subsequently established a basic review procedure involving APCI. It did not create APCI.",
-    },
+    ...cbiFaqs("launched", "applyNow", "processing", "visaFree", "usVisa"),
     {
       question: "Did the cancelled tender set a due-diligence deadline?",
       answer:
@@ -283,39 +392,16 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
   ],
 
   "/research/argentina-citizenship-investment-american-investors": [
-    {
-      question: "Is Argentina citizenship by investment open for American investors?",
-      answer:
-        "Government applications are not yet confirmed as open. This page is not a live filing checklist.",
-    },
-    {
-      question: "Does Argentina citizenship by investment require Americans to live in Argentina full-time?",
-      answer:
-        "This site describes the investment nationality route as not using ordinary two-year residence as the path. Physical-presence rules for ordinary residency are covered on [do I need to live in Argentina full-time](/faq/argentina-residency-physical-presence). Do not treat that FAQ as a confirmed APCI filing rule.",
-    },
-    {
-      question: "Where are US tax-residency triggers for this program discussed?",
-      answer:
-        "US-investor tax-residency triggers are discussed on this page. Worldwide-income taxation for Argentine residents generally is covered on [Argentina residency tax implications](/faq/argentina-residency-tax-implications). Those are not the same topic.",
-    },
+    ...cbiFaqs("applyNow", "dual", "tax", "usVisa", "mercosur"),
     {
       question: "I am waiting on a US green card. Is this the right article?",
       answer:
         "No. This article is for US citizens considering Argentine nationality. Backlogged immigrant-visa applicants should use [Argentina citizenship by investment for US greencard backlog](/guides/argentina-citizenship-investment-us-visa-backlog).",
     },
-    {
-      question: "Would Argentine nationality be Mercosur nationality for Americans?",
-      answer:
-        "If citizenship were later granted under the decrees, the result would be Argentine nationality. Mercosur effects, if any, would follow that nationality. Government applications are not yet confirmed as open.",
-    },
   ],
 
   "/research/argentina-golden-visa-american-investors-2026": [
-    {
-      question: "Should 2026 be treated as a filing year for American investors?",
-      answer:
-        "No. Treat 2026 as a planning window in this article's argument, not as a confirmed year when Americans can lodge an APCI file. The pathway should not be treated as an open application program.",
-    },
+    ...cbiFaqs("launched", "cost", "familyOfFour", "bond", "ordinary"),
     {
       question: "Can Argentine citizens apply for a US E-2 visa?",
       answer:
@@ -329,25 +415,14 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
       answer:
         "The US lifestyle figures on this page are not APCI filing fees. The announced Golden Visa terms are a planning reference, not a live application. It is not a cost-of-living calculator and not a promise that Argentine residency will replicate a US standard of living at a fixed price.",
     },
-    {
-      question: "Are the lifestyle cost figures on this page official Argentine program fees?",
-      answer:
-        "No. Lifestyle and US-cost illustrations on this page are not APCI filing fees. The October 2, 2026 announcement states a $350,000 National Treasury contribution or an $800,000 public-bond subscription. Government applications are not yet confirmed as open.",
-    },
+    ...cbiFaqs("cost", "familyOfFour", "tax", "residence", "ordinary"),
   ],
 
-  "/research/argentine-investment-landscape-golden-visa-value-proposition": [
-    {
-      question: "Does investing in Vaca Muerta or RIGI qualify for Argentina citizenship by investment?",
-      answer:
-        "This page describes macroeconomic and sector context, including energy and incentive frameworks. The decrees do not identify sector exposure, a Treasury payment, or a bond as a qualifying or disqualifying investment. See [investment requirements](/faq/argentina-citizenship-investment-requirements).",
-    },
-    {
-      question: "Should capital be deployed before the Golden Visa launches?",
-      answer:
-        "Investing in Argentine assets now is a market decision. It is not an APCI citizenship filing. It does not open an APCI channel. Deploying capital into Argentine assets is not the same as lodging a citizenship file.",
-    },
-  ],
+  "/research/argentine-investment-landscape-golden-visa-value-proposition": cbiFaqs(
+    "realEstate",
+    "bond",
+    "bondRisk",
+  ),
 
   "/research/buenos-aires-real-estate-bull-market-analysis": [
     {
@@ -355,6 +430,7 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
       answer:
         "No. Those names are neighborhood market illustrations on this page. Argentina does not publish location-tiered Golden Visa property bands on this site the way Greece does.",
     },
+    ...cbiFaqs("realEstate", "bond"),
   ],
 
   "/industry-news/argentina-citizenship-investment-vs-portugal-golden-visa": [
@@ -362,11 +438,6 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
       question: "Does Portugal Golden Visa grant citizenship at approval?",
       answer:
         "No. Portugal Golden Visa is residency by investment. Citizenship is not immediate. The page describes eligibility to apply for Portuguese citizenship after maintaining legal residency for five years and demonstrating basic Portuguese, plus an average of seven days per year to maintain the permit.",
-    },
-    {
-      question: "Is Argentina citizenship by investment a faster passport than Portugal Golden Visa?",
-      answer:
-        "Investment naturalization is distinct from residence. The decrees do not specify a physical-presence rule. DNM has 30 business days after it receives APCI's report. That is not total processing time. The pathway should not be treated as an open application program. Portugal is a live residence program with a later citizenship clock. They are not the same product.",
     },
     {
       question: "What is Portugal's primary Golden Visa investment after real estate was restricted?",
@@ -378,6 +449,7 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
       answer:
         "Portugal's program is established and live. Government applications are not yet confirmed as open. Choosing Argentina on this comparison is a planning decision, not a current filing option.",
     },
+    ...cbiFaqs("cost", "usVisa", "adultChildren"),
   ],
 
   "/industry-news/decree-524-2025-progress-update": [
@@ -391,6 +463,7 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
       answer:
         "No. The October 2, 2026 announcement states a $350,000 National Treasury contribution or an $800,000 public-bond subscription. Do not treat this news item as a confirmed fee schedule. See [investment requirements](/faq/argentina-citizenship-investment-requirements).",
     },
+    ...cbiFaqs("launched", "bond", "processing", "applicationLimit"),
   ],
 
   "/industry-news/buenos-aires-foreign-buyer-activity-q1": [
@@ -399,11 +472,7 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
       answer:
         "No. Foreign-buyer activity in Buenos Aires real estate is a property-market observation. It is not an APCI announcement that citizenship-by-investment applications are open.",
     },
-    {
-      question: "If I buy in the same quarter as this report, do I obtain residency?",
-      answer:
-        "The decrees do not identify a Buenos Aires purchase as a qualifying or disqualifying investment. See [Argentina real estate investment](/guides/argentina-real-estate-investment).",
-    },
+    ...cbiFaqs("realEstate"),
     {
       question: "Should this report be used as a price forecast?",
       answer:

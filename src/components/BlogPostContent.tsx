@@ -67,7 +67,7 @@ const BlogPostContent = ({
   return (
     <>
       <Hero title={title} subtitle={excerpt} {...heroProps} />
-      <div className="section-padding">
+      <div className="pt-10 pb-20 md:pt-16 md:pb-32">
         <article className="max-w-4xl mx-auto px-4 md:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
