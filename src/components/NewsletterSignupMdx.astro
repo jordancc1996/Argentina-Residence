@@ -4,24 +4,14 @@ import NewsletterSignup from './NewsletterSignup';
 interface Props {
   className?: string;
   class?: string;
-  includeNameFields?: boolean;
-  heading?: string;
-  compact?: boolean;
+  formType?: string;
 }
 
-const {
-  className,
-  class: classAttr,
-  includeNameFields = false,
-  heading,
-  compact = false,
-} = Astro.props;
+const { className, class: classAttr, formType } = Astro.props;
 ---
 
 <NewsletterSignup
   client:load
   className={className ?? classAttr}
-  includeNameFields={includeNameFields}
-  heading={heading}
-  compact={compact}
+  formType={formType}
 />

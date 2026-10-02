@@ -1,11 +1,13 @@
 ---
+import { absoluteSocialUrl, socialPreviewFor } from '../data/socialPreviews';
 import Layout from '../layouts/Layout.astro';
 import PrivacyContent from '../components/PrivacyContent';
 
 const title = 'Privacy Policy | Argentina Residence';
 const description = 'Argentina Residence privacy policy. Learn how we protect your data and handle your information securely.';
 const canonical = 'https://argentinaresidence.com/privacy';
-const ogImage = 'https://argentinaresidence.com/og-image.webp';
+const social = socialPreviewFor('/privacy');
+const ogImage = absoluteSocialUrl(social);
 const schema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
@@ -26,8 +28,9 @@ const schema = {
 	<meta slot="head" property="og:description" content={description} />
 	<meta slot="head" property="og:url" content={canonical} />
 	<meta slot="head" property="og:image" content={ogImage} />
-	<meta slot="head" property="og:image:width" content="1200" />
-	<meta slot="head" property="og:image:height" content="630" />
+	<meta slot="head" property="og:image:width" content={String(social.width)} />
+	<meta slot="head" property="og:image:height" content={String(social.height)} />
+	<meta slot="head" property="og:image:alt" content={social.alt} />
 	<meta slot="head" property="og:locale" content="en_US" />
 	<meta slot="head" name="twitter:card" content="summary_large_image" />
 	<meta slot="head" name="twitter:title" content={title} />

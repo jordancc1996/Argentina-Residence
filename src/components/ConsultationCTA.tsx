@@ -1,30 +1,34 @@
 import { useState } from "react";
 import { Mail } from "lucide-react";
+import { FORM_SUBMIT_ERROR, submitFormcarry } from "@/lib/formcarry";
 
 const ADVISOR_EMAIL = "admin@argentinaresidence.com";
 
 const ConsultationCTA = () => {
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [submitError, setSubmitError] = useState("");
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const form = e.currentTarget;
     const data = new FormData(form);
     setSubmitting(true);
-    try {
-      await fetch("https://formcarry.com/s/1vbKuKjPCBx", {
-        method: "POST",
-        headers: { Accept: "application/json" },
-        body: data,
-      });
+    setSubmitError("");
+    const result = await submitFormcarry({
+      first_name: String(data.get("first_name") ?? ""),
+      email: String(data.get("email") ?? ""),
+      phone: String(data.get("phone") ?? ""),
+      _source: "Pre-footer CTA",
+      formType: "pre-footer-consultation",
+    });
+    if (result.ok) {
       setSubmitted(true);
       form.reset();
-    } catch {
-      /* keep form for retry */
-    } finally {
-      setSubmitting(false);
+    } else if (!result.inFlight) {
+      setSubmitError(FORM_SUBMIT_ERROR);
     }
+    setSubmitting(false);
   };
 
   const headingStyle: React.CSSProperties = {
@@ -95,6 +99,11 @@ const ConsultationCTA = () => {
                   {submitting ? "Sending…" : "Book My Free Call"}
                 </button>
               </form>
+              {submitError && (
+                <p role="alert" style={{ fontFamily: "'Montserrat', sans-serif", color: "#F2F2F2", fontSize: 13, marginTop: 12, lineHeight: 1.5 }}>
+                  {submitError}
+                </p>
+              )}
               <p
                 style={{
                   fontFamily: "'Montserrat', sans-serif",

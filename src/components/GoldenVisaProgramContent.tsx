@@ -80,10 +80,6 @@ const GoldenVisaProgramContent = ({ children }: { children?: ReactNode }) => {
         </div>
       </EditorialSection>
 
-      <EditorialSection centered={false}>
-        <NewsletterSignup />
-      </EditorialSection>
-      
       {/* Key Benefits */}
       <EditorialSection className="bg-secondary/30">
         <h2 className="font-serif text-xl-editorial mb-12 tracking-wide text-center">
@@ -137,6 +133,10 @@ const GoldenVisaProgramContent = ({ children }: { children?: ReactNode }) => {
             </p>
           </div>
         </div>
+      </EditorialSection>
+
+      <EditorialSection centered={false}>
+        <NewsletterSignup className="my-0" />
       </EditorialSection>
       
       {/* Investment Requirements */}

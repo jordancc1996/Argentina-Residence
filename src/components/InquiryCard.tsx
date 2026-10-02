@@ -6,6 +6,7 @@ import { Scale } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
+import { FORM_SUBMIT_ERROR, submitFormcarry } from "@/lib/formcarry";
 import { cn } from "@/lib/utils";
 
 export type InquiryCardVariant = "default" | "counsel";
@@ -60,29 +61,29 @@ const InquiryCard = ({
   const onSubmit = async (data: InquiryFormData) => {
     setIsSubmitting(true);
     try {
-      const response = await fetch("https://formcarry.com/s/1vbKuKjPCBx", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify({
-          ...data,
-          "form-name": "inline-inquiry-us-immigration",
-          formType: "inline-inquiry-us-immigration",
-        }),
+      const result = await submitFormcarry({
+        first_name: data.first_name,
+        last_name: data.last_name,
+        email: data.email,
+        us_immigration_status: data.us_immigration_status,
+        "form-name": "inline-inquiry-us-immigration",
+        formType: "inline-inquiry-us-immigration",
       });
 
-      if (response.ok) {
+      if (result.ok) {
         setSubmitted(true);
         reset();
-      } else {
-        throw new Error("Submission failed");
+      } else if (!result.inFlight) {
+        toast({
+          title: "Error",
+          description: FORM_SUBMIT_ERROR,
+          variant: "destructive",
+        });
       }
     } catch {
       toast({
         title: "Error",
-        description: "Something went wrong. Please try again.",
+        description: FORM_SUBMIT_ERROR,
         variant: "destructive",
       });
     } finally {

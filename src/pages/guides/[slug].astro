@@ -1,4 +1,5 @@
 ---
+import { absoluteSocialUrl, socialPreviewFor } from '../../data/socialPreviews';
 import { getCollection, render } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import GuideArticleContent from '../../components/GuideArticleContent';
@@ -42,7 +43,8 @@ const pageTitle = data.seoTitle || data.title;
 const metaTitle = `${pageTitle} | Argentina Residence`;
 const description = data.seoDescription || '';
 const canonical = `https://argentinaresidence.com/guides/${data.slug}`;
-const ogImage = 'https://argentinaresidence.com/og-image.webp';
+const social = socialPreviewFor(`/guides/${data.slug}`);
+const ogImage = absoluteSocialUrl(social);
 const currentGuide = investorGuides.find((guide) => guide.slug === data.slug);
 const heroImage = currentGuide?.heroImage ?? placeholderGuideHero;
 const heroAlt = currentGuide?.imageAlt ?? 'Buenos Aires at night';
@@ -67,6 +69,7 @@ const schema = {
   },
   datePublished: published,
   dateModified: lastUpdatedDate || data.dateModified || published,
+  image: ogImage,
   url: canonical,
 };
 ---
@@ -82,8 +85,9 @@ const schema = {
 	<meta slot="head" property="og:description" content={description} />
 	<meta slot="head" property="og:url" content={canonical} />
 	<meta slot="head" property="og:image" content={ogImage} />
-	<meta slot="head" property="og:image:width" content="1200" />
-	<meta slot="head" property="og:image:height" content="630" />
+	<meta slot="head" property="og:image:width" content={String(social.width)} />
+	<meta slot="head" property="og:image:height" content={String(social.height)} />
+	<meta slot="head" property="og:image:alt" content={social.alt} />
 	<meta slot="head" property="og:locale" content="en_US" />
 	<meta slot="head" name="twitter:card" content="summary_large_image" />
 	<meta slot="head" name="twitter:title" content={metaTitle} />

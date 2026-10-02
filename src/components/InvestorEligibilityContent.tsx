@@ -7,6 +7,7 @@ import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { CheckCircle, ArrowRight, Clock, Shield } from "lucide-react";
 import eligibilityBackground from "@/assets/argentina-golden-visa-eligibility.webp";
+import { FORM_SUBMIT_ERROR, submitFormcarry } from "@/lib/formcarry";
 
 type Step = 1 | 2 | 3 | 4;
 type InvestmentBudget = "$below-500k" | "$500k+" | "";
@@ -38,6 +39,7 @@ const InvestorEligibilityContent = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isComplete, setIsComplete] = useState(false);
+  const [submitError, setSubmitError] = useState("");
 
   const readinessFit = formData.timeline === "0-6months" ? "near-term conversation" : "monitoring";
 
@@ -57,28 +59,28 @@ const InvestorEligibilityContent = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    try {
-      await fetch("https://formcarry.com/s/1vbKuKjPCBx", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "Accept": "application/json"
-        },
-        body: JSON.stringify({
-          // Budget values are private profile bands, not government thresholds: "$below-500k" | "$500k+".
-          ...formData,
-          readinessFit,
-          source: "Investment Readiness Tool",
-          submittedAt: new Date().toISOString()
-        })
-      });
-      
+    setSubmitError("");
+    const result = await submitFormcarry({
+      budget: formData.budget,
+      timeline: formData.timeline,
+      investmentType: formData.investmentType,
+      firstName: formData.firstName,
+      lastName: formData.lastName,
+      email: formData.email,
+      phone: formData.phone,
+      country: formData.country,
+      readinessFit,
+      source: "Investment Readiness Tool",
+      submittedAt: new Date().toISOString(),
+      formType: "eligibility-waitlist",
+    });
+
+    if (result.ok) {
       setIsComplete(true);
-    } catch (error) {
-      console.error("Submission error:", error);
-    } finally {
-      setIsSubmitting(false);
+    } else if (!result.inFlight) {
+      setSubmitError(FORM_SUBMIT_ERROR);
     }
+    setIsSubmitting(false);
   };
 
   const isStepValid = () => {
@@ -501,13 +503,18 @@ const InvestorEligibilityContent = () => {
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               ) : (
-                <Button 
-                  type="submit" 
-                  disabled={!isStepValid() || isSubmitting}
-                  className="bg-gold hover:bg-gold/90 text-primary"
-                >
-                  {isSubmitting ? "Submitting..." : "Join the Waitlist"}
-                </Button>
+                <div className="flex flex-col items-end gap-2">
+                  {submitError && (
+                    <p role="alert" className="text-sm text-destructive text-right">{submitError}</p>
+                  )}
+                  <Button 
+                    type="submit" 
+                    disabled={!isStepValid() || isSubmitting}
+                    className="bg-gold hover:bg-gold/90 text-primary"
+                  >
+                    {isSubmitting ? "Submitting..." : "Join the Waitlist"}
+                  </Button>
+                </div>
               )}
             </div>
           </form>

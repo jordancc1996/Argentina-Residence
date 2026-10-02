@@ -383,6 +383,16 @@ fs.writeFileSync(path.join(dist, "llms.txt"), llms);
 const vercelPath = path.join(root, "vercel.json");
 const vercel = JSON.parse(fs.readFileSync(vercelPath, "utf8"));
 vercel.headers = [
+  {
+    source: "/documents/argentina-citizenship-by-investment-q4-2026.pdf",
+    headers: [
+      { key: "Content-Type", value: "application/pdf" },
+      {
+        key: "Link",
+        value: `<${SITE}/press/argentina-citizenship-by-investment-q4-2026>; rel="canonical"`,
+      },
+    ],
+  },
   ...paths.map((pathname) => ({
     source: markdownPublicPath(pathname),
     headers: [

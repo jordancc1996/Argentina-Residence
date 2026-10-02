@@ -103,6 +103,19 @@
   ],
   "headers": [
     {
+      "source": "/documents/argentina-citizenship-by-investment-q4-2026.pdf",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/pdf"
+        },
+        {
+          "key": "Link",
+          "value": "<https://argentinaresidence.com/press/argentina-citizenship-by-investment-q4-2026>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
       "source": "/markdown/index.md",
       "headers": [
         {

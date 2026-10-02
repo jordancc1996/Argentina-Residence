@@ -1,11 +1,13 @@
 ---
+import { absoluteSocialUrl, socialPreviewFor } from '../data/socialPreviews';
 import Layout from '../layouts/Layout.astro';
 import InvestorEligibilityContent from '../components/InvestorEligibilityContent';
 
 const title = 'Argentina Golden Visa Investment Readiness | Argentina Residence Waitlist';
 const description = "A private readiness check for Argentina's announced citizenship-by-investment terms. Government applications are not yet confirmed as open. Join the Argentina Residence waitlist for updates.";
 const canonical = 'https://argentinaresidence.com/argentina-golden-visa-eligibility-checker';
-const ogImage = 'https://argentinaresidence.com/og-image.webp';
+const social = socialPreviewFor('/argentina-golden-visa-eligibility-checker');
+const ogImage = absoluteSocialUrl(social);
 const schema = {
   "@context": "https://schema.org",
   "@type": "WebApplication",
@@ -33,8 +35,9 @@ const schema = {
 	<meta slot="head" property="og:description" content={description} />
 	<meta slot="head" property="og:url" content={canonical} />
 	<meta slot="head" property="og:image" content={ogImage} />
-	<meta slot="head" property="og:image:width" content="1200" />
-	<meta slot="head" property="og:image:height" content="630" />
+	<meta slot="head" property="og:image:width" content={String(social.width)} />
+	<meta slot="head" property="og:image:height" content={String(social.height)} />
+	<meta slot="head" property="og:image:alt" content={social.alt} />
 	<meta slot="head" property="og:locale" content="en_US" />
 	<meta slot="head" name="twitter:card" content="summary_large_image" />
 	<meta slot="head" name="twitter:title" content={title} />

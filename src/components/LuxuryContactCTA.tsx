@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import { FORM_SUBMIT_ERROR, submitFormcarry } from "@/lib/formcarry";
 import { useParallax } from "@/hooks/useParallax";
 
 const countryCodes = [
@@ -46,20 +47,22 @@ const LuxuryContactCTA = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch("https://formcarry.com/s/1vbKuKjPCBx", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify({
-          ...formData,
-          phone: `${formData.countryCode} ${formData.phone}`,
-          formType: "luxury-contact-cta",
-        }),
+      const result = await submitFormcarry({
+        firstName: formData.firstName,
+        lastName: formData.lastName,
+        email: formData.email,
+        countryCode: formData.countryCode,
+        phone: `${formData.countryCode} ${formData.phone}`,
+        relocateIntent: formData.relocateIntent,
+        goldenVisaProgram: formData.goldenVisaProgram,
+        formType: "luxury-contact-cta",
       });
 
-      if (response.ok) {
+      if (!result.ok && result.inFlight) {
+        return;
+      }
+
+      if (result.ok) {
         toast({
           title: "Thank you for your inquiry",
           description:
@@ -80,7 +83,7 @@ const LuxuryContactCTA = () => {
     } catch (error) {
       toast({
         title: "Error",
-        description: "Something went wrong. Please try again.",
+        description: FORM_SUBMIT_ERROR,
         variant: "destructive",
       });
     } finally {

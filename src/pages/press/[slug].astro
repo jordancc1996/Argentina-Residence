@@ -1,4 +1,5 @@
 ---
+import { absoluteSocialUrl, socialPreviewFor } from '../../data/socialPreviews';
 import { getCollection, render } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import DateMeta from '../../components/DateMeta.astro';
@@ -6,6 +7,7 @@ import EditorialByline from '../../components/EditorialByline';
 import { articleAuthor } from '../../data/editorial';
 import { publishedPressReleases } from '../../data/pressReleases';
 import { reviewDateFor } from '../../data/reviews';
+import NewsletterSignup from '../../components/NewsletterSignupMdx.astro';
 
 export async function getStaticPaths() {
   const entries = await getCollection('pressReleases');
@@ -22,12 +24,10 @@ const canonical = `https://argentinaresidence.com/press/${data.slug}`;
 const title = data.seoTitle || `${data.title} | Argentina Residence`;
 const description = data.seoDescription || data.summary;
 const imageUrl = data.image ? `https://argentinaresidence.com${data.image}` : '';
-const socialPath = data.image ? data.image.replace(/\.webp$/, '-og.webp') : '';
-const ogImage = socialPath
-  ? `https://argentinaresidence.com${socialPath}`
-  : 'https://argentinaresidence.com/og-image.webp';
-const ogWidth = socialPath ? '576' : '1200';
-const ogHeight = socialPath ? '324' : '630';
+const social = socialPreviewFor(`/press/${data.slug}`);
+const ogImage = absoluteSocialUrl(social);
+const ogWidth = String(social.width);
+const ogHeight = String(social.height);
 const schema = {
   "@context": "https://schema.org",
   "@type": "NewsArticle",
@@ -44,10 +44,12 @@ const schema = {
     url: "https://argentinaresidence.com",
     logo: {
       "@type": "ImageObject",
-      url: "https://argentinaresidence.com/og-image.webp",
+      url: "https://argentinaresidence.com/argentina-residence-logo.svg",
+      width: 1156,
+      height: 60,
     },
   },
-  ...(data.image ? { image: imageUrl } : {}),
+  image: ogImage,
   url: canonical,
   mainEntityOfPage: {
     "@type": "WebPage",
@@ -69,6 +71,7 @@ const schema = {
 	<meta slot="head" property="og:image" content={ogImage} />
 	<meta slot="head" property="og:image:width" content={ogWidth} />
 	<meta slot="head" property="og:image:height" content={ogHeight} />
+	<meta slot="head" property="og:image:alt" content={social.alt} />
 	<meta slot="head" property="og:locale" content="en_US" />
 	<meta slot="head" name="twitter:card" content="summary_large_image" />
 	<meta slot="head" name="twitter:title" content={title} />
@@ -84,8 +87,8 @@ const schema = {
 				<img
 					src={data.image}
 					alt={data.imageAlt ?? ""}
-					width="576"
-					height="1024"
+					width={data.imageWidth ?? 576}
+					height={data.imageHeight ?? 1024}
 					class="mb-8 h-auto w-full max-w-[576px]"
 				/>
 			)}
@@ -95,8 +98,18 @@ const schema = {
 			)}
 			<DateMeta publishedDate={data.date} lastUpdatedDate={data.lastUpdatedDate} />
 			<EditorialByline reviewedAt={reviewDateFor(`/press/${data.slug}`)} client:load />
+			{data.slug === "argentina-citizenship-by-investment-q4-2026" && (
+				<p class="mt-6">
+					<a
+						href="/documents/argentina-citizenship-by-investment-q4-2026.pdf"
+						class="inline-flex h-9 items-center justify-center rounded-md border border-input bg-background px-3 text-sm font-medium text-foreground ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+					>
+						Download Press Release (PDF)
+					</a>
+				</p>
+			)}
 			<div class="prose prose-lg max-w-none mt-8 prose-headings:font-serif prose-headings:text-foreground prose-p:text-text-secondary prose-p:leading-relaxed prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-strong:text-foreground prose-strong:font-semibold prose-ul:text-text-secondary prose-li:text-text-secondary prose-h2:text-5xl prose-h2:mt-12 prose-h2:mb-6 prose-h3:text-4xl prose-h3:mt-8 prose-h3:mb-4">
-				<Content />
+				<Content components={{ NewsletterSignup }} />
 			</div>
 		</div>
 	</article>

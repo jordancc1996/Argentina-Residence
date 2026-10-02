@@ -81,10 +81,6 @@ const RealEstateInvestmentContent = ({ children }: { children?: ReactNode }) => 
         </div>
       </EditorialSection>
 
-      <EditorialSection centered={false}>
-        <NewsletterSignup />
-      </EditorialSection>
-      
       {/* Prime neighborhoods */}
       <EditorialSection>
         <h2 className="font-serif text-xl-editorial mb-4 tracking-wide text-center">
@@ -138,6 +134,10 @@ const RealEstateInvestmentContent = ({ children }: { children?: ReactNode }) => 
             </div>
           ))}
         </div>
+      </EditorialSection>
+
+      <EditorialSection centered={false}>
+        <NewsletterSignup className="my-0" />
       </EditorialSection>
       
       {/* Why Invest Section */}

@@ -48,6 +48,10 @@ const ProgramContent = () => {
           page.
         </p>
       </EditorialSection>
+
+      <EditorialSection centered={false} className="!pt-0">
+        <NewsletterSignup className="my-0" />
+      </EditorialSection>
       
       <EditorialSection className="bg-secondary/30">
         <div className="grid md:grid-cols-2 gap-16 text-left">
@@ -126,10 +130,6 @@ const ProgramContent = () => {
             },
           ]}
         />
-
-        <div className="mt-16">
-          <NewsletterSignup />
-        </div>
 
         <div className="mt-16">
           <PageFAQ path="/program" wrapped={false} />

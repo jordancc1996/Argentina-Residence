@@ -80,6 +80,12 @@ const pressReleases = defineCollection({
     subtitle: z.string().optional(),
     image: z.string().optional(),
     imageAlt: z.string().optional(),
+    imageWidth: z.number().int().positive().optional(),
+    imageHeight: z.number().int().positive().optional(),
+    previewImage: z.string().optional(),
+    previewImageAlt: z.string().optional(),
+    ogImageWidth: z.number().int().positive().optional(),
+    ogImageHeight: z.number().int().positive().optional(),
   }),
 });
 

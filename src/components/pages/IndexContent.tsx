@@ -3,6 +3,7 @@ import EditorialSection from "@/components/EditorialSection";
 import { Button } from "@/components/ui/button";
 import { Calendar, Clock, ArrowRight } from "lucide-react";
 import GoldenVisaUpdatesSection from "@/components/GoldenVisaUpdatesSection";
+import NewsletterSignup from "@/components/NewsletterSignup";
 import SupportingImage from "@/components/SupportingImage";
 import casaRosadaFlag from "@/assets/hero-casa-rosada-flag.webp";
 import argentinaPassport from "@/assets/argentina-passport.webp";
@@ -87,6 +88,10 @@ const IndexContent = ({ posts }: { posts: HomepagePost[] }) => {
             <a href="/resources">Resources</a>
           </Button>
         </div>
+      </EditorialSection>
+
+      <EditorialSection centered={false} className="!pt-0">
+        <NewsletterSignup className="my-0" formType="golden-visa-updates-signup" />
       </EditorialSection>
 
       <GoldenVisaUpdatesSection />

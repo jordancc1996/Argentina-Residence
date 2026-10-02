@@ -14,6 +14,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { useToast } from "@/hooks/use-toast";
+import { FORM_SUBMIT_ERROR, submitFormcarry } from "@/lib/formcarry";
 import { cn } from "@/lib/utils";
 
 const compareOptionsSchema = z.object({
@@ -75,37 +76,34 @@ const CompareOptionsModal = ({
   const onSubmit = async (data: CompareOptionsFormData) => {
     setIsSubmitting(true);
     try {
-      const response = await fetch("https://formcarry.com/s/1vbKuKjPCBx", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify({
-          first_name: data.first_name,
-          last_name: data.last_name,
-          email: data.email,
-          phone: data.phone ?? "",
-          message: data.message ?? "",
-          "form-name": "compare-options-inquiry",
-          formType: "compare-options-inquiry",
-        }),
+      const result = await submitFormcarry({
+        first_name: data.first_name,
+        last_name: data.last_name,
+        email: data.email,
+        phone: data.phone ?? "",
+        message: data.message ?? "",
+        "form-name": "compare-options-inquiry",
+        formType: "compare-options-inquiry",
       });
 
-      if (response.ok) {
+      if (result.ok) {
         reset();
         setOpen(false);
         toast({
           title: "Inquiry sent",
           description: "This office will follow up on the comparison request.",
         });
-      } else {
-        throw new Error("Submission failed");
+      } else if (!result.inFlight) {
+        toast({
+          title: "Error",
+          description: FORM_SUBMIT_ERROR,
+          variant: "destructive",
+        });
       }
     } catch {
       toast({
         title: "Error",
-        description: "Something went wrong. Please try again.",
+        description: FORM_SUBMIT_ERROR,
         variant: "destructive",
       });
     } finally {

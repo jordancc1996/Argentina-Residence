@@ -1,4 +1,5 @@
 ---
+import { absoluteSocialUrl, socialPreviewFor } from '../../data/socialPreviews';
 import { getCollection, render } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import FAQDetailContent from '../../components/FAQDetailContent';
@@ -52,7 +53,8 @@ const description =
   data.metaDescription ||
   (data.answer.substring(0, 155) + (data.answer.length > 155 ? '...' : ''));
 const canonical = `https://argentinaresidence.com/faq/${data.slug}`;
-const ogImage = 'https://argentinaresidence.com/og-image.webp';
+const social = socialPreviewFor(`/faq/${data.slug}`);
+const ogImage = absoluteSocialUrl(social);
 const visibleDefinition =
   data.slug === "what-is-argentina-golden-visa"
     ? (faq.body ?? "")
@@ -87,8 +89,9 @@ const schema = {
 	<meta slot="head" property="og:description" content={description} />
 	<meta slot="head" property="og:url" content={canonical} />
 	<meta slot="head" property="og:image" content={ogImage} />
-	<meta slot="head" property="og:image:width" content="1200" />
-	<meta slot="head" property="og:image:height" content="630" />
+	<meta slot="head" property="og:image:width" content={String(social.width)} />
+	<meta slot="head" property="og:image:height" content={String(social.height)} />
+	<meta slot="head" property="og:image:alt" content={social.alt} />
 	<meta slot="head" property="og:locale" content="en_US" />
 	<meta slot="head" name="twitter:card" content="summary_large_image" />
 	<meta slot="head" name="twitter:title" content={title} />

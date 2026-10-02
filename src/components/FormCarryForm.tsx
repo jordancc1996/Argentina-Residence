@@ -3,6 +3,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useForm } from "react-hook-form";
 import { useToast } from "@/hooks/use-toast";
+import { FORM_SUBMIT_ERROR, submitFormcarry } from "@/lib/formcarry";
 import { useState } from "react";
 
 interface FormCarryData {
@@ -28,19 +29,18 @@ const FormCarryForm = ({ formType, buttonText, title, description }: FormCarryFo
     setIsSubmitting(true);
     
     try {
-      const response = await fetch('https://formcarry.com/s/1vbKuKjPCBx', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-        },
-        body: JSON.stringify({
-          ...data,
-          formType
-        })
+      const result = await submitFormcarry({
+        name: data.name,
+        workEmail: data.workEmail,
+        countryOfResidence: data.countryOfResidence,
+        formType,
       });
 
-      if (response.ok) {
+      if (!result.ok && result.inFlight) {
+        return;
+      }
+
+      if (result.ok) {
         toast({
           title: "Success!",
           description: formType === "market-insights" 
@@ -65,7 +65,7 @@ const FormCarryForm = ({ formType, buttonText, title, description }: FormCarryFo
     } catch (error) {
       toast({
         title: "Error",
-        description: "Something went wrong. Please try again.",
+        description: FORM_SUBMIT_ERROR,
         variant: "destructive",
       });
     } finally {

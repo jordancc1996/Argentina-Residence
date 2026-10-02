@@ -1,4 +1,5 @@
 ---
+import { absoluteSocialUrl, socialPreviewFor } from '../../data/socialPreviews';
 import { getCollection } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import FAQHubContent from '../../components/FAQHubContent';
@@ -29,7 +30,8 @@ const faqs = ordered.map((entry) => ({
 const title = 'Argentina Residency FAQ | Argentina Residence';
 const description = 'Short answers on Argentina Golden Visa amounts, family, presence, documents, tax, and work rights. The pathway should not be treated as an open application program.';
 const canonical = 'https://argentinaresidence.com/faq';
-const ogImage = 'https://argentinaresidence.com/og-image.webp';
+const social = socialPreviewFor('/faq');
+const ogImage = absoluteSocialUrl(social);
 ---
 
 <Layout>
@@ -43,8 +45,9 @@ const ogImage = 'https://argentinaresidence.com/og-image.webp';
 	<meta slot="head" property="og:description" content={description} />
 	<meta slot="head" property="og:url" content={canonical} />
 	<meta slot="head" property="og:image" content={ogImage} />
-	<meta slot="head" property="og:image:width" content="1200" />
-	<meta slot="head" property="og:image:height" content="630" />
+	<meta slot="head" property="og:image:width" content={String(social.width)} />
+	<meta slot="head" property="og:image:height" content={String(social.height)} />
+	<meta slot="head" property="og:image:alt" content={social.alt} />
 	<meta slot="head" property="og:locale" content="en_US" />
 	<meta slot="head" name="twitter:card" content="summary_large_image" />
 	<meta slot="head" name="twitter:title" content={title} />
