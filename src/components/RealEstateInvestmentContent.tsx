@@ -63,7 +63,7 @@ const RealEstateInvestmentContent = ({ children }: { children?: ReactNode }) => 
         </h2>
         {children}
         <p className="text-editorial text-text-secondary mb-8 tracking-wide max-w-3xl mx-auto">
-          Owning property in Argentina does not itself grant Golden Visa eligibility. Buenos Aires property can be bought as a market decision, independent of the unpublished investment route.
+          Owning property in Argentina does not itself grant Golden Visa eligibility. Buenos Aires property can be bought as a market decision. The October 2, 2026 announcement states a Treasury contribution or a public bond, not a property purchase.
         </p>
         <div className="flex flex-col items-center gap-4">
           <CompareOptionsModal

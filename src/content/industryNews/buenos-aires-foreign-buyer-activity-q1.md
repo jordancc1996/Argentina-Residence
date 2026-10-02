@@ -3,7 +3,7 @@ id: 2
 slug: buenos-aires-foreign-buyer-activity-q1
 title: Foreign Buyer Activity in Buenos Aires Real Estate, Q1 Note
 date: "2026-03-28"
-lastUpdatedDate: "2026-08-18"
+lastUpdatedDate: "2026-10-02"
 summary: This note does not cite a Colegio de Escribanos foreign-buyer count. No Q1 percentage or buyer total is stated.
 source: Market Update
 image: /buenos-aires-foreign-buyer-activity-q1.webp
@@ -14,4 +14,4 @@ This note does not cite a Colegio de Escribanos table, a foreign-buyer percentag
 
 ## What this note does not claim
 
-It does not claim that foreign-buyer activity climbed. It does not claim that a Golden Visa program is accelerating purchases. The decrees do not identify a property purchase as a qualifying or disqualifying investment. The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted.
+It does not claim that foreign-buyer activity climbed. It does not claim that a Golden Visa program is accelerating purchases. The October 2, 2026 announcement states a Treasury contribution or a public bond, not a property purchase. Government applications are not yet confirmed as open.

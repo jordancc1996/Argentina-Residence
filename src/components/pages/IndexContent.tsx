@@ -37,7 +37,7 @@ const IndexContent = ({ posts }: { posts: HomepagePost[] }) => {
     <>
       <Hero
         title="Argentina Golden Visa Updates"
-        subtitle="Government applications for Argentina's Golden Visa are not currently open. Join the Argentina Residence waitlist for updates when a filing channel exists."
+        subtitle={programStatus.applicationStatusLabel}
         backgroundImage={casaRosadaSrc}
         imageAlt="Argentine flag at Plaza de Mayo with the Casa Rosada presidential palace"
         ctaText="Join the Waitlist"

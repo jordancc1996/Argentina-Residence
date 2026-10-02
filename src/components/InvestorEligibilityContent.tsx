@@ -113,7 +113,7 @@ const InvestorEligibilityContent = () => {
             </div>
             
             <p className="text-text-secondary mb-8 text-lg">
-              You are on the Argentina Residence waitlist. This is a private update list. It is not a government application, a filing priority, a reserved place, or a finding that you meet an investment requirement. The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted.
+              You are on the Argentina Residence waitlist. This is a private update list. It is not a government application, a filing priority, a reserved place, or a finding that you meet an investment requirement. Government applications are not yet confirmed as open.
               {" "}
               {readinessFit === "near-term conversation"
                 ? "A near-term timeline can be discussed alongside operating programs, because the pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted."
@@ -160,14 +160,14 @@ const InvestorEligibilityContent = () => {
     <>
       <Hero
         title="Argentina Golden Visa Investment Readiness"
-        subtitle="A private readiness check. It is not a government eligibility determination. The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted."
+        subtitle="A private readiness check. It is not a government eligibility determination. Government applications are not yet confirmed as open."
         backgroundImage={eligibilityBackground}
         imageAlt="Snow-capped volcano over an Andean desert landscape"
       />
       
       <EditorialSection>
         <p className="text-text-secondary mb-12 max-w-3xl mx-auto leading-relaxed">
-          The decrees do not set a confirmed minimum amount. The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted. This is an Argentina Residence readiness assessment. It is not a government eligibility determination. Published requirements are on the{" "}
+          The October 2, 2026 announcement states a $350,000 National Treasury contribution or an $800,000 public-bond subscription. Government applications are not yet confirmed as open. This is an Argentina Residence readiness assessment. It is not a government eligibility determination. Published requirements are on the{" "}
           <a href="/faq/argentina-citizenship-investment-requirements" className="text-primary hover:underline">investment requirements</a>{" "}
           page. Current status is on the{" "}
           <a href="/research/argentina-citizenship-by-investment-status" className="text-primary hover:underline">status page</a>.
@@ -283,7 +283,7 @@ const InvestorEligibilityContent = () => {
                       <RadioGroupItem value="0-6months" id="timeline-1" />
                       <div>
                         <p className="font-semibold">Within 6 months</p>
-                        <p className="text-sm text-text-secondary">You want to talk soon. The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted.</p>
+                        <p className="text-sm text-text-secondary">You want to talk soon. Government applications are not yet confirmed as open.</p>
                       </div>
                     </div>
                   </label>
@@ -351,7 +351,7 @@ const InvestorEligibilityContent = () => {
                       <RadioGroupItem value="real-estate" id="type-1" />
                       <div>
                         <p className="font-semibold">Real Estate</p>
-                        <p className="text-sm text-text-secondary">Property, discussed separately from the unpublished citizenship framework</p>
+                        <p className="text-sm text-text-secondary">Property, discussed separately from the announced Treasury and bond routes</p>
                       </div>
                     </div>
                   </label>
@@ -541,7 +541,7 @@ const InvestorEligibilityContent = () => {
               Property Market
             </h3>
             <p className="text-sm text-text-secondary">
-              Buenos Aires and other markets for foreign buyers, independent of unpublished program paths.
+              Buenos Aires and other markets for foreign buyers, independent of the announced Treasury and bond routes.
             </p>
           </a>
         </div>

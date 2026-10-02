@@ -8,7 +8,7 @@ metaDescription: "DNM has 30 business days after it receives APCI's report. That
 
 # Argentina Golden Visa Application Timeline
 
-No filing-to-decision calendar has been published. The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted.
+No filing-to-decision calendar has been published. Government applications are not yet confirmed as open.
 
 ## A 30-business-day period, not a full calendar
 

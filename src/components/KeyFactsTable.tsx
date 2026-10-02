@@ -21,16 +21,17 @@ export const programKeyFacts: KeyFact[] = [
   {
     label: "Investment amount",
     value:
-      "The decrees do not set a confirmed minimum amount or identify qualifying investment types.",
+      "The October 2, 2026 announcement states a $350,000 non-refundable National Treasury contribution or an $800,000 public-bond subscription. These announced terms are not a guarantee of approval.",
   },
   {
     label: "Qualifying assets",
     value:
-      "The decrees do not identify real estate, a business, a fund, a bond, or a Treasury payment as a qualifying or disqualifying investment.",
+      "The October 2, 2026 announcement states a Treasury contribution or a program-specific public bond. Decree 524/2025 itself does not identify real estate, a business, or a fund.",
   },
   {
     label: "Family inclusion",
-    value: "The decrees do not establish a general family-inclusion rule for investor applicants.",
+    value:
+      "The October 2, 2026 announcement states an additional $100,000 Treasury contribution for a spouse, $100,000 for a qualifying child age 18 to 25, and $25,000 for a child under 18. The 18-to-25 category has announced conditions.",
   },
   {
     label: "Processing time",
@@ -54,7 +55,7 @@ export const programKeyFacts: KeyFact[] = [
   {
     label: "Program status",
     value:
-      "DNU 366/2025 created APCI. Decree 524/2025 established a basic review procedure. Do not treat the pathway as an open application program unless the government publishes the criteria and confirms that applications are being accepted.",
+      "DNU 366/2025 created APCI. Decree 524/2025 established a basic review procedure. Government applications are not yet confirmed as open. The government expects the application process to become operational during Q4 2026. No exact filing date has been announced.",
   },
 ];
 

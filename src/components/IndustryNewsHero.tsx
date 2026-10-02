@@ -30,7 +30,7 @@ const IndustryNewsHero = () => {
           Argentina Golden Visa Industry News
         </h1>
         <p className="text-white/80 text-xl max-w-2xl mx-auto leading-relaxed">
-          Regulatory updates and market briefings on Argentina's proposed citizenship-by-investment framework.
+          Regulatory updates and market briefings on Argentina's announced citizenship-by-investment terms.
         </p>
       </motion.div>
     </section>

@@ -52,7 +52,7 @@ const NewsletterSignup = ({
     heading ??
     (compact
       ? "Get program updates"
-      : "Never miss an update. Subscribe for the latest on Argentina's proposed citizenship-by-investment framework.");
+      : "Never miss an update. Subscribe for the latest on Argentina's announced citizenship-by-investment terms.");
 
   const onSubmit = async (data: NewsletterFormData) => {
     setIsSubmitting(true);

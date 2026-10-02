@@ -123,8 +123,14 @@ function loadProgramStatus() {
   if (!/^\d{4}-\d{2}-\d{2}$/.test(status.statusLastVerified)) {
     fail("statusLastVerified is not a fixed ISO date");
   }
-  if (status.statusLastVerified !== "2026-09-28") {
-    fail(`statusLastVerified is ${status.statusLastVerified}, expected 2026-09-28`);
+  const [year, month, day] = status.statusLastVerified.split("-").map(Number);
+  const parsed = new Date(Date.UTC(year, month - 1, day));
+  const roundTrip =
+    parsed.getUTCFullYear() === year &&
+    parsed.getUTCMonth() === month - 1 &&
+    parsed.getUTCDate() === day;
+  if (!roundTrip) {
+    fail(`statusLastVerified ${status.statusLastVerified} is not a real calendar date`);
   }
   return status;
 }

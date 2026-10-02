@@ -77,6 +77,7 @@ const pressReleases = defineCollection({
     lastUpdatedDate: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).optional(),
     seoTitle: z.string().optional(),
     seoDescription: z.string().optional(),
+    subtitle: z.string().optional(),
     image: z.string().optional(),
     imageAlt: z.string().optional(),
   }),

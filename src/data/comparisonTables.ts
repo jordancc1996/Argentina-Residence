@@ -29,17 +29,17 @@ export const comparisonTables = {
     ],
     rows: buildRows({
       "Legal structure": [
-        "Naturalization for a relevant investment the Ministry of Economy defines. DNU 366/2025 created APCI. Decree 524/2025 set a basic review procedure. The decrees do not identify qualifying investment types.",
+        "Naturalization for a relevant investment the Ministry of Economy defines. DNU 366/2025 created APCI. Decree 524/2025 set a basic review procedure. The October 2, 2026 announcement states a Treasury contribution or a public-bond route.",
         "Donation to Economic Diversification Fund or approved real estate",
         "Contribution to National Transformation Fund or approved real estate project",
       ],
       "Program status": [
-        "Do not treat it as an open application program. The government has not published the criteria or confirmed that applications are being accepted.",
+        "Financial terms have been announced. Government applications are not yet confirmed as open. The government expects applications during Q4 2026.",
         "Operating since 1993 — accepting applications",
         "Operating since 2013 — accepting applications",
       ],
       "Investment floor": [
-        "The decrees do not set a confirmed minimum amount or identify qualifying investment types.",
+        "The October 2, 2026 announcement states a $350,000 National Treasury contribution or an $800,000 public-bond subscription. Government applications are not yet confirmed as open.",
         "$200,000 single applicant / $250,000 family of four (donation); $200,000 real estate",
         "$235,000 National Transformation Fund (family of up to four); approved real estate also available",
       ],
@@ -71,12 +71,12 @@ export const comparisonTables = {
     photos: [{ label: "Greece", alt: "Greek island cove and beach" }],
     rows: buildRows({
       "Legal structure": [
-        "Naturalization for a relevant investment the Ministry of Economy defines. The decrees do not identify qualifying investment types.",
+        "Naturalization for a relevant investment the Ministry of Economy defines. The October 2, 2026 announcement states a Treasury contribution or a public-bond route.",
         "Renewable 5-year residence permit via property purchase or fund/deposit/company-capital options — not citizenship",
       ],
       "Program status": ["Do not treat it as an open application program.", "Operating since 2013"],
       "Investment floor": [
-        "The decrees do not set a confirmed minimum amount or identify qualifying investment types.",
+        "The October 2, 2026 announcement states a $350,000 National Treasury contribution or an $800,000 public-bond subscription. Government applications are not yet confirmed as open.",
         "€800,000 (Attica/Thessaloniki/Mykonos/Santorini/islands over 3,100 residents); €400,000 elsewhere; €250,000 for defined exceptions (Law 5100/2024)",
       ],
       "Hold period": [
@@ -106,12 +106,12 @@ export const comparisonTables = {
     photos: [{ label: "Turkey", alt: "Istanbul, Turkey skyline" }],
     rows: buildRows({
       "Legal structure": [
-        "Naturalization for a relevant investment the Ministry of Economy defines. The decrees do not identify qualifying investment types.",
+        "Naturalization for a relevant investment the Ministry of Economy defines. The October 2, 2026 announcement states a Treasury contribution or a public-bond route.",
         "Direct citizenship via real estate purchase (or deposit, bonds, business capital, job creation)",
       ],
       "Program status": ["Do not treat it as an open application program.", "Operating — currently processing"],
       "Investment floor": [
-        "The decrees do not set a confirmed minimum amount or identify qualifying investment types.",
+        "The October 2, 2026 announcement states a $350,000 National Treasury contribution or an $800,000 public-bond subscription. Government applications are not yet confirmed as open.",
         "$400,000 real estate (since 2022 increase); other routes commonly cited around $500,000",
       ],
       "Hold period": [
@@ -150,7 +150,7 @@ export const comparisonTables = {
       {
         label: "Current availability",
         values: [
-          "Do not treat it as an open application program. The government has not published the criteria or confirmed that applications are being accepted.",
+          "Financial terms have been announced. Government applications are not yet confirmed as open. The government expects applications during Q4 2026.",
           "Operating. Investor Pass files are being processed.",
         ],
       },
@@ -164,14 +164,14 @@ export const comparisonTables = {
       {
         label: "Minimum investment",
         values: [
-          "The decrees do not set a confirmed minimum amount or identify qualifying investment types.",
+          "The October 2, 2026 announcement states a $350,000 National Treasury contribution or an $800,000 public-bond subscription. Government applications are not yet confirmed as open.",
           "Law 6984/2022 requires the investor to demonstrate the investment. It does not, in the text reviewed, set the dollar schedules previously repeated on this page. Those unsupported amounts have been removed.",
         ],
       },
       {
         label: "Investment options",
         values: [
-          "The decrees do not identify qualifying investment types.",
+          "The October 2, 2026 announcement states a Treasury contribution or a public-bond route.",
           "Commercial/industrial, stock market holdings, real estate not for personal use, or tourism.",
         ],
       },
@@ -220,7 +220,7 @@ export const comparisonTables = {
       {
         label: "Current 2026 status",
         values: [
-          "Do not treat it as an open application program. The government has not published the criteria or confirmed that applications are being accepted.",
+          "Financial terms have been announced. Government applications are not yet confirmed as open. The government expects applications during Q4 2026.",
           "Operating in 2026. Paraguay is processing Investor Pass applications. Confirm the current filing rule with Paraguayan counsel before treating any brochure as final.",
         ],
       },
@@ -231,12 +231,12 @@ export const comparisonTables = {
     photos: [{ label: "Panama", alt: "Panama City, Panama skyline" }],
     rows: buildRows({
       "Legal structure": [
-        "Naturalization for a relevant investment the Ministry of Economy defines. The decrees do not identify qualifying investment types.",
+        "Naturalization for a relevant investment the Ministry of Economy defines. The October 2, 2026 announcement states a Treasury contribution or a public-bond route.",
         "Residency-first: Friendly Nations Visa, Qualified Investor Visa, or real estate route — none produce citizenship at approval",
       ],
       "Program status": ["Do not treat it as an open application program.", "Operating"],
       "Investment floor": [
-        "The decrees do not set a confirmed minimum amount or identify qualifying investment types.",
+        "The October 2, 2026 announcement states a $350,000 National Treasury contribution or an $800,000 public-bond subscription. Government applications are not yet confirmed as open.",
         "Friendly Nations: $200,000 in real estate or a fixed-term bank deposit. Qualified Investor, Ministry of Commerce release of 21 September 2026: B/.300,000 first-sale property, B/.500,000 second-sale property, B/.500,000 fixed-term deposit at Banco Nacional de Panamá or Caja de Ahorros.",
       ],
       "Hold period": [
@@ -266,15 +266,15 @@ export const comparisonTables = {
     photos: [],
     rows: buildRows({
       "Legal structure": [
-        "Investment naturalization, distinct from temporary or permanent residence. The decrees do not identify qualifying investment types or a physical-presence rule.",
+        "Investment naturalization, distinct from temporary or permanent residence. The October 2, 2026 announcement states a Treasury contribution or a public-bond route. The decrees do not specify a physical-presence rule.",
         "Residency by investment; primary route is €500,000 to qualifying funds/venture capital funds (real estate and capital-transfer routes eliminated)",
       ],
       "Program status": [
-        "Do not treat it as an open application program. Criteria and acceptance have not been confirmed.",
+        "Financial terms have been announced. Government applications are not yet confirmed as open.",
         "Established, live program",
       ],
       "Investment floor": [
-        "The decrees do not set a confirmed minimum amount or identify qualifying investment types.",
+        "The October 2, 2026 announcement states a $350,000 National Treasury contribution or an $800,000 public-bond subscription. Government applications are not yet confirmed as open.",
         "€500,000 (fund route)",
       ],
       "Hold period": [

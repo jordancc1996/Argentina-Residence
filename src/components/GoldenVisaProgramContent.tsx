@@ -50,15 +50,19 @@ const GoldenVisaProgramContent = ({ children }: { children?: ReactNode }) => {
         </h2>
         {children}
         <p className="text-editorial text-text-secondary mb-8 tracking-wide max-w-3xl mx-auto">
-          Argentina Golden Visa 2026 is proposed, not operating. The{" "}
+          Argentina Golden Visa 2026 has announced financial terms. Government applications are not yet confirmed as open. The{" "}
           <a href="/research/argentina-citizenship-by-investment-launch-date" className="text-primary hover:underline">
             citizenship by investment launch date
           </a>{" "}
-          is not confirmed.{" "}
+          has no exact filing date. The government expects applications to become operational during Q4 2026.{" "}
           <a href="https://www.boletinoficial.gob.ar/detalleAviso/primera/329061/20250731" className="text-primary hover:underline">
             Decree 524/2025
           </a>{" "}
-          created the pathway; APCI has not published operational regulations or opened applications.
+          set the review procedure. The{" "}
+          <a href="/press/argentina-citizenship-by-investment-q4-2026" className="text-primary hover:underline">
+            October 2, 2026 announcement
+          </a>{" "}
+          later stated a $350,000 Treasury contribution or an $800,000 public-bond route. "Golden Visa" is used here as a search term for that citizenship-by-investment pathway.
         </p>
         <div className="flex flex-col items-center gap-4">
           <CompareOptionsModal
@@ -96,7 +100,7 @@ const GoldenVisaProgramContent = ({ children }: { children?: ReactNode }) => {
               <a href="/faq/argentina-citizenship-investment-application-timeline" className="text-primary hover:underline">
                 processing time
               </a>{" "}
-              is not a filing-to-citizenship calendar. Decree 524/2025 gives DNM 30 business days to decide after DNM receives APCI's report. That period is not 30 days from the application, and it is not a total or guaranteed processing time. APCI's assessment and interagency review occur before this period. The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted.
+              is not a filing-to-citizenship calendar. Decree 524/2025 gives DNM 30 business days to decide after DNM receives APCI's report. That period is not 30 days from the application, and it is not a total or guaranteed processing time. APCI's assessment and interagency review occur before this period. Government applications are not yet confirmed as open.
             </p>
           </div>
           
@@ -106,7 +110,7 @@ const GoldenVisaProgramContent = ({ children }: { children?: ReactNode }) => {
             </div>
             <h3 className="font-serif text-lg mb-3">Legal Framework</h3>
             <p className="text-text-secondary text-sm">
-              Decree 524/2025 created a framework. Operational rules are unpublished, and the pathway should not be treated as an open application program.
+              Decree 524/2025 created a framework. The October 2, 2026 announcement stated the financial routes. Government applications are not yet confirmed as open.
             </p>
           </div>
           
@@ -140,29 +144,33 @@ const GoldenVisaProgramContent = ({ children }: { children?: ReactNode }) => {
         <div className="text-left">
           <div className="max-w-2xl">
             <h2 className="font-serif text-xl-editorial mb-6 tracking-wide">
-              Reported Figures, Not Enacted Amounts
+              Announced Financial Terms
             </h2>
             <p className="text-body text-text-secondary mb-6 tracking-wide">
-              Reported figures are not an enacted schedule. See the{" "}
+              Decree 524/2025 does not set a dollar amount. The{" "}
+              <a href="/press/argentina-citizenship-by-investment-q4-2026" className="text-primary hover:underline">
+                October 2, 2026 announcement
+              </a>{" "}
+              later stated a $350,000 non-refundable National Treasury contribution or an $800,000 public-bond subscription. Those announced terms are not a guarantee of approval. Government applications are not yet confirmed as open. See the{" "}
               <a href="/faq/argentina-citizenship-investment-requirements" className="text-primary hover:underline">
-                anticipated investment requirements
+                investment requirements
               </a>
-              . Decree 524/2025 does not set a dollar amount. The decrees do not set a confirmed minimum amount or identify qualifying investment types. The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted.
+              .
             </p>
             
             <div className="space-y-4 mb-8">
               <div className="flex items-start gap-3 p-4 bg-secondary/30 rounded-lg">
                 <CheckCircle className="h-5 w-5 text-gold flex-shrink-0 mt-0.5" />
                 <div>
-                  <p className="font-semibold text-text-primary">No confirmed minimum</p>
-                  <p className="text-sm text-text-secondary">The decrees do not set a confirmed minimum amount.</p>
+                  <p className="font-semibold text-text-primary">$350,000 Treasury contribution</p>
+                  <p className="text-sm text-text-secondary">Announced non-refundable contribution to the National Treasury for a principal applicant. Not a guarantee of approval.</p>
                 </div>
               </div>
               <div className="flex items-start gap-3 p-4 bg-secondary/30 rounded-lg">
                 <CheckCircle className="h-5 w-5 text-gold flex-shrink-0 mt-0.5" />
                 <div>
-                  <p className="font-semibold text-text-primary">No identified investment types</p>
-                  <p className="text-sm text-text-secondary">The decrees do not identify a Treasury payment, a bond, real estate, a business, or a fund as qualifying or disqualifying.</p>
+                  <p className="font-semibold text-text-primary">$800,000 public-bond route</p>
+                  <p className="text-sm text-text-secondary">Announced subscription to a public bond created for the program. Not a guarantee of approval.</p>
                 </div>
               </div>
             </div>
@@ -175,7 +183,7 @@ const GoldenVisaProgramContent = ({ children }: { children?: ReactNode }) => {
         <ScrollytellingSteps
           eyebrow="Program Timeline"
           heading="Argentina Residence Waitlist Open"
-          intro="The pathway should not be treated as an open application program. The Argentina Residence waitlist is this firm's list for updates. It is not a government application, a government priority list, or a reserved filing place. Launch timing is not confirmed."
+          intro="Government applications are not yet confirmed as open. The Argentina Residence waitlist is this firm's list for updates. It is not a government application, a government priority list, or a reserved filing place. The government expects applications to become operational during Q4 2026. No exact filing date has been announced."
           steps={[
             {
               label: "Now",
@@ -185,9 +193,9 @@ const GoldenVisaProgramContent = ({ children }: { children?: ReactNode }) => {
             },
             {
               label: "Next",
-              title: "Rules Still Unpublished",
+              title: "Expected Q4 2026 Window",
               description:
-                "Operational regulations are not published. The anticipated launch date is not confirmed. See the launch-date page for timing.",
+                "The government expects applications to become operational during Q4 2026. That is not a guaranteed opening date, and no exact filing date has been announced.",
             },
             {
               label: "Later",

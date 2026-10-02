@@ -52,9 +52,9 @@ const ProgramContent = () => {
       <EditorialSection className="bg-secondary/30">
         <div className="grid md:grid-cols-2 gap-16 text-left">
           <div>
-            <h2 className="font-serif text-xl-editorial mb-6 tracking-wide">Investment Amount Not Enacted</h2>
+            <h2 className="font-serif text-xl-editorial mb-6 tracking-wide">Announced Financial Terms</h2>
             <p className="text-body text-text-secondary mb-6 tracking-wide">
-              Decree 524/2025 does not set a dollar amount. It assigns a relevant investment to the Ministry of Economy. The decrees do not set a confirmed minimum amount or identify qualifying investment types. The decrees do not identify real estate, a business, or a fund as a qualifying or disqualifying investment. The pathway should not be treated as an open application program.
+              Decree 524/2025 does not set a dollar amount. It assigns a relevant investment to the Ministry of Economy. The October 2, 2026 announcement states a $350,000 non-refundable National Treasury contribution or an $800,000 subscription to a public bond created for the program. Those announced terms are not a guarantee of approval. Government applications are not yet confirmed as open. The government expects the application process to become operational during Q4 2026. No exact filing date has been announced. The <a href="/press/argentina-citizenship-by-investment-q4-2026" className="text-primary hover:underline">October 2 announcement</a> is the first-party summary.
             </p>
             <p className="text-body text-text-secondary tracking-wide mb-4">
               This page does not state 5,000 as an application cap. Gazette publication of a resolution cancelling a consultancy tender was not located. The decrees do not specify a biometrics rule for investor applicants.
@@ -73,7 +73,7 @@ const ProgramContent = () => {
           <div>
             <h2 className="font-serif text-xl-editorial mb-6 tracking-wide">What the decrees do not establish</h2>
             <p className="text-body text-text-secondary mb-6 tracking-wide">
-              The investment-naturalization provision is distinct from temporary or permanent residence. The decrees do not establish a general family-inclusion rule or specify a physical-presence, biometrics, or application-document checklist for investor applicants.
+              The investment-naturalization provision is distinct from temporary or permanent residence. The decrees do not specify a physical-presence, biometrics, or application-document checklist for investor applicants. The October 2, 2026 announcement states additional Treasury contributions of $100,000 for a spouse, $100,000 for a qualifying child age 18 to 25, and $25,000 for a child under 18. The 18-to-25 category has announced conditions. Those amounts are not automatic eligibility.
             </p>
             <ul className="text-body text-text-secondary space-y-4 tracking-wide mb-4">
               <li>• A pending inquiry is not <a href="/faq/argentina-residency-work-rights" className="text-primary hover:underline">work authorization</a></li>
@@ -81,7 +81,7 @@ const ProgramContent = () => {
               <li>• Tax residence depends on the statutory tests. See <a href="/faq/argentina-residency-tax-implications" className="text-primary hover:underline">tax implications</a></li>
               <li>• The decrees do not set a two-year path to permanent residence for investor applicants</li>
               <li>• <a href="/faq/argentina-visa-free-travel" className="text-primary hover:underline">Passport access</a> is not a benefit of residence or of an uncompleted application</li>
-              <li>• <a href="/faq/argentina-citizenship-investment-family" className="text-primary hover:underline">Family inclusion</a> is not a general rule in the decrees</li>
+              <li>• <a href="/faq/argentina-citizenship-investment-family" className="text-primary hover:underline">Family contribution amounts</a> were announced on October 2, 2026. They are not automatic eligibility</li>
             </ul>
           </div>
         </div>
@@ -104,7 +104,7 @@ const ProgramContent = () => {
               label: "Step 2",
               title: "Compare Anticipated Paths",
               description:
-                "The decrees do not set a confirmed minimum amount or identify qualifying investment types.",
+                "The October 2, 2026 announcement states a $350,000 National Treasury contribution or an $800,000 public-bond route. These announced terms are not a guarantee of approval.",
             },
             {
               label: "Step 3",
@@ -116,7 +116,7 @@ const ProgramContent = () => {
               label: "Step 4",
               title: "No Government Filing Today",
               description:
-                "The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted. A dossier cannot be filed as a Golden Visa application while that remains the case. See the status page.",
+                "Government applications are not yet confirmed as open. A dossier cannot be filed as a Golden Visa application while that remains the case. See the status page.",
             },
             {
               label: "Step 5",

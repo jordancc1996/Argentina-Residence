@@ -60,7 +60,7 @@ const MarketInsightsContent = () => {
               </a>
             </h3>
             <p className="text-body text-text-secondary tracking-wide">
-              How foreign buyers approach Argentine property, kept separate from the unpublished investment framework.
+              How foreign buyers approach Argentine property, kept separate from the announced Treasury and bond routes.
             </p>
           </div>
         </div>

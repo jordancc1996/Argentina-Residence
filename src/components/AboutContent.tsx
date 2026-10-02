@@ -17,7 +17,7 @@ const AboutContent = () => {
                 About Argentina Residence
               </h1>
               <p className="text-editorial text-text-secondary tracking-wide">
-                About Argentina Residence advises on Argentine residency by investment. The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted.
+                About Argentina Residence advises on Argentine residency by investment. Government applications are not yet confirmed as open.
               </p>
             </div>
             <SupportingImage

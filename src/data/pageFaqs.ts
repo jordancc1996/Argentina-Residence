@@ -13,7 +13,7 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "Which is better for investors, Argentina citizenship or Paraguay residency?",
       answer:
-        "Neither option is universally better. Paraguay Residency by Investment can be filed now for permanent residence. Argentina Citizenship by Investment is intended as a citizenship pathway, but The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted. The better fit depends on whether the investor needs residence that is available today or wants to wait for Argentina's proposed citizenship route.",
+        "Neither option is universally better. Paraguay Residency by Investment can be filed now for permanent residence. Argentina Citizenship by Investment is an announced citizenship pathway, but government applications are not yet confirmed as open. The better fit depends on whether the investor needs residence that is available today or wants to wait for Argentina's filing window.",
     },
     {
       question: "How much does Paraguay residency by investment cost?",
@@ -28,7 +28,7 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "Can I apply for Argentina citizenship by investment while Paraguay is open?",
       answer:
-        "The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted. Operational due diligence protocols and a filing portal have not been published. Completing a Paraguay Investor Pass file does not create an Argentine citizenship file.",
+        "Government applications are not yet confirmed as open. Operational due diligence protocols and a filing portal have not been published. Completing a Paraguay Investor Pass file does not create an Argentine citizenship file.",
     },
     {
       question: "Can family members be included on a Paraguay Investor Pass application?",
@@ -41,7 +41,7 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "Does Panama investment residency grant citizenship at approval?",
       answer:
-        "No. Panama Friendly Nations Visa and Qualified Investor Visa files, if granted, produce residence, not Panamanian nationality. Naturalization is described as a later process after years of permanent residence. Argentina's unpublished route is described as nationality through a qualifying investment, . The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted.",
+        "No. Panama Friendly Nations Visa and Qualified Investor Visa files, if granted, produce residence, not Panamanian nationality. Naturalization is described as a later process after years of permanent residence. Argentina's October 2, 2026 announcement states a Treasury contribution or a public-bond route. Government applications are not yet confirmed as open.",
     },
     {
       question: "What is the difference between Panama Friendly Nations Visa and Qualified Investor Visa?",
@@ -56,12 +56,12 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "Does a USD 200,000 Panama property purchase qualify for Argentina citizenship by investment?",
       answer:
-        "No. A Panama Friendly Nations property or deposit is not an Argentine qualifying investment. The decrees do not set a confirmed minimum amount or identify qualifying investment types. See [investment requirements](/faq/argentina-citizenship-investment-requirements).",
+        "No. A Panama Friendly Nations property or deposit is not an Argentine qualifying investment. The October 2, 2026 announcement states a $350,000 National Treasury contribution or an $800,000 public-bond subscription. Government applications are not yet confirmed as open. See [investment requirements](/faq/argentina-citizenship-investment-requirements).",
     },
     {
       question: "Does the September 2026 Panama rule set a future real-estate increase, or an Argentina launch date?",
       answer:
-        "No. The Ministry of Commerce release of 21 September 2026 does not describe a future increase on 15 October 2026. It distinguishes B/.300,000 for new first-sale property from B/.500,000 for second-sale property, and B/.500,000 for a fixed-term deposit at Banco Nacional de Panamá or Caja de Ahorros. That release is not an Argentine launch date. The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted.",
+        "No. The Ministry of Commerce release of 21 September 2026 does not describe a future increase on 15 October 2026. It distinguishes B/.300,000 for new first-sale property from B/.500,000 for second-sale property, and B/.500,000 for a fixed-term deposit at Banco Nacional de Panamá or Caja de Ahorros. That release is not an Argentine launch date. Government applications are not yet confirmed as open.",
     },
   ],
 
@@ -74,17 +74,17 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "Is Greek real estate an anticipated Argentina citizenship by investment path?",
       answer:
-        "No. Buying Greek property for a Hellenic residence permit is a different transaction. The decrees do not set a confirmed minimum amount or identify qualifying investment types. See [investment requirements](/faq/argentina-citizenship-investment-requirements).",
+        "No. Buying Greek property for a Hellenic residence permit is a different transaction. The October 2, 2026 announcement states a $350,000 National Treasury contribution or an $800,000 public-bond subscription. Government applications are not yet confirmed as open. See [investment requirements](/faq/argentina-citizenship-investment-requirements).",
     },
     {
       question: "Can I apply for Argentina citizenship by investment instead of a Greece Golden Visa in 2026?",
       answer:
-        "Greece's Golden Visa is an operating residence program. The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted. Operational protocols remain unpublished. This is not a choice between two open nationality windows.",
+        "Greece's Golden Visa is an operating residence program. Argentina has announced financial terms, and government applications are not yet confirmed as open. This is not a choice between two open nationality windows.",
     },
     {
       question: "Do Greece Golden Visa location tiers apply to Argentina?",
       answer:
-        "No. Greece uses location-tiered property thresholds, including higher bands in Attica, Thessaloniki, Mykonos, Santorini, and certain islands. Those euro purchase prices are Greek real-estate rules. They are not an Argentine investment rule. The decrees do not identify qualifying investment types.",
+        "No. Greece uses location-tiered property thresholds, including higher bands in Attica, Thessaloniki, Mykonos, Santorini, and certain islands. Those euro purchase prices are Greek real-estate rules. They are not an Argentine investment rule. The October 2, 2026 announcement states a Treasury contribution or a public-bond route.",
     },
     {
       question: "Does a Greece Golden Visa Schengen card equal an Argentine passport?",
@@ -102,12 +102,12 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "Is Turkish property an anticipated Argentina citizenship by investment path?",
       answer:
-        "No. A Turkish title at USD 400,000 is not an Argentine qualifying investment. The decrees do not set a confirmed minimum amount or identify qualifying investment types. See [investment requirements](/faq/argentina-citizenship-investment-requirements).",
+        "No. A Turkish title at USD 400,000 is not an Argentine qualifying investment. The October 2, 2026 announcement states a $350,000 National Treasury contribution or an $800,000 public-bond subscription. Government applications are not yet confirmed as open. See [investment requirements](/faq/argentina-citizenship-investment-requirements).",
     },
     {
       question: "Can I file Turkey citizenship by investment now if Argentina is not open?",
       answer:
-        "Turkey is processing files. The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted. A finished Turkish file does not create an Argentine file. A Turkish property price is not an Argentine investment rule.",
+        "Turkey is processing files. Government applications are not yet confirmed as open. A finished Turkish file does not create an Argentine file. A Turkish property price is not an Argentine investment rule.",
     },
     {
       question: "Does Turkey citizenship by investment require living in Turkey?",
@@ -125,7 +125,7 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "Are Dominica and Grenada citizenship by investment programs currently open?",
       answer:
-        "Yes. Dominica and Grenada run operating citizenship-by-investment units that currently process files. The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted. This page is not a choice between two open Argentine and Caribbean filing windows.",
+        "Yes. Dominica and Grenada run operating citizenship-by-investment units that currently process files. Government applications are not yet confirmed as open. This page is not a choice between two open Argentine and Caribbean filing windows.",
     },
     {
       question: "Do Caribbean CBI programs require living in Dominica or Grenada?",
@@ -135,12 +135,12 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "Is a Caribbean donation the Argentine investment?",
       answer:
-        "No. Caribbean files are a government-fund contribution or an approved real-estate project holding. The decrees do not set a confirmed minimum amount or identify qualifying investment types. See [investment requirements](/faq/argentina-citizenship-investment-requirements).",
+        "No. Caribbean files are a government-fund contribution or an approved real-estate project holding. The October 2, 2026 announcement states a $350,000 National Treasury contribution or an $800,000 public-bond subscription. Government applications are not yet confirmed as open. See [investment requirements](/faq/argentina-citizenship-investment-requirements).",
     },
     {
       question: "Can I apply for Argentina CBI if I already hold Caribbean citizenship?",
       answer:
-        "The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted. Holding a Dominica or Grenada passport does not open an APCI filing channel. Completing a Caribbean CBI file does not create an Argentine file.",
+        "Government applications are not yet confirmed as open. Holding a Dominica or Grenada passport does not open an APCI filing channel. Completing a Caribbean CBI file does not create an Argentine file.",
     },
   ],
 
@@ -158,7 +158,7 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "Is there a published net-worth multiple for Argentina citizenship by investment?",
       answer:
-        "No. Net worth requirements have not been published as a separate numeric floor. The decrees do not set a confirmed minimum amount. They do not state a net-worth multiple.",
+        "No. Net worth requirements have not been published as a separate numeric floor. The October 2, 2026 announcement states a $350,000 National Treasury contribution or an $800,000 public-bond subscription. They do not state a net-worth multiple.",
     },
     {
       question: "What is source of funds in the Argentina citizenship by investment due diligence process?",
@@ -181,7 +181,7 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "Do company sale proceeds become an Argentine citizenship filing by themselves?",
       answer:
-        "No. Parking closing cash is not a citizenship file. The decrees do not set a confirmed minimum amount or identify qualifying investment types. See [investment requirements](/faq/argentina-citizenship-investment-requirements).",
+        "No. Parking closing cash is not a citizenship file. The October 2, 2026 announcement states a $350,000 National Treasury contribution or an $800,000 public-bond subscription. Government applications are not yet confirmed as open. See [investment requirements](/faq/argentina-citizenship-investment-requirements).",
     },
     {
       question: "Do earn-outs or buyer stock count as the Argentine investment?",
@@ -209,7 +209,7 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "Can I apply for Argentina citizenship by investment while waiting for a US green card?",
       answer:
-        "The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted. An Argentine investment file cannot be lodged with APCI while due diligence protocols remain unpublished, regardless of a pending US immigrant visa.",
+        "Government applications are not yet confirmed as open. An Argentine investment file cannot be lodged with APCI while that remains the case, regardless of a pending US immigrant visa.",
     },
     {
       question: "Does this page apply to US citizens who are not in a green card backlog?",
@@ -237,7 +237,7 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "Does Decree 524/2025 set the Argentina Golden Visa investment amount?",
       answer:
-        "No. The decrees do not set a confirmed minimum amount or identify qualifying investment types. They do not establish that real estate, a business, or a fund qualifies or disqualifies. See [investment requirements](/faq/argentina-citizenship-investment-requirements).",
+        "No. The October 2, 2026 announcement states a $350,000 National Treasury contribution or an $800,000 public-bond subscription. Government applications are not yet confirmed as open. They do not establish that real estate, a business, or a fund qualifies or disqualifies. See [investment requirements](/faq/argentina-citizenship-investment-requirements).",
     },
     {
       question: "Does buying Buenos Aires real estate qualify for the Argentina Golden Visa?",
@@ -252,7 +252,7 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "Does joining the Argentina Residence waitlist file an APCI application?",
       answer:
-        "No. The Argentina Residence waitlist is this firm's list for updates. It is not an Argentine government application, a government priority list, or a reserved filing place. The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted.",
+        "No. The Argentina Residence waitlist is this firm's list for updates. It is not an Argentine government application, a government priority list, or a reserved filing place. Government applications are not yet confirmed as open.",
     },
   ],
 
@@ -265,7 +265,7 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "Can I buy Argentine property now if the Golden Visa is not open?",
       answer:
-        "Property purchases are a separate market decision from the unpublished citizenship program. This page does not treat a closing as an APCI application. Confirm title, tax, and foreign-buyer rules with qualified counsel in Argentina.",
+        "Property purchases are a separate market decision from the announced Treasury contribution and public-bond routes. This page does not treat a closing as an APCI application. Confirm title, tax, and foreign-buyer rules with qualified counsel in Argentina.",
     },
   ],
 
@@ -273,12 +273,12 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "When is the Argentina citizenship by investment launch date?",
       answer:
-        "No launch date is confirmed on this page. Two federal appellate decisions in June 2026, including the National Electoral Chamber decision in Yang, Liping, questioned or invalidated aspects of DNU 366/2025 in individual naturalization cases. Neither concerned a CBI applicant. The decisions create uncertainty about the DNU provisions on which the investment pathway depends. The available rulings do not establish the final, nationwide effect of the decisions. This page does not state that a Supreme Court appeal is pending. DNU 366/2025 created APCI. Decree 524/2025 subsequently established a basic review procedure involving APCI. It did not create APCI.",
+        "No exact filing date is confirmed on this page. The government expects applications during Q4 2026. Government applications are not yet confirmed as open. Two federal appellate decisions in June 2026, including the National Electoral Chamber decision in Yang, Liping, questioned or invalidated aspects of DNU 366/2025 in individual naturalization cases. Neither concerned a CBI applicant. The decisions create uncertainty about the DNU provisions on which the investment pathway depends. The available rulings do not establish the final, nationwide effect of the decisions. This page does not state that a Supreme Court appeal is pending. DNU 366/2025 created APCI. Decree 524/2025 subsequently established a basic review procedure involving APCI. It did not create APCI.",
     },
     {
       question: "Did the cancelled tender set a due-diligence deadline?",
       answer:
-        "This page does not treat a tender cancellation as an established fact. Gazette publication of Resolution 522/2026 was not located. A due-diligence deadline is not stated here. The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted.",
+        "This page does not treat a tender cancellation as an established fact. Gazette publication of Resolution 522/2026 was not located. A due-diligence deadline is not stated here. Government applications are not yet confirmed as open.",
     },
   ],
 
@@ -286,7 +286,7 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "Is Argentina citizenship by investment open for American investors?",
       answer:
-        "The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted. This page is not a live filing checklist.",
+        "Government applications are not yet confirmed as open. This page is not a live filing checklist.",
     },
     {
       question: "Does Argentina citizenship by investment require Americans to live in Argentina full-time?",
@@ -306,7 +306,7 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "Would Argentine nationality be Mercosur nationality for Americans?",
       answer:
-        "If citizenship were later granted under the decrees, the result would be Argentine nationality. Mercosur effects, if any, would follow that nationality. The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted.",
+        "If citizenship were later granted under the decrees, the result would be Argentine nationality. Mercosur effects, if any, would follow that nationality. Government applications are not yet confirmed as open.",
     },
   ],
 
@@ -327,12 +327,12 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "Is the Argentina Golden Visa a substitute for the cost of living in the United States?",
       answer:
-        "The US lifestyle figures on this page are not APCI filing fees. The unpublished Golden Visa is a planning option, not a live application. It is not a cost-of-living calculator and not a promise that Argentine residency will replicate a US standard of living at a fixed price.",
+        "The US lifestyle figures on this page are not APCI filing fees. The announced Golden Visa terms are a planning reference, not a live application. It is not a cost-of-living calculator and not a promise that Argentine residency will replicate a US standard of living at a fixed price.",
     },
     {
       question: "Are the lifestyle cost figures on this page official Argentine program fees?",
       answer:
-        "No. Lifestyle and US-cost illustrations on this page are not APCI filing fees. The decrees do not set a confirmed minimum amount or identify qualifying investment types.",
+        "No. Lifestyle and US-cost illustrations on this page are not APCI filing fees. The October 2, 2026 announcement states a $350,000 National Treasury contribution or an $800,000 public-bond subscription. Government applications are not yet confirmed as open.",
     },
   ],
 
@@ -376,7 +376,7 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "Can I apply for Argentina instead of Portugal Golden Visa in 2026?",
       answer:
-        "Portugal's program is established and live. The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted. Choosing Argentina on this comparison is a planning decision, not a current filing option.",
+        "Portugal's program is established and live. Government applications are not yet confirmed as open. Choosing Argentina on this comparison is a planning decision, not a current filing option.",
     },
   ],
 
@@ -384,12 +384,12 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "Does Decree 524/2025 mean I can apply for Argentina citizenship by investment?",
       answer:
-        "Decree 524/2025 established a basic review procedure involving APCI. DNU 366/2025 created APCI. The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted. A decree is not a filing portal.",
+        "Decree 524/2025 established a basic review procedure involving APCI. DNU 366/2025 created APCI. Government applications are not yet confirmed as open. A decree is not a filing portal.",
     },
     {
       question: "Did Decree 524/2025 set a confirmed investment amount?",
       answer:
-        "No. The decrees do not set a confirmed minimum amount. Do not treat this news item as a confirmed fee schedule. See [investment requirements](/faq/argentina-citizenship-investment-requirements).",
+        "No. The October 2, 2026 announcement states a $350,000 National Treasury contribution or an $800,000 public-bond subscription. Do not treat this news item as a confirmed fee schedule. See [investment requirements](/faq/argentina-citizenship-investment-requirements).",
     },
   ],
 
@@ -415,12 +415,12 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "Are Argentina citizenship-by-investment applications open?",
       answer:
-        "The decrees do not set a confirmed minimum amount or identify qualifying investment types. The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted.",
+        "The October 2, 2026 announcement states a $350,000 National Treasury contribution or an $800,000 public-bond subscription. Government applications are not yet confirmed as open.",
     },
     {
       question: "Does Decree 524/2025 set an investment amount?",
       answer:
-        "No. The decrees do not set a confirmed minimum amount or identify qualifying investment types. See [investment requirements](/faq/argentina-citizenship-investment-requirements).",
+        "No. The October 2, 2026 announcement states a $350,000 National Treasury contribution or an $800,000 public-bond subscription. Government applications are not yet confirmed as open. See [investment requirements](/faq/argentina-citizenship-investment-requirements).",
     },
     {
       question: "Does visa-free travel come with Argentine residency today?",
@@ -451,7 +451,7 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "Can I apply for residency because market reforms look favorable?",
       answer:
-        "No. Economic reforms do not open an APCI filing channel. The pathway should not be treated as an open application program unless the government publishes the applicable criteria and confirms that applications are being accepted.",
+        "No. Economic reforms do not open an APCI filing channel. Government applications are not yet confirmed as open.",
     },
   ],
 

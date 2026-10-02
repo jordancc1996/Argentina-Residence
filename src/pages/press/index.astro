@@ -11,6 +11,8 @@ const releases = publishedPressReleases(entries).map((entry) => ({
   date: entry.data.date,
   lastUpdatedDate: entry.data.lastUpdatedDate,
   summary: entry.data.summary,
+  image: entry.data.image,
+  imageAlt: entry.data.imageAlt,
 }));
 
 const title = 'Press Room | Argentina Residence';
@@ -75,6 +77,18 @@ const schema = {
 				<div class="border-t border-border">
 					{releases.map((release) => (
 						<article class="border-b border-border py-8">
+							{release.image && (
+								<a href={`/press/${release.slug}`} class="mb-6 block overflow-hidden">
+									<img
+										src={release.image}
+										alt={release.imageAlt ?? ""}
+										width="576"
+										height="324"
+										class="aspect-[16/9] w-full object-cover"
+										style="object-position: center 55%;"
+									/>
+								</a>
+							)}
 							<h2 class="font-serif text-2xl mb-3">
 								<a href={`/press/${release.slug}`} class="text-foreground hover:text-primary transition-colors duration-150 ease-out">
 									{release.title}
