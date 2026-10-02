@@ -466,7 +466,7 @@ for (const pathname of samples) {
 }
 
 const home = byPath.get("/");
-if (home?.title !== "Argentina Golden Visa | Join the Waitlist | Argentina Residence") {
+if (home?.title !== "Argentina Citizenship by Investment | Join the Waitlist | Argentina Residence") {
   fail(`homepage title is "${home?.title}"`);
 }
 
