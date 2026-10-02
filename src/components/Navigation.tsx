@@ -16,6 +16,7 @@ const navLinks = [
   { path: "/guides/argentina-real-estate-investment", label: "Real Estate" },
   { path: "/research", label: "Research and Intelligence" },
   { path: "/industry-news", label: "Industry News" },
+  { path: "/press", label: "Press Room" },
   { path: "/contact", label: "Contact Us" },
 ];
 
@@ -42,9 +43,7 @@ const Navigation = ({
   const [isScrolled, setIsScrolled] = useState(false);
   const [guidesExpanded, setGuidesExpanded] = useState(false);
 
-  const isPressSection = currentPath === PRESS_HREF || currentPath.startsWith(`${PRESS_HREF}/`);
-  const isGuidesSectionActive =
-    guides.some((guide) => pathMatches(currentPath, guide.href)) || isPressSection;
+  const isGuidesSectionActive = guides.some((guide) => pathMatches(currentPath, guide.href));
 
   useEffect(() => {
     const onScroll = () => setIsScrolled(window.scrollY > 100);
@@ -151,17 +150,6 @@ const Navigation = ({
                               style={guideLinkStyle(GUIDES_HUB_HREF)}
                             >
                             Argentina residency resources
-                          </a>
-                        </NavigationMenuLink>
-                      </li>
-                      <li>
-                        <NavigationMenuLink asChild>
-                          <a
-                            href={PRESS_HREF}
-                            className="block px-6 transition-opacity duration-[250ms] ease-in-out hover:opacity-70"
-                            style={guideLinkStyle(PRESS_HREF)}
-                          >
-                            Press Room
                           </a>
                         </NavigationMenuLink>
                       </li>
@@ -293,7 +281,9 @@ const Navigation = ({
         <nav className="flex-1 flex flex-col px-8 pt-10">
           <ul className="list-none p-0 m-0 flex flex-col">
             {navLinks.map((item) => {
-              const isActive = currentPath === item.path;
+              const isActive = item.path === PRESS_HREF
+                ? currentPath === PRESS_HREF || currentPath.startsWith(`${PRESS_HREF}/`)
+                : currentPath === item.path;
               return (
                 <li key={item.path} className="py-1">
                   <a
@@ -380,16 +370,6 @@ const Navigation = ({
                             style={guideLinkStyle(GUIDES_HUB_HREF)}
                           >
                             Argentina residency resources
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href={PRESS_HREF}
-                            onClick={() => setIsOpen(false)}
-                            className="block pl-4 transition-opacity duration-[250ms] ease-in-out hover:opacity-70"
-                            style={guideLinkStyle(PRESS_HREF)}
-                          >
-                            Press Room
                           </a>
                         </li>
                       </ul>
