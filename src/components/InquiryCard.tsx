@@ -7,6 +7,14 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
 import { FORM_SUBMIT_ERROR, submitFormcarry } from "@/lib/formcarry";
+import {
+  ConsentCheckbox,
+  PRIVACY_CONSENT_ERROR,
+  PrivacyConsentLabel,
+  ProfessionalConsentLabel,
+  ThirdPersonNote,
+  consentPayload,
+} from "@/components/FormConsent";
 import { cn } from "@/lib/utils";
 
 export type InquiryCardVariant = "default" | "counsel";
@@ -19,6 +27,10 @@ const inquirySchema = z.object({
     .min(1, "Email is required")
     .email("Invalid email address"),
   us_immigration_status: z.string().min(1, "Current US immigration status is required"),
+  privacyConsent: z.boolean().refine((value) => value === true, {
+    message: PRIVACY_CONSENT_ERROR,
+  }),
+  professionalIntroductionConsent: z.boolean().optional(),
 });
 
 type InquiryFormData = z.infer<typeof inquirySchema>;
@@ -52,10 +64,12 @@ const InquiryCard = ({
   const {
     register,
     handleSubmit,
+    setFocus,
     formState: { errors },
     reset,
   } = useForm<InquiryFormData>({
     resolver: zodResolver(inquirySchema),
+    defaultValues: { privacyConsent: false, professionalIntroductionConsent: false },
   });
 
   const onSubmit = async (data: InquiryFormData) => {
@@ -68,6 +82,7 @@ const InquiryCard = ({
         us_immigration_status: data.us_immigration_status,
         "form-name": "inline-inquiry-us-immigration",
         formType: "inline-inquiry-us-immigration",
+        ...consentPayload(data.privacyConsent, data.professionalIntroductionConsent),
       });
 
       if (result.ok) {
@@ -124,7 +139,13 @@ const InquiryCard = ({
           Thank you. We have your details and will be in touch shortly.
         </div>
       ) : (
-        <form onSubmit={handleSubmit(onSubmit)} className="space-y-4" noValidate>
+        <form
+          onSubmit={handleSubmit(onSubmit, (formErrors) => {
+            if (formErrors.privacyConsent) setFocus("privacyConsent");
+          })}
+          className="space-y-4"
+          noValidate
+        >
           <input type="hidden" name="form-name" value="inline-inquiry-us-immigration" />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
@@ -212,12 +233,22 @@ const InquiryCard = ({
               )}
             </div>
           </div>
+          <ConsentCheckbox
+            id={`${fieldId}-privacy`}
+            label={<PrivacyConsentLabel compact />}
+            requiredConsent
+            error={errors.privacyConsent?.message}
+            {...register("privacyConsent")}
+          />
+          <ConsentCheckbox
+            id={`${fieldId}-professional`}
+            label={<ProfessionalConsentLabel />}
+            {...register("professionalIntroductionConsent")}
+          />
+          <ThirdPersonNote />
           <Button type="submit" size="lg" className="w-full mt-2" disabled={isSubmitting}>
             {isSubmitting ? "Submitting..." : ctaLabel}
           </Button>
-          <div className="text-xs text-text-secondary tracking-wide leading-relaxed">
-            We respect your privacy. Your details are never shared.
-          </div>
         </form>
       )}
     </div>

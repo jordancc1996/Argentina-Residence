@@ -15,6 +15,15 @@ import {
 } from "@/components/ui/dialog";
 import { useToast } from "@/hooks/use-toast";
 import { FORM_SUBMIT_ERROR, submitFormcarry } from "@/lib/formcarry";
+import {
+  ConsentCheckbox,
+  PRIVACY_CONSENT_ERROR,
+  PROFESSIONAL_CONSENT_ERROR,
+  PrivacyConsentLabel,
+  ProfessionalConsentLabel,
+  ThirdPersonNote,
+  consentPayload,
+} from "@/components/FormConsent";
 import { cn } from "@/lib/utils";
 
 const compareOptionsSchema = z.object({
@@ -26,8 +35,11 @@ const compareOptionsSchema = z.object({
     .email("Invalid email address"),
   phone: z.string().optional(),
   message: z.string().optional(),
-  privacy_agreed: z.boolean().refine((value) => value === true, {
-    message: "Agreement is required",
+  privacyConsent: z.boolean().refine((value) => value === true, {
+    message: PRIVACY_CONSENT_ERROR,
+  }),
+  professionalIntroductionConsent: z.boolean().refine((value) => value === true, {
+    message: PROFESSIONAL_CONSENT_ERROR,
   }),
 });
 
@@ -62,6 +74,7 @@ const CompareOptionsModal = ({
   const {
     register,
     handleSubmit,
+    setFocus,
     formState: { errors },
     reset,
   } = useForm<CompareOptionsFormData>({
@@ -69,7 +82,8 @@ const CompareOptionsModal = ({
     defaultValues: {
       phone: "",
       message: "",
-      privacy_agreed: false,
+      privacyConsent: false,
+      professionalIntroductionConsent: false,
     },
   });
 
@@ -84,6 +98,7 @@ const CompareOptionsModal = ({
         message: data.message ?? "",
         "form-name": "compare-options-inquiry",
         formType: "compare-options-inquiry",
+        ...consentPayload(data.privacyConsent, data.professionalIntroductionConsent),
       });
 
       if (result.ok) {
@@ -131,7 +146,15 @@ const CompareOptionsModal = ({
             {description}
           </DialogDescription>
         </DialogHeader>
-        <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+        <form
+          onSubmit={handleSubmit(onSubmit, (formErrors) => {
+            if (formErrors.privacyConsent) setFocus("privacyConsent");
+            else if (formErrors.professionalIntroductionConsent) {
+              setFocus("professionalIntroductionConsent");
+            }
+          })}
+          className="space-y-4"
+        >
           <div>
             <Label htmlFor={`${fieldId}-first-name`} className="text-sm font-medium mb-2 block">
               Name
@@ -198,25 +221,21 @@ const CompareOptionsModal = ({
               {...register("message")}
             />
           </div>
-          <div>
-            <label htmlFor={`${fieldId}-privacy`} className="flex items-start gap-3 text-xs text-text-secondary tracking-wide leading-relaxed">
-              <input
-                id={`${fieldId}-privacy`}
-                type="checkbox"
-                className="mt-0.5 h-4 w-4 shrink-0"
-                {...register("privacy_agreed")}
-              />
-              <span>
-                I agree to the{" "}
-                <a href="/privacy" className="text-primary hover:underline">
-                  Privacy Policy
-                </a>
-              </span>
-            </label>
-            {errors.privacy_agreed && (
-              <p className="text-destructive text-sm mt-1">{errors.privacy_agreed.message}</p>
-            )}
-          </div>
+          <ConsentCheckbox
+            id={`${fieldId}-privacy`}
+            label={<PrivacyConsentLabel />}
+            requiredConsent
+            error={errors.privacyConsent?.message}
+            {...register("privacyConsent")}
+          />
+          <ConsentCheckbox
+            id={`${fieldId}-professional`}
+            label={<ProfessionalConsentLabel />}
+            requiredConsent
+            error={errors.professionalIntroductionConsent?.message}
+            {...register("professionalIntroductionConsent")}
+          />
+          <ThirdPersonNote />
           <Button type="submit" size="lg" className="w-full" disabled={isSubmitting}>
             {isSubmitting ? "Submitting..." : "Inquire"}
           </Button>

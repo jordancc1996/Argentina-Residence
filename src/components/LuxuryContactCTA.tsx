@@ -1,6 +1,14 @@
-import { useState } from "react";
+import { useId, useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { FORM_SUBMIT_ERROR, submitFormcarry } from "@/lib/formcarry";
+import {
+  ConsentCheckbox,
+  PRIVACY_CONSENT_ERROR,
+  PrivacyConsentLabel,
+  ProfessionalConsentLabel,
+  ThirdPersonNote,
+  consentPayload,
+} from "@/components/FormConsent";
 import { useParallax } from "@/hooks/useParallax";
 
 const countryCodes = [
@@ -30,8 +38,10 @@ const investmentInterests = [
 
 const LuxuryContactCTA = () => {
   const { toast } = useToast();
+  const fieldId = useId();
   const parallaxY = useParallax(-0.18);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [privacyError, setPrivacyError] = useState("");
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -40,10 +50,18 @@ const LuxuryContactCTA = () => {
     phone: "",
     relocateIntent: "",
     goldenVisaProgram: "",
+    privacyConsent: false,
+    professionalIntroductionConsent: false,
   });
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!formData.privacyConsent) {
+      setPrivacyError(PRIVACY_CONSENT_ERROR);
+      document.getElementById(`${fieldId}-privacy`)?.focus();
+      return;
+    }
+    setPrivacyError("");
     setIsSubmitting(true);
 
     try {
@@ -56,6 +74,7 @@ const LuxuryContactCTA = () => {
         relocateIntent: formData.relocateIntent,
         goldenVisaProgram: formData.goldenVisaProgram,
         formType: "luxury-contact-cta",
+        ...consentPayload(formData.privacyConsent, formData.professionalIntroductionConsent),
       });
 
       if (!result.ok && result.inFlight) {
@@ -76,6 +95,8 @@ const LuxuryContactCTA = () => {
           phone: "",
           relocateIntent: "",
           goldenVisaProgram: "",
+          privacyConsent: false,
+          professionalIntroductionConsent: false,
         });
       } else {
         throw new Error("Submission failed");
@@ -333,6 +354,34 @@ const LuxuryContactCTA = () => {
                 </div>
               </div>
 
+              <ConsentCheckbox
+                id={`${fieldId}-privacy`}
+                name="privacyConsent"
+                tone="dark"
+                checked={formData.privacyConsent}
+                label={<PrivacyConsentLabel tone="dark" />}
+                requiredConsent
+                error={privacyError}
+                onChange={(event) => {
+                  setFormData({ ...formData, privacyConsent: event.target.checked });
+                  if (event.target.checked) setPrivacyError("");
+                }}
+              />
+              <ConsentCheckbox
+                id={`${fieldId}-professional`}
+                name="professionalIntroductionConsent"
+                tone="dark"
+                checked={formData.professionalIntroductionConsent}
+                label={<ProfessionalConsentLabel />}
+                onChange={(event) =>
+                  setFormData({
+                    ...formData,
+                    professionalIntroductionConsent: event.target.checked,
+                  })
+                }
+              />
+              <ThirdPersonNote tone="dark" />
+
               {/* Submit Button - Ghost Style with Dramatic Hover */}
               <div className="pt-4">
                 <button
@@ -344,12 +393,6 @@ const LuxuryContactCTA = () => {
                 </button>
               </div>
             </form>
-
-            {/* Privacy Note */}
-            <p className="text-white/40 text-xs mt-8 text-center font-sans tracking-wide">
-              We respect your privacy. Your information is secure and will never
-              be shared.
-            </p>
           </div>
         </div>
       </div>

@@ -3,14 +3,25 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useForm } from "react-hook-form";
 import { useToast } from "@/hooks/use-toast";
+import {
+  ConsentCheckbox,
+  PRIVACY_CONSENT_ERROR,
+  PROFESSIONAL_CONSENT_ERROR,
+  PrivacyConsentLabel,
+  ProfessionalConsentLabel,
+  ThirdPersonNote,
+  consentPayload,
+} from "@/components/FormConsent";
 import { FORM_SUBMIT_ERROR, submitFormcarry } from "@/lib/formcarry";
-import { useState } from "react";
+import { useId, useState } from "react";
 
 interface FormCarryData {
   name: string;
   workEmail: string;
   countryOfResidence: string;
   formType: string;
+  privacyConsent: boolean;
+  professionalIntroductionConsent?: boolean;
 }
 
 interface FormCarryFormProps {
@@ -21,7 +32,10 @@ interface FormCarryFormProps {
 }
 
 const FormCarryForm = ({ formType, buttonText, title, description }: FormCarryFormProps) => {
-  const { register, handleSubmit, formState: { errors }, reset } = useForm<FormCarryData>();
+  const privacyId = useId();
+  const { register, handleSubmit, setFocus, formState: { errors }, reset } = useForm<FormCarryData>({
+    defaultValues: { privacyConsent: false, professionalIntroductionConsent: false },
+  });
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -34,6 +48,10 @@ const FormCarryForm = ({ formType, buttonText, title, description }: FormCarryFo
         workEmail: data.workEmail,
         countryOfResidence: data.countryOfResidence,
         formType,
+        ...consentPayload(
+          data.privacyConsent,
+          formType === "application" ? data.professionalIntroductionConsent : undefined,
+        ),
       });
 
       if (!result.ok && result.inFlight) {
@@ -82,7 +100,13 @@ const FormCarryForm = ({ formType, buttonText, title, description }: FormCarryFo
         )}
       </div>
       
-      <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+      <form
+        onSubmit={handleSubmit(onSubmit, (formErrors) => {
+          if (formErrors.privacyConsent) setFocus("privacyConsent");
+          else if (formErrors.professionalIntroductionConsent) setFocus("professionalIntroductionConsent");
+        })}
+        className="space-y-6"
+      >
         <div>
           <Label htmlFor="name" className="text-sm font-medium mb-2 block">
             Full Name *
@@ -134,6 +158,28 @@ const FormCarryForm = ({ formType, buttonText, title, description }: FormCarryFo
             <p className="text-destructive text-sm mt-1">{errors.countryOfResidence.message}</p>
           )}
         </div>
+
+        <ConsentCheckbox
+          id={privacyId}
+          label={<PrivacyConsentLabel />}
+          error={errors.privacyConsent?.message}
+          requiredConsent
+          {...register("privacyConsent", {
+            validate: (value) => value === true || PRIVACY_CONSENT_ERROR,
+          })}
+        />
+        {formType === "application" && (
+          <ConsentCheckbox
+            id={`${privacyId}-professional`}
+            label={<ProfessionalConsentLabel />}
+            error={errors.professionalIntroductionConsent?.message}
+            requiredConsent
+            {...register("professionalIntroductionConsent", {
+              validate: (value) => value === true || PROFESSIONAL_CONSENT_ERROR,
+            })}
+          />
+        )}
+        <ThirdPersonNote />
 
         <Button 
           type="submit" 

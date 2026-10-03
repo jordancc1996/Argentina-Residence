@@ -8,6 +8,13 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { CheckCircle, ArrowRight, Clock, Shield } from "lucide-react";
 import eligibilityBackground from "@/assets/argentina-golden-visa-eligibility.webp";
 import { FORM_SUBMIT_ERROR, submitFormcarry } from "@/lib/formcarry";
+import {
+  ConsentCheckbox,
+  PRIVACY_CONSENT_ERROR,
+  PrivacyConsentLabel,
+  ThirdPersonNote,
+  consentPayload,
+} from "@/components/FormConsent";
 
 type Step = 1 | 2 | 3 | 4;
 type InvestmentBudget = "$below-500k" | "$500k+" | "";
@@ -23,6 +30,7 @@ interface FormData {
   email: string;
   phone: string;
   country: string;
+  privacyConsent: boolean;
 }
 
 const InvestorEligibilityContent = () => {
@@ -35,11 +43,13 @@ const InvestorEligibilityContent = () => {
     lastName: "",
     email: "",
     phone: "",
-    country: ""
+    country: "",
+    privacyConsent: false,
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isComplete, setIsComplete] = useState(false);
   const [submitError, setSubmitError] = useState("");
+  const [privacyError, setPrivacyError] = useState("");
 
   const readinessFit = formData.timeline === "0-6months" ? "near-term conversation" : "monitoring";
 
@@ -57,6 +67,12 @@ const InvestorEligibilityContent = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!formData.privacyConsent) {
+      setPrivacyError(PRIVACY_CONSENT_ERROR);
+      document.getElementById("eligibility-privacy")?.focus();
+      return;
+    }
+    setPrivacyError("");
     setIsSubmitting(true);
     
     setSubmitError("");
@@ -73,6 +89,7 @@ const InvestorEligibilityContent = () => {
       source: "Investment Readiness Tool",
       submittedAt: new Date().toISOString(),
       formType: "eligibility-waitlist",
+      ...consentPayload(formData.privacyConsent),
     });
 
     if (result.ok) {
@@ -476,10 +493,19 @@ const InvestorEligibilityContent = () => {
                   </div>
                 </div>
                 
-                <p className="text-xs text-text-muted text-center">
-                  By submitting, you agree to receive updates about Argentina's Golden Visa program. 
-                  We respect your privacy and will never share your information.
-                </p>
+                <ConsentCheckbox
+                  id="eligibility-privacy"
+                  name="privacyConsent"
+                  checked={formData.privacyConsent}
+                  label={<PrivacyConsentLabel />}
+                  requiredConsent
+                  error={privacyError}
+                  onChange={(event) => {
+                    setFormData({ ...formData, privacyConsent: event.target.checked });
+                    if (event.target.checked) setPrivacyError("");
+                  }}
+                />
+                <ThirdPersonNote />
               </div>
             )}
             

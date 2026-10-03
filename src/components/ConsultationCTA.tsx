@@ -1,18 +1,36 @@
-import { useState } from "react";
+import { useId, useState } from "react";
 import { Mail } from "lucide-react";
 import { FORM_SUBMIT_ERROR, submitFormcarry } from "@/lib/formcarry";
+import {
+  ConsentCheckbox,
+  PRIVACY_CONSENT_ERROR,
+  PrivacyConsentLabel,
+  ProfessionalConsentLabel,
+  ThirdPersonNote,
+  consentPayload,
+} from "@/components/FormConsent";
 
 const ADVISOR_EMAIL = "admin@argentinaresidence.com";
 
 const ConsultationCTA = () => {
+  const fieldId = useId();
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [submitError, setSubmitError] = useState("");
+  const [privacyError, setPrivacyError] = useState("");
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const form = e.currentTarget;
     const data = new FormData(form);
+    const privacyConsent = data.get("privacyConsent") === "on";
+    const professionalIntroductionConsent = data.get("professionalIntroductionConsent") === "on";
+    if (!privacyConsent) {
+      setPrivacyError(PRIVACY_CONSENT_ERROR);
+      form.querySelector<HTMLInputElement>("[name='privacyConsent']")?.focus();
+      return;
+    }
+    setPrivacyError("");
     setSubmitting(true);
     setSubmitError("");
     const result = await submitFormcarry({
@@ -21,6 +39,7 @@ const ConsultationCTA = () => {
       phone: String(data.get("phone") ?? ""),
       _source: "Pre-footer CTA",
       formType: "pre-footer-consultation",
+      ...consentPayload(privacyConsent, professionalIntroductionConsent),
     });
     if (result.ok) {
       setSubmitted(true);
@@ -78,6 +97,22 @@ const ConsultationCTA = () => {
                 <input required name="first_name" placeholder="First name" style={inputStyle} />
                 <input required type="email" name="email" placeholder="Email" style={inputStyle} />
                 <input required type="tel" name="phone" placeholder="Phone number" style={inputStyle} />
+                <ConsentCheckbox
+                  id={`${fieldId}-privacy`}
+                  name="privacyConsent"
+                  tone="dark"
+                  label={<PrivacyConsentLabel compact tone="dark" />}
+                  requiredConsent
+                  error={privacyError}
+                  onChange={() => setPrivacyError("")}
+                />
+                <ConsentCheckbox
+                  id={`${fieldId}-professional`}
+                  name="professionalIntroductionConsent"
+                  tone="dark"
+                  label={<ProfessionalConsentLabel />}
+                />
+                <ThirdPersonNote tone="dark" />
                 <button
                   type="submit"
                   disabled={submitting}
@@ -104,17 +139,6 @@ const ConsultationCTA = () => {
                   {submitError}
                 </p>
               )}
-              <p
-                style={{
-                  fontFamily: "'Montserrat', sans-serif",
-                  color: "rgba(255,255,255,0.5)",
-                  fontSize: 12,
-                  marginTop: 12,
-                  lineHeight: 1.5,
-                }}
-              >
-                We respect your privacy. Your details are secure and never shared.
-              </p>
             </>
           )}
         </div>

@@ -5,6 +5,7 @@ import { z } from "zod";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
+import { ConsentCheckbox, PRIVACY_CONSENT_ERROR, PrivacyConsentLabel, consentPayload } from "@/components/FormConsent";
 import { FORM_SUBMIT_ERROR, submitFormcarry } from "@/lib/formcarry";
 import { cn } from "@/lib/utils";
 
@@ -22,6 +23,9 @@ const updateSchema = z.object({
       (value) => value.length === 0 || /^[0-9+().\-\s]{6,}$/.test(value),
       "Enter a phone number with the country code. Any international format is accepted.",
     ),
+  privacyConsent: z.boolean().refine((value) => value === true, {
+    message: PRIVACY_CONSENT_ERROR,
+  }),
 });
 
 type UpdateFormData = z.infer<typeof updateSchema>;
@@ -44,11 +48,12 @@ const NewsletterSignup = ({
   const {
     register,
     handleSubmit,
+    setFocus,
     formState: { errors },
     reset,
   } = useForm<UpdateFormData>({
     resolver: zodResolver(updateSchema),
-    defaultValues: { name: "", email: "", phone: "" },
+    defaultValues: { name: "", email: "", phone: "", privacyConsent: false },
   });
 
   const onSubmit = async (data: UpdateFormData) => {
@@ -59,6 +64,7 @@ const NewsletterSignup = ({
         email: data.email,
         phone: data.phone,
         formType,
+        ...consentPayload(data.privacyConsent),
       });
 
       if (result.ok) {
@@ -107,7 +113,13 @@ const NewsletterSignup = ({
           Thank you. You are signed up for Argentina Residence updates.
         </p>
       ) : (
-        <form onSubmit={handleSubmit(onSubmit)} className="space-y-5" noValidate>
+        <form
+          onSubmit={handleSubmit(onSubmit, (formErrors) => {
+            if (formErrors.privacyConsent) setFocus("privacyConsent");
+          })}
+          className="space-y-5"
+          noValidate
+        >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             <div>
               <label htmlFor={`${fieldId}-name`} className="text-sm font-medium text-foreground mb-2 block">
@@ -175,6 +187,13 @@ const NewsletterSignup = ({
               )}
             </div>
           </div>
+          <ConsentCheckbox
+            id={`${fieldId}-privacy`}
+            label={<PrivacyConsentLabel />}
+            requiredConsent
+            error={errors.privacyConsent?.message}
+            {...register("privacyConsent")}
+          />
           <Button
             type="submit"
             size="lg"
@@ -184,14 +203,9 @@ const NewsletterSignup = ({
           >
             {isSubmitting ? "Submitting..." : "Get Updates"}
           </Button>
-          <p className="text-xs text-text-secondary leading-relaxed max-w-2xl">
-            By submitting this form, you agree to receive email updates from Argentina Residence
-            Advisory. You may unsubscribe from marketing emails at any time. Providing a phone
-            number does not consent to text messages or telephone marketing. See our{" "}
-            <a href="/privacy" className="text-primary underline underline-offset-2">
-              Privacy Policy
-            </a>
-            .
+          <p className="text-[15px] leading-relaxed text-text-secondary max-w-2xl">
+            You may unsubscribe from marketing emails at any time. Providing a phone number does
+            not consent to text messages or telephone marketing.
           </p>
         </form>
       )}
