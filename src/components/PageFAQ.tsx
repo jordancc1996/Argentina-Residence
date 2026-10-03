@@ -49,7 +49,7 @@ const PageFAQ = ({ path, items, wrapped = true }: PageFAQProps) => {
         {faqs.map((item) => (
           <div key={item.question} className="border-b border-border py-6">
             <dt>
-              <h3 className="font-serif text-lg mb-3 tracking-wide text-foreground">
+              <h3 className="font-serif font-semibold text-[22px] md:text-[24px] leading-snug mb-4 tracking-wide text-foreground">
                 {item.question}
               </h3>
             </dt>
