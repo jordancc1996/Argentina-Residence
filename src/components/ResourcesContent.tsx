@@ -87,7 +87,7 @@ const ResourcesContent = () => {
           </div>
         </EditorialSection>
 
-        <EditorialSection>
+        <EditorialSection className="bg-secondary">
           <h2 className="font-serif text-xl-editorial mb-8 tracking-wide text-left">
             Guides and research on this site
           </h2>

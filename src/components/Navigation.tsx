@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback, type CSSProperties } from "react";
-import { ChevronDown } from "lucide-react";
+import { ArrowRight, ChevronDown } from "lucide-react";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -17,12 +17,13 @@ const navLinks = [
   { path: "/research", label: "Research and Intelligence" },
   { path: "/industry-news", label: "Industry News" },
   { path: "/press", label: "Press Room" },
-  { path: "/contact", label: "Contact Us" },
+  { path: "/contact", label: "JOIN THE WAITLIST" },
 ];
 
 const GUIDES_HUB_HREF = "/resources";
 const PRESS_HREF = "/press";
 const REAL_ESTATE_HREF = "/guides/argentina-real-estate-investment";
+const WAITLIST_HREF = "/contact";
 
 export type GuideNavItem = {
   title: string;
@@ -104,7 +105,7 @@ const Navigation = ({
           </a>
 
           {/* Right side */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 min-[900px]:gap-2 lg:gap-4">
             <div className="hidden md:block">
               <NavigationMenu viewportAlign="end" viewportClassName="mt-2 overflow-hidden rounded-none border-[hsl(150,3%,17%)] bg-[hsla(150,5%,6%,0.95)] text-white shadow-none backdrop-blur-[8px]">
                 <NavigationMenuList>
@@ -176,22 +177,19 @@ const Navigation = ({
               Real Estate
             </a>
 
-            {/* Contact pill */}
             <a
-              href="/contact"
-              className="hidden md:inline-flex transition-all duration-300 hover:opacity-90"
+              href={WAITLIST_HREF}
+              className="group hidden min-[900px]:inline-flex items-center gap-2 whitespace-nowrap rounded-[5px] bg-cta-primary px-3.5 py-2.5 text-sm font-medium uppercase text-white transition-colors duration-200 ease-out hover:bg-gold hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-primary"
               style={{
                 fontFamily: "'Montserrat', sans-serif",
-                fontWeight: 500,
-                fontSize: 17,
-                letterSpacing: "0.35px",
-                backgroundColor: "rgb(21, 76, 126)",
-                color: "#FFFFFF",
-                padding: "16px 32px",
-                borderRadius: 300,
+                letterSpacing: "0.04em",
               }}
             >
-              Contact Us
+              JOIN THE WAITLIST
+              <ArrowRight
+                aria-hidden="true"
+                className="h-4 w-4 shrink-0 transition-transform duration-200 ease-out motion-safe:group-hover:translate-x-1"
+              />
             </a>
 
             {/* Hamburger / Close */}
@@ -289,7 +287,7 @@ const Navigation = ({
                   <a
                     href={item.path}
                     onClick={() => setIsOpen(false)}
-                    className="block transition-opacity duration-[250ms] ease-in-out hover:opacity-70"
+                    className="group flex items-center gap-2 transition-opacity duration-[250ms] ease-in-out hover:opacity-70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold"
                     style={{
                       fontFamily: "'Playfair Display', Georgia, serif",
                       fontSize: 22,
@@ -304,6 +302,12 @@ const Navigation = ({
                     }}
                   >
                     {item.label}
+                    {item.path === WAITLIST_HREF && (
+                      <ArrowRight
+                        aria-hidden="true"
+                        className="h-4 w-4 shrink-0 transition-transform duration-200 ease-out motion-safe:group-hover:translate-x-1"
+                      />
+                    )}
                   </a>
                   <div
                     style={{

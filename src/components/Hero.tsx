@@ -21,6 +21,9 @@ interface HeroProps {
   ctaOpensModal?: boolean;
   ctaModalHeading?: string;
   ctaModalDescription?: string;
+  eyebrow?: string;
+  meta?: string;
+  imagePosition?: string;
 }
 
 const resolveHeroSrc = (image: HeroImageSrc) =>
@@ -41,6 +44,9 @@ const Hero = ({
   ctaOpensModal = false,
   ctaModalHeading,
   ctaModalDescription,
+  eyebrow,
+  meta,
+  imagePosition,
 }: HeroProps) => {
   const parallaxY = useParallax(-0.3);
   const opacity = useScrollOpacity(600);
@@ -58,6 +64,7 @@ const Hero = ({
             src={backgroundSrc}
             alt={imageAlt}
             className="w-full h-full object-cover"
+            style={imagePosition ? { objectPosition: imagePosition } : undefined}
           />
         ) : (
           <PhotoPlaceholder
@@ -79,6 +86,14 @@ const Hero = ({
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.2, ease: "easeOut" }}
       >
+        {eyebrow && (
+          <p
+            className="font-sans text-[0.7rem] tracking-[0.22em] uppercase mb-6"
+            style={{ color: "rgba(255,255,255,0.72)" }}
+          >
+            {eyebrow}
+          </p>
+        )}
         <motion.h1 
           className="font-serif font-light text-[2.25rem] sm:text-5xl md:text-6xl lg:text-[4.5rem] mb-7 md:mb-10 leading-[1.1]"
           style={{ color: "rgba(255,255,255,0.94)", letterSpacing: "0.005em" }}
@@ -111,6 +126,15 @@ const Hero = ({
           >
             {description}
           </motion.p>
+        )}
+
+        {meta && (
+          <p
+            className="font-sans text-sm md:text-base mt-8 tracking-[0.04em]"
+            style={{ color: "rgba(255,255,255,0.78)" }}
+          >
+            {meta}
+          </p>
         )}
 
         {ctaText && (ctaOpensModal || ctaLink) && (

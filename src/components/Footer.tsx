@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <footer className="bg-muted/30 py-12 mt-16">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-4 gap-8 mb-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8 [&>*]:min-w-0">
           {/* About */}
           <div>
             <h3 className="font-serif text-lg mb-4">Argentina Residence</h3>
@@ -94,8 +94,8 @@ const Footer = () => {
             </ul>
             <div className="mt-6">
               <p className="text-muted-foreground text-sm mb-2">Contact:</p>
-              <a href="mailto:admin@argentinaresidence.com" className="text-primary hover:underline text-sm">
-                admin@argentinaresidence.com
+              <a href="mailto:admin@argentinaresidence.com" className="text-primary hover:underline text-sm break-words">
+                admin@<wbr />argentinaresidence.com
               </a>
             </div>
             <div className="mt-6">

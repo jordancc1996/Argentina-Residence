@@ -3,6 +3,9 @@ import { absoluteSocialUrl, socialPreviewFor } from '../../data/socialPreviews';
 import { getCollection } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import DateMeta from '../../components/DateMeta.astro';
+import Hero from '../../components/Hero';
+import Breadcrumbs from '../../components/Breadcrumbs';
+import casaRosadaFlag from '../../assets/hero-casa-rosada-flag.webp';
 import { publishedPressReleases } from '../../data/pressReleases';
 
 const entries = await getCollection('pressReleases');
@@ -47,7 +50,7 @@ const schema = {
 };
 ---
 
-<Layout>
+<Layout breadcrumbBar={false}>
 	<title slot="head">{title}</title>
 	<meta slot="head" name="description" content={description} />
 	<link slot="head" rel="canonical" href={canonical} />
@@ -67,13 +70,17 @@ const schema = {
 	<meta slot="head" name="twitter:description" content={description} />
 	<meta slot="head" name="twitter:image" content={ogImage} />
 	<script slot="head" type="application/ld+json" set:html={JSON.stringify(schema)} />
+	<Hero
+		client:load
+		eyebrow="Press Room"
+		title="Argentina Residence Press Room"
+		description="Official news, announcements, and press releases from Argentina Residence."
+		backgroundImage={casaRosadaFlag}
+		imageAlt="Argentine flag at Plaza de Mayo with the Casa Rosada presidential palace"
+	/>
+	<Breadcrumbs client:load currentPath={Astro.url.pathname} />
 	<section class="section-padding">
 		<div class="max-w-4xl mx-auto px-4 md:px-8">
-			<p class="text-[0.7rem] uppercase tracking-[0.16em] text-muted-foreground mb-4">Press Room</p>
-			<h1 class="font-serif text-3xl md:text-4xl mb-6">Argentina Residence Press Room</h1>
-			<p class="text-base leading-relaxed text-muted-foreground mb-10 max-w-2xl">
-				Official news, announcements, and press releases from Argentina Residence.
-			</p>
 			{releases.length === 0 ? (
 				<p class="border-t border-border pt-8 text-muted-foreground">No press releases have been published.</p>
 			) : (

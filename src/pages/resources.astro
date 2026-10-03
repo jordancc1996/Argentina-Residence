@@ -2,6 +2,7 @@
 import { absoluteSocialUrl, socialPreviewFor } from '../data/socialPreviews';
 import Layout from '../layouts/Layout.astro';
 import ResourcesContent from '../components/ResourcesContent';
+import ScrollProgress from '../components/ScrollProgress';
 
 const title = 'Argentina Residency Resources | Argentina Residence';
 const description = 'Official Argentine government links plus this site’s guides, FAQs, and research. No application pack to download. The pathway should not be treated as an open application program.';
@@ -77,5 +78,6 @@ const schema = {
 	<meta slot="head" name="twitter:description" content={description} />
 	<meta slot="head" name="twitter:image" content={ogImage} />
 	<script slot="head" type="application/ld+json" set:html={JSON.stringify(schema)} />
+	<ScrollProgress client:load />
 	<ResourcesContent client:load />
 </Layout>

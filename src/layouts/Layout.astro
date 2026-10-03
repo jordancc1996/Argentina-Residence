@@ -12,9 +12,11 @@ import PreferredSourcesCTA from '../components/PreferredSourcesCTA.astro';
 interface Props {
 	showBreadcrumbs?: boolean;
 	showChrome?: boolean;
+	/** Visual breadcrumb bar. Schema still renders when showBreadcrumbs is true. */
+	breadcrumbBar?: boolean;
 }
 
-const { showBreadcrumbs = true, showChrome = true } = Astro.props;
+const { showBreadcrumbs = true, showChrome = true, breadcrumbBar = true } = Astro.props;
 const currentPath = Astro.url.pathname;
 const normalizedPath = currentPath.replace(/\/$/, "") || "/";
 const skipMarkdownAlternate = normalizedPath === "/privacy" || normalizedPath === "/404";
@@ -58,7 +60,7 @@ const guides = [...guideEntries]
 		<div class="min-h-screen bg-background">
 			{showChrome && <Navigation currentPath={currentPath} guides={guides} client:load />}
 			<main>
-				{showChrome && showBreadcrumbs && <Breadcrumbs currentPath={currentPath} />}
+				{showChrome && showBreadcrumbs && breadcrumbBar && <Breadcrumbs currentPath={currentPath} />}
 				<div data-md-content>
 					<slot />
 				</div>

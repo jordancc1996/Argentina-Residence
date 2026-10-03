@@ -3,6 +3,7 @@ import { absoluteSocialUrl, socialPreviewFor } from '../data/socialPreviews';
 import { getCollection } from 'astro:content';
 import Layout from '../layouts/Layout.astro';
 import IndexContent from '../components/pages/IndexContent';
+import ScrollProgress from '../components/ScrollProgress';
 
 const articles = await getCollection('articles');
 const posts = [...articles]
@@ -78,5 +79,6 @@ const schema = {
 	<meta slot="head" name="twitter:description" content={socialDescription} />
 	<meta slot="head" name="twitter:image" content={ogImage} />
 	<script slot="head" type="application/ld+json" set:html={JSON.stringify(schema)} />
+	<ScrollProgress client:load />
 	<IndexContent client:load posts={posts} />
 </Layout>

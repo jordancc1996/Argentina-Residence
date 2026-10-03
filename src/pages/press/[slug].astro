@@ -2,8 +2,9 @@
 import { absoluteSocialUrl, socialPreviewFor } from '../../data/socialPreviews';
 import { getCollection, render } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
-import DateMeta from '../../components/DateMeta.astro';
 import EditorialByline from '../../components/EditorialByline';
+import Hero from '../../components/Hero';
+import Breadcrumbs from '../../components/Breadcrumbs';
 import { articleAuthor } from '../../data/editorial';
 import { publishedPressReleases } from '../../data/pressReleases';
 import { reviewDateFor } from '../../data/reviews';
@@ -16,6 +17,17 @@ export async function getStaticPaths() {
     props: { entry },
   }));
 }
+
+const formatPressDate = (value: string) => {
+  const [year, month, day] = value.split("-").map(Number);
+  if (!year || !month || !day) return value;
+  return new Date(Date.UTC(year, month - 1, day)).toLocaleDateString("en-US", {
+    month: "long",
+    day: "numeric",
+    year: "numeric",
+    timeZone: "UTC",
+  });
+};
 
 const { entry } = Astro.props;
 const { Content } = await render(entry);
@@ -58,7 +70,7 @@ const schema = {
 };
 ---
 
-<Layout>
+<Layout breadcrumbBar={false}>
 	<title slot="head">{title}</title>
 	<meta slot="head" name="description" content={description} />
 	<link slot="head" rel="canonical" href={canonical} />
@@ -78,25 +90,27 @@ const schema = {
 	<meta slot="head" name="twitter:description" content={description} />
 	<meta slot="head" name="twitter:image" content={ogImage} />
 	<script slot="head" type="application/ld+json" set:html={JSON.stringify(schema)} />
+	<Hero
+		client:load
+		eyebrow="Press Release"
+		title={data.title}
+		subtitle={data.subtitle}
+		meta={
+			data.lastUpdatedDate && data.lastUpdatedDate !== data.date
+				? `Published: ${formatPressDate(data.date)} · Last Updated: ${formatPressDate(data.lastUpdatedDate)}`
+				: formatPressDate(data.date)
+		}
+		backgroundImage={data.image}
+		imageAlt={data.imageAlt ?? "Press release photograph"}
+		placeholder={!data.image}
+		imagePosition="center 22%"
+	/>
+	<Breadcrumbs client:load currentPath={Astro.url.pathname} />
 	<article class="section-padding">
 		<div class="max-w-4xl mx-auto px-4 md:px-8">
 			<a href="/press" class="inline-flex items-center gap-2 text-primary hover:underline mb-8">
 				Back to Press Room
 			</a>
-			{data.image && (
-				<img
-					src={data.image}
-					alt={data.imageAlt ?? ""}
-					width={data.imageWidth ?? 576}
-					height={data.imageHeight ?? 1024}
-					class="mb-8 h-auto w-full max-w-[576px]"
-				/>
-			)}
-			<h1 class="font-serif text-3xl md:text-4xl mb-6">{data.title}</h1>
-			{data.subtitle && (
-				<p class="font-serif text-lg md:text-xl leading-relaxed text-text-secondary mb-6">{data.subtitle}</p>
-			)}
-			<DateMeta publishedDate={data.date} lastUpdatedDate={data.lastUpdatedDate} />
 			<EditorialByline reviewedAt={reviewDateFor(`/press/${data.slug}`)} client:load />
 			{data.slug === "argentina-citizenship-by-investment-q4-2026" && (
 				<p class="mt-6">

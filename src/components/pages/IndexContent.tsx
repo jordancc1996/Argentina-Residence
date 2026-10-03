@@ -231,7 +231,7 @@ const IndexContent = ({ posts }: { posts: HomepagePost[] }) => {
         </div>
       </EditorialSection>
 
-      <EditorialSection className="bg-secondary/30">
+      <EditorialSection className="bg-secondary">
         <h2 className="font-serif text-xl-editorial mb-8 tracking-wide">Reading on the anticipated program</h2>
         <p className="text-body text-text-secondary tracking-wide mb-8 max-w-3xl mx-auto">
           The pathway should not be treated as an open application program. These links are research and resources, not a filing channel.
