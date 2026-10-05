@@ -179,7 +179,7 @@ const Navigation = ({
 
             <a
               href={WAITLIST_HREF}
-              className="group hidden min-[900px]:inline-flex items-center gap-2 whitespace-nowrap rounded-[5px] bg-cta-primary px-3.5 py-2.5 text-sm font-medium uppercase text-white transition-colors duration-200 ease-out hover:bg-gold hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-primary"
+              className="group hidden min-[900px]:inline-flex items-center gap-2 whitespace-nowrap rounded-[5px] bg-cta-primary px-3.5 py-2.5 text-sm font-medium uppercase text-white transition-colors duration-200 ease-out hover:bg-white hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-primary"
               style={{
                 fontFamily: "'Montserrat', sans-serif",
                 letterSpacing: "0.04em",
