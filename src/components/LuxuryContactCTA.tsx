@@ -1,7 +1,7 @@
 import { useId, useState } from "react";
 import { ArrowRight, ChevronDown } from "lucide-react";
 import Hero from "@/components/Hero";
-import waitlistHero from "@/assets/argentina-residence-argentina-golden-visa.webp";
+import waitlistHero from "@/assets/argentina-flag-cloudy-sky.webp";
 import { useToast } from "@/hooks/use-toast";
 import { FORM_SUBMIT_ERROR, submitFormcarry } from "@/lib/formcarry";
 import {
@@ -152,8 +152,7 @@ const LuxuryContactCTA = () => {
       title="JOIN THE WAITLIST"
       subtitle="Join the Argentina Residence waitlist to receive program updates and discuss your plans with our team. Government applications are not confirmed open. Joining this waitlist does not file a government application, reserve a place, or confirm eligibility or citizenship."
       backgroundImage={waitlistHeroSrc}
-      imageAlt="Argentine flag on a pole with mountains behind it"
-      imageClassName="object-[center_42%] md:object-[center_50%] lg:object-[center_54%] xl:object-[center_68%]"
+      imageAlt="Argentine flag flying from a pole against a cloudy sky"
     />
     <section className="bg-background text-foreground">
       <div className="mx-auto w-full max-w-4xl px-6 pb-24 pt-20 md:px-8 md:pb-32 md:pt-32">
