@@ -2,6 +2,11 @@ import { useId, useState } from "react";
 import { Mail } from "lucide-react";
 import { FORM_SUBMIT_ERROR, submitFormcarry } from "@/lib/formcarry";
 import {
+  isOptionalLinkedInProfileUrl,
+  LINKEDIN_PROFILE_URL_ERROR,
+  linkedinProfilePayload,
+} from "@/lib/linkedinProfileUrl";
+import {
   ConsentCheckbox,
   PRIVACY_CONSENT_ERROR,
   PrivacyConsentLabel,
@@ -18,6 +23,7 @@ const ConsultationCTA = () => {
   const [submitted, setSubmitted] = useState(false);
   const [submitError, setSubmitError] = useState("");
   const [privacyError, setPrivacyError] = useState("");
+  const [linkedinError, setLinkedinError] = useState("");
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -25,11 +31,18 @@ const ConsultationCTA = () => {
     const data = new FormData(form);
     const privacyConsent = data.get("privacyConsent") === "on";
     const professionalIntroductionConsent = data.get("professionalIntroductionConsent") === "on";
+    const linkedinProfileUrl = String(data.get("linkedinProfileUrl") ?? "");
+    if (!isOptionalLinkedInProfileUrl(linkedinProfileUrl)) {
+      setLinkedinError(LINKEDIN_PROFILE_URL_ERROR);
+      form.querySelector<HTMLInputElement>("[name='linkedinProfileUrl']")?.focus();
+      return;
+    }
     if (!privacyConsent) {
       setPrivacyError(PRIVACY_CONSENT_ERROR);
       form.querySelector<HTMLInputElement>("[name='privacyConsent']")?.focus();
       return;
     }
+    setLinkedinError("");
     setPrivacyError("");
     setSubmitting(true);
     setSubmitError("");
@@ -37,6 +50,7 @@ const ConsultationCTA = () => {
       first_name: String(data.get("first_name") ?? ""),
       email: String(data.get("email") ?? ""),
       phone: String(data.get("phone") ?? ""),
+      ...linkedinProfilePayload(linkedinProfileUrl),
       _source: "Pre-footer CTA",
       formType: "pre-footer-consultation",
       ...consentPayload(privacyConsent, professionalIntroductionConsent),
@@ -92,11 +106,47 @@ const ConsultationCTA = () => {
             </p>
           ) : (
             <>
-              <form onSubmit={handleSubmit} className="flex flex-col gap-3">
+              <form method="post" onSubmit={handleSubmit} className="flex flex-col gap-3">
                 <input type="hidden" name="_source" value="Pre-footer CTA" />
                 <input required name="first_name" placeholder="First name" style={inputStyle} />
                 <input required type="email" name="email" placeholder="Email" style={inputStyle} />
                 <input required type="tel" name="phone" placeholder="Phone number" style={inputStyle} />
+                <div className="flex flex-col gap-1.5 min-w-0">
+                  <label
+                    htmlFor={`${fieldId}-linkedin`}
+                    style={{
+                      fontFamily: "'Montserrat', sans-serif",
+                      fontSize: 13,
+                      color: "rgba(255,255,255,0.85)",
+                    }}
+                  >
+                    LinkedIn Profile URL (optional)
+                  </label>
+                  <input
+                    id={`${fieldId}-linkedin`}
+                    type="text"
+                    inputMode="url"
+                    name="linkedinProfileUrl"
+                    placeholder="https://www.linkedin.com/in/username"
+                    autoCapitalize="none"
+                    autoCorrect="off"
+                    spellCheck={false}
+                    aria-invalid={linkedinError ? true : undefined}
+                    aria-describedby={linkedinError ? `${fieldId}-linkedin-error` : undefined}
+                    onChange={() => setLinkedinError("")}
+                    style={inputStyle}
+                  />
+                  {linkedinError && (
+                    <p
+                      id={`${fieldId}-linkedin-error`}
+                      role="alert"
+                      className="text-destructive text-sm"
+                      style={{ fontFamily: "'Montserrat', sans-serif", lineHeight: 1.5 }}
+                    >
+                      {linkedinError}
+                    </p>
+                  )}
+                </div>
                 <ConsentCheckbox
                   id={`${fieldId}-privacy`}
                   name="privacyConsent"

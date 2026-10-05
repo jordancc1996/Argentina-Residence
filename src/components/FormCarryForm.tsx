@@ -13,12 +13,18 @@ import {
   consentPayload,
 } from "@/components/FormConsent";
 import { FORM_SUBMIT_ERROR, submitFormcarry } from "@/lib/formcarry";
+import {
+  isOptionalLinkedInProfileUrl,
+  LINKEDIN_PROFILE_URL_ERROR,
+  linkedinProfilePayload,
+} from "@/lib/linkedinProfileUrl";
 import { useId, useState } from "react";
 
 interface FormCarryData {
   name: string;
   workEmail: string;
   countryOfResidence: string;
+  linkedinProfileUrl?: string;
   formType: string;
   privacyConsent: boolean;
   professionalIntroductionConsent?: boolean;
@@ -47,6 +53,7 @@ const FormCarryForm = ({ formType, buttonText, title, description }: FormCarryFo
         name: data.name,
         workEmail: data.workEmail,
         countryOfResidence: data.countryOfResidence,
+        ...linkedinProfilePayload(data.linkedinProfileUrl),
         formType,
         ...consentPayload(
           data.privacyConsent,
@@ -101,8 +108,10 @@ const FormCarryForm = ({ formType, buttonText, title, description }: FormCarryFo
       </div>
       
       <form
+        method="post"
         onSubmit={handleSubmit(onSubmit, (formErrors) => {
-          if (formErrors.privacyConsent) setFocus("privacyConsent");
+          if (formErrors.linkedinProfileUrl) setFocus("linkedinProfileUrl");
+          else if (formErrors.privacyConsent) setFocus("privacyConsent");
           else if (formErrors.professionalIntroductionConsent) setFocus("professionalIntroductionConsent");
         })}
         className="space-y-6"
@@ -156,6 +165,30 @@ const FormCarryForm = ({ formType, buttonText, title, description }: FormCarryFo
           />
           {errors.countryOfResidence && (
             <p className="text-destructive text-sm mt-1">{errors.countryOfResidence.message}</p>
+          )}
+        </div>
+
+        <div>
+          <Label htmlFor={`${privacyId}-linkedin`} className="text-sm font-medium mb-2 block">
+            LinkedIn Profile URL (optional)
+          </Label>
+          <Input
+            id={`${privacyId}-linkedin`}
+            type="text"
+            inputMode="url"
+            autoCapitalize="none"
+            autoCorrect="off"
+            spellCheck={false}
+            placeholder="https://www.linkedin.com/in/username"
+            className="w-full min-w-0 max-w-full"
+            aria-invalid={errors.linkedinProfileUrl ? true : undefined}
+            {...register("linkedinProfileUrl", {
+              validate: (value) =>
+                isOptionalLinkedInProfileUrl(value) || LINKEDIN_PROFILE_URL_ERROR,
+            })}
+          />
+          {errors.linkedinProfileUrl && (
+            <p className="text-destructive text-sm mt-1">{errors.linkedinProfileUrl.message}</p>
           )}
         </div>
 

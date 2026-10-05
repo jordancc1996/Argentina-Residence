@@ -8,6 +8,11 @@ import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
 import { FORM_SUBMIT_ERROR, submitFormcarry } from "@/lib/formcarry";
 import {
+  isOptionalLinkedInProfileUrl,
+  LINKEDIN_PROFILE_URL_ERROR,
+  linkedinProfilePayload,
+} from "@/lib/linkedinProfileUrl";
+import {
   ConsentCheckbox,
   PRIVACY_CONSENT_ERROR,
   PrivacyConsentLabel,
@@ -27,6 +32,9 @@ const inquirySchema = z.object({
     .min(1, "Email is required")
     .email("Invalid email address"),
   us_immigration_status: z.string().min(1, "Current US immigration status is required"),
+  linkedinProfileUrl: z.string().refine((value) => isOptionalLinkedInProfileUrl(value), {
+    message: LINKEDIN_PROFILE_URL_ERROR,
+  }),
   privacyConsent: z.boolean().refine((value) => value === true, {
     message: PRIVACY_CONSENT_ERROR,
   }),
@@ -69,7 +77,11 @@ const InquiryCard = ({
     reset,
   } = useForm<InquiryFormData>({
     resolver: zodResolver(inquirySchema),
-    defaultValues: { privacyConsent: false, professionalIntroductionConsent: false },
+    defaultValues: {
+      linkedinProfileUrl: "",
+      privacyConsent: false,
+      professionalIntroductionConsent: false,
+    },
   });
 
   const onSubmit = async (data: InquiryFormData) => {
@@ -80,6 +92,7 @@ const InquiryCard = ({
         last_name: data.last_name,
         email: data.email,
         us_immigration_status: data.us_immigration_status,
+        ...linkedinProfilePayload(data.linkedinProfileUrl),
         "form-name": "inline-inquiry-us-immigration",
         formType: "inline-inquiry-us-immigration",
         ...consentPayload(data.privacyConsent, data.professionalIntroductionConsent),
@@ -140,8 +153,10 @@ const InquiryCard = ({
         </div>
       ) : (
         <form
+          method="post"
           onSubmit={handleSubmit(onSubmit, (formErrors) => {
-            if (formErrors.privacyConsent) setFocus("privacyConsent");
+            if (formErrors.linkedinProfileUrl) setFocus("linkedinProfileUrl");
+            else if (formErrors.privacyConsent) setFocus("privacyConsent");
           })}
           className="space-y-4"
           noValidate
@@ -232,6 +247,29 @@ const InquiryCard = ({
                 </p>
               )}
             </div>
+          </div>
+          <div className="min-w-0">
+            <label htmlFor={`${fieldId}-linkedin`} className="text-sm font-medium mb-2 block">
+              LinkedIn Profile URL (optional)
+            </label>
+            <Input
+              id={`${fieldId}-linkedin`}
+              type="text"
+              inputMode="url"
+              autoCapitalize="none"
+              autoCorrect="off"
+              spellCheck={false}
+              placeholder="https://www.linkedin.com/in/username"
+              className="w-full min-w-0 max-w-full"
+              aria-invalid={errors.linkedinProfileUrl ? true : undefined}
+              aria-describedby={errors.linkedinProfileUrl ? `${fieldId}-linkedin-error` : undefined}
+              {...register("linkedinProfileUrl")}
+            />
+            {errors.linkedinProfileUrl && (
+              <p id={`${fieldId}-linkedin-error`} className="text-destructive text-sm mt-1">
+                {errors.linkedinProfileUrl.message}
+              </p>
+            )}
           </div>
           <ConsentCheckbox
             id={`${fieldId}-privacy`}

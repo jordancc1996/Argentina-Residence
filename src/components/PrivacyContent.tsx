@@ -42,10 +42,10 @@ const PrivacyContent = () => {
                   <div>
                     <h3 className="text-white font-medium mb-2">Technical Information</h3>
                     <p className="leading-relaxed">
-                      We automatically collect certain technical information when you visit our website, 
-                      including IP addresses, browser types, device information, operating system, referring 
-                      URLs, pages viewed, and timestamps. This information is collected through cookies, 
-                      web beacons, and similar tracking technologies.
+                      If you allow analytics, Ahrefs Web Analytics receives a page-view beacon. That beacon
+                      can include the page address, referring address, page title, browser language, and
+                      screen size. The request can also include an IP address. This site stores your consent
+                      choice in a first-party cookie named ar_consent. Advertising pixels are not installed.
                     </p>
                   </div>
                 </div>
@@ -227,29 +227,33 @@ const PrivacyContent = () => {
               </h2>
               <div className="space-y-4">
                 <p className="leading-relaxed">
-                  Our website uses cookies and similar tracking technologies to enhance your browsing 
-                  experience and analyze website traffic. Cookies are small text files stored on your 
-                  device that help us:
+                  This site asks you to choose before non-essential analytics runs. The choice is stored
+                  in a first-party cookie named ar_consent. That cookie records whether analytics and
+                  marketing are allowed. Necessary storage for this choice is not optional, because the
+                  site needs it to remember what you selected.
                 </p>
                 <ul className="pl-6 space-y-3 list-disc list-inside">
                   <li className="leading-relaxed">
-                    Remember your preferences and settings
+                    Necessary: the ar_consent cookie. It lasts 180 days.
                   </li>
                   <li className="leading-relaxed">
-                    Understand how visitors use our website
+                    Analytics: Ahrefs Web Analytics. The script at analytics.ahrefs.com loads only after
+                    you allow analytics, including when you choose Accept all. It sends a beacon for page
+                    views and on-site clicks. Decline, or analytics left off in Customize, means that
+                    script does not load.
                   </li>
                   <li className="leading-relaxed">
-                    Improve website performance and functionality
+                    Marketing: this category is saved for future advertising measurement. No advertising
+                    tag is installed.
                   </li>
                   <li className="leading-relaxed">
-                    Deliver relevant content and advertisements
+                    Google Preferred Sources: the page loads news.google.com/swg/js/v1/publisher.js so the
+                    preferred-source button can appear. That script is separate from the analytics choice.
                   </li>
                 </ul>
                 <p className="leading-relaxed mt-6">
-                  You can control cookie settings through your browser preferences. Most browsers allow 
-                  you to refuse cookies or delete existing cookies. However, disabling cookies may affect 
-                  your ability to use certain features of our website. For more information about cookies 
-                  and how to manage them, visit your browser's help section.
+                  Use Cookie preferences in the page footer to change your choice. You can also block or
+                  delete cookies in your browser. Blocking ar_consent makes the choice banner appear again.
                 </p>
               </div>
             </section>

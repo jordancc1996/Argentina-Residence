@@ -9,6 +9,11 @@ import { CheckCircle, ArrowRight, Clock, Shield } from "lucide-react";
 import eligibilityBackground from "@/assets/argentina-golden-visa-eligibility.webp";
 import { FORM_SUBMIT_ERROR, submitFormcarry } from "@/lib/formcarry";
 import {
+  isOptionalLinkedInProfileUrl,
+  LINKEDIN_PROFILE_URL_ERROR,
+  linkedinProfilePayload,
+} from "@/lib/linkedinProfileUrl";
+import {
   ConsentCheckbox,
   PRIVACY_CONSENT_ERROR,
   PrivacyConsentLabel,
@@ -30,6 +35,7 @@ interface FormData {
   email: string;
   phone: string;
   country: string;
+  linkedinProfileUrl: string;
   privacyConsent: boolean;
 }
 
@@ -44,12 +50,14 @@ const InvestorEligibilityContent = () => {
     email: "",
     phone: "",
     country: "",
+    linkedinProfileUrl: "",
     privacyConsent: false,
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isComplete, setIsComplete] = useState(false);
   const [submitError, setSubmitError] = useState("");
   const [privacyError, setPrivacyError] = useState("");
+  const [linkedinError, setLinkedinError] = useState("");
 
   const readinessFit = formData.timeline === "0-6months" ? "near-term conversation" : "monitoring";
 
@@ -67,11 +75,17 @@ const InvestorEligibilityContent = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!isOptionalLinkedInProfileUrl(formData.linkedinProfileUrl)) {
+      setLinkedinError(LINKEDIN_PROFILE_URL_ERROR);
+      document.getElementById("linkedinProfileUrl")?.focus();
+      return;
+    }
     if (!formData.privacyConsent) {
       setPrivacyError(PRIVACY_CONSENT_ERROR);
       document.getElementById("eligibility-privacy")?.focus();
       return;
     }
+    setLinkedinError("");
     setPrivacyError("");
     setIsSubmitting(true);
     
@@ -85,6 +99,7 @@ const InvestorEligibilityContent = () => {
       email: formData.email,
       phone: formData.phone,
       country: formData.country,
+      ...linkedinProfilePayload(formData.linkedinProfileUrl),
       readinessFit,
       source: "Investment Readiness Tool",
       submittedAt: new Date().toISOString(),
@@ -221,7 +236,7 @@ const InvestorEligibilityContent = () => {
             </div>
           </div>
           
-          <form onSubmit={handleSubmit}>
+          <form method="post" onSubmit={handleSubmit}>
             {/* Step 1: Investment Budget */}
             {step === 1 && (
               <div className="space-y-8">
@@ -491,6 +506,32 @@ const InvestorEligibilityContent = () => {
                       required
                     />
                   </div>
+                </div>
+
+                <div className="space-y-2 min-w-0">
+                  <Label htmlFor="linkedinProfileUrl">LinkedIn Profile URL (optional)</Label>
+                  <Input
+                    id="linkedinProfileUrl"
+                    type="text"
+                    inputMode="url"
+                    autoCapitalize="none"
+                    autoCorrect="off"
+                    spellCheck={false}
+                    placeholder="https://www.linkedin.com/in/username"
+                    value={formData.linkedinProfileUrl}
+                    onChange={(e) => {
+                      setFormData({ ...formData, linkedinProfileUrl: e.target.value });
+                      setLinkedinError("");
+                    }}
+                    aria-invalid={linkedinError ? true : undefined}
+                    aria-describedby={linkedinError ? "linkedinProfileUrl-error" : undefined}
+                    className="w-full min-w-0 max-w-full"
+                  />
+                  {linkedinError && (
+                    <p id="linkedinProfileUrl-error" className="text-destructive text-sm mt-1" role="alert">
+                      {linkedinError}
+                    </p>
+                  )}
                 </div>
                 
                 <ConsentCheckbox

@@ -136,6 +136,10 @@ const Footer = () => {
                 Privacy Policy
               </a>
               <span className="text-muted-foreground">|</span>
+              <button type="button" data-open-consent className="text-muted-foreground hover:text-foreground/70 transition-colors">
+                Cookie preferences
+              </button>
+              <span className="text-muted-foreground">|</span>
               <a href="/compliance#terms" className="text-muted-foreground hover:text-foreground/70 transition-colors">
                 Terms of Service
               </a>

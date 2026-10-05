@@ -8,6 +8,7 @@ import ConsultationCTA from '../components/ConsultationCTA';
 import Footer from '../components/Footer';
 import FloatingAdvisorCTA from '../components/FloatingAdvisorCTA';
 import PreferredSourcesCTA from '../components/PreferredSourcesCTA.astro';
+import ConsentBanner from '../components/ConsentBanner';
 
 interface Props {
 	showBreadcrumbs?: boolean;
@@ -51,7 +52,21 @@ const guides = [...guideEntries]
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
-		<script src="https://analytics.ahrefs.com/analytics.js" data-key="U5p3QWN6cwWml7hdiLpW7g" async></script>
+		<script is:inline>
+			(function () {
+				var match = document.cookie.match(/(?:^|; )ar_consent=([^;]*)/);
+				if (!match) return;
+				var choice;
+				try { choice = JSON.parse(decodeURIComponent(match[1])); } catch (e) { return; }
+				if (!choice || choice.v !== 1 || choice.analytics !== true) return;
+				if (document.querySelector('script[src="https://analytics.ahrefs.com/analytics.js"]')) return;
+				var script = document.createElement("script");
+				script.src = "https://analytics.ahrefs.com/analytics.js";
+				script.async = true;
+				script.setAttribute("data-key", "U5p3QWN6cwWml7hdiLpW7g");
+				document.head.appendChild(script);
+			})();
+		</script>
 		<script is:inline async src="https://news.google.com/swg/js/v1/publisher.js"></script>
 		<slot name="head" />
 		{schema && <script type="application/ld+json" set:html={JSON.stringify(schema)} />}
@@ -70,6 +85,15 @@ const guides = [...guideEntries]
 			{showChrome && <Footer />}
 			{showChrome && <FloatingAdvisorCTA client:load />}
 		</div>
+		<ConsentBanner client:load />
+		<script is:inline>
+			document.addEventListener("click", function (event) {
+				var target = event.target;
+				if (!target || !target.closest || !target.closest("[data-open-consent]")) return;
+				event.preventDefault();
+				window.dispatchEvent(new CustomEvent("ar:open-consent"));
+			});
+		</script>
 		<Toaster client:load />
 	</body>
 </html>

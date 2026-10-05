@@ -114,6 +114,7 @@ const NewsletterSignup = ({
         </p>
       ) : (
         <form
+          method="post"
           onSubmit={handleSubmit(onSubmit, (formErrors) => {
             if (formErrors.privacyConsent) setFocus("privacyConsent");
           })}

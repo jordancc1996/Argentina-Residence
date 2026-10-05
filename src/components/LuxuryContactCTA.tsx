@@ -1,7 +1,14 @@
 import { useId, useState } from "react";
 import { ArrowRight, ChevronDown } from "lucide-react";
+import Hero from "@/components/Hero";
+import waitlistHero from "@/assets/argentina-residence-argentina-golden-visa.webp";
 import { useToast } from "@/hooks/use-toast";
 import { FORM_SUBMIT_ERROR, submitFormcarry } from "@/lib/formcarry";
+import {
+  isOptionalLinkedInProfileUrl,
+  LINKEDIN_PROFILE_URL_ERROR,
+  linkedinProfilePayload,
+} from "@/lib/linkedinProfileUrl";
 import {
   ConsentCheckbox,
   PRIVACY_CONSENT_ERROR,
@@ -36,6 +43,9 @@ const investmentInterests = [
   "Not Sure Yet, Need Guidance",
 ];
 
+const waitlistHeroSrc =
+  typeof waitlistHero === "string" ? waitlistHero : waitlistHero.src;
+
 const fieldLabelClass = "mb-3 block text-base font-medium leading-snug text-foreground";
 
 const fieldClass =
@@ -46,12 +56,14 @@ const LuxuryContactCTA = () => {
   const fieldId = useId();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [privacyError, setPrivacyError] = useState("");
+  const [linkedinError, setLinkedinError] = useState("");
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
     email: "",
     countryCode: "+1",
     phone: "",
+    linkedinProfileUrl: "",
     relocateIntent: "",
     goldenVisaProgram: "",
     privacyConsent: false,
@@ -65,7 +77,13 @@ const LuxuryContactCTA = () => {
       document.getElementById(`${fieldId}-privacy`)?.focus();
       return;
     }
+    if (!isOptionalLinkedInProfileUrl(formData.linkedinProfileUrl)) {
+      setLinkedinError(LINKEDIN_PROFILE_URL_ERROR);
+      document.getElementById(`${fieldId}-linkedin`)?.focus();
+      return;
+    }
     setPrivacyError("");
+    setLinkedinError("");
     setIsSubmitting(true);
 
     try {
@@ -75,6 +93,7 @@ const LuxuryContactCTA = () => {
         email: formData.email,
         countryCode: formData.countryCode,
         phone: `${formData.countryCode} ${formData.phone}`,
+        ...linkedinProfilePayload(formData.linkedinProfileUrl),
         relocateIntent: formData.relocateIntent,
         goldenVisaProgram: formData.goldenVisaProgram,
         formType: "waitlist-contact",
@@ -97,6 +116,7 @@ const LuxuryContactCTA = () => {
           email: "",
           countryCode: "+1",
           phone: "",
+          linkedinProfileUrl: "",
           relocateIntent: "",
           goldenVisaProgram: "",
           privacyConsent: false,
@@ -123,19 +143,21 @@ const LuxuryContactCTA = () => {
       ...formData,
       [e.target.name]: e.target.value,
     });
+    if (e.target.name === "linkedinProfileUrl") setLinkedinError("");
   };
 
   return (
+    <>
+    <Hero
+      title="JOIN THE WAITLIST"
+      subtitle="Join the Argentina Residence waitlist to receive program updates and discuss your plans with our team. Government applications are not confirmed open. Joining this waitlist does not file a government application, reserve a place, or confirm eligibility or citizenship."
+      backgroundImage={waitlistHeroSrc}
+      imageAlt="Argentine flag on a pole with mountains behind it"
+      imageClassName="object-[center_42%] md:object-[center_50%] lg:object-[center_54%] xl:object-[center_68%]"
+    />
     <section className="bg-background text-foreground">
-      <div className="mx-auto w-full max-w-4xl px-6 pb-24 pt-28 md:px-8 md:pb-32 md:pt-32">
-        <h1 className="mb-6 font-serif text-4xl leading-tight text-foreground md:text-5xl">
-          JOIN THE WAITLIST
-        </h1>
-        <p className="mb-12 max-w-3xl text-lg leading-relaxed text-foreground">
-          Join the Argentina Residence waitlist to receive program updates and discuss your plans with our team. Government applications are not confirmed open. Joining this waitlist does not file a government application, reserve a place, or confirm eligibility or citizenship.
-        </p>
-
-        <form data-md-exclude onSubmit={handleSubmit} className="space-y-8">
+      <div className="mx-auto w-full max-w-4xl px-6 pb-24 pt-20 md:px-8 md:pb-32 md:pt-32">
+        <form data-md-exclude method="post" onSubmit={handleSubmit} className="space-y-8">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
             <div>
               <label htmlFor={`${fieldId}-firstName`} className={fieldLabelClass}>
@@ -218,6 +240,32 @@ const LuxuryContactCTA = () => {
                 />
               </div>
             </div>
+          </div>
+
+          <div className="min-w-0">
+            <label htmlFor={`${fieldId}-linkedin`} className={fieldLabelClass}>
+              LinkedIn Profile URL (optional)
+            </label>
+            <input
+              type="text"
+              inputMode="url"
+              id={`${fieldId}-linkedin`}
+              name="linkedinProfileUrl"
+              value={formData.linkedinProfileUrl}
+              onChange={handleChange}
+              autoCapitalize="none"
+              autoCorrect="off"
+              spellCheck={false}
+              placeholder="https://www.linkedin.com/in/username"
+              aria-invalid={linkedinError ? true : undefined}
+              aria-describedby={linkedinError ? `${fieldId}-linkedin-error` : undefined}
+              className={`${fieldClass} min-w-0 max-w-full`}
+            />
+            {linkedinError && (
+              <p id={`${fieldId}-linkedin-error`} className="text-destructive text-sm mt-2" role="alert">
+                {linkedinError}
+              </p>
+            )}
           </div>
 
           <div>
@@ -319,6 +367,7 @@ const LuxuryContactCTA = () => {
         </form>
       </div>
     </section>
+    </>
   );
 };
 

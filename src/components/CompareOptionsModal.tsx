@@ -16,6 +16,11 @@ import {
 import { useToast } from "@/hooks/use-toast";
 import { FORM_SUBMIT_ERROR, submitFormcarry } from "@/lib/formcarry";
 import {
+  isOptionalLinkedInProfileUrl,
+  LINKEDIN_PROFILE_URL_ERROR,
+  linkedinProfilePayload,
+} from "@/lib/linkedinProfileUrl";
+import {
   ConsentCheckbox,
   PRIVACY_CONSENT_ERROR,
   PROFESSIONAL_CONSENT_ERROR,
@@ -34,6 +39,9 @@ const compareOptionsSchema = z.object({
     .min(1, "Email is required")
     .email("Invalid email address"),
   phone: z.string().optional(),
+  linkedinProfileUrl: z.string().refine((value) => isOptionalLinkedInProfileUrl(value), {
+    message: LINKEDIN_PROFILE_URL_ERROR,
+  }),
   message: z.string().optional(),
   privacyConsent: z.boolean().refine((value) => value === true, {
     message: PRIVACY_CONSENT_ERROR,
@@ -81,6 +89,7 @@ const CompareOptionsModal = ({
     resolver: zodResolver(compareOptionsSchema),
     defaultValues: {
       phone: "",
+      linkedinProfileUrl: "",
       message: "",
       privacyConsent: false,
       professionalIntroductionConsent: false,
@@ -95,6 +104,7 @@ const CompareOptionsModal = ({
         last_name: data.last_name,
         email: data.email,
         phone: data.phone ?? "",
+        ...linkedinProfilePayload(data.linkedinProfileUrl),
         message: data.message ?? "",
         "form-name": "compare-options-inquiry",
         formType: "compare-options-inquiry",
@@ -147,8 +157,10 @@ const CompareOptionsModal = ({
           </DialogDescription>
         </DialogHeader>
         <form
+          method="post"
           onSubmit={handleSubmit(onSubmit, (formErrors) => {
-            if (formErrors.privacyConsent) setFocus("privacyConsent");
+            if (formErrors.linkedinProfileUrl) setFocus("linkedinProfileUrl");
+            else if (formErrors.privacyConsent) setFocus("privacyConsent");
             else if (formErrors.professionalIntroductionConsent) {
               setFocus("professionalIntroductionConsent");
             }
@@ -209,6 +221,26 @@ const CompareOptionsModal = ({
               placeholder="+1 201-555-0123"
               {...register("phone")}
             />
+          </div>
+          <div className="min-w-0">
+            <Label htmlFor={`${fieldId}-linkedin`} className="text-sm font-medium mb-2 block">
+              LinkedIn Profile URL (optional)
+            </Label>
+            <Input
+              id={`${fieldId}-linkedin`}
+              type="text"
+              inputMode="url"
+              autoCapitalize="none"
+              autoCorrect="off"
+              spellCheck={false}
+              placeholder="https://www.linkedin.com/in/username"
+              className="w-full min-w-0 max-w-full"
+              aria-invalid={errors.linkedinProfileUrl ? true : undefined}
+              {...register("linkedinProfileUrl")}
+            />
+            {errors.linkedinProfileUrl && (
+              <p className="text-destructive text-sm mt-1">{errors.linkedinProfileUrl.message}</p>
+            )}
           </div>
           <div>
             <Label htmlFor={`${fieldId}-message`} className="text-sm font-medium mb-2 block">

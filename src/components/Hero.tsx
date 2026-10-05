@@ -24,6 +24,8 @@ interface HeroProps {
   eyebrow?: string;
   meta?: string;
   imagePosition?: string;
+  /** Breakpoint-specific object-position classes. Used when one position crops a portrait source poorly. */
+  imageClassName?: string;
 }
 
 const resolveHeroSrc = (image: HeroImageSrc) =>
@@ -47,6 +49,7 @@ const Hero = ({
   eyebrow,
   meta,
   imagePosition,
+  imageClassName,
 }: HeroProps) => {
   const parallaxY = useParallax(-0.3);
   const opacity = useScrollOpacity(600);
@@ -63,7 +66,7 @@ const Hero = ({
           <img
             src={backgroundSrc}
             alt={imageAlt}
-            className="w-full h-full object-cover"
+            className={`w-full h-full object-cover${imageClassName ? ` ${imageClassName}` : ""}`}
             style={imagePosition ? { objectPosition: imagePosition } : undefined}
           />
         ) : (
