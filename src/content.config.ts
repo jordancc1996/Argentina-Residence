@@ -59,6 +59,7 @@ const industryNews = defineCollection({
     source: z.string().optional(),
     image: z.string().optional(),
     imageAlt: z.string().optional(),
+    imagePending: z.boolean().optional(),
     relatedSlugs: z.array(z.string()).max(5).optional(),
   }),
 });

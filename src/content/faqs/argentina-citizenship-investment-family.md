@@ -1,12 +1,12 @@
 ---
 slug: argentina-citizenship-investment-family
-question: Argentina Residency Family Members - Spouse and Dependents
+question: Argentina Citizenship by Investment Family Members
 answer: "The October 2, 2026 announcement states an additional $100,000 Treasury contribution for a spouse, $100,000 for a qualifying child age 18 to 25, and $25,000 for a child under 18. Those amounts are not automatic eligibility."
-metaTitle: "Argentina Residency Family Members - Spouse and Dependents | Argentina Residence"
-metaDescription: "Argentina residency family members: October 2, 2026 announced $100,000 for a spouse, $100,000 for a qualifying child 18 to 25, and $25,000 under 18."
+metaTitle: "Argentina Citizenship by Investment Family Members | Argentina Residence"
+metaDescription: "Argentina Citizenship by Investment Family Members: October 2, 2026 announced $100,000 for a spouse, $100,000 for a child 18 to 25, and $25,000 under 18."
 ---
 
-# Argentina Residency Family Members - Spouse and Dependents
+# Argentina Citizenship by Investment Family Members
 
 The October 2, 2026 announcement states additional National Treasury contributions for some family members of a principal applicant. The investment-naturalization provision remains distinct from temporary or permanent residence. Decree 524/2025 itself does not set these family figures.
 

@@ -30,7 +30,7 @@ const MarketInsightsContent = () => {
               </a>
             </h3>
             <p className="text-body text-text-secondary tracking-wide">
-              The longer note on fiscal policy, sectors, and how the anticipated Golden Visa is discussed as capital policy. Launch timing is not confirmed there.
+              The longer note on fiscal policy, sectors, and how the announced citizenship-by-investment framework is discussed as capital policy. Launch timing is not confirmed there.
             </p>
           </div>
           <div className="border-l-2 border-gold pl-6">

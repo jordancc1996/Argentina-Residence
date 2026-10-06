@@ -28,7 +28,7 @@ const FAQHubContent = ({ faqs }: { faqs: FAQHubItem[] }) => {
             Argentina Residency FAQ
           </h1>
           <p className="text-editorial mb-12 tracking-wide text-white/90 drop-shadow-md">
-            Common questions about Argentina's residency by investment program
+            Common questions about Argentina's citizenship-by-investment framework
           </p>
         </div>
       </EditorialSection>

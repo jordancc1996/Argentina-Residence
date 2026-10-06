@@ -22,6 +22,7 @@ interface IndustryNewsArticleContentProps {
   source?: string;
   image?: string;
   imageAlt?: string;
+  imagePending?: boolean;
   related: RelatedNewsArticle[];
   faqPath?: string;
   reviewedAt?: string;
@@ -34,6 +35,7 @@ const IndustryNewsArticleContent = ({
   source,
   image,
   imageAlt,
+  imagePending = false,
   related,
   faqPath,
   reviewedAt,
@@ -43,7 +45,7 @@ const IndustryNewsArticleContent = ({
 
   return (
     <div>
-      {image && (
+      {image ? (
         <section className="relative min-h-[50vh] overflow-hidden -mt-[72px] pt-[72px] md:-mt-[88px] md:pt-[88px]">
           <motion.div
             className="absolute inset-0 z-0 scale-110"
@@ -59,9 +61,14 @@ const IndustryNewsArticleContent = ({
             <div className="absolute inset-0 bg-black/50" />
           </motion.div>
         </section>
-      )}
+      ) : imagePending ? (
+        <section
+          className="relative min-h-[50vh] overflow-hidden -mt-[72px] pt-[72px] md:-mt-[88px] md:pt-[88px] bg-secondary"
+          aria-hidden="true"
+        />
+      ) : null}
 
-      <div className={image ? "pt-10 pb-16 md:pt-16 md:pb-24" : "section-padding"}>
+      <div className={image || imagePending ? "pt-10 pb-16 md:pt-16 md:pb-24" : "section-padding"}>
         <article className="max-w-4xl mx-auto px-4 md:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

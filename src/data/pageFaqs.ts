@@ -333,22 +333,22 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
 
   "/guides/argentina-golden-visa-program": [
     {
-      question: "Is the Argentina Golden Visa accepting applications in 2026?",
+      question: "Are Argentina citizenship-by-investment applications open in 2026?",
       answer:
         "Do not treat the pathway as an open application program. DNU 366/2025 created APCI within the amended citizenship framework. Decree 524/2025 subsequently established a basic application and review procedure involving APCI. It did not create APCI, and it did not by itself confirm that applications are being accepted.",
     },
     {
-      question: "Does Decree 524/2025 set the Argentina Golden Visa investment amount?",
+      question: "Does Decree 524/2025 set the citizenship-by-investment amount?",
       answer:
         "No. The October 2, 2026 announcement states a $350,000 National Treasury contribution or an $800,000 public-bond subscription. Government applications are not yet confirmed as open. They do not establish that real estate, a business, or a fund qualifies or disqualifies. See [investment requirements](/faq/argentina-citizenship-investment-requirements).",
     },
     {
-      question: "Does buying Buenos Aires real estate qualify for the Argentina Golden Visa?",
+      question: "Does buying Buenos Aires real estate qualify for Argentina citizenship by investment?",
       answer:
         "The decrees do not identify real estate as a qualifying or disqualifying investment. A property purchase is a separate transaction. See [Argentina real estate investment](/guides/argentina-real-estate-investment).",
     },
     {
-      question: "Has Argentina confirmed a Golden Visa processing time?",
+      question: "Has Argentina confirmed a citizenship-by-investment processing time?",
       answer:
         "No total processing time has been published. Decree 524/2025 gives DNM 30 business days to decide after DNM receives APCI's report. That period is not 30 days from the application, and it is not a guaranteed overall processing time. See [application process timeline](/faq/argentina-citizenship-investment-application-timeline).",
     },
@@ -361,12 +361,12 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
 
   "/guides/argentina-real-estate-investment": [
     {
-      question: "Does buying property in Argentina grant Golden Visa eligibility?",
+      question: "Does buying property in Argentina qualify for citizenship by investment?",
       answer:
-        "No. Owning property in Argentina does not itself grant Golden Visa eligibility. This guide covers Buenos Aires property types and neighborhoods for buyers interested in the market on its own terms, independent of residency by investment.",
+        "No. Owning property in Argentina does not itself qualify for the announced citizenship-by-investment routes. This guide covers Buenos Aires property types and neighborhoods for buyers interested in the market on its own terms.",
     },
     {
-      question: "Can I buy Argentine property now if the Golden Visa is not open?",
+      question: "Can I buy Argentine property now if citizenship-by-investment applications are not open?",
       answer:
         "Property purchases are a separate market decision from the announced Treasury contribution and public-bond routes. This page does not treat a closing as an APCI application. Confirm title, tax, and foreign-buyer rules with qualified counsel in Argentina.",
     },
@@ -405,15 +405,15 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "Can Argentine citizens apply for a US E-2 visa?",
       answer:
-        "This page states that Argentina holds a treaty of commerce and navigation with the United States, and that Argentine citizens can apply for an E-2 visa to live and run a business in the United States. That is a US immigration process, not an Argentine Golden Visa filing. The pathway should not be treated as an open application program.",
+        "This page states that Argentina holds a treaty of commerce and navigation with the United States, and that Argentine citizens can apply for an E-2 visa to live and run a business in the United States. That is a US immigration process, not an Argentine citizenship-by-investment filing. The pathway should not be treated as an open application program.",
     },
   ],
 
   "/research/american-dream-argentina-golden-visa-solution": [
     {
-      question: "Is the Argentina Golden Visa a substitute for the cost of living in the United States?",
+      question: "Is Argentina citizenship by investment a substitute for the cost of living in the United States?",
       answer:
-        "The US lifestyle figures on this page are not APCI filing fees. The announced Golden Visa terms are a planning reference, not a live application. It is not a cost-of-living calculator and not a promise that Argentine residency will replicate a US standard of living at a fixed price.",
+        "The US lifestyle figures on this page are not APCI filing fees. The announced citizenship-by-investment terms are a planning reference, not a live application. It is not a cost-of-living calculator and not a promise that Argentine residency will replicate a US standard of living at a fixed price.",
     },
     ...cbiFaqs("cost", "familyOfFour", "tax", "residence", "ordinary"),
   ],
@@ -426,9 +426,9 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
 
   "/research/buenos-aires-real-estate-bull-market-analysis": [
     {
-      question: "Are Palermo, Recoleta, and Monserrat Golden Visa zones?",
+      question: "Are Palermo, Recoleta, and Monserrat citizenship-by-investment property zones?",
       answer:
-        "No. Those names are neighborhood market illustrations on this page. Argentina does not publish location-tiered Golden Visa property bands on this site the way Greece does.",
+        "No. Those names are neighborhood market illustrations on this page. Argentina does not publish location-tiered property bands the way the Greece Golden Visa does.",
     },
     ...cbiFaqs("realEstate", "bond"),
   ],
@@ -468,7 +468,7 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
 
   "/industry-news/buenos-aires-foreign-buyer-activity-q1": [
     {
-      question: "Does higher Q1 foreign-buyer activity mean the Golden Visa launched?",
+      question: "Does higher Q1 foreign-buyer activity mean citizenship-by-investment applications are open?",
       answer:
         "No. Foreign-buyer activity in Buenos Aires real estate is a property-market observation. It is not an APCI announcement that citizenship-by-investment applications are open.",
     },
@@ -476,7 +476,7 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "Should this report be used as a price forecast?",
       answer:
-        "No. It reports a period of buyer activity. It does not publish a guaranteed appreciation rate or a Golden Visa price list.",
+        "No. It reports a period of buyer activity. It does not publish a guaranteed appreciation rate or a citizenship-by-investment price list.",
     },
   ],
 
@@ -502,18 +502,18 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
     {
       question: "Is Argentina Residence a government agency or APCI office?",
       answer:
-        "No. This website provides educational content only and is not affiliated with any government agency. Argentina Residence advises on Argentine residency by investment. It does not operate the government program.",
+        "No. This website provides educational content only and is not affiliated with any government agency. Argentina Residence advises on Argentine citizenship by investment. It does not operate the government program.",
     },
     {
       question: "Where should I read program mechanics rather than firm background?",
       answer:
-        "Use the [Argentina Golden Visa Program](/guides/argentina-golden-visa-program) guide and the [program](/program) page for structure and status. Use this About page for who the office is.",
+        "Use the [citizenship-by-investment guide](/guides/argentina-golden-visa-program) and the [program](/program) page for structure and status. Use this About page for who the office is.",
     },
   ],
 
   "/market-insights": [
     {
-      question: "Are Argentina investment trends the same as Golden Visa eligibility?",
+      question: "Are Argentina investment trends the same as citizenship-by-investment eligibility?",
       answer:
         "No. This page is market and economic context. The decrees do not identify sector or real-estate exposure as a qualifying or disqualifying investment. See [investment requirements](/faq/argentina-citizenship-investment-requirements).",
     },
@@ -531,7 +531,7 @@ const faqsByPath: Record<string, PageFaqItem[]> = {
         "No. The compliance page states that information is for informational purposes and does not constitute legal, tax, or investment advice. Prospective investors should consult qualified counsel before any investment or residency decision.",
     },
     {
-      question: "Are past program conditions a guarantee of future Argentina Golden Visa terms?",
+      question: "Are past program conditions a guarantee of future citizenship-by-investment terms?",
       answer:
         "No. The disclosure states that past program conditions are not indicative of future availability or terms. The pathway should not be treated as an open application program.",
     },

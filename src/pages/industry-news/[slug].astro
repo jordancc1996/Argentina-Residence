@@ -1,5 +1,5 @@
 ---
-import { absoluteSocialUrl, socialPreviewFor } from '../../data/socialPreviews';
+import { absoluteSocialUrl, dedicatedSocialPreview, socialPreviewFor } from '../../data/socialPreviews';
 import { getCollection, render } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import IndustryNewsArticleContent from '../../components/IndustryNewsArticleContent';
@@ -38,9 +38,10 @@ const data = article.data;
 const title = `${data.title} | Argentina Residence`;
 const description = data.summary;
 const canonical = `https://argentinaresidence.com/industry-news/${data.slug}`;
-const social = socialPreviewFor(`/industry-news/${data.slug}`);
-const ogImage = absoluteSocialUrl(social);
-const articleImage = ogImage;
+const dedicated = dedicatedSocialPreview(`/industry-news/${data.slug}`);
+const omitStandInImage = Boolean(data.imagePending) && !dedicated && !data.image;
+const social = omitStandInImage ? undefined : socialPreviewFor(`/industry-news/${data.slug}`);
+const ogImage = social ? absoluteSocialUrl(social) : undefined;
 const faqPath = `/industry-news/${data.slug}`;
 const schema = {
   "@context": "https://schema.org",
@@ -61,7 +62,7 @@ const schema = {
       "height": 60
     }
   },
-  "image": articleImage,
+  ...(ogImage ? { "image": ogImage } : {}),
   "url": canonical,
   "mainEntityOfPage": {
     "@type": "WebPage",
@@ -80,15 +81,19 @@ const schema = {
 	<meta slot="head" property="og:title" content={title} />
 	<meta slot="head" property="og:description" content={description} />
 	<meta slot="head" property="og:url" content={canonical} />
-	<meta slot="head" property="og:image" content={ogImage} />
-	<meta slot="head" property="og:image:width" content={String(social.width)} />
-	<meta slot="head" property="og:image:height" content={String(social.height)} />
-	<meta slot="head" property="og:image:alt" content={social.alt} />
+	{social && ogImage && (
+		<>
+			<meta slot="head" property="og:image" content={ogImage} />
+			<meta slot="head" property="og:image:width" content={String(social.width)} />
+			<meta slot="head" property="og:image:height" content={String(social.height)} />
+			<meta slot="head" property="og:image:alt" content={social.alt} />
+		</>
+	)}
 	<meta slot="head" property="og:locale" content="en_US" />
-	<meta slot="head" name="twitter:card" content="summary_large_image" />
+	<meta slot="head" name="twitter:card" content={ogImage ? "summary_large_image" : "summary"} />
 	<meta slot="head" name="twitter:title" content={title} />
 	<meta slot="head" name="twitter:description" content={description} />
-	<meta slot="head" name="twitter:image" content={ogImage} />
+	{ogImage && <meta slot="head" name="twitter:image" content={ogImage} />}
 	<script slot="head" type="application/ld+json" set:html={JSON.stringify(schema)} />
 	<IndustryNewsArticleContent
 		client:load
@@ -97,6 +102,7 @@ const schema = {
 		source={data.source}
 		image={data.image}
 		imageAlt={data.imageAlt}
+		imagePending={data.imagePending}
 		related={related}
 		faqPath={faqPath}
 		reviewedAt={reviewDateFor(`/industry-news/${data.slug}`)}

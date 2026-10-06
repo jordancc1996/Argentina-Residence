@@ -8,7 +8,13 @@ interface BreadcrumbItem {
 const routeLabels: Record<string, string> = {
   '': 'Home',
   'about': 'About Argentina',
-  'program': 'Residency Program',
+  'what-is-argentina-golden-visa': 'What Is Argentina Citizenship by Investment',
+  'argentina-golden-visa-program': 'Citizenship-by-Investment Guide',
+  'argentina-golden-visa-eligibility-checker': 'Citizenship-by-Investment Readiness',
+  'argentina-golden-visa-american-investors-2026': '2026 for American Investors',
+  'american-dream-argentina-golden-visa-solution': 'American Dream Comparison',
+  'argentine-investment-landscape-golden-visa-value-proposition': 'Investment Landscape',
+  'program': 'Program Overview',
   'faq': 'FAQ',
   'blog': 'Blog',
   'research': 'Research',
@@ -18,7 +24,6 @@ const routeLabels: Record<string, string> = {
   'market-insights': 'Market Insights',
   'contact': 'Contact',
   'privacy': 'Privacy Policy',
-  'what-is-argentina-golden-visa': 'What is Argentina Golden Visa',
   'investment-requirements': 'Investment Requirements',
   'application-process-timeline': 'Application Timeline',
   'residency-requirements': 'Residency Requirements',
@@ -28,6 +33,7 @@ const routeLabels: Record<string, string> = {
   'tax-implications': 'Tax Implications',
   'visa-free-travel': 'Visa-Free Travel',
   'maintain-residency-status': 'Maintain Residency',
+  'argentina-350000-citizenship-investment-program': 'The Argentina $350,000 Citizenship Investment Program',
 };
 
 function buildBreadcrumbs(currentPath: string): BreadcrumbItem[] | null {

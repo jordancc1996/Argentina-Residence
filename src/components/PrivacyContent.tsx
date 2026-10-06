@@ -63,7 +63,7 @@ const PrivacyContent = () => {
                 </p>
                 <ul className="pl-6 space-y-3 list-disc list-inside">
                   <li className="leading-relaxed">
-                    To process and respond to your inquiries about Argentina's Golden Visa program
+                    To process and respond to your inquiries about Argentina's citizenship-by-investment program
                   </li>
                   <li className="leading-relaxed">
                     To provide you with information, resources, and updates about Argentina residency programs
@@ -79,7 +79,7 @@ const PrivacyContent = () => {
                   </li>
                   <li className="leading-relaxed">
                     To send you relevant updates, guides, checklists, and educational content about 
-                    Argentina's residency by investment program
+                    Argentina's citizenship-by-investment program
                   </li>
                   <li className="leading-relaxed">
                     To comply with legal obligations and protect our rights

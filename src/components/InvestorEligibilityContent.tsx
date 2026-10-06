@@ -193,7 +193,7 @@ const InvestorEligibilityContent = () => {
   return (
     <>
       <Hero
-        title="Argentina Golden Visa Investment Readiness"
+        title="Argentina Citizenship by Investment Readiness"
         subtitle="A private readiness check. It is not a government eligibility determination. Government applications are not yet confirmed as open."
         backgroundImage={eligibilityBackground}
         imageAlt="Snow-capped volcano over an Andean desert landscape"
@@ -603,7 +603,7 @@ const InvestorEligibilityContent = () => {
               Program Details
             </h3>
             <p className="text-sm text-text-secondary">
-              Complete guide to Argentina's Golden Visa program and requirements.
+              The citizenship-by-investment guide covers the announced framework. It is not a requirements determination.
             </p>
           </a>
           

@@ -12,7 +12,7 @@ const ProgramContent = () => {
   return (
     <>
       <Hero
-        title="Argentina Golden Visa Program Overview"
+        title="Argentina Citizenship by Investment Program Overview"
         subtitle="The pathway should not be treated as an open application program. This is a short overview of the anticipated program."
         backgroundImage="/argentina-golden-visa-2026.webp"
         imageAlt="Argentine flag with the Sun of May against a clear sky"
@@ -23,7 +23,7 @@ const ProgramContent = () => {
       
       <EditorialSection>
         <h2 className="font-serif text-xl-editorial mb-8 tracking-wide">
-          Argentina's Golden Visa is an anticipated citizenship-by-investment framework. The pathway should not be treated as an open application program.
+          Argentina citizenship by investment is an anticipated framework. The pathway should not be treated as an open application program.
         </h2>
         <p className="text-editorial text-text-secondary mb-8 tracking-wide">
           Whether applications are open is answered on the{" "}
@@ -36,9 +36,13 @@ const ProgramContent = () => {
           </a>{" "}
           page. The{" "}
           <a href="/guides/argentina-golden-visa-program" className="text-primary hover:underline">
-            Argentina Golden Visa program guide
+            the program guide
           </a>{" "}
-          is the longer write-up. This page is the short overview.
+          is the longer write-up. This page is the short overview. For the wider introduction, see{" "}
+          <a href="/" className="text-primary hover:underline">
+            Argentina citizenship by investment
+          </a>
+          .
         </p>
         <p className="text-editorial text-text-secondary mb-12 tracking-wide">
           The Argentina Residence waitlist is this firm's list for updates. Joining it does not file a government application, reserve a filing place, or grant residency or citizenship. Whether a stay in Argentina is anticipated is on the{" "}
@@ -120,7 +124,7 @@ const ProgramContent = () => {
               label: "Step 4",
               title: "No Government Filing Today",
               description:
-                "Government applications are not yet confirmed as open. A dossier cannot be filed as a Golden Visa application while that remains the case. See the status page.",
+                "Government applications are not yet confirmed as open. A dossier cannot be filed as a citizenship-by-investment application while that remains the case. See the status page.",
             },
             {
               label: "Step 5",

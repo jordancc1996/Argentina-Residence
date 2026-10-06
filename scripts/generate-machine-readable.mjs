@@ -60,6 +60,7 @@ const sections = [
     paths: [
       "/industry-news/decree-524-2025-progress-update",
       "/industry-news/buenos-aires-foreign-buyer-activity-q1",
+      "/industry-news/argentina-350000-citizenship-investment-program",
       "/research/american-dream-argentina-golden-visa-solution",
       "/research/argentina-citizenship-investment-american-investors",
       "/research/argentina-golden-visa-american-investors-2026",
@@ -291,8 +292,8 @@ if (process.exitCode) process.exit(process.exitCode);
 const paths = sitemapPaths();
 const pressReleasePaths = paths.filter((pathname) => pathname.startsWith("/press/") && pathname !== "/press");
 const nonReleaseCount = paths.length - pressReleasePaths.length;
-if (nonReleaseCount !== 42) {
-  fail(`sitemap has ${nonReleaseCount} non-release URLs, expected 42`);
+if (nonReleaseCount !== 43) {
+  fail(`sitemap has ${nonReleaseCount} non-release URLs, expected 43`);
 }
 for (const pathname of paths) {
   if (pathname.includes("/markdown") || pathname.endsWith(".md") || pathname === "/llms.txt" || pathname === "/content-index.json") {

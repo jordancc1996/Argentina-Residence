@@ -1,12 +1,12 @@
 ---
 slug: argentina-citizenship-investment-requirements
-question: Argentina Golden Visa Investment Requirements
+question: Argentina Citizenship by Investment Requirements
 answer: "The October 2, 2026 announcement states a $350,000 National Treasury contribution or an $800,000 public-bond subscription for a principal applicant. Government applications are not yet confirmed as open. These announced terms are not a guarantee of approval."
-metaTitle: "Argentina Golden Visa Investment Requirements | Argentina Residence"
-metaDescription: "Argentina Golden Visa investment requirements: October 2, 2026 announced a $350,000 Treasury route or an $800,000 bond. Applications are not open."
+metaTitle: "Argentina Citizenship by Investment Requirements | Argentina Residence"
+metaDescription: "Argentina Citizenship by Investment Requirements: October 2, 2026 announced a $350,000 Treasury route or an $800,000 bond. Applications are not open."
 ---
 
-# Argentina Golden Visa Investment Requirements
+# Argentina Citizenship by Investment Requirements
 
 The October 2, 2026 announcement states a $350,000 non-refundable National Treasury contribution or an $800,000 subscription to a public bond created for the program. [Decree 524/2025](https://www.boletinoficial.gob.ar/detalleAviso/primera/329061/20250731) assigns a relevant investment to the Ministry of Economy and does not itself set those amounts. Government applications are not yet confirmed as open. The government expects the application process to become operational during Q4 2026. No exact filing date has been announced.
 

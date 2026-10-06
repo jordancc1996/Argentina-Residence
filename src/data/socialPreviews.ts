@@ -225,6 +225,10 @@ const previews: Record<string, SocialPreview> = {
   }
 };
 
+export function dedicatedSocialPreview(pathname: string): SocialPreview | undefined {
+  return previews[pathname];
+}
+
 export function socialPreviewFor(pathname: string): SocialPreview {
   return previews[pathname] ?? siteSocialPreview;
 }

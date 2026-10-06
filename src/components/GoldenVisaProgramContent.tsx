@@ -20,10 +20,10 @@ const GoldenVisaProgramContent = ({ children }: { children?: ReactNode }) => {
   return (
     <>
       <Hero
-        title="Argentina's Golden Visa"
-        subtitle="The 2026 Investor Guide"
+        title="Argentina Citizenship by Investment Guide"
+        subtitle="Announced terms for 2026. Applications are not confirmed open."
         backgroundImage={goldenVisaHero}
-        imageAlt="Argentine flag against a clear sky, representing the Argentina Golden Visa program"
+        imageAlt="Argentine flag against a clear sky"
       />
       
       {/* Program Status Banner */}
@@ -46,11 +46,11 @@ const GoldenVisaProgramContent = ({ children }: { children?: ReactNode }) => {
           <EditorialByline reviewedAt={reviewDateFor("/guides/argentina-golden-visa-program")} />
         </div>
         <h2 className="font-serif text-xl-editorial mb-8 tracking-wide">
-          Argentina's New Golden Visa: The 2026 Investor Guide
+          Announced citizenship-by-investment terms
         </h2>
         {children}
         <p className="text-editorial text-text-secondary mb-8 tracking-wide max-w-3xl mx-auto">
-          Argentina Golden Visa 2026 has announced financial terms. Government applications are not yet confirmed as open. The{" "}
+          Argentina citizenship by investment has announced financial terms. Government applications are not yet confirmed as open. The{" "}
           <a href="/research/argentina-citizenship-by-investment-launch-date" className="text-primary hover:underline">
             citizenship by investment launch date
           </a>{" "}
@@ -62,19 +62,23 @@ const GoldenVisaProgramContent = ({ children }: { children?: ReactNode }) => {
           <a href="/press/argentina-citizenship-by-investment-q4-2026" className="text-primary hover:underline">
             October 2, 2026 announcement
           </a>{" "}
-          later stated a $350,000 Treasury contribution or an $800,000 public-bond route. "Golden Visa" is used here as a search term for that citizenship-by-investment pathway.
+          later stated a $350,000 Treasury contribution or an $800,000 public-bond route. People may search for the announced program as an "Argentina Golden Visa," but the framework described here is citizenship by investment rather than a conventional residence-based Golden Visa. The short map of{" "}
+          <a href="/" className="text-primary hover:underline">
+            the Argentina citizenship-by-investment program
+          </a>{" "}
+          is on the homepage.
         </p>
         <div className="flex flex-col items-center gap-4">
           <CompareOptionsModal
             triggerLabel="Compare Your Options"
             heading="Compare Your Options"
-            description="Counsel on Argentina's Golden Visa route can be arranged through this office."
+            description="Counsel on the citizenship-by-investment route can be arranged through this office."
             wrapper="none"
           />
           <p className="text-sm text-text-secondary tracking-wide">
             Prefer to check eligibility directly?{" "}
             <a href="/argentina-golden-visa-eligibility-checker" className="text-primary hover:underline">
-              Open the eligibility checker
+              Open the readiness check
             </a>
           </p>
         </div>
@@ -83,7 +87,7 @@ const GoldenVisaProgramContent = ({ children }: { children?: ReactNode }) => {
       {/* Key Benefits */}
       <EditorialSection className="bg-secondary/30">
         <h2 className="font-serif text-xl-editorial mb-12 tracking-wide text-center">
-          Why Argentina's Golden Visa?
+          Why this citizenship-by-investment route?
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="text-center p-6">

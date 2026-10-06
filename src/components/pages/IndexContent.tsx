@@ -33,11 +33,54 @@ export interface HomepagePost {
   imageAlt?: string;
 }
 
+const cbiTopics = [
+  {
+    href: "/program",
+    anchor: "program overview",
+    body: "The short account of the anticipated framework. It is not an open application channel.",
+  },
+  {
+    href: "/research/argentina-citizenship-by-investment-status",
+    anchor: "current program status",
+    body: "Whether government applications are open. They are not yet confirmed as open.",
+  },
+  {
+    href: "/research/argentina-citizenship-by-investment-launch-date",
+    anchor: "expected launch date",
+    body: "No exact filing date has been announced. The government expects applications during Q4 2026.",
+  },
+  {
+    href: "/faq/argentina-citizenship-investment-requirements",
+    anchor: "Argentina citizenship-by-investment requirements",
+    body: "The announced routes are a $350,000 Treasury contribution or an $800,000 public bond. They are not a guarantee of approval.",
+  },
+  {
+    href: "/faq/argentina-citizenship-investment-application-timeline",
+    anchor: "application timeline",
+    body: "Decree 524/2025 gives DNM 30 business days after it receives APCI's report. That period is not a total processing time.",
+  },
+  {
+    href: "/faq/argentina-citizenship-investment-documents",
+    anchor: "required documents",
+    body: "The decrees do not publish an application-document checklist for investor applicants.",
+  },
+  {
+    href: "/faq/argentina-citizenship-investment-family",
+    anchor: "family members",
+    body: "The October 2, 2026 announcement includes extra Treasury contributions for some relatives. Those amounts are not automatic eligibility, and they are not general residency rules.",
+  },
+  {
+    href: "/guides/argentina-golden-visa-program",
+    anchor: "complete citizenship-by-investment guide",
+    body: "The longer explanation of the announced framework.",
+  },
+] as const;
+
 const IndexContent = ({ posts }: { posts: HomepagePost[] }) => {
   return (
     <>
       <Hero
-        title="Argentina Golden Visa Updates"
+        title="Argentina Citizenship by Investment"
         subtitle={programStatus.applicationStatusLabel}
         backgroundImage={casaRosadaSrc}
         imageAlt="Argentine flag at Plaza de Mayo with the Casa Rosada presidential palace"
@@ -46,7 +89,32 @@ const IndexContent = ({ posts }: { posts: HomepagePost[] }) => {
         ctaSubline={programStatus.waitlistDisclaimer}
       />
 
-      <EditorialSection className="pb-0">
+      <EditorialSection>
+        <p className="text-editorial text-text-secondary mb-12 tracking-wide">
+          Argentina Citizenship by Investment is Argentina's announced citizenship-by-investment framework for a foreign national who makes an investment the Ministry of Economy defines as relevant. It is a naturalization pathway, not a residence permit. The October 2, 2026 announcement states a $350,000 National Treasury contribution or an $800,000 public-bond subscription. Government applications are not yet confirmed as open. The{" "}
+          <a href="/faq/what-is-argentina-golden-visa" className="text-primary hover:underline">
+            detailed definition
+          </a>{" "}
+          stays on its own page.
+        </p>
+        <h2 className="font-serif text-xl-editorial mb-10 tracking-wide">
+          Argentina Citizenship by Investment: What We Know
+        </h2>
+        <div className="grid md:grid-cols-2 gap-x-12 gap-y-8 text-left">
+          {cbiTopics.map((topic) => (
+            <div key={topic.href} className="border-l-2 border-gold pl-6">
+              <h3 className="font-serif text-lg-editorial mb-2 tracking-wide">
+                <a href={topic.href} className="text-primary hover:underline inline-block py-1">
+                  {topic.anchor}
+                </a>
+              </h3>
+              <p className="text-body text-text-secondary tracking-wide">{topic.body}</p>
+            </div>
+          ))}
+        </div>
+      </EditorialSection>
+
+      <EditorialSection className="!pt-0 pb-0">
         <figure className="max-w-xl mx-auto">
           <img
             src={passportSrc}
@@ -56,12 +124,12 @@ const IndexContent = ({ posts }: { posts: HomepagePost[] }) => {
             height={1024}
           />
           <figcaption className="text-sm text-text-secondary tracking-wide mt-4">
-            An Argentine passport is a separate document from residence. See the Golden Visa updates.
+            An Argentine passport is a separate document from residence. See the citizenship-by-investment updates.
           </figcaption>
         </figure>
         <div className="flex flex-wrap gap-4 justify-center mt-8">
           <Button asChild variant="outline" size="lg" className="bg-white hover:bg-white/90">
-            <a href="/industry-news">See the Golden Visa Updates</a>
+            <a href="/industry-news">Citizenship-by-Investment Updates</a>
           </Button>
         </div>
       </EditorialSection>
@@ -73,7 +141,7 @@ const IndexContent = ({ posts }: { posts: HomepagePost[] }) => {
         <p className="text-editorial text-text-secondary mb-8 tracking-wide">
           Argentina Residence is an independent advisory resource built with licensed immigration attorneys. We help qualified investors understand the{" "}
           <a href="/guides/argentina-golden-visa-program" className="text-primary hover:underline">
-            Argentina Golden Visa program
+            citizenship-by-investment guide
           </a>
           , evaluate their options, and take the right next step.
         </p>

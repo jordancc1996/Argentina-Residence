@@ -15,7 +15,7 @@ export const programStatus = {
   waitlistOperator: "Argentina Residence",
   waitlistDisclaimer:
     "Argentina Residence's own update list. Not a government application.",
-  programTerm: "Argentina Golden Visa",
+  programTerm: "Argentina citizenship by investment",
   programTermDefinition:
     "Argentine law contains a naturalization pathway for a foreign national who makes an investment that the Ministry of Economy defines as relevant. The October 2, 2026 announcement states a $350,000 National Treasury contribution or an $800,000 public-bond subscription. Government applications are not yet confirmed as open.",
   statusPagePath: "/research/argentina-citizenship-by-investment-status",

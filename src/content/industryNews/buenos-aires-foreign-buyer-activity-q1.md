@@ -14,7 +14,7 @@ This note does not cite a Colegio de Escribanos table, a foreign-buyer percentag
 
 ## What this note does not claim
 
-It does not claim that foreign-buyer activity climbed. It does not claim that a Golden Visa program is accelerating purchases. The [October 2, 2026 announcement](https://www.argentina.gob.ar/noticias/luis-caputo-anuncio-la-puesta-en-marcha-del-programa-de-ciudadania-por-inversion-de) states a Treasury contribution or a public bond, not a property purchase. Government applications are not yet confirmed as open.
+It does not claim that foreign-buyer activity climbed. It does not claim that the citizenship-by-investment program is accelerating purchases. The [October 2, 2026 announcement](https://www.argentina.gob.ar/noticias/luis-caputo-anuncio-la-puesta-en-marcha-del-programa-de-ciudadania-por-inversion-de) states a Treasury contribution or a public bond, not a property purchase. Government applications are not yet confirmed as open.
 
 ## Sources
 

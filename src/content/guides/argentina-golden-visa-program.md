@@ -1,5 +1,5 @@
 ---
-title: Argentina Golden Visa Program
+title: Argentina Citizenship by Investment Guide
 slug: argentina-golden-visa-program
 order: 1
 publishedDate: "2026-01-22"

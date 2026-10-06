@@ -35,7 +35,7 @@ const ResourcesContent = () => {
 
   const siteGuides = [
     { title: "Program overview", href: "/program", description: "Short overview of the anticipated framework. The pathway should not be treated as an open application program." },
-    { title: "Argentina Golden Visa program guide", href: "/guides/argentina-golden-visa-program", description: "The long guide to the announced citizenship-by-investment terms. Applications are not confirmed open." },
+    { title: "Citizenship-by-investment guide", href: "/guides/argentina-golden-visa-program", description: "The long guide to the announced citizenship-by-investment terms. Applications are not confirmed open." },
     { title: "Current program status", href: "/research/argentina-citizenship-by-investment-status", description: "Whether Argentina citizenship by investment is open." },
     { title: "Launch date", href: "/research/argentina-citizenship-by-investment-launch-date", description: "Expected Q4 2026 window. No exact filing date." },
     { title: "Real estate investment", href: "/guides/argentina-real-estate-investment", description: "Buying property in Argentina. The decrees do not identify a purchase as a qualifying or disqualifying investment." },
@@ -43,7 +43,7 @@ const ResourcesContent = () => {
   ];
 
   const siteFaqs = [
-    { title: "What is the Argentina Golden Visa?", href: "/faq/what-is-argentina-golden-visa" },
+    { title: "What Is Argentina Citizenship by Investment?", href: "/faq/what-is-argentina-golden-visa" },
     { title: "Investment requirements", href: "/faq/argentina-citizenship-investment-requirements" },
     { title: "Family members", href: "/faq/argentina-citizenship-investment-family" },
     { title: "Physical presence", href: "/faq/argentina-residency-physical-presence" },

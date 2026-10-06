@@ -1,12 +1,12 @@
 ---
 slug: argentina-citizenship-investment-application-timeline
-question: Argentina Golden Visa Application Timeline
+question: Argentina Citizenship by Investment Application Timeline
 answer: "Decree 524/2025 gives the Dirección Nacional de Migraciones (DNM) 30 business days to decide after DNM receives APCI's report. That period is not 30 days from the application, and it is not a total or guaranteed processing time. APCI's assessment and interagency review occur before this period."
-metaTitle: "Argentina Golden Visa Application Timeline | Argentina Residence"
+metaTitle: "Argentina Citizenship by Investment Application Timeline | Argentina Residence"
 metaDescription: "DNM has 30 business days after it receives APCI's report. That period is not 30 days from application and is not total processing time."
 ---
 
-# Argentina Golden Visa Application Timeline
+# Argentina Citizenship by Investment Application Timeline
 
 No filing-to-decision calendar has been published. Government applications are not yet confirmed as open.
 

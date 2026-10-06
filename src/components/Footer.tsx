@@ -14,7 +14,7 @@ const Footer = () => {
           <div>
             <h3 className="font-serif text-lg mb-4">Argentina Residence</h3>
             <p className="text-sm text-muted-foreground">
-              Argentina Residence advises on Argentine residency by investment. This site does not file a government application.
+              Argentina Residence advises on Argentine citizenship by investment. This site does not file a government application.
             </p>
           </div>
           

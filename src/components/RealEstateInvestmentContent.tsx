@@ -49,7 +49,7 @@ const RealEstateInvestmentContent = ({ children }: { children?: ReactNode }) => 
     <>
       <Hero
         title="Argentina Real Estate Investment"
-        subtitle="Argentina real estate investment spans Buenos Aires and beyond for buyers interested in the market on its own terms, independent of the Golden Visa or any residency-by-investment program."
+        subtitle="Argentina real estate investment spans Buenos Aires and beyond for buyers interested in the market on its own terms, separate from the announced citizenship-by-investment routes."
         backgroundImage={buenosAiresCityscape}
         imageAlt="Buenos Aires high-rise skyline representing Argentina real estate investment"
       />
@@ -63,7 +63,7 @@ const RealEstateInvestmentContent = ({ children }: { children?: ReactNode }) => 
         </h2>
         {children}
         <p className="text-editorial text-text-secondary mb-8 tracking-wide max-w-3xl mx-auto">
-          Owning property in Argentina does not itself grant Golden Visa eligibility. Buenos Aires property can be bought as a market decision. The October 2, 2026 announcement states a Treasury contribution or a public bond, not a property purchase.
+          Owning property in Argentina does not itself qualify for the announced citizenship-by-investment routes. Buenos Aires property can be bought as a market decision. The October 2, 2026 announcement states a Treasury contribution or a public bond, not a property purchase.
         </p>
         <div className="flex flex-col items-center gap-4">
           <CompareOptionsModal

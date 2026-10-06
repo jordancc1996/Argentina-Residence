@@ -17,7 +17,7 @@ const AboutContent = () => {
                 About Argentina Residence
               </h1>
               <p className="text-editorial text-text-secondary tracking-wide">
-                About Argentina Residence advises on Argentine residency by investment. Government applications are not yet confirmed as open.
+                About Argentina Residence advises on Argentine citizenship by investment. Government applications are not yet confirmed as open.
               </p>
             </div>
             <SupportingImage
@@ -112,7 +112,7 @@ const AboutContent = () => {
         <EditorialSection>
           <h2 className="font-serif text-xl-editorial mb-6 tracking-wide">About This Resource</h2>
           <p className="text-body text-text-secondary mb-6 tracking-wide max-w-3xl mx-auto">
-            Argentina Residence provides proprietary market intelligence and execution advisory for international investors and family offices seeking Argentine residency by investment opportunities.
+            Argentina Residence provides proprietary market intelligence and execution advisory for international investors and family offices seeking Argentine citizenship-by-investment information.
           </p>
           <p className="text-body text-text-secondary mb-8 tracking-wide max-w-3xl mx-auto">
             This website provides educational content only and is not affiliated with any government agency, immigration service provider, or investment firm. All information should be verified with official sources, and visitors are encouraged to consult with qualified legal and financial professionals for personalized advice.

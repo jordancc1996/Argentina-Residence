@@ -40,6 +40,7 @@ export const reviewDates: Record<string, string> = {
   "/industry-news/decree-524-2025-progress-update": "2026-09-29",
   "/industry-news/buenos-aires-foreign-buyer-activity-q1": "2026-09-29",
   "/industry-news/argentina-citizenship-investment-vs-portugal-golden-visa": "2026-09-29",
+  "/industry-news/argentina-350000-citizenship-investment-program": "2026-10-05",
 };
 
 export function reviewDateFor(path: string): string | undefined {
