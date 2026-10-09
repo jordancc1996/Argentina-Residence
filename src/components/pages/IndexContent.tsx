@@ -1,5 +1,5 @@
 import Hero from "@/components/Hero";
-import EditorialSection from "@/components/EditorialSection";
+import EditorialSection, { EditorialDivider } from "@/components/EditorialSection";
 import { Button } from "@/components/ui/button";
 import { Calendar, Clock, ArrowRight } from "lucide-react";
 import GoldenVisaUpdatesSection from "@/components/GoldenVisaUpdatesSection";
@@ -90,13 +90,14 @@ const IndexContent = ({ posts }: { posts: HomepagePost[] }) => {
       />
 
       <EditorialSection>
-        <p className="text-editorial text-text-secondary mb-12 tracking-wide">
+        <p className="text-editorial text-text-secondary mb-0 tracking-wide">
           Argentina Citizenship by Investment is Argentina's announced citizenship-by-investment framework for a foreign national who makes an investment the Ministry of Economy defines as relevant. It is a naturalization pathway, not a residence permit. The October 2, 2026 announcement states a $350,000 National Treasury contribution or an $800,000 public-bond subscription. Government applications are not yet confirmed as open. The{" "}
           <a href="/faq/what-is-argentina-golden-visa" className="text-primary hover:underline">
             detailed definition
           </a>{" "}
           stays on its own page.
         </p>
+        <EditorialDivider />
         <h2 className="font-serif text-xl-editorial mb-10 tracking-wide">
           Argentina Citizenship by Investment: What We Know
         </h2>
@@ -112,9 +113,10 @@ const IndexContent = ({ posts }: { posts: HomepagePost[] }) => {
             </div>
           ))}
         </div>
+        <EditorialDivider className="mb-0" />
       </EditorialSection>
 
-      <EditorialSection className="!pt-0 pb-0">
+      <EditorialSection className="!pt-0 pb-6">
         <figure className="max-w-xl mx-auto">
           <img
             src={passportSrc}
@@ -127,14 +129,15 @@ const IndexContent = ({ posts }: { posts: HomepagePost[] }) => {
             An Argentine passport is a separate document from residence. See the citizenship-by-investment updates.
           </figcaption>
         </figure>
-        <div className="flex flex-wrap gap-4 justify-center mt-8">
-          <Button asChild variant="outline" size="lg" className="bg-white hover:bg-white/90">
+      </EditorialSection>
+
+      <EditorialSection className="!pt-0" divider>
+        <div className="editorial-divider-actions flex flex-wrap gap-4 justify-center">
+          <Button asChild variant="outline" size="lg" className="bg-white editorial-nav-button">
             <a href="/industry-news">Citizenship-by-Investment Updates</a>
           </Button>
         </div>
-      </EditorialSection>
-
-      <EditorialSection>
+        <div className="editorial-after-divider">
         <h2 className="font-serif text-xl-editorial mb-8 tracking-wide">
           Your roadmap to Argentine residency, citizenship, and long-term investment, in one place.
         </h2>
@@ -146,15 +149,16 @@ const IndexContent = ({ posts }: { posts: HomepagePost[] }) => {
           , evaluate their options, and take the right next step.
         </p>
         <div className="flex flex-wrap gap-4 justify-center mt-8">
-          <Button asChild variant="outline" size="lg" className="bg-white hover:bg-white/90">
+          <Button asChild variant="outline" size="lg" className="bg-white editorial-nav-button">
             <a href="/about">About This Resource</a>
           </Button>
-          <Button asChild variant="outline" size="lg" className="bg-white hover:bg-white/90">
+          <Button asChild variant="outline" size="lg" className="bg-white editorial-nav-button">
             <a href="/faq">FAQ</a>
           </Button>
-          <Button asChild variant="outline" size="lg" className="bg-white hover:bg-white/90">
+          <Button asChild variant="outline" size="lg" className="bg-white editorial-nav-button">
             <a href="/resources">Resources</a>
           </Button>
+        </div>
         </div>
       </EditorialSection>
 

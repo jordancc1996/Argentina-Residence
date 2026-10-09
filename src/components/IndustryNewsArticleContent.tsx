@@ -109,10 +109,10 @@ const IndustryNewsArticleContent = ({
               </div>
             </div>
 
-            <div className="border-t border-border pt-8 mb-12"></div>
+            <div className="border-t border-cta-primary pt-8 mb-12"></div>
 
             <div
-              className="prose prose-lg max-w-none
+              className="editorial-prose prose prose-lg max-w-none
                 prose-headings:font-serif prose-headings:text-foreground
                 prose-p:text-text-secondary prose-p:leading-relaxed
                 prose-a:text-primary prose-a:no-underline hover:prose-a:underline
@@ -151,7 +151,7 @@ const IndustryNewsArticleContent = ({
             </div>
 
             {related.length > 0 && (
-              <section className="mt-12 pt-8 border-t border-border">
+              <section className="mt-12 pt-8 border-t border-cta-primary">
                 <h2 className="text-2xl font-serif mb-6 text-foreground">More Industry News</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                   {related.map((rel) => (

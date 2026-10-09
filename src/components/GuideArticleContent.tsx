@@ -66,7 +66,7 @@ const GuideArticleContent = ({
 
       <EditorialSection centered={false}>
         <div
-          className="text-left
+          className="editorial-prose text-left
             [&_h2]:font-serif [&_h2]:text-xl-editorial [&_h2]:mb-8 [&_h2]:mt-12 [&_h2]:tracking-wide [&_h2]:first:mt-0
             [&_h3]:font-serif [&_h3]:text-lg [&_h3]:mb-4 [&_h3]:mt-8
             [&_p]:text-editorial [&_p]:text-text-secondary [&_p]:mb-6 [&_p]:tracking-wide
