@@ -7,6 +7,7 @@ import Hero from '../../components/Hero';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import casaRosadaFlag from '../../assets/hero-casa-rosada-flag.webp';
 import { publishedPressReleases } from '../../data/pressReleases';
+import EditorialDivider from '../../components/EditorialDivider.astro';
 
 const entries = await getCollection('pressReleases');
 const releases = publishedPressReleases(entries).map((entry) => ({
@@ -79,12 +80,13 @@ const schema = {
 		imageAlt="Argentine flag at Plaza de Mayo with the Casa Rosada presidential palace"
 	/>
 	<Breadcrumbs client:load currentPath={Astro.url.pathname} />
+	<EditorialDivider />
 	<section class="section-padding">
 		<div class="max-w-4xl mx-auto px-4 md:px-8">
 			{releases.length === 0 ? (
-				<p class="border-t border-border pt-8 text-muted-foreground">No press releases have been published.</p>
+				<p class="text-muted-foreground">No press releases have been published.</p>
 			) : (
-				<div class="border-t border-border">
+				<div>
 					{releases.map((release) => (
 						<article class="border-b border-border py-8">
 							{release.image && (

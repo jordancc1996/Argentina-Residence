@@ -1,5 +1,6 @@
-import { Children, isValidElement, type ReactNode } from "react";
+import { Children, isValidElement, useLayoutEffect, useRef, type ReactNode } from "react";
 import { motion } from "framer-motion";
+import { bindEditorialSection } from "@/lib/editorialDividers";
 
 interface EditorialSectionProps {
   children: ReactNode;
@@ -16,7 +17,9 @@ interface EditorialSectionProps {
 
 /** Major in-section rule. EditorialSection places it on the full-width section, not in the text column. */
 export const EditorialDivider = ({ className = "" }: { className?: string }) => (
-  <hr className={`editorial-divider ${className}`} data-editorial-divider="" aria-hidden="true" />
+  <div className={`editorial-divider ${className}`} data-editorial-line="" aria-hidden="true">
+    <span className="editorial-line-bar" />
+  </div>
 );
 
 type ContentChunk = { kind: "content"; nodes: ReactNode[] };
@@ -44,25 +47,41 @@ const EditorialSection = ({
   innerClassName = "max-w-4xl",
   divider,
 }: EditorialSectionProps) => {
+  const sectionRef = useRef<HTMLElement>(null);
   const continuous = /(?:^|\s)!?pt-/.test(` ${className} `);
   const showDivider = divider ?? !continuous;
   const chunks = chunksFor(children);
 
+  useLayoutEffect(() => {
+    const section = sectionRef.current;
+    if (!section) return;
+    return bindEditorialSection(section);
+  }, []);
+
   return (
     <motion.section
+      ref={sectionRef}
       className={`editorial-section section-padding ${showDivider ? "" : "no-section-rule"} ${className}`}
       initial={{ opacity: 1, y: 0 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
+      {showDivider && (
+        <div className="editorial-line" data-editorial-line="" aria-hidden="true">
+          <span className="editorial-line-bar" />
+        </div>
+      )}
       {chunks.map((chunk, index) =>
         chunk.kind === "rule" ? (
-          <hr
+          <div
             key={`rule-${index}`}
             className={`editorial-divider ${chunk.className}`}
+            data-editorial-line=""
             aria-hidden="true"
-          />
+          >
+            <span className="editorial-line-bar" />
+          </div>
         ) : (
           <motion.div
             key={`content-${index}`}

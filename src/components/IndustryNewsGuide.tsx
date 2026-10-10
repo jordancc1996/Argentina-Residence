@@ -4,7 +4,7 @@ import InquiryCard from "@/components/InquiryCard";
 
 const IndustryNewsGuide = () => {
   return (
-    <section className="py-24 md:py-32 bg-secondary/30">
+    <section className="editorial-bleed-root py-24 md:py-32 bg-secondary/30">
       <div className="max-w-4xl mx-auto px-4 md:px-8">
         <div>
           <h2 className="text-3xl md:text-4xl font-serif mb-4 text-foreground">
@@ -14,7 +14,7 @@ const IndustryNewsGuide = () => {
             A comprehensive guide to the legal framework, program status, and what investors should know.
           </p>
 
-          <div className="prose prose-lg max-w-none
+          <div className="editorial-prose editorial-sections prose prose-lg max-w-none
             prose-headings:font-serif prose-headings:text-foreground
             prose-p:text-text-secondary prose-p:leading-relaxed
             prose-a:text-primary prose-a:no-underline hover:prose-a:underline

@@ -9,6 +9,7 @@ import Footer from '../components/Footer';
 import FloatingAdvisorCTA from '../components/FloatingAdvisorCTA';
 import PreferredSourcesCTA from '../components/PreferredSourcesCTA.astro';
 import ConsentBanner from '../components/ConsentBanner';
+import EditorialMotion from '../components/EditorialMotion';
 
 interface Props {
 	showBreadcrumbs?: boolean;
@@ -86,6 +87,7 @@ const guides = [...guideEntries]
 			{showChrome && <Footer />}
 			{showChrome && <FloatingAdvisorCTA client:load />}
 		</div>
+		<EditorialMotion client:load />
 		<ConsentBanner client:load />
 		<script is:inline>
 			document.addEventListener("click", function (event) {

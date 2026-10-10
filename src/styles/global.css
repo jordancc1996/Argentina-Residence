@@ -195,19 +195,103 @@
     padding-right: var(--container-padding);
   }
 
-  /* Major section rule: 1px, full width of the section (the viewport), CTA blue. */
-  .editorial-section + .editorial-section:not(.no-section-rule) {
-    border-top: 1px solid hsl(var(--cta-primary));
+  /* Major section rule: 1px, full viewport width, CTA blue.
+     scaleX(1) is the static line. Motion overrides it only when JS opts in. */
+  .editorial-line {
+    display: none;
   }
 
-  /* In-flow major rule hoisted to the section so it reaches both viewport edges. */
+  .editorial-section + .editorial-section:not(.no-section-rule) {
+    position: relative;
+  }
+
+  .editorial-section + .editorial-section:not(.no-section-rule) > .editorial-line {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    pointer-events: none;
+  }
+
   .editorial-divider {
     display: block;
     width: 100%;
-    height: 0;
+    height: 1px;
     margin: 3rem 0;
     border: 0;
-    border-top: 1px solid hsl(var(--cta-primary));
+    background: none;
+  }
+
+  /* Boundary rule between existing sections. It does not add space of its own. */
+  .editorial-divider-boundary {
+    margin: 0;
+  }
+
+  /* Full-bleed root. Container width is the content box, so the line
+     matches the visible page and does not include the scrollbar. */
+  .editorial-bleed-root {
+    container-type: inline-size;
+    container-name: editorial;
+  }
+
+  /* Major article rules. The box stays in the reading column.
+     The line is drawn from the page container's left edge. */
+  .editorial-rule,
+  .editorial-sections > h2:not(:first-of-type),
+  .editorial-sections > astro-slot > h2:not(:first-of-type) {
+    position: relative;
+  }
+
+  .editorial-rule,
+  .editorial-prose > h2:not(:first-of-type),
+  .editorial-prose > astro-slot > h2:not(:first-of-type) {
+    border-top: 1px solid transparent;
+  }
+
+  .editorial-prose > h2:not(:first-of-type),
+  .editorial-prose > astro-slot > h2:not(:first-of-type) {
+    padding-top: 1.5rem;
+  }
+
+  .editorial-rule::before,
+  .editorial-sections > h2:not(:first-of-type)::before,
+  .editorial-sections > astro-slot > h2:not(:first-of-type)::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: 50%;
+    width: 100cqw;
+    height: 1px;
+    margin-left: -50cqw;
+    background: hsl(var(--cta-primary));
+    transform: scaleX(1);
+    transform-origin: left center;
+    pointer-events: none;
+  }
+
+  .editorial-sections:not(.editorial-prose) > h2:not(:first-of-type)::before,
+  .editorial-sections:not(.editorial-prose) > astro-slot > h2:not(:first-of-type)::before {
+    top: -1.5rem;
+  }
+
+  .editorial-prose .not-prose h2 {
+    border-top: 0;
+    padding-top: 0;
+  }
+
+  .editorial-prose .not-prose h2::before {
+    content: none;
+  }
+
+  .editorial-line-bar {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: hsl(var(--cta-primary));
+    transform: scaleX(1);
+    transform-origin: left center;
   }
 
   .editorial-divider-actions {
@@ -224,15 +308,88 @@
     }
   }
 
-  /* Major H2 breaks in long articles. The first H2 and headings inside components stay plain. */
-  .editorial-prose h2:not(:first-of-type) {
-    border-top: 1px solid hsl(var(--cta-primary));
-    padding-top: 1.5rem;
+  /* Homepage photo strip under the updates form. Four equal frames, no cards. */
+  .home-photo-gallery {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 0.5rem;
+    align-items: start;
   }
 
-  .editorial-prose .not-prose h2 {
-    border-top: 0;
-    padding-top: 0;
+  .home-photo-gallery figure {
+    margin: 0;
+    min-width: 0;
+  }
+
+  .home-photo-gallery img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .home-photo-caption {
+    margin: 0.75rem 0 0;
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.55;
+    text-align: left;
+    color: hsl(var(--sidebar-foreground));
+  }
+
+  .home-photo-flag {
+    object-position: center 42%;
+  }
+
+  .home-photo-city {
+    object-position: center 46%;
+  }
+
+  .home-photo-lake {
+    object-position: center 36%;
+  }
+
+  .home-photo-palace {
+    object-position: center 74%;
+  }
+
+  @media (min-width: 768px) {
+    .home-photo-gallery {
+      gap: 0.625rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .home-photo-gallery {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.75rem;
+    }
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html.editorial-motion .editorial-line-bar,
+    html.editorial-motion .editorial-rule::before,
+    html.editorial-motion .editorial-sections > h2:not(:first-of-type)::before,
+    html.editorial-motion .editorial-sections > astro-slot > h2:not(:first-of-type)::before {
+      transform: scaleX(var(--line-progress, 1));
+    }
+
+    .editorial-heading-in {
+      animation: editorial-heading-in 300ms ease-out both;
+    }
+  }
+
+  @keyframes editorial-heading-in {
+    from {
+      opacity: 0.92;
+      transform: translateY(6px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
   /* Rich FAQ Content */
   .faq-rich-content h1 {

@@ -5,6 +5,7 @@ import Layout from '../../layouts/Layout.astro';
 import ResearchHero from '../../components/ResearchHero';
 import ResearchArticleGrid from '../../components/ResearchArticleGrid';
 import ResearchSubscribe from '../../components/ResearchSubscribe';
+import EditorialDivider from '../../components/EditorialDivider.astro';
 
 const articles = await getCollection('articles');
 const posts = [...articles]
@@ -57,6 +58,8 @@ const schema = {
 	<meta slot="head" name="twitter:image" content={ogImage} />
 	<script slot="head" type="application/ld+json" set:html={JSON.stringify(schema)} />
 	<ResearchHero client:load />
+	<EditorialDivider />
 	<ResearchArticleGrid posts={posts} />
+	<EditorialDivider />
 	<ResearchSubscribe client:load />
 </Layout>

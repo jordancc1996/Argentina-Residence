@@ -30,7 +30,7 @@ const FAQDetailContent = ({
 }: FAQDetailContentProps) => {
   return (
     <div className="pt-20">
-      <EditorialSection>
+      <EditorialSection className="editorial-bleed-root">
         <div className="max-w-3xl mx-auto">
           <a href="/faq">
             <Button variant="ghost" className="mb-8 -ml-4">
@@ -44,7 +44,7 @@ const FAQDetailContent = ({
           </div>
 
           {hasRichBody ? (
-            <div className="faq-rich-content text-left">
+            <div className="faq-rich-content editorial-sections text-left">
               {children}
             </div>
           ) : (

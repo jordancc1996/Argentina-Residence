@@ -1,11 +1,10 @@
-import { Separator } from "@/components/ui/separator";
 import SupportingImage from "@/components/SupportingImage";
 import flagSnowMountains from "@/assets/site-photos-renamed/generic-flag-snow-mountains.webp";
 import PageFAQ from "@/components/PageFAQ";
 
 const ComplianceContent = () => {
   return (
-      <div className="section-padding">
+      <div className="editorial-bleed-root section-padding">
         <div className="max-w-[800px] mx-auto px-4 md:px-8">
           <h1 className="font-serif text-3xl md:text-4xl mb-4">Argentina Residence Compliance and Disclosures</h1>
           <p className="text-muted-foreground text-sm mb-10">
@@ -19,7 +18,7 @@ const ComplianceContent = () => {
             caption="The Argentine flag amid the snow-capped Andes."
           />
 
-          <Separator className="mb-10" />
+          <div className="editorial-rule mb-10" aria-hidden="true" />
 
           {/* General Disclosure */}
           <section className="mb-12">

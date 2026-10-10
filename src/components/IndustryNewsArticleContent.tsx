@@ -1,4 +1,6 @@
+import { useLayoutEffect, useRef } from "react";
 import { motion } from "framer-motion";
+import { bindEditorialSection } from "@/lib/editorialDividers";
 import { ArrowLeft, Calendar } from "lucide-react";
 import EditorialByline from "@/components/EditorialByline";
 import { Button } from "@/components/ui/button";
@@ -42,9 +44,15 @@ const IndustryNewsArticleContent = ({
   children,
 }: IndustryNewsArticleContentProps) => {
   const parallaxY = useParallax(-0.3);
+  const rootRef = useRef<HTMLDivElement>(null);
+  useLayoutEffect(() => {
+    const root = rootRef.current;
+    if (!root) return;
+    return bindEditorialSection(root);
+  }, []);
 
   return (
-    <div>
+    <div ref={rootRef}>
       {image ? (
         <section className="relative min-h-[50vh] overflow-hidden -mt-[72px] pt-[72px] md:-mt-[88px] md:pt-[88px]">
           <motion.div
@@ -68,7 +76,7 @@ const IndustryNewsArticleContent = ({
         />
       ) : null}
 
-      <div className={image || imagePending ? "pt-10 pb-16 md:pt-16 md:pb-24" : "section-padding"}>
+      <div className={`editorial-bleed-root ${image || imagePending ? "pt-10 pb-16 md:pt-16 md:pb-24" : "section-padding"}`}>
         <article className="max-w-4xl mx-auto px-4 md:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -109,10 +117,10 @@ const IndustryNewsArticleContent = ({
               </div>
             </div>
 
-            <div className="border-t border-cta-primary pt-8 mb-12"></div>
+            <div className="editorial-rule pt-8 mb-12" aria-hidden="true"></div>
 
             <div
-              className="editorial-prose prose prose-lg max-w-none
+              className="editorial-prose editorial-sections prose prose-lg max-w-none
                 prose-headings:font-serif prose-headings:text-foreground
                 prose-p:text-text-secondary prose-p:leading-relaxed
                 prose-a:text-primary prose-a:no-underline hover:prose-a:underline
@@ -150,9 +158,15 @@ const IndustryNewsArticleContent = ({
               </p>
             </div>
 
+          </motion.div>
+        </article>
             {related.length > 0 && (
-              <section className="mt-12 pt-8 border-t border-cta-primary">
-                <h2 className="text-2xl font-serif mb-6 text-foreground">More Industry News</h2>
+              <>
+            <div className="editorial-divider mt-12 mb-0" data-editorial-line="" aria-hidden="true">
+              <span className="editorial-line-bar" />
+            </div>
+              <section className="max-w-4xl mx-auto px-4 md:px-8 pt-8">
+                <h2 data-editorial-heading="" className="text-2xl font-serif mb-6 text-foreground">More Industry News</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                   {related.map((rel) => (
                     <a
@@ -171,9 +185,8 @@ const IndustryNewsArticleContent = ({
                   ))}
                 </div>
               </section>
+              </>
             )}
-          </motion.div>
-        </article>
       </div>
     </div>
   );

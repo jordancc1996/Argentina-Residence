@@ -1,3 +1,4 @@
+import { useLayoutEffect, useRef, type ReactNode } from "react";
 import { motion } from "framer-motion";
 import { ArrowLeft, Calendar, Clock } from "lucide-react";
 import EditorialByline from "@/components/EditorialByline";
@@ -5,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import ShareButtons from "@/components/ShareButtons";
 import PageFAQ from "@/components/PageFAQ";
 import Hero from "@/components/Hero";
-import type { ReactNode } from "react";
+import { bindEditorialSection } from "@/lib/editorialDividers";
 
 export interface RelatedPost {
   id: number;
@@ -56,6 +57,13 @@ const BlogPostContent = ({
   next,
   children,
 }: BlogPostContentProps) => {
+  const rootRef = useRef<HTMLDivElement>(null);
+  useLayoutEffect(() => {
+    const root = rootRef.current;
+    if (!root) return;
+    return bindEditorialSection(root);
+  }, []);
+
   const heroProps = heroImage
     ? { backgroundImage: heroImage, imageAlt: heroImageAlt || title }
     : {
@@ -67,7 +75,7 @@ const BlogPostContent = ({
   return (
     <>
       <Hero title={title} subtitle={excerpt} {...heroProps} />
-      <div className="pt-10 pb-20 md:pt-16 md:pb-32">
+      <div ref={rootRef} className="editorial-bleed-root pt-10 pb-20 md:pt-16 md:pb-32">
         <article className="max-w-4xl mx-auto px-4 md:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -106,10 +114,10 @@ const BlogPostContent = ({
               </div>
             </div>
 
-            <div className="border-t border-cta-primary pt-8 mb-12"></div>
+            <div className="editorial-rule pt-8 mb-12" aria-hidden="true"></div>
 
             <div 
-              className="editorial-prose prose prose-lg max-w-none
+              className="editorial-prose editorial-sections prose prose-lg max-w-none
                 prose-headings:font-serif prose-headings:text-foreground
                 prose-p:text-text-secondary prose-p:leading-relaxed
                 prose-a:text-primary prose-a:no-underline hover:prose-a:underline
@@ -151,10 +159,15 @@ const BlogPostContent = ({
               <p className="mt-3 text-sm text-primary-foreground/60 font-sans">No obligation. Complete confidentiality.</p>
             </div>
 
-            {/* Related Articles Section */}
+          </motion.div>
+        </article>
             {related.length > 0 && (
-              <section className="mt-12 pt-8 border-t border-cta-primary">
-                <h2 className="text-2xl font-serif mb-6 text-foreground">Related Articles</h2>
+              <>
+            <div className="editorial-divider mt-12 mb-0" data-editorial-line="" aria-hidden="true">
+              <span className="editorial-line-bar" />
+            </div>
+              <section className="max-w-4xl mx-auto px-4 md:px-8 pt-8">
+                <h2 data-editorial-heading="" className="text-2xl font-serif mb-6 text-foreground">Related Articles</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                   {related.map((relatedPost) => (
                       <a 
@@ -182,10 +195,11 @@ const BlogPostContent = ({
                     ))}
                 </div>
               </section>
+              </>
             )}
 
             {(previous || next) && (
-              <nav className="mt-8 pt-8 border-t border-cta-primary">
+              <nav className="editorial-rule max-w-4xl mx-auto px-4 md:px-8 mt-8 pt-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {previous && (
                     <a 
@@ -212,8 +226,6 @@ const BlogPostContent = ({
                 </div>
               </nav>
             )}
-          </motion.div>
-        </article>
       </div>
     </>
   );

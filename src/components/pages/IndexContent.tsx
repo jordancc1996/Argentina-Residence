@@ -2,12 +2,18 @@ import Hero from "@/components/Hero";
 import EditorialSection, { EditorialDivider } from "@/components/EditorialSection";
 import { Button } from "@/components/ui/button";
 import { Calendar, Clock, ArrowRight } from "lucide-react";
-import GoldenVisaUpdatesSection from "@/components/GoldenVisaUpdatesSection";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import SupportingImage from "@/components/SupportingImage";
 import casaRosadaFlag from "@/assets/hero-casa-rosada-flag.webp";
 import argentinaPassport from "@/assets/argentina-passport.webp";
 import flagAconcagua from "@/assets/site-photos-renamed/generic-flag-aconcagua-mountains.webp";
+import photoFlag from "@/assets/argentina-residence-citizenship1.webp";
+import photoFlagSmall from "@/assets/argentina-residence-citizenship1-480.webp";
+import photoCity from "@/assets/argentina-residence-citizenship2.webp";
+import photoCitySmall from "@/assets/argentina-residence-citizenship2-480.webp";
+import photoLake from "@/assets/argentina-residence-citizenship3.webp";
+import photoLakeSmall from "@/assets/argentina-residence-citizenship3-480.webp";
+import casaRosadaDaytime from "@/assets/casa-rosada-daytime.webp";
 import { programStatus } from "@/data/programStatus";
 import { editorial } from "@/data/editorial";
 
@@ -16,10 +22,56 @@ const colegioName = editorial.reviewerCredential.replace(
   "",
 );
 
-const casaRosadaSrc =
-  typeof casaRosadaFlag === "string" ? casaRosadaFlag : casaRosadaFlag.src;
-const passportSrc =
-  typeof argentinaPassport === "string" ? argentinaPassport : argentinaPassport.src;
+const assetSrc = (file: string | { src: string }) =>
+  typeof file === "string" ? file : file.src;
+
+const casaRosadaSrc = assetSrc(casaRosadaFlag);
+const passportSrc = assetSrc(argentinaPassport);
+
+const gallerySizes = "(min-width: 1024px) 21rem, (min-width: 768px) 46vw, 45vw";
+
+const homepagePhotos = [
+  {
+    src: assetSrc(photoFlag),
+    small: assetSrc(photoFlagSmall),
+    width: 682,
+    height: 1024,
+    className: "home-photo-flag",
+    sizes: gallerySizes,
+    alt: "Stone statue of a robed figure holding a spear, with the Argentine flag flying behind it.",
+    caption: "Argentina's national flag beside a stone monument.",
+  },
+  {
+    src: assetSrc(photoCity),
+    small: assetSrc(photoCitySmall),
+    width: 682,
+    height: 1024,
+    className: "home-photo-city",
+    sizes: gallerySizes,
+    alt: "Hillside view over a dense city, with an airplane in a cloudy sky.",
+    caption: "An aircraft above a city beneath a cloudy sky.",
+  },
+  {
+    src: assetSrc(photoLake),
+    small: assetSrc(photoLakeSmall),
+    width: 803,
+    height: 1024,
+    className: "home-photo-lake",
+    sizes: gallerySizes,
+    alt: "Aerial view of a lake with a fountain, palm trees, and a distant skyline.",
+    caption: "An urban lake, palm trees, and a distant skyline.",
+  },
+  {
+    src: assetSrc(casaRosadaDaytime),
+    small: "",
+    width: 1280,
+    height: 2274,
+    className: "home-photo-palace",
+    sizes: gallerySizes,
+    alt: "Casa Rosada in Buenos Aires, daytime",
+    caption: "Casa Rosada in Buenos Aires, the seat of Argentina's national executive branch.",
+  },
+] as const;
 
 export interface HomepagePost {
   id: number;
@@ -162,11 +214,31 @@ const IndexContent = ({ posts }: { posts: HomepagePost[] }) => {
         </div>
       </EditorialSection>
 
-      <EditorialSection centered={false} className="!pt-0">
+      <EditorialSection centered={false} className="!pt-0 !pb-0">
         <NewsletterSignup className="my-0" formType="golden-visa-updates-signup" />
+        <EditorialDivider />
       </EditorialSection>
 
-      <GoldenVisaUpdatesSection />
+      <EditorialSection centered={false} className="!pt-0" innerClassName="max-w-[1400px] !px-4">
+        <div className="home-photo-gallery">
+          {homepagePhotos.map((photo) => (
+            <figure key={photo.src}>
+              <img
+                src={photo.src}
+                srcSet={photo.small ? `${photo.small} 480w, ${photo.src} ${photo.width}w` : undefined}
+                sizes={photo.sizes}
+                width={photo.width}
+                height={photo.height}
+                alt={photo.alt}
+                className={photo.className}
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption className="home-photo-caption">{photo.caption}</figcaption>
+            </figure>
+          ))}
+        </div>
+      </EditorialSection>
 
       <EditorialSection className="bg-secondary/30">
         <div className="grid md:grid-cols-3 gap-12 text-left">
