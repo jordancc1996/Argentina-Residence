@@ -292,9 +292,18 @@ if (process.exitCode) process.exit(process.exitCode);
 
 const paths = sitemapPaths();
 const pressReleasePaths = paths.filter((pathname) => pathname.startsWith("/press/") && pathname !== "/press");
-const nonReleaseCount = paths.length - pressReleasePaths.length;
-if (nonReleaseCount !== 43) {
-  fail(`sitemap has ${nonReleaseCount} non-release URLs, expected 43`);
+const expectedNonRelease = sections.flatMap((section) => section.paths);
+const nonReleasePaths = paths.filter((pathname) => !pressReleasePaths.includes(pathname));
+if (nonReleasePaths.length !== expectedNonRelease.length) {
+  const expected = new Set(expectedNonRelease);
+  const actual = new Set(nonReleasePaths);
+  const extra = nonReleasePaths.filter((pathname) => !expected.has(pathname));
+  const missing = expectedNonRelease.filter((pathname) => !actual.has(pathname));
+  const detail = [
+    extra.length ? `extra: ${extra.join(", ")}` : "",
+    missing.length ? `missing: ${missing.join(", ")}` : "",
+  ].filter(Boolean).join("; ");
+  fail(`sitemap has ${nonReleasePaths.length} non-release URLs, expected ${expectedNonRelease.length}${detail ? ` (${detail})` : ""}`);
 }
 for (const pathname of paths) {
   if (pathname.includes("/markdown") || pathname.endsWith(".md") || pathname === "/llms.txt" || pathname === "/content-index.json") {
