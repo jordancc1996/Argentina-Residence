@@ -17,6 +17,7 @@ const sections = [
       "/guides/argentina-golden-visa-program",
       "/research/argentina-citizenship-by-investment-status",
       "/research/argentina-citizenship-by-investment-launch-date",
+      "/research/argentina-800000-cbi-bond-terms",
       "/faq/what-is-argentina-golden-visa",
       "/faq/argentina-citizenship-investment-requirements",
     ],

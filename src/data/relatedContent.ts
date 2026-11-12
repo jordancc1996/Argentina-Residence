@@ -39,6 +39,23 @@ export const relatedRegistry: RelatedEntry[] = [
     imageAlt: "Jacaranda tree in bloom on a Buenos Aires street",
   },
   {
+    id: 11,
+    slug: "argentina-800000-cbi-bond-terms",
+    href: "/research/argentina-800000-cbi-bond-terms",
+    collection: "articles",
+    cluster: "status",
+    relatedSlugs: [
+      "argentina-citizenship-by-investment-status",
+      "argentina-citizenship-by-investment-launch-date",
+      "argentina-golden-visa-program",
+    ],
+    title: "Argentina $800,000 CBI Bond - Maturity, Redemption, Yield, and Transfer Rules",
+    excerpt: "The October 2, 2026 announcement states the $800,000 subscription. It does not state maturity, yield, redemption, or transfer rules.",
+    category: "Market Intelligence",
+    image: "/argentina-golden-visa-argentinaresidence.webp",
+    imageAlt: "Jacaranda tree in bloom on a Buenos Aires street",
+  },
+  {
     id: 9,
     slug: "argentina-citizenship-by-investment-launch-date",
     href: "/research/argentina-citizenship-by-investment-launch-date",

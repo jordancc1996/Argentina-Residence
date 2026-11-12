@@ -18,7 +18,7 @@ Under the treasury route, the principal applicant pays at least $350,000 to the 
 
 Under the bond route, the principal applicant purchases an $800,000 government security created for the program. The bond covers only the principal applicant. Dependents require additional treasury contributions under either route. Those announced routes are set out on the [investment requirements](/faq/argentina-citizenship-investment-requirements) page.
 
-The government's reported plan calls for a seven-year, non-interest-bearing bond. Final terms remain unpublished. Applicants therefore do not yet have complete information regarding the bond's liquidity, risks, repayment terms, or other material conditions.
+The government's reported plan calls for a seven-year, non-interest-bearing bond. [Final terms remain unpublished](/research/argentina-800000-cbi-bond-terms). Applicants therefore do not yet have complete information regarding the bond's liquidity, risks, repayment terms, or other material conditions.
 
 ## Family Costs
 

@@ -30,6 +30,7 @@ export const reviewDates: Record<string, string> = {
   "/guides/argentina-citizenship-investment-vs-turkey": "2026-09-29",
   "/research": "2026-09-29",
   "/research/argentina-citizenship-by-investment-status": "2026-09-29",
+  "/research/argentina-800000-cbi-bond-terms": "2026-11-11",
   "/research/argentina-citizenship-by-investment-launch-date": "2026-09-29",
   "/research/argentine-investment-landscape-golden-visa-value-proposition": "2026-09-29",
   "/research/buenos-aires-real-estate-bull-market-analysis": "2026-09-29",
