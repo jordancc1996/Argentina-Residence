@@ -43,7 +43,7 @@ const cbiFaqLibrary = {
   dual: {
     question: "Can I keep my current citizenship if I become an Argentine citizen?",
     answer:
-      "Keeping your current citizenship after becoming an Argentine citizen depends on both Argentina's nationality rules and the laws governing your existing citizenship. Applicants should confirm the consequences of acquiring Argentine nationality under the laws applicable to their current nationality before proceeding.",
+      "Keeping your current citizenship after becoming an Argentine citizen depends on both Argentina's nationality rules and the laws governing your existing citizenship. The reviewed Argentine sources do not show a CBI requirement to renounce another nationality. See [Argentina CBI dual nationality](/research/argentina-cbi-dual-nationality-renunciation). Applicants should confirm the consequences of acquiring Argentine nationality under the laws applicable to their current nationality before proceeding.",
   },
   visaFree: {
     question: "How many countries can Argentine citizens visit without obtaining a visa in advance?",

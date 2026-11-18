@@ -8,4 +8,7 @@ export const articleOrder = [
   "argentina-golden-visa-american-investors-2026",
   "argentina-citizenship-by-investment-status",
   "argentina-800000-cbi-bond-terms",
+  "argentina-cbi-family-adoption-stepchildren",
+  "argentina-cbi-dual-nationality-renunciation",
+  "argentina-cbi-legal-stability",
 ] as const;

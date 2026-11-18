@@ -17,6 +17,7 @@ const sections = [
       "/guides/argentina-golden-visa-program",
       "/research/argentina-citizenship-by-investment-status",
       "/research/argentina-citizenship-by-investment-launch-date",
+      "/research/argentina-cbi-legal-stability",
       "/research/argentina-800000-cbi-bond-terms",
       "/faq/what-is-argentina-golden-visa",
       "/faq/argentina-citizenship-investment-requirements",
@@ -26,6 +27,8 @@ const sections = [
     heading: "Practical Questions",
     paths: [
       "/faq/argentina-citizenship-investment-family",
+      "/research/argentina-cbi-family-adoption-stepchildren",
+      "/research/argentina-cbi-dual-nationality-renunciation",
       "/faq/argentina-residency-physical-presence",
       "/faq/argentina-citizenship-investment-documents",
       "/faq/argentina-residency-work-rights",

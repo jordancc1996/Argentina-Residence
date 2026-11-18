@@ -28,7 +28,7 @@ A spouse, eligible children, or both can join the principal applicant if the req
 - Unmarried children ages 18 to 25: $100,000
 - Children under age 18: $25,000
 
-Adult children ages 18 to 25 must never have been married. The child does not need to demonstrate financial dependence. Final application rules still need to clarify when and how an applicant child's age will be assessed. The [family members](/faq/argentina-citizenship-investment-family) page records the same announced contribution amounts.
+Adult children ages 18 to 25 must never have been married. The child does not need to demonstrate financial dependence. Final application rules still need to clarify [when and how an applicant child's age will be assessed](/research/argentina-cbi-family-adoption-stepchildren). The [family members](/faq/argentina-citizenship-investment-family) page records the same announced contribution amounts.
 
 For a family consisting of one principal applicant, one spouse, and two children under age 18, the treasury route would cost $500,000. This consists of the principal applicant's $350,000 contribution, the spouse's $100,000 contribution, and $50,000 for the two children.
 
